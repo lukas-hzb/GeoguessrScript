@@ -4,3 +4,4 @@ DESCRIPTION.md
 .DS_Store
 sync.sh
 clear_db.sh
+*.log
