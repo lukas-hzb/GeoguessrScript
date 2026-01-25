@@ -629,24 +629,40 @@
             isChallenge = true;
         }
 
-        if (!gameId) return;
+        // Fallback: Check __NEXT_DATA__ for hydration state
+        if (!gameId) {
+            try {
+                const nextData = document.getElementById('__NEXT_DATA__');
+                if (nextData) {
+                    const json = JSON.parse(nextData.innerHTML);
+                    // Often in json.query.id or json.props.pageProps.game.token
+                    if (json.query && json.query.id) {
+                         gameId = json.query.id;
+                    } else if (json.props?.pageProps?.game?.token) {
+                         gameId = json.props.pageProps.game.token;
+                    }
+                }
+            } catch(e) { console.log('NextData lookup failed', e); }
+        }
+
+        if (!gameId) {
+            console.log('Could not find Game ID from URL or __NEXT_DATA__');
+            updateStatus('ID Recovery Failed');
+            return;
+        }
 
         console.log(`[GG Meta] Recovering Panoid for GameID: ${gameId} (Chall: ${isChallenge})`);
 
         try {
             let apiUrl = '';
             if (isChallenge) {
-                 // Challenge API often returns the game token, then we might need to fetch the game
-                 // But often /api/v3/games/ID works for the *game* token associated with the challenge?
-                 // Actually, for challenges, the ID in the URL is the Challenge ID. The Game ID is internal.
-                 // We can try fetching the challenge payload.
                  apiUrl = `https://www.geoguessr.com/api/v3/challenges/${gameId}/game`; 
             } else {
                  apiUrl = `https://www.geoguessr.com/api/v3/games/${gameId}`;
             }
 
             const res = await fetch(apiUrl);
-            if (!res.ok) throw new Error(res.statusText);
+            if (!res.ok) throw new Error(res.statusText + ' ' + res.status);
             const data = await res.json();
 
             // Logic to find the current/last round
@@ -660,6 +676,9 @@
                     return;
                 }
             }
+            console.warn('[GG Meta] No rounds found in API response', data);
+            updateStatus('No Round Data');
+
         } catch (e) {
             console.error('[GG Meta] Failed to recover panoid:', e);
             updateStatus('Loc Recovery Failed');
