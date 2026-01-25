@@ -839,12 +839,23 @@
 
     function checkLocation(panoid) {
         if (!panoid) return;
+        
+        // LOCK MECHANISM:
+        // If we already have a Panoid set, and we are still on the result screen, 
+        // DO NOT change it to something else unless explicitly reset.
+        if (currentPanoid && currentPanoid !== panoid) {
+            console.warn(`[BetterMetas] Ignored ID change: ${currentPanoid} -> ${panoid} (Locked)`);
+            return;
+        }
+
         const changed = (panoid !== currentPanoid);
         currentPanoid = panoid;
         
         if (changed) {
-            console.log('[BetterMetas] New Location detected:', panoid);
+            console.log('[BetterMetas] New Location detected (Locked):', panoid);
             updateStatus(`ID: ${panoid.substring(0,12)}...`);
+        } else {
+             return; // No change, do nothing
         }
 
         // If data isn't loaded yet, we'll wait for checkDataLoaded to trigger us
@@ -875,20 +886,63 @@
     // --- Active Fetching Logic ---
 
     // Decode hex-encoded panoId (Geoguessr encodes them)
+    // Hex encoded IDs are usually ~44 chars (22 bytes). Raw IDs are ~22 chars.
     function decodePanoId(encoded) {
-        if (!encoded) return null;
-        // Check if it's already a regular string (not hex)
-        if (!/^[0-9a-fA-F]+$/.test(encoded) || encoded.length < 20) {
-            return encoded; // Assume it's not hex-encoded
+        if (!encoded || typeof encoded !== 'string') return null;
+        
+        // strict check: If it's short (likely already decoded/raw), don returns as is.
+        // Standard Google Panos are 22 chars. Encoded are 44.
+        if (encoded.length < 30) {
+            return encoded;
         }
-        const len = Math.floor(encoded.length / 2);
-        let panoId = [];
-        for (let i = 0; i < len; i++) {
-            const code = parseInt(encoded.slice(i * 2, i * 2 + 2), 16);
-            const char = String.fromCharCode(code);
-            panoId.push(char);
+
+        // Must be valid hex
+        if (!/^[0-9a-fA-F]+$/.test(encoded)) {
+            return encoded;
         }
-        return panoId.join("");
+
+        try {
+            const len = Math.floor(encoded.length / 2);
+            let panoId = [];
+            for (let i = 0; i < len; i++) {
+                const code = parseInt(encoded.slice(i * 2, i * 2 + 2), 16);
+                const char = String.fromCharCode(code);
+                panoId.push(char);
+            }
+            const decoded = panoId.join("");
+            return decoded;
+        } catch (e) {
+            console.warn('[BetterMetas] Decode failed, using original:', e);
+            return encoded;
+        }
+    }
+
+    function getCanonicalPanoId(round) {
+        if (!round) return null;
+
+        // 1. Try deep payload (Most reliable for modern Geoguessr)
+        // Matches vorlage.txt logic
+        const panorama = round.question?.panoramaQuestionPayload?.panorama;
+        if (panorama?.panoId) {
+             return decodePanoId(panorama.panoId);
+        }
+
+        // 2. Try location object (Standard v3 API)
+        if (round.location?.panoId) {
+            return decodePanoId(round.location.panoId);
+        }
+
+        // 3. Try top-level panoId (Older API / Challenges)
+        if (round.panoId) {
+            return decodePanoId(round.panoId);
+        }
+        
+        // 4. Streak code (Last resort)
+        if (round.streakLocationCode) {
+            return decodePanoId(round.streakLocationCode);
+        }
+        
+        return null;
     }
 
     async function tryRecoverPanoid() {
@@ -899,10 +953,6 @@
 
         console.log('[BetterMetas] Attempting to recover Panoid from URL:', url);
 
-        // Extract ID from URL patterns
-        // Live Challenge: /live-challenge/ID
-        // Regular Challenge: /challenge/ID
-        // Standard Game: /game/ID
         if (url.includes('/live-challenge/')) {
             const match = url.match(/\/live-challenge\/([^\/\?]+)/);
             gameId = match ? match[1] : null;
@@ -929,33 +979,26 @@
 
         if (!gameId) {
             console.log('[BetterMetas] Could not find Game ID');
-            updateStatus('No Game ID Found');
+            updateStatus('No Game ID detected');
             return;
         }
 
-        console.log(`[BetterMetas] Found GameID: ${gameId}, LiveCh: ${isLiveChallenge}, Ch: ${isChallenge}`);
+        console.log(`[BetterMetas] Found GameID: ${gameId}`);
 
         try {
             let panoid = null;
+            let currentRoundData = null;
 
             if (isLiveChallenge) {
-                // Use game-server API for live challenges
                 const apiUrl = `https://game-server.geoguessr.com/api/live-challenge/${gameId}`;
                 const res = await fetch(apiUrl, { credentials: 'include' });
                 if (!res.ok) throw new Error(`Live Challenge API: ${res.status}`);
                 const data = await res.json();
-                console.log('[BetterMetas] API Response (Live Challenge):', data);
-
-                // Get current round's panorama
+                
                 const currentRoundIndex = (data.currentRoundNumber || 1) - 1;
                 const rounds = data.rounds || [];
-                if (rounds[currentRoundIndex]) {
-                    const panorama = rounds[currentRoundIndex].question?.panoramaQuestionPayload?.panorama;
-                    panoid = panorama?.panoId || rounds[currentRoundIndex].panoId || rounds[currentRoundIndex].location?.panoId;
-                    if (panoid) panoid = decodePanoId(panoid);
-                }
+                currentRoundData = rounds[currentRoundIndex];
             } else {
-                // Regular game or challenge - try v3 API
                 let apiUrl;
                 if (isChallenge) {
                     apiUrl = `https://www.geoguessr.com/api/v3/challenges/${gameId}/game`;
@@ -966,26 +1009,32 @@
                 const res = await fetch(apiUrl, { credentials: 'include' });
                 if (!res.ok) throw new Error(`v3 API: ${res.status}`);
                 const data = await res.json();
-                console.log('[BetterMetas] API Response (v3):', data);
-
-                // Try multiple field paths
+                
                 const rounds = data.rounds || [];
                 if (rounds.length > 0) {
-                    const lastRound = rounds[rounds.length - 1];
-                    panoid = lastRound.panoId || 
-                             lastRound.location?.panoId || 
-                             lastRound.streakLocationCode;
-                    if (panoid) panoid = decodePanoId(panoid);
+                    // Standard games and Maps often return an array of ALL rounds (past and future).
+                    // We must find the CURRENT round index to get the correct location.
+                    // 'data.round' (or 'data.currentRound') is 1-indexed.
+                    // Fallback to rounds.length covers cases where we might be at the end or data structure differs.
+                    const currentRoundIndex = (data.round || data.currentRound || rounds.length) - 1;
+                    /* console.log(`[BetterMetas] v3 API: round=${data.round}, currentRound=${data.currentRound}, using index=${currentRoundIndex}, total rounds=${rounds.length}`); */
+                    currentRoundData = rounds[currentRoundIndex];
                 }
             }
 
-            if (panoid) {
-                console.log(`[BetterMetas] Recovered Panoid: ${panoid}`);
-                checkLocation(panoid);
-                updateStatus(`ID: ${panoid.substring(0,12)}...`);
+            if (currentRoundData) {
+                panoid = getCanonicalPanoId(currentRoundData);
+                console.log(`[BetterMetas] ID Recovery: Extracted=${panoid}`);
+                
+                // Only update if legitimate (remove old lock logic, trust the new robust extraction)
+                if (panoid) {
+                    checkLocation(panoid);
+                } else {
+                     updateStatus('Panoid Not Found in Round');
+                }
             } else {
-                console.warn('[BetterMetas] Could not extract panoid from API response');
-                updateStatus('Panoid Not Found');
+                console.warn('[BetterMetas] Could not extract round data');
+                updateStatus('Round Data Not Found');
             }
 
         } catch (e) {
@@ -996,26 +1045,31 @@
 
     // Hacky polling for Panoid & Visibility
     function startObserver() {
-         // Active recovery on load if on result screen
-         if (isRoundResult()) {
+         if (isRoundResult() && !currentPanoid) {
              setTimeout(tryRecoverPanoid, 1000);
          }
 
          const originalFetch = window.fetch;
          window.fetch = async function(url, options) {
              const response = await originalFetch(url, options);
-             const clone = response.clone();
+             if (!url || typeof url.toString !== 'function') return response;
+             
+             const urlStr = url.toString();
 
-             if (url && url.toString().includes('Geoguessr') && url.toString().includes('Game')) {
+             // Intercept Game calls
+             if (urlStr.includes('geoguessr.com') && (urlStr.includes('/games/') || urlStr.includes('/game'))) {
+                 const clone = response.clone();
                  clone.json().then(data => {
                      if (data.rounds && data.rounds.length > 0) {
-                         const currentRound = data.rounds[data.rounds.length - 1];
-                         if (currentRound) {
-                             let pId = currentRound.panoid || currentRound.panoId || currentRound.location?.panoId;
-                             if (pId) {
-                                 pId = decodePanoId(pId);
-                                 checkLocation(pId);
-                             }
+                          // Maps/Standard games return all rounds in the array.
+                          // We use 'data.round' or 'data.currentRound' (1-based) to identify the current active round.
+                          const currentRoundIndex = (data.round || data.currentRound || data.rounds.length) - 1;
+                          /* console.log(`[BetterMetas] Intercepted: round=${data.round}, currentRound=${data.currentRound}, index=${currentRoundIndex}`); */
+                          const currentRound = data.rounds[currentRoundIndex];
+                         const pId = getCanonicalPanoId(currentRound);
+                         if (pId) {
+                             console.log(`[BetterMetas] Intercepted ID: ${pId}`);
+                             checkLocation(pId);
                          }
                      }
                  }).catch(() => {});
@@ -1038,7 +1092,7 @@
              }
              wasResult = isResult;
 
-             // If visible (on result screen) and no Panoid, try to recover
+             // Only try to recover if we don't have one and we are visible
              const hud = document.getElementById('gg-meta-hud');
              if (hud && hud.style.display !== 'none' && !currentPanoid) {
                  tryRecoverPanoid();
@@ -1113,11 +1167,19 @@
             if (locLoaded && metasLoaded) {
                 const locCount = Object.keys(locationMap).length;
                 console.log(`[BetterMetas] DB Ready: ${locCount} locs, ${metasData.length} metas.`);
-                updateStatus(`DB Ready (${metasData.length} metas)`);
+                // If we have a locked panoid, re-check it against new data
                 if (currentPanoid) {
-                    const temp = currentPanoid;
-                    currentPanoid = null;
-                    checkLocation(temp);
+                     updateStatus(`ID: ${currentPanoid.substring(0,12)}...`);
+                     // Force re-check of metas for this ID
+                     const metaIds = locationMap[currentPanoid] || [];
+                     if (metaIds.length > 0) {
+                         const metas = metaIds.map(id => metasData.find(m => m.id === id)).filter(Boolean);
+                         updateHUD(metas);
+                     } else {
+                         updateHUD(null);
+                     }
+                } else {
+                     updateStatus(`DB Ready (${metasData.length} metas)`);
                 }
             }
         }
@@ -1141,3 +1203,4 @@
     init();
 
 })();
+
