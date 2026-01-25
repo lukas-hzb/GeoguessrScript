@@ -7,6 +7,8 @@
 // @match        https://www.geoguessr.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=geoguessr.com
 // @grant        GM_xmlhttpRequest
+// @connect      raw.githubusercontent.com
+// @connect      api.github.com
 // ==/UserScript==
 
 (function() {
@@ -17,8 +19,8 @@
     const REPO_NAME = 'GeoguessrScript';
     const LOCATIONS_FILE = 'data/locations.json';
     const METAS_FILE = 'data/metas.json';
-    const RAW_LOCATIONS_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${LOCATIONS_FILE}`;
-    const RAW_METAS_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${METAS_FILE}`;
+    const getRawLocationsUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${LOCATIONS_FILE}?t=${Date.now()}`;
+    const getRawMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${METAS_FILE}?t=${Date.now()}`;
     const API_LOCATIONS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${LOCATIONS_FILE}`;
     const API_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${METAS_FILE}`;
     
@@ -26,17 +28,7 @@
     let metasData = [];    // [{id, title, desc, ...}]
     let currentPanoid = null;
 
-    // Fallback data for local testing
-    const FALLBACK_METAS = [
-        {
-            "id": "meta_demo_001",
-            "type": "hint",
-            "title": "Welcome to BetterMetas",
-            "description": "This is a placeholder. Push your code to GitHub to load real data!",
-            "tags": ["demo"]
-        }
-    ];
-    const FALLBACK_LOCATIONS = { "DEMO_PANOID": ["meta_demo_001"] };
+
 
     // --- Styles ---
     const STYLES = `
@@ -117,7 +109,7 @@
             margin-bottom: 0;
             padding-bottom: 0;
         }
-        #gg-meta-add-btn {
+        #gg-meta-add-btn, #gg-settings-btn {
             background: rgba(255, 255, 255, 0.2);
             border: none;
             color: white;
@@ -127,9 +119,16 @@
             font-size: 0.75rem;
             font-weight: bold;
             transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        #gg-meta-add-btn:hover {
+        #gg-meta-add-btn:hover, #gg-settings-btn:hover {
             background: rgba(255, 255, 255, 0.4);
+        }
+        #gg-settings-btn {
+            padding: 4px 8px;
+            margin-right: 8px;
         }
         .gg-status-msg {
             font-size: 0.75em;
@@ -234,18 +233,7 @@
             word-break: break-all;
             border: 1px solid rgba(255,255,255,0.1);
         }
-        #gg-settings-btn {
-            background: transparent;
-            border: none;
-            color: rgba(255,255,255,0.4);
-            cursor: pointer;
-            font-size: 1.2rem;
-            padding: 0 8px;
-            transition: color 0.2s;
-        }
-        #gg-settings-btn:hover {
-            color: #fff;
-        }
+
         .gg-spinner {
             display: inline-block;
             width: 12px;
@@ -278,14 +266,19 @@
             <div class="gg-meta-title">
                 <span>BetterMetas</span>
                 <div style="display:flex; align-items:center;">
-                    <button id="gg-settings-btn" title="Settings">Settings</button>
+                    <button id="gg-settings-btn" title="Settings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </button>
+                    <button id="gg-refresh-btn" title="Refresh Data" style="background:transparent; border:none; color:white; cursor:pointer; padding:4px; margin-right:8px; display:flex; align-items:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+                    </button>
                     <button id="gg-meta-add-btn">+ Add</button>
                 </div>
             </div>
             <div id="gg-meta-container" class="gg-meta-content">
                 <div style="color: #ccc; font-style: italic;">Waiting for location...</div>
             </div>
-            <div id="gg-status" class="gg-status-msg">Waiting for location...</div>
+            <div id="gg-status" class="gg-status-msg" style="cursor:pointer;" title="Click to retry finding location">Waiting for location...</div>
         `;
         document.body.appendChild(hud);
 
@@ -416,6 +409,15 @@
 
         document.getElementById('meta-generate-btn').addEventListener('click', generateJSON);
 
+        document.getElementById('gg-refresh-btn').addEventListener('click', () => {
+            fetchLocationData();
+        });
+
+        document.getElementById('gg-status').addEventListener('click', () => {
+            updateStatus('Finding location...');
+            tryRecoverPanoid();
+        });
+
         // --- Existing Metas Browser ---
         document.getElementById('meta-search').addEventListener('input', (e) => {
             renderExistingMetas(e.target.value);
@@ -474,12 +476,36 @@
 
         // Admin Mode: Direct API
         updateStatus('Linking meta...');
+        
         try {
-            const res = await fetch(API_LOCATIONS_URL, {
-                headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
-            });
-            if (!res.ok) throw new Error('Fetch failed');
-            const data = await res.json();
+            // Helper for GitHub API via GM_xmlhttpRequest
+            const ghAPI = (url, method = 'GET', body = null) => {
+                return new Promise((resolve, reject) => {
+                    GM_xmlhttpRequest({
+                        method,
+                        url,
+                        headers: {
+                            'Authorization': `token ${token}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        data: body ? JSON.stringify(body) : null,
+                        onload: (res) => {
+                            if (res.status >= 200 && res.status < 300) {
+                                try {
+                                    const data = JSON.parse(res.responseText);
+                                    resolve(data);
+                                } catch(e) { resolve(res.responseText); }
+                            } else {
+                                reject(new Error(`GitHub API ${res.status}: ${res.statusText}`));
+                            }
+                        },
+                        onerror: (err) => reject(err)
+                    });
+                });
+            };
+
+            const data = await ghAPI(API_LOCATIONS_URL);
             let locations = JSON.parse(decodeURIComponent(escape(window.atob(data.content.replace(/\n/g, "")))));
 
             if (!locations[panoid]) locations[panoid] = [];
@@ -488,12 +514,11 @@
             }
 
             const contentBase64 = window.btoa(unescape(encodeURIComponent(JSON.stringify(locations, null, 2))));
-            const putRes = await fetch(API_LOCATIONS_URL, {
-                method: 'PUT',
-                headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: `Link ${metaId} to ${panoid} via BetterMetas`, content: contentBase64, sha: data.sha })
+            await ghAPI(API_LOCATIONS_URL, 'PUT', { 
+                message: `Link ${metaId} to ${panoid} via BetterMetas`, 
+                content: contentBase64, 
+                sha: data.sha 
             });
-            if (!putRes.ok) throw new Error('Commit failed');
 
             updateStatus('Linked!');
             document.getElementById('gg-meta-modal').style.display = 'none';
@@ -501,6 +526,7 @@
         } catch (e) {
             console.error(e);
             alert(`Error: ${e.message}`);
+            updateStatus('Link Failed');
         }
     }
 
@@ -579,34 +605,43 @@
         output.style.display = 'none';
 
         try {
-            // Helper to get file via API
-            async function getFile(apiUrl) {
-                const res = await fetch(apiUrl, {
-                    headers: { 
-                        'Authorization': `token ${token}`,
-                        'Accept': 'application/vnd.github.v3+json'
-                    }
+            // Helper for GitHub API via GM_xmlhttpRequest
+            const ghAPI = (url, method = 'GET', body = null) => {
+                return new Promise((resolve, reject) => {
+                    GM_xmlhttpRequest({
+                        method,
+                        url,
+                        headers: {
+                            'Authorization': `token ${token}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        data: body ? JSON.stringify(body) : null,
+                        onload: (res) => {
+                            if (res.status >= 200 && res.status < 300) {
+                                try {
+                                    const data = JSON.parse(res.responseText);
+                                    resolve(data);
+                                } catch(e) { resolve(res.responseText); }
+                            } else {
+                                reject(new Error(`GitHub API ${res.status}: ${res.statusText}`));
+                            }
+                        },
+                        onerror: (err) => reject(err)
+                    });
                 });
-                if (!res.ok) throw new Error(`Fetch ${apiUrl} failed: ${res.status}`);
-                const data = await res.json();
+            };
+
+            const getFile = async (apiUrl) => {
+                const data = await ghAPI(apiUrl);
                 const content = decodeURIComponent(escape(window.atob(data.content.replace(/\n/g, ""))));
                 return { sha: data.sha, content: JSON.parse(content) };
-            }
+            };
 
-            // Helper to put file via API
-            async function putFile(apiUrl, sha, content, message) {
+            const putFile = async (apiUrl, sha, content, message) => {
                 const contentBase64 = window.btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
-                const res = await fetch(apiUrl, {
-                    method: 'PUT',
-                    headers: {
-                        'Authorization': `token ${token}`,
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ message, content: contentBase64, sha })
-                });
-                if (!res.ok) throw new Error(`Commit ${apiUrl} failed: ${res.status}`);
-                return res.json();
-            }
+                return await ghAPI(apiUrl, 'PUT', { message, content: contentBase64, sha });
+            };
 
             // 1. Fetch both files
             updateStatus('Fetching metas.json...');
@@ -715,18 +750,36 @@
     }
 
     function checkLocation(panoid) {
-        if (!panoid || panoid === currentPanoid) return;
+        if (!panoid) return;
+        const changed = (panoid !== currentPanoid);
         currentPanoid = panoid;
-        showDebug(`New Location: ${panoid}`);
-        updateStatus(`ID: ${panoid.substring(0,10)}...`);
+        
+        if (changed) {
+            console.log('[BetterMetas] New Location detected:', panoid);
+            updateStatus(`ID: ${panoid.substring(0,12)}...`);
+        }
+
+        // If data isn't loaded yet, we'll wait for checkDataLoaded to trigger us
+        if (Object.keys(locationMap).length === 0) {
+            console.log('[BetterMetas] Data not loaded yet, waiting...');
+            return;
+        }
 
         // Join: locationMap[panoid] -> metaIds -> metasData
         const metaIds = locationMap[panoid] || [];
+        console.log(`[BetterMetas] Found ${metaIds.length} meta IDs for this location.`);
+        
         if (metaIds.length > 0) {
-            const metas = metaIds.map(id => metasData.find(m => m.id === id)).filter(Boolean);
-            console.log('Match found!', metas);
+            const metas = metaIds.map(id => {
+                const found = metasData.find(m => m.id === id);
+                if (!found) console.warn('[BetterMetas] Could not find meta data for ID:', id);
+                return found;
+            }).filter(Boolean);
+            
+            console.log('[BetterMetas] Match found!', metas);
             updateHUD(metas);
         } else {
+            console.log('[BetterMetas] No hints linked to this panoid in our map.');
             updateHUD(null);
         }
     }
@@ -803,15 +856,15 @@
                 const res = await fetch(apiUrl, { credentials: 'include' });
                 if (!res.ok) throw new Error(`Live Challenge API: ${res.status}`);
                 const data = await res.json();
+                console.log('[BetterMetas] API Response (Live Challenge):', data);
 
                 // Get current round's panorama
-                const currentRound = (data.currentRoundNumber || 1) - 1;
+                const currentRoundIndex = (data.currentRoundNumber || 1) - 1;
                 const rounds = data.rounds || [];
-                if (rounds[currentRound]) {
-                    const panorama = rounds[currentRound].question?.panoramaQuestionPayload?.panorama;
-                    if (panorama?.panoId) {
-                        panoid = decodePanoId(panorama.panoId);
-                    }
+                if (rounds[currentRoundIndex]) {
+                    const panorama = rounds[currentRoundIndex].question?.panoramaQuestionPayload?.panorama;
+                    panoid = panorama?.panoId || rounds[currentRoundIndex].panoId || rounds[currentRoundIndex].location?.panoId;
+                    if (panoid) panoid = decodePanoId(panoid);
                 }
             } else {
                 // Regular game or challenge - try v3 API
@@ -825,15 +878,14 @@
                 const res = await fetch(apiUrl, { credentials: 'include' });
                 if (!res.ok) throw new Error(`v3 API: ${res.status}`);
                 const data = await res.json();
+                console.log('[BetterMetas] API Response (v3):', data);
 
                 // Try multiple field paths
                 const rounds = data.rounds || [];
                 if (rounds.length > 0) {
                     const lastRound = rounds[rounds.length - 1];
-                    // v3 API uses different field names
                     panoid = lastRound.panoId || 
-                             lastRound.panoid || 
-                             lastRound.location?.panoId ||
+                             lastRound.location?.panoId || 
                              lastRound.streakLocationCode;
                     if (panoid) panoid = decodePanoId(panoid);
                 }
@@ -882,7 +934,12 @@
          // UI Poller
          setInterval(() => {
              updateVisibility();
-         }, 500);
+             // If we are visible but have no Panoid yet, try to recover it
+             const hud = document.getElementById('gg-meta-hud');
+             if (hud && hud.style.display !== 'none' && !currentPanoid) {
+                 tryRecoverPanoid();
+             }
+         }, 1000);
 
          console.log('[Geoguessr Meta] Observer started.');
     }
@@ -891,7 +948,7 @@
     // --- Data Fetching ---
     function fetchLocationData() {
         console.log('[BetterMetas] Fetching data...');
-        updateStatus('Fetching database...');
+        updateStatus('Loading DB...');
 
         let locLoaded = false;
         let metasLoaded = false;
@@ -899,7 +956,7 @@
         // Fetch Locations Map
         GM_xmlhttpRequest({
             method: "GET",
-            url: RAW_LOCATIONS_URL,
+            url: getRawLocationsUrl(),
             onload: function(response) {
                 if (response.status === 200) {
                     try {
@@ -925,7 +982,7 @@
         // Fetch Metas Collection
         GM_xmlhttpRequest({
             method: "GET",
-            url: RAW_METAS_URL,
+            url: getRawMetasUrl(),
             onload: function(response) {
                 if (response.status === 200) {
                     try {
@@ -950,19 +1007,21 @@
 
         function checkDataLoaded() {
             if (locLoaded && metasLoaded) {
-                updateStatus(`DB Loaded (${Object.keys(locationMap).length} locs, ${metasData.length} metas)`);
+                const locCount = Object.keys(locationMap).length;
+                console.log(`[BetterMetas] DB Ready: ${locCount} locs, ${metasData.length} metas.`);
+                updateStatus(`DB Ready (${metasData.length} metas)`);
+                if (currentPanoid) {
+                    const temp = currentPanoid;
+                    currentPanoid = null;
+                    checkLocation(temp);
+                }
             }
         }
     }
 
     function useFallback(reason) {
-        console.warn(`[BetterMetas] Using fallback data. Reason: ${reason}`);
-        locationMap = FALLBACK_LOCATIONS;
-        metasData = FALLBACK_METAS;
-        updateStatus(`Offline Mode (${reason})`);
-
-        // Show demo data immediately so user sees SOMETHING
-        updateHUD(FALLBACK_METAS);
+        console.warn(`[BetterMetas] Could not load data. Reason: ${reason}`);
+        updateStatus(`Offline (${reason})`);
     }
 
     // --- Initialization ---
