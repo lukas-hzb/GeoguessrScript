@@ -1,0 +1,107 @@
+name: Add Location from Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-location:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, '[Meta Submission]')
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
+      - name: Parse Issue and Update Data
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const issueBody = context.payload.issue.body;
+            
+            // Extract JSON from code block
+            const jsonMatch = issueBody.match(/```json\s*([\s\S]*?)\s*```/);
+            if (!jsonMatch) {
+              console.log("No JSON block found.");
+              return;
+            }
+            
+            let newEntry;
+            try {
+              newEntry = JSON.parse(jsonMatch[1]);
+            } catch (e) {
+              console.error("Invalid JSON:", e);
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: "❌ **Error**: Invalid JSON format."
+              });
+              return;
+            }
+            
+            // Load existing data
+            const DATA_FILE = 'data/locations.json';
+            let data = [];
+            if (fs.existsSync(DATA_FILE)) {
+              data = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+            }
+            
+            // Append or Merge
+            const existingIndex = data.findIndex(d => d.id === newEntry.id);
+            if (existingIndex !== -1) {
+                // Merge metas
+                if (newEntry.metas) {
+                   data[existingIndex].metas.push(...newEntry.metas);
+                }
+            } else {
+                data.push(newEntry);
+            }
+            
+            // Save back
+            fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
+            
+            // Export result for commit step
+            return "SUCCESS";
+
+      - name: Commit and Push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/locations.json
+          git commit -m "Auto-add meta from Issue #${{ github.event.issue.number }}" || echo "No changes to commit"
+          git push
+
+      - name: Close Issue
+        uses: actions/github-script@v6
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "✅ **Success**: Meta added to database!"
+            });
+            
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
+            
+            // Lock the issue to prevent spam
+            try {
+              await github.rest.issues.lock({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                lock_reason: 'resolved'
+              });
+            } catch (e) {
+              console.log("Could not lock issue (token might lack permission), but it is closed.");
+            }

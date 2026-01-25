@@ -403,15 +403,34 @@
         
         // Save to GitHub
         const token = localStorage.getItem('gg_gh_token');
+        
+        // --- COMMUNITY MODE (No Token) ---
         if (!token) {
-            alert("No GitHub Token found! Please go to Settings (gear icon) and add your PAT.");
-            // Fallback to copy-paste
             const jsonStr = JSON.stringify(newEntry, null, 2);
-            output.textContent = "Token missing. Copy this:\n" + jsonStr + ',';
-            output.style.display = 'block';
+            
+            // Create Issue URL
+            const repo = `${REPO_OWNER}/${REPO_NAME}`;
+            const title = encodeURIComponent(`[Meta Submission] ${newEntry.id}`);
+            const body = encodeURIComponent(
+                `Here is a new meta submission:\n\n` +
+                `\`\`\`json\n${jsonStr}\n\`\`\`\n\n` +
+                `_(Automated submission via BetterMetas Script)_`
+            );
+            
+            const issueUrl = `https://github.com/${repo}/issues/new?title=${title}&body=${body}`;
+            
+            if (confirm("No GitHub Token found. Submit this as a Community Contribution via GitHub Issues?")) {
+                window.open(issueUrl, '_blank');
+                document.getElementById('gg-meta-modal').style.display = 'none';
+            } else {
+                 // Fallback to copy-paste
+                output.textContent = "Token missing. Copy this:\n" + jsonStr + ',';
+                output.style.display = 'block';
+            }
             return;
         }
 
+        // --- ADMIN MODE (Token Present) ---
         btn.disabled = true;
         btn.innerHTML = '<span class="gg-spinner"></span>Saving...';
         output.style.display = 'none';
