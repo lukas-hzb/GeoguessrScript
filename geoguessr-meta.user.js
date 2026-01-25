@@ -43,30 +43,20 @@
             max-height: 80vh;
             overflow-y: auto;
             
-            background: rgba(20, 20, 20, 0.8); /* Darker/different background as requested - but user said "lighter"? "zu dunkel" -> lighter */
-            /* User said "zu dunkel" (too dark). 0.65 is semi-transparent. 
-               Let's try a bit lighter but still readable. 
-               Actually user said "lighter background", let's try 0.5 opacity or a slightly lighter grey. 
-               But also "reduce blur".
-            */
-            background: rgba(40, 40, 45, 0.9); /* Less see-through (more solid) to reduce reliance on blur? 
-               Or "zu dunkel" means the grey is too black. 
-               Let's go with a lighter grey/charcoal. */
-            background: rgba(60, 60, 65, 0.95); 
-            
+            background: rgba(20, 20, 20, 0.3);
             color: #fff;
             padding: 12px 16px;
-            border-radius: 12px; /* More standard radius? User didn't specify, keeping 24px is fine but 12px fits Neo Sans better usually. Let's stick to 24px as it was rounded. */
             border-radius: 16px;
             
             z-index: 99999;
             font-family: 'Neo Sans', 'Segoe UI', sans-serif;
-            /* backdrop-filter: blur(5px); REMOVED as requested */
+            font-weight: 700; /* Match Add+ button style */
             
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: none;
             display: block !important;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            transition: none; /* Removed hover transition */
+            box-shadow: none;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+            transition: none;
             
             /* Custom Scrollbar for sleek look */
             scrollbar-width: thin;
