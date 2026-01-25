@@ -1,6 +1,7 @@
 vorlage.txt
 description.md
 DESCRIPTION.md
+NOTES.md
 .DS_Store
 sync.sh
 clear_db.sh
