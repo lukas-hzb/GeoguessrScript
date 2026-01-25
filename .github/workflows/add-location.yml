@@ -116,7 +116,7 @@ jobs:
             // Save both files
             fs.writeFileSync(METAS_FILE, JSON.stringify(metas, null, 2));
             fs.writeFileSync(LOCATIONS_FILE, JSON.stringify(locations, null, 2));
-            console.log(`Added meta ${newMeta.id} and linked to ${panoid}`);
+            console.log(`Successfully processed ${submission.action} for ${panoid}`);
             return "SUCCESS";
 
       - name: Commit and Push
