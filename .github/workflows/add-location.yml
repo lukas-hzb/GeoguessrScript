@@ -60,9 +60,9 @@ jobs:
               return;
             }
             
-            // Validate new submission format
-            if (!submission.action || !submission.panoid || !submission.meta) {
-                core.setFailed("Invalid submission format. Expected: {action, panoid, meta}");
+            // Validate submission format
+            if (!submission.action || !submission.panoid) {
+                core.setFailed("Invalid submission format. Expected: {action, panoid, ...}");
                 return;
             }
 
@@ -80,19 +80,37 @@ jobs:
               metas = JSON.parse(fs.readFileSync(METAS_FILE, 'utf8'));
             }
             
-            // Add meta to metas.json
-            const newMeta = submission.meta;
-            if (!metas.find(m => m.id === newMeta.id)) {
-                metas.push(newMeta);
-            }
-            
-            // Link panoid to meta in locations.json
             const panoid = submission.panoid;
-            if (!locations[panoid]) {
-                locations[panoid] = [];
-            }
-            if (!locations[panoid].includes(newMeta.id)) {
-                locations[panoid].push(newMeta.id);
+
+            if (submission.action === "add_meta") {
+                // Add new meta to metas.json
+                const newMeta = submission.meta;
+                if (!newMeta || !newMeta.id) {
+                    core.setFailed("add_meta: Missing meta object or meta.id");
+                    return;
+                }
+                if (!metas.find(m => m.id === newMeta.id)) {
+                    metas.push(newMeta);
+                }
+                // Link panoid to new meta
+                if (!locations[panoid]) locations[panoid] = [];
+                if (!locations[panoid].includes(newMeta.id)) {
+                    locations[panoid].push(newMeta.id);
+                }
+            } else if (submission.action === "link_meta") {
+                // Link existing meta to panoid
+                const metaId = submission.metaId;
+                if (!metaId) {
+                    core.setFailed("link_meta: Missing metaId");
+                    return;
+                }
+                if (!locations[panoid]) locations[panoid] = [];
+                if (!locations[panoid].includes(metaId)) {
+                    locations[panoid].push(metaId);
+                }
+            } else {
+                core.setFailed(`Unknown action: ${submission.action}`);
+                return;
             }
             
             // Save both files

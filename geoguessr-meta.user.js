@@ -342,8 +342,22 @@
                 <input type="text" id="meta-tags" class="gg-form-input" placeholder="car, snorkel, gen3">
             </div>
 
-            <button class="gg-btn-primary" id="meta-generate-btn">Generate JSON</button>
+            <div class="gg-form-group">
+                <label class="gg-form-label">Image (optional, paste URL)</label>
+                <input type="text" id="meta-image" class="gg-form-input" placeholder="https://...">
+            </div>
+
+            <button class="gg-btn-primary" id="meta-generate-btn">Save New Meta</button>
             <div id="gg-json-output"></div>
+
+            <hr style="border:0; border-top:1px solid rgba(255,255,255,0.2); margin: 16px 0;">
+
+            <div class="gg-modal-header" style="font-size:0.9rem;">Or Link Existing Meta</div>
+            <div class="gg-form-group">
+                <input type="text" id="meta-search" class="gg-form-input" placeholder="Search metas by title...">
+            </div>
+            <div id="gg-existing-metas" style="max-height: 150px; overflow-y: auto; font-size: 0.8rem;"></div>
+
             <button class="gg-btn-secondary" id="meta-close-btn">Close</button>
         `;
         // Stop propagation for inputs to prevent game shortcuts
@@ -372,6 +386,7 @@
             }
             document.getElementById('gg-meta-modal').style.display = 'block';
             document.getElementById('gg-json-output').style.display = 'none';
+            renderExistingMetas(); // Populate existing metas list
         });
 
         document.getElementById('gg-settings-btn').addEventListener('click', () => {
@@ -400,6 +415,93 @@
         });
 
         document.getElementById('meta-generate-btn').addEventListener('click', generateJSON);
+
+        // --- Existing Metas Browser ---
+        document.getElementById('meta-search').addEventListener('input', (e) => {
+            renderExistingMetas(e.target.value);
+        });
+    }
+
+    function renderExistingMetas(searchTerm = '') {
+        const container = document.getElementById('gg-existing-metas');
+        if (!container) return;
+
+        const filtered = metasData.filter(m => 
+            m.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            (m.tags || []).some(t => t.toLowerCase().includes(searchTerm.toLowerCase()))
+        );
+
+        if (filtered.length === 0) {
+            container.innerHTML = '<div style="color:#aaa; padding:8px;">No metas found.</div>';
+            return;
+        }
+
+        container.innerHTML = filtered.map(m => `
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.1);">
+                <div>
+                    <strong>${m.title}</strong>
+                    <div style="font-size:0.7em; color:#aaa;">${(m.tags || []).join(', ')}</div>
+                </div>
+                <button class="gg-btn-link-meta" data-meta-id="${m.id}" style="font-size:0.7rem; padding:4px 8px;">Link</button>
+            </div>
+        `).join('');
+
+        // Add click handlers
+        container.querySelectorAll('.gg-btn-link-meta').forEach(btn => {
+            btn.addEventListener('click', () => linkExistingMeta(btn.dataset.metaId));
+        });
+    }
+
+    async function linkExistingMeta(metaId) {
+        const panoid = currentPanoid;
+        if (!panoid || panoid === "YOUR_PANOID_HERE") {
+            alert("No location detected! Please try on a game result screen.");
+            return;
+        }
+
+        const token = localStorage.getItem('gg_gh_token');
+        if (!token) {
+            // Community Mode: Open Issue
+            const submission = { action: "link_meta", panoid: panoid, metaId: metaId };
+            const jsonStr = JSON.stringify(submission, null, 2);
+            const repo = `${REPO_OWNER}/${REPO_NAME}`;
+            const issueTitle = encodeURIComponent(`[Link Meta] ${metaId} to ${panoid.substring(0,15)}`);
+            const body = encodeURIComponent(`## Link Existing Meta\n\n\`\`\`json\n${jsonStr}\n\`\`\`\n\n_(Automated)_`);
+            const issueUrl = `https://github.com/${repo}/issues/new?title=${issueTitle}&body=${body}`;
+            window.open(issueUrl, '_blank');
+            return;
+        }
+
+        // Admin Mode: Direct API
+        updateStatus('Linking meta...');
+        try {
+            const res = await fetch(API_LOCATIONS_URL, {
+                headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+            });
+            if (!res.ok) throw new Error('Fetch failed');
+            const data = await res.json();
+            let locations = JSON.parse(decodeURIComponent(escape(window.atob(data.content.replace(/\n/g, "")))));
+
+            if (!locations[panoid]) locations[panoid] = [];
+            if (!locations[panoid].includes(metaId)) {
+                locations[panoid].push(metaId);
+            }
+
+            const contentBase64 = window.btoa(unescape(encodeURIComponent(JSON.stringify(locations, null, 2))));
+            const putRes = await fetch(API_LOCATIONS_URL, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: `Link ${metaId} to ${panoid} via BetterMetas`, content: contentBase64, sha: data.sha })
+            });
+            if (!putRes.ok) throw new Error('Commit failed');
+
+            updateStatus('Linked!');
+            document.getElementById('gg-meta-modal').style.display = 'none';
+            fetchLocationData();
+        } catch (e) {
+            console.error(e);
+            alert(`Error: ${e.message}`);
+        }
     }
 
     async function generateJSON() {
