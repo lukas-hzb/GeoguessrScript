@@ -5,7 +5,10 @@
     "title": "Example Meta",
     "description": "This is an example hint to test the script.",
     "imageUrl": "",
-    "tags": ["example", "pole"]
+    "tags": [
+      "example",
+      "pole"
+    ]
   },
   {
     "id": "meta_bollard_001",
@@ -13,6 +16,20 @@
     "title": "Austrian Bollard Type 3",
     "description": "Distinctive reflector pattern found in Austria.",
     "imageUrl": "",
-    "tags": ["austria", "bollard"]
+    "tags": [
+      "austria",
+      "bollard"
+    ]
+  },
+  {
+    "id": "meta_1769358015708_gma15",
+    "type": "hint",
+    "title": "Test 4",
+    "description": "fsdfsf",
+    "imageUrl": "",
+    "tags": [
+      "sdfsd",
+      "dfsdfsda"
+    ]
   }
 ]
