@@ -732,76 +732,125 @@
     }
 
     // --- Active Fetching Logic ---
+
+    // Decode hex-encoded panoId (Geoguessr encodes them)
+    function decodePanoId(encoded) {
+        if (!encoded) return null;
+        // Check if it's already a regular string (not hex)
+        if (!/^[0-9a-fA-F]+$/.test(encoded) || encoded.length < 20) {
+            return encoded; // Assume it's not hex-encoded
+        }
+        const len = Math.floor(encoded.length / 2);
+        let panoId = [];
+        for (let i = 0; i < len; i++) {
+            const code = parseInt(encoded.slice(i * 2, i * 2 + 2), 16);
+            const char = String.fromCharCode(code);
+            panoId.push(char);
+        }
+        return panoId.join("");
+    }
+
     async function tryRecoverPanoid() {
         const url = window.location.href;
         let gameId = null;
+        let isLiveChallenge = false;
         let isChallenge = false;
 
-        // Extract ID
+        console.log('[BetterMetas] Attempting to recover Panoid from URL:', url);
+
+        // Extract ID from URL patterns
+        // Live Challenge: /live-challenge/ID
+        // Regular Challenge: /challenge/ID
         // Standard Game: /game/ID
-        // Challenge: /challenge/ID
-        if (url.includes('/game/')) {
-            const parts = url.split('/game/');
-            gameId = parts[1]?.split('/')[0];
+        if (url.includes('/live-challenge/')) {
+            const match = url.match(/\/live-challenge\/([^\/\?]+)/);
+            gameId = match ? match[1] : null;
+            isLiveChallenge = true;
         } else if (url.includes('/challenge/')) {
-            const parts = url.split('/challenge/');
-            gameId = parts[1]?.split('/')[0];
+            const match = url.match(/\/challenge\/([^\/\?]+)/);
+            gameId = match ? match[1] : null;
             isChallenge = true;
+        } else if (url.includes('/game/')) {
+            const match = url.match(/\/game\/([^\/\?]+)/);
+            gameId = match ? match[1] : null;
         }
 
-        // Fallback: Check __NEXT_DATA__ for hydration state
+        // Fallback: Check __NEXT_DATA__
         if (!gameId) {
             try {
                 const nextData = document.getElementById('__NEXT_DATA__');
                 if (nextData) {
                     const json = JSON.parse(nextData.innerHTML);
-                    // Often in json.query.id or json.props.pageProps.game.token
-                    if (json.query && json.query.id) {
-                         gameId = json.query.id;
-                    } else if (json.props?.pageProps?.game?.token) {
-                         gameId = json.props.pageProps.game.token;
-                    }
+                    gameId = json.query?.id || json.props?.pageProps?.game?.token;
                 }
-            } catch(e) { console.log('NextData lookup failed', e); }
+            } catch(e) { console.log('[BetterMetas] NextData lookup failed', e); }
         }
 
         if (!gameId) {
-            console.log('Could not find Game ID from URL or __NEXT_DATA__');
-            updateStatus('ID Recovery Failed');
+            console.log('[BetterMetas] Could not find Game ID');
+            updateStatus('No Game ID Found');
             return;
         }
 
-        console.log(`[GG Meta] Recovering Panoid for GameID: ${gameId} (Chall: ${isChallenge})`);
+        console.log(`[BetterMetas] Found GameID: ${gameId}, LiveCh: ${isLiveChallenge}, Ch: ${isChallenge}`);
 
         try {
-            let apiUrl = '';
-            if (isChallenge) {
-                 apiUrl = `https://www.geoguessr.com/api/v3/challenges/${gameId}/game`; 
+            let panoid = null;
+
+            if (isLiveChallenge) {
+                // Use game-server API for live challenges
+                const apiUrl = `https://game-server.geoguessr.com/api/live-challenge/${gameId}`;
+                const res = await fetch(apiUrl, { credentials: 'include' });
+                if (!res.ok) throw new Error(`Live Challenge API: ${res.status}`);
+                const data = await res.json();
+
+                // Get current round's panorama
+                const currentRound = (data.currentRoundNumber || 1) - 1;
+                const rounds = data.rounds || [];
+                if (rounds[currentRound]) {
+                    const panorama = rounds[currentRound].question?.panoramaQuestionPayload?.panorama;
+                    if (panorama?.panoId) {
+                        panoid = decodePanoId(panorama.panoId);
+                    }
+                }
             } else {
-                 apiUrl = `https://www.geoguessr.com/api/v3/games/${gameId}`;
-            }
+                // Regular game or challenge - try v3 API
+                let apiUrl;
+                if (isChallenge) {
+                    apiUrl = `https://www.geoguessr.com/api/v3/challenges/${gameId}/game`;
+                } else {
+                    apiUrl = `https://www.geoguessr.com/api/v3/games/${gameId}`;
+                }
 
-            const res = await fetch(apiUrl);
-            if (!res.ok) throw new Error(res.statusText + ' ' + res.status);
-            const data = await res.json();
+                const res = await fetch(apiUrl, { credentials: 'include' });
+                if (!res.ok) throw new Error(`v3 API: ${res.status}`);
+                const data = await res.json();
 
-            // Logic to find the current/last round
-            let rounds = data.rounds || [];
-            if (rounds.length > 0) {
-                // Usually the last round in the array is the current/latest one
-                const lastRound = rounds[rounds.length - 1];
-                if (lastRound && lastRound.panoid) {
-                    checkLocation(lastRound.panoid);
-                    updateStatus(`Recovered: ${lastRound.panoid.substring(0,10)}`);
-                    return;
+                // Try multiple field paths
+                const rounds = data.rounds || [];
+                if (rounds.length > 0) {
+                    const lastRound = rounds[rounds.length - 1];
+                    // v3 API uses different field names
+                    panoid = lastRound.panoId || 
+                             lastRound.panoid || 
+                             lastRound.location?.panoId ||
+                             lastRound.streakLocationCode;
+                    if (panoid) panoid = decodePanoId(panoid);
                 }
             }
-            console.warn('[GG Meta] No rounds found in API response', data);
-            updateStatus('No Round Data');
+
+            if (panoid) {
+                console.log(`[BetterMetas] Recovered Panoid: ${panoid}`);
+                checkLocation(panoid);
+                updateStatus(`ID: ${panoid.substring(0,12)}...`);
+            } else {
+                console.warn('[BetterMetas] Could not extract panoid from API response');
+                updateStatus('Panoid Not Found');
+            }
 
         } catch (e) {
-            console.error('[GG Meta] Failed to recover panoid:', e);
-            updateStatus('Loc Recovery Failed');
+            console.error('[BetterMetas] Recovery failed:', e);
+            updateStatus('Recovery Failed');
         }
     }
 
