@@ -40,6 +40,8 @@
             transform: none;
             
             width: 320px;
+            /* HIER ANPASSEN: Höhe des Fensters */
+            height: 70vh; /* Fest auf 70% der Bildschirmhöhe setzen (oder min-height für Mindesthöhe) */
             max-height: 80vh;
             overflow-y: auto;
             
