@@ -4,6 +4,8 @@
 // @version      0.2
 // @description  Displays crowdsourced metas and hints for Geoguessr locations.
 // @author       Lukas Hzb
+// @updateURL    https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main/geoguessr-meta.user.js
+// @downloadURL  https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main/geoguessr-meta.user.js
 // @match        https://www.geoguessr.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=geoguessr.com
 // @grant        GM_xmlhttpRequest
@@ -269,9 +271,7 @@
                     <button id="gg-settings-btn" title="Settings">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
                     </button>
-                    <button id="gg-refresh-btn" title="Refresh Data" style="background:transparent; border:none; color:white; cursor:pointer; padding:4px; margin-right:8px; display:flex; align-items:center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
-                    </button>
+
                     <button id="gg-meta-add-btn">+ Add</button>
                 </div>
             </div>
@@ -421,9 +421,7 @@
 
         document.getElementById('meta-generate-btn').addEventListener('click', generateJSON);
 
-        document.getElementById('gg-refresh-btn').addEventListener('click', () => {
-            fetchLocationData();
-        });
+
 
         document.getElementById('gg-status').addEventListener('click', () => {
             updateStatus('Finding location...');
@@ -547,6 +545,7 @@
         const desc = document.getElementById('meta-desc').value;
         const tagsStr = document.getElementById('meta-tags').value;
         const tags = tagsStr.split(',').map(t => t.trim()).filter(t => t);
+        const imageUrl = document.getElementById('meta-image').value;
         
         if (!title || !desc) {
             alert('Please fill in Title and Description');
@@ -567,7 +566,7 @@
             type: "hint",
             title: title,
             description: desc,
-            imageUrl: "",
+            imageUrl: imageUrl,
             tags: tags
         };
 
