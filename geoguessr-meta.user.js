@@ -310,6 +310,14 @@
         `;
         document.body.appendChild(settingsModal);
 
+        // Stop propagation for Settings inputs
+        const settInputs = settingsModal.querySelectorAll('input');
+        settInputs.forEach(input => {
+            input.addEventListener('keydown', (e) => e.stopPropagation());
+            input.addEventListener('keypress', (e) => e.stopPropagation());
+            input.addEventListener('keyup', (e) => e.stopPropagation());
+        });
+
         // MODAL
         const modal = document.createElement('div');
         modal.id = 'gg-meta-modal';
@@ -335,6 +343,14 @@
             <div id="gg-json-output"></div>
             <button class="gg-btn-secondary" id="meta-close-btn">Close</button>
         `;
+        // Stop propagation for inputs to prevent game shortcuts
+        const inputs = modal.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('keydown', (e) => e.stopPropagation());
+            input.addEventListener('keypress', (e) => e.stopPropagation());
+            input.addEventListener('keyup', (e) => e.stopPropagation());
+        });
+
         document.body.appendChild(modal);
 
         // Event Listeners
