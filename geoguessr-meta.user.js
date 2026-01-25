@@ -43,14 +43,14 @@
             max-height: 80vh;
             overflow-y: auto;
             
-            background: rgba(20, 20, 20, 0.3);
+            background: rgba(0, 0, 0, 0.45); /* "Etwas dunkler" -> Pure black, slightly more opacity but still transparent */
             color: #fff;
             padding: 12px 16px;
             border-radius: 16px;
             
             z-index: 99999;
             font-family: 'Neo Sans', 'Segoe UI', sans-serif;
-            font-weight: 700; /* Match Add+ button style */
+            font-weight: 700; 
             
             border: none;
             display: block !important;
