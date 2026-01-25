@@ -53,7 +53,8 @@
             font-weight: 700; 
             
             border: none;
-            display: block !important;
+            /* display: block !important; Removed to allow JS visibility toggling */
+            display: none; /* Default hidden until round end */
             box-shadow: none;
             text-shadow: 0 1px 4px rgba(0,0,0,0.9);
             transition: none;
@@ -356,6 +357,39 @@
     }
 
     // --- Logic ---
+    function isRanked() {
+        const url = window.location.href;
+        return url.includes('/duels') || 
+               url.includes('/battle-royale') || 
+               url.includes('/team-duels') || 
+               url.includes('/competitive') || 
+               url.includes('/challenge'); // Maybe challenge too? User said "not in ranked". 
+               // keeping it strict to competitive modes usually implies ranked.
+    }
+
+    function isRoundResult() {
+        // Check for common result screen elements
+        // The result screen overlay typically has classes containing "result-layout"
+        return !!document.querySelector('div[class*="result-layout_root__"]') || 
+               !!document.querySelector('div[class*="round-result_root__"]');
+    }
+
+    function updateVisibility() {
+        const hud = document.getElementById('gg-meta-hud');
+        if (!hud) return;
+
+        if (isRanked()) {
+            hud.style.display = 'none';
+            return;
+        }
+
+        if (isRoundResult()) {
+            hud.style.display = 'block';
+        } else {
+            hud.style.display = 'none';
+        }
+    }
+
     function checkLocation(panoid) {
         if (!panoid || panoid === currentPanoid) return;
         currentPanoid = panoid;
@@ -373,7 +407,7 @@
         }
     }
 
-    // Hacky polling for Panoid
+    // Hacky polling for Panoid & Visibility
     function startObserver() {
          const originalFetch = window.fetch;
          window.fetch = async function(url, options) {
@@ -393,8 +427,11 @@
              return response;
          };
          
-         // Also verify URL immediately just in case
-         // (Not reliable in SPA, but worth a shot if page freshly loaded in a game)
+         // UI Poller
+         setInterval(() => {
+             updateVisibility();
+         }, 500);
+         
          console.log('[Geoguessr Meta] Observer started.');
     }
 
