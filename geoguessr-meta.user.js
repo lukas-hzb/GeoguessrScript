@@ -43,13 +43,13 @@
             max-height: 80vh;
             overflow-y: auto;
             
-            background: rgba(0, 0, 0, 0.75); /* "Etwas dunkler" -> Pure black, slightly more opacity but still transparent */
+            background: rgba(0, 0, 0, 0.65); /* "Etwas dunkler" -> Pure black, slightly more opacity but still transparent */
             color: #fff;
             padding: 12px 16px;
             border-radius: 16px;
             
             z-index: 99999;
-            font-family: 'Neo Sans', 'Segoe UI', sans-serif;
+            font-family: inherit !important;
             font-weight: 700; 
             
             border: none;
@@ -61,6 +61,11 @@
             /* Custom Scrollbar for sleek look */
             scrollbar-width: thin;
             scrollbar-color: rgba(255,255,255,0.3) transparent;
+        }
+
+        #gg-meta-hud * {
+            font-family: inherit !important;
+            font-weight: inherit;
         }
         /* Hover effect removed */
         .gg-meta-title {
