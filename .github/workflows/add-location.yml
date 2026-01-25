@@ -26,10 +26,10 @@ jobs:
             const fs = require('fs');
             const issueBody = context.payload.issue.body;
             
-            // Try extracting JSON from code block (with or without 'json' tag)
+            // Try extracting JSON from code block
             let jsonMatch = issueBody.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
             
-            // If that fails, try finding the first { ... } block
+            // Fallback: find first { ... } block
             if (!jsonMatch) {
                 console.log("No code block found, trying raw JSON search...");
                 const firstBrace = issueBody.indexOf('{');
@@ -45,9 +45,9 @@ jobs:
               return;
             }
             
-            let newEntry;
+            let submission;
             try {
-              newEntry = JSON.parse(jsonMatch[1]);
+              submission = JSON.parse(jsonMatch[1]);
             } catch (e) {
               console.error("Invalid JSON:", e);
               core.setFailed("Invalid JSON format.");
@@ -55,39 +55,57 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
-                body: "Error: Invalid JSON format. Usage: \n```json\n{ ... }\n```"
+                body: "Error: Invalid JSON format."
               });
               return;
             }
             
-            // Load existing data
-            const DATA_FILE = 'data/locations.json';
-            let data = [];
-            if (fs.existsSync(DATA_FILE)) {
-              data = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+            // Validate new submission format
+            if (!submission.action || !submission.panoid || !submission.meta) {
+                core.setFailed("Invalid submission format. Expected: {action, panoid, meta}");
+                return;
+            }
+
+            const LOCATIONS_FILE = 'data/locations.json';
+            const METAS_FILE = 'data/metas.json';
+
+            // Load existing files
+            let locations = {};
+            let metas = [];
+            
+            if (fs.existsSync(LOCATIONS_FILE)) {
+              locations = JSON.parse(fs.readFileSync(LOCATIONS_FILE, 'utf8'));
+            }
+            if (fs.existsSync(METAS_FILE)) {
+              metas = JSON.parse(fs.readFileSync(METAS_FILE, 'utf8'));
             }
             
-            // Append or Merge
-            const existingIndex = data.findIndex(d => d.id === newEntry.id);
-            if (existingIndex !== -1) {
-                // Merge metas
-                if (newEntry.metas) {
-                   data[existingIndex].metas.push(...newEntry.metas);
-                }
-            } else {
-                data.push(newEntry);
+            // Add meta to metas.json
+            const newMeta = submission.meta;
+            if (!metas.find(m => m.id === newMeta.id)) {
+                metas.push(newMeta);
             }
             
-            // Save back
-            fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
-            console.log("Successfully wrote to locations.json");
+            // Link panoid to meta in locations.json
+            const panoid = submission.panoid;
+            if (!locations[panoid]) {
+                locations[panoid] = [];
+            }
+            if (!locations[panoid].includes(newMeta.id)) {
+                locations[panoid].push(newMeta.id);
+            }
+            
+            // Save both files
+            fs.writeFileSync(METAS_FILE, JSON.stringify(metas, null, 2));
+            fs.writeFileSync(LOCATIONS_FILE, JSON.stringify(locations, null, 2));
+            console.log(`Added meta ${newMeta.id} and linked to ${panoid}`);
             return "SUCCESS";
 
       - name: Commit and Push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add data/locations.json
+          git add data/locations.json data/metas.json
           git commit -m "Auto-add meta from Issue #${{ github.event.issue.number }}" || echo "No changes to commit"
           git pull --rebase origin main
           git push
@@ -111,7 +129,6 @@ jobs:
               state_reason: 'completed'
             });
             
-            // Lock the issue to prevent spam
             try {
               await github.rest.issues.lock({
                 owner: context.repo.owner,
@@ -120,5 +137,5 @@ jobs:
                 lock_reason: 'resolved'
               });
             } catch (e) {
-              console.log("Could not lock issue (token might lack permission), but it is closed.");
+              console.log("Could not lock issue, but it is closed.");
             }

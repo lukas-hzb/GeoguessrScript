@@ -15,25 +15,28 @@
 
     const REPO_OWNER = 'lukas-hzb';
     const REPO_NAME = 'GeoguessrScript';
-    const FILE_PATH = 'data/locations.json';
-    const RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${FILE_PATH}`;
-    const API_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
+    const LOCATIONS_FILE = 'data/locations.json';
+    const METAS_FILE = 'data/metas.json';
+    const RAW_LOCATIONS_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${LOCATIONS_FILE}`;
+    const RAW_METAS_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${METAS_FILE}`;
+    const API_LOCATIONS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${LOCATIONS_FILE}`;
+    const API_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${METAS_FILE}`;
     
-    let locationData = [];
+    let locationMap = {};  // panoid -> [metaIds]
+    let metasData = [];    // [{id, title, desc, ...}]
     let currentPanoid = null;
 
-    // Fallback data for local testing (so UI works before GitHub repo is live)
-    const FALLBACK_DATA = [
+    // Fallback data for local testing
+    const FALLBACK_METAS = [
         {
-            "id": "EXAMPLE_ID",
-            "tags": ["test", "fallback"],
-            "metas": [{
-                "title": "Welcome to GeoGuessr Meta",
-                "description": "This is a placeholder. Push your code to GitHub to load real data!",
-                "tags": ["demo"]
-            }]
+            "id": "meta_demo_001",
+            "type": "hint",
+            "title": "Welcome to BetterMetas",
+            "description": "This is a placeholder. Push your code to GitHub to load real data!",
+            "tags": ["demo"]
         }
     ];
+    const FALLBACK_LOCATIONS = { "DEMO_PANOID": ["meta_demo_001"] };
 
     // --- Styles ---
     const STYLES = `
@@ -410,15 +413,29 @@
             return;
         }
 
-        const newEntry = {
-            id: currentPanoid || "YOUR_PANOID_HERE",
-            metas: [{
-                type: "hint",
-                tags: tags,
-                title: title,
-                description: desc,
-                imageUrl: ""
-            }]
+        const panoid = currentPanoid || "YOUR_PANOID_HERE";
+        if (panoid === "YOUR_PANOID_HERE") {
+            alert("No location detected! Please try again on a game result screen.");
+            return;
+        }
+
+        // Generate unique meta ID
+        const metaId = `meta_${Date.now()}_${Math.random().toString(36).substr(2, 5)}`;
+
+        const newMeta = {
+            id: metaId,
+            type: "hint",
+            title: title,
+            description: desc,
+            imageUrl: "",
+            tags: tags
+        };
+
+        // For Issue submission, we send both the meta and the panoid to link
+        const submission = {
+            action: "add_meta",
+            panoid: panoid,
+            meta: newMeta
         };
 
         const btn = document.getElementById('meta-generate-btn');
@@ -429,25 +446,26 @@
         
         // --- COMMUNITY MODE (No Token) ---
         if (!token) {
-            const jsonStr = JSON.stringify(newEntry, null, 2);
+            const jsonStr = JSON.stringify(submission, null, 2);
             
             // Create Issue URL
             const repo = `${REPO_OWNER}/${REPO_NAME}`;
-            const title = encodeURIComponent(`[Meta Submission] ${newEntry.id}`);
+            const issueTitle = encodeURIComponent(`[Meta Submission] ${panoid.substring(0,15)}`);
             const body = encodeURIComponent(
-                `Here is a new meta submission:\n\n` +
+                `## New Meta Submission\n\n` +
+                `**Location:** ${panoid}\n\n` +
                 `\`\`\`json\n${jsonStr}\n\`\`\`\n\n` +
                 `_(Automated submission via BetterMetas Script)_`
             );
             
-            const issueUrl = `https://github.com/${repo}/issues/new?title=${title}&body=${body}`;
+            const issueUrl = `https://github.com/${repo}/issues/new?title=${issueTitle}&body=${body}`;
             
             if (confirm("No GitHub Token found. Submit this as a Community Contribution via GitHub Issues?")) {
                 window.open(issueUrl, '_blank');
                 document.getElementById('gg-meta-modal').style.display = 'none';
             } else {
                  // Fallback to copy-paste
-                output.textContent = "Token missing. Copy this:\n" + jsonStr + ',';
+                output.textContent = "Token missing. Copy this:\n" + jsonStr;
                 output.style.display = 'block';
             }
             return;
@@ -459,60 +477,60 @@
         output.style.display = 'none';
 
         try {
-            // 1. Get current file to get SHA (and content to append)
-            updateStatus('Fetching repo...');
-            const getRes = await fetch(API_URL, {
-                headers: { 
-                    'Authorization': `token ${token}`,
-                    'Accept': 'application/vnd.github.v3+json'
-                }
-            });
-
-            if (!getRes.ok) throw new Error(`Fetch failed: ${getRes.status}`);
-            
-            const getData = await getRes.json();
-            const sha = getData.sha;
-            // Decode content (GitHub API returns base64)
-            // Fix for UTF-8 characters: decodeURIComponent(escape(window.atob(str)))
-            const currentContent = decodeURIComponent(escape(window.atob(getData.content.replace(/\n/g, ""))));
-            
-            let dataArr = [];
-            try {
-                dataArr = JSON.parse(currentContent);
-            } catch(e) {
-                console.error("JSON Parse error on repo content", e);
-                dataArr = [];
+            // Helper to get file via API
+            async function getFile(apiUrl) {
+                const res = await fetch(apiUrl, {
+                    headers: { 
+                        'Authorization': `token ${token}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+                if (!res.ok) throw new Error(`Fetch ${apiUrl} failed: ${res.status}`);
+                const data = await res.json();
+                const content = decodeURIComponent(escape(window.atob(data.content.replace(/\n/g, ""))));
+                return { sha: data.sha, content: JSON.parse(content) };
             }
 
-            // 2. Append/Update
-            const existingIndex = dataArr.findIndex(d => d.id === newEntry.id);
-            if (existingIndex !== -1) {
-                // Merge metas
-                dataArr[existingIndex].metas.push(...newEntry.metas);
-            } else {
-                dataArr.push(newEntry);
+            // Helper to put file via API
+            async function putFile(apiUrl, sha, content, message) {
+                const contentBase64 = window.btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
+                const res = await fetch(apiUrl, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message, content: contentBase64, sha })
+                });
+                if (!res.ok) throw new Error(`Commit ${apiUrl} failed: ${res.status}`);
+                return res.json();
             }
 
-            // 3. Commit back
-            const newContentStr = JSON.stringify(dataArr, null, 2);
-            // Encode UTF-8 to Base64
-            const newContentBase64 = window.btoa(unescape(encodeURIComponent(newContentStr)));
+            // 1. Fetch both files
+            updateStatus('Fetching metas.json...');
+            const metasFile = await getFile(API_METAS_URL);
+            
+            updateStatus('Fetching locations.json...');
+            const locsFile = await getFile(API_LOCATIONS_URL);
 
-            updateStatus('Committing...');
-            const putRes = await fetch(API_URL, {
-                method: 'PUT',
-                headers: {
-                    'Authorization': `token ${token}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    message: `Add meta for ${newEntry.id} via BetterMetas`,
-                    content: newContentBase64,
-                    sha: sha
-                })
-            });
+            // 2. Add meta to metas.json
+            metasFile.content.push(newMeta);
 
-            if (!putRes.ok) throw new Error(`Commit failed: ${putRes.status}`);
+            // 3. Link panoid in locations.json
+            if (!locsFile.content[panoid]) {
+                locsFile.content[panoid] = [];
+            }
+            if (!locsFile.content[panoid].includes(newMeta.id)) {
+                locsFile.content[panoid].push(newMeta.id);
+            }
+
+            // 4. Commit metas.json
+            updateStatus('Saving metas.json...');
+            await putFile(API_METAS_URL, metasFile.sha, metasFile.content, `Add meta ${newMeta.id} via BetterMetas`);
+
+            // 5. Commit locations.json
+            updateStatus('Saving locations.json...');
+            await putFile(API_LOCATIONS_URL, locsFile.sha, locsFile.content, `Link ${panoid} to ${newMeta.id} via BetterMetas`);
 
             updateStatus('Saved!');
             btn.innerHTML = 'Saved!';
@@ -528,7 +546,7 @@
             console.error('Save error:', err);
             btn.innerHTML = 'Error';
             btn.disabled = false;
-            output.textContent = `Error saving to GitHub:\n${err.message}\n\nBackup JSON:\n${JSON.stringify(newEntry, null, 2)}`;
+            output.textContent = `Error saving to GitHub:\n${err.message}\n\nBackup JSON:\n${JSON.stringify(submission, null, 2)}`;
             output.style.display = 'block';
             alert(`Error: ${err.message}`);
         }
@@ -600,13 +618,13 @@
         showDebug(`New Location: ${panoid}`);
         updateStatus(`ID: ${panoid.substring(0,10)}...`);
 
-        const match = locationData.find(l => l.id === panoid);
-        if (match) {
-            console.log('Match found!', match);
-            updateHUD(match.metas);
+        // Join: locationMap[panoid] -> metaIds -> metasData
+        const metaIds = locationMap[panoid] || [];
+        if (metaIds.length > 0) {
+            const metas = metaIds.map(id => metasData.find(m => m.id === id)).filter(Boolean);
+            console.log('Match found!', metas);
+            updateHUD(metas);
         } else {
-            // Optional: Check if we have a partial or something?
-            // For now, empty.
             updateHUD(null);
         }
     }
@@ -721,41 +739,79 @@
 
     // --- Data Fetching ---
     function fetchLocationData() {
-        console.log('[Geoguessr Meta] Fetching data...');
+        console.log('[BetterMetas] Fetching data...');
         updateStatus('Fetching database...');
 
+        let locLoaded = false;
+        let metasLoaded = false;
+
+        // Fetch Locations Map
         GM_xmlhttpRequest({
             method: "GET",
-            url: RAW_URL,
+            url: RAW_LOCATIONS_URL,
             onload: function(response) {
                 if (response.status === 200) {
                     try {
-                        locationData = JSON.parse(response.responseText);
-                        console.log(`[Geoguessr Meta] Loaded ${locationData.length} locations.`);
-                        updateStatus(`DB Loaded (${locationData.length} locs)`);
+                        locationMap = JSON.parse(response.responseText);
+                        console.log(`[BetterMetas] Loaded ${Object.keys(locationMap).length} location mappings.`);
+                        locLoaded = true;
+                        checkDataLoaded();
                     } catch (e) {
-                        console.error('[Geoguessr Meta] Error parsing JSON:', e);
-                        useFallback("JSON Parse Error");
+                        console.error('[BetterMetas] Error parsing locations.json:', e);
+                        useFallback("Locations Parse Error");
                     }
                 } else {
-                    console.error('[Geoguessr Meta] Failed to fetch data:', response.statusText);
-                    useFallback("Repo not found (404)");
+                    console.error('[BetterMetas] Failed to fetch locations:', response.statusText);
+                    useFallback("Locations 404");
                 }
             },
             onerror: function(err) {
-                console.error('[Geoguessr Meta] Request error:', err);
-                useFallback("Network Error");
+                console.error('[BetterMetas] Locations request error:', err);
+                useFallback("Network Error (Locations)");
             }
         });
+
+        // Fetch Metas Collection
+        GM_xmlhttpRequest({
+            method: "GET",
+            url: RAW_METAS_URL,
+            onload: function(response) {
+                if (response.status === 200) {
+                    try {
+                        metasData = JSON.parse(response.responseText);
+                        console.log(`[BetterMetas] Loaded ${metasData.length} metas.`);
+                        metasLoaded = true;
+                        checkDataLoaded();
+                    } catch (e) {
+                        console.error('[BetterMetas] Error parsing metas.json:', e);
+                        useFallback("Metas Parse Error");
+                    }
+                } else {
+                    console.error('[BetterMetas] Failed to fetch metas:', response.statusText);
+                    useFallback("Metas 404");
+                }
+            },
+            onerror: function(err) {
+                console.error('[BetterMetas] Metas request error:', err);
+                useFallback("Network Error (Metas)");
+            }
+        });
+
+        function checkDataLoaded() {
+            if (locLoaded && metasLoaded) {
+                updateStatus(`DB Loaded (${Object.keys(locationMap).length} locs, ${metasData.length} metas)`);
+            }
+        }
     }
 
     function useFallback(reason) {
-        console.warn(`[Geoguessr Meta] Using fallback data. Reason: ${reason}`);
-        locationData = FALLBACK_DATA;
+        console.warn(`[BetterMetas] Using fallback data. Reason: ${reason}`);
+        locationMap = FALLBACK_LOCATIONS;
+        metasData = FALLBACK_METAS;
         updateStatus(`Offline Mode (${reason})`);
 
         // Show demo data immediately so user sees SOMETHING
-        updateHUD(locationData[0].metas);
+        updateHUD(FALLBACK_METAS);
     }
 
     // --- Initialization ---

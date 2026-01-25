@@ -1,0 +1,18 @@
+[
+  {
+    "id": "meta_example_001",
+    "type": "hint",
+    "title": "Example Meta",
+    "description": "This is an example hint to test the script.",
+    "imageUrl": "",
+    "tags": ["example", "pole"]
+  },
+  {
+    "id": "meta_bollard_001",
+    "type": "hint",
+    "title": "Austrian Bollard Type 3",
+    "description": "Distinctive reflector pattern found in Austria.",
+    "imageUrl": "",
+    "tags": ["austria", "bollard"]
+  }
+]
