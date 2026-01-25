@@ -43,7 +43,7 @@
             max-height: 80vh;
             overflow-y: auto;
             
-            background: rgba(0, 0, 0, 0.6); /* "Etwas dunkler" -> Pure black, slightly more opacity but still transparent */
+            background: rgba(0, 0, 0, 0.75); /* "Etwas dunkler" -> Pure black, slightly more opacity but still transparent */
             color: #fff;
             padding: 12px 16px;
             border-radius: 16px;
