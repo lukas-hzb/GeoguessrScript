@@ -26,10 +26,22 @@ jobs:
             const fs = require('fs');
             const issueBody = context.payload.issue.body;
             
-            // Extract JSON from code block
-            const jsonMatch = issueBody.match(/```json\s*([\s\S]*?)\s*```/);
+            // Try extracting JSON from code block (with or without 'json' tag)
+            let jsonMatch = issueBody.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
+            
+            // If that fails, try finding the first { ... } block
             if (!jsonMatch) {
-              console.log("No JSON block found.");
+                console.log("No code block found, trying raw JSON search...");
+                const firstBrace = issueBody.indexOf('{');
+                const lastBrace = issueBody.lastIndexOf('}');
+                if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+                    jsonMatch = [null, issueBody.substring(firstBrace, lastBrace + 1)];
+                }
+            }
+
+            if (!jsonMatch) {
+              console.log("No JSON found in body.");
+              core.setFailed("No JSON block found in issue body.");
               return;
             }
             
@@ -38,11 +50,12 @@ jobs:
               newEntry = JSON.parse(jsonMatch[1]);
             } catch (e) {
               console.error("Invalid JSON:", e);
+              core.setFailed("Invalid JSON format.");
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
-                body: "Error: Invalid JSON format."
+                body: "Error: Invalid JSON format. Usage: \n```json\n{ ... }\n```"
               });
               return;
             }
@@ -67,8 +80,7 @@ jobs:
             
             // Save back
             fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
-            
-            // Export result for commit step
+            console.log("Successfully wrote to locations.json");
             return "SUCCESS";
 
       - name: Commit and Push
