@@ -38,7 +38,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
-                body: "❌ **Error**: Invalid JSON format."
+                body: "Error: Invalid JSON format."
               });
               return;
             }
@@ -83,7 +83,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: "✅ **Success**: Meta added to database!"
+              body: "Success: Meta added to database!"
             });
             
             await github.rest.issues.update({

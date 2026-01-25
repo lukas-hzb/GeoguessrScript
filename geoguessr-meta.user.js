@@ -275,7 +275,7 @@
             <div class="gg-meta-title">
                 <span>BetterMetas</span>
                 <div style="display:flex; align-items:center;">
-                    <button id="gg-settings-btn" title="Settings">⚙</button>
+                    <button id="gg-settings-btn" title="Settings">Settings</button>
                     <button id="gg-meta-add-btn">+ Add</button>
                 </div>
             </div>
@@ -492,7 +492,7 @@
             if (!putRes.ok) throw new Error(`Commit failed: ${putRes.status}`);
 
             updateStatus('Saved!');
-            btn.innerHTML = 'Saved! ✓';
+            btn.innerHTML = 'Saved!';
             setTimeout(() => {
                 document.getElementById('gg-meta-modal').style.display = 'none';
                 btn.innerHTML = 'Generate JSON';
