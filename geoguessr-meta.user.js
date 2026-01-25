@@ -301,7 +301,11 @@
                     <div style="font-size:0.7em; color:#aaa; margin-top:4px;">Required to save new metas.</div>
                 </div>
                 <button class="gg-btn-primary" id="gg-save-settings">Save Token</button>
-                <button class="gg-btn-secondary" id="gg-close-settings">Close</button>
+                <div style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;">
+                    <div style="color: #ff6b6b; font-size: 0.8em; margin-bottom: 5px;">Danger Zone</div>
+                    <button class="gg-btn-secondary" id="gg-reset-db" style="border-color: #ff6b6b; color: #ff6b6b;">Reset Database (Clear All)</button>
+                </div>
+                <button class="gg-btn-secondary" id="gg-close-settings" style="margin-top: 10px;">Close</button>
             </div>
         `;
         document.body.appendChild(settingsModal);
@@ -400,7 +404,15 @@
         });
 
         document.getElementById('gg-close-settings').addEventListener('click', () => {
-            document.getElementById('gg-settings-modal').style.display = 'none';
+             document.getElementById('gg-settings-modal').style.display = 'none';
+        });
+
+        document.getElementById('gg-reset-db').addEventListener('click', async () => {
+             if (confirm("ARE YOU SURE? This will DELETE ALL metas and locations from your GitHub repository. This cannot be undone.")) {
+                 if (confirm("Really sure? All date will be lost.")) {
+                     await resetDatabase();
+                 }
+             }
         });
 
         document.getElementById('meta-close-btn').addEventListener('click', () => {
@@ -689,6 +701,82 @@
         }
     }
 
+    async function resetDatabase() {
+        const token = localStorage.getItem('gg_gh_token');
+        if (!token) {
+            alert("No token saved. Cannot reset DB.");
+            return;
+        }
+        
+        updateStatus('Clearing DB...');
+        const btn = document.getElementById('gg-reset-db');
+        const origText = btn.innerText;
+        btn.innerText = "Clearing...";
+        btn.disabled = true;
+
+        try {
+             // Helper for GitHub API
+             const ghAPI = (url, method = 'GET', body = null) => {
+                return new Promise((resolve, reject) => {
+                    GM_xmlhttpRequest({
+                        method,
+                        url,
+                        headers: {
+                            'Authorization': `token ${token}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        data: body ? JSON.stringify(body) : null,
+                        onload: (res) => {
+                            if (res.status >= 200 && res.status < 300) {
+                                try {
+                                    const data = JSON.parse(res.responseText);
+                                    resolve(data);
+                                } catch(e) { resolve(res.responseText); }
+                            } else {
+                                reject(new Error(`GitHub API ${res.status}: ${res.statusText}`));
+                            }
+                        },
+                        onerror: (err) => reject(err)
+                    });
+                });
+            };
+
+            const getSha = async (apiUrl) => {
+                try {
+                    const data = await ghAPI(apiUrl);
+                    return data.sha;
+                } catch (e) { return null; }
+            };
+
+            const putFile = async (apiUrl, sha, content, message) => {
+                const contentBase64 = window.btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
+                const body = { message, content: contentBase64 };
+                if (sha) body.sha = sha;
+                return await ghAPI(apiUrl, 'PUT', body);
+            };
+
+            // 1. Get SHAs
+            const metasSha = await getSha(API_METAS_URL);
+            const locsSha = await getSha(API_LOCATIONS_URL);
+
+            // 2. Overwrite with empty
+            await putFile(API_METAS_URL, metasSha, [], "Reset Database (Metas)");
+            await putFile(API_LOCATIONS_URL, locsSha, {}, "Reset Database (Locations)");
+
+            alert("Database Cleared!");
+            location.reload();
+
+        } catch (e) {
+            console.error(e);
+            alert("Error clearing DB: " + e.message);
+            updateStatus('Reset Failed');
+        } finally {
+            btn.innerText = origText;
+            btn.disabled = false;
+        }
+    }
+
     function updateHUD(metas) {
         const container = document.getElementById('gg-meta-container');
 
@@ -922,8 +1010,12 @@
                  clone.json().then(data => {
                      if (data.rounds && data.rounds.length > 0) {
                          const currentRound = data.rounds[data.rounds.length - 1];
-                         if (currentRound && currentRound.panoid) {
-                             checkLocation(currentRound.panoid);
+                         if (currentRound) {
+                             let pId = currentRound.panoid || currentRound.panoId || currentRound.location?.panoId;
+                             if (pId) {
+                                 pId = decodePanoId(pId);
+                                 checkLocation(pId);
+                             }
                          }
                      }
                  }).catch(() => {});
@@ -932,9 +1024,21 @@
          };
 
          // UI Poller
+         let wasResult = false;
          setInterval(() => {
              updateVisibility();
-             // If we are visible but have no Panoid yet, try to recover it
+             
+             const isResult = isRoundResult();
+             // Reset when leaving result screen to ensure fresh ID for next round
+             if (wasResult && !isResult) {
+                 console.log('[BetterMetas] Left result screen, resetting Panoid.');
+                 currentPanoid = null;
+                 updateStatus('Waiting for location...');
+                 updateHUD(null);
+             }
+             wasResult = isResult;
+
+             // If visible (on result screen) and no Panoid, try to recover
              const hud = document.getElementById('gg-meta-hud');
              if (hud && hud.style.display !== 'none' && !currentPanoid) {
                  tryRecoverPanoid();
