@@ -8,7 +8,9 @@
 // @downloadURL  https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main/geoguessr-meta.user.js
 // @match        https://www.geoguessr.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=geoguessr.com
+// @run-at       document-start
 // @grant        GM_xmlhttpRequest
+// @grant        unsafeWindow
 // @connect      raw.githubusercontent.com
 // @connect      api.github.com
 // ==/UserScript==
@@ -26,6 +28,9 @@
     const API_LOCATIONS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${LOCATIONS_FILE}`;
     const API_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${METAS_FILE}`;
     
+    // Access true window for hooks
+    const win = (typeof unsafeWindow !== 'undefined') ? unsafeWindow : window;
+
     let locationMap = {};  // panoid -> [metaIds]
     let metasData = [];    // [{id, title, desc, ...}]
     let currentPanoid = null;
@@ -808,27 +813,33 @@
         return url.includes('/duels') ||
                url.includes('/battle-royale') ||
                url.includes('/team-duels') ||
-               url.includes('/competitive') ||
-               url.includes('/challenge'); // Maybe challenge too? User said "not in ranked".
-               // keeping it strict to competitive modes usually implies ranked.
+               url.includes('/competitive');
+               // url.includes('/challenge'); // Removed to allow HUD in challenges
     }
 
     function isRoundResult() {
         // Check for common result screen elements
         // The result screen overlay typically has classes containing "result-layout"
-        return !!document.querySelector('div[class*="result-layout_root__"]') ||
-               !!document.querySelector('div[class*="round-result_root__"]');
+        const selector = 'div[class*="result-layout_root__"], div[class*="round-result_root__"]';
+        const el = document.querySelector(selector);
+        return !!(el && el.offsetParent); // Check visibility
     }
 
     function updateVisibility() {
         const hud = document.getElementById('gg-meta-hud');
         if (!hud) return;
 
+        // In Ranked/Duels, ONLY show on result screen (Evaluation)
         if (isRanked()) {
-            hud.style.display = 'none';
-            return;
+             if (isRoundResult()) {
+                 hud.style.display = 'block';
+             } else {
+                 hud.style.display = 'none';
+             }
+             return;
         }
 
+        // In Single Player / Challenge, show if result OR if mapped (optional, but requested to stick to result for now)
         if (isRoundResult()) {
             hud.style.display = 'block';
         } else {
@@ -837,13 +848,14 @@
     }
 
     function checkLocation(panoid) {
-        if (!panoid) return;
+        if (!panoid || typeof panoid !== 'string' || panoid.length <= 5) return;
         
         // LOCK MECHANISM:
         // If we already have a Panoid set, and we are still on the result screen, 
         // DO NOT change it to something else unless explicitly reset.
-        if (currentPanoid && currentPanoid !== panoid) {
-            console.warn(`[BetterMetas] Ignored ID change: ${currentPanoid} -> ${panoid} (Locked)`);
+        const onResultScreen = isRoundResult();
+        if (currentPanoid && currentPanoid !== panoid && onResultScreen) {
+            console.warn(`[BetterMetas] Ignored ID change: ${currentPanoid} -> ${panoid} (Locked on Result Screen)`);
             return;
         }
 
@@ -851,10 +863,10 @@
         currentPanoid = panoid;
         
         if (changed) {
-            console.log('[BetterMetas] New Location detected (Locked):', panoid);
+            console.log('[BetterMetas] New Location detected:', panoid);
             updateStatus(`ID: ${panoid.substring(0,12)}...`);
         } else {
-             return; // No change, do nothing
+             return;
         }
 
         // If data isn't loaded yet, we'll wait for checkDataLoaded to trigger us
@@ -874,232 +886,13 @@
                 return found;
             }).filter(Boolean);
             
-            console.log('[BetterMetas] Match found!', metas);
             updateHUD(metas);
         } else {
-            console.log('[BetterMetas] No hints linked to this panoid in our map.');
             updateHUD(null);
         }
     }
 
-    // --- Active Fetching Logic ---
 
-    // Decode hex-encoded panoId (Geoguessr encodes them)
-    // Hex encoded IDs are usually ~44 chars (22 bytes). Raw IDs are ~22 chars.
-    function decodePanoId(encoded) {
-        if (!encoded || typeof encoded !== 'string') return null;
-        
-        // strict check: If it's short (likely already decoded/raw), don returns as is.
-        // Standard Google Panos are 22 chars. Encoded are 44.
-        if (encoded.length < 30) {
-            return encoded;
-        }
-
-        // Must be valid hex
-        if (!/^[0-9a-fA-F]+$/.test(encoded)) {
-            return encoded;
-        }
-
-        try {
-            const len = Math.floor(encoded.length / 2);
-            let panoId = [];
-            for (let i = 0; i < len; i++) {
-                const code = parseInt(encoded.slice(i * 2, i * 2 + 2), 16);
-                const char = String.fromCharCode(code);
-                panoId.push(char);
-            }
-            const decoded = panoId.join("");
-            return decoded;
-        } catch (e) {
-            console.warn('[BetterMetas] Decode failed, using original:', e);
-            return encoded;
-        }
-    }
-
-    function getCanonicalPanoId(round) {
-        if (!round) return null;
-
-        // 1. Try deep payload (Most reliable for modern Geoguessr)
-        // Matches vorlage.txt logic
-        const panorama = round.question?.panoramaQuestionPayload?.panorama;
-        if (panorama?.panoId) {
-             return decodePanoId(panorama.panoId);
-        }
-
-        // 2. Try location object (Standard v3 API)
-        if (round.location?.panoId) {
-            return decodePanoId(round.location.panoId);
-        }
-
-        // 3. Try top-level panoId (Older API / Challenges)
-        if (round.panoId) {
-            return decodePanoId(round.panoId);
-        }
-        
-        // 4. Streak code (Last resort)
-        if (round.streakLocationCode) {
-            return decodePanoId(round.streakLocationCode);
-        }
-        
-        return null;
-    }
-
-    async function tryRecoverPanoid() {
-        const url = window.location.href;
-        let gameId = null;
-        let isLiveChallenge = false;
-        let isChallenge = false;
-
-        console.log('[BetterMetas] Attempting to recover Panoid from URL:', url);
-
-        if (url.includes('/live-challenge/')) {
-            const match = url.match(/\/live-challenge\/([^\/\?]+)/);
-            gameId = match ? match[1] : null;
-            isLiveChallenge = true;
-        } else if (url.includes('/challenge/')) {
-            const match = url.match(/\/challenge\/([^\/\?]+)/);
-            gameId = match ? match[1] : null;
-            isChallenge = true;
-        } else if (url.includes('/game/')) {
-            const match = url.match(/\/game\/([^\/\?]+)/);
-            gameId = match ? match[1] : null;
-        }
-
-        // Fallback: Check __NEXT_DATA__
-        if (!gameId) {
-            try {
-                const nextData = document.getElementById('__NEXT_DATA__');
-                if (nextData) {
-                    const json = JSON.parse(nextData.innerHTML);
-                    gameId = json.query?.id || json.props?.pageProps?.game?.token;
-                }
-            } catch(e) { console.log('[BetterMetas] NextData lookup failed', e); }
-        }
-
-        if (!gameId) {
-            console.log('[BetterMetas] Could not find Game ID');
-            updateStatus('No Game ID detected');
-            return;
-        }
-
-        console.log(`[BetterMetas] Found GameID: ${gameId}`);
-
-        try {
-            let panoid = null;
-            let currentRoundData = null;
-
-            if (isLiveChallenge) {
-                const apiUrl = `https://game-server.geoguessr.com/api/live-challenge/${gameId}`;
-                const res = await fetch(apiUrl, { credentials: 'include' });
-                if (!res.ok) throw new Error(`Live Challenge API: ${res.status}`);
-                const data = await res.json();
-                
-                const currentRoundIndex = (data.currentRoundNumber || 1) - 1;
-                const rounds = data.rounds || [];
-                currentRoundData = rounds[currentRoundIndex];
-            } else {
-                let apiUrl;
-                if (isChallenge) {
-                    apiUrl = `https://www.geoguessr.com/api/v3/challenges/${gameId}/game`;
-                } else {
-                    apiUrl = `https://www.geoguessr.com/api/v3/games/${gameId}`;
-                }
-
-                const res = await fetch(apiUrl, { credentials: 'include' });
-                if (!res.ok) throw new Error(`v3 API: ${res.status}`);
-                const data = await res.json();
-                
-                const rounds = data.rounds || [];
-                if (rounds.length > 0) {
-                    // Standard games and Maps often return an array of ALL rounds (past and future).
-                    // We must find the CURRENT round index to get the correct location.
-                    // 'data.round' (or 'data.currentRound') is 1-indexed.
-                    // Fallback to rounds.length covers cases where we might be at the end or data structure differs.
-                    const currentRoundIndex = (data.round || data.currentRound || rounds.length) - 1;
-                    /* console.log(`[BetterMetas] v3 API: round=${data.round}, currentRound=${data.currentRound}, using index=${currentRoundIndex}, total rounds=${rounds.length}`); */
-                    currentRoundData = rounds[currentRoundIndex];
-                }
-            }
-
-            if (currentRoundData) {
-                panoid = getCanonicalPanoId(currentRoundData);
-                console.log(`[BetterMetas] ID Recovery: Extracted=${panoid}`);
-                
-                // Only update if legitimate (remove old lock logic, trust the new robust extraction)
-                if (panoid) {
-                    checkLocation(panoid);
-                } else {
-                     updateStatus('Panoid Not Found in Round');
-                }
-            } else {
-                console.warn('[BetterMetas] Could not extract round data');
-                updateStatus('Round Data Not Found');
-            }
-
-        } catch (e) {
-            console.error('[BetterMetas] Recovery failed:', e);
-            updateStatus('Recovery Failed');
-        }
-    }
-
-    // Hacky polling for Panoid & Visibility
-    function startObserver() {
-         if (isRoundResult() && !currentPanoid) {
-             setTimeout(tryRecoverPanoid, 1000);
-         }
-
-         const originalFetch = window.fetch;
-         window.fetch = async function(url, options) {
-             const response = await originalFetch(url, options);
-             if (!url || typeof url.toString !== 'function') return response;
-             
-             const urlStr = url.toString();
-
-             // Intercept Game calls
-             if (urlStr.includes('geoguessr.com') && (urlStr.includes('/games/') || urlStr.includes('/game'))) {
-                 const clone = response.clone();
-                 clone.json().then(data => {
-                     if (data.rounds && data.rounds.length > 0) {
-                          // Maps/Standard games return all rounds in the array.
-                          // We use 'data.round' or 'data.currentRound' (1-based) to identify the current active round.
-                          const currentRoundIndex = (data.round || data.currentRound || data.rounds.length) - 1;
-                          /* console.log(`[BetterMetas] Intercepted: round=${data.round}, currentRound=${data.currentRound}, index=${currentRoundIndex}`); */
-                          const currentRound = data.rounds[currentRoundIndex];
-                         const pId = getCanonicalPanoId(currentRound);
-                         if (pId) {
-                             console.log(`[BetterMetas] Intercepted ID: ${pId}`);
-                             checkLocation(pId);
-                         }
-                     }
-                 }).catch(() => {});
-             }
-             return response;
-         };
-
-         // UI Poller
-         let wasResult = false;
-         setInterval(() => {
-             updateVisibility();
-             
-             const isResult = isRoundResult();
-             // Reset when leaving result screen to ensure fresh ID for next round
-             if (wasResult && !isResult) {
-                 console.log('[BetterMetas] Left result screen, resetting Panoid.');
-                 currentPanoid = null;
-                 updateStatus('Waiting for location...');
-                 updateHUD(null);
-             }
-             wasResult = isResult;
-
-             // Only try to recover if we don't have one and we are visible
-             const hud = document.getElementById('gg-meta-hud');
-             if (hud && hud.style.display !== 'none' && !currentPanoid) {
-                 tryRecoverPanoid();
-             }
-         }, 1000);
-
-         console.log('[Geoguessr Meta] Observer started.');
-    }
 
 
     // --- Data Fetching ---
@@ -1189,6 +982,74 @@
         updateStatus(`Offline (${reason})`);
     }
 
+
+
+    // --- Google Maps Hooks ---
+    function installHooks() {
+        // Check if Google Maps is loaded
+        if (!win.google || !win.google.maps || !win.google.maps.StreetViewPanorama) {
+            return false;
+        }
+
+        console.log('[BetterMetas] Google Maps API found. Installing hooks...');
+        
+        // 1. Constructor Hook (catch new instances)
+        const OriginalStreetViewPanorama = win.google.maps.StreetViewPanorama;
+        
+        win.google.maps.StreetViewPanorama = function(node, opts) {
+            const instance = new OriginalStreetViewPanorama(node, opts);
+            
+            // Immediate check on creation
+            if (opts && opts.pano) {
+                checkLocation(opts.pano);
+            }
+
+            // Add Event Listener
+            win.google.maps.event.addListener(instance, 'pano_changed', () => {
+                const panoId = instance.getPano();
+                checkLocation(panoId);
+            });
+
+            return instance;
+        };
+
+        // Copy prototype and static properties
+        win.google.maps.StreetViewPanorama.prototype = OriginalStreetViewPanorama.prototype;
+        for (let prop in OriginalStreetViewPanorama) {
+            if (OriginalStreetViewPanorama.hasOwnProperty(prop)) {
+                win.google.maps.StreetViewPanorama[prop] = OriginalStreetViewPanorama[prop];
+            }
+        }
+
+        // 2. Prototype Hook for setPano (catch updates on existing instances)
+        const originalSetPano = win.google.maps.StreetViewPanorama.prototype.setPano;
+        win.google.maps.StreetViewPanorama.prototype.setPano = function(pano) {
+            checkLocation(pano);
+            return originalSetPano.apply(this, arguments);
+        };
+        
+        console.log('[BetterMetas] Hooks installed successfully.');
+        return true;
+    }
+
+
+
+    function startObserver() {
+         // UI Poller
+         setInterval(() => {
+             updateVisibility();
+         }, 1000);
+
+         // Hook Poller - wait for Google Maps
+         const timer = setInterval(() => {
+            if (installHooks()) {
+                clearInterval(timer);
+            }
+         }, 50);
+
+         console.log('[BetterMetas] Observer started.');
+    }
+
     // --- Initialization ---
     function init() {
         console.log('[Geoguessr Meta] Initializing UI...');
@@ -1198,8 +1059,6 @@
         startObserver();
     }
 
-
     init();
 
 })();
-
