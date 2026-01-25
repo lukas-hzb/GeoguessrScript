@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BetterMetas
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Displays crowdsourced metas and hints for Geoguessr locations.
 // @author       Lukas Hzb
 // @match        https://www.geoguessr.com/*
