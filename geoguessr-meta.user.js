@@ -338,11 +338,18 @@
         document.body.appendChild(modal);
 
         // Event Listeners
-        document.getElementById('gg-meta-add-btn').addEventListener('click', () => {
-            // Allow opening even without active location for testing
-            const idToUse = currentPanoid || "TEST_MODE_ID";
+        document.getElementById('gg-meta-add-btn').addEventListener('click', async () => {
+            // Try to recover Panoid if missing (e.g. script loaded late on result screen)
             if (!currentPanoid) {
-                console.log('No active location, using TEST_MODE_ID for editor');
+                updateStatus('Finding location...');
+                await tryRecoverPanoid();
+            }
+
+            // Allow opening even without active location for testing, but warn
+            const idToUse = currentPanoid || "YOUR_PANOID_HERE";
+            if (!currentPanoid) {
+                console.log('No active location found even after recovery attempt.');
+                // Optional: Alert user?
             }
             document.getElementById('gg-meta-modal').style.display = 'block';
             document.getElementById('gg-json-output').style.display = 'none';
@@ -588,8 +595,68 @@
         }
     }
 
+    // --- Active Fetching Logic ---
+    async function tryRecoverPanoid() {
+        const url = window.location.href;
+        let gameId = null;
+        let isChallenge = false;
+
+        // Extract ID
+        // Standard Game: /game/ID
+        // Challenge: /challenge/ID
+        if (url.includes('/game/')) {
+            const parts = url.split('/game/');
+            gameId = parts[1]?.split('/')[0];
+        } else if (url.includes('/challenge/')) {
+            const parts = url.split('/challenge/');
+            gameId = parts[1]?.split('/')[0];
+            isChallenge = true;
+        }
+
+        if (!gameId) return;
+
+        console.log(`[GG Meta] Recovering Panoid for GameID: ${gameId} (Chall: ${isChallenge})`);
+
+        try {
+            let apiUrl = '';
+            if (isChallenge) {
+                 // Challenge API often returns the game token, then we might need to fetch the game
+                 // But often /api/v3/games/ID works for the *game* token associated with the challenge?
+                 // Actually, for challenges, the ID in the URL is the Challenge ID. The Game ID is internal.
+                 // We can try fetching the challenge payload.
+                 apiUrl = `https://www.geoguessr.com/api/v3/challenges/${gameId}/game`; 
+            } else {
+                 apiUrl = `https://www.geoguessr.com/api/v3/games/${gameId}`;
+            }
+
+            const res = await fetch(apiUrl);
+            if (!res.ok) throw new Error(res.statusText);
+            const data = await res.json();
+
+            // Logic to find the current/last round
+            let rounds = data.rounds || [];
+            if (rounds.length > 0) {
+                // Usually the last round in the array is the current/latest one
+                const lastRound = rounds[rounds.length - 1];
+                if (lastRound && lastRound.panoid) {
+                    checkLocation(lastRound.panoid);
+                    updateStatus(`Recovered: ${lastRound.panoid.substring(0,10)}`);
+                    return;
+                }
+            }
+        } catch (e) {
+            console.error('[GG Meta] Failed to recover panoid:', e);
+            updateStatus('Loc Recovery Failed');
+        }
+    }
+
     // Hacky polling for Panoid & Visibility
     function startObserver() {
+         // Active recovery on load if on result screen
+         if (isRoundResult()) {
+             setTimeout(tryRecoverPanoid, 1000);
+         }
+
          const originalFetch = window.fetch;
          window.fetch = async function(url, options) {
              const response = await originalFetch(url, options);
