@@ -76,7 +76,7 @@
             justify-content: space-between;
             align-items: center;
             font-size: 0.95rem;
-            text-transform: uppercase;
+            /* text-transform: uppercase; Removed to allow BetterMetas mixed case */
             letter-spacing: 0.05em;
             border-bottom: 1px solid rgba(255,255,255,0.1);
             padding-bottom: 8px;
