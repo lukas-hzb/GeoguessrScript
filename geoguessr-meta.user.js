@@ -50,6 +50,7 @@
         address: null,
         country: null,
         region: null,
+        road: null,
         lat: null,
         lng: null
     };
@@ -766,6 +767,7 @@
                     <div id="meta-scope-presets" style="margin-top: 8px; text-align: center;">
                         <span class="gg-tag-pill" data-value="countrywide">Countrywide</span>
                         <span class="gg-tag-pill" data-value="region">Region</span>
+                        <span class="gg-tag-pill" data-value="road">Road</span>
                         <span class="gg-tag-pill" data-value="longitude">Longitude</span>
                         <span class="gg-tag-pill" data-value="1000km">1000km</span>
                         <span class="gg-tag-pill" data-value="100km">100km</span>
@@ -1114,7 +1116,8 @@
                 lat: currentLocationData.lat,
                 lng: currentLocationData.lng,
                 country: currentLocationData.country,
-                region: currentLocationData.region
+                region: currentLocationData.region,
+                road: currentLocationData.road
             };
             const jsonStr = JSON.stringify(submission, null, 2);
             const repo = `${REPO_OWNER}/${REPO_NAME}`;
@@ -1170,7 +1173,8 @@
                     lat: currentLocationData.lat,
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
-                    region: currentLocationData.region
+                    region: currentLocationData.region,
+                    road: currentLocationData.road
                 };
             } else if (Array.isArray(locations[panoid])) {
                 const oldMetas = locations[panoid];
@@ -1179,7 +1183,8 @@
                     lat: currentLocationData.lat,
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
-                    region: currentLocationData.region
+                    region: currentLocationData.region,
+                    road: currentLocationData.road
                 };
             }
             
@@ -1234,6 +1239,7 @@
             id: metaId,
             country: currentLocationData.country || "Unknown",
             region: currentLocationData.region || null,
+            road: currentLocationData.road || null,
             lat: currentLocationData.lat,
             lng: currentLocationData.lng,
             section: "User Submitted",
@@ -1346,7 +1352,8 @@
                     lat: currentLocationData.lat,
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
-                    region: currentLocationData.region
+                    region: currentLocationData.region,
+                    road: currentLocationData.road
                 };
             } else if (Array.isArray(locsFile.content[panoid])) {
                  const oldMetas = locsFile.content[panoid];
@@ -1355,7 +1362,8 @@
                     lat: currentLocationData.lat,
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
-                    region: currentLocationData.region
+                    region: currentLocationData.region,
+                    road: currentLocationData.road
                 };
             }
 
@@ -1493,6 +1501,47 @@
         container.innerHTML = exactHtml + predictedHtml;
     }
 
+    function refreshDisplay() {
+        if (!currentPanoid) return;
+
+        // Ensure metasData is loaded
+        if (!metasData || metasData.length === 0) {
+            console.log('[BetterMetas] metasData not loaded yet, skipping display refresh');
+            return;
+        }
+
+        console.log(`[BetterMetas] refreshDisplay for ID: "${currentPanoid}"`);
+
+        // Check for exact match in locationMap (might be empty if no pins yet)
+        const entry = locationMap[currentPanoid];
+        let metaIds = [];
+        if (entry) {
+            if (Array.isArray(entry)) {
+                metaIds = entry;
+            } else if (entry.metas) {
+                metaIds = entry.metas;
+            }
+        }
+
+        // Get exact metas
+        const exactMetas = metaIds.map(id => {
+            const found = metasData.find(m => m.id === id);
+            if (!found) console.warn('[BetterMetas] Could not find exact meta data for ID:', id);
+            return found;
+        }).filter(Boolean);
+
+        // Get predicted/nearby metas
+        const predictedMetas = evaluateProximityMetas().filter(pm => !metaIds.includes(pm.id));
+        
+        console.log(`[BetterMetas] Found ${exactMetas.length} exact and ${predictedMetas.length} predicted metas.`);
+
+        if (exactMetas.length > 0 || predictedMetas.length > 0) {
+            updateHUD(exactMetas, predictedMetas);
+        } else {
+            updateHUD(null);
+        }
+    }
+
     function updateStatus(msg) {
         const el = document.getElementById('gg-status');
         if (el) el.textContent = msg;
@@ -1529,6 +1578,7 @@
         const curLng = parseFloat(currentLocationData.lng);
         const curCountry = currentLocationData.country;
         const curRegion = currentLocationData.region;
+        const curRoad = (currentLocationData.road || '').toLowerCase().trim();
 
         if (isNaN(curLat) || isNaN(curLng)) return [];
 
@@ -1564,6 +1614,9 @@
                 if (meta.country === curCountry) predictedIds.add(meta.id);
             } else if (scope === 'region') {
                 if (meta.country === curCountry && meta.region === curRegion) predictedIds.add(meta.id);
+            } else if (scope === 'road') {
+                const metaRoad = (meta.road || '').toLowerCase().trim();
+                if (metaRoad && curRoad && metaRoad === curRoad) predictedIds.add(meta.id);
             }
         });
 
@@ -1630,11 +1683,8 @@
         if (!panoid || typeof panoid !== 'string' || panoid.length <= 5) return;
         
         // LOCK MECHANISM:
-        // If we already have a Panoid set, and we are still on the result screen, 
-        // DO NOT change it to something else unless explicitly reset.
         const onResultScreen = isRoundResult();
         if (currentPanoid && currentPanoid !== panoid && onResultScreen) {
-            // console.warn(`[BetterMetas] Ignored ID change: ${currentPanoid} -> ${panoid} (Locked on Result Screen)`);
             nextPanoid = panoid; // Queue it
             return;
         }
@@ -1649,54 +1699,10 @@
             
             // Trigger Location Data Extraction Immediately
             extractLocationData();
-        } else {
-             return;
         }
 
-        // If data isn't loaded yet, we'll wait for checkDataLoaded to trigger us
-        // Check BOTH locationMap AND metasData are loaded to avoid missing metas
-        if (Object.keys(locationMap).length === 0 || metasData.length === 0) {
-            console.log('[BetterMetas] Data not fully loaded yet, waiting...');
-            return;
-        }
-
-        // Join: locationMap[panoid] -> metaIds -> metasData
-
-        // Join: locationMap[panoid] -> metaIds -> metasData
-        // DEBUG: Log all available location keys for comparison
-        const allLocationKeys = Object.keys(locationMap);
-        console.log(`[BetterMetas] Checking panoid: "${panoid}"`);
-        console.log(`[BetterMetas] Available location keys (${allLocationKeys.length}):`, allLocationKeys);
-        
-        // Check for exact match
-        const entry = locationMap[panoid];
-        let metaIds = [];
-        if (Array.isArray(entry)) {
-            metaIds = entry;
-        } else if (entry && entry.metas) {
-            metaIds = entry.metas;
-        }
-
-        console.log(`[BetterMetas] Found ${metaIds.length} exact meta IDs for this location.`);
-        
-        // Get exact metas
-        const exactMetas = metaIds.map(id => {
-            const found = metasData.find(m => m.id === id);
-            if (!found) console.warn('[BetterMetas] Could not find exact meta data for ID:', id);
-            return found;
-        }).filter(Boolean);
-
-        // Get predicted/nearby metas
-        const predictedMetas = evaluateProximityMetas().filter(pm => !metaIds.includes(pm.id));
-
-        if (exactMetas.length > 0 || predictedMetas.length > 0) {
-            updateHUD(exactMetas, predictedMetas);
-        } else {
-            updateHUD(null);
-        }
-
-        // Trigger Location Data Extraction
-        extractLocationData();
+        // Trigger Display Refresh (this handles checking if data is loaded)
+        refreshDisplay();
     }
     
     function extractLocationData(attempt = 0) {
@@ -1742,15 +1748,45 @@
                         country = desc; // Fallback
                     }
 
-                    currentLocationData = {
-                        address: desc,
-                        country: country,
-                        region: null,
-                        lat: lat.toFixed(5),
-                        lng: lng.toFixed(5)
-                    };
+                    // Check if we already have this location data to prevent overwriting with nulls during race conditions
+                    const newLatStr = lat.toFixed(5);
+                    const newLngStr = lng.toFixed(5);
+                    
+                    if (currentLocationData && 
+                        currentLocationData.lat === newLatStr && 
+                        currentLocationData.lng === newLngStr) {
+                         
+                        // Location hasn't changed.
+                        // If we already have a Road, don't wipe it out!
+                        if (currentLocationData.road) {
+                            console.log('[BetterMetas] Road already exists for this location, skipping reset/re-geocode.');
+                            // Ensure HUD is refreshed just in case
+                            if (currentPanoid) checkLocation(currentPanoid);
+                            return; 
+                        }
+                        
+                        // If we don't have a road, we might want to let it proceed to geocoding...
+                        // But we should carry over existing country/region/address if valid
+                        currentLocationData.address = currentLocationData.address || desc;
+                        currentLocationData.country = currentLocationData.country || country;
+                        // Region and Road are null, so let them be re-fetched below
+                        
+                    } else {
+                        // New location, reset
+                        currentLocationData = {
+                            address: desc,
+                            country: country,
+                            region: null,
+                            road: null,
+                            lat: newLatStr,
+                            lng: newLngStr
+                        };
+                    }
                     
                     updateLocationUI();
+                    
+                    // Immediate trigger with basic info (Lat/Lng is enough for radius checks)
+                    if (currentPanoid) checkLocation(currentPanoid);
 
                     // Reverse Geocoding for better accuracy
                     if (win.google && win.google.maps && win.google.maps.Geocoder) {
@@ -1779,15 +1815,43 @@
                                 }
 
                                 // console.log(`[BetterMetas] Geocode Success: ${address} | ${realCountry} | ${region}`);
+                                
+                                
+                                // Find route (Road Name)
+                                let road = null;
+                                const routeComponent = res.address_components.find(c => c.types.includes('route'));
+                                if (routeComponent) {
+                                    road = routeComponent.long_name;
+                                } else {
+                                    // Fallback: Check intersection
+                                    const intersection = res.address_components.find(c => c.types.includes('intersection'));
+                                    if (intersection) road = intersection.long_name;
+                                }
 
-                                currentLocationData.address = address;
-                                currentLocationData.country = realCountry;
-                                currentLocationData.region = region;
+                                // Fallback: If still no road, use shortDescription if it looks like a road (not just a country name)
+                                if (!road && loc.shortDescription && loc.shortDescription !== loc.description && loc.shortDescription !== realCountry) {
+                                    // Heuristic: Avoid using it if it's identical to the Region/City
+                                    if (loc.shortDescription !== region) {
+                                        road = loc.shortDescription;
+                                    }
+                                }
+
+                                // Update (Only if we are still on the same lat/lng! - another race check)
+                                if (currentLocationData.lat === newLatStr && currentLocationData.lng === newLngStr) {
+                                    currentLocationData.address = address;
+                                    currentLocationData.country = realCountry;
+                                    currentLocationData.region = region;
+                                    currentLocationData.road = road;
+                                }
+
                                 updateLocationUI();
                                 // Refresh metas now that we have better country/region info
                                 if (currentPanoid) checkLocation(currentPanoid);
                             } else {
                                 console.log('[BetterMetas] Geocode failed: ' + status);
+                                // Even if failed, we might have updated something? 
+                                // Actually we didn't update currentLocationData in failure, but we could retry or just leave it.
+                                // But ensuring we checked with basic data (above) is enough.
                             }
                         });
                     } else {
@@ -1816,7 +1880,7 @@
             return;
         }
 
-        const { address, country, region, lat, lng } = currentLocationData;
+        const { address, country, region, road, lat, lng } = currentLocationData;
         
         if (!lat || !lng) {
             console.log('[BetterMetas] updateLocationUI: Missing lat/lng, hiding box.');
@@ -1837,6 +1901,11 @@
             <div class="gg-loc-row">
                 <div class="gg-loc-label">Region:</div>
                 <div class="gg-loc-val">${region}</div>
+            </div>` : ''}
+            ${road ? `
+            <div class="gg-loc-row">
+                <div class="gg-loc-label">Road:</div>
+                <div class="gg-loc-val">${road}</div>
             </div>` : ''}
             <div class="gg-loc-row">
                 <div class="gg-loc-label">Coords:</div>
@@ -1953,22 +2022,7 @@
                 
                 if (currentPanoid) {
                      updateStatus(`ID: ${currentPanoid.substring(0,12)}...`);
-                     const entry = locationMap[currentPanoid];
-                     let metaIds = [];
-                     if (Array.isArray(entry)) {
-                         metaIds = entry;
-                     } else if (entry && entry.metas) {
-                         metaIds = entry.metas;
-                     }
-
-                     const exactMetas = metaIds.map(id => metasData.find(m => m.id === id)).filter(Boolean);
-                     const predictedMetas = evaluateProximityMetas().filter(pm => !metaIds.includes(pm.id));
-
-                     if (exactMetas.length > 0 || predictedMetas.length > 0) {
-                         updateHUD(exactMetas, predictedMetas);
-                     } else {
-                         updateHUD(null);
-                     }
+                     refreshDisplay();
                 } else {
                      updateStatus(`DB Ready (${metasData.length} metas)`);
                 }
