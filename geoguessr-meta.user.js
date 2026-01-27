@@ -19,6 +19,7 @@
     'use strict';
 
 
+    const SHOW_LOCATION_HUD = false; // Set to true to show debug location info
     const REPO_OWNER = 'lukas-hzb';
     const REPO_NAME = 'GeoguessrScript';
     const LOCATIONS_FILE = 'data/locations.json';
@@ -759,7 +760,11 @@
                         <span class="gg-tag-pill">poles</span>
                         <span class="gg-tag-pill">signs</span>
                         <span class="gg-tag-pill">plates</span>
-                        <span class="gg-tag-pill">car</span>
+                        <span class="gg-tag-pill">cars</span>
+                        <span class="gg-tag-pill">soil</span>
+                        <span class="gg-tag-pill">structures</span>
+                        <span class="gg-tag-pill">road</span>
+                        <span class="gg-tag-pill">camera</span>
                         <span class="gg-tag-pill">language</span>
                         <span class="gg-tag-pill">architecture</span>
                     </div>
@@ -1530,6 +1535,12 @@
         const box = document.getElementById('gg-location-info');
         console.log('[BetterMetas] updateLocationUI called. Box:', box, 'Data:', currentLocationData);
         if (!box) return;
+
+        // Respect configuration
+        if (!SHOW_LOCATION_HUD) {
+            box.style.display = 'none';
+            return;
+        }
 
         const { address, country, region, lat, lng } = currentLocationData;
         
