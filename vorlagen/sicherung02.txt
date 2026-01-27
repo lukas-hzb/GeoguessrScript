@@ -40,16 +40,6 @@
     let nextPanoid = null; // Queue for ID updates blocked by lock
     let userDismissed = false; // Prevent sticky logic from showing HUD after manual hide
 
-    // Location Data
-    let svInstance = null; // Store the active StreetViewPanorama instance
-    let currentLocationData = {
-        address: null,
-        country: null,
-        region: null,
-        lat: null,
-        lng: null
-    };
-
 
 
     // --- Styles ---
@@ -128,7 +118,7 @@
             overflow-y: auto;
             margin-bottom: 8px; /* Spacing above status */
         }
-        .gg-meta-tag, .gg-tag-pill {
+        .gg-meta-tag {
             display: inline-block;
             background: rgba(255, 255, 255, 0.2);
             color: #fff;
@@ -139,38 +129,6 @@
             margin-bottom: 4px;
             font-weight: 600;
         }
-
-        .gg-tag-pill {
-            cursor: pointer;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: background 0.2s;
-        }
-
-        .gg-tag-pill:hover {
-            background: rgba(255, 255, 255, 0.4);
-        }
-
-        .gg-tag-pill.gg-tag-selected {
-            background: #8cd45a; /* GeoGuessr Green */
-            color: #fff;
-            border-color: #3d8c2a;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .gg-tag-static {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            color: #fff;
-            padding: 1px 6px;
-            border-radius: 12px;
-            font-size: 0.65rem;
-            margin-right: 0;
-            font-weight: 600;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            cursor: default;
-            white-space: nowrap;
-        }
-
         .gg-meta-row {
             margin-bottom: 12px;
             padding-bottom: 12px;
@@ -183,13 +141,13 @@
             margin-bottom: 6px;
             line-height: 1.3;
         }
-        #gg-meta-hud .gg-meta-description {
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.8);
+        .gg-meta-description {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 8px;
             line-height: 1.4;
-            font-weight: 400 !important;
-            font-family: inherit;
+            font-weight: 400;
+            font-family: "Neo Sans", sans-serif;
         }
         .gg-meta-image {
             max-width: 100%;
@@ -205,38 +163,6 @@
             margin-bottom: 0;
             padding-bottom: 0;
         }
-
-        /* Location Info Box */
-        #gg-location-info {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 8px;
-            margin-bottom: 12px;
-            font-size: 0.8rem;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .gg-loc-row {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 4px;
-        }
-        .gg-loc-row:last-child { margin-bottom: 0; }
-        .gg-loc-label {
-            color: rgba(255,255,255,0.5);
-            width: 70px;
-            flex-shrink: 0;
-            font-weight: 600;
-        }
-        .gg-loc-val {
-            color: #fff;
-            font-weight: 500;
-            word-break: break-word;
-        }
-        .gg-loc-coords {
-            font-family: monospace;
-            color: #ffd700;
-        }
-
         #gg-meta-add-btn, #gg-settings-btn {
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
@@ -268,138 +194,98 @@
             text-align: right;
         }
 
-        /* Modal Spacing System */
-        :root {
-            --modal-spacing-xs: 8px;
-            --modal-spacing-sm: 12px;
-            --modal-spacing-md: 16px;
-            --modal-spacing-lg: 24px;
-            --modal-radius: 16px;
-            --modal-btn-radius: 25px;
-        }
-
-        /* Modal Base Styles - GeoGuessr Native Style */
-        #gg-meta-modal {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: linear-gradient(180deg, #252060 0%, #1a1a40 100%);
-            border: 1px solid rgba(80, 70, 120, 0.5);
-            border-radius: var(--modal-radius);
-            color: white;
-            font-family: inherit;
-            font-weight: 700;
-            z-index: 100000;
-            max-height: 85vh;
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: rgba(255,255,255,0.3) transparent;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            width: 550px;
-            padding: var(--modal-spacing-lg);
-            transition: all 0.3s ease-in-out;
-        }
-
-        .gg-modal-subview {
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .gg-modal-subview.gg-hidden {
-            display: none;
-            opacity: 0;
-            transform: translateX(20px);
-        }
-
+        /* Modal Base Styles - Glass Material */
+        #gg-meta-modal,
         #gg-settings-modal .gg-modal-container {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: linear-gradient(180deg, #252060 0%, #1a1a40 100%);
-            border: 1px solid rgba(80, 70, 120, 0.5);
-            border-radius: var(--modal-radius);
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 16px;
             color: white;
             font-family: inherit;
             font-weight: 700;
-            z-index: 100001;
+            z-index: 100000;
+            display: none;
             max-height: 85vh;
             overflow-y: auto;
             scrollbar-width: thin;
             scrollbar-color: rgba(255,255,255,0.3) transparent;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            width: 360px;
-            padding: var(--modal-spacing-lg);
+        }
+
+        #gg-meta-modal {
+            width: 340px;
+            padding: 16px 20px;
+        }
+
+        #gg-settings-modal .gg-modal-container {
+            width: 300px;
+            padding: 16px 20px;
+            z-index: 100001;
         }
 
         /* Modal Header */
         .gg-modal-header {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             font-weight: 800;
             color: #fff;
-            margin-bottom: var(--modal-spacing-lg);
-            text-align: center;
-            letter-spacing: 0.02em;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            letter-spacing: 0.03em;
         }
 
         .gg-modal-section-title {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 700;
-            color: #d4af37; /* Muted Gold instead of Orange */
+            color: rgba(255,255,255,0.5);
             text-transform: uppercase;
-            letter-spacing: 0.06em;
-            margin: var(--modal-spacing-lg) 0 var(--modal-spacing-md) 0;
-            text-align: center;
+            letter-spacing: 0.08em;
+            margin: 16px 0 10px 0;
         }
 
         /* Form Elements */
         .gg-form-group {
-            margin-bottom: var(--modal-spacing-sm);
+            margin-bottom: 12px;
         }
 
         .gg-form-label {
             display: block;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.5);
+            color: rgba(255, 255, 255, 0.6);
             font-weight: 600;
-            text-align: center;
         }
 
         .gg-form-input {
             width: 100%;
-            padding: var(--modal-spacing-sm) var(--modal-spacing-md);
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(100, 90, 150, 0.4);
+            padding: 10px 12px;
+            background: rgba(255, 255, 255, 0.08);
+            border: none;
             color: white;
             border-radius: 8px;
             box-sizing: border-box;
             font-family: inherit;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             font-weight: 400;
-            text-align: center;
-            transition: border-color 0.2s, background 0.2s;
+            transition: background 0.15s;
         }
 
         .gg-form-input::placeholder {
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.35);
         }
 
         .gg-form-input:focus {
             outline: none;
-            background: rgba(0, 0, 0, 0.4);
-            border-color: rgba(150, 140, 200, 0.6);
+            background: rgba(255, 255, 255, 0.12);
         }
 
         textarea.gg-form-input {
             resize: vertical;
-            min-height: 42px;
-            text-align: center; /* Center horizontally like other inputs */
-            /* Vertical centering handled by padding inherited from .gg-form-input */
+            min-height: 60px;
         }
 
         .gg-form-hint {
@@ -407,105 +293,86 @@
             color: rgba(255, 255, 255, 0.4);
             margin-top: 4px;
             font-weight: 400;
-            text-align: center;
         }
 
-        /* Buttons - GeoGuessr Green Style */
+        /* Buttons */
         .gg-btn-primary {
-            background: linear-gradient(180deg, #8cd45a 0%, #6cc04a 50%, #5ab840 100%);
+            background: rgba(255, 255, 255, 0.2);
             color: #fff;
             border: none;
-            border-bottom: 2px solid #3d8c2a;
-            padding: 10px var(--modal-spacing-lg); /* Reduced padding further */
-            border-radius: 30px;
+            padding: 10px 16px;
+            border-radius: 20px;
             cursor: pointer;
             width: 100%;
-            font-weight: 800;
-            font-size: 0.85rem; /* Slightly smaller font to reduce height */
-            font-style: italic;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            margin-top: var(--modal-spacing-md);
-            transition: transform 0.1s, box-shadow 0.1s, border-bottom 0.1s;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+            margin-top: 8px;
+            transition: background 0.15s, transform 0.1s;
         }
 
         .gg-btn-primary:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .gg-btn-primary:active {
-            transform: translateY(1px);
-            border-bottom: 1px solid #3d8c2a;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            transform: scale(0.98);
         }
 
         .gg-btn-secondary {
-            background: rgba(0, 0, 0, 0.3);
-            color: rgba(255, 255, 255, 0.7);
-            border: 1px solid rgba(100, 90, 150, 0.4);
-            padding: var(--modal-spacing-sm) var(--modal-spacing-md);
+            background: transparent;
+            color: rgba(255, 255, 255, 0.5);
+            border: none;
+            padding: 8px;
             cursor: pointer;
-            margin-top: var(--modal-spacing-md);
+            margin-top: 6px;
             width: 100%;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 600;
-            border-radius: var(--modal-btn-radius);
-            transition: background 0.2s, color 0.2s;
+            transition: color 0.15s;
         }
 
         .gg-btn-secondary:hover {
-            background: rgba(0, 0, 0, 0.4);
             color: #fff;
         }
 
         .gg-btn-danger {
-            background: transparent;
-            color: #f97316;
-            border: 2px solid #f97316;
-            padding: var(--modal-spacing-sm) var(--modal-spacing-md);
-            border-radius: var(--modal-btn-radius);
+            background: rgba(255, 80, 80, 0.15);
+            color: rgba(255, 100, 100, 0.9);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 8px;
             cursor: pointer;
             width: 100%;
-            font-size: 0.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            transition: background 0.2s, color 0.2s;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: background 0.15s;
         }
 
         .gg-btn-danger:hover {
-            background: rgba(249, 115, 22, 0.15);
+            background: rgba(255, 80, 80, 0.25);
         }
 
         /* Divider */
         .gg-modal-divider {
             border: 0;
-            border-top: 1px solid rgba(100, 90, 150, 0.3);
-            margin: var(--modal-spacing-md) 0; /* Reduced from lg to md */
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 16px 0;
         }
 
         /* Existing Metas List */
         #gg-existing-metas {
-            max-height: 150px;
+            max-height: 120px;
             overflow-y: auto;
             scrollbar-width: thin;
             scrollbar-color: rgba(255,255,255,0.2) transparent;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(100, 90, 150, 0.4);
-            border-radius: 8px;
-            box-sizing: border-box;
-            margin-top: 8px;
         }
 
         .gg-meta-list-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 8px 12px;
+            padding: 8px 0;
             border-bottom: 1px solid rgba(255,255,255,0.06);
         }
 
@@ -526,33 +393,20 @@
         }
 
         .gg-btn-link-meta {
-            background: linear-gradient(180deg, #8cd45a 0%, #6cc04a 50%, #5ab840 100%);
+            background: rgba(255, 255, 255, 0.15);
             color: #fff;
             border: none;
-            border-bottom: 2px solid #3d8c2a;
             padding: 4px 10px;
             border-radius: 12px;
             cursor: pointer;
             font-size: 0.7rem;
-            font-weight: 800;
-            font-style: italic;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            transition: transform 0.1s, box-shadow 0.1s, border-bottom 0.1s;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-weight: 600;
+            transition: background 0.15s;
             flex-shrink: 0;
         }
 
         .gg-btn-link-meta:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
-        }
-
-        .gg-btn-link-meta:active {
-            transform: translateY(1px);
-            border-bottom: 1px solid #3d8c2a;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.25);
         }
 
         /* JSON Output */
@@ -589,27 +443,6 @@
         body.gg-hud-active button.styles_hudButton__kzfFK.styles_sizeSmall__O7Bw_.styles_roundBoth__hcuEN {
             display: none !important;
         }
-
-        /* Backdrop */
-        #gg-modal-backdrop {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            z-index: 99999;
-            display: none;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        #gg-modal-backdrop.gg-visible {
-            display: block;
-            opacity: 1;
-        }
     `;
 
     function addStyles() {
@@ -636,21 +469,12 @@
                     <button id="gg-meta-add-btn">+ Add</button>
                 </div>
             </div>
-            <div id="gg-location-info" style="display:none;">
-                <!-- Filled by JS -->
-            </div>
-
             <div id="gg-meta-container" class="gg-meta-content">
                 <div style="color: #ccc; font-style: italic;">Waiting for location...</div>
             </div>
             <div id="gg-status" class="gg-status-msg" style="cursor:pointer;" title="Click to retry finding location">Waiting for location...</div>
         `;
         document.body.appendChild(hud);
-
-        // Backdrop
-        const backdrop = document.createElement('div');
-        backdrop.id = 'gg-modal-backdrop';
-        document.body.appendChild(backdrop);
 
         // SETTINGS MODAL
         const settingsModal = document.createElement('div');
@@ -665,12 +489,12 @@
                     <input type="password" id="gg-gh-token" class="gg-form-input" placeholder="ghp_...">
                     <div class="gg-form-hint">Required to save new metas directly.</div>
                 </div>
-                <!-- Reduced margin-top for button to bring it closer -->
-                <button class="gg-btn-primary" id="gg-save-settings" style="margin-top: 8px;">Save Token</button>
+                <button class="gg-btn-primary" id="gg-save-settings">Save Token</button>
                 
                 <hr class="gg-modal-divider">
                 
-                <button class="gg-btn-danger" id="gg-reset-db">Reset Database (Clear All)</button>
+                <div class="gg-modal-section-title">Danger Zone</div>
+                <button class="gg-btn-danger" id="gg-reset-db">Reset Database</button>
                 
                 <button class="gg-btn-secondary" id="gg-close-settings">Close</button>
             </div>
@@ -688,142 +512,42 @@
         // MODAL
         const modal = document.createElement('div');
         modal.id = 'gg-meta-modal';
-        modal.style.display = 'none';
         modal.innerHTML = `
-            <div id="meta-main-view" class="gg-modal-subview">
-                <div class="gg-modal-header">Add metas to location</div>
-                
-                <div class="gg-form-group">
-                    <input type="text" id="meta-search" class="gg-form-input" placeholder="Search existing metas...">
-                </div>
-                <div id="gg-existing-metas"></div>
+            <div class="gg-modal-header">Add New Meta</div>
 
-                <hr class="gg-modal-divider">
-
-                <div>
-                    <button class="gg-btn-primary" id="meta-details-btn" style="margin-top: 0;">
-                        Add another meta
-                    </button>
-                </div>
-
-                <div id="gg-json-output"></div>
-
-                <button class="gg-btn-secondary" id="meta-close-btn">Close</button>
+            <div class="gg-form-group">
+                <label class="gg-form-label">Title</label>
+                <input type="text" id="meta-title" class="gg-form-input" placeholder="e.g. Kenya Snorkel">
             </div>
 
-            <div id="meta-details-view" class="gg-modal-subview gg-hidden">
-                <div class="gg-modal-header" style="position: relative; display: flex; align-items: center; justify-content: center;">
-                    <button id="meta-back-btn" style="background:none; border:none; color:rgba(255,255,255,0.5); cursor:pointer; position:absolute; left:0; display: flex; align-items: center; padding: 0;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-                    </button>
-                    Meta Details
-                </div>
-
-                <div class="gg-form-group">
-                    <label class="gg-form-label">Title</label>
-                    <input type="text" id="meta-title" class="gg-form-input" placeholder="e.g. Kenya Snorkel">
-                </div>
-
-                <div class="gg-form-group">
-                    <label class="gg-form-label">Description</label>
-                    <textarea id="meta-desc" class="gg-form-input" rows="3" placeholder="Describe the hint..."></textarea>
-                </div>
-
-                <div class="gg-form-group">
-                    <label class="gg-form-label">Image URL (optional)</label>
-                    <input type="text" id="meta-image" class="gg-form-input" placeholder="https://...">
-                </div>
-
-                <div class="gg-form-group">
-                    <label class="gg-form-label">Scope</label>
-                    <input type="text" id="meta-scope" class="gg-form-input" style="display:none;">
-                    <div id="meta-scope-presets" style="margin-top: 8px; text-align: center;">
-                        <span class="gg-tag-pill" data-value="countrywide">Countrywide</span>
-                        <span class="gg-tag-pill" data-value="region">Region</span>
-                        <span class="gg-tag-pill" data-value="longitude">Longitude</span>
-                        <span class="gg-tag-pill" data-value="1000km">1000km</span>
-                        <span class="gg-tag-pill" data-value="100km">100km</span>
-                        <span class="gg-tag-pill" data-value="10km">10km</span>
-                        <span class="gg-tag-pill" data-value="1km">1km</span>
-                        <span class="gg-tag-pill" data-value="unique">Unique</span>
-                    </div>
-                </div>
-
-                <div class="gg-form-group">
-                    <label class="gg-form-label">Tags</label>
-                    <!-- Input hidden, using pills only -->
-                    <input type="text" id="meta-tags" class="gg-form-input" placeholder="" style="display:none;">
-                    <div id="meta-tag-presets" style="margin-top: 8px; text-align: center;">
-                        <span class="gg-tag-pill">plants</span>
-                        <span class="gg-tag-pill">bollards</span>
-                        <span class="gg-tag-pill">poles</span>
-                        <span class="gg-tag-pill">signs</span>
-                        <span class="gg-tag-pill">plates</span>
-                        <span class="gg-tag-pill">car</span>
-                        <span class="gg-tag-pill">language</span>
-                        <span class="gg-tag-pill">architecture</span>
-                    </div>
-                </div>
-
-                <button class="gg-btn-primary" id="meta-generate-btn">Save Meta</button>
+            <div class="gg-form-group">
+                <label class="gg-form-label">Description</label>
+                <textarea id="meta-desc" class="gg-form-input" rows="2" placeholder="Describe the hint..."></textarea>
             </div>
+
+            <div class="gg-form-group">
+                <label class="gg-form-label">Tags</label>
+                <input type="text" id="meta-tags" class="gg-form-input" placeholder="car, snorkel, gen3">
+            </div>
+
+            <div class="gg-form-group">
+                <label class="gg-form-label">Image URL (optional)</label>
+                <input type="text" id="meta-image" class="gg-form-input" placeholder="https://...">
+            </div>
+
+            <button class="gg-btn-primary" id="meta-generate-btn">Save Meta</button>
+            <div id="gg-json-output"></div>
+
+            <hr class="gg-modal-divider">
+
+            <div class="gg-modal-section-title">Or Link Existing</div>
+            <div class="gg-form-group">
+                <input type="text" id="meta-search" class="gg-form-input" placeholder="Search metas...">
+            </div>
+            <div id="gg-existing-metas"></div>
+
+            <button class="gg-btn-secondary" id="meta-close-btn">Close</button>
         `;
-
-        // Presets Logic (Multi-select)
-        const presetContainer = modal.querySelector('#meta-tag-presets');
-        
-        const updateHiddenInput = () => {
-            const selected = Array.from(presetContainer.querySelectorAll('.gg-tag-selected'))
-                                  .map(el => el.textContent.trim());
-            document.getElementById('meta-tags').value = selected.join(', ');
-        };
-
-        presetContainer.addEventListener('click', (e) => {
-            if (e.target.classList.contains('gg-tag-pill')) {
-                e.target.classList.toggle('gg-tag-selected');
-                updateHiddenInput();
-            }
-        });
-
-        // Scope Logic (Single-select)
-        const scopeContainer = modal.querySelector('#meta-scope-presets');
-        
-        scopeContainer.addEventListener('click', (e) => {
-            if (e.target.classList.contains('gg-tag-pill')) {
-                // Deselect all others
-                Array.from(scopeContainer.querySelectorAll('.gg-tag-pill')).forEach(el => {
-                   if (el !== e.target) el.classList.remove('gg-tag-selected');
-                });
-                
-                // Toggle clicked
-                const wasSelected = e.target.classList.contains('gg-tag-selected');
-                if (!wasSelected) {
-                    e.target.classList.add('gg-tag-selected');
-                } else {
-                    e.target.classList.remove('gg-tag-selected');
-                }
-
-                // Update hidden input
-                const selected = scopeContainer.querySelector('.gg-tag-selected');
-                document.getElementById('meta-scope').value = selected ? selected.dataset.value : '';
-            }
-        });
-
-
-
-        // Add Toggle logic
-        const showDetails = () => {
-            document.getElementById('meta-main-view').classList.add('gg-hidden');
-            document.getElementById('meta-details-view').classList.remove('gg-hidden');
-        };
-        const hideDetails = () => {
-            document.getElementById('meta-details-view').classList.add('gg-hidden');
-            document.getElementById('meta-main-view').classList.remove('gg-hidden');
-        };
-
-        modal.querySelector('#meta-details-btn').addEventListener('click', showDetails);
-        modal.querySelector('#meta-back-btn').addEventListener('click', hideDetails);
-
         // Stop propagation for inputs to prevent game shortcuts
         const inputs = modal.querySelectorAll('input, textarea');
         inputs.forEach(input => {
@@ -849,10 +573,6 @@
                 // Optional: Alert user?
             }
             document.getElementById('gg-meta-modal').style.display = 'block';
-            document.getElementById('gg-settings-modal').style.display = 'none'; // Close settings
-            document.getElementById('gg-modal-backdrop').classList.add('gg-visible');
-            document.getElementById('meta-main-view').classList.remove('gg-hidden');
-            document.getElementById('meta-details-view').classList.add('gg-hidden');
             document.getElementById('gg-json-output').style.display = 'none';
             renderExistingMetas(); // Populate existing metas list
         });
@@ -860,10 +580,7 @@
         document.getElementById('gg-settings-btn').addEventListener('click', () => {
             const token = localStorage.getItem('gg_gh_token') || '';
             document.getElementById('gg-gh-token').value = token;
-            document.getElementById('gg-gh-token').value = token;
             document.getElementById('gg-settings-modal').style.display = 'block';
-            document.getElementById('gg-meta-modal').style.display = 'none'; // Close meta modal
-            document.getElementById('gg-modal-backdrop').classList.add('gg-visible');
         });
 
         document.getElementById('gg-save-settings').addEventListener('click', () => {
@@ -879,7 +596,6 @@
 
         document.getElementById('gg-close-settings').addEventListener('click', () => {
              document.getElementById('gg-settings-modal').style.display = 'none';
-            document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
         });
 
         document.getElementById('gg-reset-db').addEventListener('click', async () => {
@@ -892,14 +608,6 @@
 
         document.getElementById('meta-close-btn').addEventListener('click', () => {
             document.getElementById('gg-meta-modal').style.display = 'none';
-            document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
-        });
-
-        // Close when clicking backdrop
-        backdrop.addEventListener('click', () => {
-            document.getElementById('gg-meta-modal').style.display = 'none';
-            document.getElementById('gg-settings-modal').style.display = 'none';
-            backdrop.classList.remove('gg-visible');
         });
 
         document.getElementById('meta-generate-btn').addEventListener('click', generateJSON);
@@ -907,8 +615,8 @@
 
 
         document.getElementById('gg-status').addEventListener('click', () => {
-            updateStatus('Refreshing Data...');
-            fetchLocationData();
+            updateStatus('Finding location...');
+            tryRecoverPanoid();
         });
 
         // --- Existing Metas Browser ---
@@ -933,11 +641,9 @@
 
         container.innerHTML = filtered.map(m => `
             <div class="gg-meta-list-item">
-                <div style="display: flex; align-items: center; gap: 8px; flex: 1; overflow: hidden; height: 100%;">
-                    <div class="gg-meta-list-title" style="white-space: nowrap; line-height: 1;">${m.title}</div>
-                    <div class="gg-meta-list-tags" style="display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: none; height: 100%;">
-                        ${(m.tags || []).map(t => `<span class="gg-tag-static">${t}</span>`).join('')}
-                    </div>
+                <div>
+                    <div class="gg-meta-list-title">${m.title}</div>
+                    <div class="gg-meta-list-tags">${(m.tags || []).join(', ')}</div>
                 </div>
                 <button class="gg-btn-link-meta" data-meta-id="${m.id}">Link</button>
             </div>
@@ -1031,7 +737,6 @@
         const tagsStr = document.getElementById('meta-tags').value;
         const tags = tagsStr.split(',').map(t => t.trim()).filter(t => t);
         const imageUrl = document.getElementById('meta-image').value;
-        const scope = document.getElementById('meta-scope').value;
         
         if (!title || !desc) {
             alert('Please fill in Title and Description');
@@ -1053,8 +758,7 @@
             title: title,
             description: desc,
             imageUrl: imageUrl,
-            tags: tags,
-            scope: scope
+            tags: tags
         };
 
         // For Issue submission, we send both the meta and the panoid to link
@@ -1276,7 +980,7 @@
                 <div class="gg-meta-item-title">${m.title}</div>
                 ${m.imageUrl ? `<img src="${m.imageUrl}" class="gg-meta-image">` : ''}
                 <div class="gg-meta-description">${m.description}</div>
-                <div>${m.tags.map(t => `<span class="gg-tag-static">${t}</span>`).join('')}</div>
+                <div>${m.tags.map(t => `<span class="gg-meta-tag">${t}</span>`).join('')}</div>
             </div>
         `).join('');
     }
@@ -1367,9 +1071,6 @@
         if (changed) {
             console.log('[BetterMetas] New Location detected:', panoid);
             updateStatus(`ID: ${panoid.substring(0,12)}...`);
-            
-            // Trigger Location Data Extraction Immediately
-            extractLocationData();
         } else {
              return;
         }
@@ -1380,8 +1081,6 @@
             console.log('[BetterMetas] Data not fully loaded yet, waiting...');
             return;
         }
-
-        // Join: locationMap[panoid] -> metaIds -> metasData
 
         // Join: locationMap[panoid] -> metaIds -> metasData
         // DEBUG: Log all available location keys for comparison
@@ -1415,148 +1114,6 @@
         } else {
             updateHUD(null);
         }
-
-        // Trigger Location Data Extraction
-        extractLocationData();
-    }
-    
-    function extractLocationData(attempt = 0) {
-        const maxAttempts = 10;
-        
-        if (!svInstance) {
-            console.log(`[BetterMetas] extractLocationData: No svInstance available yet (Attempt ${attempt+1}/${maxAttempts}).`);
-            if (attempt < maxAttempts) {
-                setTimeout(() => extractLocationData(attempt + 1), 500);
-            }
-            return;
-        }
-
-        if (attempt === 0) console.log('[BetterMetas] extractLocationData: Triggered.');
-
-        // Give it a moment for data to populate in the instance if it's fresh
-        setTimeout(() => {
-            try {
-                // Check if we can get location data
-                let loc = null;
-                if (typeof svInstance.getLocation === 'function') {
-                    loc = svInstance.getLocation();
-                } 
-                
-                if (loc) {
-                    const desc = loc.description || loc.shortDescription || "Unknown Location";
-                    const latLng = loc.latLng;
-                    const lat = latLng ? (typeof latLng.lat === 'function' ? latLng.lat() : latLng.lat) : 0;
-                    const lng = latLng ? (typeof latLng.lng === 'function' ? latLng.lng() : latLng.lng) : 0;
-                    
-                    console.log(`[BetterMetas] Location Found: ${desc} (${lat}, ${lng})`);
-
-                    // Simple heuristic for "Country" from address (last part after comma)
-                    let country = "Unknown";
-                    if (desc && desc.includes(',')) {
-                        const parts = desc.split(',');
-                        country = parts[parts.length - 1].trim();
-                        // Filter out zip codes if mixed in (basic check)
-                        if (/^\d+$/.test(country) && parts.length > 1) {
-                            country = parts[parts.length - 2].trim();
-                        }
-                    } else {
-                        country = desc; // Fallback
-                    }
-
-                    currentLocationData = {
-                        address: desc,
-                        country: country,
-                        region: null,
-                        lat: lat.toFixed(5),
-                        lng: lng.toFixed(5)
-                    };
-                    
-                    updateLocationUI();
-
-                    // Reverse Geocoding for better accuracy
-                    if (win.google && win.google.maps && win.google.maps.Geocoder) {
-                        const geocoder = new win.google.maps.Geocoder();
-                        const latVal = parseFloat(lat);
-                        const lngVal = parseFloat(lng);
-                        
-                        // console.log('[BetterMetas] Requesting Reverse Geocode...');
-                        geocoder.geocode({ location: { lat: latVal, lng: lngVal } }, (results, status) => {
-                            if (status === 'OK' && results && results.length > 0) {
-                                const res = results[0];
-                                const address = res.formatted_address;
-                                let realCountry = country;
-                                
-                                // Find country in address components
-                                const countryComponent = res.address_components.find(c => c.types.includes('country'));
-                                if (countryComponent) {
-                                    realCountry = countryComponent.long_name;
-                                }
-
-                                // Find administrative_area_level_1 (Region/State)
-                                let region = null;
-                                const regionComponent = res.address_components.find(c => c.types.includes('administrative_area_level_1'));
-                                if (regionComponent) {
-                                    region = regionComponent.long_name;
-                                }
-
-                                // console.log(`[BetterMetas] Geocode Success: ${address} | ${realCountry} | ${region}`);
-
-                                currentLocationData.address = address;
-                                currentLocationData.country = realCountry;
-                                currentLocationData.region = region;
-                                updateLocationUI();
-                            } else {
-                                console.log('[BetterMetas] Geocode failed: ' + status);
-                            }
-                        });
-                    } else {
-                         console.log('[BetterMetas] Geocoder API not available.');
-                    }
-                } else {
-                    console.log(`[BetterMetas] svInstance.getLocation() returned null/empty (Attempt ${attempt+1}/${maxAttempts}).`);
-                    if (attempt < maxAttempts) {
-                        extractLocationData(attempt + 1);
-                    }
-                }
-            } catch (e) {
-                console.warn('[BetterMetas] Error accessing location data:', e);
-            }
-        }, 500); 
-    }
-
-    function updateLocationUI() {
-        const box = document.getElementById('gg-location-info');
-        console.log('[BetterMetas] updateLocationUI called. Box:', box, 'Data:', currentLocationData);
-        if (!box) return;
-
-        const { address, country, region, lat, lng } = currentLocationData;
-        
-        if (!lat || !lng) {
-            console.log('[BetterMetas] updateLocationUI: Missing lat/lng, hiding box.');
-            box.style.display = 'none';
-            return;
-        }
-
-        box.innerHTML = `
-            <div class="gg-loc-row">
-                <div class="gg-loc-label">Address:</div>
-                <div class="gg-loc-val">${address || 'N/A'}</div>
-            </div>
-             <div class="gg-loc-row">
-                <div class="gg-loc-label">Country:</div>
-                <div class="gg-loc-val" style="color: #8cd45a;">${country || 'N/A'}</div>
-            </div>
-            ${region ? `
-            <div class="gg-loc-row">
-                <div class="gg-loc-label">Region:</div>
-                <div class="gg-loc-val">${region}</div>
-            </div>` : ''}
-            <div class="gg-loc-row">
-                <div class="gg-loc-label">Coords:</div>
-                <div class="gg-loc-val gg-loc-coords">${lat}, ${lng}</div>
-            </div>
-        `;
-        box.style.display = 'block';
     }
 
 
@@ -1671,18 +1228,10 @@
                 checkLocation(opts.pano);
             }
 
-            // Capture Instance
-            svInstance = instance;
-
             // Add Event Listener
             win.google.maps.event.addListener(instance, 'pano_changed', () => {
                 const panoId = instance.getPano();
                 checkLocation(panoId);
-            });
-            
-            // Listen for status_changed or similar to capture data load
-            win.google.maps.event.addListener(instance, 'status_changed', () => {
-                 extractLocationData();
             });
 
             return instance;
@@ -1699,10 +1248,6 @@
         // 2. Prototype Hook for setPano (catch updates on existing instances)
         const originalSetPano = win.google.maps.StreetViewPanorama.prototype.setPano;
         win.google.maps.StreetViewPanorama.prototype.setPano = function(pano) {
-            if (!svInstance) {
-                svInstance = this;
-                console.log('[BetterMetas] Captured svInstance via setPano hook.');
-            }
             checkLocation(pano);
             return originalSetPano.apply(this, arguments);
         };
@@ -1762,24 +1307,15 @@
              if (isRoundResult()) {
                   // If we click ANY button on result screen that isn't inside our HUD or modals, hide HUD
                   // Exclude: HUD, Settings Modal, Add Meta Modal
-                  // Exclude: HUD, Settings Modal, Add Meta Modal
                   if (!target.closest('#gg-meta-hud') && 
                       !target.closest('#gg-settings-modal') && 
                       !target.closest('#gg-meta-modal')) {
-                       
-                       // Close HUD
+                       // Optional: Check button text if needed, but any outside interaction usually means moving on
                        const hud = document.getElementById('gg-meta-hud');
-                       if (hud && hud.classList.contains('gg-visible')) {
+                       if (hud) {
                            hud.classList.remove('gg-visible');
                            userDismissed = true;
                        }
-
-                       // Close Modals
-                       const metaModal = document.getElementById('gg-meta-modal');
-                       if (metaModal) metaModal.style.display = 'none';
-
-                       const settingsModal = document.getElementById('gg-settings-modal');
-                       if (settingsModal) settingsModal.style.display = 'none';
                   }
              }
          }, true); // Capture phase to catch it early

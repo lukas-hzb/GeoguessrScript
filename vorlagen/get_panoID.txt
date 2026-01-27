@@ -1,0 +1,129 @@
+// ==UserScript==
+// @name         GeoGuessr Pano ID Display (Direct)
+// @namespace    http://tampermonkey.net/
+// @version      2.0
+// @description  Zeigt die Pano-ID an (CSP Bypass & verbesserter Hook)
+// @author       Gemini
+// @match        https://www.geoguessr.com/*
+// @run-at       document-start
+// @grant        unsafeWindow
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Zugriff auf das echte Fenster-Objekt (für Tampermonkey/Violentmonkey)
+    const win = (typeof unsafeWindow !== 'undefined') ? unsafeWindow : window;
+
+    // --- UI erstellen ---
+    const idDisplay = document.createElement('div');
+    idDisplay.style.position = 'fixed';
+    idDisplay.style.top = '10px';
+    idDisplay.style.left = '10px';
+    idDisplay.style.zIndex = '999999';
+    idDisplay.style.display = 'flex';
+    idDisplay.style.alignItems = 'center';
+    idDisplay.style.gap = '5px';
+    idDisplay.style.fontFamily = 'monospace';
+    idDisplay.style.fontSize = '12px';
+
+    // Label für die ID
+    const textSpan = document.createElement('span');
+    textSpan.textContent = 'Suche Pano ID...';
+    textSpan.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    textSpan.style.color = '#0f0';
+    textSpan.style.padding = '5px 8px';
+    textSpan.style.borderRadius = '4px';
+    idDisplay.appendChild(textSpan);
+
+    // Kopier-Button
+    const copyBtn = document.createElement('button');
+    copyBtn.textContent = '📋';
+    copyBtn.style.cursor = 'pointer';
+    copyBtn.style.border = 'none';
+    copyBtn.style.background = 'rgba(255, 255, 255, 0.2)';
+    copyBtn.style.color = 'white';
+    copyBtn.style.padding = '5px';
+    copyBtn.style.borderRadius = '4px';
+    copyBtn.title = 'ID kopieren';
+    
+    copyBtn.onclick = () => {
+        const text = textSpan.textContent.replace('ID: ', '');
+        if (text && !text.includes('Suche')) {
+            navigator.clipboard.writeText(text);
+            const originalText = copyBtn.textContent;
+            copyBtn.textContent = '✅';
+            setTimeout(() => copyBtn.textContent = originalText, 1000);
+        }
+    };
+    idDisplay.appendChild(copyBtn);
+
+    document.documentElement.appendChild(idDisplay);
+
+
+    // --- Logik ---
+
+    function updatePanoID(id) {
+        if (id && typeof id === 'string' && id.length > 5) {
+            textSpan.textContent = `ID: ${id}`;
+        }
+    }
+
+    // Hauptfunktion zum Einklinken in die Google Maps API
+    function installHooks() {
+        // Prüfen, ob Google Maps geladen ist
+        if (!win.google || !win.google.maps || !win.google.maps.StreetViewPanorama) {
+            return;
+        }
+
+        console.log('[GeoGuessr ID] Google Maps API gefunden. Hooks werden installiert...');
+        
+        // 1. Konstruktor Hook (fängt neue Instanzen ab)
+        const OriginalStreetViewPanorama = win.google.maps.StreetViewPanorama;
+        
+        win.google.maps.StreetViewPanorama = function(node, opts) {
+            const instance = new OriginalStreetViewPanorama(node, opts);
+            
+            // Sofortige Prüfung beim Erstellen
+            if (opts && opts.pano) {
+                updatePanoID(opts.pano);
+            }
+
+            // Event Listener hinzufügen
+            win.google.maps.event.addListener(instance, 'pano_changed', () => {
+                const panoId = instance.getPano();
+                updatePanoID(panoId);
+            });
+
+            return instance;
+        };
+
+        // Prototyp und statische Eigenschaften kopieren
+        win.google.maps.StreetViewPanorama.prototype = OriginalStreetViewPanorama.prototype;
+        for (let prop in OriginalStreetViewPanorama) {
+            if (OriginalStreetViewPanorama.hasOwnProperty(prop)) {
+                win.google.maps.StreetViewPanorama[prop] = OriginalStreetViewPanorama[prop];
+            }
+        }
+
+        // 2. Prototyp Hook für setPano (fängt Updates auf existierenden Instanzen ab)
+        const originalSetPano = win.google.maps.StreetViewPanorama.prototype.setPano;
+        win.google.maps.StreetViewPanorama.prototype.setPano = function(pano) {
+            updatePanoID(pano);
+            return originalSetPano.apply(this, arguments);
+        };
+        
+        console.log('[GeoGuessr ID] Hooks erfolgreich installiert.');
+        return true;
+    }
+
+    // --- Schleife zum Warten auf die API ---
+    // Wir überprüfen alle 50ms, ob Google Maps da ist.
+    // Sobald wir es gehookt haben, stoppen wir den Timer.
+    const timer = setInterval(() => {
+        if (installHooks()) {
+            clearInterval(timer);
+        }
+    }, 50);
+
+})();

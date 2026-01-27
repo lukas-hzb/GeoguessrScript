@@ -40,16 +40,6 @@
     let nextPanoid = null; // Queue for ID updates blocked by lock
     let userDismissed = false; // Prevent sticky logic from showing HUD after manual hide
 
-    // Location Data
-    let svInstance = null; // Store the active StreetViewPanorama instance
-    let currentLocationData = {
-        address: null,
-        country: null,
-        region: null,
-        lat: null,
-        lng: null
-    };
-
 
 
     // --- Styles ---
@@ -205,38 +195,6 @@
             margin-bottom: 0;
             padding-bottom: 0;
         }
-
-        /* Location Info Box */
-        #gg-location-info {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 8px;
-            margin-bottom: 12px;
-            font-size: 0.8rem;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .gg-loc-row {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 4px;
-        }
-        .gg-loc-row:last-child { margin-bottom: 0; }
-        .gg-loc-label {
-            color: rgba(255,255,255,0.5);
-            width: 70px;
-            flex-shrink: 0;
-            font-weight: 600;
-        }
-        .gg-loc-val {
-            color: #fff;
-            font-weight: 500;
-            word-break: break-word;
-        }
-        .gg-loc-coords {
-            font-family: monospace;
-            color: #ffd700;
-        }
-
         #gg-meta-add-btn, #gg-settings-btn {
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
@@ -636,10 +594,6 @@
                     <button id="gg-meta-add-btn">+ Add</button>
                 </div>
             </div>
-            <div id="gg-location-info" style="display:none;">
-                <!-- Filled by JS -->
-            </div>
-
             <div id="gg-meta-container" class="gg-meta-content">
                 <div style="color: #ccc; font-style: italic;">Waiting for location...</div>
             </div>
@@ -735,21 +689,6 @@
                 </div>
 
                 <div class="gg-form-group">
-                    <label class="gg-form-label">Scope</label>
-                    <input type="text" id="meta-scope" class="gg-form-input" style="display:none;">
-                    <div id="meta-scope-presets" style="margin-top: 8px; text-align: center;">
-                        <span class="gg-tag-pill" data-value="countrywide">Countrywide</span>
-                        <span class="gg-tag-pill" data-value="region">Region</span>
-                        <span class="gg-tag-pill" data-value="longitude">Longitude</span>
-                        <span class="gg-tag-pill" data-value="1000km">1000km</span>
-                        <span class="gg-tag-pill" data-value="100km">100km</span>
-                        <span class="gg-tag-pill" data-value="10km">10km</span>
-                        <span class="gg-tag-pill" data-value="1km">1km</span>
-                        <span class="gg-tag-pill" data-value="unique">Unique</span>
-                    </div>
-                </div>
-
-                <div class="gg-form-group">
                     <label class="gg-form-label">Tags</label>
                     <!-- Input hidden, using pills only -->
                     <input type="text" id="meta-tags" class="gg-form-input" placeholder="" style="display:none;">
@@ -784,32 +723,6 @@
                 updateHiddenInput();
             }
         });
-
-        // Scope Logic (Single-select)
-        const scopeContainer = modal.querySelector('#meta-scope-presets');
-        
-        scopeContainer.addEventListener('click', (e) => {
-            if (e.target.classList.contains('gg-tag-pill')) {
-                // Deselect all others
-                Array.from(scopeContainer.querySelectorAll('.gg-tag-pill')).forEach(el => {
-                   if (el !== e.target) el.classList.remove('gg-tag-selected');
-                });
-                
-                // Toggle clicked
-                const wasSelected = e.target.classList.contains('gg-tag-selected');
-                if (!wasSelected) {
-                    e.target.classList.add('gg-tag-selected');
-                } else {
-                    e.target.classList.remove('gg-tag-selected');
-                }
-
-                // Update hidden input
-                const selected = scopeContainer.querySelector('.gg-tag-selected');
-                document.getElementById('meta-scope').value = selected ? selected.dataset.value : '';
-            }
-        });
-
-
 
         // Add Toggle logic
         const showDetails = () => {
@@ -1031,7 +944,6 @@
         const tagsStr = document.getElementById('meta-tags').value;
         const tags = tagsStr.split(',').map(t => t.trim()).filter(t => t);
         const imageUrl = document.getElementById('meta-image').value;
-        const scope = document.getElementById('meta-scope').value;
         
         if (!title || !desc) {
             alert('Please fill in Title and Description');
@@ -1053,8 +965,7 @@
             title: title,
             description: desc,
             imageUrl: imageUrl,
-            tags: tags,
-            scope: scope
+            tags: tags
         };
 
         // For Issue submission, we send both the meta and the panoid to link
@@ -1367,9 +1278,6 @@
         if (changed) {
             console.log('[BetterMetas] New Location detected:', panoid);
             updateStatus(`ID: ${panoid.substring(0,12)}...`);
-            
-            // Trigger Location Data Extraction Immediately
-            extractLocationData();
         } else {
              return;
         }
@@ -1380,8 +1288,6 @@
             console.log('[BetterMetas] Data not fully loaded yet, waiting...');
             return;
         }
-
-        // Join: locationMap[panoid] -> metaIds -> metasData
 
         // Join: locationMap[panoid] -> metaIds -> metasData
         // DEBUG: Log all available location keys for comparison
@@ -1415,148 +1321,6 @@
         } else {
             updateHUD(null);
         }
-
-        // Trigger Location Data Extraction
-        extractLocationData();
-    }
-    
-    function extractLocationData(attempt = 0) {
-        const maxAttempts = 10;
-        
-        if (!svInstance) {
-            console.log(`[BetterMetas] extractLocationData: No svInstance available yet (Attempt ${attempt+1}/${maxAttempts}).`);
-            if (attempt < maxAttempts) {
-                setTimeout(() => extractLocationData(attempt + 1), 500);
-            }
-            return;
-        }
-
-        if (attempt === 0) console.log('[BetterMetas] extractLocationData: Triggered.');
-
-        // Give it a moment for data to populate in the instance if it's fresh
-        setTimeout(() => {
-            try {
-                // Check if we can get location data
-                let loc = null;
-                if (typeof svInstance.getLocation === 'function') {
-                    loc = svInstance.getLocation();
-                } 
-                
-                if (loc) {
-                    const desc = loc.description || loc.shortDescription || "Unknown Location";
-                    const latLng = loc.latLng;
-                    const lat = latLng ? (typeof latLng.lat === 'function' ? latLng.lat() : latLng.lat) : 0;
-                    const lng = latLng ? (typeof latLng.lng === 'function' ? latLng.lng() : latLng.lng) : 0;
-                    
-                    console.log(`[BetterMetas] Location Found: ${desc} (${lat}, ${lng})`);
-
-                    // Simple heuristic for "Country" from address (last part after comma)
-                    let country = "Unknown";
-                    if (desc && desc.includes(',')) {
-                        const parts = desc.split(',');
-                        country = parts[parts.length - 1].trim();
-                        // Filter out zip codes if mixed in (basic check)
-                        if (/^\d+$/.test(country) && parts.length > 1) {
-                            country = parts[parts.length - 2].trim();
-                        }
-                    } else {
-                        country = desc; // Fallback
-                    }
-
-                    currentLocationData = {
-                        address: desc,
-                        country: country,
-                        region: null,
-                        lat: lat.toFixed(5),
-                        lng: lng.toFixed(5)
-                    };
-                    
-                    updateLocationUI();
-
-                    // Reverse Geocoding for better accuracy
-                    if (win.google && win.google.maps && win.google.maps.Geocoder) {
-                        const geocoder = new win.google.maps.Geocoder();
-                        const latVal = parseFloat(lat);
-                        const lngVal = parseFloat(lng);
-                        
-                        // console.log('[BetterMetas] Requesting Reverse Geocode...');
-                        geocoder.geocode({ location: { lat: latVal, lng: lngVal } }, (results, status) => {
-                            if (status === 'OK' && results && results.length > 0) {
-                                const res = results[0];
-                                const address = res.formatted_address;
-                                let realCountry = country;
-                                
-                                // Find country in address components
-                                const countryComponent = res.address_components.find(c => c.types.includes('country'));
-                                if (countryComponent) {
-                                    realCountry = countryComponent.long_name;
-                                }
-
-                                // Find administrative_area_level_1 (Region/State)
-                                let region = null;
-                                const regionComponent = res.address_components.find(c => c.types.includes('administrative_area_level_1'));
-                                if (regionComponent) {
-                                    region = regionComponent.long_name;
-                                }
-
-                                // console.log(`[BetterMetas] Geocode Success: ${address} | ${realCountry} | ${region}`);
-
-                                currentLocationData.address = address;
-                                currentLocationData.country = realCountry;
-                                currentLocationData.region = region;
-                                updateLocationUI();
-                            } else {
-                                console.log('[BetterMetas] Geocode failed: ' + status);
-                            }
-                        });
-                    } else {
-                         console.log('[BetterMetas] Geocoder API not available.');
-                    }
-                } else {
-                    console.log(`[BetterMetas] svInstance.getLocation() returned null/empty (Attempt ${attempt+1}/${maxAttempts}).`);
-                    if (attempt < maxAttempts) {
-                        extractLocationData(attempt + 1);
-                    }
-                }
-            } catch (e) {
-                console.warn('[BetterMetas] Error accessing location data:', e);
-            }
-        }, 500); 
-    }
-
-    function updateLocationUI() {
-        const box = document.getElementById('gg-location-info');
-        console.log('[BetterMetas] updateLocationUI called. Box:', box, 'Data:', currentLocationData);
-        if (!box) return;
-
-        const { address, country, region, lat, lng } = currentLocationData;
-        
-        if (!lat || !lng) {
-            console.log('[BetterMetas] updateLocationUI: Missing lat/lng, hiding box.');
-            box.style.display = 'none';
-            return;
-        }
-
-        box.innerHTML = `
-            <div class="gg-loc-row">
-                <div class="gg-loc-label">Address:</div>
-                <div class="gg-loc-val">${address || 'N/A'}</div>
-            </div>
-             <div class="gg-loc-row">
-                <div class="gg-loc-label">Country:</div>
-                <div class="gg-loc-val" style="color: #8cd45a;">${country || 'N/A'}</div>
-            </div>
-            ${region ? `
-            <div class="gg-loc-row">
-                <div class="gg-loc-label">Region:</div>
-                <div class="gg-loc-val">${region}</div>
-            </div>` : ''}
-            <div class="gg-loc-row">
-                <div class="gg-loc-label">Coords:</div>
-                <div class="gg-loc-val gg-loc-coords">${lat}, ${lng}</div>
-            </div>
-        `;
-        box.style.display = 'block';
     }
 
 
@@ -1671,18 +1435,10 @@
                 checkLocation(opts.pano);
             }
 
-            // Capture Instance
-            svInstance = instance;
-
             // Add Event Listener
             win.google.maps.event.addListener(instance, 'pano_changed', () => {
                 const panoId = instance.getPano();
                 checkLocation(panoId);
-            });
-            
-            // Listen for status_changed or similar to capture data load
-            win.google.maps.event.addListener(instance, 'status_changed', () => {
-                 extractLocationData();
             });
 
             return instance;
@@ -1699,10 +1455,6 @@
         // 2. Prototype Hook for setPano (catch updates on existing instances)
         const originalSetPano = win.google.maps.StreetViewPanorama.prototype.setPano;
         win.google.maps.StreetViewPanorama.prototype.setPano = function(pano) {
-            if (!svInstance) {
-                svInstance = this;
-                console.log('[BetterMetas] Captured svInstance via setPano hook.');
-            }
             checkLocation(pano);
             return originalSetPano.apply(this, arguments);
         };
