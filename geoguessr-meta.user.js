@@ -175,6 +175,22 @@
             white-space: nowrap;
         }
 
+        .gg-country-badge {
+            background: rgba(249, 115, 22, 0.15);
+            color: #fb923c;
+            border: 1px solid rgba(249, 115, 22, 0.4);
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-right: 4px;
+            flex-shrink: 0;
+            min-width: 24px;
+            text-align: center;
+            box-shadow: 0 0 4px rgba(249, 115, 22, 0.2);
+        }
+
         .gg-meta-row {
             margin-bottom: 12px;
             padding-bottom: 12px;
@@ -698,7 +714,7 @@
                 <div class="gg-modal-header">Add metas to location</div>
                 
                 <div class="gg-form-group">
-                    <input type="text" id="meta-search" class="gg-form-input" placeholder="Search Title, Desc, Tags (use ; to refine)...">
+                    <input type="text" id="meta-search" class="gg-form-input" placeholder="Filter by country, title or tags (e.g. Kenya;snorkel)">
                 </div>
                 <div id="gg-existing-metas"></div>
 
@@ -939,6 +955,58 @@
         });
     }
 
+    function getCountryCode(countryName) {
+        if (!countryName) return '??';
+        const name = countryName.trim().toLowerCase();
+        
+        // Comprehensive mapping for all Plonkit regions and user-provided list
+        const mapping = {
+            'alaska': 'US', 'albania': 'AL', 'american samoa': 'AS', 'andorra': 'AD', 'antarctica': 'AQ',
+            'argentina': 'AR', 'australia': 'AU', 'austria': 'AT', 'azores': 'PT', 'bangladesh': 'BD',
+            'belarus': 'BY', 'belgium': 'BE', 'bermuda': 'BM', 'bhutan': 'BT', 'bolivia': 'BO',
+            'botswana': 'BW', 'brazil': 'BR', 'british indian ocean territory': 'IO', 'bulgaria': 'BG',
+            'cambodia': 'KH', 'canada': 'CA', 'chile': 'CL', 'china': 'CN', 'christmas island': 'CX',
+            'cocos islands': 'CC', 'colombia': 'CO', 'costa rica': 'CR', 'croatia': 'HR', 'curaçao': 'CW',
+            'cyprus': 'CY', 'czechia': 'CZ', 'denmark': 'DK', 'dominican republic': 'DO', 'ecuador': 'EC',
+            'egypt': 'EG', 'estonia': 'EE', 'eswatini': 'SZ', 'falkland islands': 'FK', 'faroe islands': 'FO',
+            'finland': 'FI', 'france': 'FR', 'germany': 'DE', 'ghana': 'GH', 'gibraltar': 'GI',
+            'greece': 'GR', 'greenland': 'GL', 'guam': 'GU', 'guatemala': 'GT', 'hawaii': 'US',
+            'hong kong': 'HK', 'hungary': 'HU', 'iceland': 'IS', 'india': 'IN', 'indonesia': 'ID',
+            'iraq': 'IQ', 'ireland': 'IE', 'isle of man': 'IM', 'israel & the west bank': 'IL', 'italy': 'IT',
+            'japan': 'JP', 'jersey': 'JE', 'jordan': 'JO', 'kazakhstan': 'KZ', 'kenya': 'KE',
+            'kyrgyzstan': 'KG', 'laos': 'LA', 'latvia': 'LV', 'lebanon': 'LB', 'lesotho': 'LS',
+            'liechtenstein': 'LI', 'lithuania': 'LT', 'luxembourg': 'LU', 'macau': 'MO', 'madagascar': 'MG',
+            'madeira': 'PT', 'malaysia': 'MY', 'mali': 'ML', 'malta': 'MT', 'martinique': 'MQ',
+            'mexico': 'MX', 'monaco': 'MC', 'mongolia': 'MN', 'montenegro': 'ME', 'namibia': 'NA',
+            'nepal': 'NP', 'netherlands': 'NL', 'new zealand': 'NZ', 'nigeria': 'NG', 'north macedonia': 'MK',
+            'northern mariana islands': 'MP', 'norway': 'NO', 'oman': 'OM', 'pakistan': 'PK', 'panama': 'PA',
+            'peru': 'PE', 'philippines': 'PH', 'pitcairn islands': 'PN', 'poland': 'PL', 'portugal': 'PT',
+            'puerto rico': 'PR', 'qatar': 'QA', 'reunion': 'RE', 'romania': 'RO', 'russia': 'RU',
+            'rwanda': 'RW', 'saint pierre and miquelon': 'PM', 'san marino': 'SM', 'senegal': 'SN',
+            'serbia': 'RS', 'singapore': 'SG', 'slovakia': 'SK', 'slovenia': 'SI', 'south africa': 'ZA',
+            'south georgia & sandwich islands': 'GS', 'south korea': 'KR', 'spain': 'ES', 'sri lanka': 'LK',
+            'svalbard': 'SJ', 'sweden': 'SE', 'switzerland': 'CH', 'são tomé and príncipe': 'ST',
+            'taiwan': 'TW', 'tanzania': 'TZ', 'thailand': 'TH', 'tunisia': 'TN', 'turkey': 'TR',
+            'us minor outlying islands': 'UM', 'us virgin islands': 'VI', 'uganda': 'UG', 'ukraine': 'UA',
+            'united arab emirates': 'AE', 'united kingdom': 'GB', 'united states of america': 'US',
+            'uruguay': 'UY', 'vanuatu': 'VU', 'vietnam': 'VN'
+        };
+
+        const normalizedName = name.replace(/á/g, 'a').replace(/ó/g, 'o').replace(/é/g, 'e').replace(/ç/g, 'c');
+        if (mapping[name]) return mapping[name];
+        if (mapping[normalizedName]) return mapping[normalizedName];
+        
+        // Handle variations of São Tomé
+        if (name.includes('sao tome') || name.includes('sdo tome')) return 'ST';
+
+        // Fallback: Try fallback word extraction
+        const words = name.split(' ');
+        if (words.length > 1) {
+            return (words[0][0] + words[1][0]).toUpperCase();
+        }
+        return name.substring(0, 2).toUpperCase();
+    }
+
     function renderExistingMetas(searchTerm = '') {
         const container = document.getElementById('gg-existing-metas');
         if (!container) return;
@@ -950,6 +1018,7 @@
             if (terms.length === 0) return true;
 
             const searchableContent = [
+                m.country || '',
                 m.title || '',
                 m.description || '',
                 (m.tags || []).join(' ')
@@ -966,11 +1035,13 @@
 
         container.innerHTML = filtered.map(m => {
             const isSelected = selectedMetaIds.has(m.id);
+            const countryCode = getCountryCode(m.country);
             return `
                 <div class="gg-meta-list-item">
-                    <div style="display: flex; align-items: center; gap: 8px; flex: 1; overflow: hidden; height: 100%;">
-                        <div class="gg-meta-list-title" style="white-space: nowrap; line-height: 1;">${m.title}</div>
-                        <div class="gg-meta-list-tags" style="display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: none; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 4px; flex: 1; overflow: hidden; height: 100%;">
+                        <span class="gg-country-badge" title="${m.country || 'Unknown Country'}">${countryCode}</span>
+                        <div class="gg-meta-list-title" style="white-space: nowrap; line-height: 1; overflow: hidden; text-overflow: ellipsis; padding: 0 4px; flex-shrink: 0;">${m.title}</div>
+                        <div class="gg-meta-list-tags" style="display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: none; height: 100%; flex: 1;">
                             ${(m.tags || []).map(t => `<span class="gg-tag-static">${t}</span>`).join('')}
                         </div>
                     </div>
