@@ -1049,12 +1049,14 @@
 
         const newMeta = {
             id: metaId,
-            type: "hint",
+            country: currentLocationData.country || "Unknown",
+            section: "User Submitted",
             title: title,
             description: desc,
+            note: "",
             imageUrl: imageUrl,
-            tags: tags,
-            scope: scope
+            scope: scope,
+            tags: tags
         };
 
         // For Issue submission, we send both the meta and the panoid to link
