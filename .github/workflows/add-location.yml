@@ -82,6 +82,24 @@ jobs:
             
             const panoid = submission.panoid;
 
+            // Ensure location entry exists with metadata and correct structure
+            if (!locations[panoid] || Array.isArray(locations[panoid])) {
+                const oldMetas = Array.isArray(locations[panoid]) ? locations[panoid] : [];
+                locations[panoid] = {
+                    metas: oldMetas,
+                    lat: submission.lat || (submission.meta ? submission.meta.lat : null),
+                    lng: submission.lng || (submission.meta ? submission.meta.lng : null),
+                    country: submission.country || (submission.meta ? submission.meta.country : null),
+                    region: submission.region || (submission.meta ? submission.meta.region : null)
+                };
+            } else {
+                // Update metadata if provided and currently missing or updated
+                if (submission.lat) locations[panoid].lat = submission.lat;
+                if (submission.lng) locations[panoid].lng = submission.lng;
+                if (submission.country) locations[panoid].country = submission.country;
+                if (submission.region) locations[panoid].region = submission.region;
+            }
+
             if (submission.action === "add_meta") {
                 // Add new meta to metas.json
                 const newMeta = submission.meta;
@@ -93,21 +111,21 @@ jobs:
                     metas.push(newMeta);
                 }
                 // Link panoid to new meta
-                if (!locations[panoid]) locations[panoid] = [];
-                if (!locations[panoid].includes(newMeta.id)) {
-                    locations[panoid].push(newMeta.id);
+                if (!locations[panoid].metas.includes(newMeta.id)) {
+                    locations[panoid].metas.push(newMeta.id);
                 }
-            } else if (submission.action === "link_meta") {
-                // Link existing meta to panoid
-                const metaId = submission.metaId;
-                if (!metaId) {
-                    core.setFailed("link_meta: Missing metaId");
+            } else if (submission.action === "link_meta" || submission.action === "link_metas") {
+                // Link existing meta(s) to panoid
+                const metaIds = submission.action === "link_metas" ? (submission.metaIds || []) : [submission.metaId];
+                if (metaIds.length === 0 || (submission.action === "link_meta" && !submission.metaId)) {
+                    core.setFailed(`${submission.action}: Missing metaId(s)`);
                     return;
                 }
-                if (!locations[panoid]) locations[panoid] = [];
-                if (!locations[panoid].includes(metaId)) {
-                    locations[panoid].push(metaId);
-                }
+                metaIds.forEach(id => {
+                    if (id && !locations[panoid].metas.includes(id)) {
+                        locations[panoid].metas.push(id);
+                    }
+                });
             } else {
                 core.setFailed(`Unknown action: ${submission.action}`);
                 return;

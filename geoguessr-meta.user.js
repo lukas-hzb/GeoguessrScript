@@ -37,6 +37,7 @@
     let locationMap = {};  // panoid -> [metaIds]
     let metasData = [];    // [{id, title, desc, ...}]
     let currentPanoid = null;
+    let selectedMetaIds = new Set();
     
     // State for Robust Lock & Visibility
     let lastResultSeenTime = 0;
@@ -702,7 +703,7 @@
                 <div id="gg-existing-metas"></div>
 
                 <div id="gg-selection-actions" style="margin-top: 10px;">
-                    <button class="gg-btn-primary" id="gg-link-selected-btn" style="display: none; width: 100%; margin-bottom: 10px;">
+                    <button class="gg-btn-primary" id="gg-link-selected-btn" style="display: none; width: 100%; margin-bottom: 10px; background: linear-gradient(180deg, #8cd45a 0%, #6cc04a 50%, #5ab840 100%);">
                         Link Selected Metas (0)
                     </button>
                 </div>
@@ -867,6 +868,8 @@
             document.getElementById('meta-main-view').classList.remove('gg-hidden');
             document.getElementById('meta-details-view').classList.add('gg-hidden');
             document.getElementById('gg-json-output').style.display = 'none';
+            selectedMetaIds.clear();
+            updateLinkSelectedBtn();
             renderExistingMetas(); // Populate existing metas list
         });
 
@@ -910,7 +913,9 @@
 
         // Close when clicking backdrop
         document.getElementById('gg-link-selected-btn').addEventListener('click', () => {
-            linkMultipleMetas(Array.from(selectedMetaIds));
+            if (selectedMetaIds.size > 0) {
+                linkMultipleMetas(Array.from(selectedMetaIds));
+            }
         });
 
         backdrop.addEventListener('click', () => {
@@ -959,25 +964,52 @@
             return;
         }
 
-        container.innerHTML = filtered.map(m => `
-            <div class="gg-meta-list-item">
-                <div style="display: flex; align-items: center; gap: 8px; flex: 1; overflow: hidden; height: 100%;">
-                    <div class="gg-meta-list-title" style="white-space: nowrap; line-height: 1;">${m.title}</div>
-                    <div class="gg-meta-list-tags" style="display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: none; height: 100%;">
-                        ${(m.tags || []).map(t => `<span class="gg-tag-static">${t}</span>`).join('')}
+        container.innerHTML = filtered.map(m => {
+            const isSelected = selectedMetaIds.has(m.id);
+            return `
+                <div class="gg-meta-list-item">
+                    <div style="display: flex; align-items: center; gap: 8px; flex: 1; overflow: hidden; height: 100%;">
+                        <div class="gg-meta-list-title" style="white-space: nowrap; line-height: 1;">${m.title}</div>
+                        <div class="gg-meta-list-tags" style="display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: none; height: 100%;">
+                            ${(m.tags || []).map(t => `<span class="gg-tag-static">${t}</span>`).join('')}
+                        </div>
                     </div>
+                    <button class="gg-btn-link-meta ${isSelected ? 'gg-tag-selected' : ''}" data-meta-id="${m.id}" style="${isSelected ? 'background: #8cd45a; border-color: #3d8c2a;' : ''}">
+                        ${isSelected ? 'Selected' : 'Link'}
+                    </button>
                 </div>
-                <button class="gg-btn-link-meta" data-meta-id="${m.id}">Link</button>
-            </div>
-        `).join('');
+            `;
+        }).join('');
 
         // Add click handlers
         container.querySelectorAll('.gg-btn-link-meta').forEach(btn => {
-            btn.addEventListener('click', () => linkExistingMeta(btn.dataset.metaId));
+            btn.addEventListener('click', (e) => {
+                const metaId = btn.dataset.metaId;
+                if (selectedMetaIds.has(metaId)) {
+                    selectedMetaIds.delete(metaId);
+                } else {
+                    selectedMetaIds.add(metaId);
+                }
+                updateLinkSelectedBtn();
+                renderExistingMetas(searchTerm); // Re-render to update highlights
+            });
         });
     }
 
-    async function linkExistingMeta(metaId) {
+    function updateLinkSelectedBtn() {
+        const btn = document.getElementById('gg-link-selected-btn');
+        if (!btn) return;
+
+        const count = selectedMetaIds.size;
+        if (count > 0) {
+            btn.style.display = 'block';
+            btn.textContent = `Link Selected Metas (${count})`;
+        } else {
+            btn.style.display = 'none';
+        }
+    }
+
+    async function linkMultipleMetas(metaIds) {
         const panoid = currentPanoid;
         if (!panoid || panoid === "YOUR_PANOID_HERE") {
             alert("No location detected! Please try on a game result screen.");
@@ -987,18 +1019,31 @@
         const token = localStorage.getItem('gg_gh_token');
         if (!token) {
             // Community Mode: Open Issue
-            const submission = { action: "link_meta", panoid: panoid, metaId: metaId };
+            const submission = { 
+                action: "link_metas", // Changed to link_metas
+                panoid: panoid, 
+                metaIds: metaIds,
+                lat: currentLocationData.lat,
+                lng: currentLocationData.lng,
+                country: currentLocationData.country,
+                region: currentLocationData.region
+            };
             const jsonStr = JSON.stringify(submission, null, 2);
             const repo = `${REPO_OWNER}/${REPO_NAME}`;
-            const issueTitle = encodeURIComponent(`[Link Meta] ${metaId} to ${panoid.substring(0,15)}`);
-            const body = encodeURIComponent(`## Link Existing Meta\n\n\`\`\`json\n${jsonStr}\n\`\`\`\n\n_(Automated)_`);
+            const issueTitle = encodeURIComponent(`[Meta Submission] ${panoid.substring(0,15)} (Multi-Link)`);
+            const body = encodeURIComponent(`## Link Multiple Metas\n\n\`\`\`json\n${jsonStr}\n\`\`\`\n\n_(Automated submission via BetterMetas Script)_`);
             const issueUrl = `https://github.com/${repo}/issues/new?title=${issueTitle}&body=${body}`;
             window.open(issueUrl, '_blank');
+            
+            // Clear selection and close
+            selectedMetaIds.clear();
+            document.getElementById('gg-meta-modal').style.display = 'none';
+            document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
             return;
         }
 
-        // Admin Mode: Direct API
-        updateStatus('Linking meta...');
+        // Admin Mode: Direct API (Sequential for simplicity, could be optimized)
+        updateStatus(`Linking ${metaIds.length} metas...`);
         
         try {
             // Helper for GitHub API via GM_xmlhttpRequest
@@ -1049,19 +1094,24 @@
                     region: currentLocationData.region
                 };
             }
-            if (!locations[panoid].metas.includes(metaId)) {
-                locations[panoid].metas.push(metaId);
-            }
+            
+            metaIds.forEach(id => {
+                if (!locations[panoid].metas.includes(id)) {
+                    locations[panoid].metas.push(id);
+                }
+            });
 
             const contentBase64 = window.btoa(unescape(encodeURIComponent(JSON.stringify(locations, null, 2))));
             await ghAPI(API_LOCATIONS_URL, 'PUT', { 
-                message: `Link ${metaId} to ${panoid} via BetterMetas`, 
+                message: `Link ${metaIds.length} metas to ${panoid} via BetterMetas`, 
                 content: contentBase64, 
                 sha: data.sha 
             });
 
             updateStatus('Linked!');
+            selectedMetaIds.clear();
             document.getElementById('gg-meta-modal').style.display = 'none';
+            document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
             fetchLocationData();
         } catch (e) {
             console.error(e);
