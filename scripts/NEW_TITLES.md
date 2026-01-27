@@ -1,0 +1,1 @@
+Mache das erneuern der Title in data/plonkit_data.json manuell. Schreibe eine UPDATE_TITLES.md mit einer Checkliste über alle Länder und regionen. Gehe dann einzeln alle durch und erneuere den Titel komplett manuell!!! Betrachte dazu die DEscription im Kontext und das land und benenne um. Keine Doppelungen innerhalb eines Landes! Gehe langsam und schritt für schritt vor!

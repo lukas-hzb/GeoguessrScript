@@ -959,7 +959,7 @@
         if (!countryName) return '??';
         const name = countryName.trim().toLowerCase();
         
-        // Comprehensive mapping for all Plonkit regions and user-provided list
+        // Comprehensive mapping for all Plonkit regions
         const mapping = {
             'alaska': 'US', 'albania': 'AL', 'american samoa': 'AS', 'andorra': 'AD', 'antarctica': 'AQ',
             'argentina': 'AR', 'australia': 'AU', 'austria': 'AT', 'azores': 'PT', 'bangladesh': 'BD',
@@ -1028,12 +1028,29 @@
             return terms.every(term => searchableContent.includes(term));
         });
 
-        if (filtered.length === 0) {
+        // Deduplicate: Group by signature (Country+Title+Desc+Tags)
+        const groups = new Map();
+        filtered.forEach(m => {
+             // Normalize tags sort for consistent signature
+             const tagsSig = (m.tags || []).slice().sort().join(',');
+             const sig = `${m.country}|${m.title}|${m.description}|${tagsSig}`;
+             if (!groups.has(sig)) groups.set(sig, []);
+             groups.get(sig).push(m);
+        });
+
+        const uniqueFiltered = [];
+        groups.forEach(group => {
+             // If any meta in this group is currently selected, prefer showing it
+             const selected = group.find(m => selectedMetaIds.has(m.id));
+             uniqueFiltered.push(selected || group[0]);
+        });
+        
+        if (uniqueFiltered.length === 0) {
             container.innerHTML = '<div class="gg-form-hint" style="padding:8px 0;">No metas found.</div>';
             return;
         }
 
-        container.innerHTML = filtered.map(m => {
+        container.innerHTML = uniqueFiltered.map(m => {
             const isSelected = selectedMetaIds.has(m.id);
             const countryCode = getCountryCode(m.country);
             return `
