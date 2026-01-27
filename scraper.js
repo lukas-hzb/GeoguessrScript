@@ -164,6 +164,7 @@ async function scrapeCountry(browser, urlPath) {
                         country: countryName,
                         section: section,
                         title: '', 
+                        scope: '',
                         description: text, 
                         note: note,
                         imageUrl: imageUrl, 
