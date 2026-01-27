@@ -23,11 +23,13 @@
     const REPO_OWNER = 'lukas-hzb';
     const REPO_NAME = 'GeoguessrScript';
     const LOCATIONS_FILE = 'data/locations.json';
-    const METAS_FILE = 'data/metas.json';
+    const USER_METAS_FILE = 'data/metas.json';
+    const SYSTEM_METAS_FILE = 'data/plonkit_data.json';
     const getRawLocationsUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${LOCATIONS_FILE}?t=${Date.now()}`;
-    const getRawMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${METAS_FILE}?t=${Date.now()}`;
+    const getRawUserMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${USER_METAS_FILE}?t=${Date.now()}`;
+    const getRawSystemMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SYSTEM_METAS_FILE}?t=${Date.now()}`;
     const API_LOCATIONS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${LOCATIONS_FILE}`;
-    const API_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${METAS_FILE}`;
+    const API_USER_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${USER_METAS_FILE}`;
     
     // Access true window for hooks
     const win = (typeof unsafeWindow !== 'undefined') ? unsafeWindow : window;
@@ -695,9 +697,15 @@
                 <div class="gg-modal-header">Add metas to location</div>
                 
                 <div class="gg-form-group">
-                    <input type="text" id="meta-search" class="gg-form-input" placeholder="Search existing metas...">
+                    <input type="text" id="meta-search" class="gg-form-input" placeholder="Search Title, Desc, Tags (use ; to refine)...">
                 </div>
                 <div id="gg-existing-metas"></div>
+
+                <div id="gg-selection-actions" style="margin-top: 10px;">
+                    <button class="gg-btn-primary" id="gg-link-selected-btn" style="display: none; width: 100%; margin-bottom: 10px;">
+                        Link Selected Metas (0)
+                    </button>
+                </div>
 
                 <hr class="gg-modal-divider">
 
@@ -901,6 +909,10 @@
         });
 
         // Close when clicking backdrop
+        document.getElementById('gg-link-selected-btn').addEventListener('click', () => {
+            linkMultipleMetas(Array.from(selectedMetaIds));
+        });
+
         backdrop.addEventListener('click', () => {
             document.getElementById('gg-meta-modal').style.display = 'none';
             document.getElementById('gg-settings-modal').style.display = 'none';
@@ -926,10 +938,21 @@
         const container = document.getElementById('gg-existing-metas');
         if (!container) return;
 
-        const filtered = metasData.filter(m => 
-            m.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            (m.tags || []).some(t => t.toLowerCase().includes(searchTerm.toLowerCase()))
-        );
+        // Multi-term search: split by ";" and trim
+        const terms = searchTerm.toLowerCase().split(';').map(s => s.trim()).filter(s => s);
+
+        const filtered = metasData.filter(m => {
+            if (terms.length === 0) return true;
+
+            const searchableContent = [
+                m.title || '',
+                m.description || '',
+                (m.tags || []).join(' ')
+            ].join(' ').toLowerCase();
+
+            // Meta must match ALL terms
+            return terms.every(term => searchableContent.includes(term));
+        });
 
         if (filtered.length === 0) {
             container.innerHTML = '<div class="gg-form-hint" style="padding:8px 0;">No metas found.</div>';
@@ -1008,9 +1031,26 @@
             const data = await ghAPI(API_LOCATIONS_URL);
             let locations = JSON.parse(decodeURIComponent(escape(window.atob(data.content.replace(/\n/g, "")))));
 
-            if (!locations[panoid]) locations[panoid] = [];
-            if (!locations[panoid].includes(metaId)) {
-                locations[panoid].push(metaId);
+            if (!locations[panoid]) {
+                locations[panoid] = {
+                    metas: [],
+                    lat: currentLocationData.lat,
+                    lng: currentLocationData.lng,
+                    country: currentLocationData.country,
+                    region: currentLocationData.region
+                };
+            } else if (Array.isArray(locations[panoid])) {
+                const oldMetas = locations[panoid];
+                locations[panoid] = {
+                    metas: oldMetas,
+                    lat: currentLocationData.lat,
+                    lng: currentLocationData.lng,
+                    country: currentLocationData.country,
+                    region: currentLocationData.region
+                };
+            }
+            if (!locations[panoid].metas.includes(metaId)) {
+                locations[panoid].metas.push(metaId);
             }
 
             const contentBase64 = window.btoa(unescape(encodeURIComponent(JSON.stringify(locations, null, 2))));
@@ -1055,6 +1095,9 @@
         const newMeta = {
             id: metaId,
             country: currentLocationData.country || "Unknown",
+            region: currentLocationData.region || null,
+            lat: currentLocationData.lat,
+            lng: currentLocationData.lng,
             section: "User Submitted",
             title: title,
             description: desc,
@@ -1150,7 +1193,7 @@
 
             // 1. Fetch both files
             updateStatus('Fetching metas.json...');
-            const metasFile = await getFile(API_METAS_URL);
+            const metasFile = await getFile(API_USER_METAS_URL);
             
             updateStatus('Fetching locations.json...');
             const locsFile = await getFile(API_LOCATIONS_URL);
@@ -1160,15 +1203,31 @@
 
             // 3. Link panoid in locations.json
             if (!locsFile.content[panoid]) {
-                locsFile.content[panoid] = [];
+                locsFile.content[panoid] = {
+                    metas: [],
+                    lat: currentLocationData.lat,
+                    lng: currentLocationData.lng,
+                    country: currentLocationData.country,
+                    region: currentLocationData.region
+                };
+            } else if (Array.isArray(locsFile.content[panoid])) {
+                 const oldMetas = locsFile.content[panoid];
+                 locsFile.content[panoid] = {
+                    metas: oldMetas,
+                    lat: currentLocationData.lat,
+                    lng: currentLocationData.lng,
+                    country: currentLocationData.country,
+                    region: currentLocationData.region
+                };
             }
-            if (!locsFile.content[panoid].includes(newMeta.id)) {
-                locsFile.content[panoid].push(newMeta.id);
+
+            if (!locsFile.content[panoid].metas.includes(newMeta.id)) {
+                locsFile.content[panoid].metas.push(newMeta.id);
             }
 
             // 4. Commit metas.json
             updateStatus('Saving metas.json...');
-            await putFile(API_METAS_URL, metasFile.sha, metasFile.content, `Add meta ${newMeta.id} via BetterMetas`);
+            await putFile(API_USER_METAS_URL, metasFile.sha, metasFile.content, `Add meta ${newMeta.id} via BetterMetas`);
 
             // 5. Commit locations.json
             updateStatus('Saving locations.json...');
@@ -1270,22 +1329,30 @@
         }
     }
 
-    function updateHUD(metas) {
+    function updateHUD(metas, predicted = []) {
         const container = document.getElementById('gg-meta-container');
 
-        if (!metas || metas.length === 0) {
+        if ((!metas || metas.length === 0) && (!predicted || predicted.length === 0)) {
             container.innerHTML = '<div style="opacity:0.6; font-style:italic;">No active hints for this location.</div>';
             return;
         }
 
-        container.innerHTML = metas.map(m => `
-            <div class="gg-meta-row">
-                <div class="gg-meta-item-title">${m.title}</div>
+        const renderMeta = (m, isPredicted = false) => `
+            <div class="gg-meta-row" ${isPredicted ? 'style="border-left: 2px solid rgba(255,255,255,0.2); padding-left: 10px; margin-left: -12px;"' : ''}>
+                <div class="gg-meta-item-title">
+                    ${m.title}
+                    ${isPredicted ? '<span style="font-size: 0.65rem; background: rgba(255,255,255,0.15); padding: 1px 6px; border-radius: 4px; margin-left: 8px; vertical-align: middle; color: rgba(255,255,255,0.7); font-weight: 500;">PREDICTED</span>' : ''}
+                </div>
                 ${m.imageUrl ? `<img src="${m.imageUrl}" class="gg-meta-image">` : ''}
                 <div class="gg-meta-description">${m.description}</div>
                 <div>${m.tags.map(t => `<span class="gg-tag-static">${t}</span>`).join('')}</div>
             </div>
-        `).join('');
+        `;
+
+        const exactHtml = (metas || []).map(m => renderMeta(m, false)).join('');
+        const predictedHtml = (predicted || []).map(m => renderMeta(m, true)).join('');
+
+        container.innerHTML = exactHtml + predictedHtml;
     }
 
     function updateStatus(msg) {
@@ -1298,6 +1365,73 @@
     }
 
     // --- Logic ---
+    function getHaversineDistance(lat1, lon1, lat2, lon2) {
+        const R = 6371; // km
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                  Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                  Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c;
+    }
+
+    function getDistanceForScope(scope) {
+        const s = (scope || '').toLowerCase();
+        if (s === '1km') return 1;
+        if (s === '10km') return 10;
+        if (s === '100km') return 100;
+        if (s === '1000km') return 1000;
+        if (s === 'unique') return 0; // Unique means no radius/proximity prediction
+        return 0;
+    }
+
+    function evaluateProximityMetas() {
+        const curLat = parseFloat(currentLocationData.lat);
+        const curLng = parseFloat(currentLocationData.lng);
+        const curCountry = currentLocationData.country;
+        const curRegion = currentLocationData.region;
+
+        if (isNaN(curLat) || isNaN(curLng)) return [];
+
+        const predictedIds = new Set();
+        
+        // 1. Check all pinned locations in locations.json
+        for (const panoId in locationMap) {
+            const entry = locationMap[panoId];
+            const metaIds = Array.isArray(entry) ? entry : (entry.metas || []);
+            const entryLat = entry.lat ? parseFloat(entry.lat) : null;
+            const entryLng = entry.lng ? parseFloat(entry.lng) : null;
+
+            metaIds.forEach(id => {
+                const meta = metasData.find(m => m.id === id);
+                if (!meta) return;
+
+                const scope = (meta.scope || '').toLowerCase();
+                
+                // Distance-based logic
+                const maxDist = getDistanceForScope(scope);
+                if (maxDist > 0 && entryLat !== null && entryLng !== null) {
+                    const d = getHaversineDistance(curLat, curLng, entryLat, entryLng);
+                    if (d <= maxDist) predictedIds.add(id);
+                }
+            });
+        }
+
+        // 2. Check general Country/Region scope against current location
+        // This makes metas visible if you are in the right country/region, even if no nearby link exists
+        metasData.forEach(meta => {
+            const scope = (meta.scope || '').toLowerCase();
+            if (scope === 'countrywide') {
+                if (meta.country === curCountry) predictedIds.add(meta.id);
+            } else if (scope === 'region') {
+                if (meta.country === curCountry && meta.region === curRegion) predictedIds.add(meta.id);
+            }
+        });
+
+        return Array.from(predictedIds).map(id => metasData.find(m => m.id === id)).filter(Boolean);
+    }
+
     function isRanked() {
         const url = window.location.href;
         return url.includes('/duels') ||
@@ -1397,28 +1531,28 @@
         console.log(`[BetterMetas] Available location keys (${allLocationKeys.length}):`, allLocationKeys);
         
         // Check for exact match
-        const metaIds = locationMap[panoid] || [];
-        console.log(`[BetterMetas] Found ${metaIds.length} meta IDs for this location.`);
-        
-        // DEBUG: If no match, check for partial matches
-        if (metaIds.length === 0 && allLocationKeys.length > 0) {
-            const partialMatches = allLocationKeys.filter(key => 
-                key.includes(panoid) || panoid.includes(key) ||
-                key.substring(0, 10) === panoid.substring(0, 10)
-            );
-            if (partialMatches.length > 0) {
-                console.warn(`[BetterMetas] No exact match but found potential partial matches:`, partialMatches);
-            }
+        const entry = locationMap[panoid];
+        let metaIds = [];
+        if (Array.isArray(entry)) {
+            metaIds = entry;
+        } else if (entry && entry.metas) {
+            metaIds = entry.metas;
         }
+
+        console.log(`[BetterMetas] Found ${metaIds.length} exact meta IDs for this location.`);
         
-        if (metaIds.length > 0) {
-            const metas = metaIds.map(id => {
-                const found = metasData.find(m => m.id === id);
-                if (!found) console.warn('[BetterMetas] Could not find meta data for ID:', id);
-                return found;
-            }).filter(Boolean);
-            
-            updateHUD(metas);
+        // Get exact metas
+        const exactMetas = metaIds.map(id => {
+            const found = metasData.find(m => m.id === id);
+            if (!found) console.warn('[BetterMetas] Could not find exact meta data for ID:', id);
+            return found;
+        }).filter(Boolean);
+
+        // Get predicted/nearby metas
+        const predictedMetas = evaluateProximityMetas().filter(pm => !metaIds.includes(pm.id));
+
+        if (exactMetas.length > 0 || predictedMetas.length > 0) {
+            updateHUD(exactMetas, predictedMetas);
         } else {
             updateHUD(null);
         }
@@ -1512,6 +1646,8 @@
                                 currentLocationData.country = realCountry;
                                 currentLocationData.region = region;
                                 updateLocationUI();
+                                // Refresh metas now that we have better country/region info
+                                if (currentPanoid) checkLocation(currentPanoid);
                             } else {
                                 console.log('[BetterMetas] Geocode failed: ' + status);
                             }
@@ -1581,7 +1717,11 @@
         updateStatus('Loading DB...');
 
         let locLoaded = false;
-        let metasLoaded = false;
+        let userMetasLoaded = false;
+        let systemMetasLoaded = false;
+
+        let tempUserMetas = [];
+        let tempSystemMetas = [];
 
         // Fetch Locations Map
         GM_xmlhttpRequest({
@@ -1593,7 +1733,7 @@
                         locationMap = JSON.parse(response.responseText);
                         console.log(`[BetterMetas] Loaded ${Object.keys(locationMap).length} location mappings.`);
                         locLoaded = true;
-                        checkDataLoaded();
+                        checkAllLoaded();
                     } catch (e) {
                         console.error('[BetterMetas] Error parsing locations.json:', e);
                         useFallback("Locations Parse Error");
@@ -1609,44 +1749,85 @@
             }
         });
 
-        // Fetch Metas Collection
+        // Fetch User Metas Collection
         GM_xmlhttpRequest({
             method: "GET",
-            url: getRawMetasUrl(),
+            url: getRawUserMetasUrl(),
             onload: function(response) {
                 if (response.status === 200) {
                     try {
-                        metasData = JSON.parse(response.responseText);
-                        console.log(`[BetterMetas] Loaded ${metasData.length} metas.`);
-                        metasLoaded = true;
-                        checkDataLoaded();
+                        tempUserMetas = JSON.parse(response.responseText);
+                        console.log(`[BetterMetas] Loaded ${tempUserMetas.length} user metas.`);
+                        userMetasLoaded = true;
+                        checkAllLoaded();
                     } catch (e) {
                         console.error('[BetterMetas] Error parsing metas.json:', e);
-                        useFallback("Metas Parse Error");
+                        useFallback("User Metas Parse Error");
                     }
                 } else {
-                    console.error('[BetterMetas] Failed to fetch metas:', response.statusText);
-                    useFallback("Metas 404");
+                    console.log('[BetterMetas] User metas file empty or 404, proceeding...');
+                    userMetasLoaded = true;
+                    checkAllLoaded();
                 }
-            },
-            onerror: function(err) {
-                console.error('[BetterMetas] Metas request error:', err);
-                useFallback("Network Error (Metas)");
             }
         });
 
-        function checkDataLoaded() {
-            if (locLoaded && metasLoaded) {
+        // Fetch System Metas Collection (Plonkit)
+        GM_xmlhttpRequest({
+            method: "GET",
+            url: getRawSystemMetasUrl(),
+            onload: function(response) {
+                if (response.status === 200) {
+                    try {
+                        const rawData = JSON.parse(response.responseText);
+                        tempSystemMetas = [];
+                        rawData.forEach(countryObj => {
+                            if (countryObj.metas) {
+                                tempSystemMetas.push(...countryObj.metas);
+                            }
+                        });
+                        console.log(`[BetterMetas] Loaded ${tempSystemMetas.length} system metas.`);
+                        systemMetasLoaded = true;
+                        checkAllLoaded();
+                    } catch (e) {
+                        console.error('[BetterMetas] Error parsing plonkit_data.json:', e);
+                        useFallback("System Metas Parse Error");
+                    }
+                } else {
+                    console.error('[BetterMetas] Failed to fetch system metas:', response.statusText);
+                    useFallback("System Metas 404");
+                }
+            }
+        });
+
+        function checkAllLoaded() {
+            if (locLoaded && userMetasLoaded && systemMetasLoaded) {
+                const combined = [...tempUserMetas, ...tempSystemMetas];
+                const seen = new Set();
+                metasData = combined.filter(m => {
+                    if (!m.id || seen.has(m.id)) return false;
+                    seen.add(m.id);
+                    return true;
+                });
+
                 const locCount = Object.keys(locationMap).length;
-                console.log(`[BetterMetas] DB Ready: ${locCount} locs, ${metasData.length} metas.`);
-                // If we have a locked panoid, re-check it against new data
+                console.log(`[BetterMetas] DB Ready: ${locCount} locs, ${metasData.length} unique metas (${tempUserMetas.length} user, ${tempSystemMetas.length} system).`);
+                
                 if (currentPanoid) {
                      updateStatus(`ID: ${currentPanoid.substring(0,12)}...`);
-                     // Force re-check of metas for this ID
-                     const metaIds = locationMap[currentPanoid] || [];
-                     if (metaIds.length > 0) {
-                         const metas = metaIds.map(id => metasData.find(m => m.id === id)).filter(Boolean);
-                         updateHUD(metas);
+                     const entry = locationMap[currentPanoid];
+                     let metaIds = [];
+                     if (Array.isArray(entry)) {
+                         metaIds = entry;
+                     } else if (entry && entry.metas) {
+                         metaIds = entry.metas;
+                     }
+
+                     const exactMetas = metaIds.map(id => metasData.find(m => m.id === id)).filter(Boolean);
+                     const predictedMetas = evaluateProximityMetas().filter(pm => !metaIds.includes(pm.id));
+
+                     if (exactMetas.length > 0 || predictedMetas.length > 0) {
+                         updateHUD(exactMetas, predictedMetas);
                      } else {
                          updateHUD(null);
                      }
