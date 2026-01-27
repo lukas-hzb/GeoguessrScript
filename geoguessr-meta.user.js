@@ -169,7 +169,7 @@
             padding: 1px 6px;
             border-radius: 12px;
             font-size: 0.65rem;
-            margin-right: 0;
+            margin-right: 6px;
             font-weight: 600;
             border: 1px solid rgba(255, 255, 255, 0.1);
             cursor: default;
@@ -218,7 +218,6 @@
             max-height: 25vh;
             border-radius: 8px;
             margin-bottom: 8px;
-            border: 1px solid rgba(255,255,255,0.1);
             display: block;
         }
         .gg-meta-row:last-child {
@@ -1491,7 +1490,7 @@
                 </div>
                 ${m.imageUrl ? `<img src="${m.imageUrl}" class="gg-meta-image">` : ''}
                 <div class="gg-meta-description">${m.description}</div>
-                <div>${m.tags.map(t => `<span class="gg-tag-static">${t}</span>`).join('')}</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px;">${m.tags.map(t => `<span class="gg-tag-static" style="margin-right: 0;">${t}</span>`).join('')}</div>
             </div>
         `;
 
