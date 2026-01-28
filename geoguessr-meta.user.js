@@ -39,6 +39,10 @@
     let currentPanoid = null;
     let selectedMetaIds = new Set();
     
+    // Default: All scopes active
+    const ALL_SCOPES = ['countrywide', 'region', 'longitude', '1000km', '100km', '10km', '1km', 'road', 'unique'];
+    let activeScopes = new Set(JSON.parse(localStorage.getItem('gg_active_scopes') || JSON.stringify(ALL_SCOPES)));
+    
     // State for Robust Lock & Visibility
     let lastResultSeenTime = 0;
     let nextPanoid = null; // Queue for ID updates blocked by lock
@@ -436,19 +440,24 @@
             color: #fff;
             border: none;
             border-bottom: 2px solid #3d8c2a;
-            padding: 10px var(--modal-spacing-lg); /* Reduced padding further */
+            padding: 10px 0; /* Consistent height */
             border-radius: 30px;
             cursor: pointer;
             width: 100%;
             font-weight: 800;
-            font-size: 0.85rem; /* Slightly smaller font to reduce height */
+            font-size: 0.85rem;
             font-style: italic;
-            letter-spacing: 0.03em;
             text-transform: uppercase;
-            margin-top: var(--modal-spacing-md);
+            letter-spacing: 0.03em;
+            margin-top: 12px;
             transition: transform 0.1s, box-shadow 0.1s, border-bottom 0.1s;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+            height: 42px; /* Fixed height for consistency */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .gg-btn-primary:hover {
@@ -466,14 +475,21 @@
             background: rgba(0, 0, 0, 0.3);
             color: rgba(255, 255, 255, 0.7);
             border: 1px solid rgba(100, 90, 150, 0.4);
-            padding: var(--modal-spacing-sm) var(--modal-spacing-md);
+            padding: 10px 0;
             cursor: pointer;
-            margin-top: var(--modal-spacing-md);
+            margin-top: 12px;
             width: 100%;
             font-size: 0.8rem;
-            font-weight: 600;
-            border-radius: var(--modal-btn-radius);
+            font-weight: 700;
+            border-radius: 30px; /* Match primary button */
             transition: background 0.2s, color 0.2s;
+            box-sizing: border-box;
+            height: 42px; /* Fixed height for consistency */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase; /* Match layout style */
+            letter-spacing: 0.03em;
         }
 
         .gg-btn-secondary:hover {
@@ -485,8 +501,8 @@
             background: transparent;
             color: #f97316;
             border: 2px solid #f97316;
-            padding: var(--modal-spacing-sm) var(--modal-spacing-md);
-            border-radius: var(--modal-btn-radius);
+            padding: 10px 0;
+            border-radius: 30px; /* Match primary button */
             cursor: pointer;
             width: 100%;
             font-size: 0.8rem;
@@ -494,6 +510,11 @@
             text-transform: uppercase;
             letter-spacing: 0.04em;
             transition: background 0.2s, color 0.2s;
+            box-sizing: border-box;
+            height: 42px; /* Fixed height for consistency */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .gg-btn-danger:hover {
@@ -680,17 +701,25 @@
             <div class="gg-modal-container">
                 <div class="gg-modal-header">Settings</div>
                 
+                <div class="gg-form-group" style="margin-bottom: 16px;">
+                    <label class="gg-form-label">Scope Filter</label>
+                    <div id="gg-settings-scope-filter" style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 8px;">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+                <hr class="gg-modal-divider">
+                
                 <div class="gg-form-group">
                     <label class="gg-form-label">GitHub Personal Access Token</label>
                     <input type="password" id="gg-gh-token" class="gg-form-input" placeholder="ghp_...">
                     <div class="gg-form-hint">Required to save new metas directly.</div>
                 </div>
-                <!-- Reduced margin-top for button to bring it closer -->
-                <button class="gg-btn-primary" id="gg-save-settings" style="margin-top: 8px;">Save Token</button>
                 
                 <hr class="gg-modal-divider">
                 
                 <button class="gg-btn-danger" id="gg-reset-db">Reset Database (Clear All)</button>
+                
+                <button class="gg-btn-primary" id="gg-save-settings" style="margin-top: 16px;">Save Changes</button>
                 
                 <button class="gg-btn-secondary" id="gg-close-settings">Close</button>
             </div>
@@ -766,12 +795,12 @@
                     <div id="meta-scope-presets" style="margin-top: 8px; text-align: center;">
                         <span class="gg-tag-pill" data-value="countrywide">Countrywide</span>
                         <span class="gg-tag-pill" data-value="region">Region</span>
-                        <span class="gg-tag-pill" data-value="road">Road</span>
                         <span class="gg-tag-pill" data-value="longitude">Longitude</span>
                         <span class="gg-tag-pill" data-value="1000km">1000km</span>
                         <span class="gg-tag-pill" data-value="100km">100km</span>
                         <span class="gg-tag-pill" data-value="10km">10km</span>
                         <span class="gg-tag-pill" data-value="1km">1km</span>
+                        <span class="gg-tag-pill" data-value="road">Road</span>
                         <span class="gg-tag-pill" data-value="unique">Unique</span>
                     </div>
                 </div>
@@ -893,7 +922,32 @@
         document.getElementById('gg-settings-btn').addEventListener('click', () => {
             const token = localStorage.getItem('gg_gh_token') || '';
             document.getElementById('gg-gh-token').value = token;
-            document.getElementById('gg-gh-token').value = token;
+            
+            // Render Scope Filter
+            const scopeContainer = document.getElementById('gg-settings-scope-filter');
+            scopeContainer.innerHTML = ALL_SCOPES.map(scope => {
+                const isActive = activeScopes.has(scope);
+                const label = scope.charAt(0).toUpperCase() + scope.slice(1);
+                return `<span class="gg-tag-pill ${isActive ? 'gg-tag-selected' : ''}" data-value="${scope}" style="cursor:pointer; margin:3px;">${label}</span>`;
+            }).join('');
+
+            // Add listeners
+            scopeContainer.querySelectorAll('.gg-tag-pill').forEach(pill => {
+                pill.addEventListener('click', (e) => {
+                    const scope = e.target.dataset.value;
+                    if (activeScopes.has(scope)) {
+                        activeScopes.delete(scope);
+                        e.target.classList.remove('gg-tag-selected');
+                    } else {
+                        activeScopes.add(scope);
+                        e.target.classList.add('gg-tag-selected');
+                    }
+                    localStorage.setItem('gg_active_scopes', JSON.stringify(Array.from(activeScopes)));
+                    // Refresh HUD underneath if visible (or next time it shows)
+                    if (currentPanoid) refreshDisplay(); 
+                });
+            });
+
             document.getElementById('gg-settings-modal').style.display = 'block';
             document.getElementById('gg-meta-modal').style.display = 'none'; // Close meta modal
             document.getElementById('gg-modal-backdrop').classList.add('gg-visible');
@@ -903,10 +957,18 @@
              const token = document.getElementById('gg-gh-token').value.trim();
              if (token) {
                  localStorage.setItem('gg_gh_token', token);
-                 alert('Token saved!');
+                 alert('Settings saved!');
                  document.getElementById('gg-settings-modal').style.display = 'none';
+                 document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
              } else {
-                 alert('Please enter a token.');
+                 // Allow saving even without token if just scopes changed?
+                 // But logic says token required for API.
+                 // For now, let's keep it but change alert.
+                 // Actually, if they just change scopes, they might not need token.
+                 // But let's stick to "Token saved!" logic or "Settings saved!"
+                 alert('Settings saved!');
+                 document.getElementById('gg-settings-modal').style.display = 'none';
+                 document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
              }
         });
 
@@ -1490,7 +1552,7 @@
                 </div>
                 ${m.imageUrl ? `<img src="${m.imageUrl}" class="gg-meta-image">` : ''}
                 <div class="gg-meta-description">${m.description}</div>
-                <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px;">${m.tags.map(t => `<span class="gg-tag-static" style="margin-right: 0;">${t}</span>`).join('')}</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; margin-left: 1px;">${m.tags.map(t => `<span class="gg-tag-static" style="margin-right: 0;">${t}</span>`).join('')}</div>
             </div>
         `;
 
@@ -1522,17 +1584,26 @@
             }
         }
 
+        // Helper to check scope
+        const isScopeActive = (m) => {
+            const scope = (m.scope || 'countrywide').toLowerCase();
+            const s = scope === '' ? 'countrywide' : scope;
+            return activeScopes.has(s);
+        };
+
         // Get exact metas
         const exactMetas = metaIds.map(id => {
             const found = metasData.find(m => m.id === id);
             if (!found) console.warn('[BetterMetas] Could not find exact meta data for ID:', id);
             return found;
-        }).filter(Boolean);
+        }).filter(Boolean).filter(isScopeActive);
 
         // Get predicted/nearby metas
-        const predictedMetas = evaluateProximityMetas().filter(pm => !metaIds.includes(pm.id));
+        const predictedMetas = evaluateProximityMetas()
+            .filter(pm => !metaIds.includes(pm.id))
+            .filter(isScopeActive);
         
-        console.log(`[BetterMetas] Found ${exactMetas.length} exact and ${predictedMetas.length} predicted metas.`);
+        console.log(`[BetterMetas] Found ${exactMetas.length} exact and ${predictedMetas.length} predicted metas (Filtered).`);
 
         if (exactMetas.length > 0 || predictedMetas.length > 0) {
             updateHUD(exactMetas, predictedMetas);
