@@ -42176,7 +42176,7 @@
         "description": "Many roads in Poland are lined by rows of trees.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/poland/Poland-tree-lined-roads.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "plants",
           "road"
@@ -42216,7 +42216,7 @@
         "description": "Poland is one of the most Catholic countries in Europe. You can often find Christian shrines on the side of roads. Blue-white and yellow-white Polish Catholic flags also sometimes appear.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/poland/Poland-Christian-shrines.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "road"
         ]
@@ -42318,7 +42318,7 @@
         "description": "Traditional wooden houses are commonly found in the east, mainly in Podlaskie Voivodeship.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/poland/pl_woodenhouse.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -42357,7 +42357,7 @@
         "description": "Markings with a white background are most commonly found in Podlaskie voivodeship, and can occasionally be seen in \u0141\u00f3d\u017a voivodeship and elsewhere.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/poland/poland_white_pole_paint.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -42481,7 +42481,7 @@
         "description": "Portuguese plates are long and white, with a blue strip on the left. Most plates have a yellow strip on the right, which is unique to Portugal.\u00a0\n\nThe yellow strip was discontinued in 2020, so in Generation 4 coverage you may sometimes see plates with just the blue strip.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/portugal/licenceplate.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "language",
           "plates",
@@ -42509,7 +42509,7 @@
         "description": "Eucalyptus trees are very common in Portugal. The only other part of Europe where you\u2019ll commonly see eucalyptus is northern Spain.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/portugal/eucalyptus.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "plants"
         ]
@@ -42608,7 +42608,7 @@
         "description": "Black and white waystones can commonly be found in Portugal.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/portugal/kmstone.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -42619,7 +42619,7 @@
         "description": "Stop signs in Portugal feature a fairly large font.",
         "note": "This is mostly useful to distinguish it from Spain, where stop signs have a distinctly small and compact font.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/portugal/stopsign.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -42688,7 +42688,7 @@
         "description": "Cobblestone roads are very common in Portugal. These will typically be made of square cobblestones arranged diagonally compared to the road direction.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/portugal/cobblestone.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "road"
         ]
@@ -42712,7 +42712,7 @@
         "description": "White painted stone houses with orange tiled roofs are extremely common in Portugal.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/portugal/whitehouse.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "architecture"
         ]
@@ -42738,7 +42738,7 @@
         "description": "Houses made of decorative mosaic tiles are somewhat common in Portugal.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/portugal/decorativetiles.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "architecture"
         ]
@@ -42926,7 +42926,7 @@
         "description": "Lime green street signs can be found in Porto.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/portugal/3portostreetsign.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "plants",
           "signs"
@@ -43091,7 +43091,7 @@
         "description": "The most common type of town entry sign in Romania is a yellow sign displaying a speed limit and a city skyline, with a white sign displaying the town name below.",
         "note": "The upper sign can also either be white or completely absent.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/romania/ro_townentry.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -43144,7 +43144,7 @@
         "description": "This yield sign, with an extremely thick red border, with a thin white outline, is unique to Romania. Beware that different yield signs also exist in Romania.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/romania/ro_prioritysign.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -43170,7 +43170,7 @@
         "description": "The Romanian landscape ranges from tall forested mountains and hills in the centre to flat or rolling agricultural landscapes in the south, west and east.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/romania/ro_landscape.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "plants"
         ]
@@ -43183,7 +43183,7 @@
         "description": "This type of haystack, typically featuring a stick going straight through, is very common in Romania.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/romania/ro_haystack.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -43194,7 +43194,7 @@
         "description": "Dacia is the most common car brand in Romania, making up more than a quarter of all vehicles in the country.",
         "note": "No other eastern European country has more than 10% Dacias.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/romania/ro_dacia.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -43255,7 +43255,7 @@
         "description": "Villages near the Hungarian border will often be built in the same style as villages in Hungary. This style can be summarised as having long, straight streets with single-storey houses being evenly spaced along the road, typically having the short side of the house facing the road. The vast majority of roofs will have orange tiles.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/romania/ro_hungarianvillage.png",
-        "scope": "",
+        "scope": "Region",
         "tags": [
           "architecture",
           "road"
@@ -43296,7 +43296,7 @@
         "description": "Elaborately decorated wooden gates are commonly found in the region of Maramure\u0219.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/romania/ro_maramuresgate.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -43361,7 +43361,7 @@
         "description": "This type of window, shaped like a squinting eye, is most commonly found in the city of Sibiu.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/romania/ro_sibiueyes.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -43459,7 +43459,7 @@
         "description": "The Russian word for city is \u0433\u043e\u0440\u043e\u0434 (gorod), abbreviated \u0433. (g.).",
         "note": "The Ukrainian word is \u043c\u0456\u0441\u0442\u043e (misto), abbreviated \u043c. (m.).",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/gorod.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "language"
         ]
@@ -43515,7 +43515,7 @@
         "description": "Signposts in Russia often have black painted bottoms.",
         "note": "This is also common in Kazakhstan.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/blacksocks.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -43580,7 +43580,7 @@
         "description": "Three Generation 3 Street View cars are commonly found in Russia. The two most useful ones for recognising Russia are a black and a white car, both with a long antenna. You may also see a short antenna without a visible car.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/gen3car.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "cars",
           "camera"
@@ -43594,7 +43594,7 @@
         "description": "The vast majority of urban housing in Russia are large rectangular apartment buildings made of simple concrete. Newer buildings in wealthier areas appear more modern.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/urbanapartmentblock.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "architecture"
         ]
@@ -43607,7 +43607,7 @@
         "description": "Rural housing in Russia consists mostly of a basic wooden structure with metal roofs.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/suburbanhousing.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "architecture"
         ]
@@ -43701,7 +43701,7 @@
         "description": "This type of white flower (heracleum sosnowskyi) is most commonly found around Moscow, Komi Republic, and Perm Krai.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/sosnowskyshogweed.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -43773,7 +43773,7 @@
         "description": "Lined oak trees, often with a single white stripe around the trunk, are extremely common in Kaliningrad.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/kaliningradtrees.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -43786,7 +43786,7 @@
         "description": "Sparsely planted larches along the road with open rolling fields is common in Tatarstan and adjacent federal subjects.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/tatartrees.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "road"
@@ -43951,7 +43951,7 @@
         "description": "Dry steppe mountains with a long antenna will usually indicate the Tuva Republic. The south part of the main road in the Altai Republic and Tuva can appear similarly dry, so things such as driving direction and cloudiness can be used to distinguish them.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/tuva.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars",
           "road"
@@ -43978,7 +43978,7 @@
         "description": "The coverage in Omsk Oblast is some of the most recognizable in Russia. It is typically summer Generation 4 and has a distinct landscape consisting of green agricultural fields, which are interrupted by isolated patches of (primarily) birch forest.\n\nNote that in Generation 3, this landscape can be seen in a much larger area of Russia.",
         "note": "This combination of coverage and landscape spills over slightly into the neighbouring Tyumen and Novosibirsk Oblasts (in the south, and near Tatarsk, respectively).",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/omsklandscape.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "camera"
@@ -44018,7 +44018,7 @@
         "description": "The Caucasus mountain range is one of the largest mountain ranges in Russia. The tallest mountain in Russia, Mount Elbrus, can be found on the border of the Kabardino-Balkarian Republic and Karachay-Cherkessia.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/caucasusmountains.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -44029,7 +44029,7 @@
         "description": "Rocks along the road are extremely common throughout most of Karelia and Murmansk Oblast. They can also be found in Perm Krai and Buryatia but are less common and smaller in size.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/kareliamurmanskrocks.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -44084,7 +44084,7 @@
         "description": "These are the bus stops unique to specific federal subjects in Russia. Notably common and memorable ones include Krasnoyarsk Krai, Chuvashia, Tatarstan, and Mari El Republic.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/busstops.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -44095,7 +44095,7 @@
         "description": "Japanese-made cars with the steering wheel on the right become more common the further east you go, generally starting around Novosibirsk.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/japanesecars.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "language"
         ]
@@ -44136,7 +44136,7 @@
         "description": "Clips on edges of signposts are found in Leningrad and St. Petersburg, and very rarely in Pskov, Novgorod or elsewhere.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/leningradstpetersburgpedestriansign.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -44160,7 +44160,7 @@
         "description": "As you go further north in Russia, some roads are made out of several concrete blocks. It is notably common in the Komi Republic, Nenets, and Yamalo-Nenets.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/concreteroads.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -44199,7 +44199,7 @@
         "description": "Some republics of Russia with minority languages use bilingual town entry and directional signs, such as in Bashkortostan and Tatarstan displaying Bashkir and Tatar respectively.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/bilingual.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -44314,7 +44314,7 @@
         "description": "The A-type short antenna has its highest ridge on the right. Notable areas for this antenna are around Kaluga, Orenburg, and Krasnodar.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/2.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars"
         ]
@@ -44340,7 +44340,7 @@
         "description": "The B-type pronounced antenna is the same as the B-type antenna but the ridge is more \u201crectangular\u201d. This antenna is fairly limited, only being found commonly in Moscow Oblast, Kurgan Oblast, near Krasnoyarsk, and southwest Krasnodar.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/4.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars"
         ]
@@ -44366,7 +44366,7 @@
         "description": "The blurred short antenna is visibly blurrier than any of the other short antennas. It is mainly found in two major clusters around Ufa and from Stavropol to Makhachkala.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/6.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars",
           "camera"
@@ -44421,7 +44421,7 @@
         "description": "The tilted short antenna is visibly tilted to the left and can be found primarily on a diagonal from St. Petersburg down to Volgograd, with exceptions in Stavropol and Ufa. Since the ridge is on the same side, it can sometimes appear as the A-type short antenna.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/10.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars"
         ]
@@ -44434,7 +44434,7 @@
         "description": "A large, red brake light is common in Kaliningrad, however it can also be found in some older coverage in western Russia.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/11.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -44497,7 +44497,7 @@
         "description": "Summer Generation 4 is the most common coverage in generation 4. It is pretty much everywhere except in the south and some of the east, but can be further subdivided by car colour.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/16.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -44508,7 +44508,7 @@
         "description": "Autumn Generation 4 is quite rare and only found around Kazan and a few roads in Murmansk, as well as some of Ulan-Ude.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/17.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "road",
           "camera"
@@ -44618,7 +44618,7 @@
         "description": "The Jewish Autonomous Oblast effectively has one road of coverage, outside of Birobidzhan. The west side has highly rainy and foggy coverage.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/22.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road",
           "camera"
@@ -44632,7 +44632,7 @@
         "description": "On the east side of the Jewish Autonomous Oblast, the coverage turns from rainy to wet after the rain.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/23.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -44656,7 +44656,7 @@
         "description": "Olkhon Island on Lake Baikal has a single road, driving on rolling sandy hills during sunset. You can often see Lake Baikal directly with a mountain ridge across the bay.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/27.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "soil",
           "road"
@@ -44670,7 +44670,7 @@
         "description": "Tunkinsky National Park in western Buryatia is a very green river basin with tall, jagged mountains to the north. In comparison to most of Buryatia, it is much greener.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/26.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -44698,7 +44698,7 @@
         "description": "Tropical plants in Russia such as palm trees are only found on the Black Sea, most commonly around Sochi.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/ru_tropicalplants.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -44711,7 +44711,7 @@
         "description": "Kamchatka trekkers encompass a majority of the trekkers present in Russia. They can be recognized using the same clues to recognize Kamchatka normally.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/29.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -44722,7 +44722,7 @@
         "description": "These blue signs are only found in Moscow and usually feature English translations of important tourist points.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/31.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "signs",
           "language"
@@ -44763,7 +44763,7 @@
         "description": "Tatar bilingual signs use \u201c\u0443\u0440\u0430\u043c\u044b\u201d (\u0443\u0440., abbreviated) for street instead of \u201c\u0443\u043b\u0438\u0446\u0430\u201d and are unsurprisingly found in Tatarstan.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/34.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -44777,7 +44777,7 @@
         "description": "Bashkir bilingual signs are found in Bashkortostan and use \u201c\u0443\u0440\u0430\u043c\u044b\u201d for street, the same as Tatar, but are often not abbreviated.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/33.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -44791,7 +44791,7 @@
         "description": "Chuvash bilingual signs, found in Chuvashia, use \u201c\u0443\u0440\u0430\u043c\u04d7\u201d for street.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/35.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -44805,7 +44805,7 @@
         "description": "Mari bilingual signs, found in Mari El, use \u201c\u0443\u0440\u0435\u043c\u201d for street.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/36.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -44819,7 +44819,7 @@
         "description": "Komi bilingual signs, found in the Komi Republic, use \u201c\u0443\u043b\u0438\u0447\u0430\u201d for street.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/37.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -44833,7 +44833,7 @@
         "description": "Yellow pole plates attached by a metal band are commonly found in Tatarstan. They are found on the majority of poles, but not all.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/39.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "poles",
           "plates"
@@ -44847,7 +44847,7 @@
         "description": "On the main road of Murmansk in generation 4, as well as some roads in Karelia covered in 2018, the vast majority of signposts will have two yellow bands wrapped around them.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/murmanskpoleband.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road",
           "camera"
@@ -44861,7 +44861,7 @@
         "description": "Cobblestone pavement is notably common in Kaliningrad, Nizhny Tagil in Sverdlovsk, and Kizel in Perm Krai.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/ru_cobblestones.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -44874,7 +44874,7 @@
         "description": "Extended insulator bars on poles are notably found in southern Chelyabinsk Oblast and eastern Orenburg Oblast, as well as southern Kemerovo Oblast.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/40.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "poles",
           "cars"
@@ -44888,7 +44888,7 @@
         "description": "Utility poles with a mesh framework are usually found in Petrozavodsk, but can much less commonly be found in cities like Tolyatti.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/42.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "poles"
         ]
@@ -44901,7 +44901,7 @@
         "description": "These red painted poles are only found in Murom.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/43.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "poles"
         ]
@@ -44927,7 +44927,7 @@
         "description": "This unique bollard, with a grey rectangle and double red reflectors, is specific to the P100 in Kostroma Oblast.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/45.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "bollards"
         ]
@@ -44940,7 +44940,7 @@
         "description": "Pedestrian signs with a U-shaped hook attached to a pole are unique to Chelyabinsk.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/46.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "poles",
           "signs"
@@ -44954,7 +44954,7 @@
         "description": "This distinct decorative design of pedestrian sign holders is specific to Pskov Oblast.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/47.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -44980,7 +44980,7 @@
         "description": "Rounded rectangular fences with a line through the middle are unique to Chelyabinsk Oblast and eastern Orenburg Oblast.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/41.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -44993,7 +44993,7 @@
         "description": "This fence with a thin rounded rectangular design at the top is found in the cities of Syzran, Tolyatti, and Samara. In Tolyatti it will commonly be painted yellow.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/49.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -45006,7 +45006,7 @@
         "description": "Decoratively designed fences usually with a bright orange colour are unique to Irkutsk.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/russia/50.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "architecture"
         ]
@@ -45120,7 +45120,7 @@
         "description": "Lime-green bins are particularly common in San Marino. In Generation 4 coverage some of them have been replaced by black bins.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/san-marino/San_Marino_Trash_Bins.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "plants",
           "camera"
@@ -45223,7 +45223,7 @@
         "description": "Serbian is a Slavic language which uses both the cyrillic and latin script. These letters are unique to Serbian:\n\n\u0402 \u0452\n\n\u040b \u045b\n\nThese letters are found in Serbian and Macedonian:\n\n\u0409 \u0459\n\n\u040a \u045a\n\n\u040f \u045f",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/serbia/rs_language.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "language"
         ]
@@ -45236,7 +45236,7 @@
         "description": "When written in the latin script, Serbian uses the special letters \u010c, \u0106, \u0110, \u0160 and \u017d. Note that all of these letters may also be found in Croatian and Montenegrin.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/serbia/rs_languagelatin.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "language"
         ]
@@ -45274,7 +45274,7 @@
         "description": "In the north of Serbia in the Vojvodina region, from the Hungarian border to Belgrade, the landscape is extremely flat, with no hills whatsoever. A slight ridge however can be seen at Fru\u0161ka Gora National Park.\n\nA more hilly landscape can be seen in the central-southern region. The most mountainous regions of Serbia are found in the southwest and southeast, where the Dinaric Alps, Carpathian and Balkan mountains run through Serbia.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/serbia/rl3c_rs_serbia_map_illdtmcolgw30s_ja_hres.jpg",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "soil"
         ]
@@ -45322,7 +45322,7 @@
         "description": "Central-northern Serbia can be recognized by the slight rolling hills.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/serbia/rolling.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -45384,7 +45384,7 @@
         "description": "A white Google Car with a short antenna can be seen in Novi Sad, Kovilj, in and around Belgrade, Ni\u0161, and the E75 connecting them.",
         "note": "The white car is not always visible.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/serbia/rs_antenna.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "cars",
           "road"
@@ -45398,7 +45398,7 @@
         "description": "The distinct Vr\u0161ac Mountains can be seen east of Vr\u0161ac near the Romanian border. The mountains protrude out from a flat landscape and vineyards can commonly be seen to the south of the mountains. The Vr\u0161ac Castle can also be seen atop the mountain.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/serbia/vrsac_mountains.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "soil"
         ]
@@ -45411,7 +45411,7 @@
         "description": "Bilingual signs with Serbian alongside Hungarian can be seen in northern Vojvodina, where there is a Hungarian majority.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/serbia/hungarian.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -45439,7 +45439,7 @@
         "description": "A small section of the E-80 north of Pirot has yellow centre lines.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/serbia/yellow_centre.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "road"
         ]
@@ -45526,7 +45526,7 @@
         "description": "You may also see concrete poles with trident poletops, with two arms angled upwards. Some features, such as the number of insulators, will vary, however the general shape will be the same. Out of the pole tops listed, these are the least common, but unique to the two countries.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_poletop3.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "poles"
         ]
@@ -45552,7 +45552,7 @@
         "description": "It is common in both Slovakia and Czechia to see temporary square sign posts coated in red and white stripes.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_redwhitesignpost.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -45592,7 +45592,7 @@
         "description": "Hiking markers, made up of one colourful strip between two white ones, are commonly found in Slovakia and Czechia. They sometimes form an arrow.",
         "note": "While by far being the most common in Slovakia and Czechia, similar signs can be found in other European countries such as Poland, Hungary and Germany.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_trailmarkers.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -45605,7 +45605,7 @@
         "description": "Like all of the former Eastern bloc, prefabricated panel apartment buildings are a common sight in urban areas. What distinguishes Slovakia and Czechia is the relatively good maintenance often combined with vibrant colours and patterns. Some smaller buildings also adhere to this style.",
         "note": "To a lesser extent, you can find this kind of architecture in neighbouring countries, like Poland and Hungary.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_apartmentblocks.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "architecture"
         ]
@@ -45768,7 +45768,7 @@
         "description": "House numbers in Slovakia are typically written on white signs with a thin red or black border.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_housenumbers.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "signs",
           "language",
@@ -45836,7 +45836,7 @@
         "description": "Slovak cycling signs use the letter C as their symbol, unique to the country. They\u2019re visually analogous to the Czechoslovak hiking markers mentioned in step 1.1, including the yellow post on directional signs.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_cyclingsigns.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "signs",
           "language"
@@ -45850,7 +45850,7 @@
         "description": "Window shutters are considerably more common in Slovakia than in Czechia.",
         "note": "They are also very common in Hungary.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_windowshutters.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -45914,7 +45914,7 @@
         "description": "It is fairly common to see small signs with double sign posts in Slovakia.",
         "note": "While large signs may have double sign posts, small signs rarely do in Czechia.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_doublesignpost.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -45954,7 +45954,7 @@
         "description": "Slovak phone numbers typically consist of 10 digits, of which the first 2-3 digits are the area code.",
         "note": "Czech phone numbers generally do not begin with a 0.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_areacodes.png",
-        "scope": "",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -46094,7 +46094,7 @@
         "description": "Not only is Bratislava by far the largest city in the country, it is also the only major city with a large river running through it.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_bratislava.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -46105,7 +46105,7 @@
         "description": "Bratislava and Ko\u0161ice are the only two cities with trams, using a red and a yellow-blue-white colour scheme respectively.",
         "note": "Buses in Ko\u0161ice and Bratislava use the same colour schemes, however red buses can also be found in Pre\u0161ov.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_trams.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -46116,7 +46116,7 @@
         "description": "Trolleybuses in \u017dilina use a green-yellow-white colour scheme. The trolley supporting electricity poles, often doubling as lamps, are painted with matching yellow and green colours.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_trolleybuses.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "poles"
@@ -46130,7 +46130,7 @@
         "description": "Skalica, in the northwestern corner of the country, has red street signs, similar to the ones commonly found in Czechia. However, the somewhat stylized font distinguishes it from the Czech signs.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_streetsign_skalica.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "signs"
         ]
@@ -46143,7 +46143,7 @@
         "description": "\u010ci\u010dmany, in the westernmost parts of the \u017dilina Region, is easily recognized by the dark brown wooden houses, whose walls are filled with art consisting of white lines.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovakia/sk_cicmany.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "architecture"
         ]
@@ -46202,7 +46202,7 @@
         "description": "Slovene is a Slavic language featuring the special letters \u010c, \u0160, and \u017d. It is closely related to Croatian, Serbian and Montenegrin.",
         "note": "On top of having the same letters as Slovene, Croatian also has the letters \u0106 and \u0110.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/slovenia/si_language.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "language"
         ]
@@ -46566,7 +46566,7 @@
         "description": "In rural areas you will often find hunting signs. There are two versions, both of which are unique to Spain. One is a simple white sign with a text starting with \u201ccoto\u201d and ending in \u201ccaza\u201d. The other one has a diagonally divided black and white background.",
         "note": "These signs have an identifying code that can sometimes be read. In this case \u201cEx\u201d stands for Extremadura.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Caza.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "signs",
           "language"
@@ -46594,7 +46594,7 @@
         "description": "Spanish pedestrian crossing signs have 8 stripes. This is the highest number of stripes in Europe, and almost unique to Spain.",
         "note": "The only other European country with 8 stripes is Andorra.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/2022-12-11_11.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "signs",
           "language"
@@ -46693,7 +46693,7 @@
         "description": "Spanish is the main language in most of the country. It is a Romance language that is closely related to Portuguese.\n\nSpanish and Portuguese can look very similar. Some key differences between the two:\n\n\u00d1 is unique to Spanish.\n\n\u00c7 and lh are unique to Portuguese (\u00c7 is also present in Catalan).\n\nPortuguese uses the -ao word ending, and -nh- instead of \u00f1.\n\nSpanish uses de and del, while these are often contracted to da, do, das and dos in Portuguese.",
         "note": "Spain also has several regional languages, some of which are more common than Spanish in their respective regions. These languages are discussed in more detail in the region-guessing section.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/es_language.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "language"
         ]
@@ -46733,7 +46733,7 @@
         "description": "Spain has highly diverse landscapes, ranging from lush Atlantic forests to bone-dry semideserts. Elevation is also varied: highland plateaus interspersed with rolling hills are common, but you might also encounter jagged mountain ranges and very flat lowland areas.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Spain_landscape_diversity.png",
-        "scope": "100km",
+        "scope": "Countrywide",
         "tags": [
           "plants"
         ]
@@ -46852,7 +46852,7 @@
         "description": "Catalan is a Romance language that is closely related to both Spanish and French.\n\nIt is spoken in Catalonia, the Valencian Community, and the Balearic Islands. In Catalonia and the Balearic Islands, it is (much) more common than Spanish on signage. The Valencian Community is more bilingual.\n\nIf you are unfamiliar with Romance languages, it can be hard to distinguish between Catalan and Spanish.\n\nThe Catalan word for \u201cand\u201d is i, compared to Spanish y.\n\nThe grave accent (\u00e0, \u00e8, \u00f2), is exclusive to Catalan within Spain and very common to see in words, especially on \u00e0.\n\nThe c with cedilla (\u00e7) is also exclusive to Catalan within Spain.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/es_catalan_language.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -46905,7 +46905,7 @@
         "description": "Streets in Basque-speaking areas are sometimes called \u201ckalea\u201d. However, Spanish \u201ccalle\u201d is also still common.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/es_basque_kalea2.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "language"
         ]
@@ -46947,7 +46947,7 @@
         "description": "Streets are commonly called R\u00faa in Galicia, whereas in Portugal they are called Rua (without an accent). However, you can sometimes find signs without the accent in Galicia.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Rua.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -46960,7 +46960,7 @@
         "description": "Many Galician town names start with A, O, As or Os articles (examples: \u201cA Pena\u201d, \u201cO Burgo\u201d, \u201cAs Cruces\u201d). This is both very common and unique to this region, and rarely over the border in western Asturias.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/es_galician_town_names.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -46982,7 +46982,7 @@
         "description": "The Catalan Independence flag is not official, but is commonly found in Catalan-speaking areas. It uses the red-and-yellow striped Senyera pattern that is also used in four of the autonomous community flags.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Spain_catalonian_independence_flag.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -47021,7 +47021,7 @@
         "description": "The Pyrenees is a large mountain range on the border between Spain and France. Its mountains are some of the highest in all of Spain. It can be recognized by its light grey rock and abundance of pine trees. Local architecture features many rock walls.",
         "note": "Andorra and the French part of the Pyrenees look very similar in terms of landscape and architecture. Also consider that the exclave of Ll\u00edvia is part of Spain.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Spain-pyrenees.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "plants",
           "language",
@@ -47036,7 +47036,7 @@
         "description": "Thick forests of tall pines can be found all throughout the Pyrenees. When encountered in smaller mountains in between grazing fields or agricultural land, it will most likely be in the Basque Country or Navarra.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Pyrinees_pines.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -47049,7 +47049,7 @@
         "description": "The centre of Castilla y Le\u00f3n features a mostly flat agricultural landscape, with only slight changes in elevation. Most of the fields will have cereal crops like wheat and barley, and it is fairly common to find sunflower plantations.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/CyL_secarral.png",
-        "scope": "1km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -47062,7 +47062,7 @@
         "description": "Vineyards can be found in several places in Spain. However, if you see vineyards in between mountain ranges to the north and south, you are most likely in La Rioja.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/La_Rioja.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "soil"
         ]
@@ -47157,7 +47157,7 @@
         "description": "The mountain range of Sierra Nevada features snowy peaks through the months of November and May. Sierra Nevada is the only mountain range in south Spain with snow during most of the year.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Sierra_nevada.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -47182,7 +47182,7 @@
         "description": "Olive trees are one of the main crops planted in Spain, they can be commonly seen in more than half of the country.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Olivares_gral.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "plants"
         ]
@@ -47263,7 +47263,7 @@
         "description": "On the east coast of Spain, you can find many orange tree plantations. They are usually in small valleys, and if they are in flat land you can usually see mountains to the west, north or south.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Levante_naranjos.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil"
@@ -47277,7 +47277,7 @@
         "description": "In the Guadalquivir river basin you can also find many orange plantations, usually in much more open and flat terrain than those of the east coast.\n\nThere are some extensive plantations in the mountains, but coverage is sparse there.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Naranjos_andaluces.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "soil"
         ]
@@ -47301,7 +47301,7 @@
         "description": "Stone pines (Pinus pinea) can be recognized by their fluffy leaves, and compact bulbous crown that is wider than it is tall.\n\nForests of exclusively stone pines in a flat area are very common around Valladolid and Huelva. It is common to see them in the mountains close to Barcelona in residential areas.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Stone_pine.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -47325,7 +47325,7 @@
         "description": "Baltic pines (Pinus sylvestris) are tall and thin, with a dark bark that sheds at the top, revealing the orange-red wood underneath. They usually do not have branches on the bottom half of the trunk, especially when fully grown.\n\nBaltic pines can be found in mainly three mountain ranges: the Pyrinees, Sierra de Guadarrama and the Iberian System.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Pinus_Sylvestris.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -47405,7 +47405,7 @@
         "description": "Galician towns frequently use signs with a green or blue strip at the top featuring the name of the municipality.",
         "note": "\u201cConcello\u201d is the Galician word for municipality, and exclusive to the region.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Galicia_concello.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "signs"
@@ -47430,7 +47430,7 @@
         "description": "Trash containers in Asturias frequently have the logo of COGERSA, the logo\u2019s shape is distinct and can be recognized from afar.",
         "note": "Recycling bins can also feature this logo.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Asturias_cogersa.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -47441,7 +47441,7 @@
         "description": "Yellow snow poles with one or two reflectors are unique to Asturias. They are usually found in the south of the region.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Asturias_snowpole_new.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "poles"
         ]
@@ -47482,7 +47482,7 @@
         "description": "In Catalonia and sometimes the Balearic Islands you will find huntings signs in Catalan, usually reading \u201c\u00c0rea privada de Ca\u00e7a\u201d.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Caca.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -47510,7 +47510,7 @@
         "description": "Big square chevrons with a single arrow are commonly found in Catalonia.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Catalan_chevron.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "signs",
           "road"
@@ -47592,7 +47592,7 @@
         "description": "Signs from the local government of Andalusia are very recognizable because of the green stripe on the left side.\n\nIt is also very common to see small versions of these signs around nature reserves with green signposts.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Junta_de_Andaluc_C3_ADa_signs.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "signs"
@@ -47606,7 +47606,7 @@
         "description": "Blue and yellow snow poles are unique to Andalusia.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Snowpole_Andalucia.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "poles"
         ]
@@ -47683,7 +47683,7 @@
         "description": "Traditional farm houses called \u201cmas\u00edas\u201d are common in Catalonia, eastern Arag\u00f3n and parts of the Valencian Community.\n\nThey are usually made of stone and stand isolated or as part of a small complex.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Masia.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -47737,7 +47737,7 @@
         "description": "The Balearic islands have a recognizable, coastal Mediterranean look. Somewhat dry looking forests of Aleppo pines cover most of the hills, and small patches of agricultural land, mainly with fruit trees and olive trees, cover the flatter areas between towns.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/General_look_baleares.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -47853,7 +47853,7 @@
         "description": "The island of Fuerteventura in the Canary Islands is characterised by a very arid landscape with little to no vegetation. Orange soil is very common, and within the Canary Islands archipelago essentially unique to this island.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Spain-Fuerteventura-landscape.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil"
@@ -47949,7 +47949,7 @@
         "description": "Within Spain, black and white guardrails are unique to Ceuta.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Ceuta_guardrail.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -47976,7 +47976,7 @@
         "description": "The Camino de Santiago (the Way of St. James in English), is a network of pilgrim's ways across Europe leading to the shrine of apostle James (Santiago in Spanish) in Santiago de Compostela.\n\nThese paths are frequently marked with a yellow scallop on a blue background. Markers can be found both in traffic signs and in waystones.\n\nIt is common to see pilgrims hiking or biking along these routes, particularly during the summer.",
         "note": "Markers for it can be found all over Europe, going as far as Lithuania, but are much more common the closer you are to Santiago.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Camino_de_Santiago.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -48006,7 +48006,7 @@
         "description": "The AP-15 in Navarra features unique bollards with a simple flat design and a square red reflector. Guardrails also have red reflectors unlike the rest of Spain.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/AP-15_Bollard.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "bollards",
           "road"
@@ -48031,7 +48031,7 @@
         "description": "The Ebro delta (Deltebre in catalan) features an extremely flat landscape, where rice fields and water canals are very common.\n\nThere are significant mountains to the South, West, and North, and some of them can be seen from almost every location in the delta.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/Deltebre.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil"
@@ -48045,7 +48045,7 @@
         "description": "Between Almeria and Motril you can find many greenhouses with white roofs, in the lowland area close to the sea. They are especially common in El Ejido.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/spain/el_ejido_greenhouses.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -48156,7 +48156,7 @@
         "description": "Pyramiden feels more abandoned compared to Longyearbyen. Multi-storey soviet-style apartment blocks can be seen, however, with a lack of human-activity. As the name suggests, many pyramidal mountains can be seen in the distance.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/svalbard/Pyramiden.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "soil"
         ]
@@ -48209,7 +48209,7 @@
         "description": "This large ship can be seen around the Northwest Spitsbergen National Park. The coverage gets increasingly late toward the east, where it eventually becomes dark.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/svalbard/National_Park_Boat.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -48242,7 +48242,7 @@
         "description": "This boat with a black deck can be seen in Isfjorden, between Barentsburg and Grumant.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/svalbard/Isfjorden_Boat.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -48283,7 +48283,7 @@
         "description": "Swedish is a North Germanic language that is closely related to Danish and Norwegian. The Swedish alphabet contains the special letters \u00c5, \u00c4 and \u00d6.",
         "note": "The special letters found in Swedish can also be found in some of the other Northern Germanic languages:\n\nDanish uses \u00c5, but not \u00c4 or \u00d6.\n\nNorwegian uses \u00c5, but not \u00c4 or \u00d6.\n\nIcelandic uses \u00d6, but not \u00c5 or \u00c4.\n\nFinnish uses \u00c4 and \u00d6. \u00c5 is also used, but is treated as Swedish. Finnish words are typically longer and often use double vowels, which are very rare in Swedish.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/spr_C3_A5k.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "language"
         ]
@@ -48348,7 +48348,7 @@
         "description": "Swedish utility poles are usually wooden and can have a variety of poletops. There is commonly a small black metal cap on the very top, which is only found in Nordic countries.",
         "note": "Norway and Finland also use primarily wooden poles.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/elstolpe.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "poles"
         ]
@@ -48496,7 +48496,7 @@
         "description": "Houses in the Swedish countryside are most commonly wooden and often painted with a distinct dark red paint, which is almost exclusively found in Sweden, Norway and Finland.\n\nUrban architecture is usually modern and made of concrete and bricks, while suburban buildings are commonly freestanding single family houses built of either wood or brick.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/arkitektur.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "architecture"
         ]
@@ -48522,7 +48522,7 @@
         "description": "This type of traditional wooden fence, made out of thin spaced out vertical tree trunks and slightly diagonal trunks stacked on top of each other, is commonly found in Sweden.",
         "note": "Similar fences can be found in other Nordic countries, particularly in Norway near the Swedish border, but are significantly less common.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/g_C3_A4rdsg_C3_A5rd.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "plants",
           "architecture"
@@ -48536,7 +48536,7 @@
         "description": "The most common car brand in Sweden is Volvo, which makes up almost 30% of all passenger cars.",
         "note": "Approximately 10% of all passenger cars in both Norway and Finland are Volvo.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/volvo.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -48759,7 +48759,7 @@
         "description": "In most of J\u00e4mtland County, particularly around lake Storsj\u00f6n, you can find large farmlands, commonly situated in the middle of wide, often somewhat steep hills, which is uncommon in the rest of the country, where most farmlands will be either on flat ground or in valleys. The fields are generally not cultivated and will mostly consist of ordinary grass.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/j_C3_A4mtlandsf_C3_A4lt.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil"
@@ -48828,7 +48828,7 @@
         "description": "Red dirt roads are mainly found in Dalarna, but can also be found in and around Kalmar county, the border between inland Norrbotten and V\u00e4sterbotten, and rarely between lakes V\u00e4nern and V\u00e4ttern.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/r_C3_B6djord.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "soil",
           "road"
@@ -48842,7 +48842,7 @@
         "description": "Dirt roads which have a deep grey colour and are aligned with low, green grassy vegetation on either side are commonly found in the northern half of J\u00e4mtland. This is mostly found in Generation 4 summer and Generation 3 fall coverage.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/gr_C3_A5jord.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil",
@@ -48924,7 +48924,7 @@
         "description": "A lot of single family houses in Sk\u00e5ne are built out of red brick. They typically look slightly older than red brick houses in other parts of the country.",
         "note": "Red brick architecture is also very common in Denmark.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/skanetegel.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -48950,7 +48950,7 @@
         "description": "Grey diamond-tiled roofs are mainly found in Sk\u00e5ne, Blekinge, \u00d6land, and occasionally on Gotland.",
         "note": "Gotland and \u00d6land are normally more easily recognised from landscape alone. Houses in western and southern Sk\u00e5ne typically use a lot of stone and bricks, while houses in northeastern Sk\u00e5ne and Blekinge are mostly made of red painted wood.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/diamanttegel.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -48976,7 +48976,7 @@
         "description": "Dense rows of very small red sheds are commonly found in coastal towns on the northern west coast.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/v_C3_A4stkustfiskestugor.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -49052,7 +49052,7 @@
         "description": "Each administrative region in Sweden has at least one, and in many cases several, bus stop signs which are unique to that region.\n\nYou can click on the image to enlarge it.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/busstopp3.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -49143,7 +49143,7 @@
         "description": "Cylindrical bollards, with a completely horizontal black section near the top, are most commonly found near the west coast and in V\u00e4rmland and southern Dalarna.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/pollarerund.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "bollards",
           "road"
@@ -49275,7 +49275,7 @@
         "description": "The northern section of road 99 can usually be recognized by its grey sandy ground with brown-green moss, the noticeable ditch following most of the road and its fairly low, dense forest with a mixture of birches, pines and spruces.\n\nBeware that the most recent coverage on much of the road was taken during early spring, which makes some of these features harder to recognise.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/99.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil",
@@ -49290,7 +49290,7 @@
         "description": "The road to Ritsem can generally be recognised by having a large lake following it on the south, combined with having some of the most dramatic mountains seen on Street View in the country. The road is small and without roadlines, but still fairly well-paved. It is covered both in summer and in early spring.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/ritsem.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "soil",
           "road"
@@ -49304,7 +49304,7 @@
         "description": "Most mountain roads in Sweden have been built below the treeline, resulting in small trees being visible on almost all coverage. The only paved road in Sweden above the treeline, with no visible trees, can be found on the border between J\u00e4mtland and V\u00e4sterbotten, near the Norwegian border. The coverage was taken during fall, giving the limited vegetation a yellowish brown colour.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/vildmarksvaegen.png",
-        "scope": "",
+        "scope": "Region",
         "tags": [
           "plants",
           "road"
@@ -49318,7 +49318,7 @@
         "description": "The highest altitude public road in Sweden, which is a dirt road going straight over a treeless mountain plateau, was covered in Generation 4 on a cloudy day during summer.",
         "note": "The highest point on the road features a parking spot and is right on top of the \u201cFalkv\u00e5len\u201d label.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/flatruet.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "soil",
           "road",
@@ -49346,7 +49346,7 @@
         "description": "In the town of G\u00e4llivare you can often see a mountain with a smooth slope and a low tree line to the southwest. No other town in Sweden has a natural treeless mountain in such close proximity.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/gallivaredundret.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil"
@@ -49373,7 +49373,7 @@
         "description": "Mistletoe is mainly found near lake M\u00e4laren and is particularly common in the city of V\u00e4ster\u00e5s.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/mistel.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -49384,7 +49384,7 @@
         "description": "The island of Visings\u00f6 in the middle of Lake V\u00e4ttern can often be recognised by the agricultural fields with the lake being visible both to the northwest and southeast, with forested hills at the shore of either side of the lake.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/visingso.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -49408,7 +49408,7 @@
         "description": "Following the northern west coast of \u00d6land you will find this small coastal road, with a rocky beach and low, bushy vegetation.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/_C3_B6landskusten.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "road"
@@ -49422,7 +49422,7 @@
         "description": "If you suspect you are on Gotland, and see small, dry stony fields with small juniper bushes, you are very likely to be on F\u00e5r\u00f6. This landscape becomes more extreme near the north coast of the island.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/f%C3%83%C2%A5r%C3%83%C2%B6.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -49435,7 +49435,7 @@
         "description": "On the southern tip of Gotland you can find this west coastal road with grassy fields and a grassy hill ridge to the east.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/hoburgen1.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "road"
@@ -49487,7 +49487,7 @@
         "description": "Red brick chimneys with either a crown-like top or wide rectangular holes can be found close to lake Siljan in Dalarna county. It is somewhat common for these chimneys to be painted white.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/zornkrona.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -49498,7 +49498,7 @@
         "description": "Visby is the only preserved Hanseatic town in Sweden. The inner town can typically be recognised by the cobblestone streets, combined with the small, brightly painted stone houses and an abundance of roses following the house walls. It is also quite common to get a glimpse of the old Hanseatic wall surrounding the town.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/visby.png",
-        "scope": "100km",
+        "scope": "10km",
         "tags": [
           "architecture"
         ]
@@ -49537,7 +49537,7 @@
         "description": "Neon-yellow school bus stop signs are commonly found in the municipalities of Link\u00f6ping, Norrk\u00f6ping and J\u00f6nk\u00f6ping.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/neongulbusskylt.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -49550,7 +49550,7 @@
         "description": "If you see V\u00e4stra G\u00f6taland bus stops combined with three blue stripes as shown in the picture, you are in Kungsbacka municipality.",
         "note": "These same stripes are found on bus stops in all of Halland.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/kungsbackabusstop.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -49561,7 +49561,7 @@
         "description": "Trams can be found mostly in Gothenburg, secondly in Norrk\u00f6ping and Stockholm, and rarely on Generation 4 coverage in Lund.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/sparvagn.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "camera"
         ]
@@ -49574,7 +49574,7 @@
         "description": "Black bus shelters with this specific design, mainly recognised by the square ridge along the back of the roof, can be found in V\u00e4ster\u00e5s and Ume\u00e5.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/busskur_vasteras_umea.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -49665,7 +49665,7 @@
         "description": "Blue street signs with a thin, black outline can be found in K\u00f6ping.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/k_C3_B6ping_skylt.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "signs"
         ]
@@ -49689,7 +49689,7 @@
         "description": "Elfdalian is a language that is exclusively found in and around \u00c4lvdalen. It is most commonly seen on street signs, with street names typically ending in \u201c-ween\u201d or \u201c-weg\u201d.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/_C3_A4lvdalska.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -49730,7 +49730,7 @@
         "description": "Sundsvall is known as Drakstaden (the Dragon City) in Sweden, which can be seen referenced in the form of dragon statues in the central parts of the city, and on signs.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/drakstaden.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "signs"
         ]
@@ -49757,7 +49757,7 @@
         "description": "If you are in a mountainous area with orange snow poles that have two wide reflectors close together, you are very likely to be near the Norwegian border on, or close to road E12.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/e12_snostolpar.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "poles",
           "road"
@@ -49771,7 +49771,7 @@
         "description": "The stretch of road 95 closest to the Norwegian border can be recognized by a large number of yellow snow poles, all having two white reflectors. The coverage can be either Generation 2 in autumn or winter, or snowy Generation 4.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/95gr_C3_A4ns.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "poles",
           "road",
@@ -49786,7 +49786,7 @@
         "description": "If you see a mixture of orange and yellow snow poles in a mountainous area, you should be on road E10 close to the Norwegian border.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/e10_sn_C3_B6stolpar.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "poles",
           "road"
@@ -49829,7 +49829,7 @@
         "description": "The stretch of the E45 going between Orsa and \u00c4lvros can be recognised by the brown-red wet pavement with forest consisting of thin pines and birches along the roadside.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/e45fuktigt.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "road"
@@ -49843,7 +49843,7 @@
         "description": "The island of Holm\u00f6n has Generation 3 coverage, made by a white car with a long antenna, that features a distinctive visual glitch.",
         "note": "A similar glitch can be found elsewhere, however it should be less noticeable than on Holm\u00f6n.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/holmon.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars",
           "camera"
@@ -49857,7 +49857,7 @@
         "description": "Foskrosv\u00e4gen, on the border between J\u00e4mtland and Dalarna, can be recognised by the slightly red dirt on the road, combined with several water smudges on the camera. A good way to find the road when scanning is to look for the \u201cReindeer spot point\u201d right on the county border.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/sweden/foskrosv_C3_A4gen.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture",
           "road",
@@ -49984,7 +49984,7 @@
         "description": "Town entry signs in Switzerland are usually white or blue, with a metal frame around them.",
         "note": "On the back of these signs you may often find the distance to larger, nearby cities. Furthermore, the abbreviation for the canton can often be seen on the bottom of the sign, especially when the town is situated near a canton border.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_townsign.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -50011,7 +50011,7 @@
         "description": "While the southern half of Switzerland is extremely mountainous, with long, thin valleys between the mountains, the northern half mostly consists of large farmlands on either flat ground or rolling hills, typically with forested hills in the distance.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_landscape.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "plants",
           "soil"
@@ -50038,7 +50038,7 @@
         "description": "These bus stop signs, with thick metal signposts going around them, are unique to Switzerland.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_busstop.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -50105,7 +50105,7 @@
         "description": "Elevation is an important part of region-guessing Switzerland. The southern half of Switzerland is extremely mountainous, while the northern half mostly has smaller mountains and hills.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_elevation.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "soil"
         ]
@@ -50132,7 +50132,7 @@
         "description": "Exposed limestone rocks, protruding from forested hills, are commonly found in the Jura mountains.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_juralimestone.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil"
@@ -50174,7 +50174,7 @@
         "description": "Large houses with thick roofs, which are shaped like an arch underneath, are common around Bern.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_architecturebern.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -50224,7 +50224,7 @@
         "description": "These large town entry signs can sometimes be found in the canton of Vaud.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_vaudtownsign.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -50237,7 +50237,7 @@
         "description": "Olive green infrastructure, particularly signposts, sign borders and sign backs, are found in Basel-Landschaft.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_baselolivegreen.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "signs"
@@ -50280,7 +50280,7 @@
         "description": "In Geneva and in the valley between Martigny and Lake Geneva, you can find bike path symbols painted on the road with a simplified person on top of two disconnected wheels.",
         "note": "This stands in contrast to the rest of the country, where the symbol will be a somewhat detailed bike.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_genevabikesymbol.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -50317,7 +50317,7 @@
         "description": "Seeing a wide lake to the northeast, situated in a landscape with relatively low elevation, means you should be looking at Lake Constance (on some Maps labelled as the Bodensee).",
         "note": "Due to the low-lying landscape, you will probably be fairly close to the shore if you see the lake.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_bodensee.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -50328,7 +50328,7 @@
         "description": "The valley of Martigny has the highest density of fruit plantations in the country. It can easily be recognized by the many small fruit trees in combination with the wide, flat valley with large mountains on either side.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_martignyfruits1.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil"
@@ -50355,7 +50355,7 @@
         "description": "In the canton of Graub\u00fcnden, you can find this unique and easily recognizable train coverage on the tracks of the \u201cBernina Express.\u201d It runs around most of the canton, all the way down to Tirano in Italy.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_traintrekker_copy.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -50366,7 +50366,7 @@
         "description": "Generation 2 coverage is very limited in Switzerland. It can be found mostly near the border between the cantons of Bern and Valais, and on a few very short stretches in Schaffhausen.",
         "note": "This does not include the many ski resorts with Generation 2 snow coverage, which can be found throughout the southern half of the country.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_gen2.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "camera"
         ]
@@ -50379,7 +50379,7 @@
         "description": "These blue street signs, with rounded edges on the sides, are unique to the city of Sankt Gallen.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/switzerland/ch_stgallen_streetsign.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "signs"
         ]
@@ -50438,7 +50438,7 @@
         "description": "All coverage in Ukraine is Generation 3. Most of it was made using a red Google car. This car is almost unique to Ukraine. It sometimes has an antenna, and sometimes no antenna. Note that the car is not always visible, though at times you will still be able to tell its colour due to the car blur glitch.",
         "note": "The car meta can be very useful to tell Ukraine and Russia apart:\n\nMost importantly, you will not find the red Generation 3 car in Russia.\n\nRussia can have Generation 4 (and sometimes Generation 2). Ukraine never has either Generation.\n\nRussian Generation 3 cars always have either a short or long antenna. If you see no antenna at all, consider Ukraine.\n\nAlso note that some parts of Belgium can have a red google car with a long antenna.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Red_car.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "language",
           "cars",
@@ -50493,7 +50493,7 @@
         "description": "The Ukrainian language uses the Cyrillic script.\n\nThese letters are unique to Ukrainian, compared to Russian:\n\n\u0404 \u0454 (not to be confused with \u042d \u044d in Russian and Belarusian.)\n\n\u0490 \u0491\n\n\u0406 \u0456\n\n\u0407 \u0457",
         "note": "Other European languages that use Cyrillic include Russian, Belarusian, Bulgarian, Serbian, and Macedonian.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Ukrainian_language.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "language"
         ]
@@ -50669,7 +50669,7 @@
         "description": "Almost all Ukrainian coverage was made in the summer, meaning the foliage is green and the people around are dressed for sunny weather.\n\nFive major cities have autumn coverage, with distinct fall colours and colder weather. See the region guessing section for more information.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Summer_vibes.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "plants"
         ]
@@ -50695,7 +50695,7 @@
         "description": "Coverage in Ukraine is mostly limited to urban areas and the main roads between them. See the region-guessing section for a map.\n\nHowever, one type of coverage that can sometimes trick people are ultra-rural tracks close to cities. This is a decently common type of coverage in Ukraine, despite the general rule that most coverage is either urban or on a main road.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Ultra-rural.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "road"
         ]
@@ -50708,7 +50708,7 @@
         "description": "This is a map of street view coverage in Ukraine. Most coverage between cities is on yellow roads.\n\nNotably, there is almost no coverage in the southeast. The only exception is Donetsk. There is also no coverage south of Odesa in the area near Romania.\n\nYou can view the extent of official coverage on this site.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Ukraine_Coverage_Map.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "road"
         ]
@@ -50721,7 +50721,7 @@
         "description": "Ukrainian landline phone numbers start with a two-digit area code. Each oblast has its own area code. If the third digit is a 2, it refers to a phone number in the oblast\u2019s capital (typically the biggest city).\n\nMobile phone numbers start with 50, 63, 66-68, 73 or 91-99. They are not unique to a geographic area.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Area_codes.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -50732,7 +50732,7 @@
         "description": "The first two letters on Ukrainian licence plates determine in which oblast the vehicle is registered in, making unblurred licence plates very useful for regionguessing. Unlike most regional plates in Europe, they\u2019re not intuitive, so learning the codes beforehand is essential for utilising them.",
         "note": "The map shown only applies to the most recent and common plates, with a blue and yellow strip. The older plates use a regional number code, similar to Russia.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/ua_licenceplatecodes.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "language",
           "plates",
@@ -50758,7 +50758,7 @@
         "description": "Five major cities were covered in 2011, years before the rest of the country was covered: Kyiv, Lviv, Kharkiv, Odesa and Donetsk.\n\nThis coverage was made during autumn, meaning that the trees have distinct fall colours and people are dressed for colder weather.\n\nIn Kyiv, Lviv and Kharkiv, almost all of this coverage has been overwritten by the newer summer coverage. However, in all of Donetsk, and most of Odesa, it is still intact. In Donetsk specifically, there is no newer coverage at all.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/2011_fall.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants"
         ]
@@ -50771,7 +50771,7 @@
         "description": "This older 2011 coverage was made with a black or white Google car, instead of the standard red one. Both cars have a long antenna.\n\nThe black car was used in Donetsk. Note that Donetsk has no newer coverage whatsoever, so never guess in that city if you see a red car.\n\nThe white car was used in Lviv, Kyiv and Kharkiv. As the coverage in these cities is mostly overwritten, the white car is very rare.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/2011_cars.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "cars"
         ]
@@ -50798,7 +50798,7 @@
         "description": "Forests with Baltic pines (Pinus sylvestris) are most commonly found in the north, most often near the border with Belarus. Baltic pines are usually tall and have orange-red bark.\n\nWhile some of these forests consist solely of this species, many of them are a mix of Baltic pines and broadleaf trees.",
         "note": "Note that the Carpathians are also covered in a lot of pine forests. They are noticeably hilly however, allowing you to distinguish this area from the very flat north.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Baltic_trees.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -50838,7 +50838,7 @@
         "description": "The Russian language can be found in Ukraine, particularly in the east and south. While there are several differences between Russian and Ukrainian, these are some of the most noteworthy:\n\nThe letters \u042b \u044b, \u042d \u044d are only found in Russian.\n\nThe Russian word for street is \u0443\u043b\u0438\u0446\u0430, abbreviated \u0443\u043b.\n\nThe Russian word for city is \u0433\u043e\u0440\u043e\u0434, abbreviated \u0433.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/ua_russian.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "language"
         ]
@@ -50851,7 +50851,7 @@
         "description": "A leaf can be seen on the back of the Google car from: Ternopil to Zolochiv on the H02, Ternopil to Brody on the P39, and from Brody to Dubno on the E40. It can also be seen from Brody to Pochaiv on the P26 and from Dubno to Mlyniv on the E85.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Dubno_Ternopil_Leaf.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "cars",
           "road"
@@ -50893,7 +50893,7 @@
         "description": "These poles, with a red band across them, are unique to Kryvyi Rih.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Kryvyi_Rih_Poles.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "poles"
         ]
@@ -50906,7 +50906,7 @@
         "description": "Bus stop shelters with a vibrant yellow-and-green paint scheme, featuring sunflowers and the name of a local brand (\u041e\u043b\u0456\u0441), can be found in the Mykolaiv and Kherson oblasts.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/sunflower_bus_stops.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -50919,7 +50919,7 @@
         "description": "Within Ukraine, this visual glitch is unique to the city of Ivano-Frankivsk.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Ivano_Frankivsk_Visual_Glitch.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -50930,7 +50930,7 @@
         "description": "These \u201cPolish\u201d bollards can be found in the Zakarpattia Oblast. They have a red reflector that wraps around the bollard.\n\nThey are identical to the standard bollard used in Poland (hence the name).",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Polish_bollards.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "bollards",
           "road"
@@ -50944,7 +50944,7 @@
         "description": "The area near the border with Hungary is majority Hungarian. As a result, you will see a lot of signs with Hungarian language on it \u2013 bilingual or even monolingual.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Hungarian_language.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -50971,7 +50971,7 @@
         "description": "Google sent a special car trekker to the Chernobyl Exclusion Zone, where the nuclear disaster happened in the 1980s. This car goes from Ivankiv all the way to the abandoned town of Pripyat.\n\nOn most of the road to Pripyat, you will not really be able to tell that you are inside the Exclusion Zone. However, inside Pripyat you will see completely abandoned and overgrown buildings, giving the place an eerie look.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Chernobyl.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars",
           "architecture",
@@ -50986,7 +50986,7 @@
         "description": "On one side of the road going to Chernobyl, a yellow flag with an Opel logo can be seen on the Google car\u2019s antenna.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/ukraine/Yellow_flag_antenna.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "cars",
           "road"
@@ -51168,7 +51168,7 @@
         "description": "This yellow traffic bollard is commonly found in the UK.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-kingdom/UK_bollard.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "bollards",
           "road"
@@ -51326,7 +51326,7 @@
         "description": "Landline phone numbers in the UK always have nine or ten digits after the 0 trunk code. The first two to four digits after the 0 are the area code. Unfortunately for Geoguessr players, there is not much rhyme or reason to their geographic ordering.\n\nHowever, the area codes of some large cities are still worth memorising. The most important ones are summarised in this infographic. Notably, all of Northern Ireland uses the phone code 028, and all of London uses 020.\n\nA complete overview of all other area codes is available in this infographic.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-kingdom/gb_phone_numbers.webp",
-        "scope": "",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -51337,7 +51337,7 @@
         "description": "Bins in urban areas often have the city name on them.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-kingdom/United_Kingdom_Bins.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -51348,7 +51348,7 @@
         "description": "The Scottish Highlands can be distinguished by the semi-barren, very mountainous landscape.",
         "note": "A lot of Generation 4 coverage in the Highlands is from (early) spring, meaning that the vegetation often looks brown and yellow.\n\nIn addition, some of the most mountainous parts of Wales and Northern England can look similar.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-kingdom/UK-Scottish-Highlands.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil",
@@ -51378,7 +51378,7 @@
         "description": "These diamond-shaped \u2018Passing Place\u2019 signs are most commonly found in Scotland.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-kingdom/Indicator-template-UK-Scotland.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -51406,7 +51406,7 @@
         "description": "In Wales, markings on the road are in both English and Welsh. One of the best examples of this is \u2018Araf\u2019, which means \u2018Slow\u2019. This marking is only found in Wales.",
         "note": "Araf is not the only Welsh language marking you can find, it is just the most common. Whenever you see an obviously non-English marking next to an English one, consider guessing in Wales.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-kingdom/Araf2.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "language",
           "road"
@@ -51449,7 +51449,7 @@
         "description": "Cornish palms (Cordyline australis) in the UK are most commonly found in the far southwest along the coast and in Jersey. Although, they can rarely be found all along the west coast up to Scotland.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-kingdom/Palms-UK.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -51566,7 +51566,7 @@
         "description": "The Lake District is very hilly, with a lot of exposed rocks and stone walls. It can look like the Scottish Highlands, but Scotland is generally less rocky.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-kingdom/Untitled_design_4.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture",
           "soil"
@@ -51709,7 +51709,7 @@
         "description": "On a lot of the Alaskan coverage you will be able to see tall, snow covered mountains.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_mountains.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -51733,7 +51733,7 @@
         "description": "Alaska has Generation 4 \u201csmallcam\u201d coverage, which is mounted lower than regular Generation 4 and has a relatively big circular blur with a small protrusion at the front, with the front of the white car being very visible. The blur can also be fully transparent.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/Smallcam_Alaska.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars",
           "camera"
@@ -51760,7 +51760,7 @@
         "description": "This map shows which parts of Alaska have coverage and which camera generation was used to cover each road.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_cameragens.png",
-        "scope": "",
+        "scope": "Countrywide",
         "tags": [
           "road",
           "camera"
@@ -51774,7 +51774,7 @@
         "description": "Generation 4 coverage in Alaska is concentrated around the city of Anchorage.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_gen4.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "camera"
         ]
@@ -51800,7 +51800,7 @@
         "description": "The Alaskan towns in the Alexander Archipelago, on the British Columbia border have a unique look. Tall mountains with lush green forests can be seen in the background, with the majority of buildings made of wood. In addition, Generation 2 coverage is often overcast and misty.",
         "note": "Coastal areas of Oregon and Washington can have a similar appearance in terms of landscape and foliage.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_alexanderarchipelago.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "plants",
           "architecture",
@@ -51866,7 +51866,7 @@
         "description": "The Alaskan pipeline which is usually visible from main roads, can be seen at these points. This is an easy way to identify Alaska as there are no similar pipelines in the rest of the US.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_pipeline.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -51879,7 +51879,7 @@
         "description": "Juneau, Alaska\u2019s Capital city, is the largest settlement in the Alaskan panhandle. Therefore, it is much more \u2018built up\u2019 than other towns in this area. The city is surrounded by heavily forested mountains and hills.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_juneau.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "soil"
@@ -51915,7 +51915,7 @@
         "description": "Shitcam is only found around Anchorage and Fairbanks, and parts of the road that connects them.",
         "note": "This map shows all places where this camera can be found. Keep in mind coverage may be updated in some places, therefore you may come across regular coverage in places highlighted here.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_shitcam_fairbanks.webp",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "road",
           "camera"
@@ -51942,7 +51942,7 @@
         "description": "The Denali highway, stretching from Cantwell to Paxson in central Alaska, is a mostly gravel highway in the \u2018Alaska\u2019 mountain range. This road runs generally east to west, is covered in the generation 2 camera, and was taken in late summer, so wildflowers and green shrubby plants are common.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_denalihighway.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "plants",
           "road",
@@ -51957,7 +51957,7 @@
         "description": "The Steese Highway is another gravel highway that goes from Fairbanks to the town of \u2018Central.\u2019 Similar to the Denali highway, this road runs generally east to west and is covered in generation 2. The difference, however, is that the mountains along this road are noticeably lower than the ones adjacent to the Denali Highway.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_steesehighway.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road",
           "camera"
@@ -51971,7 +51971,7 @@
         "description": "Highway 5, from the Yukon border to Tetlin Junction, can be recognized by the foggy, rainy weather, and Generation 2 camera.",
         "note": "The Top of the World Highway on the Canadian side also has similar weather, but is mostly paved and has no outer lines, unlike the American side, which is only paved west of Chicken, and does have outer lines.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/alaska/ak_taylorhighway.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road",
           "camera"
@@ -52043,7 +52043,7 @@
         "description": "Bermuda features a black Street View car with the entire front sides of the vehicle typically visible.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/bermuda/bm_googlecar.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "cars"
         ]
@@ -52158,7 +52158,7 @@
         "description": "The northwestern tip of Bermuda can be recognised by the many large buildings made of unpainted grey brick.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/bermuda/bm_northwestpeninsula.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -52171,7 +52171,7 @@
         "description": "A boat trekker can be seen on the eastern coast of Bermuda. It can be seen going around Saint George\u2019s Harbour and past Fort St. Catherine on the northeast tip of the island.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/bermuda/bermuda_boat.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars"
         ]
@@ -52243,7 +52243,7 @@
         "description": "Canada uses unique diamond-shaped T-Intersection signs.\n\nSome provinces use different designs. You can learn more about those in the region guessing section.",
         "note": "Canada is the only country in the world where you can find these signs. The US, for example, uses rectangular T-Intersection signs.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Checkerboard.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "signs",
           "road"
@@ -52284,7 +52284,7 @@
         "description": "You can sometimes find communal mailboxes in Canada. Personal mailboxes are still very common, though.\n\nCanada Post has a red logo, which sometimes appears on mailboxes.",
         "note": "These communal mailboxes are very rare in the US. In addition, the US Postal Service has a blue logo.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Canada_communal_mailbox.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -52325,7 +52325,7 @@
         "description": "French is the majority language in Qu\u00e9bec and parts of New Brunswick.",
         "note": "At the federal level, French has official status alongside English, so you can sometimes find bilingual signs in other parts of Canada. In addition, French is also spoken in several communities in Nova Scotia, Ontario and Manitoba.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/French_In_Canada_4.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs",
           "language"
@@ -52353,7 +52353,7 @@
         "description": "Each province has its own unique kilometre markers that vary slightly.\n\nNotably, Ontario KM markers have a white square at the bottom, which is unique to the province.\n\nYou can click on the image to enlarge it.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Canadian_KM_markers_map_w_numbers2.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -52435,7 +52435,7 @@
         "description": "You will often find these yellow fire hydrant markers atop signposts in Qu\u00e9bec.\n\nIn Qu\u00e9bec City these markers will usually have a blue rectangle and markers in Trois-Rivi\u00e8res are distinctly small.",
         "note": "Sometimes the markers will have different colours. Beware that Edmundston, in New Brunswick, uses these too.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Quebec_Hydrant_markers.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -52446,7 +52446,7 @@
         "description": "You can find these rectangular markers on the sides of the roads in Qu\u00e9bec. The colours can vary.",
         "note": "These can be rarely found on urban divided highways in New Brunswick.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Untitled_design_1.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -52459,7 +52459,7 @@
         "description": "You can find these diamond-shaped markers on the sides of the roads in Ontario. The colours can vary.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Untitled_2200_1080_px_1.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -52485,7 +52485,7 @@
         "description": "These flat, yellow bollards can be found on the Trans-Canada highway in New Brunswick.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/ca_nbtchwybollard.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "bollards",
           "road"
@@ -52540,7 +52540,7 @@
         "description": "These distinctive pole tops are most commonly found in Ontario. They have two insulators to the side, and one on top. The side insulators are affixed to the pole with a distinct attachment. Sometimes, multiple of them can be stacked on top of each other.",
         "note": "They can occasionally appear in British Columbia, Nova Scotia, or other provinces more rarely.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Canada_Map20.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "poles"
         ]
@@ -52633,7 +52633,7 @@
         "description": "Road signs in British Columbia can have green backsides.",
         "note": "Green backsides are also somewhat common on Prince Edward Island.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Green-backed_signs_map.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "signs",
@@ -52648,7 +52648,7 @@
         "description": "Signs in British Columbia are sometimes hung down from these unique signposts.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/BC_hanging_signs.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -52674,7 +52674,7 @@
         "description": "You can sometimes find a green and white striped sticker on signposts in Manitoba.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Canada_Map13.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -52687,7 +52687,7 @@
         "description": "Signposts in Saskatchewan can feature these white triangles. The number can vary.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Sask_Spikes.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -52698,7 +52698,7 @@
         "description": "You can sometimes find white dashes between the yellow centre lines in Saskatchewan.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/SK-RoadLines_Guide_map.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -52709,7 +52709,7 @@
         "description": "Stop signs with the word \u2018Arr\u00eat\u2019 are unique to Qu\u00e9bec.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Canada_Map16__281_29.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -52722,7 +52722,7 @@
         "description": "Stop signs with both \u2018Stop\u2019 and \u2018Arr\u00eat\u2019 are most commonly found in New Brunswick.",
         "note": "Such stop signs can rarely be found in other provinces.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Canada_Map1.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -52789,7 +52789,7 @@
         "description": "Fire hydrants in Newfoundland often have a diamond-shaped marker next to them.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/NL-fire-hydrant-marker.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -52800,7 +52800,7 @@
         "description": "You can spot these wooden boxes holding up signs in Newfoundland and Labrador.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Newfounland_and_Labrador_boxes.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -52926,7 +52926,7 @@
         "description": "Canola is grown in the central southern prairies, and it can be found almost nowhere else in Canada. It is visually similar to a field of bright yellow flowers.",
         "note": "Canola is also very common in the US state of North Dakota.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/ca_canola.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -53015,7 +53015,7 @@
         "description": "The Balsam Fir is a very common species of tree found in Newfoundland. It has a Christmas tree-like appearance.",
         "note": "While most commonly found in Newfoundland, the Balsam Fir can also grow in other parts of Eastern Canada and the US. For an overview, see this map.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Newfoundland_trees.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -53028,7 +53028,7 @@
         "description": "Canadian phone numbers start with a three-digit area code. Both landlines and mobile phones use the same area codes.",
         "note": "Canadian phone numbers are formatted XXX XXX XXXX, with the area code being the first three digits. It is fairly common to see 7-digit numbers with the area code omitted.\n\nYou can click on the image to enlarge it.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Canada_area_codes2.png",
-        "scope": "",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -53104,7 +53104,7 @@
         "description": "A group of motorcyclists can be seen in front of the Google car on this stretch of Highway 1 near Beaver Creek in Yukon.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Canada_Map31.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "cars",
           "road"
@@ -53118,7 +53118,7 @@
         "description": "The AB-93 highway through Banff and Jasper National Park features distinct, gradual, and steep mountains with a sharp peak on either side of the road. Tall, somewhat thin trees can also be seen.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/ca_ab93.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "road",
@@ -53133,7 +53133,7 @@
         "description": "The area near Drumheller, Alberta has distinct canyon-like treeless rock formations that comprise the landscape.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Drumheller_Gen4.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -53144,7 +53144,7 @@
         "description": "The Trans-Labrador Highway (road numbers 500 and 510) is a recognizable road, covered by Generation 4, mostly during sunny weather conditions. Thin pine trees line the side of the road, and it has a remote, cold, and northern feel. On many parts of the road, the sun is low in the sky.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/NL510_map.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "road",
@@ -53174,7 +53174,7 @@
         "description": "The Cape Breton Highlands in northeastern Nova Scotia have an unusual amount of elevation for Eastern Canadian standards. It is very forested, with a mix of broad-leaf trees and pine trees.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/Cape_Breton.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -53187,7 +53187,7 @@
         "description": "Route 430 on Newfoundland runs in a roughly south-southwest to north-northeast direction, with the road lines slightly washed out. It is located in a remote and sparsely populated part of the island. On many sections of the road, the coast is visible to your west. To your east, you will usually see low pine tree forests, and occasionally an imposing wall of mountains in the far distance.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/NL_430_v3.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "architecture",
@@ -53231,7 +53231,7 @@
         "description": "This unique Google car and dark-coloured soil is found in Tulita, NWT. The car will most often look like this, but can also be fully blurred with just the antenna visible, or with the hood of the car visible.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/canada/ca_tutila.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "cars",
           "soil"
@@ -53382,7 +53382,7 @@
         "description": "The vast majority of coverage in Costa Rica was taken with a Generation 3 trekker camera. It can typically be recognised by being closer to the ground than cameras mounted to cars. On urban rounds it can also often be recognised by the trekker being on sidewalks, rather than in the middle of the roads.\n\nThere are also some official tripods inside buildings.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_trekker.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "cars",
           "architecture",
@@ -53454,7 +53454,7 @@
         "description": "The coverage in Costa Rica is very limited, mainly being found in and around San Jos\u00e9 and by the northern west coast. There is also coverage on Cocos Island, located 500 kilometres southwest of the coast, as well as a boat trekker around Ca\u00f1o Island by the southern west coast.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_coveragemap.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "cars"
         ]
@@ -53491,7 +53491,7 @@
         "description": "Urban coverage is mainly found in and around San Jos\u00e9 and Cartago, but also exists in Liberia and Filadelfia de Guanacaste.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_urban.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -53502,7 +53502,7 @@
         "description": "The Children\u2019s Museum in northern San Jos\u00e9 can be recognised by its grand castle-like exterior.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_childrensmuseum.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -53513,7 +53513,7 @@
         "description": "Around the National Museum, you can find several wealthy-looking homes, as well as a small tower built in a style resembling towers on medieval European fortresses.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_nationalmuseum.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "architecture"
         ]
@@ -53539,7 +53539,7 @@
         "description": "La Sabana Park has several sports facilities, including the National Stadium of Costa Rica, located in the western part of the park.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_lasabana.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -53563,7 +53563,7 @@
         "description": "Palacio de los Deportes is a stadium in Heredia, northwest of San Jos\u00e9, which can be recognised by its boxy look combined with the red, blue and white colour scheme.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_palaciodelosdeportes.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -53588,7 +53588,7 @@
         "description": "In Centro Recreativo Bosque de la Hoja, just east of San Jos\u00e9 de la Monta\u00f1a, you can see the trekker being followed by three dogs through a pine forest.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_dogs.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "cars"
@@ -53602,7 +53602,7 @@
         "description": "In Recreational Park Los Manantiales, just southwest of Po\u00e1s, you can find a road lined with sugarcane plantations and cornstalk dracaena plants.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_losmanantiales.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "road"
@@ -53630,7 +53630,7 @@
         "description": "The Cartago Municipal Museum can be recognised by its palace-like facade with a neatly planted garden in front, as well as the railway in the middle of the street in front of the museum.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_cartagomunicipalmuseum.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "plants"
         ]
@@ -53643,7 +53643,7 @@
         "description": "The Ruins of Cartago is the remains of a large catholic church near the centre of the city. The POI is one of the first things to show up when you zoom into the city.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_ruinsofcartago.png",
-        "scope": "1km",
+        "scope": "10km",
         "tags": [
           "architecture"
         ]
@@ -53669,7 +53669,7 @@
         "description": "Costa Rica Institute of Technology can usually be recognised by the mountain range which can be seen to the south and east.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_instituteoftechnology.png",
-        "scope": "100km",
+        "scope": "Region",
         "tags": [
           "soil"
         ]
@@ -53682,7 +53682,7 @@
         "description": "By the entrance of Jard\u00edn Botanico Lankester, located southeast of Cartago, you can find a poorly maintained dirt road, surrounded by mountains in the distance, as well as a sign with the name of the garden.\n\nWithin the garden itself you will find a plethora of different plants, with the walkways having many soft curves, and almost never being straight.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_jardinbotanicolankester.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "signs",
@@ -53711,7 +53711,7 @@
         "description": "The coverage in Liberia can be recognised by a white building with rounded windows having brown wooden window frames. This building can be seen on all coverage in the town.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_liberia.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "architecture"
         ]
@@ -53724,7 +53724,7 @@
         "description": "Most of the coverage in Filadelfia de Guanacaste was taken on the edge of a park, with a distinct red brick pavement where the bricks are placed in the shape of an \u201cL\u201d.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/costa-rica/cr_filadelfiadeguanacaste.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "road"
         ]
@@ -53796,7 +53796,7 @@
         "description": "Despite being located in Central America, stop signs in DR contain the South American \u201cPARE\u201d. Moreover, many signs are attached to yellow signposts.",
         "note": "\u2018PARE\u2019 is also used in all of South America as well as Puerto Rico.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/dominican-republic/pare.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -53809,7 +53809,7 @@
         "description": "Street View coverage in the Dominican Republic is very limited. Only the capital Santo Domingo and the Northern city of Santiago de los Caballeros are covered.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/dominican-republic/do_coveragemap.png",
-        "scope": "",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -53820,7 +53820,7 @@
         "description": "If you have mountains to the North, you will always be in Santiago de los Caballeros.",
         "note": "Although some parts of Santo Domingo are hilly, you will never see proper mountains like this one.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/dominican-republic/Landscape_-_Santiago_de_los_Caballeros_Mountains.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "soil"
         ]
@@ -53833,7 +53833,7 @@
         "description": "Yellow traffic light poles are typically found in the city of Santiago de los Caballeros.",
         "note": "This only applies to traffic light poles - yellow signposts are common in both cities.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/dominican-republic/Santiago_de_los_Caballeros_Traffic_Light_Poles.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "poles"
         ]
@@ -53873,7 +53873,7 @@
         "description": "These black-and-purple pole markings are only found on poles in the Santo Domingo area.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/dominican-republic/Santo_Domingo_Striped_Poles.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "poles"
         ]
@@ -53901,7 +53901,7 @@
         "description": "A small portion of the coverage in Santo Domingo was taken late in the evening. Similar imagery does not exist in Santiago de los Caballeros.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/dominican-republic/Santo_Domingo_Evening_Coverage.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": []
       }
     ]
@@ -53918,7 +53918,7 @@
         "description": "The coverage in Greenland is divided into well over fifty small disjoint parts, with different weather conditions, seasons, landmarks and so on. Although the largest concentration is found on the southern half of the west coast, coverage can be found scattered along a lot of the coast. Since differentiating between some of them requires a lot of technical information, such as the position of the sun or clouds, this guide will only cover the parts with clear distinctive features, such as a unique Street View vehicle or an easily recognizable mountain.\n\nBecause of the limited coverage, this guide will be structured differently than most other guides. It will be divided into two main sections: one for land coverage and one for boat coverage. These two sections will each be divided into step 2, for larger towns and boats found in multiple locations, and step 3, for smaller settlements and boats found only in one place.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_coverage.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -53967,7 +53967,7 @@
         "description": "The Greenlandic landscape is very barren, with no trees or taller vegetation and often featuring snow. Mountains and hills are common, with very limited flat areas. On top of that, almost all coverage was taken in coastal areas, so fjords and visible coastlines are very common.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_landscape.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "plants"
         ]
@@ -53980,7 +53980,7 @@
         "description": "Boat trekkers are very common in Greenland, featuring a variety of different boats.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_boats.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -54040,7 +54040,7 @@
         "description": "The most noticeable feature of the coverage in Aasiaat is the windshield with a shiny red, white and black reflection. The large, round side mirrors can also be used to identify the town. The coverage is very sunny and has thick, thawing snow along most of the roads.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_aasiaat.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "road",
           "camera"
@@ -54067,7 +54067,7 @@
         "description": "Uummannaq has two distinctive features: a sharp mountain to the north and a green snowmobile with large black side mirrors. Neither of the two can be seen on all coverage but at least one can be seen on most.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_uummannaq.png",
-        "scope": "100km",
+        "scope": "10km",
         "tags": [
           "plants",
           "camera"
@@ -54081,7 +54081,7 @@
         "description": "Narsaq can be identified by the thin antenna seen on the right side of the car. The coverage is very sunny and fairly green.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_narsaq.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "cars"
@@ -54095,7 +54095,7 @@
         "description": "The coverage in Maniitsoq was taken by a tractor, making it very recognizable. The coverage is overcast and fairly snowy.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_maniitsoq.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -54106,7 +54106,7 @@
         "description": "The coverage in Narsarsuaq can be recognized by the driver wearing a black hoodie. The coverage was taken close to sunset on a very sunny day. There is also a fair amount of small bushes along the road, which is somewhat unusual in Greenland.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_narsarsuaq.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "plants",
           "road"
@@ -54120,7 +54120,7 @@
         "description": "On the other side of the fjord from Narsarsuaq, a black ATV with an orange and purple bag in the front can be seen. The coverage has a lot of tall green grass and the dirt is unusually red for Greenland.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_brattahli.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "soil"
@@ -54161,7 +54161,7 @@
         "description": "The coverage in and around Igaliku is most easily recognized by the wide, snow-covered mountain range to the northeast which looks very bright due to the setting sun. The green ATV, while not entirely unique on its own, can also be a useful hint.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_igaliku.png",
-        "scope": "100km",
+        "scope": "10km",
         "tags": [
           "plants"
         ]
@@ -54202,7 +54202,7 @@
         "description": "The road east of Kangerlussuaq is easily recognized by the large white truck.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_e_kangerlussuaq.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "road"
         ]
@@ -54215,7 +54215,7 @@
         "description": "The coverage connecting Sisimiut and Kangerlussuaq is easily recognized by the thick layer of snow on and around the road. The sun sets along the road, making the western parts very bright and the eastern parts very dark.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_w_kangerlussuaq.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "road"
         ]
@@ -54228,7 +54228,7 @@
         "description": "To the north of Saattut you can see a wide mountain range shrouded in clouds, on the other side of a fjord. The paths covered are mostly dark, muddy dirt roads, and the foliage is mainly yellow grass tufts.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_saattut.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "soil",
@@ -54243,7 +54243,7 @@
         "description": "The coverage on Kulusuk island has a round, red ATV, with a pyramid shaped mountain often seen to the northeast. The footage was taken right after sunset on a clear day, making it fairly dark.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_kulusuk.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "soil"
         ]
@@ -54256,7 +54256,7 @@
         "description": "Kangaatsiaq has a large amount of thawing snow on the side of the roads. The sun is setting and there is a large body of water to the west.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_kangaatsiaq.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "road"
         ]
@@ -54307,7 +54307,7 @@
         "description": "Unlike most houses in Greenland, the houses in Tiilerilaaq are commonly grey rather than colourful. The village can also be recognized by the ground, which is almost entirely made up of smooth, light grey rocks.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_tiilerilaaq.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "architecture",
           "soil"
@@ -54345,7 +54345,7 @@
         "description": "To the southwest of Qaanaaq, you can see icebergs in a large body of water, and a wide mountain range on the other side, where the snow is bright white as it reflects the sunlight through the thick clouds.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_qaanaaq.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -54356,7 +54356,7 @@
         "description": "A red and black ATV can be found in and around the village of Kapisillit, northeast of Nuuk. Many mountains in the distance are covered in a layer of snow.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_kapisillit.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -54378,7 +54378,7 @@
         "description": "On a small bit of coverage east of Nuuk you can see a large number of sharp mountains, powdered in snow. The coverage is somewhat dark due to the thick clouds and the sun being hidden behind the mountains.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_nuukeastmountains.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "camera"
         ]
@@ -54391,7 +54391,7 @@
         "description": "About 20 km northeast of Narsarsuaq, you can find a small piece of coverage with large ice blocks in every direction.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_iceblocks.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -54490,7 +54490,7 @@
         "description": "A small, rounded red bow can be found on a boat going south of Tasiilaq.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_boattasiilaq.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -54501,7 +54501,7 @@
         "description": "This small, red and black boat, with multiple people sitting in it, can be found in a fjord far north on the east coast.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_boatNE.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -54523,7 +54523,7 @@
         "description": "This small, white boat with a silver handrail on the bow can be found west of Narsaq and east of Qaqortoq. While the sun is in the west on the coverage near Narsaq, it is in the east on the coverage near Qaqortoq.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_boatnarsaq.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -54545,7 +54545,7 @@
         "description": "A grey boat is found east of Nuuk.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_boatnuuk.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -54556,7 +54556,7 @@
         "description": "A mostly white boat, with extremely tall antennas on the rear can be found going into the fjord east of Nuuk.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/greenland/gl_boatnuukNE.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       }
     ]
@@ -54602,7 +54602,7 @@
         "description": "Guatemala is a tropical country, and is mainly covered by rainforests.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_landscape.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -54666,7 +54666,7 @@
         "description": "Guatemala has a fairly low amount of coverage, particularly in the north. Here you can see which roads are covered.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_coverage.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "road"
         ]
@@ -54679,7 +54679,7 @@
         "description": "This is a topographic map of Guatemala. Generally speaking, the middle of the country is mountainous, while the south and north are fairly flat.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_topography.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "soil"
         ]
@@ -54819,7 +54819,7 @@
         "description": "Phone numbers starting with a 2 are unique to Guatemala City.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_phonecode2.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -54830,7 +54830,7 @@
         "description": "Similarly, phone numbers starting with a 6 are unique to the Guatemala Department.",
         "note": "Phone numbers starting with 7 are found anywhere except for Guatemala Department, and phones starting with 3, 4 or 5 can be found anywhere in the country.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_phonecode6.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -54841,7 +54841,7 @@
         "description": "Lago de Atitl\u00e1n is by far the largest lake in the mountainous regions of Guatemala. It is surrounded by mountains, and some volcanoes.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_lagodeatitlan.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "soil"
         ]
@@ -54854,7 +54854,7 @@
         "description": "A small dirt road in the middle of a dense jungle can be found north of Tikal, in the far north of the country.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_northofflores.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "soil",
@@ -54869,7 +54869,7 @@
         "description": "These small white bollards with two black stripes can be found on road 1 northeast of Quetzaltenango.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_uniquebollardroad.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "bollards",
           "road"
@@ -54883,7 +54883,7 @@
         "description": "The PET-11, south of Las Pozas can be recognised by the slightly rolling landscape combined with its completely north-to-south road angle.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_pet11northtosouth.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "road"
         ]
@@ -54909,7 +54909,7 @@
         "description": "A trekker featuring several Mayan temples can be found just west of the town of Tikal.\n\nIt is worth mentioning that while there are other Guatemalan trekkers featuring Mayan ruins, this is by far the most prominent and contains the largest and most intact temple structures.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/gt_tikal.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "cars",
           "architecture"
@@ -54923,7 +54923,7 @@
         "description": "These white rectangular stickers that have the word \u2018electricista\u2019 written on them are unique to Guatemala City.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/guatemala/Guatemala_city_stickers.png",
-        "scope": "Unique",
+        "scope": "10km",
         "tags": [
           "language"
         ]
@@ -54956,7 +54956,7 @@
         "description": "Hawaii is the only state to use its own language, though English is still predominantly used. Most place names are in Hawaiian, so you can spot it on street signs, and other road markers.\n\nHawaiian is a vowel-oriented language that only uses eight consonants: H, K, L, M, N, P, W, and (\u02bb), called an \u02bbOkina.\n\nEvery Hawaiian word ends in one of 5 vowels: A, E, I, O, or U.\n\nEach vowel can also have a macron over it: \u0100, \u0112, \u012a, \u014c, and \u016a.\n\nThese vowels are often combined to make Diphthongs. I.e. UI, AI, AE, etc...",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/I_want_to_visit_Honolulu_.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "signs",
           "language",
@@ -54971,7 +54971,7 @@
         "description": "Hawaii has a large amount of Generation 4 \"smallcam\" coverage, which is mounted lower than regular Generation 4 and has a relatively big circular blur with a small protrusion at the front, with parts of the car being visible. The blur can also be fully transparent, making it harder to spot.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_smallcam.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "camera"
         ]
@@ -55079,7 +55079,7 @@
         "description": "Raised pavement markers in Hawaii will commonly be placed in a specific pattern: a single reflector, followed by four reflectors put close together and then a single reflector, repeating the pattern.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hi_reflector.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "road"
         ]
@@ -55105,7 +55105,7 @@
         "description": "On the three largest islands, namely Hawai\u02bbi, Maui and O\u02bbahu, smallcam coverage was taken with a black Google car.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_blackcar.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "cars",
           "camera"
@@ -55160,7 +55160,7 @@
         "description": "The Island of O\u02bbahu lies southeast of Kaua\u02bbi. It is known for being home to the Honolulu urban area. It also is home to steep, lush hills, which can be commonly seen from all around the island, especially in Honolulu\u2019s suburbs.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_oahu.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "architecture"
@@ -55187,7 +55187,7 @@
         "description": "The Island of Moloka\u02bbi is just southeast of O\u02bbahu. It features deep red soil and a prominent volcano on the eastern end of the island. Especially in the older Generation 3 coverage, the vegetation appears very dry. Moloka\u02bbi is also very sparsely populated.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_molokai_new2.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "soil",
@@ -55202,7 +55202,7 @@
         "description": "The Island of L\u0101na\u02bbi is a small, yet distinct island that lies just south of Moloka\u2019i. A volcano is found just east of the centre of the island, adjacent to the town of L\u0101na\u02bbi. In this area, tall Cook pines are abundant. In addition, some main roads near the centre of the island are lined with younger Cook pines.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_lanaicentral_new.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "road"
         ]
@@ -55215,7 +55215,7 @@
         "description": "Towards the coasts of the island of L\u0101na\u02bbi, hills dotted with dry grass and shrubby vegetation are commonly seen. These areas are very rural with few buildings.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_lanaicoastal_new.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "architecture"
@@ -55229,7 +55229,7 @@
         "description": "The Island of Maui sits southeast of Moloka\u02bbi. In the centre of the island, you will find dry and somewhat flat grasslands with one or both of the mountain ranges on the island visible.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_mauicentral.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "soil"
         ]
@@ -55242,7 +55242,7 @@
         "description": "Coastal areas of Maui are noticeably more lush and green. Banana plants, palm trees, and views of the mountains are all common.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_mauicoastal.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "soil"
@@ -55256,7 +55256,7 @@
         "description": "The Island of Hawai\u2019i (also referred to as The Big Island) is both the largest and farthest southeast island with Street View coverage in the state. The interior areas feature rolling, grassy plains and volcanic rocks. You can typically see one or more of the island\u2019s volcanoes from the road.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_hawaiicentral.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "road"
@@ -55270,7 +55270,7 @@
         "description": "The coastal areas of the island of Hawai\u2019i are where most of the towns and built-up areas on the island are located. These areas are typically more lush and have more trees and fern plants than the interior.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_hawaiicoastal.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants"
         ]
@@ -55283,7 +55283,7 @@
         "description": "Rural roads going through forests within a flat landscape are commonly found south of the city of Hilo, on the island of Hawai\u02bbi.",
         "note": "Mountainous forests are dotted around Hawaii, but if you are in one, and you see red soil with Generation 3, consider guessing in Kaua\u02bbi, the westernmost covered island.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/Copy_of_Copy_of_Hawaii_Hint.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "soil",
           "road",
@@ -55312,7 +55312,7 @@
         "description": "The infamous \u201cHawaiian lattice\u201d can be recognized by the volcanic soil and rocks that are abundant in the region. Volcanic vegetation can also be seen lining the roads. Note that the angle of the roads is a big clue for the area, and that this lattice was built on the slope of Mauna Loa.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/The_Great_Hawaii_Lattice1.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "soil",
@@ -55351,7 +55351,7 @@
         "description": "On the eastern side of the island of Moloka\u02bbi lies the Kamakou volcano, leading to a significantly hillier and slightly more vegetated landscape than the western parts of the island.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/hawaii_molokaivolcano_new.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants"
         ]
@@ -55364,7 +55364,7 @@
         "description": "Kaho\u02bbolawe is a small island that lies just to the southwest of Maui. It only has trekker coverage on small gravel roads and dirt trails, and is characterised by dry, shrubby vegetation, rolling hills, and dark red soil. On the western end of this coverage, several buildings can be seen.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/hawaii/kahoolawe.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "cars",
@@ -55387,7 +55387,7 @@
         "description": "Martinique, officially the Department of Martinique, is an overseas department and region of France, in the Caribbean between Dominica and St Lucia. As such, for country streaks purposes, it is counted as France.\n\nCoverage is very limited: there are just three Generation 3 trekkers. Instead of learning metas to identify the territory, it is more useful to just memorise what the trekkers look like.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/martinique/Martinique_in_France_2016.svg.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "camera"
         ]
@@ -55400,7 +55400,7 @@
         "description": "Habitation Cl\u00e9ment is a rum distillery covered by a trekker. Due to it being pinpointable, some locations are on maps such as ACW. There are several landscapes in and around the distillery, including:\n\nA warehouse with a truck and a forklift.\n\nA view of the outside with hills in the background and machinery on display.\n\nA rural dirt track outside with red soil and palm trees.\n\nThe inside of the distillery with the structure made of H-beam steel.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/martinique/Martinique_Habitation_Clement.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "cars",
@@ -55416,7 +55416,7 @@
         "description": "The coastal southern trekker can be recognized by a few unique things:\n\nIn the north, the trekker starts off walking on a slightly hilly path, with other people.\n\nSeveral houses with orange roofs can be seen.\n\nA flatter and more open path can be seen, with the ocean slightly visible through the trees.\n\nThe coverage ends in the south with a car park and some stalls.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/martinique/Martinique_Coastal_Trekker.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "cars",
@@ -55432,7 +55432,7 @@
         "description": "The Jardin de Balata trekker is the most tropical and humid feeling on Martinique. The trekker can be recognized by dark and damp feeling, the trees with buttress roots, ferns and bamboo. This man wearing a black shirt and grey cap can sometimes be seen with the trekker.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/martinique/Martinique_Jardin.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "plants",
           "cars"
@@ -55491,7 +55491,7 @@
         "description": "These small, cylindrical white bollards with a black base are unique to Mexico. A yellow reflector can sometimes be seen, as well as a flat version.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_bollard.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": [
           "bollards"
         ]
@@ -55504,7 +55504,7 @@
         "description": "Mexico has two general road shields; one for national highways with \u201cMEXICO\u201d written at the top and a slightly curvy design, and one for state roads which have straight borders, and typically has the state initials written at the top.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_roadshields.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "language",
           "road"
@@ -55542,7 +55542,7 @@
         "description": "Cacti, of many different species, are extremely common in Mexico.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_cacti.jpg",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "plants"
         ]
@@ -55605,7 +55605,7 @@
         "description": "OXXO and Pemex are two of the most popular gas station brands in Mexico.",
         "note": "While less common, OXXO can still be found in other countries.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_brands.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -55616,7 +55616,7 @@
         "description": "Many place names in Mexico are of Nahuatl origin, featuring a lot of \u2018x\u2019 and \u2018tl\u2019 as well as \u2018-ec\u2019 and \u2018-tlan\u2019 suffixes.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_placenames.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -55665,7 +55665,7 @@
         "description": "The Generation 3 coverage in Mexico mainly feature two cars:\n\nA white car with a stubby antenna. There is a diagonal coil wrapped around the antenna.\n\nA white car with a more visible back and a long red brake light instead of an antenna.\n\nIt is possible to find a white car without a stubby antenna, but with a tiny sliver visible where the antenna should be.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_gen3car.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "cars",
           "camera"
@@ -55679,7 +55679,7 @@
         "description": "The Generation 4 cars in Mexico commonly have a visible front and can feature various different colour patterns. The three most common ones are:\n\nBlue\n\nWhite with a blue stripe\n\nBlack",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_gen4cars2.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "camera"
         ]
@@ -55717,7 +55717,7 @@
         "description": "Every state in Mexico has one or several unique licence plate designs. In this infographic you can find the most common and helpful ones.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_licenceplates.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "plates"
         ]
@@ -55754,7 +55754,7 @@
         "description": "Vast fields of blue agave (Agave tequilana), used to produce tequila, are mostly found in Jalisco and Nayarit.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_tequilafield.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -55767,7 +55767,7 @@
         "description": "Yucca filifera, also known as tree yucca, as well as yucca decipiens are most commonly seen in San Luis Potosi and Zacatecas as well as some of the bordering northern states. They can be recognised by their oblong rosettes of sharp green leaves branching from a single trunk, similar to a tree.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_treeyucca.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "camera"
@@ -55781,7 +55781,7 @@
         "description": "The Mexican Giant Cardon is an extremely common cacti in the Baja California peninsula. It can be identified through its large sprawling arms stemming from a singular trunk and ribbed exterior.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_bajacacti.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -55807,7 +55807,7 @@
         "description": "Organ Pipe Cacti have long thin stems that often come out from a stem that is around ground level. They are most commonly found in Sonora and occasionally in Baja California Sur.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_organpipecacti.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil"
@@ -55821,7 +55821,7 @@
         "description": "The Blue Myrtle Cacti have short arms that uniformly curve and point upwards. It is abundantly found in San Luis Potosi, but also common in Queretaro and Hidalgo.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_bluemyrtlecacti.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -55834,7 +55834,7 @@
         "description": "Sugar cane can be found all over the country, but by far most common in Veracruz.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_sugarcanecacti.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -55869,7 +55869,7 @@
         "description": "The Attalea rostrata is a huge palm recognizable from its upright leaves, almost resembling an umbrella. It is mostly exclusive to Veracruz and Tabasco, and can be rarely found in Chiapas.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_veracruzpalm.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -55895,7 +55895,7 @@
         "description": "Boojum trees can be recognized by their alien, tentacle-like appearance. They are almost exclusively found in the southern half of Baja California.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_boojumtree.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -55908,7 +55908,7 @@
         "description": "Brittlebush are small shrubs with bright silver-grey leaves that are most commonly found in Sonora, especially around Hermosillo.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_brittlebush.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -55919,7 +55919,7 @@
         "description": "These thin, white-barked trees can be found in the Yucatan peninsula, but are most prevalent in Quintana Roo.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_quintanarootrees.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -55932,7 +55932,7 @@
         "description": "These gold tufts of grass in a line right next to the road are most commonly found in Coahuila.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_coahuilagrass.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "plants",
           "road"
@@ -55972,7 +55972,7 @@
         "description": "The Monterrey metropolitan area features tall stunning mountain ranges that surround the city.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_monterreymountains.png",
-        "scope": "100km",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -55996,7 +55996,7 @@
         "description": "Extremely dark fields are common in Guanajuato.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_guanajuatodarkfields.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -56020,7 +56020,7 @@
         "description": "Almost blindingly white soil in the Yucatan peninsula is most common in Quintana Roo.",
         "note": "This is only consistent in Generation 3.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_whitesoilqroo.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "soil",
           "camera"
@@ -56060,7 +56060,7 @@
         "description": "White concrete block buildings are highly concentrated in the states surrounding Mexico city, and are generally more common to the east. They can however still be found all over the country.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_whitebrick.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "architecture"
         ]
@@ -56127,7 +56127,7 @@
         "description": "A thick cross can be seen on the back of signs in Chihuahua.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_chihuahuacross.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "signs"
         ]
@@ -56140,7 +56140,7 @@
         "description": "Bollards with a red band near the top are unique to Nayarit, apart from one exception being Federal Highway 190 on the Oaxaca-Chiapas border.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_nayaritbollard.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "bollards",
           "road"
@@ -56208,7 +56208,7 @@
         "description": "These concrete poles with insulators suspended below the crossbars are unique to the Yucatan peninsula.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_yucatanhangingpoles.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "poles"
         ]
@@ -56247,7 +56247,7 @@
         "description": "Poles with a mesh body are most commonly found in San Luis Potosi, Guanajuato, and Queretaro.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_meshpole.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "poles"
         ]
@@ -56260,7 +56260,7 @@
         "description": "White middle roadlines are most commonly found in Tabasco.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_tabascowhitelines.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -56271,7 +56271,7 @@
         "description": "These fences made out of trees with red-coloured bark are commonly found in Veracruz.",
         "note": "These tree fences can still be found in other coastal states and are best utilised when combined with other clues.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_veracruzfence.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "plants",
           "architecture"
@@ -56285,7 +56285,7 @@
         "description": "Black tar on both sides of the yellow centre line can be seen in Sinaloa, Durango, and Guerrero.",
         "note": "This is most reliable when the tar is not faded.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_blacktarroadlines.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -56310,7 +56310,7 @@
         "description": "This style of cobblestone pavement, unorganised with irregular tiles, can be found in most of the central states, but is by far most commonly found in the states of Nayarit, Jalisco, Colima, and Queretaro.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_queretaropavement.png",
-        "scope": "Unique",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -56323,7 +56323,7 @@
         "description": "This pavement consisting of hexagonal tiles is found in Puebla and Tlaxcala.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_pueblapavement.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -56336,7 +56336,7 @@
         "description": "This exact pavement design with three lines of cobblestone patterning is mainly found in Oaxaca.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_oaxacapavement.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "road"
         ]
@@ -56412,7 +56412,7 @@
         "description": "Cerro del Bernal is a distinct extinct volcano that is found in southern Tamaulipas. It can be found heading directly northwest of Tampico or west of Mor\u00f3n.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_cerrodelbernal.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": []
       },
       {
@@ -56461,7 +56461,7 @@
         "description": "The area around San Crist\u00f3bal Suchixtlahuaca and south of it in Oaxaca often feature rolling hills with really distinct orange and beige-tinged soil, passing from one colour to the other with each hill. The beige-tinged soil can be seen more prominent in some locations.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_oaxacapinkwhitesoil.png",
-        "scope": "Region",
+        "scope": "10km",
         "tags": [
           "soil"
         ]
@@ -56474,7 +56474,7 @@
         "description": "The town of Guaymas has a lot of jagged cliffs and mountains that make the area very distinct. The soil is also distinctly pinkish and organ-pipe cacti can be seen scattered on the hills and next to the road.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_guaymas.png",
-        "scope": "100km",
+        "scope": "10km",
         "tags": [
           "plants",
           "soil",
@@ -56514,7 +56514,7 @@
         "description": "The 40D that crosses the Sinaloa-Durango state line is recognizable by the stunning lush cliffs and mountains along the road. The highway commonly passes through tunnels and the road itself features double yellow middle roadlines.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/mexico/mx_40d.png",
-        "scope": "Countrywide",
+        "scope": "10km",
         "tags": [
           "plants",
           "soil",
@@ -56853,7 +56853,7 @@
         "description": "The first digit of taxi and bus licence plates can be used to regionguess Panama.",
         "note": "Cars travel, so they are not always reliable, especially outside of cities.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/panama/14.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "plates"
         ]
@@ -56866,7 +56866,7 @@
         "description": "Green tropical landscapes with palm trees and very tall grass are common around Col\u00f3n and Panama City.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/panama/15.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants"
         ]
@@ -56879,7 +56879,7 @@
         "description": "Volcanic rocks that are either scattered on the ground, or built into rock walls, are common north of David.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/panama/16.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "architecture",
           "soil"
@@ -56907,7 +56907,7 @@
         "description": "The region around Aguadulce is relatively flat and features a lot of agricultural fields along with very brown or orange soil.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/panama/18.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "plants",
           "soil"
@@ -57047,7 +57047,7 @@
         "description": "In a lot of central Panama, the Google car will have either one or two black dots visible on the front.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/panama/28.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "cars",
           "architecture"
@@ -57171,7 +57171,7 @@
         "description": "Puerto Rico is a United States overseas territory. As such, it is counted as the US for country streaks purposes.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/puerto-rico/pr_location.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -57221,7 +57221,7 @@
         "description": "Spanish, instead of English, can commonly be seen on signs around Puerto Rico.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/puerto-rico/pr_spanish.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "signs",
           "language"
@@ -57248,7 +57248,7 @@
         "description": "Front plates are not mandatory in Puerto Rico. Therefore, seeing cars with front plates is rare. This helps differentiate from Guam and Northern Mariana Islands.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/puerto-rico/pr_nofrontplates.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "plates"
         ]
@@ -57274,7 +57274,7 @@
         "description": "Here is an example of what highway shields in Puerto Rico look like. From top left to bottom right they are: primary highway shields, primary urban highway shields, secondary shields, and tertiary shields. These will not be present in any other state or territory of the US.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/puerto-rico/pr_highway_shields.png",
-        "scope": "Region",
+        "scope": "Countrywide",
         "tags": [
           "road"
         ]
@@ -57287,7 +57287,7 @@
         "description": "Speed limit signs in Puerto Rico are identical in shape and size to speed limit signs seen in the mainland US. The major difference is that these signs will always be in Spanish, instead of English.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/puerto-rico/pr_maximum_new",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "signs",
           "language"
@@ -57301,7 +57301,7 @@
         "description": "Stop signs in Puerto Rico say \u2018PARE\u2019 instead of stop.",
         "note": "\u2018PARE\u2019 is also used in all of South America as well as the Dominican Republic.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/puerto-rico/pr_pare.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "signs"
         ]
@@ -57328,7 +57328,7 @@
         "description": "Most homes in Puerto Rico are made of concrete and have flat rooftops. Metal gates in front of homes are common features as well, especially in urban areas.",
         "note": "Homes in other areas of Latin America can have a similar appearance.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/puerto-rico/pr_house_new2.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": [
           "language",
           "architecture"
@@ -57353,7 +57353,7 @@
         "description": "The North and South coasts of Puerto Rico typically feature flat coastal plains or rolling hills.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/puerto-rico/pr_plains.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -57472,7 +57472,7 @@
         "description": "Coverage is fairly limited, being only found in the eastern parts of Saint-Pierre as well as at the northern tip of Miquelon-Langlade.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/saint-pierre-and-miquelon/pm_coverage.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -57496,7 +57496,7 @@
         "description": "Saint-Pierre is the capital and largest town. The coverage in this town is made with a sidewalk trekker. Larger buildings and more cars can be seen, with a more populated feel compared to Miquelon-Langlade.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/saint-pierre-and-miquelon/St_Pierre_Town.png",
-        "scope": "Countrywide",
+        "scope": "Region",
         "tags": [
           "cars",
           "architecture",
@@ -57554,7 +57554,7 @@
         "description": "This boat trekker between Saint Pierre Island and \u00cele-aux-Marins can be recognized by this man wearing a grey and black sweater.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/saint-pierre-and-miquelon/Boat.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars"
         ]
@@ -57671,7 +57671,7 @@
         "description": "Southeast Island is arguably the least distinctive island in the chain. It has a small lake near the centre, and a large amount of birds in the sky.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/us-minor-outlying-islands/midway_southeastisland.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -57695,7 +57695,7 @@
         "description": "Laysan Island is the only island in the chain where the coverage has almost no clouds.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/us-minor-outlying-islands/midway_laysanisland.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": []
       },
       {
@@ -57706,7 +57706,7 @@
         "description": "The French Frigate Shoals is a fairly long and thin island with a shabby-looking runway. The island has by far the largest number of birds out of all islands in the chain.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/us-minor-outlying-islands/midway_frenchairport.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "language"
         ]
@@ -57743,7 +57743,7 @@
         "description": "Eastern Island, situated right next to the Midway Atoll, has two small areas of low-quality tripod coverage. It does not have any other official coverage.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/us-minor-outlying-islands/midway_tripods.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "camera"
         ]
@@ -57762,7 +57762,7 @@
         "description": "The United States Virgin Islands are a group of islands that are US overseas territories. As such, it is counted as the US for country streaks purposes.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/us-virgin-islands/vi_location.png",
-        "scope": "10km",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -57877,7 +57877,7 @@
         "description": "Two boat trekkers are found on the north coast of St Croix. The boat cannot be seen, however the trekker can be identified by the blue waters and hilly islands. The area near Buck Island National Park also has a distinct pink tint to the camera.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/us-virgin-islands/vi_boats.png",
-        "scope": "10km",
+        "scope": "Region",
         "tags": [
           "cars",
           "soil",
@@ -58055,7 +58055,7 @@
         "description": "White and orange fibre optic cable markers are almost unique to the US.",
         "note": "On very rare occasions, they can be found in Canada.",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-states/fibre_line.png",
-        "scope": "Unique",
+        "scope": "Countrywide",
         "tags": []
       },
       {
@@ -58321,7 +58321,7 @@
         "description": "US telephone numbers start with a three-digit area code. While these area codes are not clustered by initial digits, they are useful to learn.\n\nYou can click on the image to enlarge it.",
         "note": "",
         "imageUrl": "https://www.plonkit.net/images/resize/600/80/united-states/US_area_codes_map.jfif",
-        "scope": "",
+        "scope": "Countrywide",
         "tags": []
       },
       {
