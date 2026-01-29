@@ -1544,23 +1544,48 @@
             return;
         }
 
-        const renderMeta = (m, isPredicted = false) => `
+        const renderMeta = (m, isPredicted = false) => {
+             // Predicted metas get a click handler for Quick Link
+             const titleAttr = isPredicted 
+                 ? `onclick="window.quickLinkMeta('${m.id}', '${m.title.replace(/'/g, "\\'")}')" style="cursor:pointer;" title="Click to Link to this Location"`
+                 : '';
+             
+             // Badge logic
+             let badge = '';
+             if (isPredicted) {
+                 // Predicted badge - Styled EXACTLY like Linked but Grey
+                 badge = '<span style="font-size: 0.65rem; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); padding: 0px 6px; border-radius: 4px; margin-left: 8px; vertical-align: middle; color: rgba(255,255,255,0.7); font-weight: 700;">PREDICTED</span>';
+             } else {
+                 // Linked badge - Styled with Green to match theme
+                 badge = '<span style="font-size: 0.65rem; background: rgba(140, 212, 90, 0.15); border: 1px solid rgba(140, 212, 90, 0.4); padding: 0px 6px; border-radius: 4px; margin-left: 8px; vertical-align: middle; color: #8cd45a; font-weight: 700;">LINKED</span>';
+             }
+
+             return `
             <div class="gg-meta-row" ${isPredicted ? 'style="border-left: 2px solid rgba(255,255,255,0.2); padding-left: 10px; margin-left: -12px;"' : ''}>
                 <div class="gg-meta-item-title">
-                    ${m.title}
-                    ${isPredicted ? '<span style="font-size: 0.65rem; background: rgba(255,255,255,0.15); padding: 1px 6px; border-radius: 4px; margin-left: 8px; vertical-align: middle; color: rgba(255,255,255,0.7); font-weight: 500;">PREDICTED</span>' : ''}
+                    <span ${titleAttr}>${m.title}</span>
+                    ${badge}
                 </div>
                 ${m.imageUrl ? `<img src="${m.imageUrl}" class="gg-meta-image">` : ''}
                 <div class="gg-meta-description">${m.description}</div>
                 <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; margin-left: 1px;">${m.tags.map(t => `<span class="gg-tag-static" style="margin-right: 0;">${t}</span>`).join('')}</div>
             </div>
-        `;
+            `;
+        };
 
         const exactHtml = (metas || []).map(m => renderMeta(m, false)).join('');
         const predictedHtml = (predicted || []).map(m => renderMeta(m, true)).join('');
 
         container.innerHTML = exactHtml + predictedHtml;
     }
+
+    // Expose Quick Link Function globally so the inline onclick works
+    win.quickLinkMeta = function(metaId, title) {
+        // Prevent accidental clicks? simple confirm
+        if (confirm(`Link "${title}" to this location?`)) {
+             linkMultipleMetas([metaId]);
+        }
+    };
 
     function refreshDisplay() {
         if (!currentPanoid) return;
@@ -1591,12 +1616,12 @@
             return activeScopes.has(s);
         };
 
-        // Get exact metas
+        // Get exact metas - BYPASS SCOPE FILTER
         const exactMetas = metaIds.map(id => {
             const found = metasData.find(m => m.id === id);
             if (!found) console.warn('[BetterMetas] Could not find exact meta data for ID:', id);
             return found;
-        }).filter(Boolean).filter(isScopeActive);
+        }).filter(Boolean); // Removed .filter(isScopeActive) to always show linked metas
 
         // Get predicted/nearby metas
         const predictedMetas = evaluateProximityMetas()
