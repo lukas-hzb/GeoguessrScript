@@ -90,7 +90,8 @@ jobs:
                     lat: submission.lat || (submission.meta ? submission.meta.lat : null),
                     lng: submission.lng || (submission.meta ? submission.meta.lng : null),
                     country: submission.country || (submission.meta ? submission.meta.country : null),
-                    region: submission.region || (submission.meta ? submission.meta.region : null)
+                    region: submission.region || (submission.meta ? submission.meta.region : null),
+                    road: submission.road || (submission.meta ? submission.meta.road : null)
                 };
             } else {
                 // Update metadata if provided and currently missing or updated
@@ -98,6 +99,7 @@ jobs:
                 if (submission.lng) locations[panoid].lng = submission.lng;
                 if (submission.country) locations[panoid].country = submission.country;
                 if (submission.region) locations[panoid].region = submission.region;
+                if (submission.road) locations[panoid].road = submission.road;
             }
 
             if (submission.action === "add_meta") {
