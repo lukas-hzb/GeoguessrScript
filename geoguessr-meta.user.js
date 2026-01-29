@@ -1807,10 +1807,42 @@
         return 0;
     }
 
+    const COUNTRY_ALIAS_MAP = {
+        "France": (lat, lng) => {
+            // Reunion Check
+            if (lat < -19 && lat > -22 && lng > 54 && lng < 57) return "Reunion";
+            return "France";
+        },
+        "China": (lat, lng) => {
+            // Hong Kong / Macau Check
+            if (lat > 22 && lat < 23 && lng > 113.8 && lng < 114.5) return "Hong Kong";
+            if (lat > 22 && lat < 22.3 && lng > 113.5 && lng < 113.6) return "Macau";
+            return "China";
+        },
+        "United States": "USA",
+        "United Kingdom": "UK",
+        "Virgin Islands, U.S.": "US Virgin Islands",
+        "United Arab Emirates": "UAE"
+    };
+
+    function normalizeCountry(name, lat, lng) {
+        if (!name) return "Unknown";
+        let target = name;
+        if (COUNTRY_ALIAS_MAP[name]) {
+            const mapping = COUNTRY_ALIAS_MAP[name];
+            if (typeof mapping === 'function') {
+                target = mapping(parseFloat(lat), parseFloat(lng));
+            } else {
+                target = mapping;
+            }
+        }
+        return target;
+    }
+
     function evaluateProximityMetas() {
         const curLat = parseFloat(currentLocationData.lat);
         const curLng = parseFloat(currentLocationData.lng);
-        const curCountry = currentLocationData.country;
+        const curCountry = normalizeCountry(currentLocationData.country, curLat, curLng);
         const curRegion = currentLocationData.region;
         const curRoad = (currentLocationData.road || '').toLowerCase().trim();
 
@@ -1830,7 +1862,14 @@
             const metaIds = Array.isArray(entry) ? entry : (entry.metas || []);
             const entryLat = entry.lat ? parseFloat(entry.lat) : null;
             const entryLng = entry.lng ? parseFloat(entry.lng) : null;
-            const entryRoad = (entry.road || '').toLowerCase().trim();
+            const entryRoads = [];
+            if (entry.road) {
+                if (Array.isArray(entry.road)) {
+                    entry.road.forEach(r => entryRoads.push(r.toLowerCase().trim()));
+                } else {
+                    entryRoads.push(String(entry.road).toLowerCase().trim());
+                }
+            }
             const entryRegion = entry.region;
             const entryCountry = entry.country;
 
@@ -1841,7 +1880,15 @@
                 let isMatch = false;
 
                 // Match by Road (High Priority)
-                if (curRoad && entryRoad && curRoad === entryRoad) isMatch = true;
+                const curRoads = [];
+                if (currentLocationData.road) {
+                    if (Array.isArray(currentLocationData.road)) {
+                        currentLocationData.road.forEach(r => curRoads.push(r.toLowerCase().trim()));
+                    } else {
+                        curRoads.push(String(currentLocationData.road).toLowerCase().trim());
+                    }
+                }
+                if (curRoads.length > 0 && curRoads.some(r => entryRoads.includes(r))) isMatch = true;
 
                 // Match by Region (if in same country)
                 if (!isMatch && curRegion && entryRegion && curRegion === entryRegion && curCountry === entryCountry) isMatch = true;
@@ -1864,7 +1911,7 @@
         metasData.forEach(meta => {
             const scope = (meta.scope || '').toLowerCase();
             if (scope === 'countrywide') {
-                if (meta.country === curCountry) scopeMatches.add(meta.id);
+                if (normalizeCountry(meta.country, curLat, curLng) === curCountry) scopeMatches.add(meta.id);
             } else if (scope === 'region') {
                 if (meta.country === curCountry && meta.region === curRegion) scopeMatches.add(meta.id);
             } else if (scope === 'road') {
@@ -2068,75 +2115,57 @@
                     // Immediate trigger with basic info (Lat/Lng is enough for radius checks)
                     if (currentPanoid) checkLocation(currentPanoid);
 
-                    // Reverse Geocoding for better accuracy
-                    if (win.google && win.google.maps && win.google.maps.Geocoder) {
-                        const geocoder = new win.google.maps.Geocoder();
-                        const latVal = parseFloat(lat);
-                        const lngVal = parseFloat(lng);
-                        
-                        // console.log('[BetterMetas] Requesting Reverse Geocode...');
-                        geocoder.geocode({ location: { lat: latVal, lng: lngVal } }, (results, status) => {
-                            if (status === 'OK' && results && results.length > 0) {
-                                const res = results[0];
-                                const address = res.formatted_address;
-                                let realCountry = country;
-                                
-                                // Find country in address components
-                                const countryComponent = res.address_components.find(c => c.types.includes('country'));
-                                if (countryComponent) {
-                                    realCountry = countryComponent.long_name;
-                                }
-
-                                // Find administrative_area_level_1 (Region/State)
-                                let region = null;
-                                const regionComponent = res.address_components.find(c => c.types.includes('administrative_area_level_1'));
-                                if (regionComponent) {
-                                    region = regionComponent.long_name;
-                                }
-
-                                // console.log(`[BetterMetas] Geocode Success: ${address} | ${realCountry} | ${region}`);
-                                
-                                
-                                // Find route (Road Name)
-                                let road = null;
-                                const routeComponent = res.address_components.find(c => c.types.includes('route'));
-                                if (routeComponent) {
-                                    road = routeComponent.long_name;
+                    // Reverse Geocoding for better accuracy (Using Nominatim as requested)
+                    const latVal = parseFloat(lat);
+                    const lngVal = parseFloat(lng);
+                    
+                    const nominatimUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latVal}&lon=${lngVal}&accept-language=en`;
+                    
+                    fetch(nominatimUrl, {
+                        headers: { 'User-Agent': 'GeoguessrBetterMetas/1.0' }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data && data.address) {
+                            const a = data.address;
+                            const address = data.display_name;
+                            let realCountry = normalizeCountry(a.country || country, lat, lng);
+                            let region = a.state || a.region || a.province || a.county || a.district || null;
+                            
+                            // Road Logic
+                            let road = null;
+                            const roadName = a.road || a.pedestrian || a.highway || a.street || a.suburb || a.hamlet || a.village || null;
+                            if (roadName) {
+                                // Support array if semicolon present
+                                if (roadName.includes(';')) {
+                                    road = roadName.split(';').map(s => s.trim());
                                 } else {
-                                    // Fallback: Check intersection
-                                    const intersection = res.address_components.find(c => c.types.includes('intersection'));
-                                    if (intersection) road = intersection.long_name;
+                                    road = roadName;
                                 }
-
-                                // Fallback: If still no road, use shortDescription if it looks like a road (not just a country name)
-                                if (!road && loc.shortDescription && loc.shortDescription !== loc.description && loc.shortDescription !== realCountry) {
-                                    // Heuristic: Avoid using it if it's identical to the Region/City
-                                    if (loc.shortDescription !== region) {
-                                        road = loc.shortDescription;
-                                    }
-                                }
-
-                                // Update (Only if we are still on the same lat/lng! - another race check)
-                                if (currentLocationData.lat === newLatStr && currentLocationData.lng === newLngStr) {
-                                    currentLocationData.address = address;
-                                    currentLocationData.country = realCountry;
-                                    currentLocationData.region = region;
-                                    currentLocationData.road = road;
-                                }
-
-                                updateLocationUI();
-                                // Refresh metas now that we have better country/region info
-                                if (currentPanoid) checkLocation(currentPanoid);
-                            } else {
-                                console.log('[BetterMetas] Geocode failed: ' + status);
-                                // Even if failed, we might have updated something? 
-                                // Actually we didn't update currentLocationData in failure, but we could retry or just leave it.
-                                // But ensuring we checked with basic data (above) is enough.
                             }
-                        });
-                    } else {
-                         console.log('[BetterMetas] Geocoder API not available.');
-                    }
+
+                            // Fallback: If still no road, use shortDescription if it looks like a road
+                            if (!road && loc.shortDescription && loc.shortDescription !== loc.description && loc.shortDescription !== realCountry) {
+                                if (loc.shortDescription !== region) {
+                                    road = loc.shortDescription;
+                                }
+                            }
+
+                            // Update (Only if we are still on the same lat/lng! - race check)
+                            if (currentLocationData.lat === newLatStr && currentLocationData.lng === newLngStr) {
+                                currentLocationData.address = address;
+                                currentLocationData.country = realCountry;
+                                currentLocationData.region = region;
+                                currentLocationData.road = road;
+                            }
+
+                            updateLocationUI();
+                            if (currentPanoid) checkLocation(currentPanoid);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('[BetterMetas] Nominatim geocode failed:', error);
+                    });
                 } else {
                     console.log(`[BetterMetas] svInstance.getLocation() returned null/empty (Attempt ${attempt+1}/${maxAttempts}).`);
                     if (attempt < maxAttempts) {
@@ -2185,7 +2214,7 @@
             ${road ? `
             <div class="gg-loc-row">
                 <div class="gg-loc-label">Road:</div>
-                <div class="gg-loc-val">${road}</div>
+                <div class="gg-loc-val">${Array.isArray(road) ? road.join(', ') : road}</div>
             </div>` : ''}
             <div class="gg-loc-row">
                 <div class="gg-loc-label">Coords:</div>

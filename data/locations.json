@@ -1,38 +1,1573 @@
 {
-  "8vHTtcaZYVGosxGn1KsZGA": {
+  "gjAVeBpaHJtKm0fOot4G_A": {
     "metas": [
-      "meta_1769520939791_l0zm5"
+      "meta_1769520862728_zg2cv"
     ],
-    "lat": "47.68411",
-    "lng": "-0.43229",
-    "country": "France",
-    "region": "Pays de la Loire"
+    "lat": -21.618148,
+    "lng": 16.867712,
+    "country": "Namibia",
+    "region": null,
+    "road": "Okahandja - Otjiwarongo Highway",
+    "nominatimCountry": "Namibia"
   },
-  "YYITFMG-A8hb7-Prw6d84A": {
+  "DWoYJeepZS3K4I1WFvt7ug": {
     "metas": [
-      "meta_1769520927035_zdxrd"
+      "meta_1769520862728_dc7of"
     ],
-    "lat": "48.19327",
-    "lng": "16.01672",
-    "country": "Austria",
-    "region": "Niederösterreich"
+    "lat": -21.512798,
+    "lng": 19.628557,
+    "country": "Namibia",
+    "region": null,
+    "road": [
+      "D3182",
+      "M114"
+    ],
+    "nominatimCountry": "Namibia"
   },
-  "4_RN5xXHwjydwq4wsA_kTQ": {
+  "nhZ0pFqe4ZAEisDBLMYAUw": {
     "metas": [
-      "meta_1769521010977_r2e7q"
+      "meta_1769520862728_mtljw"
     ],
-    "lat": "-28.59810",
-    "lng": "-54.69835",
-    "country": "Brazil",
-    "region": "Rio Grande do Sul"
+    "lat": -22.887339,
+    "lng": 17.578456,
+    "country": "Namibia",
+    "region": "Khomas",
+    "road": "C23",
+    "nominatimCountry": "Namibia"
   },
-  "tkO08Mc0Ffflvgk4DOQyMw": {
+  "v1Z_-dW2yXpt5UbILfxsbA": {
     "metas": [
-      "meta_1769521010977_e97yt"
+      "meta_1769520862728_36xy0"
     ],
-    "lat": "-25.67621",
-    "lng": "-52.63114",
-    "country": "Brazil",
-    "region": "State of Paraná"
+    "lat": -28.003367,
+    "lng": 18.744124,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": [
+      "C11",
+      "M25"
+    ],
+    "nominatimCountry": "Namibia"
+  },
+  "q8YHa5WYxMAZ1Uyw6iXgbA": {
+    "metas": [
+      "meta_1769520862728_nhz23"
+    ],
+    "lat": -18.8995033,
+    "lng": 14.3899975,
+    "country": "Namibia",
+    "region": "Kunene Region",
+    "road": "C35",
+    "nominatimCountry": "Namibia"
+  },
+  "HfBzRRtlT0YmkmQLLTtHOQ": {
+    "metas": [
+      "meta_1769520862728_zixob"
+    ],
+    "lat": -18.7896135,
+    "lng": 18.932769,
+    "country": "Namibia",
+    "region": "Kavango West",
+    "road": "B8",
+    "nominatimCountry": "Namibia"
+  },
+  "O1aCjZOjpGX4EmJUq5RNEg": {
+    "metas": [
+      "meta_1769520862728_r61zp"
+    ],
+    "lat": -17.932952,
+    "lng": 22.677217,
+    "country": "Namibia",
+    "region": "Zambezi",
+    "road": "Divundu - Katima Mulilo Highway",
+    "nominatimCountry": "Namibia"
+  },
+  "S9-dR9aYd-InoIr0D8Y0kQ": {
+    "metas": [
+      "meta_1769520862728_sli6u"
+    ],
+    "lat": -17.560163,
+    "lng": 15.814199,
+    "country": "Namibia",
+    "region": "Ohangwena",
+    "road": "C45",
+    "nominatimCountry": "Namibia"
+  },
+  "ZjujdHaLnXPcTeQ7yvCdzw": {
+    "metas": [
+      "meta_1769520862728_ur79l"
+    ],
+    "lat": -22.815066,
+    "lng": 18.864338,
+    "country": "Namibia",
+    "region": null,
+    "road": [
+      "C20",
+      "M39"
+    ],
+    "nominatimCountry": "Namibia"
+  },
+  "MmaE2JiJRnqiaImeaXPwHg": {
+    "metas": [
+      "meta_1769520862728_t8v2c"
+    ],
+    "lat": -23.89268,
+    "lng": 16.348007,
+    "country": "Namibia",
+    "region": "Khomas",
+    "road": "C24",
+    "nominatimCountry": "Namibia"
+  },
+  "U5SPbZQmaN0qi7H_pWQXKw": {
+    "metas": [
+      "meta_1769520862728_pml8b"
+    ],
+    "lat": -18.172225,
+    "lng": 14.059029,
+    "country": "Namibia",
+    "region": "Kunene Region",
+    "road": [
+      "C41",
+      "MR100"
+    ],
+    "nominatimCountry": "Namibia"
+  },
+  "njmcA0LYAkomJ5EWmtGJ-A": {
+    "metas": [
+      "meta_1769520862728_dv6jy"
+    ],
+    "lat": -19.679349,
+    "lng": 17.633434,
+    "country": "Namibia",
+    "region": "Otjozondjupa",
+    "road": "B8",
+    "nominatimCountry": "Namibia"
+  },
+  "mcw8KV2FSjYwY9l9RdCEUA": {
+    "metas": [
+      "meta_1769520862728_me1ts"
+    ],
+    "lat": -22.564822,
+    "lng": 17.126093,
+    "country": "Namibia",
+    "region": "Khomas",
+    "road": "Dr. Marcus Garvey Street",
+    "nominatimCountry": "Namibia"
+  },
+  "e-s6wyEvnbm11JZQD4tR_w": {
+    "metas": [
+      "meta_1769520862728_opm8u"
+    ],
+    "lat": -22.522638,
+    "lng": 14.499632,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "C34",
+    "nominatimCountry": "Namibia"
+  },
+  "ANPirBYLPzYIloAJYz3jKA": {
+    "metas": [
+      "meta_1769520862728_e2twb"
+    ],
+    "lat": -24.156668,
+    "lng": 18.865786,
+    "country": "Namibia",
+    "region": "Hardap",
+    "road": [
+      "C20",
+      "M61"
+    ],
+    "nominatimCountry": "Namibia"
+  },
+  "_ORURVAwrZapKOWDMs8-bw": {
+    "metas": [
+      "meta_1769520862728_k66iu"
+    ],
+    "lat": -24.715256,
+    "lng": 15.504853,
+    "country": "Namibia",
+    "region": "Hardap",
+    "road": "Sossusvlei Road",
+    "nominatimCountry": "Namibia"
+  },
+  "hJhLr5uYwolTFLESMIIdgQ": {
+    "metas": [
+      "meta_1769520862728_5d78e"
+    ],
+    "lat": -28.350021,
+    "lng": 17.408763,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "C13",
+    "nominatimCountry": "Namibia"
+  },
+  "GZPfDS5Un20tZ4QCH7doDg": {
+    "metas": [
+      "meta_1769520862728_suom0"
+    ],
+    "lat": -24.598073,
+    "lng": 17.938401,
+    "country": "Namibia",
+    "region": "Hardap",
+    "road": null,
+    "nominatimCountry": "Namibia"
+  },
+  "VIymWhFiQlDiSRY2ShN6tA": {
+    "metas": [
+      "meta_1769520862728_t6dvk"
+    ],
+    "lat": -22.365498,
+    "lng": 17.055888,
+    "country": "Namibia",
+    "region": "Khomas",
+    "road": "A1",
+    "nominatimCountry": "Namibia"
+  },
+  "ldrjNaCLLt597-KzMmxB9g": {
+    "metas": [
+      "meta_1769520862728_afv08"
+    ],
+    "lat": -28.3335,
+    "lng": 17.988705,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "B1",
+    "nominatimCountry": "Namibia"
+  },
+  "gDMYWXqqCDLiSOlEsUlUVQ": {
+    "metas": [
+      "meta_1769520862728_sbgot"
+    ],
+    "lat": -27.417096,
+    "lng": 18.51646,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "B1",
+    "nominatimCountry": "Namibia"
+  },
+  "fQXdrGUWbE9tgoZbM_3gnQ": {
+    "metas": [
+      "meta_1769520862728_00xv9"
+    ],
+    "lat": -25.362626,
+    "lng": 17.880828,
+    "country": "Namibia",
+    "region": "Hardap",
+    "road": "B1",
+    "nominatimCountry": "Namibia"
+  },
+  "G7bheIlSWny2YI61fA2mXg": {
+    "metas": [
+      "meta_1769520862728_0aiq7"
+    ],
+    "lat": -23.818493,
+    "lng": 17.372229,
+    "country": "Namibia",
+    "region": "Hardap",
+    "road": "B1",
+    "nominatimCountry": "Namibia"
+  },
+  "QjAshNJfelWGvPzpGGQ1ew": {
+    "metas": [
+      "meta_1769520862728_ldamz"
+    ],
+    "lat": -23.084198,
+    "lng": 17.10428,
+    "country": "Namibia",
+    "region": "Khomas",
+    "road": "B1",
+    "nominatimCountry": "Namibia"
+  },
+  "DyreT0H27EKoKtPDvC-RwA": {
+    "metas": [
+      "meta_1769520862728_mit9s"
+    ],
+    "lat": -21.456316,
+    "lng": 16.850164,
+    "country": "Namibia",
+    "region": null,
+    "road": "B1",
+    "nominatimCountry": "Namibia"
+  },
+  "6gEGdXV7fQ5G-ztX9E-j2g": {
+    "metas": [
+      "meta_1769520862728_cv1ft"
+    ],
+    "lat": -22.364313,
+    "lng": 15.06619,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "Trans-Kalahari Corridor",
+    "nominatimCountry": "Namibia"
+  },
+  "0b5dwW4eCnvUCLDujKLBHQ": {
+    "metas": [
+      "meta_1769520862728_wi8t8"
+    ],
+    "lat": -21.936259,
+    "lng": 15.700151,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "Trans-Kalahari Corridor",
+    "nominatimCountry": "Namibia"
+  },
+  "cPup8G5M8f3tktizssmW7Q": {
+    "metas": [
+      "meta_1769520862728_wd4lm"
+    ],
+    "lat": -21.898727,
+    "lng": 16.417435,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "Trans-Kalahari Corridor",
+    "nominatimCountry": "Namibia"
+  },
+  "ZEJtiIAwgPNcHp9W-zC42g": {
+    "metas": [
+      "meta_1769520862728_x3ovb"
+    ],
+    "lat": -28.071568,
+    "lng": 19.320473,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "B3",
+    "nominatimCountry": "Namibia"
+  },
+  "lc-uMe-qYJxkpCZkbXx1kg": {
+    "metas": [
+      "meta_1769520862728_k00q5"
+    ],
+    "lat": -26.570647,
+    "lng": 15.734668,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "B4",
+    "nominatimCountry": "Namibia"
+  },
+  "4R-SDDRr2ycGYEsRZ4WpbA": {
+    "metas": [
+      "meta_1769520862728_wjw82"
+    ],
+    "lat": -26.616762,
+    "lng": 16.632353,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "B4",
+    "nominatimCountry": "Namibia"
+  },
+  "peAI9OWX3qpILBfJ2fYVGA": {
+    "metas": [
+      "meta_1769520862728_f6chl"
+    ],
+    "lat": -26.77181,
+    "lng": 17.741568,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "B4",
+    "nominatimCountry": "Namibia"
+  },
+  "ekE95L8Lq4iYKV7d2auvTA": {
+    "metas": [
+      "meta_1769520862728_9b4nx"
+    ],
+    "lat": -26.795995,
+    "lng": 17.872829,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "B4",
+    "nominatimCountry": "Namibia"
+  },
+  "VZBQdeYVSlWFdNhvGVrn7g": {
+    "metas": [
+      "meta_1769520862728_p02ye"
+    ],
+    "lat": -22.411739,
+    "lng": 18.810226,
+    "country": "Namibia",
+    "region": null,
+    "road": "Trans-Kalahari Corridor",
+    "nominatimCountry": "Namibia"
+  },
+  "ygRH7vC42uS5wQu302qLQw": {
+    "metas": [
+      "meta_1769520862728_6sb5d"
+    ],
+    "lat": -17.911175,
+    "lng": 22.789107,
+    "country": "Namibia",
+    "region": "Zambezi",
+    "road": "Divundu - Katima Mulilo Highway",
+    "nominatimCountry": "Namibia"
+  },
+  "dMmnnWEW9L7koY0aMlmFwQ": {
+    "metas": [
+      "meta_1769520862728_04rg2"
+    ],
+    "lat": -27.153204,
+    "lng": 16.432606,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "C13",
+    "nominatimCountry": "Namibia"
+  },
+  "-rQjTCxa8scxGlojDJhHfg": {
+    "metas": [
+      "meta_1769520862728_xs03u"
+    ],
+    "lat": -26.342624,
+    "lng": 17.074127,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "C14",
+    "nominatimCountry": "Namibia"
+  },
+  "RNca4a9Lt9jJUqOHpKXJbg": {
+    "metas": [
+      "meta_1769520862728_mu0tu"
+    ],
+    "lat": -24.784948,
+    "lng": 17.502127,
+    "country": "Namibia",
+    "region": "Hardap",
+    "road": "C19",
+    "nominatimCountry": "Namibia"
+  },
+  "qItGkwlFmT_9oBSpxgq_ig": {
+    "metas": [
+      "meta_1769520862728_nayqj",
+      "meta_1769520862728_tqslh"
+    ],
+    "lat": -21.709063,
+    "lng": 15.965838,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "C33",
+    "nominatimCountry": "Namibia"
+  },
+  "H-1ZFC5274YuppkRIw-0ow": {
+    "metas": [
+      "meta_1769520862728_odczk"
+    ],
+    "lat": -21.345296,
+    "lng": 13.781804,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "C34",
+    "nominatimCountry": "Namibia"
+  },
+  "u6HZv6uc8A7Df75duU-UjQ": {
+    "metas": [
+      "meta_1769520862728_sqwkb"
+    ],
+    "lat": -17.819518,
+    "lng": 14.270143,
+    "country": "Namibia",
+    "region": "Omusati",
+    "road": [
+      "C35",
+      "MR67"
+    ],
+    "nominatimCountry": "Namibia"
+  },
+  "XffJh-9uqDLgF7Zi7U5uMg": {
+    "metas": [
+      "meta_1769520862728_izww9",
+      "meta_1769520862728_6hzvm"
+    ],
+    "lat": -18.339414,
+    "lng": 14.304261,
+    "country": "Namibia",
+    "region": "Kunene Region",
+    "road": "C35",
+    "nominatimCountry": "Namibia"
+  },
+  "oNA74rhM6t2F2Hb1yqc9Lg": {
+    "metas": [
+      "meta_1769520862728_z4yed"
+    ],
+    "lat": -21.16488,
+    "lng": 14.847514,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "C35",
+    "nominatimCountry": "Namibia"
+  },
+  "8W8Iuz62vhPh6uKUZ_OMhw": {
+    "metas": [
+      "meta_1769520862728_wt9w3"
+    ],
+    "lat": -19.871394,
+    "lng": 15.946943,
+    "country": "Namibia",
+    "region": "Kunene Region",
+    "road": "C38",
+    "nominatimCountry": "Namibia"
+  },
+  "_pasJCeO8tCYwCYZs0Dxdg": {
+    "metas": [
+      "meta_1769520862728_rd4sk"
+    ],
+    "lat": -20.139198,
+    "lng": 16.049808,
+    "country": "Namibia",
+    "region": "Kunene Region",
+    "road": "C39",
+    "nominatimCountry": "Namibia"
+  },
+  "29BIEYcs5madgLuBFbimWw": {
+    "metas": [
+      "meta_1769520862728_hso0r"
+    ],
+    "lat": -19.760258,
+    "lng": 15.231165,
+    "country": "Namibia",
+    "region": "Kunene Region",
+    "road": "C40",
+    "nominatimCountry": "Namibia"
+  },
+  "gxr8Uwa95CZ5_olXzMLh8A": {
+    "metas": [
+      "meta_1769520862728_9aqr0"
+    ],
+    "lat": -18.035266,
+    "lng": 14.48887,
+    "country": "Namibia",
+    "region": "Omusati",
+    "road": "Omakange Road",
+    "nominatimCountry": "Namibia"
+  },
+  "mM1K1RjYTaV1s_2BFCWvmw": {
+    "metas": [
+      "meta_1769520862728_4h9vv"
+    ],
+    "lat": -20.153006,
+    "lng": 14.059249,
+    "country": "Namibia",
+    "region": "Kunene Region",
+    "road": "C43",
+    "nominatimCountry": "Namibia"
+  },
+  "CA7b2_UuMQ39DbV8wtnc1A": {
+    "metas": [
+      "meta_1769520862728_149nv"
+    ],
+    "lat": -19.339197,
+    "lng": 19.432809,
+    "country": "Namibia",
+    "region": null,
+    "road": "C44",
+    "nominatimCountry": "Namibia"
+  },
+  "5N_MyXe8rYjdTmm8nuVN0w": {
+    "metas": [
+      "meta_1769520862728_g0op8"
+    ],
+    "lat": -20.220682,
+    "lng": 18.090279,
+    "country": "Namibia",
+    "region": null,
+    "road": "C47",
+    "nominatimCountry": "Namibia"
+  },
+  "uSIIFscPlvAJx2rX3mwxRw": {
+    "metas": [
+      "meta_1769520862728_ckh66"
+    ],
+    "lat": -18.169347,
+    "lng": 23.47474,
+    "country": "Namibia",
+    "region": "Zambezi",
+    "road": "C49",
+    "nominatimCountry": "Namibia"
+  },
+  "whbVHg0liftYvtFRzMhigQ": {
+    "metas": [
+      "meta_1769520862728_wp775"
+    ],
+    "lat": -17.859239,
+    "lng": 18.196416,
+    "country": "Namibia",
+    "region": "Kavango West",
+    "road": "B15",
+    "nominatimCountry": "Namibia"
+  },
+  "akifp7BNTMU_Fhj9disXJg": {
+    "metas": [
+      "meta_1769520862728_xeie2"
+    ],
+    "lat": -17.571234,
+    "lng": 15.118023,
+    "country": "Namibia",
+    "region": "Omusati",
+    "road": "C46",
+    "nominatimCountry": "Namibia"
+  },
+  "fmQ0VYckPTnnLUDWHDqK-g": {
+    "metas": [
+      "meta_1769520862728_ljfd3"
+    ],
+    "lat": -22.566978,
+    "lng": 17.099202,
+    "country": "Namibia",
+    "region": "Khomas",
+    "road": "Chapman Street",
+    "nominatimCountry": "Namibia"
+  },
+  "QFr0I08cqmI8Z4r41uKdhA": {
+    "metas": [
+      "meta_1769520862728_7baro"
+    ],
+    "lat": -22.43461,
+    "lng": 18.992717,
+    "country": "Namibia",
+    "region": null,
+    "road": "W. Tjombe Street",
+    "nominatimCountry": "Namibia"
+  },
+  "60Jje3zyyvZnDtsObu79bw": {
+    "metas": [
+      "meta_1769520862728_23g4d"
+    ],
+    "lat": -22.929657,
+    "lng": 14.532548,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "Kristiansand Street",
+    "nominatimCountry": "Namibia"
+  },
+  "tsPSnsNT-IEtcmXkwzNKfw": {
+    "metas": [
+      "meta_1769520862728_woayu"
+    ],
+    "lat": -22.118551,
+    "lng": 14.289816,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "Renoster Street",
+    "nominatimCountry": "Namibia"
+  },
+  "LGfSXjZZRfKPNq0hKIxgTw": {
+    "metas": [
+      "meta_1769520862728_ems3q"
+    ],
+    "lat": -22.82414,
+    "lng": 14.543263,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "Kuiseb Avenue",
+    "nominatimCountry": "Namibia"
+  },
+  "mox7JJT6lc5RKWdoWt4QRw": {
+    "metas": [
+      "meta_1769520862728_z6tbt"
+    ],
+    "lat": -26.642619,
+    "lng": 15.171889,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": null,
+    "nominatimCountry": "Namibia"
+  },
+  "Qw7O8jZFxkK4f9qey2kBSQ": {
+    "metas": [
+      "meta_1769520862728_e9i37"
+    ],
+    "lat": -28.547758,
+    "lng": 16.430771,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "Oranjemund",
+    "nominatimCountry": "Namibia"
+  },
+  "vU8W9KvQ7Dqr-VGFCIiYXA": {
+    "metas": [
+      "meta_1769520862728_3zs7g"
+    ],
+    "lat": -28.362797,
+    "lng": 17.418632,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "Aussenkehr",
+    "nominatimCountry": "Namibia"
+  },
+  "fP3M1tXhDeRDRdCzTAldrA": {
+    "metas": [
+      "meta_1769520862728_si59o"
+    ],
+    "lat": -28.71958,
+    "lng": 17.623926,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "Noordoewer",
+    "nominatimCountry": "Namibia"
+  },
+  "do9T0tx79gefwDranNSqnw": {
+    "metas": [
+      "meta_1769520862728_h8bqo"
+    ],
+    "lat": -27.968268,
+    "lng": 16.755422,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "Lood Street",
+    "nominatimCountry": "Namibia"
+  },
+  "xNL2z6SP6avGFBj83zUPdA": {
+    "metas": [
+      "meta_1769520862728_uxxng"
+    ],
+    "lat": -26.660154,
+    "lng": 16.268388,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": "Khaubeb",
+    "nominatimCountry": "Namibia"
+  },
+  "NmQ3EqiCDKhqQb0HBB4zsg": {
+    "metas": [
+      "meta_1769520862728_u8coz"
+    ],
+    "lat": -17.936918,
+    "lng": 19.787306,
+    "country": "Namibia",
+    "region": "Kavango East",
+    "road": "Ndama",
+    "nominatimCountry": "Namibia"
+  },
+  "bQdPm2R5SUWXY9a-r6wSSw": {
+    "metas": [
+      "meta_1769520862729_apybu"
+    ],
+    "lat": -18.056141,
+    "lng": 13.83566,
+    "country": "Namibia",
+    "region": "Kunene Region",
+    "road": null,
+    "nominatimCountry": "Namibia"
+  },
+  "nC_buhF7BwY9qfZoPYnE4Q": {
+    "metas": [
+      "meta_1769520862729_vugyb"
+    ],
+    "lat": -19.62978,
+    "lng": 17.332795,
+    "country": "Namibia",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Namibia"
+  },
+  "a2KDFgXIpn9Ac7HaW8JoXg": {
+    "metas": [
+      "meta_1769520862729_311zp"
+    ],
+    "lat": -21.92843,
+    "lng": 15.862955,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": "Bethuel Gamxamub Street",
+    "nominatimCountry": "Namibia"
+  },
+  "j_5uaDO2LAiW8iobFFPNSQ": {
+    "metas": [
+      "meta_1769520862729_dsj34"
+    ],
+    "lat": -21.978569,
+    "lng": 15.590712,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": null,
+    "nominatimCountry": "Namibia"
+  },
+  "BGVU8g6FC9MRcydnvOIcPg": {
+    "metas": [
+      "meta_1769520862729_wr8d8"
+    ],
+    "lat": -21.226367,
+    "lng": 14.905943,
+    "country": "Namibia",
+    "region": "Erongo Region",
+    "road": null,
+    "nominatimCountry": "Namibia"
+  },
+  "O-zqnXjJK6YIAwHAJyObRg": {
+    "metas": [
+      "meta_1769520862729_b5y4l"
+    ],
+    "lat": -28.115557,
+    "lng": 19.837908,
+    "country": "Namibia",
+    "region": "Karas",
+    "road": null,
+    "nominatimCountry": "Namibia"
+  },
+  "-xRGxVByuEzN0YtsojWTjQ": {
+    "metas": [
+      "meta_1769520864363_ec6jy"
+    ],
+    "lat": 18.882877,
+    "lng": 57.003882,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Duqm - Hasik - Salalah Road",
+    "nominatimCountry": "Oman"
+  },
+  "Zo0YiEOCrSAoR6YAbGWO5g": {
+    "metas": [
+      "meta_1769520864363_5llbj"
+    ],
+    "lat": 19.63039,
+    "lng": 56.712548,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "p_ciPKsS6XndTZ61EV5oVg": {
+    "metas": [
+      "meta_1769520864363_rhfgd"
+    ],
+    "lat": 19.679417,
+    "lng": 56.877238,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Haima - Duqm Road",
+    "nominatimCountry": "Oman"
+  },
+  "l4YXHmWkqIyf2goRK7jM0w": {
+    "metas": [
+      "meta_1769520864363_yjw99"
+    ],
+    "lat": 19.173333,
+    "lng": 56.409698,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Haima - Marmul - Thumrait Road",
+    "nominatimCountry": "Oman"
+  },
+  "nRdkcy89n6B4aa3x7mx0CA": {
+    "metas": [
+      "meta_1769520864363_di1qs"
+    ],
+    "lat": 24.639816,
+    "lng": 56.517595,
+    "country": "Oman",
+    "region": "Al Batinah North Governorate",
+    "road": "Sur al Mazari",
+    "nominatimCountry": "Oman"
+  },
+  "ZZrTXdj1HYbRuAwTkrE9PA": {
+    "metas": [
+      "meta_1769520864363_4h8aj"
+    ],
+    "lat": 20.648165,
+    "lng": 58.872972,
+    "country": "Oman",
+    "region": "Ash Sharqiyah South Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "UEChJMz_OyBaQ2_ys_pROA": {
+    "metas": [
+      "meta_1769520864363_6bz0h"
+    ],
+    "lat": 19.482152,
+    "lng": 57.577612,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Haima - Duqm Road",
+    "nominatimCountry": "Oman"
+  },
+  "ezxep2ptM8QrxpVleNVmqA": {
+    "metas": [
+      "meta_1769520864363_zjdwa"
+    ],
+    "lat": 20.648551,
+    "lng": 58.873008,
+    "country": "Oman",
+    "region": "Ash Sharqiyah South Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "_AQDJuD7fyqk_Ia0uzvHRw": {
+    "metas": [
+      "meta_1769520864363_l4u4d"
+    ],
+    "lat": 22.918559,
+    "lng": 57.741432,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "Uyf4AxEmRWIbFwfctg-VFw": {
+    "metas": [
+      "meta_1769520864363_8cr4g"
+    ],
+    "lat": 24.6396,
+    "lng": 56.518104,
+    "country": "Oman",
+    "region": "Al Batinah North Governorate",
+    "road": "Sur al Mazari",
+    "nominatimCountry": "Oman"
+  },
+  "fl76YjuoQ8AWk2J8lqjUxw": {
+    "metas": [
+      "meta_1769520864363_6qiol"
+    ],
+    "lat": 22.692562,
+    "lng": 59.363216,
+    "country": "Oman",
+    "region": "Ash Sharqiyah South Governorate",
+    "road": "Halut",
+    "nominatimCountry": "Oman"
+  },
+  "PgFZPgRvyN-mEd5oJWsjPw": {
+    "metas": [
+      "meta_1769520864363_bbpjz"
+    ],
+    "lat": 24.274579,
+    "lng": 55.804701,
+    "country": "Oman",
+    "region": "Al Buraimi Governorate",
+    "road": "الخضراء",
+    "nominatimCountry": "Oman"
+  },
+  "ELGapgrBoaVR94vNz0DTXw": {
+    "metas": [
+      "meta_1769520864363_2zwli"
+    ],
+    "lat": 23.5960022,
+    "lng": 58.5425026,
+    "country": "Oman",
+    "region": "Muscat Governorate",
+    "road": "Way 3106",
+    "nominatimCountry": "Oman"
+  },
+  "CqZ6wWjg4_iSaVD2U5oZ3A": {
+    "metas": [
+      "meta_1769520864363_w4dl4"
+    ],
+    "lat": 23.031374,
+    "lng": 57.431996,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": "Izki - Nizwa - Bahla Road",
+    "nominatimCountry": "Oman"
+  },
+  "K9r1odNhYyBlkmU_Rn8B5A": {
+    "metas": [
+      "meta_1769520864363_z56w7"
+    ],
+    "lat": 17.172965,
+    "lng": 54.021435,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "_qIETxhgqv5aam_xzTVbgg": {
+    "metas": [
+      "meta_1769520864363_cczhb"
+    ],
+    "lat": 23.1168696,
+    "lng": 57.4506824,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": "Mahbat",
+    "nominatimCountry": "Oman"
+  },
+  "Iioi24S85UWRgu2U4jHKFw": {
+    "metas": [
+      "meta_1769520864363_fno7j"
+    ],
+    "lat": 22.391229,
+    "lng": 58.53065,
+    "country": "Oman",
+    "region": "Ash Sharqiyah North Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "PPh_fIJ8b9t4UkSg6xTYiQ": {
+    "metas": [
+      "meta_1769520864363_9fmig"
+    ],
+    "lat": 22.323642,
+    "lng": 58.625496,
+    "country": "Oman",
+    "region": "Ash Sharqiyah North Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "bBPEQMC-uV5LD8C7a5SP_g": {
+    "metas": [
+      "meta_1769520864363_6eujr"
+    ],
+    "lat": 17.101327,
+    "lng": 54.187384,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "rIV-MeuihNlklNWPKQFHBA": {
+    "metas": [
+      "meta_1769520864363_zkr9x"
+    ],
+    "lat": 20.37498,
+    "lng": 58.784746,
+    "country": "Oman",
+    "region": "Ash Sharqiyah South Governorate",
+    "road": "Um Marsus - Sur Masirah - Rasya - Umq Road",
+    "nominatimCountry": "Oman"
+  },
+  "ZG8SEnPYVpsxrgNDsitorg": {
+    "metas": [
+      "meta_1769520864363_run77"
+    ],
+    "lat": 23.5337139,
+    "lng": 56.040158,
+    "country": "Oman",
+    "region": "Al Buraimi Governorate",
+    "road": "حليبة",
+    "nominatimCountry": "Oman"
+  },
+  "WFdN-PiijaabrTFhWZqe5A": {
+    "metas": [
+      "meta_1769520864363_4snma"
+    ],
+    "lat": 22.378304,
+    "lng": 57.52937,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "_77StciK2P5GKR5JWkv4mQ": {
+    "metas": [
+      "meta_1769520864363_tyhvi"
+    ],
+    "lat": 19.810354,
+    "lng": 54.527537,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "4l7wmg37CLaB-_q08pa6cg": {
+    "metas": [
+      "meta_1769520864363_5jmce"
+    ],
+    "lat": 22.878533,
+    "lng": 55.981954,
+    "country": "Oman",
+    "region": "Ad Dhahirah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "uS0MtTfYXj3WiRn8-Fqyaw": {
+    "metas": [
+      "meta_1769520864363_gh4zt"
+    ],
+    "lat": 24.274864,
+    "lng": 55.799279,
+    "country": "Oman",
+    "region": "Al Buraimi Governorate",
+    "road": "الخضراء",
+    "nominatimCountry": "Oman"
+  },
+  "RfzPqPXZjLTD2xW_oqJkPw": {
+    "metas": [
+      "meta_1769520864363_8z10w"
+    ],
+    "lat": 23.232248,
+    "lng": 56.495305,
+    "country": "Oman",
+    "region": "Ad Dhahirah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "hfkGfu4UYl8ryexoVFbdwQ": {
+    "metas": [
+      "meta_1769520864363_8rbt8"
+    ],
+    "lat": 23.015834,
+    "lng": 57.385042,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "l0zRsI1PEwZHjcID5Pr9uw": {
+    "metas": [
+      "meta_1769520864363_01x7t"
+    ],
+    "lat": 22.403017,
+    "lng": 57.51574,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "jhihvVm3afs_V7hdBVoZTw": {
+    "metas": [
+      "meta_1769520864363_ps1i5"
+    ],
+    "lat": 23.650778,
+    "lng": 57.894581,
+    "country": "Oman",
+    "region": "Al Batinah South Governorate",
+    "road": "Samhan",
+    "nominatimCountry": "Oman"
+  },
+  "xD8TjqBZhItap2z3L1u4AA": {
+    "metas": [
+      "meta_1769520864363_rr7ir"
+    ],
+    "lat": 24.037901,
+    "lng": 57.037208,
+    "country": "Oman",
+    "region": "Al Batinah North Governorate",
+    "road": "Abu Al Durus - Hillat Al Burj Road",
+    "nominatimCountry": "Oman"
+  },
+  "ld1-EhKU6ZsjYA066dKAHw": {
+    "metas": [
+      "meta_1769520864363_xzm56"
+    ],
+    "lat": 23.601512,
+    "lng": 58.227699,
+    "country": "Oman",
+    "region": "Muscat Governorate",
+    "road": "ash Shifa'a Street",
+    "nominatimCountry": "Oman"
+  },
+  "DMXHGWzG40emWYa-Z26RbA": {
+    "metas": [
+      "meta_1769520864363_ykddr"
+    ],
+    "lat": 23.481972,
+    "lng": 58.477318,
+    "country": "Oman",
+    "region": "Muscat Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "uRyvGeTRj7-UYruaikv6kw": {
+    "metas": [
+      "meta_1769520864363_ls346"
+    ],
+    "lat": 21.853091,
+    "lng": 59.56512,
+    "country": "Oman",
+    "region": "Ash Sharqiyah South Governorate",
+    "road": "Al Kamil Wal Wafi - Al Ashkhirah - Mahout - Al Zamaim Road",
+    "nominatimCountry": "Oman"
+  },
+  "c7Amg6RfEg-IMphKAJDJnA": {
+    "metas": [
+      "meta_1769520864363_piipz"
+    ],
+    "lat": 23.665342,
+    "lng": 57.967504,
+    "country": "Oman",
+    "region": "Al Batinah South Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "7Db7WzISwMHcA9b5G4PwDQ": {
+    "metas": [
+      "meta_1769520864363_1f1go"
+    ],
+    "lat": 23.584396,
+    "lng": 58.2606,
+    "country": "Oman",
+    "region": "Muscat Governorate",
+    "road": "Sultan Qaboos Highway",
+    "nominatimCountry": "Oman"
+  },
+  "IG5S2syNcHxIg4CNFEokyA": {
+    "metas": [
+      "meta_1769520864363_96v38"
+    ],
+    "lat": 22.530938,
+    "lng": 59.480739,
+    "country": "Oman",
+    "region": "Ash Sharqiyah South Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "kpJV0bfKG8rVd1oX4X41Fw": {
+    "metas": [
+      "meta_1769520864363_vp4l6"
+    ],
+    "lat": 22.539115,
+    "lng": 56.352016,
+    "country": "Oman",
+    "region": "Ad Dhahirah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "grySg1hLIrcBP4i4Fdaegg": {
+    "metas": [
+      "meta_1769520864363_ka1ak"
+    ],
+    "lat": 19.645072,
+    "lng": 56.828402,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "uM6qctPstq1lyxsNU2j3Eg": {
+    "metas": [
+      "meta_1769520864363_h8bcc"
+    ],
+    "lat": 18.292929,
+    "lng": 53.528332,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "43",
+    "nominatimCountry": "Oman"
+  },
+  "GLS7XeslLaONY5uOmL-79w": {
+    "metas": [
+      "meta_1769520864363_xv0b9"
+    ],
+    "lat": 19.149079,
+    "lng": 56.105936,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "kPESo2xnujNdrAHFHpN9kQ": {
+    "metas": [
+      "meta_1769520864363_7xgqb"
+    ],
+    "lat": 23.161153,
+    "lng": 58.848388,
+    "country": "Oman",
+    "region": "Muscat Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "O62gkm779xcN8bSc3ukPOQ": {
+    "metas": [
+      "meta_1769520864363_6l7o5"
+    ],
+    "lat": 18.398269,
+    "lng": 53.942389,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "FPH-eL8W5ZXTyab8o3Wo-g": {
+    "metas": [
+      "meta_1769520864363_ppufo"
+    ],
+    "lat": 23.769431,
+    "lng": 57.625225,
+    "country": "Oman",
+    "region": "Al Batinah South Governorate",
+    "road": "Muqshur",
+    "nominatimCountry": "Oman"
+  },
+  "aY1bkAwLOqzT-SmrzOyjvw": {
+    "metas": [
+      "meta_1769520864363_rfbif"
+    ],
+    "lat": 22.111094,
+    "lng": 57.099596,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": "Tan'am - Qarat al Milh Road",
+    "nominatimCountry": "Oman"
+  },
+  "8o_fSLuUuCdCCE4By6MvpA": {
+    "metas": [
+      "meta_1769520864363_7rvat"
+    ],
+    "lat": 19.069242,
+    "lng": 56.670524,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "MguE6RnIkUlBnVoLt32E0g": {
+    "metas": [
+      "meta_1769520864363_72hby"
+    ],
+    "lat": 19.328634,
+    "lng": 57.049801,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "AP7OvgUPi9o9sgy2h8qILw": {
+    "metas": [
+      "meta_1769520864363_hji76"
+    ],
+    "lat": 21.502482,
+    "lng": 58.172682,
+    "country": "Oman",
+    "region": "Ash Sharqiyah North Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "BmHHMvqlQ8la748UlhPL4g": {
+    "metas": [
+      "meta_1769520864363_3konk"
+    ],
+    "lat": 22.241265,
+    "lng": 56.703024,
+    "country": "Oman",
+    "region": "Ad Dhahirah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "KkjZoUMhzKd8Xa2MQk9uiw": {
+    "metas": [
+      "meta_1769520864363_dei2q"
+    ],
+    "lat": 18.171843,
+    "lng": 53.260846,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "Bithnah",
+    "nominatimCountry": "Oman"
+  },
+  "pWltZSRRQyqvndQJXedrNA": {
+    "metas": [
+      "meta_1769520864363_ofrt9"
+    ],
+    "lat": 20.051392,
+    "lng": 56.002053,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "copqZSuVxyzqJ5aK3_W8fQ": {
+    "metas": [
+      "meta_1769520864363_xghe3"
+    ],
+    "lat": 23.140868,
+    "lng": 57.424538,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": "Al Barida Road",
+    "nominatimCountry": "Oman"
+  },
+  "lSXWKjbRN6Lg1nnX1a6iBg": {
+    "metas": [
+      "meta_1769520864363_uq2t9"
+    ],
+    "lat": 19.341263,
+    "lng": 55.879643,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "LrP5H8RK2IwhxZySqasTAA": {
+    "metas": [
+      "meta_1769520864363_9eb27"
+    ],
+    "lat": 23.355311,
+    "lng": 56.012556,
+    "country": "Oman",
+    "region": "Ad Dhahirah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "vVLZQANIwyC2rEG3_0-RRQ": {
+    "metas": [
+      "meta_1769520864363_cpyz1"
+    ],
+    "lat": 19.553649,
+    "lng": 56.809868,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "9c9iuHNF5BD-J3LiUhRiXw": {
+    "metas": [
+      "meta_1769520864363_dnlbq"
+    ],
+    "lat": 21.697935,
+    "lng": 57.791318,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "oVPCjMtau9jpa8RdoD3XrQ": {
+    "metas": [
+      "meta_1769520864363_61s4g"
+    ],
+    "lat": 21.177226,
+    "lng": 56.823826,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "4AbCFB6RAUaKZughrDIkmA": {
+    "metas": [
+      "meta_1769520864363_p80v2"
+    ],
+    "lat": 24.402115,
+    "lng": 56.708518,
+    "country": "Oman",
+    "region": "Al Batinah North Governorate",
+    "road": "Zafaran",
+    "nominatimCountry": "Oman"
+  },
+  "8ejrA07PVsiadQ9e5WJGjA": {
+    "metas": [
+      "meta_1769520864363_ss2ab"
+    ],
+    "lat": 17.090857,
+    "lng": 54.823928,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "Eqxuex4Q0Os5Tat6FAPbLg": {
+    "metas": [
+      "meta_1769520864363_55ozu"
+    ],
+    "lat": 22.378487,
+    "lng": 58.067011,
+    "country": "Oman",
+    "region": "Ash Sharqiyah North Governorate",
+    "road": "al Uyun",
+    "nominatimCountry": "Oman"
+  },
+  "d767pFMkvDO1KU5cur5U-A": {
+    "metas": [
+      "meta_1769520864363_17cyf"
+    ],
+    "lat": 22.502533,
+    "lng": 57.443777,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "Nz1yBmS3pSA3S34o5xP5XA": {
+    "metas": [
+      "meta_1769520864363_w6h06"
+    ],
+    "lat": 22.290103,
+    "lng": 57.515196,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": "Sultan Said bin Taimur Road",
+    "nominatimCountry": "Oman"
+  },
+  "FHK6iYZi3eRAt8hoDXsBZQ": {
+    "metas": [
+      "meta_1769520864363_h5a8t"
+    ],
+    "lat": 18.255527,
+    "lng": 53.634177,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "43",
+    "nominatimCountry": "Oman"
+  },
+  "C5WISzy_l9_VoNsae8pXsA": {
+    "metas": [
+      "meta_1769520864363_1drx2"
+    ],
+    "lat": 18.295913,
+    "lng": 55.647727,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "UUUMyXagx9roHzTKN7GVKw": {
+    "metas": [
+      "meta_1769520864363_cxzcz"
+    ],
+    "lat": 23.469486,
+    "lng": 58.454068,
+    "country": "Oman",
+    "region": "Muscat Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "iGg-BXFH5y3LL6clkcjOFA": {
+    "metas": [
+      "meta_1769520864363_xdx9l"
+    ],
+    "lat": 22.315635,
+    "lng": 56.51766,
+    "country": "Oman",
+    "region": "Ad Dhahirah Governorate",
+    "road": "Fahud Street",
+    "nominatimCountry": "Oman"
+  },
+  "nwpeJiRSGZlkNmOf_WmhMg": {
+    "metas": [
+      "meta_1769520864363_qszul"
+    ],
+    "lat": 26.201645,
+    "lng": 56.227541,
+    "country": "Oman",
+    "region": "Musandam Governorate",
+    "road": "Khasab - Tibat Road",
+    "nominatimCountry": "Oman"
+  },
+  "r_jBHv7fI5ggaOimszC9Cw": {
+    "metas": [
+      "meta_1769520864363_wczyg"
+    ],
+    "lat": 22.465839,
+    "lng": 55.778363,
+    "country": "Oman",
+    "region": "Ad Dhahirah Governorate",
+    "road": "Ibri - Rub' al Khali Road",
+    "nominatimCountry": "Oman"
+  },
+  "Uyine-xw8dn1hfgxSJ3IYw": {
+    "metas": [
+      "meta_1769520864363_qg09b"
+    ],
+    "lat": 22.456763,
+    "lng": 56.14987,
+    "country": "Oman",
+    "region": "Ad Dhahirah Governorate",
+    "road": "Natih-Fuhud Road",
+    "nominatimCountry": "Oman"
+  },
+  "QiHDcciIyMebBbhkjDIn2Q": {
+    "metas": [
+      "meta_1769520864363_2p395"
+    ],
+    "lat": 22.836418,
+    "lng": 56.546036,
+    "country": "Oman",
+    "region": "Ad Dhahirah Governorate",
+    "road": "Tan'am - Qarat al Milh Road",
+    "nominatimCountry": "Oman"
+  },
+  "Qe-HWixxC6K2dngBpEftmg": {
+    "metas": [
+      "meta_1769520864363_3b1z9"
+    ],
+    "lat": 22.125717,
+    "lng": 57.086246,
+    "country": "Oman",
+    "region": "Ad Dakhiliyah Governorate",
+    "road": "Tan'am - Qarat al Milh Road",
+    "nominatimCountry": "Oman"
   }
 }
