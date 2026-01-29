@@ -1569,5 +1569,2470 @@
     "region": "Ad Dakhiliyah Governorate",
     "road": "Tan'am - Qarat al Milh Road",
     "nominatimCountry": "Oman"
+  },
+  "dkhc4QsxUuyEjQ0CvMa1zA": {
+    "metas": [
+      "meta_1769520864363_8e7fa"
+    ],
+    "lat": 19.606098,
+    "lng": 55.652612,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Sultan Said bin Taimur Road",
+    "nominatimCountry": "Oman"
+  },
+  "mTPa1YWhnvAkNtVY5Lf17A": {
+    "metas": [
+      "meta_1769520864363_yu9kp"
+    ],
+    "lat": 20.908717,
+    "lng": 57.17048,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Sultan Said bin Taimur Road",
+    "nominatimCountry": "Oman"
+  },
+  "HjfFOAWFNqXlw2EDL6_njw": {
+    "metas": [
+      "meta_1769520864363_onqat"
+    ],
+    "lat": 19.841243,
+    "lng": 57.664101,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Izki - Sinaw - Duqm Road",
+    "nominatimCountry": "Oman"
+  },
+  "YNmChPW3ocAsZBQq3rdU5Q": {
+    "metas": [
+      "meta_1769520864363_yt9i6"
+    ],
+    "lat": 21.347105,
+    "lng": 58.256743,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Izki - Sinaw - Duqm Road",
+    "nominatimCountry": "Oman"
+  },
+  "a9_cHnI6-Q_F5P-FKpmuHw": {
+    "metas": [
+      "meta_1769520864363_sz47g"
+    ],
+    "lat": 21.947582,
+    "lng": 59.532286,
+    "country": "Oman",
+    "region": "Ash Sharqiyah South Governorate",
+    "road": "Al Kamil Wal Wafi - Al Ashkhirah - Mahout - Al Zamaim Road",
+    "nominatimCountry": "Oman"
+  },
+  "PrYPhZiOIYfyiSjkF6YdSQ": {
+    "metas": [
+      "meta_1769520864363_fgwvg"
+    ],
+    "lat": 19.812497,
+    "lng": 56.686564,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Haima - Duqm Road",
+    "nominatimCountry": "Oman"
+  },
+  "ZqQKGulb-1cNIzgZIKrtZw": {
+    "metas": [
+      "meta_1769520864363_zktgs"
+    ],
+    "lat": 18.841911,
+    "lng": 56.216614,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Haima - Marmul - Thumrait Road",
+    "nominatimCountry": "Oman"
+  },
+  "q1C3xY0ARi94rsQsLsKBeg": {
+    "metas": [
+      "meta_1769520864363_qboef"
+    ],
+    "lat": 18.818492,
+    "lng": 56.871006,
+    "country": "Oman",
+    "region": "Al Wusta Governorate",
+    "road": "Duqm - Hasik - Salalah Road",
+    "nominatimCountry": "Oman"
+  },
+  "PTq_8h5nyEKox9t-xhogHg": {
+    "metas": [
+      "meta_1769520864363_7fvog"
+    ],
+    "lat": 18.083741,
+    "lng": 55.932649,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "Duqm - Hasik - Salalah Road",
+    "nominatimCountry": "Oman"
+  },
+  "ISAkCsJNnbbGt0ts8Oz9uA": {
+    "metas": [
+      "meta_1769520864363_cwnmj"
+    ],
+    "lat": 17.284436,
+    "lng": 55.244929,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "Duqm - Hasik - Salalah Road",
+    "nominatimCountry": "Oman"
+  },
+  "wZfnRgD2V_-93MmUqd3ZKA": {
+    "metas": [
+      "meta_1769520864363_cbstd"
+    ],
+    "lat": 18.000783,
+    "lng": 55.62317,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "Duqm - Hasik - Salalah Road",
+    "nominatimCountry": "Oman"
+  },
+  "Pd4zH71mPfIwniETt2Ny8Q": {
+    "metas": [
+      "meta_1769520864363_o2clx"
+    ],
+    "lat": 18.263898,
+    "lng": 55.657653,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "Marmul - Shalim - Sauqara - Madraka Road",
+    "nominatimCountry": "Oman"
+  },
+  "A66dzAhb3rrn7PsiwUpo9Q": {
+    "metas": [
+      "meta_1769520864363_dy713"
+    ],
+    "lat": 18.000295,
+    "lng": 53.920865,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "Ash Shisr",
+    "nominatimCountry": "Oman"
+  },
+  "Fn8pKuvXLzeOKM__Z9vluw": {
+    "metas": [
+      "meta_1769520864363_rh810"
+    ],
+    "lat": 17.984657,
+    "lng": 53.729014,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "43",
+    "nominatimCountry": "Oman"
+  },
+  "Lda9rT60eT6_H2a8nFM2SA": {
+    "metas": [
+      "meta_1769520864363_hcqwa"
+    ],
+    "lat": 18.353941,
+    "lng": 53.560677,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": null,
+    "nominatimCountry": "Oman"
+  },
+  "Xj7BRtKUf6RIsksYzzLJ8w": {
+    "metas": [
+      "meta_1769520864363_wnd07"
+    ],
+    "lat": 18.614279,
+    "lng": 52.356112,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "ميتن",
+    "nominatimCountry": "Oman"
+  },
+  "a7FX4v0lkerXqpNmoUUczA": {
+    "metas": [
+      "meta_1769520864363_buocr"
+    ],
+    "lat": 17.680749,
+    "lng": 54.192527,
+    "country": "Oman",
+    "region": "Dhofar Governorate",
+    "road": "Haima - Marmul - Thumrait Road",
+    "nominatimCountry": "Oman"
+  },
+  "vYzPLr0pmXCqdrazYeunnQ": {
+    "metas": [
+      "meta_1769520865523_47yns"
+    ],
+    "lat": 35.058687,
+    "lng": 33.369096,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "Chalepianon Road - Tseriou",
+    "nominatimCountry": "Cyprus"
+  },
+  "L5_iKGMFOqa0P2NoW4gwVw": {
+    "metas": [
+      "meta_1769520865523_nijkp"
+    ],
+    "lat": 34.873331,
+    "lng": 32.933783,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "E806",
+    "nominatimCountry": "Cyprus"
+  },
+  "nY_qVP1OJ5fUqRq2g0jZaQ": {
+    "metas": [
+      "meta_1769520865523_z3dne"
+    ],
+    "lat": 34.679158,
+    "lng": 32.798112,
+    "country": "Cyprus",
+    "region": "Akrotiri British Sovereign Base Area",
+    "road": "Limassol - Paphos Motorway",
+    "nominatimCountry": "Cyprus"
+  },
+  "wDVerbCfrmS86oItoPoRMw": {
+    "metas": [
+      "meta_1769520865523_m3up2"
+    ],
+    "lat": 34.680758,
+    "lng": 32.76018,
+    "country": "Cyprus",
+    "region": "Akrotiri British Sovereign Base Area",
+    "road": "F606",
+    "nominatimCountry": "Cyprus"
+  },
+  "ZQ4-U7vMzckWIKwQA9Q2pQ": {
+    "metas": [
+      "meta_1769520865523_f7vea"
+    ],
+    "lat": 34.676393,
+    "lng": 32.79697,
+    "country": "Cyprus",
+    "region": "Akrotiri British Sovereign Base Area",
+    "road": "Ammochostou",
+    "nominatimCountry": "Cyprus"
+  },
+  "UoHB3DFIe8NFDs0JIGrWKA": {
+    "metas": [
+      "meta_1769520865523_psvok"
+    ],
+    "lat": 34.6765219,
+    "lng": 32.7991848,
+    "country": "Cyprus",
+    "region": "Akrotiri British Sovereign Base Area",
+    "road": "Ammochostou",
+    "nominatimCountry": "Cyprus"
+  },
+  "ZiaorvJkpCL9AKbioD8L-w": {
+    "metas": [
+      "meta_1769520865523_qz89h"
+    ],
+    "lat": 34.6763722,
+    "lng": 32.7998272,
+    "country": "Cyprus",
+    "region": "Akrotiri British Sovereign Base Area",
+    "road": "Ammochostou",
+    "nominatimCountry": "Cyprus"
+  },
+  "jO0UZVOp0nzX7Tw7H3lXUg": {
+    "metas": [
+      "meta_1769520865523_02gw7"
+    ],
+    "lat": 34.676575,
+    "lng": 32.798882,
+    "country": "Cyprus",
+    "region": "Akrotiri British Sovereign Base Area",
+    "road": "Ammochostou",
+    "nominatimCountry": "Cyprus"
+  },
+  "x9-8SG2VTKzA2zvf9LL2sw": {
+    "metas": [
+      "meta_1769520865523_fittf"
+    ],
+    "lat": 34.67631,
+    "lng": 32.79643,
+    "country": "Cyprus",
+    "region": "Akrotiri British Sovereign Base Area",
+    "road": "Ammochostou",
+    "nominatimCountry": "Cyprus"
+  },
+  "E0ZtH50rRFaWZ8XXfip4ig": {
+    "metas": [
+      "meta_1769520865523_djz2x"
+    ],
+    "lat": 34.66989,
+    "lng": 32.766532,
+    "country": "Cyprus",
+    "region": "Akrotiri British Sovereign Base Area",
+    "road": null,
+    "nominatimCountry": "Cyprus"
+  },
+  "1pm3STUsTclTvL92w_Ln-g": {
+    "metas": [
+      "meta_1769520865523_0ottq"
+    ],
+    "lat": 34.975381,
+    "lng": 33.252061,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "Kapedes",
+    "nominatimCountry": "Cyprus"
+  },
+  "KrHfBwZ0OAJCA2lBYcPvQg": {
+    "metas": [
+      "meta_1769520865523_b8p1b"
+    ],
+    "lat": 34.715589,
+    "lng": 32.857795,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "Sotira Lemesou",
+    "nominatimCountry": "Cyprus"
+  },
+  "TA4YWb47IgRCvm9UZpc7Bw": {
+    "metas": [
+      "meta_1769520865523_hignk"
+    ],
+    "lat": 34.983008,
+    "lng": 33.062333,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "E906",
+    "nominatimCountry": "Cyprus"
+  },
+  "on2HW9SppkE4H8WzMnv-Ww": {
+    "metas": [
+      "meta_1769520865523_vir76"
+    ],
+    "lat": 34.824583,
+    "lng": 32.914197,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "Lania",
+    "nominatimCountry": "Cyprus"
+  },
+  "dqqHtLXb2rObrTOoo0sL5A": {
+    "metas": [
+      "meta_1769520865523_emdxf"
+    ],
+    "lat": 34.830469,
+    "lng": 33.15856,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "E109",
+    "nominatimCountry": "Cyprus"
+  },
+  "idWiPzHsFD--cSL_xuXGKA": {
+    "metas": [
+      "meta_1769520865523_7g44k"
+    ],
+    "lat": 35.002418,
+    "lng": 32.671632,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": null,
+    "nominatimCountry": "Cyprus"
+  },
+  "i0pxjRVyPBirk8boPQ3O8w": {
+    "metas": [
+      "meta_1769520865523_zs8uj"
+    ],
+    "lat": 35.102525,
+    "lng": 33.082446,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "Orounta",
+    "nominatimCountry": "Cyprus"
+  },
+  "8hjR9LyuA0pvxZZ-tVv4MQ": {
+    "metas": [
+      "meta_1769520865523_bn20u"
+    ],
+    "lat": 35.109159,
+    "lng": 33.241932,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "Agiou Damianou",
+    "nominatimCountry": "Cyprus"
+  },
+  "KF3SXlW_vdK3NP5c-_Wjbg": {
+    "metas": [
+      "meta_1769520865523_t6ohw"
+    ],
+    "lat": 35.022627,
+    "lng": 34.014721,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "Akefalou",
+    "nominatimCountry": "Cyprus"
+  },
+  "pydJtUK6J-_OnxPtl27psg": {
+    "metas": [
+      "meta_1769520865523_07e7g"
+    ],
+    "lat": 34.928052,
+    "lng": 33.48394,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": null,
+    "nominatimCountry": "Cyprus"
+  },
+  "O07DjPuJFp0smJRUFkA1YA": {
+    "metas": [
+      "meta_1769520865523_rogek"
+    ],
+    "lat": 34.888416,
+    "lng": 33.53402,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": null,
+    "nominatimCountry": "Cyprus"
+  },
+  "tIddeCBQmoYJZ25cxUgdsw": {
+    "metas": [
+      "meta_1769520865523_fgypg"
+    ],
+    "lat": 34.732302,
+    "lng": 32.640186,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "F612",
+    "nominatimCountry": "Cyprus"
+  },
+  "FMQbCimTWnkKFvyeJnDATQ": {
+    "metas": [
+      "meta_1769520865523_dih15"
+    ],
+    "lat": 34.981548,
+    "lng": 33.579216,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "E322",
+    "nominatimCountry": "Cyprus"
+  },
+  "nQwdBe6WgLPWNHZc-PQORw": {
+    "metas": [
+      "meta_1769520865523_pj45a"
+    ],
+    "lat": 34.940279,
+    "lng": 33.194242,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": null,
+    "nominatimCountry": "Cyprus"
+  },
+  "YwRQxjukKdo4vrBuhcoXnQ": {
+    "metas": [
+      "meta_1769520865523_sgr9f"
+    ],
+    "lat": 34.981935,
+    "lng": 32.87458,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "E938",
+    "nominatimCountry": "Cyprus"
+  },
+  "XYE-PnakuP8agN9ap-8LWQ": {
+    "metas": [
+      "meta_1769520865523_ykd7e"
+    ],
+    "lat": 34.87876,
+    "lng": 32.335677,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "Sea Caves Avenue",
+    "nominatimCountry": "Cyprus"
+  },
+  "EKkVAeDYhTjkudK1xTycNA": {
+    "metas": [
+      "meta_1769520865523_hcvjw"
+    ],
+    "lat": 34.6927449,
+    "lng": 33.0806905,
+    "country": "Cyprus",
+    "region": "Cyprus",
+    "road": "Vasileos Georgiou I",
+    "nominatimCountry": "Cyprus"
+  },
+  "jJnCSPRAk7cK_IsAUPUgzA": {
+    "metas": [
+      "meta_1769520866672_01c88"
+    ],
+    "lat": 10.765271,
+    "lng": 106.642227,
+    "country": "Vietnam",
+    "region": null,
+    "road": "Lac Long Quan",
+    "nominatimCountry": "Vietnam"
+  },
+  "tq7mKP117PVM7NB4nVu_cg": {
+    "metas": [
+      "meta_1769520866672_cov7b"
+    ],
+    "lat": 17.57773,
+    "lng": 106.491715,
+    "country": "Vietnam",
+    "region": "Quảng Trị Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "a9WrXlsDMkNXDHC3VukHYw": {
+    "metas": [
+      "meta_1769520866672_8hsd8"
+    ],
+    "lat": 10.099016,
+    "lng": 106.499755,
+    "country": "Vietnam",
+    "region": "Vĩnh Long Province",
+    "road": "Đường huyện 10",
+    "nominatimCountry": "Vietnam"
+  },
+  "WEa5L1jec-jGe0YURCMDjQ": {
+    "metas": [
+      "meta_1769520866672_kzklk"
+    ],
+    "lat": 20.3590187,
+    "lng": 106.1715244,
+    "country": "Vietnam",
+    "region": "Ninh Bình Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "OESqJ0PZyowBHpIdghq7ow": {
+    "metas": [
+      "meta_1769520866672_5cu5m"
+    ],
+    "lat": 20.165612,
+    "lng": 105.867022,
+    "country": "Vietnam",
+    "region": "Ninh Bình Province",
+    "road": "Đường gom cao tốc",
+    "nominatimCountry": "Vietnam"
+  },
+  "zmqHGkX5BVHV6Ipug-iRew": {
+    "metas": [
+      "meta_1769520866672_y2zlk"
+    ],
+    "lat": 20.85071,
+    "lng": 104.789504,
+    "country": "Vietnam",
+    "region": "Sơn La Province",
+    "road": "Quốc lộ 43",
+    "nominatimCountry": "Vietnam"
+  },
+  "TUC99oPKtk9vwFGhQUSc9w": {
+    "metas": [
+      "meta_1769520866672_3ojha"
+    ],
+    "lat": 15.325474,
+    "lng": 108.134841,
+    "country": "Vietnam",
+    "region": null,
+    "road": "National Route 40B",
+    "nominatimCountry": "Vietnam"
+  },
+  "90FxNOmMQdrrzjlAQjbqrA": {
+    "metas": [
+      "meta_1769520866672_uz2pm"
+    ],
+    "lat": 22.28103,
+    "lng": 105.921933,
+    "country": "Vietnam",
+    "region": "Thái Nguyên Province",
+    "road": "Vành đai 2 (Quốc lộ 279)",
+    "nominatimCountry": "Vietnam"
+  },
+  "W0LZM13iFEpr1380frBdzw": {
+    "metas": [
+      "meta_1769520866672_9g1hc"
+    ],
+    "lat": 23.167058,
+    "lng": 105.031377,
+    "country": "Vietnam",
+    "region": null,
+    "road": "National Route 4C",
+    "nominatimCountry": "Vietnam"
+  },
+  "CEVUOmFCHAeMic260M9N6Q": {
+    "metas": [
+      "meta_1769520866672_wvnco"
+    ],
+    "lat": 13.551879,
+    "lng": 109.019947,
+    "country": "Vietnam",
+    "region": "Gia Lai Province",
+    "road": "Quốc lộ 19C",
+    "nominatimCountry": "Vietnam"
+  },
+  "wu8r_8OjBppqAVSzHlccZQ": {
+    "metas": [
+      "meta_1769520866672_c5njv"
+    ],
+    "lat": 15.81576,
+    "lng": 108.121249,
+    "country": "Vietnam",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "FGF81bDXpAajmVlsWcmHPQ": {
+    "metas": [
+      "meta_1769520866672_g6iq2"
+    ],
+    "lat": 13.846077,
+    "lng": 108.071276,
+    "country": "Vietnam",
+    "region": "Gia Lai Province",
+    "road": "Ia Tiem - Bo Ngoong inter-commune Rd.",
+    "nominatimCountry": "Vietnam"
+  },
+  "o3sFfPIShfOTLqIste_k-g": {
+    "metas": [
+      "meta_1769520866672_n0vxa"
+    ],
+    "lat": 13.9360083,
+    "lng": 109.1035062,
+    "country": "Vietnam",
+    "region": "Gia Lai Province",
+    "road": "Đường Võ Trứ",
+    "nominatimCountry": "Vietnam"
+  },
+  "ovyD5TSHLvoLcZmesUahZA": {
+    "metas": [
+      "meta_1769520866672_0mcsu"
+    ],
+    "lat": 20.222324,
+    "lng": 106.298321,
+    "country": "Vietnam",
+    "region": "Ninh Bình Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "e53bc0_LRvVcrVCPj8p7GA": {
+    "metas": [
+      "meta_1769520866672_77t8z"
+    ],
+    "lat": 21.129219,
+    "lng": 105.73774,
+    "country": "Vietnam",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "veXxUv_UXlK8dagDSlkuew": {
+    "metas": [
+      "meta_1769520866672_35zhb"
+    ],
+    "lat": 20.242436,
+    "lng": 106.317517,
+    "country": "Vietnam",
+    "region": "Ninh Bình Province",
+    "road": "Xuân Ninh",
+    "nominatimCountry": "Vietnam"
+  },
+  "oKifvSURm_PBYgeH1gC54A": {
+    "metas": [
+      "meta_1769520866672_s8iof"
+    ],
+    "lat": 20.640735,
+    "lng": 106.434124,
+    "country": "Vietnam",
+    "region": "Hưng Yên Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "PScEmMhgfPnV5vYVdFlKAg": {
+    "metas": [
+      "meta_1769520866672_2jcok"
+    ],
+    "lat": 9.324914,
+    "lng": 105.979805,
+    "country": "Vietnam",
+    "region": null,
+    "road": "Tran Hung Dao Street",
+    "nominatimCountry": "Vietnam"
+  },
+  "m7z27q2uRlP0q8UmcYqq5A": {
+    "metas": [
+      "meta_1769520866672_3k101"
+    ],
+    "lat": 20.850317,
+    "lng": 106.229748,
+    "country": "Vietnam",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "343VHQz-gF2V5wHWWmIMvA": {
+    "metas": [
+      "meta_1769520866672_8ufed"
+    ],
+    "lat": 9.761916,
+    "lng": 105.518203,
+    "country": "Vietnam",
+    "region": null,
+    "road": "National Route 61",
+    "nominatimCountry": "Vietnam"
+  },
+  "tK8xJZ1vBpLWN4gPqFPFiQ": {
+    "metas": [
+      "meta_1769520866672_qx7zt"
+    ],
+    "lat": 13.886399,
+    "lng": 107.676122,
+    "country": "Vietnam",
+    "region": "Gia Lai Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "qchZThsKuhftErw6b-nf8g": {
+    "metas": [
+      "meta_1769520866673_znyfh"
+    ],
+    "lat": 11.563558,
+    "lng": 106.676419,
+    "country": "Vietnam",
+    "region": "Xã Tân Quan",
+    "road": "Ấp 4",
+    "nominatimCountry": "Vietnam"
+  },
+  "oI_mQIH3Om2vkGYCV_Koqg": {
+    "metas": [
+      "meta_1769520866673_jx6iu"
+    ],
+    "lat": 11.650549,
+    "lng": 107.750066,
+    "country": "Vietnam",
+    "region": "Lâm Đồng Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "B8AKtDObqE_xjzpPkwS_AA": {
+    "metas": [
+      "meta_1769520866673_9eagi"
+    ],
+    "lat": 21.845633,
+    "lng": 106.901313,
+    "country": "Vietnam",
+    "region": "Lạng Sơn Province",
+    "road": "Đường tỉnh 241",
+    "nominatimCountry": "Vietnam"
+  },
+  "3TPPCyHxsa-kFy4EkTUIqQ": {
+    "metas": [
+      "meta_1769520866673_eaqly"
+    ],
+    "lat": 10.832132,
+    "lng": 107.729271,
+    "country": "Vietnam",
+    "region": "Lâm Đồng Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "yrbjy-zCpvNsU6tL0VmMBg": {
+    "metas": [
+      "meta_1769520866673_f027k"
+    ],
+    "lat": 11.5065004,
+    "lng": 108.9981865,
+    "country": "Vietnam",
+    "region": "Khánh Hòa Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "AdjyMx6nNgh1_OTJuKQ--Q": {
+    "metas": [
+      "meta_1769520866673_svqu1"
+    ],
+    "lat": 12.819808,
+    "lng": 108.043447,
+    "country": "Vietnam",
+    "region": "Đắk Lắk Province",
+    "road": "Tổ dân phố 1",
+    "nominatimCountry": "Vietnam"
+  },
+  "aW_V2i3BpJGZLnQoa1x7yQ": {
+    "metas": [
+      "meta_1769520866673_7ia25"
+    ],
+    "lat": 13.90997,
+    "lng": 109.24107,
+    "country": "Vietnam",
+    "region": "Gia Lai Province",
+    "road": "DT 639",
+    "nominatimCountry": "Vietnam"
+  },
+  "UrpYwnwURSjozrzOLmzHaw": {
+    "metas": [
+      "meta_1769520866673_k01le"
+    ],
+    "lat": 21.39461,
+    "lng": 105.475782,
+    "country": "Vietnam",
+    "region": "Phú Thọ Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "vWzaoFcqWSSC2v19VdAKHA": {
+    "metas": [
+      "meta_1769520866673_2cfqa"
+    ],
+    "lat": 20.773012,
+    "lng": 106.289714,
+    "country": "Vietnam",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "65_Bi04A_TvX7zX54vMPyg": {
+    "metas": [
+      "meta_1769520866673_f0mpw"
+    ],
+    "lat": 9.294965,
+    "lng": 105.412911,
+    "country": "Vietnam",
+    "region": "Cà Mau Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "UnoK10Sq0djkIXMx5m_z-A": {
+    "metas": [
+      "meta_1769520866673_a6803"
+    ],
+    "lat": 21.579753,
+    "lng": 103.992037,
+    "country": "Vietnam",
+    "region": "Sơn La Province",
+    "road": "National Route 279D",
+    "nominatimCountry": "Vietnam"
+  },
+  "mcuaK840TZ_l503NjUVvaQ": {
+    "metas": [
+      "meta_1769520866673_99r29"
+    ],
+    "lat": 20.456633,
+    "lng": 106.417445,
+    "country": "Vietnam",
+    "region": "Hưng Yên Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "LX4wDjIUu1Xz7i-pdQVU9A": {
+    "metas": [
+      "meta_1769520866673_kj4jo"
+    ],
+    "lat": 19.223122,
+    "lng": 105.091166,
+    "country": "Vietnam",
+    "region": "Nghệ An Province",
+    "road": "Quốc lộ 48C",
+    "nominatimCountry": "Vietnam"
+  },
+  "FjdmgWacNyak2Q4qXh17cQ": {
+    "metas": [
+      "meta_1769520866673_7yn2s"
+    ],
+    "lat": 20.308185,
+    "lng": 106.327278,
+    "country": "Vietnam",
+    "region": "Ninh Bình Province",
+    "road": "Xuân Ngọc",
+    "nominatimCountry": "Vietnam"
+  },
+  "CLsT0XuWTB2oN3a3-60WWg": {
+    "metas": [
+      "meta_1769520866673_uj07p"
+    ],
+    "lat": 20.709387,
+    "lng": 106.770022,
+    "country": "Vietnam",
+    "region": null,
+    "road": "Phố Vạn Lê",
+    "nominatimCountry": "Vietnam"
+  },
+  "9sErVtNGy0-PoAOKN_N8Bg": {
+    "metas": [
+      "meta_1769520866673_87mf8"
+    ],
+    "lat": 20.42399,
+    "lng": 106.103354,
+    "country": "Vietnam",
+    "region": "Ninh Bình Province",
+    "road": "Hưng Lộc",
+    "nominatimCountry": "Vietnam"
+  },
+  "yQhccXQmVpW19aviKBUcEw": {
+    "metas": [
+      "meta_1769520866673_vue4e"
+    ],
+    "lat": 20.394699,
+    "lng": 106.183136,
+    "country": "Vietnam",
+    "region": "Ninh Bình Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "KmlEd2hSwCbZoSyyCXxSSg": {
+    "metas": [
+      "meta_1769520866673_jya6c"
+    ],
+    "lat": 10.227354,
+    "lng": 106.464,
+    "country": "Vietnam",
+    "region": "Vĩnh Long Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "pqq3mfyPxut594gl8i65Xw": {
+    "metas": [
+      "meta_1769520866673_wi1vn"
+    ],
+    "lat": 16.542338,
+    "lng": 107.616083,
+    "country": "Vietnam",
+    "region": "Huế",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "Hhe2y5FSc1S4SpkN7d4whw": {
+    "metas": [
+      "meta_1769520866673_3c2cj"
+    ],
+    "lat": 10.762197,
+    "lng": 106.579473,
+    "country": "Vietnam",
+    "region": null,
+    "road": "Phường Bình Tân",
+    "nominatimCountry": "Vietnam"
+  },
+  "7PAP07dzmzKzBSUb23FCLQ": {
+    "metas": [
+      "meta_1769520866673_f6lnm"
+    ],
+    "lat": 21.640422,
+    "lng": 103.479749,
+    "country": "Vietnam",
+    "region": "Điện Biên Province",
+    "road": "National Route 279",
+    "nominatimCountry": "Vietnam"
+  },
+  "PDgawGEo-8Qr8j3UjHVIow": {
+    "metas": [
+      "meta_1769520866673_xmff5"
+    ],
+    "lat": 19.750505,
+    "lng": 105.872687,
+    "country": "Vietnam",
+    "region": "Thanh Hóa Province",
+    "road": "Thọ Đài",
+    "nominatimCountry": "Vietnam"
+  },
+  "q-ltN5cp9QFojVf-nCispA": {
+    "metas": [
+      "meta_1769520866673_i53al"
+    ],
+    "lat": 20.262762,
+    "lng": 106.462929,
+    "country": "Vietnam",
+    "region": "Ninh Bình Province",
+    "road": "Bình Hòa",
+    "nominatimCountry": "Vietnam"
+  },
+  "wL7AktRm7OBteCpC3-dBOQ": {
+    "metas": [
+      "meta_1769520866673_og4zt"
+    ],
+    "lat": 11.977876,
+    "lng": 108.483914,
+    "country": "Vietnam",
+    "region": "Lâm Đồng Province",
+    "road": "Thái Phiên",
+    "nominatimCountry": "Vietnam"
+  },
+  "g3BOvHo-mgYnQtSDUcBqwQ": {
+    "metas": [
+      "meta_1769520866673_zncnh"
+    ],
+    "lat": 23.251604,
+    "lng": 105.240904,
+    "country": "Vietnam",
+    "region": null,
+    "road": "National Route 4C",
+    "nominatimCountry": "Vietnam"
+  },
+  "5m2iecKhYEDBHIY_u2xD7w": {
+    "metas": [
+      "meta_1769520866673_fl7d3"
+    ],
+    "lat": 10.295409,
+    "lng": 104.076474,
+    "country": "Vietnam",
+    "region": "An Giang Province",
+    "road": "Đường tỉnh 975C",
+    "nominatimCountry": "Vietnam"
+  },
+  "zut9803PeToj-iWWu-mxlw": {
+    "metas": [
+      "meta_1769520866673_e756d"
+    ],
+    "lat": 20.945192,
+    "lng": 107.079263,
+    "country": "Vietnam",
+    "region": "Quảng Ninh Province",
+    "road": "Tran Quoc Nghien Road",
+    "nominatimCountry": "Vietnam"
+  },
+  "dce47WFNuF7fjGRQ9Yq-5w": {
+    "metas": [
+      "meta_1769520866673_bca2k"
+    ],
+    "lat": 11.405192,
+    "lng": 106.203836,
+    "country": "Vietnam",
+    "region": "Tây Ninh Province",
+    "road": null,
+    "nominatimCountry": "Vietnam"
+  },
+  "QiVmy4TF0zKjY4tbGkWVHw": {
+    "metas": [
+      "meta_1769520866673_jb7vz"
+    ],
+    "lat": 12.716782,
+    "lng": 109.383996,
+    "country": "Vietnam",
+    "region": "Khánh Hòa Province",
+    "road": "Đầm Môn",
+    "nominatimCountry": "Vietnam"
+  },
+  "zdVbG7P8f82ktmeYghGvgQ": {
+    "metas": [
+      "meta_1769520866673_t8yr0"
+    ],
+    "lat": 15.876687,
+    "lng": 108.330363,
+    "country": "Vietnam",
+    "region": null,
+    "road": "Nguyen Thai Hoc Street",
+    "nominatimCountry": "Vietnam"
+  },
+  "Rh3wymSqJNHsbrj5L79Y4Q": {
+    "metas": [
+      "meta_1769520866673_vz10m"
+    ],
+    "lat": 22.3347514,
+    "lng": 103.8408857,
+    "country": "Vietnam",
+    "region": "Lào Cai Province",
+    "road": "Phan Xi Păng",
+    "nominatimCountry": "Vietnam"
+  },
+  "WVjLovOeDWOBU6TdFkTWqQ": {
+    "metas": [
+      "meta_1769520866673_wsydu"
+    ],
+    "lat": 10.94574,
+    "lng": 108.197926,
+    "country": "Vietnam",
+    "region": "Lâm Đồng Province",
+    "road": "Nguyễn Đình Chiểu",
+    "nominatimCountry": "Vietnam"
+  },
+  "WiSQDwoE9rS_VG_mIQKFfw": {
+    "metas": [
+      "meta_1769520867827_yxoub"
+    ],
+    "lat": -23.6472253,
+    "lng": 24.7278454,
+    "country": "Botswana",
+    "region": "Kweneng District",
+    "road": "Salajwe",
+    "nominatimCountry": "Botswana"
+  },
+  "QEmQnyblzLRJoWYdfn6hxA": {
+    "metas": [
+      "meta_1769520867827_zvp8f"
+    ],
+    "lat": -24.6325073,
+    "lng": 25.8745535,
+    "country": "Botswana",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Botswana"
+  },
+  "0O6VzXhZKqDon7c6cQoF9A": {
+    "metas": [
+      "meta_1769520867827_3m3w2"
+    ],
+    "lat": -20.7177239,
+    "lng": 24.3887762,
+    "country": "Botswana",
+    "region": "Central District",
+    "road": "B300",
+    "nominatimCountry": "Botswana"
+  },
+  "A8cQl6HBVqNXk_UxwFqxWQ": {
+    "metas": [
+      "meta_1769520867827_ia38r"
+    ],
+    "lat": -24.6388247,
+    "lng": 25.9031557,
+    "country": "Botswana",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Botswana"
+  },
+  "We8B5XnjUI2eDvmTaydiGQ": {
+    "metas": [
+      "meta_1769520867827_ewb7g"
+    ],
+    "lat": -24.5916854,
+    "lng": 24.7300396,
+    "country": "Botswana",
+    "region": "Jwaneng Town",
+    "road": "Sir Seretse Karma Highway",
+    "nominatimCountry": "Botswana"
+  },
+  "CmyXY-d7-ua7mFm36brglw": {
+    "metas": [
+      "meta_1769520867827_5uglc"
+    ],
+    "lat": -24.8969843,
+    "lng": 25.1666126,
+    "country": "Botswana",
+    "region": "Southern District",
+    "road": "Trans-Kalahari Corridor",
+    "nominatimCountry": "Botswana"
+  },
+  "OWkNoYTOYOMR09R4stjE1A": {
+    "metas": [
+      "meta_1769520867827_vqa3q"
+    ],
+    "lat": -23.6804082,
+    "lng": 22.7615942,
+    "country": "Botswana",
+    "region": "Kgalagadi District",
+    "road": "Trans-Kalahari Corridor",
+    "nominatimCountry": "Botswana"
+  },
+  "AUV0Fr2A_nzBw7IgXl_Smw": {
+    "metas": [
+      "meta_1769520867827_8vkau"
+    ],
+    "lat": -24.6658923,
+    "lng": 25.9189109,
+    "country": "Botswana",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Botswana"
+  },
+  "skj76TuRqThB7MCfVTKiGg": {
+    "metas": [
+      "meta_1769520867827_9fqro"
+    ],
+    "lat": -22.8143145,
+    "lng": 27.7459163,
+    "country": "Botswana",
+    "region": "Central District",
+    "road": "Lerala",
+    "nominatimCountry": "Botswana"
+  },
+  "ofQUg38Xwi2D1aLIsxykrw": {
+    "metas": [
+      "meta_1769520867827_5qo29"
+    ],
+    "lat": -25.0867009,
+    "lng": 25.7189643,
+    "country": "Botswana",
+    "region": "South-East District",
+    "road": "Lobatse Road",
+    "nominatimCountry": "Botswana"
+  },
+  "UlP4lZ0tDYmTo_WzDaBDww": {
+    "metas": [
+      "meta_1769520867827_yqb8t"
+    ],
+    "lat": -22.1149265,
+    "lng": 28.4106965,
+    "country": "Botswana",
+    "region": "Central District",
+    "road": null,
+    "nominatimCountry": "Botswana"
+  },
+  "lvnthti5CmlJFROscPypkQ": {
+    "metas": [
+      "meta_1769520867827_uqnil"
+    ],
+    "lat": -20.3249603,
+    "lng": 24.3063714,
+    "country": "Botswana",
+    "region": "Central District",
+    "road": "Moreomaoto",
+    "nominatimCountry": "Botswana"
+  },
+  "-tuD1qUc4abINPV62d4qig": {
+    "metas": [
+      "meta_1769520867827_wow1i"
+    ],
+    "lat": -19.8533798,
+    "lng": 22.2326957,
+    "country": "Botswana",
+    "region": null,
+    "road": "A35",
+    "nominatimCountry": "Botswana"
+  },
+  "ozIh4uXzKYzqGlvo8OpAZg": {
+    "metas": [
+      "meta_1769520867827_4565g"
+    ],
+    "lat": -18.0658161,
+    "lng": 25.2835508,
+    "country": "Botswana",
+    "region": "Chobe District",
+    "road": "A33",
+    "nominatimCountry": "Botswana"
+  },
+  "RIgx3FW18TKPdbjnqi7lLw": {
+    "metas": [
+      "meta_1769520867827_0110h"
+    ],
+    "lat": -26.747761,
+    "lng": 21.7836793,
+    "country": "Botswana",
+    "region": "Kgalagadi District",
+    "road": "B211",
+    "nominatimCountry": "Botswana"
+  },
+  "7WGCRKyRjnO869cFgvuj1A": {
+    "metas": [
+      "meta_1769520867827_dfqbd"
+    ],
+    "lat": -24.6536592,
+    "lng": 25.9056128,
+    "country": "Botswana",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Botswana"
+  },
+  "awOERkY2qmLHIflEWs9a5Q": {
+    "metas": [
+      "meta_1769520867827_rqqbq"
+    ],
+    "lat": -21.1510692,
+    "lng": 27.517678,
+    "country": "Botswana",
+    "region": null,
+    "road": "A1",
+    "nominatimCountry": "Botswana"
+  },
+  "wW5AB7v3cPnLBsVjQaZ1bQ": {
+    "metas": [
+      "meta_1769520867827_341ry"
+    ],
+    "lat": -19.9851473,
+    "lng": 23.4238724,
+    "country": "Botswana",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Botswana"
+  },
+  "b2UCq-ObCQ8W3ULSbwCOiA": {
+    "metas": [
+      "meta_1769520867827_ko1og"
+    ],
+    "lat": -22.09348,
+    "lng": 20.5763222,
+    "country": "Botswana",
+    "region": "Ghanzi District",
+    "road": "Trans-Kalahari Corridor",
+    "nominatimCountry": "Botswana"
+  },
+  "VjtDd5Sl2x5mVmGXcNfjFg": {
+    "metas": [
+      "meta_1769520867827_8gpgj"
+    ],
+    "lat": -17.8392846,
+    "lng": 25.0112485,
+    "country": "Botswana",
+    "region": "Chobe District",
+    "road": "Bushbuck Drive",
+    "nominatimCountry": "Botswana"
+  },
+  "pKQgCZslhSrk3yFM3HkNuA": {
+    "metas": [
+      "meta_1769520867828_2n8j4"
+    ],
+    "lat": -21.3076111,
+    "lng": 25.7229186,
+    "country": "Botswana",
+    "region": "Central District",
+    "road": "A30",
+    "nominatimCountry": "Botswana"
+  },
+  "r15uVBUow0PMTuPnXTkARA": {
+    "metas": [
+      "meta_1769520867828_ikeau"
+    ],
+    "lat": -20.9996412,
+    "lng": 25.6248234,
+    "country": "Botswana",
+    "region": "Central District",
+    "road": "Tshitane Pan Track - Seasonal",
+    "nominatimCountry": "Botswana"
+  },
+  "CR63_DPF-em7xxF939HcFw": {
+    "metas": [
+      "meta_1769520867828_8h5iw"
+    ],
+    "lat": -24.5211575,
+    "lng": 25.8547758,
+    "country": "Botswana",
+    "region": "Kweneng District",
+    "road": "Mmatseta",
+    "nominatimCountry": "Botswana"
+  },
+  "eLvrHCwQR4K337Z7lKJfpw": {
+    "metas": [
+      "meta_1769520867828_tbm6m"
+    ],
+    "lat": -19.095292,
+    "lng": 25.731606,
+    "country": "Botswana",
+    "region": "Central District",
+    "road": "A33",
+    "nominatimCountry": "Botswana"
+  },
+  "bpv2y41tdC0I1vZyoCOaYg": {
+    "metas": [
+      "meta_1769520867828_l4lpe"
+    ],
+    "lat": -19.3909793,
+    "lng": 23.660249,
+    "country": "Botswana",
+    "region": null,
+    "road": "Cutline",
+    "nominatimCountry": "Botswana"
+  },
+  "Devei15EPnExDJRaYo7Myw": {
+    "metas": [
+      "meta_1769520867828_jzbhi"
+    ],
+    "lat": -25.2041348,
+    "lng": 23.2843812,
+    "country": "Botswana",
+    "region": "Kgalagadi District",
+    "road": "A20",
+    "nominatimCountry": "Botswana"
+  },
+  "tUkHmRb80G2PTUVDnOdRAg": {
+    "metas": [
+      "meta_1769520867828_07uzi"
+    ],
+    "lat": -26.0702837,
+    "lng": 22.4490619,
+    "country": "Botswana",
+    "region": "Kgalagadi District",
+    "road": "A20",
+    "nominatimCountry": "Botswana"
+  },
+  "8zXoNNDUJlaNAioTx7vh5A": {
+    "metas": [
+      "meta_1769520867828_3ywnz"
+    ],
+    "lat": -18.7637985,
+    "lng": 21.7359896,
+    "country": "Botswana",
+    "region": null,
+    "road": "Rhino Trail",
+    "nominatimCountry": "Botswana"
+  },
+  "Mng62ypLF4kan-DvjIUMbw": {
+    "metas": [
+      "meta_1769520867828_grx9g"
+    ],
+    "lat": -18.5545816,
+    "lng": 25.6271839,
+    "country": "Botswana",
+    "region": "Chobe District",
+    "road": "A33",
+    "nominatimCountry": "Botswana"
+  },
+  "MMuY8jijX82URoRMOg_YMQ": {
+    "metas": [
+      "meta_1769520868993_2xne1"
+    ],
+    "lat": 30.0279258,
+    "lng": 31.2608372,
+    "country": "Egypt",
+    "region": "Cairo",
+    "road": "Al Mathaf Al Harby Al Qawmy Street",
+    "nominatimCountry": "Egypt"
+  },
+  "5J1ZlrZ2iZNH5LUE1mPkuA": {
+    "metas": [
+      "meta_1769520868993_nbsch"
+    ],
+    "lat": 30.0282245,
+    "lng": 31.2608755,
+    "country": "Egypt",
+    "region": "Cairo",
+    "road": "Al Mathaf Al Harby Al Qawmy Street",
+    "nominatimCountry": "Egypt"
+  },
+  "2YskmG6hxTARTGB5-l1MQg": {
+    "metas": [
+      "meta_1769520868993_75kqz"
+    ],
+    "lat": 30.0282884,
+    "lng": 31.2594206,
+    "country": "Egypt",
+    "region": "Cairo",
+    "road": "Al Mathaf Al Harby Al Qawmy Street",
+    "nominatimCountry": "Egypt"
+  },
+  "oXGvzPCGx3lY2riCvaW-ZA": {
+    "metas": [
+      "meta_1769520868993_kyn80"
+    ],
+    "lat": 30.0055672,
+    "lng": 31.2298146,
+    "country": "Egypt",
+    "region": "Cairo",
+    "road": "Harit Al Kidees Girgis",
+    "nominatimCountry": "Egypt"
+  },
+  "2xd7Ch6bODx_s6Ge2s-vew": {
+    "metas": [
+      "meta_1769520870261_6anhn"
+    ],
+    "lat": -26.5615506,
+    "lng": 31.6252769,
+    "country": "Eswatini",
+    "region": "Lubombo",
+    "road": "MR8",
+    "nominatimCountry": "Eswatini"
+  },
+  "uaQiXUVeezWNmPND8OLmhQ": {
+    "metas": [
+      "meta_1769520870261_8mxyt"
+    ],
+    "lat": -26.4912109,
+    "lng": 31.3409468,
+    "country": "Eswatini",
+    "region": "Manzini Region",
+    "road": "MR9",
+    "nominatimCountry": "Eswatini"
+  },
+  "5wwC9sAhij-NeeDr4jZXMg": {
+    "metas": [
+      "meta_1769520870261_oxgvq"
+    ],
+    "lat": -26.5329535,
+    "lng": 31.0022314,
+    "country": "Eswatini",
+    "region": "Manzini Region",
+    "road": "MR19",
+    "nominatimCountry": "Eswatini"
+  },
+  "ZwE9dENf-II4W6agl89ESg": {
+    "metas": [
+      "meta_1769520870261_zt765"
+    ],
+    "lat": -26.601241,
+    "lng": 31.388157,
+    "country": "Eswatini",
+    "region": "Manzini Region",
+    "road": "MR9",
+    "nominatimCountry": "Eswatini"
+  },
+  "b3JEF2ZV9Z4xeCTJQJQDnA": {
+    "metas": [
+      "meta_1769520870261_qlgn2"
+    ],
+    "lat": -26.4057129,
+    "lng": 31.8313616,
+    "country": "Eswatini",
+    "region": "Lubombo",
+    "road": "MR3",
+    "nominatimCountry": "Eswatini"
+  },
+  "15Qyd5PIsRBtobuVUt3J0w": {
+    "metas": [
+      "meta_1769520870261_7ych7"
+    ],
+    "lat": -27.2443581,
+    "lng": 31.4541427,
+    "country": "Eswatini",
+    "region": "Shiselweni",
+    "road": "MR11",
+    "nominatimCountry": "Eswatini"
+  },
+  "dvNiUzwNYJb2k0gGO_F35g": {
+    "metas": [
+      "meta_1769520870261_y1fcr"
+    ],
+    "lat": -26.7877589,
+    "lng": 30.9495216,
+    "country": "Eswatini",
+    "region": "Manzini Region",
+    "road": "MR4",
+    "nominatimCountry": "Eswatini"
+  },
+  "ipRBRIVlmKUucnGik9z-Dg": {
+    "metas": [
+      "meta_1769520870261_0wjpj"
+    ],
+    "lat": -26.5719283,
+    "lng": 30.8111218,
+    "country": "Eswatini",
+    "region": "Manzini Region",
+    "road": "MR19",
+    "nominatimCountry": "Eswatini"
+  },
+  "bYqSGepFXTiayToMFzs4wQ": {
+    "metas": [
+      "meta_1769520870261_63jta"
+    ],
+    "lat": -26.7720004,
+    "lng": 31.3608874,
+    "country": "Eswatini",
+    "region": "Manzini Region",
+    "road": "MR9",
+    "nominatimCountry": "Eswatini"
+  },
+  "ru18eSeNmSOFKM3YcVvqxA": {
+    "metas": [
+      "meta_1769520870261_4ashg"
+    ],
+    "lat": -26.4115493,
+    "lng": 31.741619,
+    "country": "Eswatini",
+    "region": "Lubombo",
+    "road": "MR3",
+    "nominatimCountry": "Eswatini"
+  },
+  "Ret0_BRhasAWSzOGqbhTxA": {
+    "metas": [
+      "meta_1769520870261_yyoou"
+    ],
+    "lat": -26.190292,
+    "lng": 31.9353508,
+    "country": "Eswatini",
+    "region": "Lubombo",
+    "road": "MR3",
+    "nominatimCountry": "Eswatini"
+  },
+  "vPLOU7wmwcvV7J78gGCxWw": {
+    "metas": [
+      "meta_1769520870261_lnkdy"
+    ],
+    "lat": -26.3413691,
+    "lng": 31.8696976,
+    "country": "Eswatini",
+    "region": "Lubombo",
+    "road": "MR3",
+    "nominatimCountry": "Eswatini"
+  },
+  "KK1X9gfoPtZZiGgRUz9S6Q": {
+    "metas": [
+      "meta_1769520870261_usi2r"
+    ],
+    "lat": -26.2374464,
+    "lng": 31.0462329,
+    "country": "Eswatini",
+    "region": "Hhohho Region",
+    "road": "MR3",
+    "nominatimCountry": "Eswatini"
+  },
+  "YCOwJt5K0QAu1JbfTOgtmQ": {
+    "metas": [
+      "meta_1769520870261_hwqre"
+    ],
+    "lat": -26.938333,
+    "lng": 31.9513798,
+    "country": "Eswatini",
+    "region": "Lubombo",
+    "road": "MR8",
+    "nominatimCountry": "Eswatini"
+  },
+  "2ykoI3tNRfTV456X96jnZA": {
+    "metas": [
+      "meta_1769520870261_lmkn2"
+    ],
+    "lat": -26.1677893,
+    "lng": 31.9922842,
+    "country": "Eswatini",
+    "region": "Lubombo",
+    "road": null,
+    "nominatimCountry": "Eswatini"
+  },
+  "QTnJ2zkNm9h8jZdldNHBbA": {
+    "metas": [
+      "meta_1769520870261_08052"
+    ],
+    "lat": -25.9904726,
+    "lng": 31.9958985,
+    "country": "Eswatini",
+    "region": "Lubombo",
+    "road": "MR3",
+    "nominatimCountry": "Eswatini"
+  },
+  "BaBOs3o6j3Y5RFFns4wPHA": {
+    "metas": [
+      "meta_1769520871520_duhs1"
+    ],
+    "lat": 9.0744935,
+    "lng": -0.543021,
+    "country": "Ghana",
+    "region": "Savannah Region",
+    "road": "IR4",
+    "nominatimCountry": "Ghana"
+  },
+  "0F2vxx2808Cy1lKgNuOmGQ": {
+    "metas": [
+      "meta_1769520871520_0ont0"
+    ],
+    "lat": 6.4387993,
+    "lng": -1.6329224,
+    "country": "Ghana",
+    "region": "Ashanti Region",
+    "road": "N10",
+    "nominatimCountry": "Ghana"
+  },
+  "iIB34ZcG2pB-IjQ1SDRyFQ": {
+    "metas": [
+      "meta_1769520871520_6c41z"
+    ],
+    "lat": 5.5814356,
+    "lng": -0.2072885,
+    "country": "Ghana",
+    "region": "Greater Accra Region",
+    "road": "Akoa Ndor Street",
+    "nominatimCountry": "Ghana"
+  },
+  "nT8sWl27TEWCIIFOG0Nkdg": {
+    "metas": [
+      "meta_1769520871520_31pcq"
+    ],
+    "lat": 9.1593185,
+    "lng": -1.427517,
+    "country": "Ghana",
+    "region": "Savannah Region",
+    "road": "Damongo - Sawla Road",
+    "nominatimCountry": "Ghana"
+  },
+  "EalgMBTyvia58nbxn_tTOg": {
+    "metas": [
+      "meta_1769520871520_s05en"
+    ],
+    "lat": 6.522111,
+    "lng": -1.310323,
+    "country": "Ghana",
+    "region": "Ashanti Region",
+    "road": "Pemenase",
+    "nominatimCountry": "Ghana"
+  },
+  "14inWp5fhpGwURy7P-v1DQ": {
+    "metas": [
+      "meta_1769520871521_linhg"
+    ],
+    "lat": 5.6206849,
+    "lng": -0.1834512,
+    "country": "Ghana",
+    "region": "Greater Accra Region",
+    "road": "George Walker Bush Highway",
+    "nominatimCountry": "Ghana"
+  },
+  "WRYirwBZq4bT2Mo2QYxt5A": {
+    "metas": [
+      "meta_1769520871521_19zqk"
+    ],
+    "lat": 5.0962842,
+    "lng": -1.3350472,
+    "country": "Ghana",
+    "region": "Central Region",
+    "road": "Rawlings High street",
+    "nominatimCountry": "Ghana"
+  },
+  "78fS46eNItSvWBnKVV3fZA": {
+    "metas": [
+      "meta_1769520871521_z42ar"
+    ],
+    "lat": 10.2442965,
+    "lng": -0.8283469,
+    "country": "Ghana",
+    "region": "North East Region",
+    "road": "N10",
+    "nominatimCountry": "Ghana"
+  },
+  "I1dUnb5_cysZctcbRMV4Iw": {
+    "metas": [
+      "meta_1769520871521_jw0kd"
+    ],
+    "lat": 6.582151,
+    "lng": -0.8133169,
+    "country": "Ghana",
+    "region": "Eastern Region",
+    "road": "Nkawkaw High Street",
+    "nominatimCountry": "Ghana"
+  },
+  "NWQZ9rAiD6gDFgEBGOTvDQ": {
+    "metas": [
+      "meta_1769520871521_w8mla"
+    ],
+    "lat": 5.5839721,
+    "lng": -2.0431872,
+    "country": "Ghana",
+    "region": "Western Region",
+    "road": "IR6",
+    "nominatimCountry": "Ghana"
+  },
+  "2ng2SGIgsfRYZurS_23lBg": {
+    "metas": [
+      "meta_1769520871521_7hpgm"
+    ],
+    "lat": 5.0732971,
+    "lng": -2.6641149,
+    "country": "Ghana",
+    "region": "Western Region",
+    "road": "Half Assini - Mpataba Road",
+    "nominatimCountry": "Ghana"
+  },
+  "5NGTRWXsd-PSuXaYj5gNrA": {
+    "metas": [
+      "meta_1769520871521_0kga0"
+    ],
+    "lat": 8.9120918,
+    "lng": -0.4848436,
+    "country": "Ghana",
+    "region": "Savannah Region",
+    "road": "IR4",
+    "nominatimCountry": "Ghana"
+  },
+  "aTNG4PPv47kupHJ6DJwztw": {
+    "metas": [
+      "meta_1769520871521_wan19"
+    ],
+    "lat": 5.9771614,
+    "lng": 1.0186978,
+    "country": "Ghana",
+    "region": "Volta Region",
+    "road": "R11",
+    "nominatimCountry": "Ghana"
+  },
+  "EgF1EBHUqI7J4cVy9AurAQ": {
+    "metas": [
+      "meta_1769520871521_12c60"
+    ],
+    "lat": 5.8949703,
+    "lng": 0.0451241,
+    "country": "Ghana",
+    "region": "Greater Accra Region",
+    "road": "N2",
+    "nominatimCountry": "Ghana"
+  },
+  "DeqVyWWTbPkNztc8ySdATQ": {
+    "metas": [
+      "meta_1769520871521_8xb1i"
+    ],
+    "lat": 5.2491995,
+    "lng": -2.6422688,
+    "country": "Ghana",
+    "region": "Western Region",
+    "road": null,
+    "nominatimCountry": "Ghana"
+  },
+  "xilANqMkNfhoJVB7pfzvxQ": {
+    "metas": [
+      "meta_1769520871521_rg8yq"
+    ],
+    "lat": 7.712825,
+    "lng": -1.6957935,
+    "country": "Ghana",
+    "region": "Bono East Region",
+    "road": "Boabeng",
+    "nominatimCountry": "Ghana"
+  },
+  "0Eq_osx8pZrA79z8-6m6Yg": {
+    "metas": [
+      "meta_1769520872696_dl14x"
+    ],
+    "lat": -0.603029,
+    "lng": 38.117595,
+    "country": "Kenya",
+    "region": "Kitui County",
+    "road": "Katse-Kamuw'ongo Road C93",
+    "nominatimCountry": "Kenya"
+  },
+  "3el5RvWr5tcVcy4PDAbDRg": {
+    "metas": [
+      "meta_1769520872696_dh8w2"
+    ],
+    "lat": 0.642842,
+    "lng": 38.985124,
+    "country": "Kenya",
+    "region": "Isiolo",
+    "road": "Isiolo-Mandera Road",
+    "nominatimCountry": "Kenya"
+  },
+  "O813zmgOlFhzw8bB7e0dWA": {
+    "metas": [
+      "meta_1769520872696_h25ff"
+    ],
+    "lat": -1.5405466,
+    "lng": 37.1376713,
+    "country": "Kenya",
+    "region": "Machakos County",
+    "road": null,
+    "nominatimCountry": "Kenya"
+  },
+  "LPpQuEJ4l7vnHYV7LG6shw": {
+    "metas": [
+      "meta_1769520872696_xfa3b"
+    ],
+    "lat": -2.8999748,
+    "lng": 38.3623282,
+    "country": "Kenya",
+    "region": "Taita–Taveta",
+    "road": "Mombasa Road",
+    "nominatimCountry": "Kenya"
+  },
+  "1jw-Vey2xgG2l2fVRHFYmw": {
+    "metas": [
+      "meta_1769520872696_evpqv"
+    ],
+    "lat": -3.9969233,
+    "lng": 39.5744164,
+    "country": "Kenya",
+    "region": "Mombasa County",
+    "road": "Mombasa Road",
+    "nominatimCountry": "Kenya"
+  },
+  "TghX4Fp2J1UGwA6C6alNFA": {
+    "metas": [
+      "meta_1769520872696_9p6wk"
+    ],
+    "lat": -0.6510213,
+    "lng": 37.1982532,
+    "country": "Kenya",
+    "region": "Kirinyaga County",
+    "road": "A2",
+    "nominatimCountry": "Kenya"
+  },
+  "cmmv1WlEVk6P7vJw24oD7Q": {
+    "metas": [
+      "meta_1769520872696_55zjx"
+    ],
+    "lat": -2.0794247,
+    "lng": 37.4732047,
+    "country": "Kenya",
+    "region": "Makueni",
+    "road": "C99",
+    "nominatimCountry": "Kenya"
+  },
+  "luwD8MS4Exs7VAVK12M0aQ": {
+    "metas": [
+      "meta_1769520872697_4pf6w"
+    ],
+    "lat": -1.2593429,
+    "lng": 36.7830484,
+    "country": "Kenya",
+    "region": "Nairobi County",
+    "road": "Nairobi Expressway",
+    "nominatimCountry": "Kenya"
+  },
+  "pf_hLsZyPWBk8gsLMZAagA": {
+    "metas": [
+      "meta_1769520872697_9c16f"
+    ],
+    "lat": -0.1986709,
+    "lng": 35.9887148,
+    "country": "Kenya",
+    "region": "Nakuru",
+    "road": "Nakuru-Sigor Road",
+    "nominatimCountry": "Kenya"
+  },
+  "cFtqd846myAIwAhdC11IWg": {
+    "metas": [
+      "meta_1769520872697_9mszl"
+    ],
+    "lat": 3.0015867,
+    "lng": 36.0539079,
+    "country": "Kenya",
+    "region": "Turkana County",
+    "road": "A1 Lodwar - Nakalei - A4 South Horr Road",
+    "nominatimCountry": "Kenya"
+  },
+  "FH9rPtS11DYlMLA24Rfmgw": {
+    "metas": [
+      "meta_1769520872697_zae8k"
+    ],
+    "lat": -4.1049202,
+    "lng": 39.6501531,
+    "country": "Kenya",
+    "region": "Mombasa County",
+    "road": null,
+    "nominatimCountry": "Kenya"
+  },
+  "69caMboERW6xbUuJeLDhjw": {
+    "metas": [
+      "meta_1769520872697_f2v9g"
+    ],
+    "lat": -4.001008,
+    "lng": 39.6078149,
+    "country": "Kenya",
+    "region": "Mombasa County",
+    "road": "Jomvu",
+    "nominatimCountry": "Kenya"
+  },
+  "RKXFQMd1rdQ8SU_Rej7mCw": {
+    "metas": [
+      "meta_1769520872697_dvbg2"
+    ],
+    "lat": -1.6076415,
+    "lng": 37.1712526,
+    "country": "Kenya",
+    "region": "Machakos County",
+    "road": "Konza sublocation",
+    "nominatimCountry": "Kenya"
+  },
+  "lrrBy0jqWgfg-t3uZd5VKw": {
+    "metas": [
+      "meta_1769520872697_z1mey"
+    ],
+    "lat": -0.8447486,
+    "lng": 37.2324829,
+    "country": "Kenya",
+    "region": "Machakos County",
+    "road": "Embu-Nairobi Highway",
+    "nominatimCountry": "Kenya"
+  },
+  "uTSpuqWUNRiNb8_me76Esg": {
+    "metas": [
+      "meta_1769520872697_cdlsl"
+    ],
+    "lat": -2.1434908,
+    "lng": 37.5705432,
+    "country": "Kenya",
+    "region": "Kajiado County",
+    "road": "Mombasa Road",
+    "nominatimCountry": "Kenya"
+  },
+  "fqWE9hDGZbcGkFSY4xsJzg": {
+    "metas": [
+      "meta_1769520872697_9hotf"
+    ],
+    "lat": -4.302664,
+    "lng": 39.557327,
+    "country": "Kenya",
+    "region": "Kwale",
+    "road": "Ukunda-Ramisi Road",
+    "nominatimCountry": "Kenya"
+  },
+  "9UsgBpDdjsqtVwxGhGAkfA": {
+    "metas": [
+      "meta_1769520872697_auiyg"
+    ],
+    "lat": 0.3262288,
+    "lng": 34.5455669,
+    "country": "Kenya",
+    "region": "Kakamega County",
+    "road": "Kakamega-Mumias Road",
+    "nominatimCountry": "Kenya"
+  },
+  "oL5wth9V0weaWq6m6wMLlQ": {
+    "metas": [
+      "meta_1769520872697_shbww"
+    ],
+    "lat": -1.5126092,
+    "lng": 38.0287381,
+    "country": "Kenya",
+    "region": "Kitui County",
+    "road": "Kibwezi - Kitui Road",
+    "nominatimCountry": "Kenya"
+  },
+  "A7e9wy0v-9JVE7zyPdf8Og": {
+    "metas": [
+      "meta_1769520872697_qzps1"
+    ],
+    "lat": 2.9157769,
+    "lng": 35.6179753,
+    "country": "Kenya",
+    "region": "Turkana County",
+    "road": "Kapenguria-Lodwar Road",
+    "nominatimCountry": "Kenya"
+  },
+  "jeoiH28G8fLYDbVAA1vcYg": {
+    "metas": [
+      "meta_1769520872697_onqwe"
+    ],
+    "lat": -2.557016,
+    "lng": 38.186783,
+    "country": "Kenya",
+    "region": "Makueni",
+    "road": null,
+    "nominatimCountry": "Kenya"
+  },
+  "xYmQmVbuOUXTBINzLDnLGw": {
+    "metas": [
+      "meta_1769520872697_xx3oi",
+      "meta_1769520872697_0kb5z"
+    ],
+    "lat": -0.4546902,
+    "lng": 36.7145542,
+    "country": "Kenya",
+    "region": "Nyeri",
+    "road": "Aberdare Park Road",
+    "nominatimCountry": "Kenya"
+  },
+  "MdoG7XxEUQY2iE--Lfobzw": {
+    "metas": [
+      "meta_1769520872697_cm1og"
+    ],
+    "lat": 1.3097049,
+    "lng": 39.849765,
+    "country": "Kenya",
+    "region": "Wajir County",
+    "road": "Isiolo-Mandera Road",
+    "nominatimCountry": "Kenya"
+  },
+  "5n2ybF9LpAWQvC6kFZuXeQ": {
+    "metas": [
+      "meta_1769520872697_ukf3l"
+    ],
+    "lat": 1.7912502,
+    "lng": 37.8556088,
+    "country": "Kenya",
+    "region": "Marsabit County",
+    "road": "A2",
+    "nominatimCountry": "Kenya"
+  },
+  "ThGtXIVRvtdCACYxar2sRw": {
+    "metas": [
+      "meta_1769520872697_299o3"
+    ],
+    "lat": 3.1207162,
+    "lng": 38.2683784,
+    "country": "Kenya",
+    "region": "Marsabit County",
+    "road": "Marsabit-Moyale Road",
+    "nominatimCountry": "Kenya"
+  },
+  "ohc0H7_T9zjSBaJ4ynKkUA": {
+    "metas": [
+      "meta_1769520872697_vkmuy"
+    ],
+    "lat": 0.3016795,
+    "lng": 40.7445214,
+    "country": "Kenya",
+    "region": "Garissa",
+    "road": "A3",
+    "nominatimCountry": "Kenya"
+  },
+  "EUOSzy6KXOAghRQZ1OHvcg": {
+    "metas": [
+      "meta_1769520872697_3gfdi"
+    ],
+    "lat": -0.0484759,
+    "lng": 34.8723928,
+    "country": "Kenya",
+    "region": "Kisumu County",
+    "road": "C674",
+    "nominatimCountry": "Kenya"
+  },
+  "b-CL_T4c03vATU7F2s_nkw": {
+    "metas": [
+      "meta_1769520872697_u4ox0"
+    ],
+    "lat": 1.1240803,
+    "lng": 39.6346122,
+    "country": "Kenya",
+    "region": "Wajir County",
+    "road": "Isiolo-Mandera Road",
+    "nominatimCountry": "Kenya"
+  },
+  "W9yDXjXzEAd75fDhfhz4Qw": {
+    "metas": [
+      "meta_1769520872697_yytam"
+    ],
+    "lat": -1.2981555,
+    "lng": 36.8234844,
+    "country": "Kenya",
+    "region": "Nairobi County",
+    "road": "Uhuru Highway",
+    "nominatimCountry": "Kenya"
+  },
+  "iqzkDE1tIhNGSBLACUJXGw": {
+    "metas": [
+      "meta_1769520872697_lje7w"
+    ],
+    "lat": -2.5136004,
+    "lng": 36.8398199,
+    "country": "Kenya",
+    "region": "Kajiado County",
+    "road": "A2",
+    "nominatimCountry": "Kenya"
+  },
+  "EX8sLOsjqsmovPpBaRTauw": {
+    "metas": [
+      "meta_1769520872697_6yfby"
+    ],
+    "lat": -0.5354998,
+    "lng": 34.4561523,
+    "country": "Kenya",
+    "region": "Homa Bay County",
+    "road": "B2",
+    "nominatimCountry": "Kenya"
+  },
+  "5Q2GZk66Fyw6gEIzdaSqxw": {
+    "metas": [
+      "meta_1769520872697_30sn3"
+    ],
+    "lat": -1.499786,
+    "lng": 35.0851903,
+    "country": "Kenya",
+    "region": "Narok",
+    "road": null,
+    "nominatimCountry": "Kenya"
+  },
+  "_NJym_OV1bL2tZnQYyLOWA": {
+    "metas": [
+      "meta_1769520872697_m8pew"
+    ],
+    "lat": -2.6814101,
+    "lng": 37.3223826,
+    "country": "Kenya",
+    "region": "Kajiado County",
+    "road": "Oldare-1 Road",
+    "nominatimCountry": "Kenya"
+  },
+  "kAmZsRnJOMTXyIr1NCyjjA": {
+    "metas": [
+      "meta_1769520872697_0g9fu"
+    ],
+    "lat": 1.0347313,
+    "lng": 34.8367405,
+    "country": "Kenya",
+    "region": "Trans-Nzoia County",
+    "road": "Mt. Elgon National Park Road",
+    "nominatimCountry": "Kenya"
+  },
+  "u5uGbWYhP612H8zN1zt4qg": {
+    "metas": [
+      "meta_1769520872697_5rtr5"
+    ],
+    "lat": 3.0446835,
+    "lng": 35.9491565,
+    "country": "Kenya",
+    "region": "Turkana County",
+    "road": "A1 Lodwar - Nakalei - A4 South Horr Road",
+    "nominatimCountry": "Kenya"
+  },
+  "5AXCPnMMbFoUziIEb09szw": {
+    "metas": [
+      "meta_1769520872697_5abye"
+    ],
+    "lat": -3.7221101,
+    "lng": 39.8260322,
+    "country": "Kenya",
+    "region": "Kilifi County",
+    "road": "Malindi Road",
+    "nominatimCountry": "Kenya"
+  },
+  "Ny-Qn2N-4nrZaXsXYsDh1w": {
+    "metas": [
+      "meta_1769520873848_ake0a"
+    ],
+    "lat": -29.4206576,
+    "lng": 27.9126823,
+    "country": "Lesotho",
+    "region": "Maseru District",
+    "road": "A3",
+    "nominatimCountry": "Lesotho"
+  },
+  "fMeDiVuwRV89h8UWAcuUoA": {
+    "metas": [
+      "meta_1769520873848_aev1m"
+    ],
+    "lat": -29.5113222,
+    "lng": 27.5230986,
+    "country": "Lesotho",
+    "region": "Maseru District",
+    "road": "A2",
+    "nominatimCountry": "Lesotho"
+  },
+  "7RyDFJJEFhuc6JCQi5f_2g": {
+    "metas": [
+      "meta_1769520873848_6glt7"
+    ],
+    "lat": -29.7495237,
+    "lng": 27.3412906,
+    "country": "Lesotho",
+    "region": "Mafeteng District",
+    "road": "A2",
+    "nominatimCountry": "Lesotho"
+  },
+  "o23ofHHCjB2IrteWfOlOiQ": {
+    "metas": [
+      "meta_1769520873848_8labe"
+    ],
+    "lat": -29.4306392,
+    "lng": 27.9454173,
+    "country": "Lesotho",
+    "region": "Maseru District",
+    "road": "A3",
+    "nominatimCountry": "Lesotho"
+  },
+  "SrQ6AtEnU94I1qBanb4afA": {
+    "metas": [
+      "meta_1769520873848_kv6ux"
+    ],
+    "lat": -29.1775518,
+    "lng": 27.6275111,
+    "country": "Lesotho",
+    "region": "Berea District",
+    "road": "Main North 1",
+    "nominatimCountry": "Lesotho"
+  },
+  "qmqDSm9wjyQ5voDn6CfEHw": {
+    "metas": [
+      "meta_1769520873848_iokb8"
+    ],
+    "lat": -29.5952821,
+    "lng": 27.6063394,
+    "country": "Lesotho",
+    "region": "Maseru District",
+    "road": "D2301",
+    "nominatimCountry": "Lesotho"
+  },
+  "qIBMs6n13u1POVO8NzyeXw": {
+    "metas": [
+      "meta_1769520873848_tnmll"
+    ],
+    "lat": -29.5931852,
+    "lng": 28.7237567,
+    "country": "Lesotho",
+    "region": "Thaba-Tseka District",
+    "road": "A3",
+    "nominatimCountry": "Lesotho"
+  },
+  "p5uMjx35MZQbhLps1xln3w": {
+    "metas": [
+      "meta_1769520873848_tk6ln"
+    ],
+    "lat": -29.7368279,
+    "lng": 27.5938723,
+    "country": "Lesotho",
+    "region": "Mafeteng District",
+    "road": "B251",
+    "nominatimCountry": "Lesotho"
+  },
+  "FsWgotSWVQr4FAUBpLl9OQ": {
+    "metas": [
+      "meta_1769520873848_txe2t"
+    ],
+    "lat": -29.4037673,
+    "lng": 29.0894226,
+    "country": "Lesotho",
+    "region": "Mokhotlong District",
+    "road": "A31",
+    "nominatimCountry": "Lesotho"
+  },
+  "XCWe7GfuzcOpap9GUmmIiA": {
+    "metas": [
+      "meta_1769520873848_ieckv"
+    ],
+    "lat": -29.5952529,
+    "lng": 27.606782,
+    "country": "Lesotho",
+    "region": "Maseru District",
+    "road": "D2301",
+    "nominatimCountry": "Lesotho"
+  },
+  "PuFY1-rxalHVygKpwE7Eow": {
+    "metas": [
+      "meta_1769520873848_s39dm"
+    ],
+    "lat": -29.3354001,
+    "lng": 27.6276257,
+    "country": "Lesotho",
+    "region": "Maseru District",
+    "road": "C211",
+    "nominatimCountry": "Lesotho"
+  },
+  "SrwBm6yvDMIC54hNn6DwuA": {
+    "metas": [
+      "meta_1769520873848_slele"
+    ],
+    "lat": -29.5206203,
+    "lng": 28.3301002,
+    "country": "Lesotho",
+    "region": "Thaba-Tseka District",
+    "road": "A3",
+    "nominatimCountry": "Lesotho"
+  },
+  "B0A5dZVo50OWhpn2_efaZg": {
+    "metas": [
+      "meta_1769520873848_9bk7q"
+    ],
+    "lat": -29.1675792,
+    "lng": 28.4833378,
+    "country": "Lesotho",
+    "region": "Leribe District",
+    "road": "A8",
+    "nominatimCountry": "Lesotho"
+  },
+  "2XMYzSgzgJ-JgdVR5syO1g": {
+    "metas": [
+      "meta_1769520873848_yqaoh"
+    ],
+    "lat": -29.6525051,
+    "lng": 27.4585079,
+    "country": "Lesotho",
+    "region": "Maseru District",
+    "road": "A2",
+    "nominatimCountry": "Lesotho"
+  },
+  "tNznEuKwoU4k3MNaZmXPzQ": {
+    "metas": [
+      "meta_1769520873848_rk3kd"
+    ],
+    "lat": -29.2780087,
+    "lng": 28.5471896,
+    "country": "Lesotho",
+    "region": "Leribe District",
+    "road": "A8",
+    "nominatimCountry": "Lesotho"
+  },
+  "UNl81gDqNURqJ8BMJD5nVA": {
+    "metas": [
+      "meta_1769520873848_nwmgi"
+    ],
+    "lat": -29.6562756,
+    "lng": 27.8126394,
+    "country": "Lesotho",
+    "region": "Maseru District",
+    "road": "A5",
+    "nominatimCountry": "Lesotho"
+  },
+  "joUr1G5Nwsw2VLYKBOPeKA": {
+    "metas": [
+      "meta_1769520873848_d4e10"
+    ],
+    "lat": -29.9409915,
+    "lng": 29.0306253,
+    "country": "Lesotho",
+    "region": "Qacha's Nek District",
+    "road": "B45",
+    "nominatimCountry": "Lesotho"
+  },
+  "ldpL5ZD3ZkUG4b7odsHYYA": {
+    "metas": [
+      "meta_1769520873848_7r68z"
+    ],
+    "lat": -29.3139929,
+    "lng": 27.4834963,
+    "country": "Lesotho",
+    "region": "Maseru District",
+    "road": "Maseru Central",
+    "nominatimCountry": "Lesotho"
+  },
+  "gn7JTJ0bzktJyH4-rtMKmA": {
+    "metas": [
+      "meta_1769520873848_31gon"
+    ],
+    "lat": -30.1174358,
+    "lng": 28.6819355,
+    "country": "Lesotho",
+    "region": "Qacha's Nek District",
+    "road": "Maboloka Road",
+    "nominatimCountry": "Lesotho"
+  },
+  "3qcxDB6N59xqk9wA5m9aMg": {
+    "metas": [
+      "meta_1769520875030_93xcz"
+    ],
+    "lat": -22.110459,
+    "lng": 43.279915,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Ankidranoka",
+    "nominatimCountry": "Madagascar"
+  },
+  "x8j8q4S96SaAm_ybTB2H2w": {
+    "metas": [
+      "meta_1769520875030_qgifu"
+    ],
+    "lat": -21.836704,
+    "lng": 43.291197,
+    "country": "Madagascar",
+    "region": "Morombe",
+    "road": "Nosy Fatsa",
+    "nominatimCountry": "Madagascar"
+  },
+  "Hu77NWz_zDiWOduCiqyPyg": {
+    "metas": [
+      "meta_1769520875030_fkxr5"
+    ],
+    "lat": -13.666753,
+    "lng": 48.453436,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "AHpFNMBPV2tFtODJ8jdOlw": {
+    "metas": [
+      "meta_1769520875030_3cvbi"
+    ],
+    "lat": -20.1478949,
+    "lng": 44.507064,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": "N 8",
+    "nominatimCountry": "Madagascar"
+  },
+  "5P3WdN5NxMLjbRrWpVkJYA": {
+    "metas": [
+      "meta_1769520875030_fyqs1"
+    ],
+    "lat": -13.6785937,
+    "lng": 48.4522565,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": "N 6",
+    "nominatimCountry": "Madagascar"
+  },
+  "b48GwiZyqByZkiuzaKQ_HA": {
+    "metas": [
+      "meta_1769520875030_dsxb9"
+    ],
+    "lat": -13.4564933,
+    "lng": 48.3360038,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": "Nosy Komba viewpoint",
+    "nominatimCountry": "Madagascar"
+  },
+  "s6iK189jPVhEKIZd0-qRNA": {
+    "metas": [
+      "meta_1769520875030_u3j1n"
+    ],
+    "lat": -13.4429625,
+    "lng": 48.3487125,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": "Nosy Komba viewpoint",
+    "nominatimCountry": "Madagascar"
+  },
+  "dF3ikZZ1aNVQolC9t9BBBQ": {
+    "metas": [
+      "meta_1769520875030_cgla3"
+    ],
+    "lat": -13.5289872,
+    "lng": 48.4709285,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": null,
+    "nominatimCountry": "Madagascar"
   }
 }
