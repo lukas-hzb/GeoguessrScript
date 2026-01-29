@@ -82,24 +82,31 @@ jobs:
             
             const panoid = submission.panoid;
 
+            // Extract location data with fallback to meta object (for add_meta action)
+            const inputLat = submission.lat || (submission.meta ? submission.meta.lat : null);
+            const inputLng = submission.lng || (submission.meta ? submission.meta.lng : null);
+            const inputCountry = submission.country || (submission.meta ? submission.meta.country : null);
+            const inputRegion = submission.region || (submission.meta ? submission.meta.region : null);
+            const inputRoad = submission.road || (submission.meta ? submission.meta.road : null);
+
             // Ensure location entry exists with metadata and correct structure
             if (!locations[panoid] || Array.isArray(locations[panoid])) {
                 const oldMetas = Array.isArray(locations[panoid]) ? locations[panoid] : [];
                 locations[panoid] = {
                     metas: oldMetas,
-                    lat: submission.lat || (submission.meta ? submission.meta.lat : null),
-                    lng: submission.lng || (submission.meta ? submission.meta.lng : null),
-                    country: submission.country || (submission.meta ? submission.meta.country : null),
-                    region: submission.region || (submission.meta ? submission.meta.region : null),
-                    road: submission.road || (submission.meta ? submission.meta.road : null)
+                    lat: inputLat,
+                    lng: inputLng,
+                    country: inputCountry,
+                    region: inputRegion,
+                    road: inputRoad
                 };
             } else {
                 // Update metadata if provided and currently missing or updated
-                if (submission.lat) locations[panoid].lat = submission.lat;
-                if (submission.lng) locations[panoid].lng = submission.lng;
-                if (submission.country) locations[panoid].country = submission.country;
-                if (submission.region) locations[panoid].region = submission.region;
-                if (submission.road) locations[panoid].road = submission.road;
+                if (inputLat) locations[panoid].lat = inputLat;
+                if (inputLng) locations[panoid].lng = inputLng;
+                if (inputCountry) locations[panoid].country = inputCountry;
+                if (inputRegion) locations[panoid].region = inputRegion;
+                if (inputRoad) locations[panoid].road = inputRoad;
             }
 
             if (submission.action === "add_meta") {
