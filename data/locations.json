@@ -6379,5 +6379,4605 @@
     "region": "Chattogram Division",
     "road": "Sonapur",
     "nominatimCountry": "Bangladesh"
+  },
+  "DbIBmtNQz9ubzK0zG0pwJg": {
+    "metas": [
+      "meta_1769520890252_f5qq4"
+    ],
+    "lat": 24.5424321,
+    "lng": 90.030894,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "fvg13dp4ccTi5hnoc1k95Q": {
+    "metas": [
+      "meta_1769520890252_yx108"
+    ],
+    "lat": 23.3396709,
+    "lng": 90.7845793,
+    "country": "Bangladesh",
+    "region": "Chattogram Division",
+    "road": "Patua Para",
+    "nominatimCountry": "Bangladesh"
+  },
+  "ZM6CyO8OHMNfMQJI9EN5DQ": {
+    "metas": [
+      "meta_1769520890252_t6ug0"
+    ],
+    "lat": 23.8636719,
+    "lng": 90.4056663,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": "Road 11",
+    "nominatimCountry": "Bangladesh"
+  },
+  "7_1b0HL4OWB915B2hp9fyA": {
+    "metas": [
+      "meta_1769520890252_fhs89"
+    ],
+    "lat": 22.3480711,
+    "lng": 91.8007919,
+    "country": "Bangladesh",
+    "region": "Chattogram Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "wfmsLWxrmHbirlsg29VJyw": {
+    "metas": [
+      "meta_1769520890252_0g5hj"
+    ],
+    "lat": 23.2764387,
+    "lng": 89.1578453,
+    "country": "Bangladesh",
+    "region": "Khulna Division",
+    "road": "N7",
+    "nominatimCountry": "Bangladesh"
+  },
+  "ZpfTZ1spvel5OxhZjkE5TQ": {
+    "metas": [
+      "meta_1769520890252_igd3c"
+    ],
+    "lat": 24.8890726,
+    "lng": 91.8836977,
+    "country": "Bangladesh",
+    "region": "Sylhet Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "zpR7cdmViKBU6F9XqUzO9Q": {
+    "metas": [
+      "meta_1769520890252_ls3fp"
+    ],
+    "lat": 22.7031055,
+    "lng": 90.342176,
+    "country": "Bangladesh",
+    "region": "Barishal Division",
+    "road": "Nabogram Road",
+    "nominatimCountry": "Bangladesh"
+  },
+  "XOuZSrk-tGR7fRA_zswCsA": {
+    "metas": [
+      "meta_1769520890252_i5ifc"
+    ],
+    "lat": 22.8178237,
+    "lng": 89.546363,
+    "country": "Bangladesh",
+    "region": "Khulna Division",
+    "road": "Khan Jahan Nagar Road",
+    "nominatimCountry": "Bangladesh"
+  },
+  "u6loANiTFKFQrQZEwIq2vg": {
+    "metas": [
+      "meta_1769520890252_hnkfb"
+    ],
+    "lat": 22.0686097,
+    "lng": 91.0295652,
+    "country": "Bangladesh",
+    "region": "Chattogram Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "HxnpdtjYVrIFLy22XkO63A": {
+    "metas": [
+      "meta_1769520890252_4kiu9"
+    ],
+    "lat": 22.303834,
+    "lng": 91.1399129,
+    "country": "Bangladesh",
+    "region": "Chattogram Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "mLyX-Sv2je-0axwo4eIKYg": {
+    "metas": [
+      "meta_1769520891405_dmk2r"
+    ],
+    "lat": 27.4901961,
+    "lng": 89.7424524,
+    "country": "Bhutan",
+    "region": "Thimphu District",
+    "road": "PNH 1",
+    "nominatimCountry": "Bhutan"
+  },
+  "JpRAcggLhiCEbrur6YJmTg": {
+    "metas": [
+      "meta_1769520891405_wmpdp"
+    ],
+    "lat": 27.4909076,
+    "lng": 89.7422677,
+    "country": "Bhutan",
+    "region": "Thimphu District",
+    "road": "PNH 1",
+    "nominatimCountry": "Bhutan"
+  },
+  "mgfVVKfNzeHQazNKyE_3dw": {
+    "metas": [
+      "meta_1769520891405_8b4n5"
+    ],
+    "lat": 27.3203541,
+    "lng": 89.5600211,
+    "country": "Bhutan",
+    "region": "Thimphu District",
+    "road": "Thimphu to Phuentsholing Highway",
+    "nominatimCountry": "Bhutan"
+  },
+  "nHA5lFfunqDe4FK-t-Im4w": {
+    "metas": [
+      "meta_1769520891405_9xxc8"
+    ],
+    "lat": 27.2870971,
+    "lng": 90.6106278,
+    "country": "Bhutan",
+    "region": "Trongsa District",
+    "road": "Gelephu - Trongsa Highway",
+    "nominatimCountry": "Bhutan"
+  },
+  "Jtkwt86T93TL6r7yyDWrrg": {
+    "metas": [
+      "meta_1769520891405_5j0w0"
+    ],
+    "lat": 27.4167509,
+    "lng": 90.4954895,
+    "country": "Bhutan",
+    "region": "Trongsa District",
+    "road": "Gelephu - Trongsa Highway",
+    "nominatimCountry": "Bhutan"
+  },
+  "byW0dTUoCHuXF2tD5M5H_Q": {
+    "metas": [
+      "meta_1769520891405_6j8sb"
+    ],
+    "lat": 26.8805592,
+    "lng": 90.4907914,
+    "country": "Bhutan",
+    "region": "Sarpang District",
+    "road": "N Samdhen Zhung Lam",
+    "nominatimCountry": "Bhutan"
+  },
+  "HF4-bApmbUrU_DcgSWGEhQ": {
+    "metas": [
+      "meta_1769520891405_xgevi"
+    ],
+    "lat": 27.5154908,
+    "lng": 89.7970917,
+    "country": "Bhutan",
+    "region": "Punakha District",
+    "road": "PNH 1",
+    "nominatimCountry": "Bhutan"
+  },
+  "oJkw9GisJo2_cvR31yCyxQ": {
+    "metas": [
+      "meta_1769520891405_zzdv9"
+    ],
+    "lat": 27.551923,
+    "lng": 89.8734086,
+    "country": "Bhutan",
+    "region": "Punakha District",
+    "road": "Misina - Punakha Highway",
+    "nominatimCountry": "Bhutan"
+  },
+  "M9rN4KDGTdyFcZlqYxx8dA": {
+    "metas": [
+      "meta_1769520891405_idqh3"
+    ],
+    "lat": 27.1037459,
+    "lng": 89.5360288,
+    "country": "Bhutan",
+    "region": "Chukha",
+    "road": "AH-48",
+    "nominatimCountry": "Bhutan"
+  },
+  "bAkLFIMphAx0Qc7oEcV6-g": {
+    "metas": [
+      "meta_1769520891405_hw852"
+    ],
+    "lat": 26.9843203,
+    "lng": 89.5818188,
+    "country": "Bhutan",
+    "region": "Chukha",
+    "road": "Thimphu to Phuentsholing Highway",
+    "nominatimCountry": "Bhutan"
+  },
+  "SkZ4Y8fBBfHkm6VALRQoEA": {
+    "metas": [
+      "meta_1769520891405_zuz9y"
+    ],
+    "lat": 26.8613738,
+    "lng": 90.491561,
+    "country": "Bhutan",
+    "region": "Sarpang District",
+    "road": "Gatshel Lam SE",
+    "nominatimCountry": "Bhutan"
+  },
+  "obxe5IgPdJ3O7tS1thAiHg": {
+    "metas": [
+      "meta_1769520891405_7aq43"
+    ],
+    "lat": 27.437054,
+    "lng": 90.214789,
+    "country": "Bhutan",
+    "region": "Wangdue Phodrang District",
+    "road": "Lamazhuthri - Tongchey Road",
+    "nominatimCountry": "Bhutan"
+  },
+  "R9bmQR-g6I3fI1HrV_Zy-A": {
+    "metas": [
+      "meta_1769520891405_jtylh"
+    ],
+    "lat": 27.3863866,
+    "lng": 89.2812762,
+    "country": "Bhutan",
+    "region": "Haa District",
+    "road": "Namgayling Lam",
+    "nominatimCountry": "Bhutan"
+  },
+  "2424O-twyujLvhb9LmDXsQ": {
+    "metas": [
+      "meta_1769520891405_yhn2g"
+    ],
+    "lat": 27.309266,
+    "lng": 91.436237,
+    "country": "Bhutan",
+    "region": "Mongar District",
+    "road": "Zangkhar",
+    "nominatimCountry": "Bhutan"
+  },
+  "sSEfkEbFnbr1wfrU7bJU6A": {
+    "metas": [
+      "meta_1769520891405_aqeow"
+    ],
+    "lat": 26.8828766,
+    "lng": 90.4657003,
+    "country": "Bhutan",
+    "region": "Sarpang District",
+    "road": "Gelephu-Thimphu Highway",
+    "nominatimCountry": "Bhutan"
+  },
+  "uHUaOgvMgvWKWAWkiT7qRA": {
+    "metas": [
+      "meta_1769520891405_en6os"
+    ],
+    "lat": 27.408446,
+    "lng": 89.4221792,
+    "country": "Bhutan",
+    "region": "Paro District",
+    "road": "Chunzom - Paro Highway",
+    "nominatimCountry": "Bhutan"
+  },
+  "tnKcxrF3t1j_gFiXEPdeyw": {
+    "metas": [
+      "meta_1769520891405_p7gic"
+    ],
+    "lat": 27.5642476,
+    "lng": 90.7459526,
+    "country": "Bhutan",
+    "region": "Bumthang District",
+    "road": "Pedseling Gompa Trail",
+    "nominatimCountry": "Bhutan"
+  },
+  "mjH9ueMEbiVC3ePgA4wHAg": {
+    "metas": [
+      "meta_1769520893359_v0krd"
+    ],
+    "lat": 13.5870234,
+    "lng": 103.4175717,
+    "country": "Cambodia",
+    "region": "Siem Reap",
+    "road": "Kralanh",
+    "nominatimCountry": "Cambodia"
+  },
+  "aqfQseYliPQpWQEqY-X13A": {
+    "metas": [
+      "meta_1769520893359_508vr"
+    ],
+    "lat": 13.5839161,
+    "lng": 102.9806646,
+    "country": "Cambodia",
+    "region": "Bantey Meanchey",
+    "road": "Street 71",
+    "nominatimCountry": "Cambodia"
+  },
+  "kgJ7PI2gncHmqqhs3osMaA": {
+    "metas": [
+      "meta_1769520893359_1iq8b"
+    ],
+    "lat": 13.5950246,
+    "lng": 103.3771129,
+    "country": "Cambodia",
+    "region": "Bantey Meanchey",
+    "road": "National Highway 6",
+    "nominatimCountry": "Cambodia"
+  },
+  "ZdljSlLFkKAAAAQvxgSQgg": {
+    "metas": [
+      "meta_1769520894749_exxz1"
+    ],
+    "lat": 30.2232945,
+    "lng": 120.1526687,
+    "country": "China",
+    "region": "Zhejiang",
+    "road": "凤凰山登山道（万松岭西-玉皇山）",
+    "nominatimCountry": "China"
+  },
+  "-mF5CTTJSsmh9bt_IcOydQ": {
+    "metas": [
+      "meta_1769520896007_ssz0i"
+    ],
+    "lat": 22.2777098,
+    "lng": 114.1750147,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Hennessy Road",
+    "nominatimCountry": "China"
+  },
+  "Q5T74g8cxEMoD2l7Skzj8w": {
+    "metas": [
+      "meta_1769520896007_qni1j"
+    ],
+    "lat": 22.4716932,
+    "lng": 114.1821711,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Sha Lo Tung Road",
+    "nominatimCountry": "China"
+  },
+  "K-avL0bgfBrM9F6zRfrUpQ": {
+    "metas": [
+      "meta_1769520896007_550vi"
+    ],
+    "lat": 22.3688037,
+    "lng": 114.1406757,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Tai Pak Tin Lane",
+    "nominatimCountry": "China"
+  },
+  "FD3DD9tsZvN91B4vANFiWg": {
+    "metas": [
+      "meta_1769520896007_dwskm"
+    ],
+    "lat": 22.3690372,
+    "lng": 114.1163475,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Chung On Street",
+    "nominatimCountry": "China"
+  },
+  "vmgr-a5yOqqZ5TIYFn_QaQ": {
+    "metas": [
+      "meta_1769520896007_wjaax"
+    ],
+    "lat": 22.2758811,
+    "lng": 114.1612672,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Kennedy Road",
+    "nominatimCountry": "China"
+  },
+  "NDWKS9M30bn_UfIYGl27Tg": {
+    "metas": [
+      "meta_1769520896007_z2knf"
+    ],
+    "lat": 22.5135678,
+    "lng": 114.1763952,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "North District",
+    "nominatimCountry": "China"
+  },
+  "nbVW5zlBeju9wIx5zBjjtQ": {
+    "metas": [
+      "meta_1769520896007_6lb1g"
+    ],
+    "lat": 22.2797407,
+    "lng": 114.1563751,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Lower Albert Road",
+    "nominatimCountry": "China"
+  },
+  "CrZy667jjwq7QrBoCC5HXA": {
+    "metas": [
+      "meta_1769520896007_dxsp8"
+    ],
+    "lat": 22.2802586,
+    "lng": 114.1578873,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Queen's Road Central",
+    "nominatimCountry": "China"
+  },
+  "5R5AE6IrExzfXP4loJ4MJQ": {
+    "metas": [
+      "meta_1769520896007_lx00l"
+    ],
+    "lat": 22.2822632,
+    "lng": 114.1591107,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Ice House Street",
+    "nominatimCountry": "China"
+  },
+  "ac6SCo7l2_tdFsmrtCgfGQ": {
+    "metas": [
+      "meta_1769520896007_tx6e8"
+    ],
+    "lat": 22.2331007,
+    "lng": 114.2224911,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Tai Tam Road",
+    "nominatimCountry": "China"
+  },
+  "bzOwROoZoXhtisNKwdLLeQ": {
+    "metas": [
+      "meta_1769520896007_i5t1b"
+    ],
+    "lat": 22.2771879,
+    "lng": 114.1702983,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Fenwick Street",
+    "nominatimCountry": "China"
+  },
+  "weln8qaQ_ZYRV3Qbdf9ffw": {
+    "metas": [
+      "meta_1769520896007_xn1oy"
+    ],
+    "lat": 22.2824692,
+    "lng": 114.1648551,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Lung Wo Road",
+    "nominatimCountry": "China"
+  },
+  "hRKmvHJBKfyz82ifoS4tWw": {
+    "metas": [
+      "meta_1769520896007_9xehk"
+    ],
+    "lat": 22.2774537,
+    "lng": 114.1721639,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Hennessy Road",
+    "nominatimCountry": "China"
+  },
+  "uUAY6Ig905PEiKwvrISXew": {
+    "metas": [
+      "meta_1769520896007_4ow6g"
+    ],
+    "lat": 22.4841123,
+    "lng": 114.1010466,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "North District",
+    "nominatimCountry": "China"
+  },
+  "mMISdt7DgpE3eJL9v31ifg": {
+    "metas": [
+      "meta_1769520896007_emh52"
+    ],
+    "lat": 22.2865574,
+    "lng": 114.1518174,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Des Voeux Road Central",
+    "nominatimCountry": "China"
+  },
+  "aYGhzRyyYxIzxQdK3WYTOA": {
+    "metas": [
+      "meta_1769520896007_8xkon"
+    ],
+    "lat": 22.4649489,
+    "lng": 113.99763,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Tin Shui Road",
+    "nominatimCountry": "China"
+  },
+  "crBqp5xS6gEdGSc5o3AcOg": {
+    "metas": [
+      "meta_1769520896007_oc1cn"
+    ],
+    "lat": 22.3176022,
+    "lng": 114.170244,
+    "country": "Hong Kong",
+    "region": "Kowloon",
+    "road": "Shantung Street",
+    "nominatimCountry": "China"
+  },
+  "nRk05a-K8BHEj1sKi1uIeQ": {
+    "metas": [
+      "meta_1769520896007_j45he"
+    ],
+    "lat": 22.4762873,
+    "lng": 114.0361465,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Bauhinia Road West",
+    "nominatimCountry": "China"
+  },
+  "gvwWthB3NhfCbbOTpLkZWw": {
+    "metas": [
+      "meta_1769520896007_mxlo1"
+    ],
+    "lat": 22.2821668,
+    "lng": 114.1605473,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Edinburgh Square",
+    "nominatimCountry": "China"
+  },
+  "zVp4fzJZeATsiZwH3-iMHA": {
+    "metas": [
+      "meta_1769520896007_l1s5q"
+    ],
+    "lat": 22.2793073,
+    "lng": 114.1524675,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Mosque Street",
+    "nominatimCountry": "China"
+  },
+  "3sRSVbr19NOAlUhGCcQVvw": {
+    "metas": [
+      "meta_1769520896007_fzjwd"
+    ],
+    "lat": 22.2873638,
+    "lng": 114.2149966,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Taikoo Wan Road",
+    "nominatimCountry": "China"
+  },
+  "ZSwYIANkAFoaYbB_f7lrNQ": {
+    "metas": [
+      "meta_1769520896007_s6o6k"
+    ],
+    "lat": 22.3164875,
+    "lng": 113.9405892,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Sky City Road",
+    "nominatimCountry": "China"
+  },
+  "OhjYVhzJJM4oEcZAeXzlkg": {
+    "metas": [
+      "meta_1769520896007_hq4f7"
+    ],
+    "lat": 22.2945861,
+    "lng": 113.9468573,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Yi Tung Road",
+    "nominatimCountry": "China"
+  },
+  "DKMjA7dJQRXBoVsM8CL6lQ": {
+    "metas": [
+      "meta_1769520896007_usli8"
+    ],
+    "lat": 22.3507058,
+    "lng": 114.0729187,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Pak Lai Road",
+    "nominatimCountry": "China"
+  },
+  "lFiSfnYM7Nv0SLgMHVXBQw": {
+    "metas": [
+      "meta_1769520896007_lj3sc"
+    ],
+    "lat": 22.3792945,
+    "lng": 114.1926611,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Tai Chung Kiu Road",
+    "nominatimCountry": "China"
+  },
+  "7e-gA0m1Pma85wP__vXqCA": {
+    "metas": [
+      "meta_1769520896007_0i504"
+    ],
+    "lat": 22.294062,
+    "lng": 113.895299,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "South Perimeter Road",
+    "nominatimCountry": "China"
+  },
+  "eAlB7kB1B6miMsPIuBBcmg": {
+    "metas": [
+      "meta_1769520896007_sfjec"
+    ],
+    "lat": 22.3187455,
+    "lng": 114.0413571,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Fantasy Road",
+    "nominatimCountry": "China"
+  },
+  "lm0zEC9KE-IlqAtr7gwEOA": {
+    "metas": [
+      "meta_1769520896007_f9ljx"
+    ],
+    "lat": 22.2840819,
+    "lng": 114.0395476,
+    "country": "Hong Kong",
+    "region": "New Territories",
+    "road": "Chi Yan Street",
+    "nominatimCountry": "China"
+  },
+  "jqcfgcNH_vAO3jKl3d22Yg": {
+    "metas": [
+      "meta_1769520896007_1a0bt"
+    ],
+    "lat": 22.2781665,
+    "lng": 114.1468347,
+    "country": "Hong Kong",
+    "region": "Hong Kong",
+    "road": "Lugard Road",
+    "nominatimCountry": "China"
+  },
+  "QpLNllnHaykbtmWkrq5OcA": {
+    "metas": [
+      "meta_1769520897190_0feft"
+    ],
+    "lat": 17.248424,
+    "lng": 78.42641,
+    "country": "India",
+    "region": "Telangana",
+    "road": "Terminal 2 Departure Road",
+    "nominatimCountry": "India"
+  },
+  "vwLubjQkMOT3owdrmGl1VQ": {
+    "metas": [
+      "meta_1769520897190_x6dik"
+    ],
+    "lat": 28.3597213,
+    "lng": 75.5836665,
+    "country": "India",
+    "region": "Rajasthan",
+    "road": "T-lawns",
+    "nominatimCountry": "India"
+  },
+  "krbUbnDrRRO8oKmS5xfBDw": {
+    "metas": [
+      "meta_1769520897190_j07om"
+    ],
+    "lat": 16.151463,
+    "lng": 77.383735,
+    "country": "India",
+    "region": "Karnataka",
+    "road": "Mantralaya Road",
+    "nominatimCountry": "India"
+  },
+  "ZxfeJ3Wbm0PRsbdBQjP_pQ": {
+    "metas": [
+      "meta_1769520897191_k9oh4"
+    ],
+    "lat": 13.0073542,
+    "lng": 80.1972009,
+    "country": "India",
+    "region": "Tamil Nadu",
+    "road": "Binny Road",
+    "nominatimCountry": "India"
+  },
+  "fMHt7enwPxq6iPKw8jPNPw": {
+    "metas": [
+      "meta_1769520897191_qzv9d"
+    ],
+    "lat": 16.9055211,
+    "lng": 78.5295628,
+    "country": "India",
+    "region": "Telangana",
+    "road": "NH765",
+    "nominatimCountry": "India"
+  },
+  "YF-QJLgpB316c_8VCQcwww": {
+    "metas": [
+      "meta_1769520897191_v59xj"
+    ],
+    "lat": 30.4354306,
+    "lng": 75.8913324,
+    "country": "India",
+    "region": "Punjab",
+    "road": "SH11",
+    "nominatimCountry": "India"
+  },
+  "CcVp1F0YnoTU0QXKU2_0Dg": {
+    "metas": [
+      "meta_1769520897191_zql3n"
+    ],
+    "lat": 30.8679955,
+    "lng": 75.4565896,
+    "country": "India",
+    "region": "Punjab",
+    "road": "Leelan Megh Singh",
+    "nominatimCountry": "India"
+  },
+  "qva-4Z07NNSKxa7fEIkojA": {
+    "metas": [
+      "meta_1769520897191_mktuf"
+    ],
+    "lat": 16.173914,
+    "lng": 77.3700234,
+    "country": "India",
+    "region": "Karnataka",
+    "road": "Mantralaya Road",
+    "nominatimCountry": "India"
+  },
+  "42MeCdo1V_lm2CtsASta1Q": {
+    "metas": [
+      "meta_1769520897191_s1m9l"
+    ],
+    "lat": 24.714745,
+    "lng": 93.904693,
+    "country": "India",
+    "region": "Manipur",
+    "road": "NH137A",
+    "nominatimCountry": "India"
+  },
+  "NC0pNVpdTXh_dKZ0vNlTwg": {
+    "metas": [
+      "meta_1769520897191_ieejz"
+    ],
+    "lat": 19.347053,
+    "lng": 77.774324,
+    "country": "India",
+    "region": "Maharashtra",
+    "road": "NH161A",
+    "nominatimCountry": "India"
+  },
+  "EL2Qj72d30EJK47L7jgUCw": {
+    "metas": [
+      "meta_1769520897191_ozkbq"
+    ],
+    "lat": 22.6939185,
+    "lng": 76.0879571,
+    "country": "India",
+    "region": "Madhya Pradesh",
+    "road": "NH 59A",
+    "nominatimCountry": "India"
+  },
+  "TVFKiiDElO1nT1OyvIGaXQ": {
+    "metas": [
+      "meta_1769520897191_gdhhx"
+    ],
+    "lat": 23.031597,
+    "lng": 83.364035,
+    "country": "India",
+    "region": "Chhattisgarh",
+    "road": "NH43",
+    "nominatimCountry": "India"
+  },
+  "YAWlazhEmb0Rm8KR8tbxog": {
+    "metas": [
+      "meta_1769520897191_g5tji"
+    ],
+    "lat": 23.3492024,
+    "lng": 87.9926895,
+    "country": "India",
+    "region": "West Bengal",
+    "road": "SH8",
+    "nominatimCountry": "India"
+  },
+  "sfXrg3MXbElLvg0DiJ4VYw": {
+    "metas": [
+      "meta_1769520897191_omtqy"
+    ],
+    "lat": 26.7169303,
+    "lng": 88.3723515,
+    "country": "India",
+    "region": "West Bengal",
+    "road": "Matigara",
+    "nominatimCountry": "India"
+  },
+  "qB7aY4yvk4Mdgho3Q4TpzA": {
+    "metas": [
+      "meta_1769520897191_10bn2"
+    ],
+    "lat": 26.3444736,
+    "lng": 91.7174389,
+    "country": "India",
+    "region": "Assam",
+    "road": "Baihata",
+    "nominatimCountry": "India"
+  },
+  "ZiZBgXKG99pdeuSqLFYDOw": {
+    "metas": [
+      "meta_1769520897191_vud96"
+    ],
+    "lat": 25.5279405,
+    "lng": 91.257113,
+    "country": "India",
+    "region": "Meghalaya",
+    "road": "NH127B",
+    "nominatimCountry": "India"
+  },
+  "-fyTz9q7uxR6S1WBEV5gJQ": {
+    "metas": [
+      "meta_1769520897191_j5mee"
+    ],
+    "lat": 26.2364099,
+    "lng": 91.535192,
+    "country": "India",
+    "region": "Assam",
+    "road": null,
+    "nominatimCountry": "India"
+  },
+  "CHmu8Qy6fvZfVbrzW5oGRw": {
+    "metas": [
+      "meta_1769520897191_u4qzu"
+    ],
+    "lat": 15.6381828,
+    "lng": 73.8727868,
+    "country": "India",
+    "region": "Goa",
+    "road": "Pirna",
+    "nominatimCountry": "India"
+  },
+  "Ys2EpW2ZBn5hxOt5KrJk6w": {
+    "metas": [
+      "meta_1769520897191_t6rdt"
+    ],
+    "lat": 13.133715,
+    "lng": 79.9535353,
+    "country": "India",
+    "region": "Tamil Nadu",
+    "road": "Chennai Tirupati Highway",
+    "nominatimCountry": "India"
+  },
+  "4qd1HCXHKhhRfw-wDkxfoA": {
+    "metas": [
+      "meta_1769520897191_peoid"
+    ],
+    "lat": 28.6785261,
+    "lng": 77.2294066,
+    "country": "India",
+    "region": null,
+    "road": "Bela Road",
+    "nominatimCountry": "India"
+  },
+  "xXSTYPSvUdEBOeDD2w1toA": {
+    "metas": [
+      "meta_1769520897191_dz7bl"
+    ],
+    "lat": 25.566766,
+    "lng": 87.57754,
+    "country": "India",
+    "region": "Bihar",
+    "road": "New Market Road",
+    "nominatimCountry": "India"
+  },
+  "1_pjY5mlXgFjOGpasYRSfQ": {
+    "metas": [
+      "meta_1769520897191_l78dd"
+    ],
+    "lat": 24.156975,
+    "lng": 88.435238,
+    "country": "India",
+    "region": "West Bengal",
+    "road": null,
+    "nominatimCountry": "India"
+  },
+  "6dRyYRsx2n1mrDMBZdISVw": {
+    "metas": [
+      "meta_1769520897191_nt24i"
+    ],
+    "lat": 23.065706,
+    "lng": 87.048299,
+    "country": "India",
+    "region": "West Bengal",
+    "road": null,
+    "nominatimCountry": "India"
+  },
+  "zX39kMdp0gUcwn-kdeMVPw": {
+    "metas": [
+      "meta_1769520897191_8x2r0"
+    ],
+    "lat": 10.0160116,
+    "lng": 76.6064134,
+    "country": "India",
+    "region": "Kerala",
+    "road": "Puthuppady",
+    "nominatimCountry": "India"
+  },
+  "CPxlS_zQ8V5b70DUUAoMuw": {
+    "metas": [
+      "meta_1769520897191_wzinj"
+    ],
+    "lat": 26.9980908,
+    "lng": 88.69648,
+    "country": "India",
+    "region": "West Bengal",
+    "road": "NH717A",
+    "nominatimCountry": "India"
+  },
+  "SVdJvGRPXdrQPWn4SqxlOQ": {
+    "metas": [
+      "meta_1769520897191_pxfwi"
+    ],
+    "lat": 31.5897055,
+    "lng": 75.615012,
+    "country": "India",
+    "region": "Punjab",
+    "road": null,
+    "nominatimCountry": "India"
+  },
+  "7FzcnRjbaxU7Xw6rAUDO4Q": {
+    "metas": [
+      "meta_1769520897191_lpvij"
+    ],
+    "lat": 30.1717194,
+    "lng": 80.2497689,
+    "country": "India",
+    "region": "Uttarakhand",
+    "road": "Lilam",
+    "nominatimCountry": "India"
+  },
+  "LxCv-2H3zt3LF4tb68Z0gA": {
+    "metas": [
+      "meta_1769520897191_ub23c"
+    ],
+    "lat": 34.07747,
+    "lng": 77.829619,
+    "country": "India",
+    "region": "Ladakh",
+    "road": "Wari La - Nubra Valley",
+    "nominatimCountry": "India"
+  },
+  "Vv7nGvVoieBBviRK2TgRCQ": {
+    "metas": [
+      "meta_1769520897191_7smis"
+    ],
+    "lat": 26.7904109,
+    "lng": 70.5274009,
+    "country": "India",
+    "region": "Rajasthan",
+    "road": "Ganga",
+    "nominatimCountry": "India"
+  },
+  "meSd6eYFS8pCHVzQHdaj1g": {
+    "metas": [
+      "meta_1769520897191_0nljh"
+    ],
+    "lat": 11.654784,
+    "lng": 92.744794,
+    "country": "India",
+    "region": "Andaman and Nicobar Islands",
+    "road": null,
+    "nominatimCountry": "India"
+  },
+  "_EVaCAuBQqdKEi08MONaDQ": {
+    "metas": [
+      "meta_1769520897191_cxod8"
+    ],
+    "lat": 28.6668316,
+    "lng": 77.2296716,
+    "country": "India",
+    "region": null,
+    "road": "Kotwali Tehsil",
+    "nominatimCountry": "India"
+  },
+  "K8s2pGavQ1rOP9krPaub1Q": {
+    "metas": [
+      "meta_1769520897191_5t2iv"
+    ],
+    "lat": 23.0672848,
+    "lng": 72.5716625,
+    "country": "India",
+    "region": "Gujarat",
+    "road": "Nava-Vadaj",
+    "nominatimCountry": "India"
+  },
+  "KcbqCBMvtej9z_ScuysthA": {
+    "metas": [
+      "meta_1769520897191_bi3wm"
+    ],
+    "lat": 25.5363539,
+    "lng": 91.8886807,
+    "country": "India",
+    "region": "Meghalaya",
+    "road": "Umsaw Myllium",
+    "nominatimCountry": "India"
+  },
+  "mu0GiV1KJy-RyByhz3npxQ": {
+    "metas": [
+      "meta_1769520897191_b1e5g"
+    ],
+    "lat": 25.745215,
+    "lng": 85.701741,
+    "country": "India",
+    "region": "Bihar",
+    "road": "Sarairanjan",
+    "nominatimCountry": "India"
+  },
+  "73BvqrPljqEW0KNuW3lpQg": {
+    "metas": [
+      "meta_1769520897191_9ua5i"
+    ],
+    "lat": 25.3273784,
+    "lng": 92.1349546,
+    "country": "India",
+    "region": "Meghalaya",
+    "road": "NH206",
+    "nominatimCountry": "India"
+  },
+  "m0X-KrQ1lU-N2Xx9Ze-17g": {
+    "metas": [
+      "meta_1769520897191_zhb1s"
+    ],
+    "lat": 28.5721701,
+    "lng": 94.1572446,
+    "country": "India",
+    "region": "Arunachal Pradesh",
+    "road": "Yorni",
+    "nominatimCountry": "India"
+  },
+  "Gy17OWIsreJ3d1aoSYOJ7g": {
+    "metas": [
+      "meta_1769520897191_7yf0c"
+    ],
+    "lat": 8.2796065,
+    "lng": 77.8620669,
+    "country": "India",
+    "region": "Tamil Nadu",
+    "road": null,
+    "nominatimCountry": "India"
+  },
+  "QUbl_Hqv3j345xVGLs-Eig": {
+    "metas": [
+      "meta_1769520897191_eycq6"
+    ],
+    "lat": 11.2055938,
+    "lng": 72.7686262,
+    "country": "India",
+    "region": "Lakshadweep",
+    "road": "Kadmat",
+    "nominatimCountry": "India"
+  },
+  "kY0Rg_7QSKWzj4AYgGWJLA": {
+    "metas": [
+      "meta_1769520898334_i9dc6"
+    ],
+    "lat": -6.2168295,
+    "lng": 106.8442827,
+    "country": "Indonesia",
+    "region": "Java",
+    "road": "Jalan Dokter Saharjo",
+    "nominatimCountry": "Indonesia"
+  },
+  "BI4eqqQfGeOaecSfxA_VFw": {
+    "metas": [
+      "meta_1769520898334_h97ud"
+    ],
+    "lat": -3.4396565,
+    "lng": 114.6301231,
+    "country": "Indonesia",
+    "region": "South Kalimantan",
+    "road": "Jalan Pahlawan",
+    "nominatimCountry": "Indonesia"
+  },
+  "ZqUN3T_p3WgTqjD4wraBPw": {
+    "metas": [
+      "meta_1769520898334_5tz6o"
+    ],
+    "lat": -7.2506565,
+    "lng": 112.6869569,
+    "country": "Indonesia",
+    "region": "East Java",
+    "road": "Jalan Margomulyo",
+    "nominatimCountry": "Indonesia"
+  },
+  "m6ZFX7UaEJhfy5KgXyDXsQ": {
+    "metas": [
+      "meta_1769520898334_t96r3"
+    ],
+    "lat": -7.4205664,
+    "lng": 109.5900164,
+    "country": "Indonesia",
+    "region": "Central Java",
+    "road": "15",
+    "nominatimCountry": "Indonesia"
+  },
+  "Q5RANoHrgFuywctCl7SMdw": {
+    "metas": [
+      "meta_1769520898334_h5fyh"
+    ],
+    "lat": 0.4236576,
+    "lng": 101.6466371,
+    "country": "Indonesia",
+    "region": "Riau",
+    "road": "Jalan Lintas Timur Sumatera",
+    "nominatimCountry": "Indonesia"
+  },
+  "CJTZzoLzWB1QnhuNtbmFmA": {
+    "metas": [
+      "meta_1769520898334_2qe2u"
+    ],
+    "lat": -2.965021,
+    "lng": 104.7828527,
+    "country": "Indonesia",
+    "region": "South Sumatra",
+    "road": null,
+    "nominatimCountry": "Indonesia"
+  },
+  "lMG1FhJ1xPzRcYzf-AC05Q": {
+    "metas": [
+      "meta_1769520898334_w12c3"
+    ],
+    "lat": -6.213019,
+    "lng": 106.5185636,
+    "country": "Indonesia",
+    "region": "Banten",
+    "road": "Jalan Raya Cikupa",
+    "nominatimCountry": "Indonesia"
+  },
+  "uTNzsRA309q02Ltgjm6S3g": {
+    "metas": [
+      "meta_1769520898334_x4tgt"
+    ],
+    "lat": -6.9948507,
+    "lng": 110.4339158,
+    "country": "Indonesia",
+    "region": "Central Java",
+    "road": "Jalan Dokter Cipto",
+    "nominatimCountry": "Indonesia"
+  },
+  "_OmPZJlXRPaBG_m1il9wEg": {
+    "metas": [
+      "meta_1769520898334_ysz5w"
+    ],
+    "lat": -6.22861,
+    "lng": 106.5233812,
+    "country": "Indonesia",
+    "region": "Banten",
+    "road": "Jalan Citra Raya Boulevard",
+    "nominatimCountry": "Indonesia"
+  },
+  "A3zeR574GGtgKgd6VSZoBw": {
+    "metas": [
+      "meta_1769520898335_gb5sz"
+    ],
+    "lat": -6.2746991,
+    "lng": 106.4828449,
+    "country": "Indonesia",
+    "region": "Banten",
+    "road": "Jalan H. Abdul Hamid",
+    "nominatimCountry": "Indonesia"
+  },
+  "31-_XhmotjcH3mOJ5Wm1nQ": {
+    "metas": [
+      "meta_1769520898335_ncdtm"
+    ],
+    "lat": -8.685158,
+    "lng": 116.1239725,
+    "country": "Indonesia",
+    "region": "West Nusa Tenggara",
+    "road": "Gerung Utara",
+    "nominatimCountry": "Indonesia"
+  },
+  "Mfc-P3zSw2YSodYz5bZToQ": {
+    "metas": [
+      "meta_1769520898335_gr6ge"
+    ],
+    "lat": 0.7665933,
+    "lng": 103.4184487,
+    "country": "Indonesia",
+    "region": "Riau Islands",
+    "road": "Teluk Radang",
+    "nominatimCountry": "Indonesia"
+  },
+  "bmAHdYFNcs2E_ShUYxXopw": {
+    "metas": [
+      "meta_1769520898335_22wi1"
+    ],
+    "lat": -7.0024,
+    "lng": 110.1247253,
+    "country": "Indonesia",
+    "region": "Central Java",
+    "road": "Sedayu - Sojomerto",
+    "nominatimCountry": "Indonesia"
+  },
+  "Z34AQop0Tziu0UaNAtyJpw": {
+    "metas": [
+      "meta_1769520898335_0g38l"
+    ],
+    "lat": -8.7923207,
+    "lng": 115.1727296,
+    "country": "Indonesia",
+    "region": "Bali",
+    "road": "Jalan Pasraman Unud",
+    "nominatimCountry": "Indonesia"
+  },
+  "OO_914gj40mw09OsJXVPfw": {
+    "metas": [
+      "meta_1769520898335_xw70e"
+    ],
+    "lat": -8.8110568,
+    "lng": 120.994502,
+    "country": "Indonesia",
+    "region": "East Nusa Tenggara",
+    "road": "Jalan Trans Flores",
+    "nominatimCountry": "Indonesia"
+  },
+  "VIuymBp52hlPDVK0bEspVw": {
+    "metas": [
+      "meta_1769520898335_eemn0"
+    ],
+    "lat": -1.5233688,
+    "lng": 123.5007855,
+    "country": "Indonesia",
+    "region": "Central Sulawesi",
+    "road": "Paisubatango",
+    "nominatimCountry": "Indonesia"
+  },
+  "eycxfwJ9_8UV8GxPK8b8fA": {
+    "metas": [
+      "meta_1769520898335_bp964"
+    ],
+    "lat": -0.9701822,
+    "lng": 121.8531954,
+    "country": "Indonesia",
+    "region": "Central Sulawesi",
+    "road": "Jalan Trans Sulawesi",
+    "nominatimCountry": "Indonesia"
+  },
+  "2WVpwHJmWdqSF1g7z35urQ": {
+    "metas": [
+      "meta_1769520898335_icu7v"
+    ],
+    "lat": 3.552799,
+    "lng": 98.7023703,
+    "country": "Indonesia",
+    "region": "North Sumatra",
+    "road": "Jalan Muhammad Nawi Harahap",
+    "nominatimCountry": "Indonesia"
+  },
+  "uYkwNETDtDWBmirMGRV01Q": {
+    "metas": [
+      "meta_1769520898335_lnb23"
+    ],
+    "lat": -0.214986,
+    "lng": 119.8096032,
+    "country": "Indonesia",
+    "region": "Central Sulawesi",
+    "road": null,
+    "nominatimCountry": "Indonesia"
+  },
+  "KrfPlFJwtL-IJq_0QgRpKg": {
+    "metas": [
+      "meta_1769520898335_nr0iw"
+    ],
+    "lat": -2.1932919,
+    "lng": 121.5401421,
+    "country": "Indonesia",
+    "region": "Central Sulawesi",
+    "road": null,
+    "nominatimCountry": "Indonesia"
+  },
+  "FD1e9hglC8sh9P9N-FdKdw": {
+    "metas": [
+      "meta_1769520898335_q53ay"
+    ],
+    "lat": -1.9077942,
+    "lng": 113.3838205,
+    "country": "Indonesia",
+    "region": "Central Kalimantan",
+    "road": "Kasongan Bridge",
+    "nominatimCountry": "Indonesia"
+  },
+  "LP5m5mrgl_9pZ3NWcUVJyA": {
+    "metas": [
+      "meta_1769520898335_2t9g0"
+    ],
+    "lat": 0.3166303,
+    "lng": 101.8898627,
+    "country": "Indonesia",
+    "region": "Riau",
+    "road": null,
+    "nominatimCountry": "Indonesia"
+  },
+  "ioX0Qft2WZ7IW9T8rf2BOA": {
+    "metas": [
+      "meta_1769520898335_f662g"
+    ],
+    "lat": -6.2457013,
+    "lng": 107.1267118,
+    "country": "Indonesia",
+    "region": "West Java",
+    "road": null,
+    "nominatimCountry": "Indonesia"
+  },
+  "CDXLxY17oZvIV44fxkuhHA": {
+    "metas": [
+      "meta_1769520898335_a8kjc"
+    ],
+    "lat": -8.257748,
+    "lng": 123.6695347,
+    "country": "Indonesia",
+    "region": "East Nusa Tenggara",
+    "road": "Jalan Trans Lembata",
+    "nominatimCountry": "Indonesia"
+  },
+  "TqENgLVGggI6VHPLbLzTYA": {
+    "metas": [
+      "meta_1769520898335_i8o5p"
+    ],
+    "lat": -9.820868,
+    "lng": 120.5950658,
+    "country": "Indonesia",
+    "region": "East Nusa Tenggara",
+    "road": "Jalan Kataka",
+    "nominatimCountry": "Indonesia"
+  },
+  "_xFIhIx4wCb1Bj_-1wUgDQ": {
+    "metas": [
+      "meta_1769520898335_ejp34"
+    ],
+    "lat": 1.0369019,
+    "lng": 103.4217288,
+    "country": "Indonesia",
+    "region": "Riau Islands",
+    "road": "Tebing",
+    "nominatimCountry": "Indonesia"
+  },
+  "wCbesO1wZSYP0q-y7mwOSg": {
+    "metas": [
+      "meta_1769520898335_y8vsp"
+    ],
+    "lat": -7.3983584,
+    "lng": 109.6653486,
+    "country": "Indonesia",
+    "region": "Central Java",
+    "road": "15",
+    "nominatimCountry": "Indonesia"
+  },
+  "3jZFOegJL4O2R7Hz5sTi5w": {
+    "metas": [
+      "meta_1769520898335_012nv"
+    ],
+    "lat": -1.4265176,
+    "lng": 120.6534454,
+    "country": "Indonesia",
+    "region": "Central Sulawesi",
+    "road": "Moengko",
+    "nominatimCountry": "Indonesia"
+  },
+  "IXNBRzdHO5s4Ih_NKIqRZw": {
+    "metas": [
+      "meta_1769520898335_njmi2"
+    ],
+    "lat": -4.5486339,
+    "lng": 120.3252262,
+    "country": "Indonesia",
+    "region": "South Sulawesi",
+    "road": "Ta'",
+    "nominatimCountry": "Indonesia"
+  },
+  "7QV_neX6GDzmaiV_YuEVWA": {
+    "metas": [
+      "meta_1769520898335_etx63"
+    ],
+    "lat": -9.6494919,
+    "lng": 120.2629787,
+    "country": "Indonesia",
+    "region": "East Nusa Tenggara",
+    "road": "Jalan Ahmad Yani",
+    "nominatimCountry": "Indonesia"
+  },
+  "IEFi4EPGOOm2aw2fFGp9wQ": {
+    "metas": [
+      "meta_1769520898335_metap"
+    ],
+    "lat": -8.6656519,
+    "lng": 115.2070286,
+    "country": "Indonesia",
+    "region": "Bali",
+    "road": "Jalan Imam Bonjol",
+    "nominatimCountry": "Indonesia"
+  },
+  "dnaZJ9oJnETmScmLXBhFEw": {
+    "metas": [
+      "meta_1769520898335_hdtfx"
+    ],
+    "lat": -0.6917615,
+    "lng": 100.6008869,
+    "country": "Indonesia",
+    "region": "West Sumatra",
+    "road": "5",
+    "nominatimCountry": "Indonesia"
+  },
+  "llR0CP9pWHXvj49i7813Xg": {
+    "metas": [
+      "meta_1769520898335_0buxa"
+    ],
+    "lat": 2.5859852,
+    "lng": 99.0450694,
+    "country": "Indonesia",
+    "region": "North Sumatra",
+    "road": "Jalan Parapat–Porsea",
+    "nominatimCountry": "Indonesia"
+  },
+  "4hGgjLnMm3aKVuMWmRQjfg": {
+    "metas": [
+      "meta_1769520898335_jpf1d"
+    ],
+    "lat": -1.2391056,
+    "lng": 116.8413777,
+    "country": "Indonesia",
+    "region": "East Kalimantan",
+    "road": "Jalan Mayor Jenderal D.I. Panjaitan",
+    "nominatimCountry": "Indonesia"
+  },
+  "z5M-5MC6tG1OWpPljrrT2g": {
+    "metas": [
+      "meta_1769520898335_0ss9k"
+    ],
+    "lat": -3.9200389,
+    "lng": 119.9184225,
+    "country": "Indonesia",
+    "region": "South Sulawesi",
+    "road": "Jalan Poros Pangkajene Sidrap - Anabanua - Tarumpakkae",
+    "nominatimCountry": "Indonesia"
+  },
+  "PTG9unGv98jKQrXkI4fotA": {
+    "metas": [
+      "meta_1769520898335_4gdjh"
+    ],
+    "lat": -3.0943314,
+    "lng": 119.8495771,
+    "country": "Indonesia",
+    "region": "South Sulawesi",
+    "road": null,
+    "nominatimCountry": "Indonesia"
+  },
+  "tYoQJd3Gp4nOd0f20Hg6RQ": {
+    "metas": [
+      "meta_1769520898335_agjkf"
+    ],
+    "lat": 1.4394457,
+    "lng": 124.8723241,
+    "country": "Indonesia",
+    "region": "North Sulawesi",
+    "road": "Kamangta",
+    "nominatimCountry": "Indonesia"
+  },
+  "Q1M0S2Q1X9HapNhT0i0wRw": {
+    "metas": [
+      "meta_1769520898335_higiw"
+    ],
+    "lat": -7.734439,
+    "lng": 112.1359379,
+    "country": "Indonesia",
+    "region": "East Java",
+    "road": "Semut",
+    "nominatimCountry": "Indonesia"
+  },
+  "aKecS8R_kZ_FuYmSmob9YQ": {
+    "metas": [
+      "meta_1769520898335_jhsky"
+    ],
+    "lat": -1.0147104,
+    "lng": 123.3643358,
+    "country": "Indonesia",
+    "region": "Central Sulawesi",
+    "road": "Giwang",
+    "nominatimCountry": "Indonesia"
+  },
+  "yd-v8Xh2uYG_BtZPD9mqbw": {
+    "metas": [
+      "meta_1769520898335_3qrhc"
+    ],
+    "lat": 2.3422179,
+    "lng": 98.858202,
+    "country": "Indonesia",
+    "region": "North Sumatra",
+    "road": null,
+    "nominatimCountry": "Indonesia"
+  },
+  "wnjT4_WHtoLZulq61ehbQA": {
+    "metas": [
+      "meta_1769520898335_8kq2s"
+    ],
+    "lat": 1.141088,
+    "lng": 104.006752,
+    "country": "Indonesia",
+    "region": "Riau Islands",
+    "road": "Batu Selicin",
+    "nominatimCountry": "Indonesia"
+  },
+  "jYNpu0ko1qyCBy6qP_w6BQ": {
+    "metas": [
+      "meta_1769520898335_tyvne"
+    ],
+    "lat": -0.8755664,
+    "lng": 119.8200904,
+    "country": "Indonesia",
+    "region": "Central Sulawesi",
+    "road": "Kabonena",
+    "nominatimCountry": "Indonesia"
+  },
+  "8D4IxCvQUFKhjQuHej-qww": {
+    "metas": [
+      "meta_1769520898335_ownex"
+    ],
+    "lat": 1.0425034,
+    "lng": 97.6049311,
+    "country": "Indonesia",
+    "region": "North Sumatra",
+    "road": "Ehosakhozi",
+    "nominatimCountry": "Indonesia"
+  },
+  "DInI_DCSQKX8uRNwfdJhcg": {
+    "metas": [
+      "meta_1769520898335_7igv0"
+    ],
+    "lat": -8.4521082,
+    "lng": 115.5226027,
+    "country": "Indonesia",
+    "region": "Bali",
+    "road": "Macang",
+    "nominatimCountry": "Indonesia"
+  },
+  "N3_VJG2NHKso9RSYOhl8dw": {
+    "metas": [
+      "meta_1769520898335_e7xth"
+    ],
+    "lat": -8.4541287,
+    "lng": 115.5053186,
+    "country": "Indonesia",
+    "region": "Bali",
+    "road": "Putung",
+    "nominatimCountry": "Indonesia"
+  },
+  "QMtyLFpbgpjtBMs6xxf66w": {
+    "metas": [
+      "meta_1769520899489_cq5c4"
+    ],
+    "lat": 33.3283081,
+    "lng": 44.3852024,
+    "country": "Iraq",
+    "region": "Baghdad Governorate",
+    "road": "شارع المتحف",
+    "nominatimCountry": "Iraq"
+  },
+  "boLoSerPsotbr73vnaVhkQ": {
+    "metas": [
+      "meta_1769520899489_ycob3"
+    ],
+    "lat": 33.3277421,
+    "lng": 44.3848555,
+    "country": "Iraq",
+    "region": "Baghdad Governorate",
+    "road": "شارع المتحف",
+    "nominatimCountry": "Iraq"
+  },
+  "DC8zn9VqmdmsrlGmdkNT_g": {
+    "metas": [
+      "meta_1769520899489_m73qa"
+    ],
+    "lat": 33.3280968,
+    "lng": 44.3849639,
+    "country": "Iraq",
+    "region": "Baghdad Governorate",
+    "road": "شارع المتحف",
+    "nominatimCountry": "Iraq"
+  },
+  "a3V96YHXEu6jqPUB4OOnXg": {
+    "metas": [
+      "meta_1769520900336_bjneq"
+    ],
+    "lat": 32.930529,
+    "lng": 35.265207,
+    "country": "Israel & the West Bank",
+    "region": "North District",
+    "road": "شارع العريض",
+    "nominatimCountry": "Israel"
+  },
+  "o-_ZnHxgPaYgfNd5wE9veg": {
+    "metas": [
+      "meta_1769520900336_eah4v"
+    ],
+    "lat": 32.22051,
+    "lng": 34.829223,
+    "country": "Israel & the West Bank",
+    "region": "Center District",
+    "road": "5514",
+    "nominatimCountry": "Israel"
+  },
+  "EvNAEGm1SHGCwCVoFeWCMA": {
+    "metas": [
+      "meta_1769520900336_avt6j"
+    ],
+    "lat": 30.0083997,
+    "lng": 35.0606114,
+    "country": "Israel & the West Bank",
+    "region": "South District",
+    "road": "40",
+    "nominatimCountry": "Israel"
+  },
+  "Rkb-qXHhHBd-F3vqVBqfYQ": {
+    "metas": [
+      "meta_1769520900336_mkwle"
+    ],
+    "lat": 30.0431475,
+    "lng": 35.0188596,
+    "country": "Israel & the West Bank",
+    "region": "South District",
+    "road": "40",
+    "nominatimCountry": "Israel"
+  },
+  "2zodlRrSnc8rLn-EHoWhKQ": {
+    "metas": [
+      "meta_1769520900336_hs62w"
+    ],
+    "lat": 31.9281053,
+    "lng": 34.9941359,
+    "country": "Israel & the West Bank",
+    "region": "Center District",
+    "road": "443",
+    "nominatimCountry": "Israel"
+  },
+  "5oaD7PAPGtNng7FvrewncA": {
+    "metas": [
+      "meta_1769520900336_d5vo9"
+    ],
+    "lat": 32.4966428,
+    "lng": 35.4963566,
+    "country": "Israel & the West Bank",
+    "region": "North District",
+    "road": "Yaakov Machluf",
+    "nominatimCountry": "Israel"
+  },
+  "AaHNrPYtdGrN-0EqkJBFHA": {
+    "metas": [
+      "meta_1769520900336_hnh6m"
+    ],
+    "lat": 32.9150402,
+    "lng": 35.4155283,
+    "country": "Israel & the West Bank",
+    "region": "North District",
+    "road": "806",
+    "nominatimCountry": "Israel"
+  },
+  "lF1ztVP7v7bKIuV9QU1iQQ": {
+    "metas": [
+      "meta_1769520900336_d7ac1"
+    ],
+    "lat": 32.4689138,
+    "lng": 35.5544273,
+    "country": "Israel & the West Bank",
+    "region": "North District",
+    "road": "6688",
+    "nominatimCountry": "Israel"
+  },
+  "pv5mC75C_yPjQ4cCLuOGMA": {
+    "metas": [
+      "meta_1769520900336_e4syh"
+    ],
+    "lat": 32.9669229,
+    "lng": 35.344964,
+    "country": "Israel & the West Bank",
+    "region": "North District",
+    "road": "864",
+    "nominatimCountry": "Israel"
+  },
+  "iG_WNEx2LKzuhR-vPuhr2g": {
+    "metas": [
+      "meta_1769520900336_44yyp"
+    ],
+    "lat": 32.7675417,
+    "lng": 35.1001021,
+    "country": "Israel & the West Bank",
+    "region": "Haifa District",
+    "road": "70",
+    "nominatimCountry": "Israel"
+  },
+  "410LXPfVdPpF25et87jsfQ": {
+    "metas": [
+      "meta_1769520900336_17is1"
+    ],
+    "lat": 32.4991773,
+    "lng": 35.4864055,
+    "country": "Israel & the West Bank",
+    "region": "North District",
+    "road": "6667",
+    "nominatimCountry": "Israel"
+  },
+  "dJRA9qfoAXZ-BCtZlI4anA": {
+    "metas": [
+      "meta_1769520900336_r7z6p"
+    ],
+    "lat": 29.7413908,
+    "lng": 35.007595,
+    "country": "Israel & the West Bank",
+    "region": "South District",
+    "road": "HaArava",
+    "nominatimCountry": "Israel"
+  },
+  "Ut4eHtL5YHnk78xsYWxAPQ": {
+    "metas": [
+      "meta_1769520900336_zjn3t"
+    ],
+    "lat": 32.7498986,
+    "lng": 34.9518176,
+    "country": "Israel & the West Bank",
+    "region": "Haifa District",
+    "road": "2 South",
+    "nominatimCountry": "Israel"
+  },
+  "11UdjpzRvRwozsLee5v5Qw": {
+    "metas": [
+      "meta_1769520900336_mmgy2"
+    ],
+    "lat": 32.6979467,
+    "lng": 35.4133623,
+    "country": "Israel & the West Bank",
+    "region": "North District",
+    "road": "65",
+    "nominatimCountry": "Israel"
+  },
+  "rQYeZ-dZHaU5W8yiJEZCwg": {
+    "metas": [
+      "meta_1769520900336_iqwl3"
+    ],
+    "lat": 29.7883991,
+    "lng": 34.9728739,
+    "country": "Israel & the West Bank",
+    "region": "South District",
+    "road": null,
+    "nominatimCountry": "Israel"
+  },
+  "qRUy1UVGxfGle5kVYgchbg": {
+    "metas": [
+      "meta_1769520900336_j42b1"
+    ],
+    "lat": 29.5672287,
+    "lng": 34.9657281,
+    "country": "Israel & the West Bank",
+    "region": "South District",
+    "road": "Hotel district",
+    "nominatimCountry": "Israel"
+  },
+  "3fFQXQTu7rBO1lEuSCa3WQ": {
+    "metas": [
+      "meta_1769520900336_2fp7t"
+    ],
+    "lat": 32.0718167,
+    "lng": 34.7756854,
+    "country": "Israel & the West Bank",
+    "region": "Tel-Aviv District",
+    "road": "Borochov",
+    "nominatimCountry": "Israel"
+  },
+  "BCMv6RJvfbwDhEBN8DmgYw": {
+    "metas": [
+      "meta_1769520900336_aokmu"
+    ],
+    "lat": 31.7957494,
+    "lng": 35.2077627,
+    "country": "Israel & the West Bank",
+    "region": "Jerusalem District",
+    "road": "Ohel Yehushua",
+    "nominatimCountry": "Israel"
+  },
+  "UQBfK4jKH-Fk2KXivzMEEA": {
+    "metas": [
+      "meta_1769520900336_yh7q9"
+    ],
+    "lat": 32.4601767,
+    "lng": 35.0436309,
+    "country": "Israel & the West Bank",
+    "region": "Haifa District",
+    "road": "Alon",
+    "nominatimCountry": "Israel"
+  },
+  "liFC5p4zZ5m5TpmI-LO5tQ": {
+    "metas": [
+      "meta_1769520900336_9hwz4"
+    ],
+    "lat": 33.0089431,
+    "lng": 35.0978896,
+    "country": "Israel & the West Bank",
+    "region": "North District",
+    "road": "Wolfson",
+    "nominatimCountry": "Israel"
+  },
+  "Qr0O7WamS9tX5OvfsHsVPw": {
+    "metas": [
+      "meta_1769520900336_dj505"
+    ],
+    "lat": 32.9272487,
+    "lng": 35.083047,
+    "country": "Israel & the West Bank",
+    "region": "North District",
+    "road": "David Remez",
+    "nominatimCountry": "Israel"
+  },
+  "BWkwj08SL9bIy3-gnxEnTQ": {
+    "metas": [
+      "meta_1769520900336_3nnnr"
+    ],
+    "lat": 31.4254348,
+    "lng": 34.5960231,
+    "country": "Israel & the West Bank",
+    "region": "South District",
+    "road": "HaRav Abuhatsera",
+    "nominatimCountry": "Israel"
+  },
+  "VKYHa3PBcltj7VO9yJpkag": {
+    "metas": [
+      "meta_1769520900336_7g8qs"
+    ],
+    "lat": 32.8385829,
+    "lng": 35.0766162,
+    "country": "Israel & the West Bank",
+    "region": "Haifa District",
+    "road": "Mishkenot HaOmanim",
+    "nominatimCountry": "Israel"
+  },
+  "wHoUrn_tbZl1hH-TblCBmQ": {
+    "metas": [
+      "meta_1769520900336_dmbxu"
+    ],
+    "lat": 32.1044848,
+    "lng": 34.9449194,
+    "country": "Israel & the West Bank",
+    "region": "Center District",
+    "road": "Yehoshua Bin Nun",
+    "nominatimCountry": "Israel"
+  },
+  "KCqd6MMHcmRKgiNpkFcDuQ": {
+    "metas": [
+      "meta_1769520900336_3oez2"
+    ],
+    "lat": 32.1636082,
+    "lng": 34.8452915,
+    "country": "Israel & the West Bank",
+    "region": "Tel-Aviv District",
+    "road": "Ben Yehuda",
+    "nominatimCountry": "Israel"
+  },
+  "poGfkY73bkTjrPWqyKRxiA": {
+    "metas": [
+      "meta_1769520900336_0bfba"
+    ],
+    "lat": 32.1874678,
+    "lng": 34.8721844,
+    "country": "Israel & the West Bank",
+    "region": "Center District",
+    "road": "Shikun Ovdim",
+    "nominatimCountry": "Israel"
+  },
+  "OYGK2SUlDDHMzMknj28OWA": {
+    "metas": [
+      "meta_1769520900336_rszy8"
+    ],
+    "lat": 31.3924456,
+    "lng": 34.7491802,
+    "country": "Israel & the West Bank",
+    "region": "South District",
+    "road": "Sharia Al-Salam",
+    "nominatimCountry": "Israel"
+  },
+  "O6BSgDq7Hc7aIOWLaYJpJA": {
+    "metas": [
+      "meta_1769520901496_th466"
+    ],
+    "lat": 42.5831402,
+    "lng": 143.1704092,
+    "country": "Japan",
+    "region": "Hokkaido Prefecture",
+    "road": "Sarabetsu",
+    "nominatimCountry": "Japan"
+  },
+  "WZsrsuL83N9M5IoDoQtLzA": {
+    "metas": [
+      "meta_1769520901496_ay0dx"
+    ],
+    "lat": 35.7051964,
+    "lng": 139.9465184,
+    "country": "Japan",
+    "region": "Chiba Prefecture",
+    "road": "Keiyo Expressway",
+    "nominatimCountry": "Japan"
+  },
+  "nEwpKCHyH8ixufp5V2mrog": {
+    "metas": [
+      "meta_1769520901496_jrhvw"
+    ],
+    "lat": 34.9742199,
+    "lng": 135.4139633,
+    "country": "Japan",
+    "region": "Osaka Prefecture",
+    "road": "Sonobe Nose Line",
+    "nominatimCountry": "Japan"
+  },
+  "JfED587MYpoTtTpSNz4acg": {
+    "metas": [
+      "meta_1769520901496_4v4rg"
+    ],
+    "lat": 35.1521045,
+    "lng": 135.875941,
+    "country": "Japan",
+    "region": "Shiga Prefecture",
+    "road": "National Highway Route 477",
+    "nominatimCountry": "Japan"
+  },
+  "GwdsHAUsGtMyxtFV73UwrA": {
+    "metas": [
+      "meta_1769520901496_4e183"
+    ],
+    "lat": 35.913146,
+    "lng": 139.6239902,
+    "country": "Japan",
+    "region": "Saitama Prefecture",
+    "road": "Ōmiya Ward",
+    "nominatimCountry": "Japan"
+  },
+  "Ry-gVaq8bz2A6DNvhdU2Yw": {
+    "metas": [
+      "meta_1769520901496_5i22e"
+    ],
+    "lat": 44.6303614,
+    "lng": 142.2830164,
+    "country": "Japan",
+    "region": "Hokkaido Prefecture",
+    "road": "National Highway Route 40",
+    "nominatimCountry": "Japan"
+  },
+  "efpNtjHwg85u22Fp7D7dUQ": {
+    "metas": [
+      "meta_1769520901496_3kkn1"
+    ],
+    "lat": 35.9243594,
+    "lng": 139.6347709,
+    "country": "Japan",
+    "region": "Saitama Prefecture",
+    "road": "Kita Ward",
+    "nominatimCountry": "Japan"
+  },
+  "1RwDyQzMWfoVfiMj3kUZVA": {
+    "metas": [
+      "meta_1769520901496_y2okd"
+    ],
+    "lat": 34.5928822,
+    "lng": 132.5677905,
+    "country": "Japan",
+    "region": "Hiroshima Prefecture",
+    "road": "Chiyoda Yachiyo Line",
+    "nominatimCountry": "Japan"
+  },
+  "a1NrjtWehDakdpEpAbss0g": {
+    "metas": [
+      "meta_1769520901496_3qhd4"
+    ],
+    "lat": 36.2444478,
+    "lng": 139.3946657,
+    "country": "Japan",
+    "region": "Gunma Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "VUkaG3sURlq0UwW6Sp7mvw": {
+    "metas": [
+      "meta_1769520901496_3hvjk"
+    ],
+    "lat": 33.4055186,
+    "lng": 133.0156601,
+    "country": "Japan",
+    "region": "Kochi Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "Lt5DNuYoV7YgUu1fUkKdqg": {
+    "metas": [
+      "meta_1769520901496_k662d"
+    ],
+    "lat": 34.771954,
+    "lng": 135.5363897,
+    "country": "Japan",
+    "region": "Osaka Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "gt4vs0sxGoYQ2Y3e5Fbiig": {
+    "metas": [
+      "meta_1769520901496_0s8v4"
+    ],
+    "lat": 33.5609966,
+    "lng": 133.6580138,
+    "country": "Japan",
+    "region": "Kochi Prefecture",
+    "road": "南国広域農道",
+    "nominatimCountry": "Japan"
+  },
+  "Z2nKf5PuoutPrPFMPlwbiw": {
+    "metas": [
+      "meta_1769520901496_ean02"
+    ],
+    "lat": 43.0443136,
+    "lng": 141.3740006,
+    "country": "Japan",
+    "region": "Hokkaido Prefecture",
+    "road": "Toyohira Ward",
+    "nominatimCountry": "Japan"
+  },
+  "Y0zXlyzntfhRGCfzaShuCg": {
+    "metas": [
+      "meta_1769520901496_9i98d"
+    ],
+    "lat": 40.1881975,
+    "lng": 141.7694739,
+    "country": "Japan",
+    "region": "Iwate Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "EIVh1K15oz3Nb6eep2hpJw": {
+    "metas": [
+      "meta_1769520901496_p3jqz"
+    ],
+    "lat": 35.7805499,
+    "lng": 139.8460957,
+    "country": "Japan",
+    "region": null,
+    "road": "王子金町市川線",
+    "nominatimCountry": "Japan"
+  },
+  "lESB_baRGgmu77J2V0rJDA": {
+    "metas": [
+      "meta_1769520901497_dm19q"
+    ],
+    "lat": 36.6440267,
+    "lng": 136.9690899,
+    "country": "Japan",
+    "region": "Toyama Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "blpwbUtaZS4QxaA31-5-sg": {
+    "metas": [
+      "meta_1769520901497_05tz4"
+    ],
+    "lat": 35.1596897,
+    "lng": 136.9220236,
+    "country": "Japan",
+    "region": "Aichi Prefecture",
+    "road": "Chikusa Ward",
+    "nominatimCountry": "Japan"
+  },
+  "eSgb7XK1dU62qlrxPc_HrA": {
+    "metas": [
+      "meta_1769520901497_uwqdo"
+    ],
+    "lat": 34.5931588,
+    "lng": 135.7757171,
+    "country": "Japan",
+    "region": "Nara Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "SwJlXM0r0w4xmA9v34o2Og": {
+    "metas": [
+      "meta_1769520901497_k6np3"
+    ],
+    "lat": 34.5900027,
+    "lng": 133.0513611,
+    "country": "Japan",
+    "region": "Hiroshima Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "VsqIjVG40fJb_sky27BGyg": {
+    "metas": [
+      "meta_1769520901497_1gs31"
+    ],
+    "lat": 33.5692615,
+    "lng": 133.5905086,
+    "country": "Japan",
+    "region": "Kochi Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "s37mTQ0ZukdoKpR0Mnxy4g": {
+    "metas": [
+      "meta_1769520901497_3q3ra"
+    ],
+    "lat": 33.3149453,
+    "lng": 130.5032919,
+    "country": "Japan",
+    "region": "Fukuoka Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "XUE_NZ1ycHxLeRcu8X9JTQ": {
+    "metas": [
+      "meta_1769520901497_1y90h"
+    ],
+    "lat": 26.2105251,
+    "lng": 127.6894081,
+    "country": "Japan",
+    "region": "Okinawa Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "jEOoWvz_2msUr0LqrAWg6Q": {
+    "metas": [
+      "meta_1769520901497_nf33e"
+    ],
+    "lat": 34.398222,
+    "lng": 132.4976625,
+    "country": "Japan",
+    "region": "Hiroshima Prefecture",
+    "road": "Higashi Ward",
+    "nominatimCountry": "Japan"
+  },
+  "FT-TrdeCAcQGG7_4s2P9fQ": {
+    "metas": [
+      "meta_1769520901497_vw5fj"
+    ],
+    "lat": 35.6612286,
+    "lng": 137.1643718,
+    "country": "Japan",
+    "region": "Gifu Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "ybCFN9QdagQexc251NrCtg": {
+    "metas": [
+      "meta_1769520901497_gfj40"
+    ],
+    "lat": 36.52062,
+    "lng": 136.5788761,
+    "country": "Japan",
+    "region": "Ishikawa Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "QaPdnkysQT57NC4Ajff43A": {
+    "metas": [
+      "meta_1769520901497_tk2kj"
+    ],
+    "lat": 34.4004234,
+    "lng": 132.4429822,
+    "country": "Japan",
+    "region": "Hiroshima Prefecture",
+    "road": "Nishi Ward",
+    "nominatimCountry": "Japan"
+  },
+  "Pdc1vKWcKvfBeFYeFydrBQ": {
+    "metas": [
+      "meta_1769520901497_7yj3l"
+    ],
+    "lat": 35.7980917,
+    "lng": 139.9722165,
+    "country": "Japan",
+    "region": "Chiba Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "rrAyKXP6Vki21cJzhxGxww": {
+    "metas": [
+      "meta_1769520901497_g247g"
+    ],
+    "lat": 35.5305652,
+    "lng": 137.3755709,
+    "country": "Japan",
+    "region": "Gifu Prefecture",
+    "road": "中野方苗木線旧道",
+    "nominatimCountry": "Japan"
+  },
+  "tUxfwx2V5kasKgDzPIrcFA": {
+    "metas": [
+      "meta_1769520901497_olon4"
+    ],
+    "lat": 34.8420569,
+    "lng": 135.5738947,
+    "country": "Japan",
+    "region": "Osaka Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "j7FbNjqPDKYNUylEgrabLw": {
+    "metas": [
+      "meta_1769520901497_lcz3z"
+    ],
+    "lat": 43.8217791,
+    "lng": 142.8397925,
+    "country": "Japan",
+    "region": "Hokkaido Prefecture",
+    "road": "National Highway Route 39",
+    "nominatimCountry": "Japan"
+  },
+  "kN5CiepzsQ-dgflJavzg5A": {
+    "metas": [
+      "meta_1769520901497_9nvhm"
+    ],
+    "lat": 32.950422,
+    "lng": 131.1743875,
+    "country": "Japan",
+    "region": "Kumamoto Prefecture",
+    "road": "National Highway Route 57",
+    "nominatimCountry": "Japan"
+  },
+  "6A7x_0zd8fRPwnCGmay4BA": {
+    "metas": [
+      "meta_1769520901497_0o6y7"
+    ],
+    "lat": 34.2283645,
+    "lng": 133.9249477,
+    "country": "Japan",
+    "region": "Kagawa Prefecture",
+    "road": "National Route 377",
+    "nominatimCountry": "Japan"
+  },
+  "2T2566a5aIsXydFyj1amyg": {
+    "metas": [
+      "meta_1769520901497_d3gst"
+    ],
+    "lat": 40.0310108,
+    "lng": 141.2383337,
+    "country": "Japan",
+    "region": "Iwate Prefecture",
+    "road": "National Highway Route 4",
+    "nominatimCountry": "Japan"
+  },
+  "gD7_uzfTr1Vsg2_hbQp5UA": {
+    "metas": [
+      "meta_1769520901497_sqxt3"
+    ],
+    "lat": 39.7729527,
+    "lng": 140.1049436,
+    "country": "Japan",
+    "region": "Akita Prefecture",
+    "road": "秋田北インター線",
+    "nominatimCountry": "Japan"
+  },
+  "F85Bo0idYpKXlXc_Z7evrQ": {
+    "metas": [
+      "meta_1769520901497_1ur47"
+    ],
+    "lat": 36.7287096,
+    "lng": 137.0787668,
+    "country": "Japan",
+    "region": "Toyama Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "9nF9Ww3yA0UKja-Ir4Z6GA": {
+    "metas": [
+      "meta_1769520901497_imh2i"
+    ],
+    "lat": 34.7105396,
+    "lng": 133.5022557,
+    "country": "Japan",
+    "region": "Okayama Prefecture",
+    "road": "National Highway Route 313",
+    "nominatimCountry": "Japan"
+  },
+  "jPxR4jf-Do1W-n3mi_2vaA": {
+    "metas": [
+      "meta_1769520901497_twk0k"
+    ],
+    "lat": 40.6332601,
+    "lng": 141.2534872,
+    "country": "Japan",
+    "region": "Aomori Prefecture",
+    "road": "Misawa-Towada Line",
+    "nominatimCountry": "Japan"
+  },
+  "kI-GgQ8kMN-O6ulRUyyYag": {
+    "metas": [
+      "meta_1769520901497_cs4cj"
+    ],
+    "lat": 40.6031911,
+    "lng": 141.259751,
+    "country": "Japan",
+    "region": "Aomori Prefecture",
+    "road": "Towada Bypass",
+    "nominatimCountry": "Japan"
+  },
+  "l_6sTQ4-IHq3QKQgSaLcNw": {
+    "metas": [
+      "meta_1769520901497_owswb"
+    ],
+    "lat": 35.4982768,
+    "lng": 134.1910628,
+    "country": "Japan",
+    "region": "Tottori Prefecture",
+    "road": "Tottori Shikano Kurayoshi Line",
+    "nominatimCountry": "Japan"
+  },
+  "JAf6fec1gpdR21tHNxTSLQ": {
+    "metas": [
+      "meta_1769520901497_44nza"
+    ],
+    "lat": 32.074839,
+    "lng": 131.496469,
+    "country": "Japan",
+    "region": "Miyazaki Prefecture",
+    "road": "Shintomi Bypass",
+    "nominatimCountry": "Japan"
+  },
+  "hF0VRLN70D0WJ8c8D4wuVQ": {
+    "metas": [
+      "meta_1769520901497_hfl22"
+    ],
+    "lat": 42.7979945,
+    "lng": 143.3908895,
+    "country": "Japan",
+    "region": "Hokkaido Prefecture",
+    "road": "Toyokoro Nukanai Memuro Line",
+    "nominatimCountry": "Japan"
+  },
+  "yyfFH4Hvr6G3WhGM9gYfZg": {
+    "metas": [
+      "meta_1769520901497_jnt44"
+    ],
+    "lat": 35.1452137,
+    "lng": 133.144018,
+    "country": "Japan",
+    "region": "Shimane Prefecture",
+    "road": "Yokota Tari Line",
+    "nominatimCountry": "Japan"
+  },
+  "U9huy3ostIY4DnZGDe_vTw": {
+    "metas": [
+      "meta_1769520901497_wzso9"
+    ],
+    "lat": 37.9081001,
+    "lng": 139.0201739,
+    "country": "Japan",
+    "region": "Niigata Prefecture",
+    "road": "Chuo Ward",
+    "nominatimCountry": "Japan"
+  },
+  "6W-d3WRri4mjtLohOtj_Bw": {
+    "metas": [
+      "meta_1769520901497_cbiuh"
+    ],
+    "lat": 34.2854332,
+    "lng": 134.0506039,
+    "country": "Japan",
+    "region": "Kagawa Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "x8ZgBhtjpm9PK8W6A4-MZg": {
+    "metas": [
+      "meta_1769520901497_pusr8"
+    ],
+    "lat": 40.8181517,
+    "lng": 140.7795646,
+    "country": "Japan",
+    "region": "Aomori Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "nGNiWfoMq5HqMdsiIGLXfw": {
+    "metas": [
+      "meta_1769520901497_o4xwt"
+    ],
+    "lat": 40.8318407,
+    "lng": 140.808187,
+    "country": "Japan",
+    "region": "Aomori Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "hH-QkoTQ_QodEkfpSLc78w": {
+    "metas": [
+      "meta_1769520901497_pwiw9"
+    ],
+    "lat": 36.6089689,
+    "lng": 136.7035899,
+    "country": "Japan",
+    "region": "Ishikawa Prefecture",
+    "road": "national route 359",
+    "nominatimCountry": "Japan"
+  },
+  "J_8Mq939MDNjcsqAKtI9Hw": {
+    "metas": [
+      "meta_1769520901497_4lior"
+    ],
+    "lat": 33.9533203,
+    "lng": 133.5240087,
+    "country": "Japan",
+    "region": "Ehime Prefecture",
+    "road": "National Highway Route 319",
+    "nominatimCountry": "Japan"
+  },
+  "e4aa3e6jbhVWG1Tau24TCQ": {
+    "metas": [
+      "meta_1769520901497_q1k11"
+    ],
+    "lat": 34.4619252,
+    "lng": 132.8588804,
+    "country": "Japan",
+    "region": "Hiroshima Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "2ewSDv7yVLsgOqnG24wAew": {
+    "metas": [
+      "meta_1769520901497_erpzh"
+    ],
+    "lat": 43.1170928,
+    "lng": 141.3130749,
+    "country": "Japan",
+    "region": "Hokkaido Region",
+    "road": "Kita Ward",
+    "nominatimCountry": "Japan"
+  },
+  "p_tmUdBvAUcqRR_CAiAzmg": {
+    "metas": [
+      "meta_1769520901497_rvwh2"
+    ],
+    "lat": 26.1977638,
+    "lng": 127.7690352,
+    "country": "Japan",
+    "region": "Okinawa Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "mpOSF8iwL4O5mUwky_nO6w": {
+    "metas": [
+      "meta_1769520901497_7wavv"
+    ],
+    "lat": 43.7132609,
+    "lng": 144.2017224,
+    "country": "Japan",
+    "region": "Hokkaido Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "Xj6rU15UKAxnjdMryGkukA": {
+    "metas": [
+      "meta_1769520901497_roz1p"
+    ],
+    "lat": 35.0476443,
+    "lng": 138.3585441,
+    "country": "Japan",
+    "region": "Shizuoka Prefecture",
+    "road": "Aoi Ward",
+    "nominatimCountry": "Japan"
+  },
+  "XTLXxd5b5a3GK_arKRNgvQ": {
+    "metas": [
+      "meta_1769520901497_h6vaf"
+    ],
+    "lat": 34.2287552,
+    "lng": 133.9239776,
+    "country": "Japan",
+    "region": "Kagawa Prefecture",
+    "road": "National Route 377",
+    "nominatimCountry": "Japan"
+  },
+  "FOeZpgvoCmjZCFKSv0V8jg": {
+    "metas": [
+      "meta_1769520901497_pp09b"
+    ],
+    "lat": 36.0509792,
+    "lng": 137.5695573,
+    "country": "Japan",
+    "region": "Gifu Prefecture",
+    "road": "奈川野麦高根線",
+    "nominatimCountry": "Japan"
+  },
+  "Bq8bN51wMbE7P0NUV4ye5A": {
+    "metas": [
+      "meta_1769520901497_zzdhn"
+    ],
+    "lat": 32.6472659,
+    "lng": 131.0191774,
+    "country": "Japan",
+    "region": "Kumamoto Prefecture",
+    "road": "清和砥用線",
+    "nominatimCountry": "Japan"
+  },
+  "6aOZf7WmNmq0KcBF0WcJrQ": {
+    "metas": [
+      "meta_1769520901497_akbwc"
+    ],
+    "lat": 31.7139295,
+    "lng": 131.4601451,
+    "country": "Japan",
+    "region": "Miyazaki Prefecture",
+    "road": "National Route 220",
+    "nominatimCountry": "Japan"
+  },
+  "X3gwDGKGGthAGR6RhBrwuw": {
+    "metas": [
+      "meta_1769520901497_1vcrw"
+    ],
+    "lat": 30.699674,
+    "lng": 131.06796,
+    "country": "Japan",
+    "region": "Kagoshima Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "bqqODBi3LSqPgvEc0yMDSQ": {
+    "metas": [
+      "meta_1769520901497_f5de3"
+    ],
+    "lat": 43.1861805,
+    "lng": 140.5088003,
+    "country": "Japan",
+    "region": "Hokkaido Prefecture",
+    "road": "Furubira Kamoenai Line",
+    "nominatimCountry": "Japan"
+  },
+  "z6peG2kB_Qfug7n1RqVvwg": {
+    "metas": [
+      "meta_1769520901497_03dtl"
+    ],
+    "lat": 35.9374458,
+    "lng": 139.7411148,
+    "country": "Japan",
+    "region": "Saitama Prefecture",
+    "road": "Iwatsuki Ward",
+    "nominatimCountry": "Japan"
+  },
+  "zW9wTrwcLHRsro4lD11NKw": {
+    "metas": [
+      "meta_1769520901497_8m0z1"
+    ],
+    "lat": 26.2242321,
+    "lng": 127.7018987,
+    "country": "Japan",
+    "region": "Okinawa Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "40fysjHkDzXAzHX8rZ6ALQ": {
+    "metas": [
+      "meta_1769520901497_plg5t"
+    ],
+    "lat": 24.735626,
+    "lng": 125.310487,
+    "country": "Japan",
+    "region": "Okinawa Prefecture",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "nntKs2es-kdn8uPdMUUnqQ": {
+    "metas": [
+      "meta_1769520901497_v6a2y"
+    ],
+    "lat": 35.0826883,
+    "lng": 139.0254964,
+    "country": "Japan",
+    "region": "Shizuoka Prefecture",
+    "road": "Izu  Sky Line",
+    "nominatimCountry": "Japan"
+  },
+  "2EuomV3dNk5iPmZNV14iJw": {
+    "metas": [
+      "meta_1769520901497_xon4z"
+    ],
+    "lat": 35.6972672,
+    "lng": 139.8150429,
+    "country": "Japan",
+    "region": null,
+    "road": "Yotsume-dori Avenue",
+    "nominatimCountry": "Japan"
+  },
+  "wKwXJtbLXXqDU4qv29WAsA": {
+    "metas": [
+      "meta_1769520901497_izgqz"
+    ],
+    "lat": 45.3956011,
+    "lng": 141.7052152,
+    "country": "Japan",
+    "region": "Hokkaido Prefecture",
+    "road": "National Highway Route 40",
+    "nominatimCountry": "Japan"
+  },
+  "bWH4380fD83QQaQwAHsAog": {
+    "metas": [
+      "meta_1769520901497_rpvfk"
+    ],
+    "lat": 42.4775174,
+    "lng": 140.8828335,
+    "country": "Japan",
+    "region": "Hokkaido Region",
+    "road": null,
+    "nominatimCountry": "Japan"
+  },
+  "xz__Qxh0fWWLdEJ4nJxAxQ": {
+    "metas": [
+      "meta_1769520901497_pbw89"
+    ],
+    "lat": 34.6858816,
+    "lng": 135.5240706,
+    "country": "Japan",
+    "region": "Osaka Prefecture",
+    "road": "Chūō Ward",
+    "nominatimCountry": "Japan"
+  },
+  "VC6_9aYBxO-Vb2gWChifRg": {
+    "metas": [
+      "meta_1769520902667_bfkzt"
+    ],
+    "lat": 31.9748903,
+    "lng": 35.9691106,
+    "country": "Jordan",
+    "region": "Amman",
+    "road": "Al-Bat-Haa’ Street",
+    "nominatimCountry": "Jordan"
+  },
+  "KQWBbZIyLlRR1TJTXwLvVg": {
+    "metas": [
+      "meta_1769520902667_z455w"
+    ],
+    "lat": 31.520766,
+    "lng": 36.053152,
+    "country": "Jordan",
+    "region": "Amman",
+    "road": "Queen Alia Airport Road",
+    "nominatimCountry": "Jordan"
+  },
+  "exzAtRdDiZXa4k68fUyPWg": {
+    "metas": [
+      "meta_1769520902667_bmrdj"
+    ],
+    "lat": 31.731606,
+    "lng": 35.806477,
+    "country": "Jordan",
+    "region": "Madaba",
+    "road": null,
+    "nominatimCountry": "Jordan"
+  },
+  "Ch6WA6jTRB78F1JGjJ8xtA": {
+    "metas": [
+      "meta_1769520902667_ril4m"
+    ],
+    "lat": 31.9828687,
+    "lng": 35.9242113,
+    "country": "Jordan",
+    "region": "Amman",
+    "road": "Al-Sultan Qalawun Street",
+    "nominatimCountry": "Jordan"
+  },
+  "uw7DRpL0kO6wrKvLyhmMUA": {
+    "metas": [
+      "meta_1769520902667_n13lk"
+    ],
+    "lat": 31.0663059,
+    "lng": 36.0080259,
+    "country": "Jordan",
+    "region": "Karak",
+    "road": "Queen Alia Airport Road",
+    "nominatimCountry": "Jordan"
+  },
+  "vBsoZIu66Alvh--35bR1NA": {
+    "metas": [
+      "meta_1769520902667_kwzxm"
+    ],
+    "lat": 31.8684707,
+    "lng": 35.7900719,
+    "country": "Jordan",
+    "region": "Amman",
+    "road": "40",
+    "nominatimCountry": "Jordan"
+  },
+  "yIAK97OZj3aBe4WALqZ09Q": {
+    "metas": [
+      "meta_1769520902667_1alhk"
+    ],
+    "lat": 31.4898023,
+    "lng": 35.5683504,
+    "country": "Jordan",
+    "region": "Madaba",
+    "road": "65",
+    "nominatimCountry": "Jordan"
+  },
+  "UJBeqyp2XCbWaYybuCsCKw": {
+    "metas": [
+      "meta_1769520902667_satns"
+    ],
+    "lat": 30.7325192,
+    "lng": 35.314307,
+    "country": "Jordan",
+    "region": "Aqaba",
+    "road": "Jordan Valley Highway",
+    "nominatimCountry": "Jordan"
+  },
+  "YmD4VWwAIH6r_iUMT6dTkQ": {
+    "metas": [
+      "meta_1769520902667_fawnc"
+    ],
+    "lat": 31.7364976,
+    "lng": 35.8277515,
+    "country": "Jordan",
+    "region": "Madaba",
+    "road": "Madaba Street",
+    "nominatimCountry": "Jordan"
+  },
+  "dw1MW6FhoYMvoveWgpP4NA": {
+    "metas": [
+      "meta_1769520902667_8lryx"
+    ],
+    "lat": 30.9503443,
+    "lng": 35.7086623,
+    "country": "Jordan",
+    "region": "Tafilah",
+    "road": "King's Highway",
+    "nominatimCountry": "Jordan"
+  },
+  "rFliXiSYiEMkLAeevDIusA": {
+    "metas": [
+      "meta_1769520902667_0fp8b"
+    ],
+    "lat": 29.5600987,
+    "lng": 35.0924677,
+    "country": "Jordan",
+    "region": "Aqaba",
+    "road": "Desert Highway",
+    "nominatimCountry": "Jordan"
+  },
+  "_AF0Z0VgcslbQMOZUxM61Q": {
+    "metas": [
+      "meta_1769520902667_7mxfk"
+    ],
+    "lat": 29.5412483,
+    "lng": 35.0132851,
+    "country": "Jordan",
+    "region": "Aqaba",
+    "road": "Salah Ad-Din Street",
+    "nominatimCountry": "Jordan"
+  },
+  "bCT4r-napInUI5KmO13nhA": {
+    "metas": [
+      "meta_1769520902667_wglcz"
+    ],
+    "lat": 31.9518535,
+    "lng": 35.9157812,
+    "country": "Jordan",
+    "region": "Amman",
+    "road": "2nd Circle",
+    "nominatimCountry": "Jordan"
+  },
+  "gsfcm4LSE9JY45kw1ae2XQ": {
+    "metas": [
+      "meta_1769520902667_i98dt"
+    ],
+    "lat": 29.5406863,
+    "lng": 35.0064311,
+    "country": "Jordan",
+    "region": "Aqaba",
+    "road": "Prince Hassan Street",
+    "nominatimCountry": "Jordan"
+  },
+  "1_Qp_Fnqz-CrdXXff2vL7w": {
+    "metas": [
+      "meta_1769520902667_lm7oc"
+    ],
+    "lat": 31.721596,
+    "lng": 35.792738,
+    "country": "Jordan",
+    "region": "Madaba",
+    "road": "Al-Yarmouk Street",
+    "nominatimCountry": "Jordan"
+  },
+  "p9Z4JhoYm8wJM2Y3P99Ktg": {
+    "metas": [
+      "meta_1769520902667_t260f"
+    ],
+    "lat": 30.3223193,
+    "lng": 35.4517788,
+    "country": "Jordan",
+    "region": "Maan",
+    "road": "As-Siq",
+    "nominatimCountry": "Jordan"
+  },
+  "a1yBtBnmaBGJOXyjgzpPSQ": {
+    "metas": [
+      "meta_1769520903818_9xdpk"
+    ],
+    "lat": 47.1171369,
+    "lng": 51.9003944,
+    "country": "Kazakhstan",
+    "region": "Atyrau Region",
+    "road": "Kazyret Myrzagali Street",
+    "nominatimCountry": "Kazakhstan"
+  },
+  "8t9B23yjHYrNizWnjeccNA": {
+    "metas": [
+      "meta_1769520903818_ai639"
+    ],
+    "lat": 50.7440293,
+    "lng": 79.638343,
+    "country": "Kazakhstan",
+    "region": "Abay Region",
+    "road": "Павлодар - Семей",
+    "nominatimCountry": "Kazakhstan"
+  },
+  "rVtb52KUaqLVntc9tMFjsQ": {
+    "metas": [
+      "meta_1769520903818_dmc2h"
+    ],
+    "lat": 48.099516,
+    "lng": 67.536155,
+    "country": "Kazakhstan",
+    "region": "Ulytau Region",
+    "road": "KQ-7",
+    "nominatimCountry": "Kazakhstan"
+  },
+  "LLuXSA41e8ygbFv3IEWzWg": {
+    "metas": [
+      "meta_1769520903818_j8un6"
+    ],
+    "lat": 43.3151195,
+    "lng": 68.2110991,
+    "country": "Kazakhstan",
+    "region": "Turkistan Region",
+    "road": "Байконур",
+    "nominatimCountry": "Kazakhstan"
+  },
+  "0wBw6rHmlu4XMz4hOcc52w": {
+    "metas": [
+      "meta_1769520903818_rmex9"
+    ],
+    "lat": 46.9577846,
+    "lng": 54.0520542,
+    "country": "Kazakhstan",
+    "region": "Atyrau Region",
+    "road": "Уалиханова",
+    "nominatimCountry": "Kazakhstan"
+  },
+  "c3ikdXkDsMbMckuCH55WDA": {
+    "metas": [
+      "meta_1769520904969_o9nnd"
+    ],
+    "lat": 42.9073983,
+    "lng": 74.7665076,
+    "country": "Kyrgyzstan",
+    "region": "Chuy Region",
+    "road": "ЭМ-20",
+    "nominatimCountry": "Kyrgyzstan"
+  },
+  "aIS2W32xH-n_pOESWyLwNg": {
+    "metas": [
+      "meta_1769520904969_2nzly"
+    ],
+    "lat": 42.8326719,
+    "lng": 75.4464747,
+    "country": "Kyrgyzstan",
+    "region": "Chuy Region",
+    "road": "ЭМ-11",
+    "nominatimCountry": "Kyrgyzstan"
+  },
+  "nuwOkEduV49w_4gMftnPeg": {
+    "metas": [
+      "meta_1769520904970_cj5pc"
+    ],
+    "lat": 40.8373943,
+    "lng": 73.2817158,
+    "country": "Kyrgyzstan",
+    "region": "Osh Region",
+    "road": "Bishkek-Osh",
+    "nominatimCountry": "Kyrgyzstan"
+  },
+  "MnFCCDs1t6ZWeib8wNJorQ": {
+    "metas": [
+      "meta_1769520904970_ykiln"
+    ],
+    "lat": 41.4528296,
+    "lng": 76.3237789,
+    "country": "Kyrgyzstan",
+    "region": "Naryn Region",
+    "road": "М-068",
+    "nominatimCountry": "Kyrgyzstan"
+  },
+  "29e02IAWwxKOnJC3WTjNKQ": {
+    "metas": [
+      "meta_1769520904970_thytv"
+    ],
+    "lat": 41.6595391,
+    "lng": 75.0175788,
+    "country": "Kyrgyzstan",
+    "region": "Naryn Region",
+    "road": "М-082",
+    "nominatimCountry": "Kyrgyzstan"
+  },
+  "_XSkijh_Tag0IzzncaylWw": {
+    "metas": [
+      "meta_1769520904970_pxpc9",
+      "meta_1769520904970_r53km"
+    ],
+    "lat": 42.6578112,
+    "lng": 74.6860516,
+    "country": "Kyrgyzstan",
+    "region": "Chuy Region",
+    "road": null,
+    "nominatimCountry": "Kyrgyzstan"
+  },
+  "tTwgm2J0wfw-GVKi5EVmAA": {
+    "metas": [
+      "meta_1769520906180_itle9"
+    ],
+    "lat": 17.9958875,
+    "lng": 102.641371,
+    "country": "Laos",
+    "region": "Vientiane Prefecture",
+    "road": "Nongbone Road",
+    "nominatimCountry": "Laos"
+  },
+  "6jrEvGX2mmRXm5wpPVYiPg": {
+    "metas": [
+      "meta_1769520906180_3dnfm"
+    ],
+    "lat": 17.9653693,
+    "lng": 102.6055757,
+    "country": "Laos",
+    "region": "Vientiane Prefecture",
+    "road": "Rue Setthatirath",
+    "nominatimCountry": "Laos"
+  },
+  "-53AvyHFlwYy19tPkum6LA": {
+    "metas": [
+      "meta_1769520906180_628co"
+    ],
+    "lat": 16.5621582,
+    "lng": 104.7564674,
+    "country": "Laos",
+    "region": "Savannakhet Province",
+    "road": "Santiphab Avenue",
+    "nominatimCountry": "Laos"
+  },
+  "zewjyT9xbAE5eV_NjBOsIw": {
+    "metas": [
+      "meta_1769520906180_7pb3r"
+    ],
+    "lat": 18.0307933,
+    "lng": 102.467721,
+    "country": "Laos",
+    "region": "Vientiane Prefecture",
+    "road": "Nongtaeng",
+    "nominatimCountry": "Laos"
+  },
+  "hm5VrSGLNP3akJWF9XQzfA": {
+    "metas": [
+      "meta_1769520906180_63y9v"
+    ],
+    "lat": 18.0231053,
+    "lng": 102.6338607,
+    "country": "Laos",
+    "region": "Vientiane Prefecture",
+    "road": "Dongdok-Phonetong Road",
+    "nominatimCountry": "Laos"
+  },
+  "E_lS1rBGE3-0SEMu3SvRVA": {
+    "metas": [
+      "meta_1769520906180_h5bzi"
+    ],
+    "lat": 18.021588,
+    "lng": 102.633773,
+    "country": "Laos",
+    "region": "Vientiane Prefecture",
+    "road": "Dongdok-Phonetong Road",
+    "nominatimCountry": "Laos"
+  },
+  "-WdKLpPeM_4gZCecMkmloQ": {
+    "metas": [
+      "meta_1769520906180_s1xok"
+    ],
+    "lat": 18.0137163,
+    "lng": 102.456054,
+    "country": "Laos",
+    "region": "Vientiane Prefecture",
+    "road": "Nongtaeng",
+    "nominatimCountry": "Laos"
+  },
+  "ZR0dwcQcTJww8tac96BBLA": {
+    "metas": [
+      "meta_1769520906180_as6iy"
+    ],
+    "lat": 16.5723086,
+    "lng": 104.7636257,
+    "country": "Laos",
+    "region": "Savannakhet Province",
+    "road": null,
+    "nominatimCountry": "Laos"
+  },
+  "qYS13BK7A4dEO1t6sBeskA": {
+    "metas": [
+      "meta_1769520907399_sdyp1"
+    ],
+    "lat": 33.880411,
+    "lng": 35.549556,
+    "country": "Lebanon",
+    "region": "Mount Lebanon Governorate",
+    "road": "Road 5",
+    "nominatimCountry": "Lebanon"
+  },
+  "SfcY00qoMI3QMswJXygDtA": {
+    "metas": [
+      "meta_1769520907399_5d0q5"
+    ],
+    "lat": 34.26371,
+    "lng": 35.802995,
+    "country": "Lebanon",
+    "region": "North Governorate",
+    "road": "Darbechtar",
+    "nominatimCountry": "Lebanon"
+  },
+  "P-CuBh-j1voQNe8Sr4Y0IQ": {
+    "metas": [
+      "meta_1769520907400_arbpx"
+    ],
+    "lat": 33.81917,
+    "lng": 35.909815,
+    "country": "Lebanon",
+    "region": "Beqaa Governorate",
+    "road": null,
+    "nominatimCountry": "Lebanon"
+  },
+  "MBWFQkJ9w4csoyHQoy2f6A": {
+    "metas": [
+      "meta_1769520907400_brunh"
+    ],
+    "lat": 34.228517,
+    "lng": 36.0612,
+    "country": "Lebanon",
+    "region": "North Governorate",
+    "road": "طريق أرز - بعلبك",
+    "nominatimCountry": "Lebanon"
+  },
+  "fCqEdhGUEa0hKvAdTixXPg": {
+    "metas": [
+      "meta_1769520907400_mfs4w"
+    ],
+    "lat": 34.535852,
+    "lng": 36.020321,
+    "country": "Lebanon",
+    "region": "Akkar Governorate",
+    "road": "Aamara",
+    "nominatimCountry": "Lebanon"
+  },
+  "DxxwVt5TXZdxzmvqyvZlkg": {
+    "metas": [
+      "meta_1769520907400_q5uw1"
+    ],
+    "lat": 33.835153,
+    "lng": 35.910548,
+    "country": "Lebanon",
+    "region": "Beqaa Governorate",
+    "road": "Tell Chiha",
+    "nominatimCountry": "Lebanon"
+  },
+  "9H9VLZIVGE8D9F0G0evtKA": {
+    "metas": [
+      "meta_1769520908646_lwbam"
+    ],
+    "lat": 22.1880699,
+    "lng": 113.5491387,
+    "country": "Macau",
+    "region": "Macau",
+    "road": "科英布拉街 Rua Cidade de Coimbra",
+    "nominatimCountry": "China"
+  },
+  "ABuSmZapUDp0hbsS8jf4sQ": {
+    "metas": [
+      "meta_1769520908646_cd9wm"
+    ],
+    "lat": 22.1900716,
+    "lng": 113.5436102,
+    "country": "Macau",
+    "region": "Macau",
+    "road": "葡京路 Avenida de Lisboa",
+    "nominatimCountry": "China"
+  },
+  "sM2Wc1dJJ8KzzJ66yBQDZw": {
+    "metas": [
+      "meta_1769520909782_zyvg5"
+    ],
+    "lat": 1.9399004,
+    "lng": 103.8992931,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "Jalan Jemaluang",
+    "nominatimCountry": "Malaysia"
+  },
+  "bj-AB-eZ5L9H8YvEKETQrg": {
+    "metas": [
+      "meta_1769520909782_pxaqq"
+    ],
+    "lat": 2.5539879,
+    "lng": 112.4115654,
+    "country": "Malaysia",
+    "region": "Sarawak",
+    "road": "Jalan Sibu-Bintulu",
+    "nominatimCountry": "Malaysia"
+  },
+  "ENPq8RvBG_AUgaF7x1POEg": {
+    "metas": [
+      "meta_1769520909782_u7fc5"
+    ],
+    "lat": 1.7353376,
+    "lng": 103.7855804,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "Jalan Kulai - Kota Tinggi",
+    "nominatimCountry": "Malaysia"
+  },
+  "SDzLZAtr_KQJWcwyS0VeuA": {
+    "metas": [
+      "meta_1769520909782_lg0c7"
+    ],
+    "lat": 1.5483271,
+    "lng": 103.7979325,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "Jalan Kota Tinggi",
+    "nominatimCountry": "Malaysia"
+  },
+  "l_kL0CobkOvC-4Bj56jvzQ": {
+    "metas": [
+      "meta_1769520909782_b2s9m"
+    ],
+    "lat": 1.7280474,
+    "lng": 103.4227467,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "North–South Expressway",
+    "nominatimCountry": "Malaysia"
+  },
+  "WIuzRFsU-4J0NEvFkwL2iQ": {
+    "metas": [
+      "meta_1769520909782_0xc3z"
+    ],
+    "lat": 1.6966105,
+    "lng": 103.8802396,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "Kulim (Malaysia) Berhad Ladang REM",
+    "nominatimCountry": "Malaysia"
+  },
+  "nVydRnfQQQBOI_Tb18sR9g": {
+    "metas": [
+      "meta_1769520909782_3i5ab"
+    ],
+    "lat": 1.7455405,
+    "lng": 103.4198434,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "Federal Route 1",
+    "nominatimCountry": "Malaysia"
+  },
+  "U6ZgrzTq-PH5OlEQiQEFOQ": {
+    "metas": [
+      "meta_1769520909782_b4hoq"
+    ],
+    "lat": 2.7265283,
+    "lng": 101.9374159,
+    "country": "Malaysia",
+    "region": "Negeri Sembilan",
+    "road": "Jalan Dato Abdul Rahman",
+    "nominatimCountry": "Malaysia"
+  },
+  "la45IdkFkLne3-fJve9zVg": {
+    "metas": [
+      "meta_1769520909782_fz24j"
+    ],
+    "lat": 1.4952274,
+    "lng": 103.8728709,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "Jalan Suria 1",
+    "nominatimCountry": "Malaysia"
+  },
+  "IGENw1_74MOeipsQ-KLrCQ": {
+    "metas": [
+      "meta_1769520909782_pn23s"
+    ],
+    "lat": 3.1343548,
+    "lng": 101.684959,
+    "country": "Malaysia",
+    "region": "Kuala Lumpur",
+    "road": "Jalan Stesen Sentral",
+    "nominatimCountry": "Malaysia"
+  },
+  "fp67Bt3b5aZYgidMruCPng": {
+    "metas": [
+      "meta_1769520909782_rmz8h"
+    ],
+    "lat": 5.4063534,
+    "lng": 100.4899332,
+    "country": "Malaysia",
+    "region": "Penang",
+    "road": "Jalan Mengkuang",
+    "nominatimCountry": "Malaysia"
+  },
+  "ZVMiydQAnmGuwvGUvWeHYA": {
+    "metas": [
+      "meta_1769520909782_u0wpp"
+    ],
+    "lat": 2.154769,
+    "lng": 102.528327,
+    "country": "Malaysia",
+    "region": "Malacca",
+    "road": null,
+    "nominatimCountry": "Malaysia"
+  },
+  "1XGZcblrLaXJUJG5qoZKNQ": {
+    "metas": [
+      "meta_1769520909782_dsgq8"
+    ],
+    "lat": 1.5189436,
+    "lng": 103.7986263,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "Jalan Bakau",
+    "nominatimCountry": "Malaysia"
+  },
+  "88KXu_FNCsFzBlbe5fgC3A": {
+    "metas": [
+      "meta_1769520909782_1myjm"
+    ],
+    "lat": 3.9727395,
+    "lng": 113.9206347,
+    "country": "Malaysia",
+    "region": "Sarawak",
+    "road": "Rumah Richard",
+    "nominatimCountry": "Malaysia"
+  },
+  "HN4aoVxo9PPndJk4b5QWIQ": {
+    "metas": [
+      "meta_1769520909782_knpaz"
+    ],
+    "lat": 2.7610997,
+    "lng": 102.237736,
+    "country": "Malaysia",
+    "region": "Negeri Sembilan",
+    "road": "N137",
+    "nominatimCountry": "Malaysia"
+  },
+  "6v3AlVwu7CbV7rL03m3oJA": {
+    "metas": [
+      "meta_1769520909782_ab3v8"
+    ],
+    "lat": 3.9350375,
+    "lng": 113.7508704,
+    "country": "Malaysia",
+    "region": "Sarawak",
+    "road": "Jalan Coastal Miri-Bintulu",
+    "nominatimCountry": "Malaysia"
+  },
+  "Icq-pJWqWKSSkwcoG_wdRg": {
+    "metas": [
+      "meta_1769520909782_omfc4"
+    ],
+    "lat": 5.3325865,
+    "lng": 115.2159966,
+    "country": "Malaysia",
+    "region": "Labuan",
+    "road": "Jalan Bukit Kuda",
+    "nominatimCountry": "Malaysia"
+  },
+  "X7pQezYqVQYRqi1N0UffYw": {
+    "metas": [
+      "meta_1769520909782_fu59v"
+    ],
+    "lat": 2.2946584,
+    "lng": 111.828966,
+    "country": "Malaysia",
+    "region": "Sarawak",
+    "road": "Jalan Keranji",
+    "nominatimCountry": "Malaysia"
+  },
+  "mf-hoRW574oQ9q6Fvlr4AA": {
+    "metas": [
+      "meta_1769520909782_nyz2t"
+    ],
+    "lat": 2.01232,
+    "lng": 102.601736,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "Parit Bakar",
+    "nominatimCountry": "Malaysia"
+  },
+  "wn6QSv2VGDrdgO_ikZGr7A": {
+    "metas": [
+      "meta_1769520909782_m7dlp"
+    ],
+    "lat": 6.4483302,
+    "lng": 100.2102543,
+    "country": "Malaysia",
+    "region": "Perlis",
+    "road": null,
+    "nominatimCountry": "Malaysia"
+  },
+  "LIg9ijNPkP_eJ5El_gZpSQ": {
+    "metas": [
+      "meta_1769520909782_ci89d"
+    ],
+    "lat": 3.8076465,
+    "lng": 103.3136411,
+    "country": "Malaysia",
+    "region": "Pahang",
+    "road": "Lorong Bukit Setongkol 133",
+    "nominatimCountry": "Malaysia"
+  },
+  "Q0bEVGPYk0cuGp_ko6WKVQ": {
+    "metas": [
+      "meta_1769520909782_9xled"
+    ],
+    "lat": 1.4950082,
+    "lng": 103.9092008,
+    "country": "Malaysia",
+    "region": "Johor",
+    "road": "Jalan Sentosa 2",
+    "nominatimCountry": "Malaysia"
+  },
+  "Y5MWsaPmdnqc1Qgcg5sPaQ": {
+    "metas": [
+      "meta_1769520909782_xl2on"
+    ],
+    "lat": 4.9690014,
+    "lng": 115.726157,
+    "country": "Malaysia",
+    "region": "Sabah",
+    "road": "Jalan Sipitang-Tenom",
+    "nominatimCountry": "Malaysia"
+  },
+  "v6AGCovdsCQc9QGk8ONaqQ": {
+    "metas": [
+      "meta_1769520909782_d5s4f"
+    ],
+    "lat": 6.5502283,
+    "lng": 100.2471206,
+    "country": "Malaysia",
+    "region": "Perlis",
+    "road": null,
+    "nominatimCountry": "Malaysia"
+  },
+  "O3k-KM2nAzFPP_Ae0ci9Zw": {
+    "metas": [
+      "meta_1769520909782_mrppx"
+    ],
+    "lat": 4.0380063,
+    "lng": 114.8042778,
+    "country": "Malaysia",
+    "region": "Sarawak",
+    "road": "Mulu Main Road",
+    "nominatimCountry": "Malaysia"
+  },
+  "wkaW-DRHfDyiYfvRFHZbsA": {
+    "metas": [
+      "meta_1769520910938_t9yp7"
+    ],
+    "lat": 47.9471,
+    "lng": 107.454371,
+    "country": "Mongolia",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "H9-UgAdcCf7ANOqQ_nfLxQ": {
+    "metas": [
+      "meta_1769520910938_s6jte"
+    ],
+    "lat": 47.47954,
+    "lng": 101.438107,
+    "country": "Mongolia",
+    "region": "Arkhangai",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "Nqz_KldLGYEHdRRowCeNig": {
+    "metas": [
+      "meta_1769520910938_pf5lp"
+    ],
+    "lat": 50.5179715,
+    "lng": 100.1170732,
+    "country": "Mongolia",
+    "region": "Hovsgel",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "K62ru9mKtQy1E5DYfEjcTw": {
+    "metas": [
+      "meta_1769520910938_rfuhg"
+    ],
+    "lat": 45.31336,
+    "lng": 113.834545,
+    "country": "Mongolia",
+    "region": "Sükhbaatar",
+    "road": "Dariganga - Baruun Urt",
+    "nominatimCountry": "Mongolia"
+  },
+  "QWpewDBRr3knruhZypPOHw": {
+    "metas": [
+      "meta_1769520910938_f7b6u"
+    ],
+    "lat": 49.805178,
+    "lng": 107.656488,
+    "country": "Mongolia",
+    "region": "Selenge",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "bP_3sjaoddmxRPIp6Gr4GA": {
+    "metas": [
+      "meta_1769520910938_up9j5"
+    ],
+    "lat": 46.187231,
+    "lng": 99.043958,
+    "country": "Mongolia",
+    "region": "Bayankhongor",
+    "road": "Bayankhongor-Altai",
+    "nominatimCountry": "Mongolia"
+  },
+  "Ky1AsZaPnFqKQCR1XaI1-w": {
+    "metas": [
+      "meta_1769520910938_3rpra"
+    ],
+    "lat": 46.322964,
+    "lng": 92.569045,
+    "country": "Mongolia",
+    "region": "Khovd",
+    "road": "A14",
+    "nominatimCountry": "Mongolia"
+  },
+  "zdYOpec0WWXVKZK0aOevQQ": {
+    "metas": [
+      "meta_1769520910938_wqz4e"
+    ],
+    "lat": 48.1765869,
+    "lng": 99.7438341,
+    "country": "Mongolia",
+    "region": "Arkhangai",
+    "road": "Tariat-Jargalant",
+    "nominatimCountry": "Mongolia"
+  },
+  "xtB6UakyGAZmdSYFL0jUUA": {
+    "metas": [
+      "meta_1769520910938_nn721"
+    ],
+    "lat": 47.443922,
+    "lng": 104.568896,
+    "country": "Mongolia",
+    "region": "Töv",
+    "road": "A0301",
+    "nominatimCountry": "Mongolia"
+  },
+  "0MksN_ZTKHgyLIYsNNjVzg": {
+    "metas": [
+      "meta_1769520910938_yet4x"
+    ],
+    "lat": 50.506422,
+    "lng": 100.113305,
+    "country": "Mongolia",
+    "region": "Hovsgel",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "GZfnwhxPftj3s3MojdNygA": {
+    "metas": [
+      "meta_1769520910938_zz2fz"
+    ],
+    "lat": 49.3254285,
+    "lng": 107.1437798,
+    "country": "Mongolia",
+    "region": "Selenge",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "yGB4edORvYGpFuuBz5qY-g": {
+    "metas": [
+      "meta_1769520910938_sc6a9"
+    ],
+    "lat": 47.792951,
+    "lng": 105.87635,
+    "country": "Mongolia",
+    "region": "Töv",
+    "road": "Khustan Tsogtsolbor",
+    "nominatimCountry": "Mongolia"
+  },
+  "hBHxn_jTOWEeMTsa0tJT5w": {
+    "metas": [
+      "meta_1769520910938_0sgh9"
+    ],
+    "lat": 47.909788,
+    "lng": 106.924898,
+    "country": "Mongolia",
+    "region": null,
+    "road": "Olympic Street",
+    "nominatimCountry": "Mongolia"
+  },
+  "kfPagXXQ_JMtU4jQbOmMLw": {
+    "metas": [
+      "meta_1769520910938_s2e0a"
+    ],
+    "lat": 45.5471635,
+    "lng": 105.8464778,
+    "country": "Mongolia",
+    "region": "Dundgovi",
+    "road": "Mandalgovi - Dalanzadgad Highway",
+    "nominatimCountry": "Mongolia"
+  },
+  "Z40lQt4D5NhAs5koWTg34g": {
+    "metas": [
+      "meta_1769520910938_c93g2"
+    ],
+    "lat": 47.846901,
+    "lng": 104.261694,
+    "country": "Mongolia",
+    "region": "Bulgan",
+    "road": "Лүн - Дашинчилэн",
+    "nominatimCountry": "Mongolia"
+  },
+  "1qTN2TFvZRknCW4vV701og": {
+    "metas": [
+      "meta_1769520910938_ujblf"
+    ],
+    "lat": 49.1380051,
+    "lng": 105.2854567,
+    "country": "Mongolia",
+    "region": "Selenge",
+    "road": "A1001",
+    "nominatimCountry": "Mongolia"
+  },
+  "DZoXGbvX54e_fh3ZUrYBdA": {
+    "metas": [
+      "meta_1769520910938_ovz2t"
+    ],
+    "lat": 46.762467,
+    "lng": 112.948232,
+    "country": "Mongolia",
+    "region": "Sükhbaatar",
+    "road": "Enderkhaan - Baruun-Urt",
+    "nominatimCountry": "Mongolia"
+  },
+  "q5N8MFQiPLUD4reiFV7s0g": {
+    "metas": [
+      "meta_1769520910938_hh7jx"
+    ],
+    "lat": 49.8139723,
+    "lng": 106.5085284,
+    "country": "Mongolia",
+    "region": "Selenge",
+    "road": "Дулаанхаан - Ерөө",
+    "nominatimCountry": "Mongolia"
+  },
+  "3XwTnNRjmM19-UPrIMEQEg": {
+    "metas": [
+      "meta_1769520910938_2p6zt"
+    ],
+    "lat": 48.268709,
+    "lng": 114.290541,
+    "country": "Mongolia",
+    "region": "Dornod",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "yMBgH3Pa2frV7zOD0myV5Q": {
+    "metas": [
+      "meta_1769520910938_gkkln"
+    ],
+    "lat": 47.320447,
+    "lng": 110.658322,
+    "country": "Mongolia",
+    "region": "Khentii",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "K5dQ3XG3_pSmHynf6A8uCw": {
+    "metas": [
+      "meta_1769520910938_lifti"
+    ],
+    "lat": 49.799815,
+    "lng": 107.690255,
+    "country": "Mongolia",
+    "region": "Selenge",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "yCohAX8C24XfcExqL5ec5g": {
+    "metas": [
+      "meta_1769520910938_muzpa"
+    ],
+    "lat": 47.913499,
+    "lng": 106.316351,
+    "country": "Mongolia",
+    "region": "Töv",
+    "road": "A0301",
+    "nominatimCountry": "Mongolia"
+  },
+  "kv88ipzdg_0DOySOCUWucQ": {
+    "metas": [
+      "meta_1769520910938_52uzh"
+    ],
+    "lat": 47.417832,
+    "lng": 102.077275,
+    "country": "Mongolia",
+    "region": "Arkhangai",
+    "road": "A0602",
+    "nominatimCountry": "Mongolia"
+  },
+  "vitICWnhctJHIyPmgbeZDA": {
+    "metas": [
+      "meta_1769520910938_eoawt"
+    ],
+    "lat": 48.114477,
+    "lng": 95.753488,
+    "country": "Mongolia",
+    "region": "Zavkhan",
+    "road": "Yaruu-Erdene-Khaikhan",
+    "nominatimCountry": "Mongolia"
+  },
+  "Ih3bG11dAH1EQquIipKrVw": {
+    "metas": [
+      "meta_1769520910938_odotn"
+    ],
+    "lat": 45.984283,
+    "lng": 93.270605,
+    "country": "Mongolia",
+    "region": "Khovd",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "vf6t9etyDMbhgR366VxR6Q": {
+    "metas": [
+      "meta_1769520910938_33hoq"
+    ],
+    "lat": 48.538124,
+    "lng": 90.135243,
+    "country": "Mongolia",
+    "region": "Bayan-Ölgii",
+    "road": "Ölgii — Khovd",
+    "nominatimCountry": "Mongolia"
+  },
+  "PtGZEaJQ5NqhcQ6RKEW6pQ": {
+    "metas": [
+      "meta_1769520910938_2tlzk"
+    ],
+    "lat": 47.065876,
+    "lng": 106.183335,
+    "country": "Mongolia",
+    "region": "Töv",
+    "road": "Bayan-Unjuul",
+    "nominatimCountry": "Mongolia"
+  },
+  "mK-88Jih1bfOYeF2tjMvsw": {
+    "metas": [
+      "meta_1769520910938_6hxbh"
+    ],
+    "lat": 47.918944,
+    "lng": 107.449284,
+    "country": "Mongolia",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "4SDYU1-Js2qHWGY8Qc3hpg": {
+    "metas": [
+      "meta_1769520910938_qrgkn"
+    ],
+    "lat": 47.420987,
+    "lng": 109.85911,
+    "country": "Mongolia",
+    "region": "Khentii",
+    "road": "Murun - Jargaltkhaan",
+    "nominatimCountry": "Mongolia"
+  },
+  "btsVsX3y13paOHORQufPjQ": {
+    "metas": [
+      "meta_1769520910938_fwcwv"
+    ],
+    "lat": 46.188533,
+    "lng": 96.517899,
+    "country": "Mongolia",
+    "region": "Govi-Altai",
+    "road": "Altai-Biger",
+    "nominatimCountry": "Mongolia"
+  },
+  "IkB-vg8Gx364d54E7QAL_w": {
+    "metas": [
+      "meta_1769520910938_0virx"
+    ],
+    "lat": 49.03281,
+    "lng": 94.535883,
+    "country": "Mongolia",
+    "region": "Uvs",
+    "road": "Ulaangom - Khyargas Nuur Hwy",
+    "nominatimCountry": "Mongolia"
+  },
+  "ffOATkTwQe_WslHdhZwSZg": {
+    "metas": [
+      "meta_1769520910938_jnd2k"
+    ],
+    "lat": 47.051236,
+    "lng": 93.149708,
+    "country": "Mongolia",
+    "region": "Khovd",
+    "road": "A0304",
+    "nominatimCountry": "Mongolia"
+  },
+  "-K7_GYVkBF5AcGSzxjy5bw": {
+    "metas": [
+      "meta_1769520910938_39d71"
+    ],
+    "lat": 46.513898,
+    "lng": 102.947786,
+    "country": "Mongolia",
+    "region": "Övörkhangai",
+    "road": "Улаанбаатар - Арвайхээр",
+    "nominatimCountry": "Mongolia"
+  },
+  "RBcPUum2INrW7GsYUpNh-w": {
+    "metas": [
+      "meta_1769520910938_fy99t"
+    ],
+    "lat": 47.535215,
+    "lng": 101.387556,
+    "country": "Mongolia",
+    "region": "Arkhangai",
+    "road": "Ulaangom - Tsetserleg",
+    "nominatimCountry": "Mongolia"
+  },
+  "wtnG-ZXgXRgN-47Su_uH5A": {
+    "metas": [
+      "meta_1769520910938_piyt8"
+    ],
+    "lat": 48.185546,
+    "lng": 99.034921,
+    "country": "Mongolia",
+    "region": "Arkhangai",
+    "road": "Ulaangom - Tsetserleg",
+    "nominatimCountry": "Mongolia"
+  },
+  "gR3O4GBtsIXq946khUZDzw": {
+    "metas": [
+      "meta_1769520910938_5p7wk"
+    ],
+    "lat": 49.027989,
+    "lng": 104.046817,
+    "country": "Mongolia",
+    "region": "Orkhon",
+    "road": "Эрх чөлөөний гудамж",
+    "nominatimCountry": "Mongolia"
+  },
+  "a16kbLtmsPfGfD9MrlJYPw": {
+    "metas": [
+      "meta_1769520910938_grjno"
+    ],
+    "lat": 50.231402,
+    "lng": 106.210842,
+    "country": "Mongolia",
+    "region": "Selenge",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "gYly4pvzsnusNk2A3QIVhw": {
+    "metas": [
+      "meta_1769520910938_15uug"
+    ],
+    "lat": 47.319951,
+    "lng": 110.645821,
+    "country": "Mongolia",
+    "region": "Khentii",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "D-Jc4hHli5ooLw3iUEA2eA": {
+    "metas": [
+      "meta_1769520910938_7a8ci"
+    ],
+    "lat": 44.899106,
+    "lng": 110.137048,
+    "country": "Mongolia",
+    "region": "Dornogovi",
+    "road": "Ар Аймгийг холбосон зам",
+    "nominatimCountry": "Mongolia"
+  },
+  "ZJgef6nxEtNefxCzTwrpvA": {
+    "metas": [
+      "meta_1769520910938_imjvf"
+    ],
+    "lat": 45.7683669,
+    "lng": 106.275897,
+    "country": "Mongolia",
+    "region": "Dundgovi",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "7tyK2TLEcby2H74Ylx6PPQ": {
+    "metas": [
+      "meta_1769520910938_lyidq"
+    ],
+    "lat": 43.57522,
+    "lng": 104.4388,
+    "country": "Mongolia",
+    "region": "Ömnögovi",
+    "road": "Mandalgovi - Dalanzadgad",
+    "nominatimCountry": "Mongolia"
+  },
+  "HZBl_IuKxvCWigQFwZcv2A": {
+    "metas": [
+      "meta_1769520910938_yptvd"
+    ],
+    "lat": 46.263496,
+    "lng": 102.787478,
+    "country": "Mongolia",
+    "region": "Övörkhangai",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "1MvoJfx5VrSeGIWtdozFKg": {
+    "metas": [
+      "meta_1769520910938_q7zdb"
+    ],
+    "lat": 46.197182,
+    "lng": 100.724002,
+    "country": "Mongolia",
+    "region": "Bayankhongor",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "PpdHgSAPDBVYEOvE6Zf6gQ": {
+    "metas": [
+      "meta_1769520910938_1ax5x"
+    ],
+    "lat": 47.479145,
+    "lng": 101.452868,
+    "country": "Mongolia",
+    "region": "Arkhangai",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "fa3xQA4_CZCdgP-YVJ_1Yw": {
+    "metas": [
+      "meta_1769520910938_e25yn"
+    ],
+    "lat": 49.6502142,
+    "lng": 100.1657857,
+    "country": "Mongolia",
+    "region": "Hovsgel",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "bXpcbgeeyty8vhtOEDDk9A": {
+    "metas": [
+      "meta_1769520910938_oywg2"
+    ],
+    "lat": 50.452804,
+    "lng": 100.170608,
+    "country": "Mongolia",
+    "region": "Hovsgel",
+    "road": "A1101",
+    "nominatimCountry": "Mongolia"
+  },
+  "f0-T2twsHyOQjy70N3YoAQ": {
+    "metas": [
+      "meta_1769520910938_q1aa4"
+    ],
+    "lat": 48.759435,
+    "lng": 98.261688,
+    "country": "Mongolia",
+    "region": "Zavkhan",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "UgtFKLOgimB9JZl5CTd39w": {
+    "metas": [
+      "meta_1769520910938_32bfn"
+    ],
+    "lat": 47.743515,
+    "lng": 96.85177,
+    "country": "Mongolia",
+    "region": "Zavkhan",
+    "road": "Uliastai - Tosontsengel",
+    "nominatimCountry": "Mongolia"
+  },
+  "sM-ttnLS-q6-KDjdzKBROg": {
+    "metas": [
+      "meta_1769520910938_b5nuy"
+    ],
+    "lat": 46.367291,
+    "lng": 96.264411,
+    "country": "Mongolia",
+    "region": "Govi-Altai",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "xRJUc5nYdlCtfvv9T6JTqg": {
+    "metas": [
+      "meta_1769520910939_d8ws6"
+    ],
+    "lat": 47.998427,
+    "lng": 91.663493,
+    "country": "Mongolia",
+    "region": "Khovd",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "ngeyZUWlP6I0vVq7yqjiFA": {
+    "metas": [
+      "meta_1769520910939_295bm"
+    ],
+    "lat": 48.960059,
+    "lng": 89.975731,
+    "country": "Mongolia",
+    "region": "Bayan-Ölgii",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "rhTpd36JRhYH0yAfr8v-XA": {
+    "metas": [
+      "meta_1769520910939_tg1sj"
+    ],
+    "lat": 49.979318,
+    "lng": 92.059684,
+    "country": "Mongolia",
+    "region": "Uvs",
+    "road": "surguuliin horoo",
+    "nominatimCountry": "Mongolia"
+  },
+  "x69M3ZW-hzOc43K9_ma8Pw": {
+    "metas": [
+      "meta_1769520910939_6bzv0"
+    ],
+    "lat": 49.139413,
+    "lng": 87.97756,
+    "country": "Mongolia",
+    "region": "Bayan-Ölgii",
+    "road": "Ерөнхийлөгчийн овооны зам",
+    "nominatimCountry": "Mongolia"
+  },
+  "Mu01-Z3pIb4pI4D_t8EKAQ": {
+    "metas": [
+      "meta_1769520910939_d9rn9"
+    ],
+    "lat": 49.967838,
+    "lng": 94.676156,
+    "country": "Mongolia",
+    "region": "Uvs",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "1RQmCX1_jLdXVtFobPU7jw": {
+    "metas": [
+      "meta_1769520910939_lbhex"
+    ],
+    "lat": 49.4869911,
+    "lng": 94.9787609,
+    "country": "Mongolia",
+    "region": "Uvs",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "sC5fADuvY33ktVR-iMUF3g": {
+    "metas": [
+      "meta_1769520910939_mr8j3"
+    ],
+    "lat": 43.452213,
+    "lng": 99.895723,
+    "country": "Mongolia",
+    "region": "Ömnögovi",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "hkJultpysH1TeZXm7pf3EQ": {
+    "metas": [
+      "meta_1769520910939_qpx4q"
+    ],
+    "lat": 43.526593,
+    "lng": 104.032149,
+    "country": "Mongolia",
+    "region": "Ömnögovi",
+    "road": "Ёлын ам",
+    "nominatimCountry": "Mongolia"
+  },
+  "RwmPSmtm6CVXsvcJ1drvaQ": {
+    "metas": [
+      "meta_1769520910939_rxwhn"
+    ],
+    "lat": 50.7913686,
+    "lng": 99.5193598,
+    "country": "Mongolia",
+    "region": "Hovsgel",
+    "road": null,
+    "nominatimCountry": "Mongolia"
+  },
+  "_3c_NUBlQ49TJmQgMsbYDg": {
+    "metas": [
+      "meta_1769520910939_nqgbg"
+    ],
+    "lat": 49.7129977,
+    "lng": 99.9776108,
+    "country": "Mongolia",
+    "region": "Hovsgel",
+    "road": "Meren - Ulaan Uul",
+    "nominatimCountry": "Mongolia"
+  },
+  "gZLsC88OasdaX0AUS-naQQ": {
+    "metas": [
+      "meta_1769520910939_5ild8"
+    ],
+    "lat": 47.894693,
+    "lng": 100.686232,
+    "country": "Mongolia",
+    "region": "Arkhangai",
+    "road": "Ulaangom - Tsetserleg",
+    "nominatimCountry": "Mongolia"
+  },
+  "ESkatJakU0qbsHnYodIb7A": {
+    "metas": [
+      "meta_1769520912169_9qzwe"
+    ],
+    "lat": 28.544624,
+    "lng": 80.922137,
+    "country": "Nepal",
+    "region": "Sudurpashchim Province",
+    "road": "71DR012",
+    "nominatimCountry": "Nepal"
+  },
+  "SYYr3Rzt88ok3OCs3YQItA": {
+    "metas": [
+      "meta_1769520912169_4dr2f"
+    ],
+    "lat": 27.685804,
+    "lng": 85.292961,
+    "country": "Nepal",
+    "region": "Bagamati Province",
+    "road": "Kathmandu Ringroad",
+    "nominatimCountry": "Nepal"
+  },
+  "uou3gjbYgruVP5tvRJv9ow": {
+    "metas": [
+      "meta_1769520912169_ax23h"
+    ],
+    "lat": 27.608233,
+    "lng": 83.536606,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": "Madina Jeet Marga",
+    "nominatimCountry": "Nepal"
+  },
+  "4EM3AMeKbuJhndr6K498yg": {
+    "metas": [
+      "meta_1769520912169_6pku8"
+    ],
+    "lat": 27.956799,
+    "lng": 82.243721,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": "Mahendra Highway",
+    "nominatimCountry": "Nepal"
+  },
+  "J9oW7IN-aD5On_yg0LHxeA": {
+    "metas": [
+      "meta_1769520912169_531wf"
+    ],
+    "lat": 27.785127,
+    "lng": 84.307064,
+    "country": "Nepal",
+    "region": "Gandaki Province",
+    "road": "Ratnapur Sadak",
+    "nominatimCountry": "Nepal"
+  },
+  "6UkIs4cgriEH6nCJ95ZBCw": {
+    "metas": [
+      "meta_1769520912169_i0lvq"
+    ],
+    "lat": 27.6896,
+    "lng": 83.3827,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": "Tamnagar",
+    "nominatimCountry": "Nepal"
+  },
+  "JCmvsfwmPbXcNKaEs9aepg": {
+    "metas": [
+      "meta_1769520912169_o1626"
+    ],
+    "lat": 27.491074,
+    "lng": 83.830095,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": "48DR019",
+    "nominatimCountry": "Nepal"
+  },
+  "r2KGnVHPu8BtnwbrF4yMwg": {
+    "metas": [
+      "meta_1769520912169_oj8er"
+    ],
+    "lat": 27.945293,
+    "lng": 84.992043,
+    "country": "Nepal",
+    "region": "Bagamati Province",
+    "road": "30DR015",
+    "nominatimCountry": "Nepal"
+  },
+  "ggm3ncxISPM-lziAsWfKPA": {
+    "metas": [
+      "meta_1769520912169_fgail"
+    ],
+    "lat": 28.999693,
+    "lng": 81.25911,
+    "country": "Nepal",
+    "region": "Sudurpashchim Province",
+    "road": "69DR030",
+    "nominatimCountry": "Nepal"
+  },
+  "bQxpt3-oCTJDD4Wv1lgjNg": {
+    "metas": [
+      "meta_1769520912169_8z4q0"
+    ],
+    "lat": 26.620225,
+    "lng": 88.008774,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "bf-YiF2u4MORagUE5fDtIQ": {
+    "metas": [
+      "meta_1769520912169_lir44"
+    ],
+    "lat": 28.453439,
+    "lng": 81.247243,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": "Thakurdwara",
+    "nominatimCountry": "Nepal"
+  },
+  "meuo_rY9coqh7_rcmcdwLg": {
+    "metas": [
+      "meta_1769520912169_e0trx"
+    ],
+    "lat": 28.514107,
+    "lng": 81.933618,
+    "country": "Nepal",
+    "region": "Karnali Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "s51f7x812gP8FKNjWXdlZg": {
+    "metas": [
+      "meta_1769520912169_jm6iw"
+    ],
+    "lat": 27.16165,
+    "lng": 85.893797,
+    "country": "Nepal",
+    "region": "Bagamati Province",
+    "road": "Maisthan",
+    "nominatimCountry": "Nepal"
+  },
+  "jgZrgdh70J4tJCdcueDdng": {
+    "metas": [
+      "meta_1769520912169_yigik"
+    ],
+    "lat": 26.973723,
+    "lng": 88.026878,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": "03DR020",
+    "nominatimCountry": "Nepal"
+  },
+  "zVS0-YP9VaHXLQhp2WGL4A": {
+    "metas": [
+      "meta_1769520912169_cjplp"
+    ],
+    "lat": 26.596381,
+    "lng": 87.959371,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "MZxCFaBt2Q2Bq9aTXs7ftg": {
+    "metas": [
+      "meta_1769520912169_5rx8t"
+    ],
+    "lat": 26.803317,
+    "lng": 85.452552,
+    "country": "Nepal",
+    "region": "Madhesh Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "xRwY9sHczzuIkO8Tg4TNTw": {
+    "metas": [
+      "meta_1769520912169_nwp69"
+    ],
+    "lat": 27.810403,
+    "lng": 82.699667,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": "NH05",
+    "nominatimCountry": "Nepal"
+  },
+  "XTnHzJ6KXRc0pBDeI5cj3g": {
+    "metas": [
+      "meta_1769520912169_evgta"
+    ],
+    "lat": 27.078631,
+    "lng": 86.019269,
+    "country": "Nepal",
+    "region": "Bagamati Province",
+    "road": "NH24",
+    "nominatimCountry": "Nepal"
+  },
+  "ajXF-Ood7jTa_2O4QRsXNA": {
+    "metas": [
+      "meta_1769520912169_ptqg7"
+    ],
+    "lat": 29.468447,
+    "lng": 80.547861,
+    "country": "Nepal",
+    "region": "Sudurpashchim Province",
+    "road": "Patan",
+    "nominatimCountry": "Nepal"
+  },
+  "dmKRxYpuD98IRE8oWqRqUA": {
+    "metas": [
+      "meta_1769520912169_vuxxw"
+    ],
+    "lat": 27.051169,
+    "lng": 85.354218,
+    "country": "Nepal",
+    "region": "Madhesh Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "W-V80ECSYC3rC14P4G9wiA": {
+    "metas": [
+      "meta_1769520912169_w4q72"
+    ],
+    "lat": 28.127727,
+    "lng": 82.164489,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": "Dubichaur",
+    "nominatimCountry": "Nepal"
+  },
+  "flYnVcyRXRsBPqoMevoZhg": {
+    "metas": [
+      "meta_1769520912169_ky5kg"
+    ],
+    "lat": 27.643922,
+    "lng": 84.126538,
+    "country": "Nepal",
+    "region": "Gandaki Province",
+    "road": "Mahendra Highway",
+    "nominatimCountry": "Nepal"
+  },
+  "h0RPshMnkX0VuYgoABvCfQ": {
+    "metas": [
+      "meta_1769520912169_u4kwq"
+    ],
+    "lat": 26.661816,
+    "lng": 86.481809,
+    "country": "Nepal",
+    "region": "Madhesh Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "NuItmToicCQQPxXu7FjyFg": {
+    "metas": [
+      "meta_1769520912169_xm032"
+    ],
+    "lat": 26.483065,
+    "lng": 87.704945,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "j-ab4otFXTQTehL-7kMEpQ": {
+    "metas": [
+      "meta_1769520912169_iele3",
+      "meta_1769520912169_l924w"
+    ],
+    "lat": 26.551748,
+    "lng": 87.335128,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": "Gramthan",
+    "nominatimCountry": "Nepal"
+  },
+  "VE8Nr9Q0WzAV-HR5lcQ8Xw": {
+    "metas": [
+      "meta_1769520912169_n5hgn"
+    ],
+    "lat": 28.117424,
+    "lng": 81.63893,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": "Budiya Gaun Road",
+    "nominatimCountry": "Nepal"
+  },
+  "dVAL9QbwFLOfouTe5Wzmhg": {
+    "metas": [
+      "meta_1769520912169_iasja"
+    ],
+    "lat": 27.04946,
+    "lng": 84.687838,
+    "country": "Nepal",
+    "region": "Madhesh Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "yNjFXHw0LKlrms_XevjogQ": {
+    "metas": [
+      "meta_1769520912169_fx4kj"
+    ],
+    "lat": 26.667954,
+    "lng": 88.003131,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "Z_Okp5haluVKR9dWqnlaZQ": {
+    "metas": [
+      "meta_1769520912169_bzy8m"
+    ],
+    "lat": 27.706736,
+    "lng": 85.374394,
+    "country": "Nepal",
+    "region": "Bagamati Province",
+    "road": "F87",
+    "nominatimCountry": "Nepal"
+  },
+  "JqGFn2cdW58B4yXo0O0F2Q": {
+    "metas": [
+      "meta_1769520912169_2kxyo"
+    ],
+    "lat": 27.032172,
+    "lng": 87.394776,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": "07DR006",
+    "nominatimCountry": "Nepal"
+  },
+  "Z4jA09meHzDjwuoGKjKqcA": {
+    "metas": [
+      "meta_1769520912169_r90ft"
+    ],
+    "lat": 28.142502,
+    "lng": 81.601578,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": "Balbhadrapur",
+    "nominatimCountry": "Nepal"
+  },
+  "leyN9aO55UToLDXAs4JZTA": {
+    "metas": [
+      "meta_1769520912169_1m5d8"
+    ],
+    "lat": 26.453375,
+    "lng": 87.407018,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "fYYWSZwz1H4bpMe55jXuWg": {
+    "metas": [
+      "meta_1769520912169_7uclw"
+    ],
+    "lat": 27.230623,
+    "lng": 84.7099,
+    "country": "Nepal",
+    "region": "Madhesh Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "FZRiG7KGD2GX6R1_kH5MPQ": {
+    "metas": [
+      "meta_1769520912169_lm410"
+    ],
+    "lat": 28.276826,
+    "lng": 84.083096,
+    "country": "Nepal",
+    "region": "Gandaki Province",
+    "road": "40DR019",
+    "nominatimCountry": "Nepal"
+  },
+  "aOyy--OfXSFR-zTSpiffsA": {
+    "metas": [
+      "meta_1769520912169_m8wng"
+    ],
+    "lat": 27.616023,
+    "lng": 83.453424,
+    "country": "Nepal",
+    "region": "Lumbini Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "o7VeQPtqhYF4MhIlFyeBUQ": {
+    "metas": [
+      "meta_1769520912169_saw5s"
+    ],
+    "lat": 26.728539,
+    "lng": 86.166444,
+    "country": "Nepal",
+    "region": "Madhesh Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "pO_k6OmJ-EhU5GbgxBtrWg": {
+    "metas": [
+      "meta_1769520912169_oaa01"
+    ],
+    "lat": 26.721697,
+    "lng": 86.410134,
+    "country": "Nepal",
+    "region": "Madhesh Province",
+    "road": "Dhangadhi-Patari-Kachnari",
+    "nominatimCountry": "Nepal"
+  },
+  "6W4KCc9HQhTHMxwJ-zkdmA": {
+    "metas": [
+      "meta_1769520912169_6f9mw"
+    ],
+    "lat": 27.101417,
+    "lng": 85.041302,
+    "country": "Nepal",
+    "region": "Madhesh Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "_37oZtim3QtNejcCF6J8Ww": {
+    "metas": [
+      "meta_1769520912169_j644d"
+    ],
+    "lat": 28.191132,
+    "lng": 84.015101,
+    "country": "Nepal",
+    "region": "Gandaki Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "U9RlY8yEczJazz_2pjA9sw": {
+    "metas": [
+      "meta_1769520912169_kqirz"
+    ],
+    "lat": 27.750833,
+    "lng": 85.286861,
+    "country": "Nepal",
+    "region": "Bagamati Province",
+    "road": null,
+    "nominatimCountry": "Nepal"
+  },
+  "-m7BnTtxvHZ4tY6LUYFqLw": {
+    "metas": [
+      "meta_1769520912169_q7iye"
+    ],
+    "lat": 27.396304,
+    "lng": 86.532312,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": "11DR005",
+    "nominatimCountry": "Nepal"
+  },
+  "jWfumVMCoUxdkztANsBXIg": {
+    "metas": [
+      "meta_1769520912169_g44zv"
+    ],
+    "lat": 27.724445,
+    "lng": 86.021615,
+    "country": "Nepal",
+    "region": "Bagamati Province",
+    "road": "Kalinchok Road",
+    "nominatimCountry": "Nepal"
+  },
+  "vgEAw8R0NxhnPosiQ0nhdg": {
+    "metas": [
+      "meta_1769520912169_oreqg"
+    ],
+    "lat": 27.381099,
+    "lng": 87.744958,
+    "country": "Nepal",
+    "region": "Koshi Province",
+    "road": "Lali Kharka to Sinchewa Bhanjyang",
+    "nominatimCountry": "Nepal"
+  },
+  "eMwiPylGvjUkXkMZ7ZB9vg": {
+    "metas": [
+      "meta_1769520912169_aw6cf"
+    ],
+    "lat": 29.562959,
+    "lng": 81.177824,
+    "country": "Nepal",
+    "region": "Sudurpashchim Province",
+    "road": "68DR010",
+    "nominatimCountry": "Nepal"
+  },
+  "NwgovDY4xc9KkVpR8ycSKA": {
+    "metas": [
+      "meta_1769520914473_g2l8c"
+    ],
+    "lat": 16.9720345,
+    "lng": 121.8096654,
+    "country": "Philippines",
+    "region": "Isabela",
+    "road": "San Luis",
+    "nominatimCountry": "Philippines"
+  },
+  "naPVAl0S6sD7qdGZ8LwAow": {
+    "metas": [
+      "meta_1769520914473_lzxrn"
+    ],
+    "lat": 8.374161,
+    "lng": 124.776423,
+    "country": "Philippines",
+    "region": "Bukidnon",
+    "road": null,
+    "nominatimCountry": "Philippines"
+  },
+  "AeSgJ4uke_F_zaVF11Qy0g": {
+    "metas": [
+      "meta_1769520914473_bn9l5"
+    ],
+    "lat": 7.38259,
+    "lng": 125.61208,
+    "country": "Philippines",
+    "region": "Davao del Norte",
+    "road": null,
+    "nominatimCountry": "Philippines"
+  },
+  "LhKGHvuMhBSUAEJNKAU6eA": {
+    "metas": [
+      "meta_1769520914473_uypy1"
+    ],
+    "lat": 8.937915,
+    "lng": 125.390765,
+    "country": "Philippines",
+    "region": "Agusan del Norte",
+    "road": "Rizal",
+    "nominatimCountry": "Philippines"
+  },
+  "vbSFcI2e9i6djCyonhBL1Q": {
+    "metas": [
+      "meta_1769520914473_w0h68"
+    ],
+    "lat": 11.333335,
+    "lng": 119.455524,
+    "country": "Philippines",
+    "region": "Palawan",
+    "road": "Bucana",
+    "nominatimCountry": "Philippines"
+  },
+  "k0GMknffa8miqK-Apw4IQQ": {
+    "metas": [
+      "meta_1769520914474_b1i40"
+    ],
+    "lat": 13.92227,
+    "lng": 123.374155,
+    "country": "Philippines",
+    "region": "Camarines Sur",
+    "road": "Siruma Road",
+    "nominatimCountry": "Philippines"
   }
 }
