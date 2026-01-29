@@ -651,6 +651,73 @@
             display: block;
             opacity: 1;
         }
+
+        /* Preview Popup */
+        #gg-meta-preview-popup {
+            position: fixed;
+            width: 280px;
+            background: rgba(0, 0, 0, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 12px;
+            z-index: 100002; /* Above modal */
+            pointer-events: none; /* Don't interfere with mouse */
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: opacity 0.2s, transform 0.2s;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            color: #fff; /* Ensure text is white */
+        }
+
+        #gg-meta-preview-popup.gg-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        #gg-meta-preview-popup .gg-meta-image {
+            width: 100%;
+            height: 140px; /* Fixed height */
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            background: rgba(255,255,255,0.1); /* Placeholder bg */
+        }
+
+        #gg-meta-preview-popup .gg-meta-item-title {
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        #gg-meta-preview-popup .gg-meta-description {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.9); /* Explicit color */
+            margin-bottom: 6px;
+            line-height: 1.4;
+            max-height: 80px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+        
+        /* Triangle Pointer (Right side) - Rotated Square Method */
+        #gg-meta-preview-popup::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -7px; /* Half of width protrudes */
+            margin-top: -6px;
+            width: 12px;
+            height: 12px;
+            background: rgba(0, 0, 0, 0.95);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            transform: rotate(45deg);
+        }
     `;
 
     function addStyles() {
@@ -692,6 +759,11 @@
         const backdrop = document.createElement('div');
         backdrop.id = 'gg-modal-backdrop';
         document.body.appendChild(backdrop);
+
+        // Preview Popup
+        const previewPopup = document.createElement('div');
+        previewPopup.id = 'gg-meta-preview-popup';
+        document.body.appendChild(previewPopup);
 
         // SETTINGS MODAL
         const settingsModal = document.createElement('div');
@@ -1117,7 +1189,7 @@
             const isSelected = selectedMetaIds.has(m.id);
             const countryCode = getCountryCode(m.country);
             return `
-                <div class="gg-meta-list-item">
+                <div class="gg-meta-list-item" data-meta-id="${m.id}">
                     <div style="display: flex; align-items: center; gap: 4px; flex: 1; overflow: hidden; height: 100%;">
                         <span class="gg-country-badge" title="${m.country || 'Unknown Country'}">${countryCode}</span>
                         <div class="gg-meta-list-title" style="white-space: nowrap; line-height: 1; overflow: hidden; text-overflow: ellipsis; padding: 0 4px; flex-shrink: 0;">${m.title}</div>
@@ -1131,6 +1203,59 @@
                 </div>
             `;
         }).join('');
+
+        // Hover Preview Logic
+        const previewPopup = document.getElementById('gg-meta-preview-popup');
+        const modal = document.getElementById('gg-meta-modal');
+        
+        container.querySelectorAll('.gg-meta-list-item').forEach(item => {
+            item.addEventListener('mouseenter', (e) => {
+                const metaId = item.dataset.metaId;
+                const meta = metasData.find(m => m.id === metaId);
+                if (!meta || !previewPopup) return;
+                
+                // Populate
+                previewPopup.innerHTML = `
+                    <div class="gg-meta-item-title">${meta.title}</div>
+                    ${meta.imageUrl ? `<img src="${meta.imageUrl}" class="gg-meta-image">` : ''}
+                    <div class="gg-meta-description">${meta.description}</div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+                        ${(meta.tags || []).map(t => `<span class="gg-tag-static" style="font-size: 0.6rem; padding: 1px 4px; margin: 0;">${t}</span>`).join('')}
+                    </div>
+                `;
+
+                // Position (Left of Modal)
+                if (modal) {
+                    const modalRect = modal.getBoundingClientRect();
+                    const itemRect = item.getBoundingClientRect();
+                    
+                    // X: Left of modal - width - padding
+                    const leftPos = modalRect.left - 290; // 280 width + 10 gap
+                    
+                    // Y: Center of hovered item
+                    // But keep it within screen bounds? 
+                    // Let's just center it on the item first.
+                    // Pointer is in the middle of popup (50%), so we want popup center to trigger item center
+                    const topPos = itemRect.top + (itemRect.height / 2) - (previewPopup.offsetHeight / 2);
+                    
+                    previewPopup.style.left = `${leftPos}px`;
+                    // Check bounds to ensure we don't calculate before display (offsetHeight might be 0 if hidden?)
+                    // Actually, we need to show it to measure it? Or just set top based on itemRect.top
+                    // Let's set it visible first?
+                    
+                    previewPopup.classList.add('gg-visible');
+                    
+                    // Re-adjust top after rendering content
+                    const height = previewPopup.offsetHeight;
+                    const adjustedTop = itemRect.top + (itemRect.height / 2) - (height / 2);
+                    previewPopup.style.top = `${adjustedTop}px`;
+                }
+            });
+
+            item.addEventListener('mouseleave', () => {
+                if (previewPopup) previewPopup.classList.remove('gg-visible');
+            });
+        });
 
         // Add click handlers
         container.querySelectorAll('.gg-btn-link-meta').forEach(btn => {
@@ -1677,45 +1802,91 @@
 
         if (isNaN(curLat) || isNaN(curLng)) return [];
 
-        const predictedIds = new Set();
+        // Priority 1: Metas linked to PREVIOUS LOCATIONS that match our current location
+        // (Matched by Road, Region, or specific Distance)
+        const priorityMatches = new Set();
+
+        // Priority 2: Metas that match via their own generic scope
+        // (e.g. A meta set to "Countrywide" for this country)
+        const scopeMatches = new Set();
         
-        // 1. Check all pinned locations in locations.json
+        // 1. Check all pinned locations in locations.json (The "Previous Locations")
         for (const panoId in locationMap) {
             const entry = locationMap[panoId];
             const metaIds = Array.isArray(entry) ? entry : (entry.metas || []);
             const entryLat = entry.lat ? parseFloat(entry.lat) : null;
             const entryLng = entry.lng ? parseFloat(entry.lng) : null;
+            const entryRoad = (entry.road || '').toLowerCase().trim();
+            const entryRegion = entry.region;
+            const entryCountry = entry.country;
 
             metaIds.forEach(id => {
                 const meta = metasData.find(m => m.id === id);
                 if (!meta) return;
 
-                const scope = (meta.scope || '').toLowerCase();
-                
-                // Distance-based logic
-                const maxDist = getDistanceForScope(scope);
-                if (maxDist > 0 && entryLat !== null && entryLng !== null) {
-                    const d = getHaversineDistance(curLat, curLng, entryLat, entryLng);
-                    if (d <= maxDist) predictedIds.add(id);
+                let isMatch = false;
+
+                // Match by Road (High Priority)
+                if (curRoad && entryRoad && curRoad === entryRoad) isMatch = true;
+
+                // Match by Region (if in same country)
+                if (!isMatch && curRegion && entryRegion && curRegion === entryRegion && curCountry === entryCountry) isMatch = true;
+
+                // Match by Distance (Proximity)
+                if (!isMatch && entryLat !== null && entryLng !== null) {
+                    const scope = (meta.scope || '').toLowerCase();
+                    const maxDist = getDistanceForScope(scope);
+                    if (maxDist > 0) {
+                         const d = getHaversineDistance(curLat, curLng, entryLat, entryLng);
+                         if (d <= maxDist) isMatch = true;
+                    }
                 }
+
+                if (isMatch) priorityMatches.add(id);
             });
         }
 
         // 2. Check general Country/Region scope against current location
-        // This makes metas visible if you are in the right country/region, even if no nearby link exists
         metasData.forEach(meta => {
             const scope = (meta.scope || '').toLowerCase();
             if (scope === 'countrywide') {
-                if (meta.country === curCountry) predictedIds.add(meta.id);
+                if (meta.country === curCountry) scopeMatches.add(meta.id);
             } else if (scope === 'region') {
-                if (meta.country === curCountry && meta.region === curRegion) predictedIds.add(meta.id);
+                if (meta.country === curCountry && meta.region === curRegion) scopeMatches.add(meta.id);
             } else if (scope === 'road') {
                 const metaRoad = (meta.road || '').toLowerCase().trim();
-                if (metaRoad && curRoad && metaRoad === curRoad) predictedIds.add(meta.id);
+                // This 'road' scope is for when the meta ITSELF has a road property 
+                if (metaRoad && curRoad && metaRoad === curRoad) scopeMatches.add(meta.id);
             }
         });
 
-        return Array.from(predictedIds).map(id => metasData.find(m => m.id === id)).filter(Boolean);
+        // Combine: Priority Matches FIRST, then Scope Matches
+        const combined = [];
+        const seen = new Set();
+
+        // Add Priority matches
+        priorityMatches.forEach(id => {
+            if (!seen.has(id)) {
+                const m = metasData.find(x => x.id === id);
+                if (m) {
+                    combined.push(m);
+                    seen.add(id);
+                }
+            }
+        });
+
+        // Add Scope matches
+        scopeMatches.forEach(id => {
+            if (!seen.has(id)) {
+                const m = metasData.find(x => x.id === id);
+                if (m) {
+                    combined.push(m);
+                    seen.add(id);
+                }
+            }
+        });
+
+        return combined;
     }
 
     function isRanked() {
