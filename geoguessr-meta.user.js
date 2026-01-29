@@ -764,6 +764,13 @@
         const previewPopup = document.createElement('div');
         previewPopup.id = 'gg-meta-preview-popup';
         document.body.appendChild(previewPopup);
+        
+        // Hide preview on any click (User request: close when button outside search is pressed)
+        document.addEventListener('click', (e) => {
+            if (previewPopup.classList.contains('gg-visible')) {
+                previewPopup.classList.remove('gg-visible');
+            }
+        });
 
         // SETTINGS MODAL
         const settingsModal = document.createElement('div');
@@ -1006,42 +1013,47 @@
             // Add listeners
             scopeContainer.querySelectorAll('.gg-tag-pill').forEach(pill => {
                 pill.addEventListener('click', (e) => {
-                    const scope = e.target.dataset.value;
-                    if (activeScopes.has(scope)) {
-                        activeScopes.delete(scope);
-                        e.target.classList.remove('gg-tag-selected');
-                    } else {
-                        activeScopes.add(scope);
-                        e.target.classList.add('gg-tag-selected');
-                    }
-                    localStorage.setItem('gg_active_scopes', JSON.stringify(Array.from(activeScopes)));
-                    // Refresh HUD underneath if visible (or next time it shows)
-                    if (currentPanoid) refreshDisplay(); 
+                    // Only toggle UI state, do NOT save yet
+                    e.target.classList.toggle('gg-tag-selected');
                 });
             });
 
             document.getElementById('gg-settings-modal').style.display = 'block';
             document.getElementById('gg-meta-modal').style.display = 'none'; // Close meta modal
+            const previewPopup = document.getElementById('gg-meta-preview-popup');
+            if (previewPopup) previewPopup.classList.remove('gg-visible');
             document.getElementById('gg-modal-backdrop').classList.add('gg-visible');
         });
 
         document.getElementById('gg-save-settings').addEventListener('click', () => {
              const token = document.getElementById('gg-gh-token').value.trim();
+             
+             // Save Token
              if (token) {
                  localStorage.setItem('gg_gh_token', token);
-                 alert('Settings saved!');
-                 document.getElementById('gg-settings-modal').style.display = 'none';
-                 document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
-             } else {
-                 // Allow saving even without token if just scopes changed?
-                 // But logic says token required for API.
-                 // For now, let's keep it but change alert.
-                 // Actually, if they just change scopes, they might not need token.
-                 // But let's stick to "Token saved!" logic or "Settings saved!"
-                 alert('Settings saved!');
-                 document.getElementById('gg-settings-modal').style.display = 'none';
-                 document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
+             } else if (localStorage.getItem('gg_gh_token')) {
+                 // If field is empty but we had one, do we clear it? 
+                 // Current logic implies empty field = no change if we don't want to clear.
+                 // But typically empty input means user wants to clear if they deleted it.
+                 // Let's stick to existing behavior or safest approach:
+                 // If user explicitly clears it, maybe they want to clear it?
+                 // For now, let's assume they might.
+                 localStorage.setItem('gg_gh_token', ''); 
              }
+
+             // Save Scopes from UI state
+             const scopeContainer = document.getElementById('gg-settings-scope-filter');
+             const selectedFromUI = Array.from(scopeContainer.querySelectorAll('.gg-tag-pill.gg-tag-selected'))
+                                         .map(el => el.dataset.value);
+             
+             activeScopes = new Set(selectedFromUI);
+             localStorage.setItem('gg_active_scopes', JSON.stringify(Array.from(activeScopes)));
+             
+             // Refresh HUD
+             if (currentPanoid) refreshDisplay();
+
+             document.getElementById('gg-settings-modal').style.display = 'none';
+             document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
         });
 
         document.getElementById('gg-close-settings').addEventListener('click', () => {
@@ -1060,6 +1072,8 @@
         document.getElementById('meta-close-btn').addEventListener('click', () => {
             document.getElementById('gg-meta-modal').style.display = 'none';
             document.getElementById('gg-modal-backdrop').classList.remove('gg-visible');
+            const previewPopup = document.getElementById('gg-meta-preview-popup');
+            if (previewPopup) previewPopup.classList.remove('gg-visible');
         });
 
         // Close when clicking backdrop
