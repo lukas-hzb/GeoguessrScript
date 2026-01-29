@@ -7609,7 +7609,7 @@
     "lng": 115.1727296,
     "country": "Indonesia",
     "region": "Bali",
-    "road": "Jalan Goa Gong",
+    "road": "Jalan Pasraman Unud",
     "nominatimCountry": "Indonesia"
   },
   "OO_914gj40mw09OsJXVPfw": {
@@ -7961,7 +7961,7 @@
     "lng": 44.3852024,
     "country": "Iraq",
     "region": "Baghdad Governorate",
-    "road": "Naseer Street",
+    "road": "شارع المتحف",
     "nominatimCountry": "Iraq"
   },
   "boLoSerPsotbr73vnaVhkQ": {
@@ -7972,7 +7972,7 @@
     "lng": 44.3848555,
     "country": "Iraq",
     "region": "Baghdad Governorate",
-    "road": "Naseer Street",
+    "road": "شارع المتحف",
     "nominatimCountry": "Iraq"
   },
   "DC8zn9VqmdmsrlGmdkNT_g": {
@@ -26702,5 +26702,4661 @@
     "region": "South Australia",
     "road": "Jaensch Road",
     "nominatimCountry": "Australia"
+  },
+  "cFIUOvJonNkXfB0MPjbSqg": {
+    "metas": [
+      "meta_1769520999295_tnlxo"
+    ],
+    "lat": -26.9781257,
+    "lng": 114.6556222,
+    "country": "Australia",
+    "region": "Western Australia",
+    "road": "North West Coastal Highway",
+    "nominatimCountry": "Australia"
+  },
+  "yxtVnjCvGCldJR1HRa8pHQ": {
+    "metas": [
+      "meta_1769520999295_nefoi"
+    ],
+    "lat": -32.4227953,
+    "lng": 134.0952301,
+    "country": "Australia",
+    "region": "South Australia",
+    "road": "Flinders Highway",
+    "nominatimCountry": "Australia"
+  },
+  "cRmV2v6UaRwG5rYI8wlnqQ": {
+    "metas": [
+      "meta_1769520999295_l3npe"
+    ],
+    "lat": -37.126169,
+    "lng": 140.8108367,
+    "country": "Australia",
+    "region": "South Australia",
+    "road": "Riddoch Highway",
+    "nominatimCountry": "Australia"
+  },
+  "MDk_UWDeWzS_8c4BFxPQdQ": {
+    "metas": [
+      "meta_1769520999295_ru64p"
+    ],
+    "lat": -16.9448903,
+    "lng": 145.8874183,
+    "country": "Australia",
+    "region": "Queensland",
+    "road": "Back Beach Road",
+    "nominatimCountry": "Australia"
+  },
+  "h5u7IgBgpRt8RdGkquNRNg": {
+    "metas": [
+      "meta_1769520999295_k607j"
+    ],
+    "lat": -17.1572631,
+    "lng": 145.8687698,
+    "country": "Australia",
+    "region": "Queensland",
+    "road": "Bruce Highway",
+    "nominatimCountry": "Australia"
+  },
+  "BwY4559fA5_wD9HMMuS6vQ": {
+    "metas": [
+      "meta_1769520999295_t0n2d"
+    ],
+    "lat": -31.5218946,
+    "lng": 144.5263273,
+    "country": "Australia",
+    "region": "New South Wales",
+    "road": "Barrier Highway",
+    "nominatimCountry": "Australia"
+  },
+  "0ukNHsyFNvzhk_kCAXwskw": {
+    "metas": [
+      "meta_1769520999295_e5rdg"
+    ],
+    "lat": -42.4445542,
+    "lng": 147.2253847,
+    "country": "Australia",
+    "region": null,
+    "road": null,
+    "nominatimCountry": null
+  },
+  "he6_JgyvkiLgpvq1dKmQYw": {
+    "metas": [
+      "meta_1769520999295_8t64b"
+    ],
+    "lat": -12.4768087,
+    "lng": 131.0332085,
+    "country": "Australia",
+    "region": "Litchfield Municipality",
+    "road": "Howard Springs Road",
+    "nominatimCountry": "Australia"
+  },
+  "ch9ejJZflJvL2k3KNM8s4g": {
+    "metas": [
+      "meta_1769520999295_5xmo6"
+    ],
+    "lat": -23.0535474,
+    "lng": 117.6061324,
+    "country": "Australia",
+    "region": "Western Australia",
+    "road": "Paraburdoo - Tom Price Road",
+    "nominatimCountry": "Australia"
+  },
+  "vec8KGp3EmGaPxXqzYkx-A": {
+    "metas": [
+      "meta_1769520999295_cj1e5"
+    ],
+    "lat": -16.9054865,
+    "lng": 145.735968,
+    "country": "Australia",
+    "region": "Queensland",
+    "road": "Richardson Street",
+    "nominatimCountry": "Australia"
+  },
+  "v7v915Y0Y9k59GL_kag3fg": {
+    "metas": [
+      "meta_1769520999295_ewop8"
+    ],
+    "lat": -31.5737046,
+    "lng": 129.9629821,
+    "country": "Australia",
+    "region": "South Australia",
+    "road": "Eyre Highway",
+    "nominatimCountry": "Australia"
+  },
+  "U7COt7yToCKRCbGGyEW5uA": {
+    "metas": [
+      "meta_1769520999295_ndlw6"
+    ],
+    "lat": -20.010498,
+    "lng": 137.133319,
+    "country": "Australia",
+    "region": "Barkly Region",
+    "road": "Barkly Highway",
+    "nominatimCountry": "Australia"
+  },
+  "IXM58VkLEdu9Bfk6miT5FQ": {
+    "metas": [
+      "meta_1769520999295_2yzop"
+    ],
+    "lat": -13.37106,
+    "lng": 131.1456337,
+    "country": "Australia",
+    "region": "Coomalie Shire",
+    "road": "Dorat Road",
+    "nominatimCountry": "Australia"
+  },
+  "ZocI1mLKVmsTOiyLGlZ2xA": {
+    "metas": [
+      "meta_1769520999295_e7qr0"
+    ],
+    "lat": -34.54591,
+    "lng": 143.02035,
+    "country": "Australia",
+    "region": "New South Wales",
+    "road": "Sturt Highway",
+    "nominatimCountry": "Australia"
+  },
+  "oXgJjGrNOuKGE28ke3WlTQ": {
+    "metas": [
+      "meta_1769520999295_8r5lu"
+    ],
+    "lat": -29.8752366,
+    "lng": 135.1290781,
+    "country": "Australia",
+    "region": "South Australia",
+    "road": "Stuart Highway",
+    "nominatimCountry": "Australia"
+  },
+  "em6i3aksH8rvGw9p10pL2w": {
+    "metas": [
+      "meta_1769520999295_lapho"
+    ],
+    "lat": -31.9527315,
+    "lng": 115.8211794,
+    "country": "Australia",
+    "region": "Western Australia",
+    "road": "Union Street",
+    "nominatimCountry": "Australia"
+  },
+  "Ovx90fUZibVOSnaQ93mrgg": {
+    "metas": [
+      "meta_1769520999295_fpsy0"
+    ],
+    "lat": -36.3970113,
+    "lng": 148.4246323,
+    "country": "Australia",
+    "region": "New South Wales",
+    "road": "Kosciuszko Road",
+    "nominatimCountry": "Australia"
+  },
+  "yRxfM4NspQkaokMHpDs59A": {
+    "metas": [
+      "meta_1769520999295_6886t"
+    ],
+    "lat": -31.9609613,
+    "lng": 141.4476775,
+    "country": "Australia",
+    "region": "New South Wales",
+    "road": "Galena Street",
+    "nominatimCountry": "Australia"
+  },
+  "HGVlIeYvgWAFXnSZlDxclA": {
+    "metas": [
+      "meta_1769520999296_qgfez"
+    ],
+    "lat": -27.5232849,
+    "lng": 152.980394,
+    "country": "Australia",
+    "region": "Queensland",
+    "road": "Oxley Road",
+    "nominatimCountry": "Australia"
+  },
+  "oZNDzR3ZaCs0c7xH_cN6kw": {
+    "metas": [
+      "meta_1769520999296_j50pc"
+    ],
+    "lat": -28.1073738,
+    "lng": 153.4610162,
+    "country": "Australia",
+    "region": "Queensland",
+    "road": "Mawarra Street",
+    "nominatimCountry": "Australia"
+  },
+  "A_e2cGrR-CUF1i1JyPhmCA": {
+    "metas": [
+      "meta_1769520999296_ivnu5"
+    ],
+    "lat": -33.8730897,
+    "lng": 151.2082355,
+    "country": "Australia",
+    "region": "New South Wales",
+    "road": "Park Street",
+    "nominatimCountry": "Australia"
+  },
+  "2F-3_EV5ZhqmJVG_g1u-Ww": {
+    "metas": [
+      "meta_1769521000448_viayw"
+    ],
+    "lat": -10.4641523,
+    "lng": 105.7077029,
+    "country": "Christmas Island",
+    "region": null,
+    "road": "Ethel Beach Road",
+    "nominatimCountry": "Australia"
+  },
+  "IJ8J5yK9KX8E1b7uwOBKCg": {
+    "metas": [
+      "meta_1769521001644_u6x8c"
+    ],
+    "lat": -12.1185834,
+    "lng": 96.8975653,
+    "country": "Cocos Islands",
+    "region": null,
+    "road": "Jalan Kembang Geribang",
+    "nominatimCountry": "Australia"
+  },
+  "6fXeKGNqBEsqWQvX_UTjfg": {
+    "metas": [
+      "meta_1769521002856_zzcte"
+    ],
+    "lat": 13.5006619,
+    "lng": 144.8289088,
+    "country": "Guam",
+    "region": "Guam",
+    "road": "Alageta Street",
+    "nominatimCountry": "United States"
+  },
+  "YdZGi2VnoEHWlcpdf3oAGw": {
+    "metas": [
+      "meta_1769521002856_clhlg"
+    ],
+    "lat": 13.394237,
+    "lng": 144.770391,
+    "country": "Guam",
+    "region": "Guam",
+    "road": "North Chalan Canton Tasi",
+    "nominatimCountry": "United States"
+  },
+  "BXkCIb71sWtX8nAeFp5_iw": {
+    "metas": [
+      "meta_1769521002856_n1fbu"
+    ],
+    "lat": 13.544604,
+    "lng": 144.854963,
+    "country": "Guam",
+    "region": "Guam",
+    "road": "Ysengsong Road",
+    "nominatimCountry": "United States"
+  },
+  "ss3SLZDLx4ctWdn1jRA_bg": {
+    "metas": [
+      "meta_1769521002856_8vfs3"
+    ],
+    "lat": 13.3961312,
+    "lng": 144.6747607,
+    "country": "Guam",
+    "region": "Guam",
+    "road": "Santa Rosa Avenue",
+    "nominatimCountry": "United States"
+  },
+  "wJ2YE76x0pVP5W2pxsbNPQ": {
+    "metas": [
+      "meta_1769521004015_r6ya6"
+    ],
+    "lat": -41.1073853,
+    "lng": 175.4060198,
+    "country": "New Zealand",
+    "region": "Wellington",
+    "road": "State Highway 2",
+    "nominatimCountry": "New Zealand"
+  },
+  "uQDyJcGR4ejxGYlJipJP_g": {
+    "metas": [
+      "meta_1769521004015_d71bd"
+    ],
+    "lat": -38.6097383,
+    "lng": 175.7840536,
+    "country": "New Zealand",
+    "region": "Waikato",
+    "road": "Whangamata Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "FKNaIGzvBCJMoKotTVCGYw": {
+    "metas": [
+      "meta_1769521004015_xc3xz"
+    ],
+    "lat": -41.2950355,
+    "lng": 174.7760272,
+    "country": "New Zealand",
+    "region": "Wellington",
+    "road": "Marion Street",
+    "nominatimCountry": "New Zealand"
+  },
+  "GtOM7tvSa-jxh5KxMZl7gQ": {
+    "metas": [
+      "meta_1769521004015_5whk9"
+    ],
+    "lat": -38.3378751,
+    "lng": 175.1670605,
+    "country": "New Zealand",
+    "region": "Waikato",
+    "road": "Carroll Street",
+    "nominatimCountry": "New Zealand"
+  },
+  "OOXeaVgKuu5F4CRItzfTdw": {
+    "metas": [
+      "meta_1769521004015_0005y"
+    ],
+    "lat": -37.7905267,
+    "lng": 175.2981402,
+    "country": "New Zealand",
+    "region": "Waikato",
+    "road": "Nixon Street",
+    "nominatimCountry": "New Zealand"
+  },
+  "HXZNCUlCHMldJW4bqRF4lg": {
+    "metas": [
+      "meta_1769521004015_ucr1a"
+    ],
+    "lat": -39.5545851,
+    "lng": 174.2553672,
+    "country": "New Zealand",
+    "region": "Taranaki",
+    "road": "Whenuku Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "LTlh161V3iAWfz14ebMYKw": {
+    "metas": [
+      "meta_1769521004015_xz42t"
+    ],
+    "lat": -43.7120411,
+    "lng": 171.6410074,
+    "country": "New Zealand",
+    "region": "Ashburton District",
+    "road": "Methven Highway",
+    "nominatimCountry": "New Zealand"
+  },
+  "GpAd0zHGuTmKYL6Xjj63hQ": {
+    "metas": [
+      "meta_1769521004015_qg06p"
+    ],
+    "lat": -41.1115664,
+    "lng": 175.2747933,
+    "country": "New Zealand",
+    "region": "Wellington",
+    "road": "State Highway 2",
+    "nominatimCountry": "New Zealand"
+  },
+  "6a8ifkIjvF4nDuxgNZgC7A": {
+    "metas": [
+      "meta_1769521004015_s6ix5"
+    ],
+    "lat": -39.4771485,
+    "lng": 175.6683302,
+    "country": "New Zealand",
+    "region": "Manawatū-Whanganui",
+    "road": "State Highway 1",
+    "nominatimCountry": "New Zealand"
+  },
+  "VU3reXCzp6El01lZ_aFkcQ": {
+    "metas": [
+      "meta_1769521004015_nz7ob"
+    ],
+    "lat": -44.2647696,
+    "lng": 171.2670215,
+    "country": "New Zealand",
+    "region": "Timaru District",
+    "road": "Timaru Temuka Highway",
+    "nominatimCountry": "New Zealand"
+  },
+  "i0DEakmcT4tk1meahCGrCg": {
+    "metas": [
+      "meta_1769521004015_scm21"
+    ],
+    "lat": -39.2450288,
+    "lng": 174.1107619,
+    "country": "New Zealand",
+    "region": "Taranaki",
+    "road": "Egmont Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "Nv0ENv1wKx4hnne31bVhYQ": {
+    "metas": [
+      "meta_1769521004015_ebl4c"
+    ],
+    "lat": -37.4333702,
+    "lng": 175.4916316,
+    "country": "New Zealand",
+    "region": "Waikato",
+    "road": "State Highway 27",
+    "nominatimCountry": "New Zealand"
+  },
+  "MqjPoeBMFHWyu5qXTVuUOQ": {
+    "metas": [
+      "meta_1769521004015_9i74q"
+    ],
+    "lat": -43.1135588,
+    "lng": 170.6338668,
+    "country": "New Zealand",
+    "region": "West Coast",
+    "road": "Harihari Highway",
+    "nominatimCountry": "New Zealand"
+  },
+  "9yddtjpN1BmHwlUh3WWTIg": {
+    "metas": [
+      "meta_1769521004015_9pawa"
+    ],
+    "lat": -46.1826068,
+    "lng": 168.693382,
+    "country": "New Zealand",
+    "region": "Southland",
+    "road": "Glencoe Highway",
+    "nominatimCountry": "New Zealand"
+  },
+  "XKFSdmTvDKRnMroC_7Wblw": {
+    "metas": [
+      "meta_1769521004015_5vgyz"
+    ],
+    "lat": -43.8080187,
+    "lng": 170.1124162,
+    "country": "New Zealand",
+    "region": "Canterbury",
+    "road": "Mount Cook Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "o9uheFKms16ICS-RH3b-2Q": {
+    "metas": [
+      "meta_1769521004015_o4fjq"
+    ],
+    "lat": -39.692943,
+    "lng": 176.701291,
+    "country": "New Zealand",
+    "region": "Hawke's Bay",
+    "road": "Raukawa Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "sZ7IAFf7cQdsnwxheMxXWg": {
+    "metas": [
+      "meta_1769521004015_6znb6"
+    ],
+    "lat": -39.655402,
+    "lng": 175.560407,
+    "country": "New Zealand",
+    "region": "Manawatū-Whanganui",
+    "road": "Turakina Valley Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "tH3dHWkzAkOSNuUT2dYdbQ": {
+    "metas": [
+      "meta_1769521004015_6hm0g"
+    ],
+    "lat": -44.17464,
+    "lng": 170.1736865,
+    "country": "New Zealand",
+    "region": "Canterbury",
+    "road": "Tekapo-Twizel Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "32gZGslLhqsYmxOBmmdVGw": {
+    "metas": [
+      "meta_1769521004015_tyh0n"
+    ],
+    "lat": -39.3225717,
+    "lng": 174.2079164,
+    "country": "New Zealand",
+    "region": "Taranaki",
+    "road": "Pembroke Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "W8bGR3wL4-sMooqLebSy-A": {
+    "metas": [
+      "meta_1769521004015_flm26"
+    ],
+    "lat": -35.8231906,
+    "lng": 174.1504164,
+    "country": "New Zealand",
+    "region": "Northland",
+    "road": "Otuhi Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "BFtR5Gai7jE4bOA5YMXrLg": {
+    "metas": [
+      "meta_1769521004015_c90np"
+    ],
+    "lat": -43.5235495,
+    "lng": 172.3406799,
+    "country": "New Zealand",
+    "region": "Canterbury",
+    "road": "West Coast Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "mXX12rAn_BejeljmeQaPqQ": {
+    "metas": [
+      "meta_1769521004015_oxwb0"
+    ],
+    "lat": -41.4880255,
+    "lng": 173.8753137,
+    "country": "New Zealand",
+    "region": "Marlborough",
+    "road": "Jacksons Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "FQyOEbzvdVQe2MM0UpMVLg": {
+    "metas": [
+      "meta_1769521004015_dityj"
+    ],
+    "lat": -39.685992,
+    "lng": 176.807818,
+    "country": "New Zealand",
+    "region": "Hawke's Bay",
+    "road": "Te Aute Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "SyxuF7tRYVzHciHyZ0p7cQ": {
+    "metas": [
+      "meta_1769521004015_t5jzs"
+    ],
+    "lat": -46.288942,
+    "lng": 168.843969,
+    "country": "New Zealand",
+    "region": "Southland",
+    "road": "Wyndham Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "VJjw_xtxmf5y0AzE5s9Iiw": {
+    "metas": [
+      "meta_1769521004015_4y2lx"
+    ],
+    "lat": -41.321209,
+    "lng": 173.974131,
+    "country": "New Zealand",
+    "region": "Marlborough",
+    "road": "State Highway 1",
+    "nominatimCountry": "New Zealand"
+  },
+  "L1SGVPTsAvsTBiL-d5AZcw": {
+    "metas": [
+      "meta_1769521004015_a7yef"
+    ],
+    "lat": -46.216298,
+    "lng": 168.459241,
+    "country": "New Zealand",
+    "region": "Southland",
+    "road": "Springhills Tussock Creek Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "OVuM1mY-pe-mLq8kJYZqAQ": {
+    "metas": [
+      "meta_1769521004015_gr16m"
+    ],
+    "lat": -39.304674,
+    "lng": 174.31353,
+    "country": "New Zealand",
+    "region": "Taranaki",
+    "road": "Beaconsfield Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "BQrJiCbB-1MranfLJLXOvA": {
+    "metas": [
+      "meta_1769521004015_2uowj"
+    ],
+    "lat": -46.056918,
+    "lng": 168.157331,
+    "country": "New Zealand",
+    "region": "Southland",
+    "road": "Hundred Line Road East",
+    "nominatimCountry": "New Zealand"
+  },
+  "DGdla2Lmw6Akc0YFUddSnQ": {
+    "metas": [
+      "meta_1769521004015_6nna5"
+    ],
+    "lat": -45.897309,
+    "lng": 170.313899,
+    "country": "New Zealand",
+    "region": "Otago",
+    "road": "Gladstone Road South",
+    "nominatimCountry": "New Zealand"
+  },
+  "4L8mychGt9vu92wmcHO4hg": {
+    "metas": [
+      "meta_1769521004015_ffa7i"
+    ],
+    "lat": -37.858726,
+    "lng": 175.174509,
+    "country": "New Zealand",
+    "region": "Waikato",
+    "road": "Livingstone Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "qiYe0D6iZSRzRjOZDTIdOw": {
+    "metas": [
+      "meta_1769521004015_w21lb"
+    ],
+    "lat": -40.058506,
+    "lng": 175.327374,
+    "country": "New Zealand",
+    "region": "Manawatū-Whanganui",
+    "road": "Fern Flats Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "kSkrVtawUV8MKNYiABxjRA": {
+    "metas": [
+      "meta_1769521004015_x6vni"
+    ],
+    "lat": -38.668606,
+    "lng": 178.048162,
+    "country": "New Zealand",
+    "region": "Gisborne",
+    "road": "De Lautour Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "kw903yHvtTg4bCMRTa2cfA": {
+    "metas": [
+      "meta_1769521004015_ehog2"
+    ],
+    "lat": -39.525173,
+    "lng": 176.85824,
+    "country": "New Zealand",
+    "region": "Hawke's Bay",
+    "road": "Avenue Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "yZeDshawFJ-fM3k_WPW7mA": {
+    "metas": [
+      "meta_1769521004015_yd6t4"
+    ],
+    "lat": -41.373989,
+    "lng": 173.106919,
+    "country": "New Zealand",
+    "region": "Tasman",
+    "road": "Lord Rutherford Road North",
+    "nominatimCountry": "New Zealand"
+  },
+  "rbVcpgQTlGeNRMS97e1s8g": {
+    "metas": [
+      "meta_1769521004015_p4hgo"
+    ],
+    "lat": -40.352795,
+    "lng": 175.560618,
+    "country": "New Zealand",
+    "region": "Manawatū-Whanganui",
+    "road": "Cloverlea Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "cq_L9bLiHmZ1X-a3TWfhXA": {
+    "metas": [
+      "meta_1769521004015_dt829"
+    ],
+    "lat": -44.370351,
+    "lng": 171.238241,
+    "country": "New Zealand",
+    "region": "Canterbury",
+    "road": "Jellicoe Street",
+    "nominatimCountry": "New Zealand"
+  },
+  "l_7FYSg-VeKcGoVYH8usDQ": {
+    "metas": [
+      "meta_1769521004015_257uc"
+    ],
+    "lat": -39.082253,
+    "lng": 174.077519,
+    "country": "New Zealand",
+    "region": "Taranaki",
+    "road": "Huatoki Street",
+    "nominatimCountry": "New Zealand"
+  },
+  "MW1l0m0GrYTJYLb3K1Zv4g": {
+    "metas": [
+      "meta_1769521004015_w6j7h"
+    ],
+    "lat": -41.295249,
+    "lng": 174.789071,
+    "country": "New Zealand",
+    "region": "Wellington",
+    "road": "Port Street",
+    "nominatimCountry": "New Zealand"
+  },
+  "OQgPIAGBcHFhQkfXenr32Q": {
+    "metas": [
+      "meta_1769521004015_u9qyw"
+    ],
+    "lat": -44.394466,
+    "lng": 171.106192,
+    "country": "New Zealand",
+    "region": "Timaru District",
+    "road": "Mount Horrible Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "eizujLtcPEOLfWZ_BG41jA": {
+    "metas": [
+      "meta_1769521004015_8fhng"
+    ],
+    "lat": -40.995095,
+    "lng": 175.762137,
+    "country": "New Zealand",
+    "region": "Wellington",
+    "road": "Masterton Stronvar Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "sDJjnnNkUlIwIpwfCzlylg": {
+    "metas": [
+      "meta_1769521004015_1zpe5"
+    ],
+    "lat": -36.4692749,
+    "lng": 174.596947,
+    "country": "New Zealand",
+    "region": "Auckland",
+    "road": "Moir Hill Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "B0_DIVtduTPuP1-VnHTDEA": {
+    "metas": [
+      "meta_1769521004015_q3m8e"
+    ],
+    "lat": -39.452236,
+    "lng": 173.916807,
+    "country": "New Zealand",
+    "region": "Taranaki",
+    "road": "Waiteika Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "rQv5IkLt48Ax4zpj7iWpCA": {
+    "metas": [
+      "meta_1769521004015_dxq48"
+    ],
+    "lat": -44.0437957,
+    "lng": 171.199163,
+    "country": "New Zealand",
+    "region": "Timaru District",
+    "road": "McKeown Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "ZgPOaSrc-9pxZI_9np65tw": {
+    "metas": [
+      "meta_1769521004015_nyh7p"
+    ],
+    "lat": -40.033961,
+    "lng": 176.593919,
+    "country": "New Zealand",
+    "region": "Hawke's Bay",
+    "road": "Stanton Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "j8ybaT9VP8Jiq8PeOIauLQ": {
+    "metas": [
+      "meta_1769521004016_m2xk9"
+    ],
+    "lat": -45.656839,
+    "lng": 168.261947,
+    "country": "New Zealand",
+    "region": "Southland",
+    "road": "Mossburn Five Rivers Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "frPs3_C60eMS8PBVETM-LQ": {
+    "metas": [
+      "meta_1769521004016_icdih"
+    ],
+    "lat": -39.8258537,
+    "lng": 174.8797009,
+    "country": "New Zealand",
+    "region": "Manawatū-Whanganui",
+    "road": "Great North Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "QZ4-c1uM2kK4TREctvAP_w": {
+    "metas": [
+      "meta_1769521004016_lvmju"
+    ],
+    "lat": -42.371951,
+    "lng": 173.655908,
+    "country": "New Zealand",
+    "region": "Canterbury",
+    "road": "Mt Fyffe Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "5aARd6w0NhV8uGiNrbT_AQ": {
+    "metas": [
+      "meta_1769521004016_8ucf3"
+    ],
+    "lat": -41.266696,
+    "lng": 174.7837273,
+    "country": "New Zealand",
+    "region": "Wellington",
+    "road": "Tinakori Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "uX1_cQZbVvjp0NKPg-U3Xw": {
+    "metas": [
+      "meta_1769521004016_ijrbv"
+    ],
+    "lat": -46.8971475,
+    "lng": 168.1286737,
+    "country": "New Zealand",
+    "region": "Southland",
+    "road": "Elgin Terrace",
+    "nominatimCountry": "New Zealand"
+  },
+  "uobv84ObXcyUYq-9WTwWkQ": {
+    "metas": [
+      "meta_1769521004016_h7vkj"
+    ],
+    "lat": -39.1515846,
+    "lng": 175.5005046,
+    "country": "New Zealand",
+    "region": "Manawatū-Whanganui",
+    "road": "State Highway 47",
+    "nominatimCountry": "New Zealand"
+  },
+  "aMzZOJlraJrIzVxiizyUkA": {
+    "metas": [
+      "meta_1769521004016_plhwf"
+    ],
+    "lat": -39.2285688,
+    "lng": 175.5414385,
+    "country": "New Zealand",
+    "region": "Manawatū-Whanganui",
+    "road": "Bruce Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "9NeAqaxVqFA67Y35LmNuPw": {
+    "metas": [
+      "meta_1769521004016_efizy"
+    ],
+    "lat": -43.5094189,
+    "lng": 172.6773612,
+    "country": "New Zealand",
+    "region": "Canterbury",
+    "road": "Sutton Place",
+    "nominatimCountry": "New Zealand"
+  },
+  "T9OIlC8PjP8fKVtIpukzkA": {
+    "metas": [
+      "meta_1769521004016_uwuq3"
+    ],
+    "lat": -44.9629708,
+    "lng": 169.9367115,
+    "country": "New Zealand",
+    "region": "Otago",
+    "road": "Wedderburn-Becks Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "idlpUg2M7rc6GbqX8qUPIw": {
+    "metas": [
+      "meta_1769521004016_pou8b"
+    ],
+    "lat": -41.1804288,
+    "lng": 174.9450058,
+    "country": "New Zealand",
+    "region": "Wellington",
+    "road": "Western Hutt Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "ocpe-OsE_AcWs61iH20Lzg": {
+    "metas": [
+      "meta_1769521004016_2qqus"
+    ],
+    "lat": -41.506218,
+    "lng": 173.9556954,
+    "country": "New Zealand",
+    "region": "Marlborough",
+    "road": "Hutcheson Street",
+    "nominatimCountry": "New Zealand"
+  },
+  "-AfmfJFZwT6CpBUpBjEjMg": {
+    "metas": [
+      "meta_1769521004016_ropx6"
+    ],
+    "lat": -37.724046,
+    "lng": 176.28072,
+    "country": "New Zealand",
+    "region": "Bay of Plenty",
+    "road": "Welcome Bay Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "yGKEbrCCqzvVYFuTOKLvNw": {
+    "metas": [
+      "meta_1769521004016_mc0y9"
+    ],
+    "lat": -43.739083,
+    "lng": 172.981483,
+    "country": "New Zealand",
+    "region": "Canterbury",
+    "road": "Summit Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "DQ_lUb4LhPg-EjBVEcu0rQ": {
+    "metas": [
+      "meta_1769521004016_lo57t"
+    ],
+    "lat": -41.208255,
+    "lng": 173.986202,
+    "country": "New Zealand",
+    "region": "Marlborough",
+    "road": "Kenepuru Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "1KyfibpRM743K3OUi_rZBg": {
+    "metas": [
+      "meta_1769521004016_66s93"
+    ],
+    "lat": -45.902814,
+    "lng": 170.552057,
+    "country": "New Zealand",
+    "region": "Otago",
+    "road": "Oregon Street",
+    "nominatimCountry": "New Zealand"
+  },
+  "Qq_qzp1z8RVfbATbtLCfFA": {
+    "metas": [
+      "meta_1769521004016_oexxl"
+    ],
+    "lat": -43.02107,
+    "lng": 171.598209,
+    "country": "New Zealand",
+    "region": "Canterbury",
+    "road": "West Coast Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "R2r-eD4nzhiR1Dj1bsSLBw": {
+    "metas": [
+      "meta_1769521004016_h1h2w"
+    ],
+    "lat": -44.858015,
+    "lng": 168.102835,
+    "country": "New Zealand",
+    "region": "Southland",
+    "road": "Te Anau Milford Highway",
+    "nominatimCountry": "New Zealand"
+  },
+  "kIIaZB-Cl4a_QAYo4nxIiQ": {
+    "metas": [
+      "meta_1769521004016_mcmms"
+    ],
+    "lat": -44.0858712,
+    "lng": 170.13506,
+    "country": "New Zealand",
+    "region": "Canterbury",
+    "road": "Mount Cook Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "eoBXVU6R_23lw1Of_dJ-aQ": {
+    "metas": [
+      "meta_1769521004016_4vgxo"
+    ],
+    "lat": -37.85172,
+    "lng": 175.244663,
+    "country": "New Zealand",
+    "region": "Waikato",
+    "road": "O'Regan Road",
+    "nominatimCountry": "New Zealand"
+  },
+  "NzDxZTdKKvEGPZbnoXFqQg": {
+    "metas": [
+      "meta_1769521004016_iqctb"
+    ],
+    "lat": -38.032447,
+    "lng": 176.767415,
+    "country": "New Zealand",
+    "region": "Bay of Plenty",
+    "road": "State Highway 30",
+    "nominatimCountry": "New Zealand"
+  },
+  "DoDRqCT53PyQgbmSvTevwg": {
+    "metas": [
+      "meta_1769521005186_u0wrs"
+    ],
+    "lat": 15.1751552,
+    "lng": 145.718309,
+    "country": "Northern Mariana Islands",
+    "region": "Northern Mariana Islands",
+    "road": "Chalan Pale Arnold",
+    "nominatimCountry": "United States"
+  },
+  "ML1-4faAubMStgECn86L5A": {
+    "metas": [
+      "meta_1769521005186_pecy6"
+    ],
+    "lat": 15.1498451,
+    "lng": 145.7215805,
+    "country": "Northern Mariana Islands",
+    "region": "Northern Mariana Islands",
+    "road": "Chalan Kanoa",
+    "nominatimCountry": "United States"
+  },
+  "oTzLHVRpk0RqbACjfsrHxg": {
+    "metas": [
+      "meta_1769521005186_uj0sa"
+    ],
+    "lat": 15.2783764,
+    "lng": 145.810974,
+    "country": "Northern Mariana Islands",
+    "region": "Northern Mariana Islands",
+    "road": "Chalan Pale Arnold",
+    "nominatimCountry": "United States"
+  },
+  "BtZCKpil8-YUmuLsQPTFdw": {
+    "metas": [
+      "meta_1769521007514_x5cy3"
+    ],
+    "lat": -16.250113,
+    "lng": 168.243554,
+    "country": "Vanuatu",
+    "region": "Malampa",
+    "road": "Endupoal",
+    "nominatimCountry": "Vanuatu"
+  },
+  "EgdmuxKujgQJlRVeGN3X4Q": {
+    "metas": [
+      "meta_1769521007514_e1img"
+    ],
+    "lat": -16.246778,
+    "lng": 168.22851,
+    "country": "Vanuatu",
+    "region": "Malampa",
+    "road": "Endupoal",
+    "nominatimCountry": "Vanuatu"
+  },
+  "5CUQNQtzrNNWmFXdxVQgMA": {
+    "metas": [
+      "meta_1769521007514_tyets"
+    ],
+    "lat": -16.260463,
+    "lng": 168.187339,
+    "country": "Vanuatu",
+    "region": "Malampa",
+    "road": null,
+    "nominatimCountry": "Vanuatu"
+  },
+  "p8X_22pzWY3q3ElWnmt4iA": {
+    "metas": [
+      "meta_1769521007514_f9xaa"
+    ],
+    "lat": -16.2476974,
+    "lng": 168.1365145,
+    "country": "Vanuatu",
+    "region": "Malampa",
+    "road": null,
+    "nominatimCountry": "Vanuatu"
+  },
+  "rIm9_T-rgEj4GWK4eZl2FA": {
+    "metas": [
+      "meta_1769521007514_ahoye"
+    ],
+    "lat": -16.2585817,
+    "lng": 168.165555,
+    "country": "Vanuatu",
+    "region": "Malampa",
+    "road": null,
+    "nominatimCountry": "Vanuatu"
+  },
+  "qex5HqfjhDCAgXfXhyoLYQ": {
+    "metas": [
+      "meta_1769521007514_itsvo"
+    ],
+    "lat": -16.2636711,
+    "lng": 168.1813401,
+    "country": "Vanuatu",
+    "region": "Malampa",
+    "road": null,
+    "nominatimCountry": "Vanuatu"
+  },
+  "xyc62K9aczh8We8mrrvmmQ": {
+    "metas": [
+      "meta_1769521007514_zeoop"
+    ],
+    "lat": -16.246963,
+    "lng": 168.2287525,
+    "country": "Vanuatu",
+    "region": "Malampa",
+    "road": "Endupoal",
+    "nominatimCountry": "Vanuatu"
+  },
+  "j2_l3V8IlOGCdyeGg0q3VQ": {
+    "metas": [
+      "meta_1769521007514_nc0vx"
+    ],
+    "lat": -16.2522187,
+    "lng": 168.245911,
+    "country": "Vanuatu",
+    "region": "Malampa",
+    "road": "Endupoal",
+    "nominatimCountry": "Vanuatu"
+  },
+  "wXrVWOfCHWkDWg8ZHhqnxQ": {
+    "metas": [
+      "meta_1769521007514_mi8rl"
+    ],
+    "lat": -16.2578543,
+    "lng": 168.2549027,
+    "country": "Vanuatu",
+    "region": "Malampa",
+    "road": "Ase",
+    "nominatimCountry": "Vanuatu"
+  },
+  "AhCVMgRMnRZpvk03-POwYQ": {
+    "metas": [
+      "meta_1769521008671_7c1wz"
+    ],
+    "lat": -25.5098285,
+    "lng": -59.4038514,
+    "country": "Argentina",
+    "region": "Formosa",
+    "road": "Ruta Nacional 81",
+    "nominatimCountry": "Argentina"
+  },
+  "tZy_cKTivcz4cen2Vc-_Fw": {
+    "metas": [
+      "meta_1769521008671_szrsh"
+    ],
+    "lat": -34.2306091,
+    "lng": -64.3837411,
+    "country": "Argentina",
+    "region": "Córdoba",
+    "road": "Ruta Nacional 35",
+    "nominatimCountry": "Argentina"
+  },
+  "cwF8KNseAHiQEZO4A5KY8w": {
+    "metas": [
+      "meta_1769521008671_0tgy1"
+    ],
+    "lat": -30.767618,
+    "lng": -64.866082,
+    "country": "Argentina",
+    "region": "Córdoba",
+    "road": "Ruta Nacional 38 - Monseñor Angelelli",
+    "nominatimCountry": "Argentina"
+  },
+  "YPDcb3cfcHnaw6onLQZzkw": {
+    "metas": [
+      "meta_1769521008671_w8tpn"
+    ],
+    "lat": -32.9264225,
+    "lng": -60.9006845,
+    "country": "Argentina",
+    "region": "Gran Rosario",
+    "road": "Autopista Ernesto Guevara",
+    "nominatimCountry": "Argentina"
+  },
+  "jAayjfo7rJlraeW-t7cBrQ": {
+    "metas": [
+      "meta_1769521008671_dvhas"
+    ],
+    "lat": -49.9199708,
+    "lng": -72.8099121,
+    "country": "Argentina",
+    "region": "Santa Cruz",
+    "road": "Ruta Provincial 69",
+    "nominatimCountry": "Argentina"
+  },
+  "zyv8XvcaGdcwmynl8qvjeg": {
+    "metas": [
+      "meta_1769521008671_vh05d"
+    ],
+    "lat": -26.671329,
+    "lng": -54.1994051,
+    "country": "Argentina",
+    "region": "Misiones",
+    "road": "Ruta Nacional 14",
+    "nominatimCountry": "Argentina"
+  },
+  "_DmxDorVuEeiACm4sxOmGQ": {
+    "metas": [
+      "meta_1769521008671_ickkz"
+    ],
+    "lat": -24.9747603,
+    "lng": -60.1866578,
+    "country": "Argentina",
+    "region": "Formosa",
+    "road": "Ruta Nacional 81",
+    "nominatimCountry": "Argentina"
+  },
+  "dU61FTi91D85KSddR9aqHw": {
+    "metas": [
+      "meta_1769521008671_q1zd1"
+    ],
+    "lat": -36.1884819,
+    "lng": -58.5930854,
+    "country": "Argentina",
+    "region": "Buenos Aires",
+    "road": "Acceso a Real Audencia",
+    "nominatimCountry": "Argentina"
+  },
+  "zZGj90-LsW8-WVKzxWdSCQ": {
+    "metas": [
+      "meta_1769521008671_ucg9q"
+    ],
+    "lat": -35.6441731,
+    "lng": -61.3698655,
+    "country": "Argentina",
+    "region": "Buenos Aires",
+    "road": "Ruta Nacional 5",
+    "nominatimCountry": "Argentina"
+  },
+  "WbaSBBzt3hLLrAeFp1aXPA": {
+    "metas": [
+      "meta_1769521008671_3rl7z"
+    ],
+    "lat": -34.80689,
+    "lng": -66.324161,
+    "country": "Argentina",
+    "region": "San Luis",
+    "road": "Ruta Provincial 12C",
+    "nominatimCountry": "Argentina"
+  },
+  "H4eUL-oskzS-kjkwhRVg7g": {
+    "metas": [
+      "meta_1769521008671_n4gw0"
+    ],
+    "lat": -46.1883479,
+    "lng": -68.7204096,
+    "country": "Argentina",
+    "region": "Santa Cruz",
+    "road": null,
+    "nominatimCountry": "Argentina"
+  },
+  "o7u8PO2jhhVsemb4Cx3Yag": {
+    "metas": [
+      "meta_1769521008671_2q5yz"
+    ],
+    "lat": -53.864337,
+    "lng": -67.8559539,
+    "country": "Argentina",
+    "region": "Tierra del Fuego",
+    "road": "Ruta Nacional 24 Complementaria B",
+    "nominatimCountry": "Argentina"
+  },
+  "cVRD1TTgWjDFSrIaeRIlSg": {
+    "metas": [
+      "meta_1769521008671_yum2d"
+    ],
+    "lat": -31.0638328,
+    "lng": -58.0660239,
+    "country": "Argentina",
+    "region": "Distrito Gualeguaycito",
+    "road": "Ruta Nacional 14 José Gervasio Artigas",
+    "nominatimCountry": "Argentina"
+  },
+  "dEJU7AII1IYXtP-VKfmbyg": {
+    "metas": [
+      "meta_1769521008671_f5bs0"
+    ],
+    "lat": -54.7910383,
+    "lng": -67.6420656,
+    "country": "Argentina",
+    "region": "Tierra del Fuego",
+    "road": "Ruta Nacional 24 Complementaria J",
+    "nominatimCountry": "Argentina"
+  },
+  "OITB4GPrClq3kBLv7EqgwA": {
+    "metas": [
+      "meta_1769521008671_t2nc1"
+    ],
+    "lat": -25.349484,
+    "lng": -58.119781,
+    "country": "Argentina",
+    "region": "Formosa",
+    "road": "Ruta Provincial 7",
+    "nominatimCountry": "Argentina"
+  },
+  "aKQtJSvRk3RXVbCXQOPQoA": {
+    "metas": [
+      "meta_1769521008671_tvsw7"
+    ],
+    "lat": -31.355593,
+    "lng": -65.148637,
+    "country": "Argentina",
+    "region": "Córdoba",
+    "road": "Ruta Provincial 28",
+    "nominatimCountry": "Argentina"
+  },
+  "Sv7hgVNovRB6JoUpse5twg": {
+    "metas": [
+      "meta_1769521008671_713a3"
+    ],
+    "lat": -28.494048,
+    "lng": -58.443472,
+    "country": "Argentina",
+    "region": "Corrientes",
+    "road": "Ruta Provincial 19",
+    "nominatimCountry": "Argentina"
+  },
+  "gKBdCm0RjEfZLMYJZRuNqQ": {
+    "metas": [
+      "meta_1769521008671_k85fl"
+    ],
+    "lat": -27.065671,
+    "lng": -58.670864,
+    "country": "Argentina",
+    "region": "Chaco",
+    "road": null,
+    "nominatimCountry": "Argentina"
+  },
+  "_iNHckqkujipOboyyil0vw": {
+    "metas": [
+      "meta_1769521008671_v60zl"
+    ],
+    "lat": -24.591274,
+    "lng": -65.841018,
+    "country": "Argentina",
+    "region": "Salta",
+    "road": "Ruta Nacional 51",
+    "nominatimCountry": "Argentina"
+  },
+  "1SM_a7BMlqdo1pKBHT5tSQ": {
+    "metas": [
+      "meta_1769521008671_7bcr6"
+    ],
+    "lat": -29.539915,
+    "lng": -65.106494,
+    "country": "Argentina",
+    "region": "Catamarca",
+    "road": "Ruta Nacional 60",
+    "nominatimCountry": "Argentina"
+  },
+  "26XtkYShVkDFDIY_Ow2mWg": {
+    "metas": [
+      "meta_1769521008671_ikhcl"
+    ],
+    "lat": -24.470915,
+    "lng": -65.03363,
+    "country": "Argentina",
+    "region": "Jujuy",
+    "road": "Ruta Nacional 34",
+    "nominatimCountry": "Argentina"
+  },
+  "NQfF3kT8wB3W_y0skgq0wA": {
+    "metas": [
+      "meta_1769521008671_bcxmj"
+    ],
+    "lat": -37.330908,
+    "lng": -64.372336,
+    "country": "Argentina",
+    "region": "La Pampa",
+    "road": "Ruta Nacional 152",
+    "nominatimCountry": "Argentina"
+  },
+  "fWaJlYlzMwHM5FfOT77G7g": {
+    "metas": [
+      "meta_1769521008671_xcx7j"
+    ],
+    "lat": -35.376023,
+    "lng": -62.060872,
+    "country": "Argentina",
+    "region": "Buenos Aires",
+    "road": "Ruta Provincial 70",
+    "nominatimCountry": "Argentina"
+  },
+  "zVnTpUpTsS0rSdObwyoChA": {
+    "metas": [
+      "meta_1769521008671_2vlyq"
+    ],
+    "lat": -26.870526,
+    "lng": -65.035986,
+    "country": "Argentina",
+    "region": "Tucumán",
+    "road": "RP303",
+    "nominatimCountry": "Argentina"
+  },
+  "P1tb6ux4_60DQmj6FMrZZg": {
+    "metas": [
+      "meta_1769521008671_o4b1x"
+    ],
+    "lat": -30.679811,
+    "lng": -61.459415,
+    "country": "Argentina",
+    "region": null,
+    "road": "Municipio de Moisés Ville",
+    "nominatimCountry": "Argentina"
+  },
+  "WVtufLuQX_nl6WVOv7Xb-A": {
+    "metas": [
+      "meta_1769521008671_kxy4n"
+    ],
+    "lat": -34.908846,
+    "lng": -64.323024,
+    "country": "Argentina",
+    "region": "Córdoba",
+    "road": "Ruta Nacional 35",
+    "nominatimCountry": "Argentina"
+  },
+  "mLvuPluhuqA3f48-ch1ouQ": {
+    "metas": [
+      "meta_1769521008671_rlmp9"
+    ],
+    "lat": -27.206056,
+    "lng": -61.094233,
+    "country": "Argentina",
+    "region": "Chaco",
+    "road": null,
+    "nominatimCountry": "Argentina"
+  },
+  "nqUM6SUVyfYi0GxDl-AhvQ": {
+    "metas": [
+      "meta_1769521008671_4zgmf"
+    ],
+    "lat": -39.021827,
+    "lng": -67.750479,
+    "country": "Argentina",
+    "region": "Río Negro",
+    "road": "Ruta Nacional 22 Ceferino Namuncurá",
+    "nominatimCountry": "Argentina"
+  },
+  "Gv-hUgLYqq9aml4msW7CqA": {
+    "metas": [
+      "meta_1769521008671_2bph6"
+    ],
+    "lat": -30.6314357,
+    "lng": -65.5885471,
+    "country": "Argentina",
+    "region": "La Rioja",
+    "road": "Ruta Nacional 77",
+    "nominatimCountry": "Argentina"
+  },
+  "fjKKoabM8LEEQxsGM9fTVA": {
+    "metas": [
+      "meta_1769521008671_vhqn0"
+    ],
+    "lat": -32.31811,
+    "lng": -67.991504,
+    "country": "Argentina",
+    "region": "Mendoza",
+    "road": "Ruta Nacional 142",
+    "nominatimCountry": "Argentina"
+  },
+  "eqIjLRcBcYM85boGiyf9Pg": {
+    "metas": [
+      "meta_1769521008671_i5jo7"
+    ],
+    "lat": -26.709286,
+    "lng": -65.268239,
+    "country": "Argentina",
+    "region": "Tucumán",
+    "road": "La Esperanza",
+    "nominatimCountry": "Argentina"
+  },
+  "ID0zUKGXsWA9W0Jf9LweuA": {
+    "metas": [
+      "meta_1769521008671_kegs0"
+    ],
+    "lat": -31.5834567,
+    "lng": -64.6130237,
+    "country": "Argentina",
+    "region": "Córdoba",
+    "road": "Ruta Provincial 34 Jorge Raúl Recalde",
+    "nominatimCountry": "Argentina"
+  },
+  "O0LSSdl-t8orDa_lr3No7w": {
+    "metas": [
+      "meta_1769521008671_pubzr"
+    ],
+    "lat": -36.254766,
+    "lng": -64.947848,
+    "country": "Argentina",
+    "region": "La Pampa",
+    "road": "Ruta Provincial 10",
+    "nominatimCountry": "Argentina"
+  },
+  "Le5eJybuqr-d3owmdlRN7Q": {
+    "metas": [
+      "meta_1769521008671_7448e"
+    ],
+    "lat": -23.3991987,
+    "lng": -66.3676143,
+    "country": "Argentina",
+    "region": "Jujuy",
+    "road": "Ruta Nacional 40",
+    "nominatimCountry": "Argentina"
+  },
+  "d7Odcw0iAZGMJBqzoLoCAg": {
+    "metas": [
+      "meta_1769521008671_ozxvi"
+    ],
+    "lat": -38.014607,
+    "lng": -57.556334,
+    "country": "Argentina",
+    "region": "Buenos Aires",
+    "road": "Santa Fe",
+    "nominatimCountry": "Argentina"
+  },
+  "_fOfUEp4qZGSfIn14JeM8A": {
+    "metas": [
+      "meta_1769521008671_s86wg"
+    ],
+    "lat": -22.514981,
+    "lng": -63.803818,
+    "country": "Argentina",
+    "region": "Salta",
+    "road": "España",
+    "nominatimCountry": "Argentina"
+  },
+  "itvcRWzLklCyq8GqcQQ5OA": {
+    "metas": [
+      "meta_1769521008671_bkwtv"
+    ],
+    "lat": -23.6011788,
+    "lng": -65.8757325,
+    "country": "Argentina",
+    "region": "Jujuy",
+    "road": "Ruta Nacional 52",
+    "nominatimCountry": "Argentina"
+  },
+  "h7ZJGQFS6JIa9GKnWcteTg": {
+    "metas": [
+      "meta_1769521008671_5pons"
+    ],
+    "lat": -25.9380504,
+    "lng": -65.7195697,
+    "country": "Argentina",
+    "region": "Salta",
+    "road": "Ruta Nacional 68",
+    "nominatimCountry": "Argentina"
+  },
+  "KvjLWCNA6bL_RKGsdlmc7Q": {
+    "metas": [
+      "meta_1769521008671_7qbyv"
+    ],
+    "lat": -26.1625047,
+    "lng": -67.429748,
+    "country": "Argentina",
+    "region": "Catamarca",
+    "road": "RP43",
+    "nominatimCountry": "Argentina"
+  },
+  "na3izHPPp4k1gtE7zDNehQ": {
+    "metas": [
+      "meta_1769521008671_j7zp7"
+    ],
+    "lat": -27.33028,
+    "lng": -65.934752,
+    "country": "Argentina",
+    "region": "Tucumán",
+    "road": "Ruta Nacional 65",
+    "nominatimCountry": "Argentina"
+  },
+  "DdtiEUMFqKGUF5_a9LjpwQ": {
+    "metas": [
+      "meta_1769521008671_mjhao"
+    ],
+    "lat": -29.9201901,
+    "lng": -67.8738576,
+    "country": "Argentina",
+    "region": "La Rioja",
+    "road": "Ruta Nacional 76",
+    "nominatimCountry": "Argentina"
+  },
+  "u2mJM1TRLhpP1e3WFutBCQ": {
+    "metas": [
+      "meta_1769521008671_72v1d"
+    ],
+    "lat": -31.2310815,
+    "lng": -64.4080783,
+    "country": "Argentina",
+    "region": "Córdoba",
+    "road": "RPE54",
+    "nominatimCountry": "Argentina"
+  },
+  "4ETAJ3eRJkTZ4yJ3zwy7aQ": {
+    "metas": [
+      "meta_1769521008671_lrnew"
+    ],
+    "lat": -32.2692648,
+    "lng": -70.1103741,
+    "country": "Argentina",
+    "region": "San Juan",
+    "road": null,
+    "nominatimCountry": "Argentina"
+  },
+  "XfFMqBSkvS7dDZ6b58a0ng": {
+    "metas": [
+      "meta_1769521008671_2t51p"
+    ],
+    "lat": -32.9634146,
+    "lng": -68.8021836,
+    "country": "Argentina",
+    "region": "Mendoza",
+    "road": null,
+    "nominatimCountry": "Argentina"
+  },
+  "7-MiafBRWStjY8u7bAKlAw": {
+    "metas": [
+      "meta_1769521008671_f7kc7"
+    ],
+    "lat": -38.0552493,
+    "lng": -62.1143609,
+    "country": "Argentina",
+    "region": "Buenos Aires",
+    "road": "Ruta Provincial 76",
+    "nominatimCountry": "Argentina"
+  },
+  "F-raSwS0BBIsIIwTJTargA": {
+    "metas": [
+      "meta_1769521008671_vw0bo"
+    ],
+    "lat": -37.8626873,
+    "lng": -71.0421619,
+    "country": "Argentina",
+    "region": "Neuquén",
+    "road": "Ruta Provincial 26",
+    "nominatimCountry": "Argentina"
+  },
+  "WuyPjAE9FfBwIFeNyDfPdw": {
+    "metas": [
+      "meta_1769521008671_bhf82"
+    ],
+    "lat": -37.025133,
+    "lng": -69.858013,
+    "country": "Argentina",
+    "region": "Neuquén",
+    "road": "Ruta Nacional 40",
+    "nominatimCountry": "Argentina"
+  },
+  "hTDIq-C2x6-LR7MpkgRFWw": {
+    "metas": [
+      "meta_1769521008671_mtqo0"
+    ],
+    "lat": -39.0395665,
+    "lng": -64.3581872,
+    "country": "Argentina",
+    "region": "Río Negro",
+    "road": "Ruta Nacional 22 Ceferino Namuncurá",
+    "nominatimCountry": "Argentina"
+  },
+  "HZu9v09jxMbrTzLMXKuCDA": {
+    "metas": [
+      "meta_1769521008671_qkckd"
+    ],
+    "lat": -40.2817951,
+    "lng": -69.1655445,
+    "country": "Argentina",
+    "region": "Río Negro",
+    "road": "Ruta Provincial 67",
+    "nominatimCountry": "Argentina"
+  },
+  "X2tglvhr4fxQ8Fab6nSjIA": {
+    "metas": [
+      "meta_1769521008671_308ix"
+    ],
+    "lat": -43.6990167,
+    "lng": -66.4711678,
+    "country": "Argentina",
+    "region": "Chubut",
+    "road": "19 de Abril",
+    "nominatimCountry": "Argentina"
+  },
+  "mmjs0O9IzBYuMujRH4rmdA": {
+    "metas": [
+      "meta_1769521008671_t9l6r"
+    ],
+    "lat": -45.8622149,
+    "lng": -67.522897,
+    "country": "Argentina",
+    "region": "Chubut",
+    "road": "Avenida Rivadavia",
+    "nominatimCountry": "Argentina"
+  },
+  "a8c9WIYKR0jKbR01_D3W1A": {
+    "metas": [
+      "meta_1769521008671_hk1wm"
+    ],
+    "lat": -49.2675192,
+    "lng": -67.9998683,
+    "country": "Argentina",
+    "region": "Santa Cruz",
+    "road": "Ruta Provincial 25",
+    "nominatimCountry": "Argentina"
+  },
+  "FlqMmKMioLJdXm9_BAKalw": {
+    "metas": [
+      "meta_1769521008671_d8jwg"
+    ],
+    "lat": -51.6855226,
+    "lng": -72.2725406,
+    "country": "Argentina",
+    "region": "Santa Cruz",
+    "road": "Ruta Nacional 293",
+    "nominatimCountry": "Argentina"
+  },
+  "PB7xC0MP5Eq7Kt_hQR8PtQ": {
+    "metas": [
+      "meta_1769521008671_fcxbi"
+    ],
+    "lat": -54.8263952,
+    "lng": -68.3303571,
+    "country": "Argentina",
+    "region": "Tierra del Fuego",
+    "road": "Rafaela Ishton",
+    "nominatimCountry": "Argentina"
+  },
+  "Kd8LScsErag7dT0supeGsg": {
+    "metas": [
+      "meta_1769521009823_i5r6h"
+    ],
+    "lat": -17.9383864,
+    "lng": -65.3372889,
+    "country": "Bolivia",
+    "region": "Cochabamba",
+    "road": "RN23: Punata-Mizque",
+    "nominatimCountry": "Bolivia"
+  },
+  "L7k-wVtDNELrHOGRssBtnA": {
+    "metas": [
+      "meta_1769521009823_apqvp"
+    ],
+    "lat": -17.8811329,
+    "lng": -67.3394,
+    "country": "Bolivia",
+    "region": "Oruro",
+    "road": "RN31: Oruro-La Joya",
+    "nominatimCountry": "Bolivia"
+  },
+  "OhvofCIQgR7xxMKBOBbJsw": {
+    "metas": [
+      "meta_1769521009823_1f9gv"
+    ],
+    "lat": -18.1757387,
+    "lng": -65.1766786,
+    "country": "Bolivia",
+    "region": "Cochabamba",
+    "road": "Camino Aiquile-Totora",
+    "nominatimCountry": "Bolivia"
+  },
+  "k28HjLwgLXUOiR0SOPsByw": {
+    "metas": [
+      "meta_1769521009823_i1okl"
+    ],
+    "lat": -17.9692222,
+    "lng": -67.1146132,
+    "country": "Bolivia",
+    "region": "Oruro",
+    "road": "Calle Adolfo Mier",
+    "nominatimCountry": "Bolivia"
+  },
+  "O5ny_JSBw85QGMXB2-1DYQ": {
+    "metas": [
+      "meta_1769521009823_qfo2t"
+    ],
+    "lat": -17.392459,
+    "lng": -66.154434,
+    "country": "Bolivia",
+    "region": "Cochabamba",
+    "road": "Avenida General José de San Martín",
+    "nominatimCountry": "Bolivia"
+  },
+  "xyoHDlhQP1wYANIedhItqw": {
+    "metas": [
+      "meta_1769521009823_ee2gm"
+    ],
+    "lat": -16.2090606,
+    "lng": -68.6396552,
+    "country": "Bolivia",
+    "region": "La Paz",
+    "road": "RN2: Tiquina-Huarina",
+    "nominatimCountry": "Bolivia"
+  },
+  "JEfAE5kcVU3fhKCNbjhYkQ": {
+    "metas": [
+      "meta_1769521009823_5qq2h"
+    ],
+    "lat": -18.846213,
+    "lng": -65.285825,
+    "country": "Bolivia",
+    "region": "Chuquisaca",
+    "road": "Camino Sucre-Poroma",
+    "nominatimCountry": "Bolivia"
+  },
+  "WBpgqfnf842Y-9ixEZB70Q": {
+    "metas": [
+      "meta_1769521009823_sebjw"
+    ],
+    "lat": -17.728169,
+    "lng": -65.523567,
+    "country": "Bolivia",
+    "region": "Cochabamba",
+    "road": "RN23: Punata-Mizque",
+    "nominatimCountry": "Bolivia"
+  },
+  "SEaK1n4yujm7ZfTRHrneuQ": {
+    "metas": [
+      "meta_1769521009823_b8g67"
+    ],
+    "lat": -16.482705,
+    "lng": -68.1836,
+    "country": "Bolivia",
+    "region": "La Paz",
+    "road": "Calle Tihuanaco",
+    "nominatimCountry": "Bolivia"
+  },
+  "0fEevjjU8nsSe7sXjDWHNw": {
+    "metas": [
+      "meta_1769521009823_g2dvp"
+    ],
+    "lat": -16.600805,
+    "lng": -68.8663755,
+    "country": "Bolivia",
+    "region": "La Paz",
+    "road": "RN1: Desaguadero-El Alto",
+    "nominatimCountry": "Bolivia"
+  },
+  "ZFLRljqZ_DgHEO9jtBeIpw": {
+    "metas": [
+      "meta_1769521009823_shhe9"
+    ],
+    "lat": -16.3244973,
+    "lng": -67.9403795,
+    "country": "Bolivia",
+    "region": "La Paz",
+    "road": "RN3: La Paz-Cotapata-Caranavi",
+    "nominatimCountry": "Bolivia"
+  },
+  "BNMjzfC4bL7w5AGWwzf0og": {
+    "metas": [
+      "meta_1769521009823_6byil"
+    ],
+    "lat": -16.2616909,
+    "lng": -67.7893422,
+    "country": "Bolivia",
+    "region": "La Paz",
+    "road": "North Yungas Road",
+    "nominatimCountry": "Bolivia"
+  },
+  "TPHp7plbnscMUcZz8abXww": {
+    "metas": [
+      "meta_1769521009823_jp8w6"
+    ],
+    "lat": -17.3872897,
+    "lng": -67.6212396,
+    "country": "Bolivia",
+    "region": "La Paz",
+    "road": "Ruta Nacional 1",
+    "nominatimCountry": "Bolivia"
+  },
+  "ZrDqZprPc1t8v62zkd5DJQ": {
+    "metas": [
+      "meta_1769521009823_yeavk"
+    ],
+    "lat": -17.61568,
+    "lng": -66.360426,
+    "country": "Bolivia",
+    "region": "Cochabamba",
+    "road": "RN4: Parotani-Confital",
+    "nominatimCountry": "Bolivia"
+  },
+  "C17MIqqNEsManIV6zy4Wsw": {
+    "metas": [
+      "meta_1769521009823_77pqm"
+    ],
+    "lat": -18.1657916,
+    "lng": -63.5813921,
+    "country": "Bolivia",
+    "region": "Santa Cruz",
+    "road": "RN7: La Guardia-Samaipata",
+    "nominatimCountry": "Bolivia"
+  },
+  "XHRS2-P9pdq4VTdD3LFZAA": {
+    "metas": [
+      "meta_1769521009823_27u57"
+    ],
+    "lat": -18.1544616,
+    "lng": -64.2049337,
+    "country": "Bolivia",
+    "region": "Santa Cruz",
+    "road": "RN22: Mataral-Valle Grande",
+    "nominatimCountry": "Bolivia"
+  },
+  "aBbsZ8cJ4WO7WOuKkfGZZA": {
+    "metas": [
+      "meta_1769521009823_1eocv"
+    ],
+    "lat": -18.0844259,
+    "lng": -64.3589486,
+    "country": "Bolivia",
+    "region": "Santa Cruz",
+    "road": "RN7: La Palizada-Mataral",
+    "nominatimCountry": "Bolivia"
+  },
+  "NszDA-U5VYKCW9PyhpVshQ": {
+    "metas": [
+      "meta_1769521009823_oogb6"
+    ],
+    "lat": -17.7395049,
+    "lng": -61.0882384,
+    "country": "Bolivia",
+    "region": "Santa Cruz",
+    "road": "RN4: Paraíso-San José de Chiquitos",
+    "nominatimCountry": "Bolivia"
+  },
+  "lDslTrKLcTfCOCrB35HCXQ": {
+    "metas": [
+      "meta_1769521009823_5jowz"
+    ],
+    "lat": -18.787864,
+    "lng": -65.118533,
+    "country": "Bolivia",
+    "region": "Chuquisaca",
+    "road": "RN5: Puente Arce-Puente Sacramento",
+    "nominatimCountry": "Bolivia"
+  },
+  "cdsvFj0nlRgbCiwtjFcZGA": {
+    "metas": [
+      "meta_1769521009823_5yjwx"
+    ],
+    "lat": -17.3375873,
+    "lng": -68.080662,
+    "country": "Bolivia",
+    "region": "La Paz",
+    "road": "RN4: Patacamaya-Curahuara de Carangas",
+    "nominatimCountry": "Bolivia"
+  },
+  "_yORW8LNeBBkfw8CwTtweg": {
+    "metas": [
+      "meta_1769521009823_7roam"
+    ],
+    "lat": -17.9386542,
+    "lng": -68.645348,
+    "country": "Bolivia",
+    "region": "Oruro",
+    "road": "RN4: Tambo Quemado-Curahuara de Carangas",
+    "nominatimCountry": "Bolivia"
+  },
+  "Uy_kwMvNJCceskywUJ1Peg": {
+    "metas": [
+      "meta_1769521009824_23ehi"
+    ],
+    "lat": -19.2262581,
+    "lng": -68.3336426,
+    "country": "Bolivia",
+    "region": "Oruro",
+    "road": "Camino Coipasa-Villa Vitalina",
+    "nominatimCountry": "Bolivia"
+  },
+  "Fc_9hkFt9XPcDKn1yuVUGw": {
+    "metas": [
+      "meta_1769521010977_h33uu"
+    ],
+    "lat": -21.4710653,
+    "lng": -52.6229446,
+    "country": "Brazil",
+    "region": "Mato Grosso do Sul",
+    "road": "MS-338",
+    "nominatimCountry": "Brazil"
+  },
+  "5lhJHp3bn7bMpsWZg81SCA": {
+    "metas": [
+      "meta_1769521010977_r2e7q"
+    ],
+    "lat": -24.9571126,
+    "lng": -53.4509432,
+    "country": "Brazil",
+    "region": "Paraná",
+    "road": "Rua Rio Grande do Sul",
+    "nominatimCountry": "Brazil"
+  },
+  "1F3m3U-YmBX4HU3LFaTRFg": {
+    "metas": [
+      "meta_1769521010977_vhliw"
+    ],
+    "lat": -19.4745237,
+    "lng": -48.0540387,
+    "country": "Brazil",
+    "region": "Minas Gerais",
+    "road": "Rodovia Chico Xavier",
+    "nominatimCountry": "Brazil"
+  },
+  "Rx0ni-JULBWjiUl-OI9URw": {
+    "metas": [
+      "meta_1769521010977_duose"
+    ],
+    "lat": -12.8159666,
+    "lng": -44.6739519,
+    "country": "Brazil",
+    "region": "Bahia",
+    "road": "BR-135",
+    "nominatimCountry": "Brazil"
+  },
+  "3dXoMlVPEd1tM-jKHGshhQ": {
+    "metas": [
+      "meta_1769521010977_rqcic"
+    ],
+    "lat": -20.4446704,
+    "lng": -45.8782282,
+    "country": "Brazil",
+    "region": "Minas Gerais",
+    "road": "MG-050",
+    "nominatimCountry": "Brazil"
+  },
+  "WqFh00kA7oCJd00diS46vQ": {
+    "metas": [
+      "meta_1769521010977_f8r0p"
+    ],
+    "lat": -21.3519997,
+    "lng": -48.7302231,
+    "country": "Brazil",
+    "region": "São Paulo",
+    "road": "Via de Acesso Armando Alves da Cunha",
+    "nominatimCountry": "Brazil"
+  },
+  "Jk_4ZjsdI1SECap022OQgg": {
+    "metas": [
+      "meta_1769521010977_5qkrn"
+    ],
+    "lat": -12.817252,
+    "lng": -44.6737431,
+    "country": "Brazil",
+    "region": "Bahia",
+    "road": "BR-135",
+    "nominatimCountry": "Brazil"
+  },
+  "FWA-L59OH6dWXrdC-1Lydw": {
+    "metas": [
+      "meta_1769521010977_1yo6f"
+    ],
+    "lat": -20.390567,
+    "lng": -43.5016307,
+    "country": "Brazil",
+    "region": "Minas Gerais",
+    "road": "Rua Antônio Martins",
+    "nominatimCountry": "Brazil"
+  },
+  "wPj8nEV7V9fUOv78zYZZTw": {
+    "metas": [
+      "meta_1769521010977_vkt44"
+    ],
+    "lat": -12.2551252,
+    "lng": -38.9398846,
+    "country": "Brazil",
+    "region": "Bahia",
+    "road": "Rua São Silvestre",
+    "nominatimCountry": "Brazil"
+  },
+  "BMpVFWAHC_t6BEArBi04tw": {
+    "metas": [
+      "meta_1769521010977_yge9u"
+    ],
+    "lat": -7.2444272,
+    "lng": -35.9006381,
+    "country": "Brazil",
+    "region": "Paraíba",
+    "road": "Rua Professora Djanira Tavares Silva",
+    "nominatimCountry": "Brazil"
+  },
+  "mvjfdReX_AorzHChecfpIw": {
+    "metas": [
+      "meta_1769521010977_q4e8l"
+    ],
+    "lat": -22.73192,
+    "lng": -47.657182,
+    "country": "Brazil",
+    "region": "São Paulo",
+    "road": "Rua São Francisco de Assis",
+    "nominatimCountry": "Brazil"
+  },
+  "n2ElwfUmqHkZnWxnq7pNCQ": {
+    "metas": [
+      "meta_1769521010977_1i41z"
+    ],
+    "lat": -5.6626575,
+    "lng": -36.7135179,
+    "country": "Brazil",
+    "region": "Rio Grande do Norte",
+    "road": "Rodovia BR-304",
+    "nominatimCountry": "Brazil"
+  },
+  "QwORF9NPhbA_3bTPDYkkvQ": {
+    "metas": [
+      "meta_1769521010977_l5i33"
+    ],
+    "lat": -5.3826325,
+    "lng": -55.8857935,
+    "country": "Brazil",
+    "region": "Pará",
+    "road": "BR-163",
+    "nominatimCountry": "Brazil"
+  },
+  "bWEs7gEyqwdnIi0eNyQA1w": {
+    "metas": [
+      "meta_1769521010977_rhkru"
+    ],
+    "lat": -10.1269009,
+    "lng": -67.7541122,
+    "country": "Brazil",
+    "region": "Acre",
+    "road": "Rodovia Senador Guiomard",
+    "nominatimCountry": "Brazil"
+  },
+  "Ds3GC84ay1cgX7qw_-LFNg": {
+    "metas": [
+      "meta_1769521010977_a3q5g"
+    ],
+    "lat": 4.1008363,
+    "lng": -61.0393442,
+    "country": "Brazil",
+    "region": "Roraima",
+    "road": "Rodovia Brasil - Venezuela",
+    "nominatimCountry": "Brazil"
+  },
+  "cb8VaDw4iPmKHIXpxwXjoA": {
+    "metas": [
+      "meta_1769521010977_gt09s"
+    ],
+    "lat": -29.1031537,
+    "lng": -53.6515347,
+    "country": "Brazil",
+    "region": "Rio Grande do Sul",
+    "road": [
+      "BR-158",
+      "BR-392"
+    ],
+    "nominatimCountry": "Brazil"
+  },
+  "JBRDo3zdXMtvm__WjXRJew": {
+    "metas": [
+      "meta_1769521010977_c5az1"
+    ],
+    "lat": -19.846691,
+    "lng": -42.3174002,
+    "country": "Brazil",
+    "region": "Minas Gerais",
+    "road": "MG-329",
+    "nominatimCountry": "Brazil"
+  },
+  "cCkLIo0uBT6tXdGVZDO3PA": {
+    "metas": [
+      "meta_1769521010977_f1ksj"
+    ],
+    "lat": -20.8435938,
+    "lng": -41.0773716,
+    "country": "Brazil",
+    "region": "Espírito Santo",
+    "road": "BR-482",
+    "nominatimCountry": "Brazil"
+  },
+  "H-ecBinP928R2EKdHUB6pQ": {
+    "metas": [
+      "meta_1769521010977_e97yt"
+    ],
+    "lat": -25.7796868,
+    "lng": -49.4870396,
+    "country": "Brazil",
+    "region": "Paraná",
+    "road": "PR-511",
+    "nominatimCountry": "Brazil"
+  },
+  "Wxf5DkRfBXYG4deAcXnXbA": {
+    "metas": [
+      "meta_1769521010977_8t2di"
+    ],
+    "lat": -5.6276817,
+    "lng": -35.2698921,
+    "country": "Brazil",
+    "region": "Rio Grande do Norte",
+    "road": "RN-160",
+    "nominatimCountry": "Brazil"
+  },
+  "q-aeR9zO1lShICh9ScN0kw": {
+    "metas": [
+      "meta_1769521010977_m4km4"
+    ],
+    "lat": -3.432213,
+    "lng": -39.8866615,
+    "country": "Brazil",
+    "region": "Ceará",
+    "road": "Rodovia Antônio Anastácio Pereira Barroso",
+    "nominatimCountry": "Brazil"
+  },
+  "VqdVvZer8ZQcw3Gow7JzSg": {
+    "metas": [
+      "meta_1769521010977_b31wg"
+    ],
+    "lat": -4.0701524,
+    "lng": -45.0672462,
+    "country": "Brazil",
+    "region": "Maranhão",
+    "road": "BR-316",
+    "nominatimCountry": "Brazil"
+  },
+  "B8NGhgjpAw_qcR29t8--Sg": {
+    "metas": [
+      "meta_1769521010977_bvfz6"
+    ],
+    "lat": -1.8600057,
+    "lng": -49.011708,
+    "country": "Brazil",
+    "region": "Pará",
+    "road": "Ramal do Açaí",
+    "nominatimCountry": "Brazil"
+  },
+  "hhpZmCz3jzcVkKuXvjIMfA": {
+    "metas": [
+      "meta_1769521010977_fnkax"
+    ],
+    "lat": -8.4461471,
+    "lng": -45.7870223,
+    "country": "Brazil",
+    "region": "Maranhão",
+    "road": [
+      "BR-330",
+      "MA-006"
+    ],
+    "nominatimCountry": "Brazil"
+  },
+  "yFfTeQ98V4ALpU6fBLAqPQ": {
+    "metas": [
+      "meta_1769521010977_4ethj"
+    ],
+    "lat": -21.1746428,
+    "lng": -55.423916,
+    "country": "Brazil",
+    "region": "Mato Grosso do Sul",
+    "road": "BR-060",
+    "nominatimCountry": "Brazil"
+  },
+  "UUOI0DBji63v9FAs7CjITg": {
+    "metas": [
+      "meta_1769521010977_49b5k"
+    ],
+    "lat": -6.2536582,
+    "lng": -38.6948162,
+    "country": "Brazil",
+    "region": "Ceará",
+    "road": "Rodovia Santos Dumont",
+    "nominatimCountry": "Brazil"
+  },
+  "jvSzfHnwql4_p6EG_y_F4Q": {
+    "metas": [
+      "meta_1769521010977_qw9fo"
+    ],
+    "lat": -10.4435732,
+    "lng": -48.3149309,
+    "country": "Brazil",
+    "region": "Tocantins",
+    "road": "BR-010",
+    "nominatimCountry": "Brazil"
+  },
+  "N265l6nCgTn6Q5t9ZnYKXw": {
+    "metas": [
+      "meta_1769521010977_5b7y5"
+    ],
+    "lat": 0.6315156,
+    "lng": -51.2764035,
+    "country": "Brazil",
+    "region": "Amapá",
+    "road": [
+      "BR-156",
+      "BR-210"
+    ],
+    "nominatimCountry": "Brazil"
+  },
+  "13nFYTKyRiXqyMY3di8BfQ": {
+    "metas": [
+      "meta_1769521010977_87pku"
+    ],
+    "lat": -20.6886088,
+    "lng": -48.4587739,
+    "country": "Brazil",
+    "region": "São Paulo",
+    "road": "Rodovia Antônio Bruno",
+    "nominatimCountry": "Brazil"
+  },
+  "B5ZZREMtru2zl8_4gpkHGg": {
+    "metas": [
+      "meta_1769521010977_erm6j"
+    ],
+    "lat": -11.8084648,
+    "lng": -55.3911303,
+    "country": "Brazil",
+    "region": "Mato Grosso",
+    "road": null,
+    "nominatimCountry": "Brazil"
+  },
+  "yRLV2v_8J0SXnHFYNQKg1g": {
+    "metas": [
+      "meta_1769521010977_fbsxc"
+    ],
+    "lat": -21.4759327,
+    "lng": -46.9500624,
+    "country": "Brazil",
+    "region": "São Paulo",
+    "road": "Estrada Municipal José Pereira Filho",
+    "nominatimCountry": "Brazil"
+  },
+  "LUE7EhKLYtLB8GKFH4iGqg": {
+    "metas": [
+      "meta_1769521010977_ny7se"
+    ],
+    "lat": -8.0367653,
+    "lng": -34.8944434,
+    "country": "Brazil",
+    "region": "Pernambuco",
+    "road": "Rua Doutor José Maria",
+    "nominatimCountry": "Brazil"
+  },
+  "x14ASkRMMwapUxjJcJhLBA": {
+    "metas": [
+      "meta_1769521010977_ipv7p"
+    ],
+    "lat": -16.6985485,
+    "lng": -49.273137,
+    "country": "Brazil",
+    "region": "Goiás",
+    "road": "Avenida T-1",
+    "nominatimCountry": "Brazil"
+  },
+  "8LISqcBWwP39y48vzao-ag": {
+    "metas": [
+      "meta_1769521010977_85w4i"
+    ],
+    "lat": -5.7829546,
+    "lng": -35.2006078,
+    "country": "Brazil",
+    "region": "Rio Grande do Norte",
+    "road": "Rua Seridó",
+    "nominatimCountry": "Brazil"
+  },
+  "PkLWMiXgiNriHk7ToXIIJQ": {
+    "metas": [
+      "meta_1769521010977_44i5i"
+    ],
+    "lat": -24.039358,
+    "lng": -52.3851231,
+    "country": "Brazil",
+    "region": "Paraná",
+    "road": "Rua Araruna",
+    "nominatimCountry": "Brazil"
+  },
+  "OZnlBvXuKxjaScXWuSzHtQ": {
+    "metas": [
+      "meta_1769521010977_y761c"
+    ],
+    "lat": -2.533383,
+    "lng": -44.2891505,
+    "country": "Brazil",
+    "region": "Maranhão",
+    "road": "Rua Dezoito de Novembro",
+    "nominatimCountry": "Brazil"
+  },
+  "5HF4KrSJZSSQFCMncReuow": {
+    "metas": [
+      "meta_1769521010977_wlynj"
+    ],
+    "lat": -23.381338,
+    "lng": -52.9387927,
+    "country": "Brazil",
+    "region": "Paraná",
+    "road": "Avenida Olinto Cardoso de O. Lucena",
+    "nominatimCountry": "Brazil"
+  },
+  "rAvmjXdFzFLMWUHOINYuzw": {
+    "metas": [
+      "meta_1769521010977_1q0x1"
+    ],
+    "lat": -23.6123984,
+    "lng": -46.7052839,
+    "country": "Brazil",
+    "region": "São Paulo",
+    "road": "Rua Dom Paulo Pedrosa",
+    "nominatimCountry": "Brazil"
+  },
+  "PlmQ3iMLay6m7W7vjnUZyA": {
+    "metas": [
+      "meta_1769521010977_5sr44"
+    ],
+    "lat": -3.8844687,
+    "lng": -38.6736083,
+    "country": "Brazil",
+    "region": "Ceará",
+    "road": "Rua Lírio Verde",
+    "nominatimCountry": "Brazil"
+  },
+  "UANp5j8e05OVNxDDL_MERQ": {
+    "metas": [
+      "meta_1769521010977_wwq4j"
+    ],
+    "lat": 2.9753357,
+    "lng": -61.0912671,
+    "country": "Brazil",
+    "region": "Roraima",
+    "road": "Rodovia Pedro Costa",
+    "nominatimCountry": "Brazil"
+  },
+  "tFvBDv7sxxsGwJcG033i0A": {
+    "metas": [
+      "meta_1769521010977_lf53z"
+    ],
+    "lat": -22.8642217,
+    "lng": -43.2526598,
+    "country": "Brazil",
+    "region": "Rio de Janeiro",
+    "road": "Avenida Guilherme Maxwell",
+    "nominatimCountry": "Brazil"
+  },
+  "O5pvuv1hto3z8pBJ5L6jCg": {
+    "metas": [
+      "meta_1769521010977_6qpw3"
+    ],
+    "lat": -22.8026966,
+    "lng": -43.0263584,
+    "country": "Brazil",
+    "region": "Rio de Janeiro",
+    "road": "Rua Vicente de Lima Cleto",
+    "nominatimCountry": "Brazil"
+  },
+  "PC763ESoXdccCv9knb19sQ": {
+    "metas": [
+      "meta_1769521010977_rj7p5"
+    ],
+    "lat": -1.3296857,
+    "lng": -48.4424665,
+    "country": "Brazil",
+    "region": "Pará",
+    "road": "Alameda NS 14",
+    "nominatimCountry": "Brazil"
+  },
+  "BX72smnZcCR6vAUCp48X1A": {
+    "metas": [
+      "meta_1769521010977_mzsav"
+    ],
+    "lat": -10.3749889,
+    "lng": -67.7912475,
+    "country": "Brazil",
+    "region": "Acre",
+    "road": "Sete Irmaos",
+    "nominatimCountry": "Brazil"
+  },
+  "ONzPkH7gZdm2Kqg2LdPfDA": {
+    "metas": [
+      "meta_1769521010977_hfmdq"
+    ],
+    "lat": -8.1120349,
+    "lng": -34.9206753,
+    "country": "Brazil",
+    "region": "Pernambuco",
+    "road": "Rua Jean Émile Favre",
+    "nominatimCountry": "Brazil"
+  },
+  "VDt4d9UC5fVoOvqRwbrBcA": {
+    "metas": [
+      "meta_1769521010977_6g6bx"
+    ],
+    "lat": -14.8505645,
+    "lng": -40.8457462,
+    "country": "Brazil",
+    "region": "Bahia",
+    "road": "Avenida Otávio Mangabeira",
+    "nominatimCountry": "Brazil"
+  },
+  "p7WUyUNTBtggDwTDmcMq2A": {
+    "metas": [
+      "meta_1769521010978_gn9n4"
+    ],
+    "lat": -9.6361004,
+    "lng": -35.7267585,
+    "country": "Brazil",
+    "region": "Alagoas",
+    "road": "Rua Santo Antônio",
+    "nominatimCountry": "Brazil"
+  },
+  "sk7rBm6aZnB9L2xH4cXzZA": {
+    "metas": [
+      "meta_1769521010978_l3ks0"
+    ],
+    "lat": -22.8481489,
+    "lng": -42.0384322,
+    "country": "Brazil",
+    "region": "Rio de Janeiro",
+    "road": "Estrada do Alecrim",
+    "nominatimCountry": "Brazil"
+  },
+  "x78-zD4k3YScjEpNYzzabQ": {
+    "metas": [
+      "meta_1769521010978_1uwnb"
+    ],
+    "lat": -12.7238277,
+    "lng": -55.5370634,
+    "country": "Brazil",
+    "region": "Mato Grosso",
+    "road": [
+      "MT-242",
+      "BR-242"
+    ],
+    "nominatimCountry": "Brazil"
+  },
+  "PcH3CIh5u9GGsfgJjm5ejg": {
+    "metas": [
+      "meta_1769521010978_hxi7z"
+    ],
+    "lat": -20.4956967,
+    "lng": -54.6767192,
+    "country": "Brazil",
+    "region": "Mato Grosso do Sul",
+    "road": "Rua Internacional",
+    "nominatimCountry": "Brazil"
+  },
+  "3BN6WtOpYW9_Oeln6Uxw7Q": {
+    "metas": [
+      "meta_1769521010978_ees14"
+    ],
+    "lat": -5.6419549,
+    "lng": -45.0484378,
+    "country": "Brazil",
+    "region": "Maranhão",
+    "road": "Estrada Fernando Falcão",
+    "nominatimCountry": "Brazil"
+  },
+  "TNoo2S1cpwTeev1uoway-Q": {
+    "metas": [
+      "meta_1769521010978_edgrp"
+    ],
+    "lat": -8.2240271,
+    "lng": -34.9446188,
+    "country": "Brazil",
+    "region": "Pernambuco",
+    "road": "Estrada de Curcurana",
+    "nominatimCountry": "Brazil"
+  },
+  "SPkwfXeP-O8IUnZ7PBIIUA": {
+    "metas": [
+      "meta_1769521010978_3ix8g"
+    ],
+    "lat": -28.6871765,
+    "lng": -49.3474051,
+    "country": "Brazil",
+    "region": "Santa Catarina",
+    "road": "Avenida Miguel Patrício de Souza",
+    "nominatimCountry": "Brazil"
+  },
+  "FteTxYJlXsdJON2F_Cc2Ew": {
+    "metas": [
+      "meta_1769521010978_n8ld1"
+    ],
+    "lat": -8.7602251,
+    "lng": -63.8720375,
+    "country": "Brazil",
+    "region": "Rondônia",
+    "road": "Rua Almirante Barroso",
+    "nominatimCountry": "Brazil"
+  },
+  "gG59kAEdOwN5r-pCqVrc-Q": {
+    "metas": [
+      "meta_1769521010978_5jg6v"
+    ],
+    "lat": -19.8951323,
+    "lng": -44.0304246,
+    "country": "Brazil",
+    "region": "Minas Gerais",
+    "road": "Rua Floriano Peixoto",
+    "nominatimCountry": "Brazil"
+  },
+  "a86BaJcxenEpbu-rjcDyKQ": {
+    "metas": [
+      "meta_1769521010978_zasbm"
+    ],
+    "lat": -23.0901968,
+    "lng": -52.4764265,
+    "country": "Brazil",
+    "region": "Paraná",
+    "road": "Rua Mexico",
+    "nominatimCountry": "Brazil"
+  },
+  "nK3G-PWadMFrUypWU-qZJA": {
+    "metas": [
+      "meta_1769521010978_eqrvc"
+    ],
+    "lat": -20.4536813,
+    "lng": -54.6201455,
+    "country": "Brazil",
+    "region": "Mato Grosso do Sul",
+    "road": "Avenida Calógeras",
+    "nominatimCountry": "Brazil"
+  },
+  "rOt41sueFwnUnB-Yc27aOQ": {
+    "metas": [
+      "meta_1769521010978_3gy2r"
+    ],
+    "lat": 2.8119009,
+    "lng": -60.717539,
+    "country": "Brazil",
+    "region": "Roraima",
+    "road": "Rua Manoel Felipe",
+    "nominatimCountry": "Brazil"
+  },
+  "GeP0BOTj5B0QOrzaNG3NUg": {
+    "metas": [
+      "meta_1769521010978_ygo7g"
+    ],
+    "lat": -22.6157923,
+    "lng": -47.7091749,
+    "country": "Brazil",
+    "region": "São Paulo",
+    "road": "Rodovia Hermínio Petrin",
+    "nominatimCountry": "Brazil"
+  },
+  "IA9s9IGoTmcv2Z25PLZrpw": {
+    "metas": [
+      "meta_1769521010978_98uoc"
+    ],
+    "lat": -11.2396982,
+    "lng": -38.4823805,
+    "country": "Brazil",
+    "region": "Bahia",
+    "road": "Rua Paiaia",
+    "nominatimCountry": "Brazil"
+  },
+  "fcDcbP-5IJfPAB1Va-Jnzw": {
+    "metas": [
+      "meta_1769521010978_kal8s"
+    ],
+    "lat": -27.6002663,
+    "lng": -48.6192378,
+    "country": "Brazil",
+    "region": "Santa Catarina",
+    "road": "Rua Joaquim Manoel Sarmento",
+    "nominatimCountry": "Brazil"
+  },
+  "AHNDjYsE2riAszChh7yOCg": {
+    "metas": [
+      "meta_1769521010978_srt8z"
+    ],
+    "lat": -9.9514469,
+    "lng": -67.8314146,
+    "country": "Brazil",
+    "region": "Acre",
+    "road": "Rua Belém",
+    "nominatimCountry": "Brazil"
+  },
+  "LHoKh2MATi8dmdkDDO0o1g": {
+    "metas": [
+      "meta_1769521010978_lkduo"
+    ],
+    "lat": -29.7764171,
+    "lng": -50.0289704,
+    "country": "Brazil",
+    "region": "Rio Grande do Sul",
+    "road": "Rua Panapana",
+    "nominatimCountry": "Brazil"
+  },
+  "c7OT7vdA6PeInYpEJRISiw": {
+    "metas": [
+      "meta_1769521010978_jzvfw"
+    ],
+    "lat": -26.2566414,
+    "lng": -52.6876717,
+    "country": "Brazil",
+    "region": "Paraná",
+    "road": "Rua Presidente Prudente",
+    "nominatimCountry": "Brazil"
+  },
+  "fhX06g0tpkwY5ygVWPfFyg": {
+    "metas": [
+      "meta_1769521010978_ghklr"
+    ],
+    "lat": -29.4547245,
+    "lng": -51.9611931,
+    "country": "Brazil",
+    "region": "Rio Grande do Sul",
+    "road": "Rua Duque de Caxias",
+    "nominatimCountry": "Brazil"
+  },
+  "WrlCIIRXTyiNTg22IE3WkQ": {
+    "metas": [
+      "meta_1769521010978_rrwm3"
+    ],
+    "lat": -26.9058747,
+    "lng": -49.0905058,
+    "country": "Brazil",
+    "region": "Santa Catarina",
+    "road": "Rua Promotor Ribeiro de Carvalho",
+    "nominatimCountry": "Brazil"
+  },
+  "qa5gytopTCMQHJXkYAJoew": {
+    "metas": [
+      "meta_1769521010978_b5s4r"
+    ],
+    "lat": -9.9194062,
+    "lng": -67.8350976,
+    "country": "Brazil",
+    "region": "Acre",
+    "road": "Rua Manaus",
+    "nominatimCountry": "Brazil"
+  },
+  "iC73XMOhMgfs0y1c5M3g2w": {
+    "metas": [
+      "meta_1769521010978_twsn3"
+    ],
+    "lat": -4.1503057,
+    "lng": -42.3646906,
+    "country": "Brazil",
+    "region": "Piauí",
+    "road": "PI-212",
+    "nominatimCountry": "Brazil"
+  },
+  "070j6N63D9avg6_VtneNIQ": {
+    "metas": [
+      "meta_1769521010978_mzct0"
+    ],
+    "lat": 1.0195713,
+    "lng": -51.0895004,
+    "country": "Brazil",
+    "region": "Amapá",
+    "road": "BR-156",
+    "nominatimCountry": "Brazil"
+  },
+  "IQaiF1b5z2ifTLg87pJXbw": {
+    "metas": [
+      "meta_1769521010978_60bat"
+    ],
+    "lat": -9.8756365,
+    "lng": -36.8687304,
+    "country": "Brazil",
+    "region": "Alagoas",
+    "road": "AL-187",
+    "nominatimCountry": "Brazil"
+  },
+  "4wZh9qNZH1e9V46XCAp9cA": {
+    "metas": [
+      "meta_1769521010978_p6pmr"
+    ],
+    "lat": -23.1319162,
+    "lng": -46.7000853,
+    "country": "Brazil",
+    "region": "São Paulo",
+    "road": "Estrada Municipal Francisco Quesada dos Santos",
+    "nominatimCountry": "Brazil"
+  },
+  "93g4uG4veQqliyNczGiogQ": {
+    "metas": [
+      "meta_1769521010978_7lfad"
+    ],
+    "lat": 4.600177,
+    "lng": -60.2364417,
+    "country": "Brazil",
+    "region": "Roraima",
+    "road": "Vicinal Flechal",
+    "nominatimCountry": "Brazil"
+  },
+  "LzJIZE9tWDkIDZU7n_34-A": {
+    "metas": [
+      "meta_1769521010978_nwyzd"
+    ],
+    "lat": -32.4456613,
+    "lng": -52.5692813,
+    "country": "Brazil",
+    "region": "Rio Grande do Sul",
+    "road": "BR-471",
+    "nominatimCountry": "Brazil"
+  },
+  "mvOJIsYMi9IK7f8JMD8_mQ": {
+    "metas": [
+      "meta_1769521010978_iiwqj"
+    ],
+    "lat": -23.5614482,
+    "lng": -46.6478129,
+    "country": "Brazil",
+    "region": "São Paulo",
+    "road": "Rua dos Franceses",
+    "nominatimCountry": "Brazil"
+  },
+  "bo_H-Vi48Eu7a4ZkZsDRWQ": {
+    "metas": [
+      "meta_1769521010978_7fb37"
+    ],
+    "lat": -20.4367437,
+    "lng": -54.6152973,
+    "country": "Brazil",
+    "region": "Mato Grosso do Sul",
+    "road": "Avenida Júlia Maksoud",
+    "nominatimCountry": "Brazil"
+  },
+  "zLNBC0i2poRUKm_UdpKRBg": {
+    "metas": [
+      "meta_1769521010978_nc5t2"
+    ],
+    "lat": -22.8541448,
+    "lng": -43.2615545,
+    "country": "Brazil",
+    "region": "Rio de Janeiro",
+    "road": "Rua Euclides Faria",
+    "nominatimCountry": "Brazil"
+  },
+  "qocmPmsrynme_HYzS0O-0Q": {
+    "metas": [
+      "meta_1769521010978_nfepk"
+    ],
+    "lat": -5.0946462,
+    "lng": -42.7987121,
+    "country": "Brazil",
+    "region": "Piauí",
+    "road": "Rua José do Patrocínio",
+    "nominatimCountry": "Brazil"
+  },
+  "YMTBp4MVKqVHBHV6GjTKzg": {
+    "metas": [
+      "meta_1769521010978_sn6or"
+    ],
+    "lat": -1.4423333,
+    "lng": -48.4695226,
+    "country": "Brazil",
+    "region": "Pará",
+    "road": "Rua Antônio Barreto",
+    "nominatimCountry": "Brazil"
+  },
+  "F0MaBNqm-cQNTO3XnujoZA": {
+    "metas": [
+      "meta_1769521010978_hv5ac"
+    ],
+    "lat": -15.6188094,
+    "lng": -56.0896689,
+    "country": "Brazil",
+    "region": "Mato Grosso",
+    "road": "Avenida Carmindo de Campos",
+    "nominatimCountry": "Brazil"
+  },
+  "_AjPU5KGO7LaIbgqgdnsYA": {
+    "metas": [
+      "meta_1769521010978_22c87"
+    ],
+    "lat": -19.9037612,
+    "lng": -43.9910584,
+    "country": "Brazil",
+    "region": "Minas Gerais",
+    "road": "Rua Coroação",
+    "nominatimCountry": "Brazil"
+  },
+  "UYw3oPl7huJbZYWi3vVH5A": {
+    "metas": [
+      "meta_1769521010978_twvgu"
+    ],
+    "lat": -29.1642505,
+    "lng": -51.1788046,
+    "country": "Brazil",
+    "region": "Rio Grande do Sul",
+    "road": "Rua Marquês do Herval",
+    "nominatimCountry": "Brazil"
+  },
+  "Raw14RAz4p81iqVN3vg5PA": {
+    "metas": [
+      "meta_1769521010978_bd630"
+    ],
+    "lat": -27.5918495,
+    "lng": -48.5485761,
+    "country": "Brazil",
+    "region": "Santa Catarina",
+    "road": "Avenida Rio Branco",
+    "nominatimCountry": "Brazil"
+  },
+  "KZSZd0hUQs4TR5XFVlnrQA": {
+    "metas": [
+      "meta_1769521010978_6sjwh"
+    ],
+    "lat": -28.0334706,
+    "lng": -53.3169025,
+    "country": "Brazil",
+    "region": "Rio Grande do Sul",
+    "road": "ERS-508",
+    "nominatimCountry": "Brazil"
+  },
+  "l1k2MSVFdMCpOnclUI8xjA": {
+    "metas": [
+      "meta_1769521010978_skaxv"
+    ],
+    "lat": -8.1859041,
+    "lng": -70.61009,
+    "country": "Brazil",
+    "region": "Acre",
+    "road": "BR-364",
+    "nominatimCountry": "Brazil"
+  },
+  "0fC4vRyyWSod8z77anUEzg": {
+    "metas": [
+      "meta_1769521010978_tlme1"
+    ],
+    "lat": -5.6762196,
+    "lng": -62.2392143,
+    "country": "Brazil",
+    "region": "Amazonas",
+    "road": "Estrada Manaus–Porto Velho",
+    "nominatimCountry": "Brazil"
+  },
+  "cgrjAwkMx2-baZ6ku2o2VA": {
+    "metas": [
+      "meta_1769521010978_t2fxk"
+    ],
+    "lat": -5.7841905,
+    "lng": -55.7382922,
+    "country": "Brazil",
+    "region": "Pará",
+    "road": "BR-163",
+    "nominatimCountry": "Brazil"
+  },
+  "K1UFPEZKc5vA1PBLgdlhgA": {
+    "metas": [
+      "meta_1769521010978_oe1jr"
+    ],
+    "lat": -5.7072407,
+    "lng": -60.5986597,
+    "country": "Brazil",
+    "region": "Amazonas",
+    "road": null,
+    "nominatimCountry": "Brazil"
+  },
+  "tpUYzIhUloZDxO0fH04lqw": {
+    "metas": [
+      "meta_1769521010978_3ux6z"
+    ],
+    "lat": -2.5246834,
+    "lng": -42.9820198,
+    "country": "Brazil",
+    "region": "Maranhão",
+    "road": null,
+    "nominatimCountry": "Brazil"
+  },
+  "-6gOcJgKXzI29mKXeCgLBg": {
+    "metas": [
+      "meta_1769521012137_9vvvz"
+    ],
+    "lat": -35.3868488,
+    "lng": -71.6078266,
+    "country": "Chile",
+    "region": "Maule Region",
+    "road": "Ruta 5 Sur",
+    "nominatimCountry": "Chile"
+  },
+  "QxJbNZFSBybjQDX_arxd0w": {
+    "metas": [
+      "meta_1769521012137_43yhu"
+    ],
+    "lat": -34.3944091,
+    "lng": -71.7301211,
+    "country": "Chile",
+    "region": "O'Higgins Region",
+    "road": "Ruta 90",
+    "nominatimCountry": "Chile"
+  },
+  "F_uJiqqTAQQus88shVT-wg": {
+    "metas": [
+      "meta_1769521012137_5yr2y"
+    ],
+    "lat": -32.3851009,
+    "lng": -71.3788108,
+    "country": "Chile",
+    "region": "Valparaiso Region",
+    "road": "Ruta 5 Norte",
+    "nominatimCountry": "Chile"
+  },
+  "AGORA1CMZayXNCnUZOB_AA": {
+    "metas": [
+      "meta_1769521012137_46o54"
+    ],
+    "lat": -19.55412,
+    "lng": -70.0275508,
+    "country": "Chile",
+    "region": "Tarapacа Region",
+    "road": "Ruta A-40",
+    "nominatimCountry": "Chile"
+  },
+  "1s7rzVlB8QAHlM6zRkJj6Q": {
+    "metas": [
+      "meta_1769521012137_v41jw"
+    ],
+    "lat": -46.1592938,
+    "lng": -72.3365365,
+    "country": "Chile",
+    "region": "Aysen del General Carlos Ibanez del Campo Region",
+    "road": "Carretera Austral",
+    "nominatimCountry": "Chile"
+  },
+  "-o1TUfUMW_rFf75jDwUILQ": {
+    "metas": [
+      "meta_1769521012137_s2rls"
+    ],
+    "lat": -22.8867053,
+    "lng": -69.5951195,
+    "country": "Chile",
+    "region": "Antofagasta Region",
+    "road": "Ruta 5 Norte",
+    "nominatimCountry": "Chile"
+  },
+  "7EFYgmu2w7S0k7-lwQm2oA": {
+    "metas": [
+      "meta_1769521012137_9jkhf"
+    ],
+    "lat": -27.1150002,
+    "lng": -69.7429355,
+    "country": "Chile",
+    "region": "Atacama Region",
+    "road": "Ruta 31 CH",
+    "nominatimCountry": "Chile"
+  },
+  "30DXn-QNWj1BLufdTv8W9A": {
+    "metas": [
+      "meta_1769521012137_amreb"
+    ],
+    "lat": -27.0504487,
+    "lng": -69.9210214,
+    "country": "Chile",
+    "region": "Atacama Region",
+    "road": "Ruta C-17",
+    "nominatimCountry": "Chile"
+  },
+  "NWBoRrLR5IcVngVz1pE4DA": {
+    "metas": [
+      "meta_1769521012137_st83p"
+    ],
+    "lat": -33.5692576,
+    "lng": -71.5260751,
+    "country": "Chile",
+    "region": "Valparaiso Region",
+    "road": "Ruta 78",
+    "nominatimCountry": "Chile"
+  },
+  "oBC5lJ9vx3gv0olY-7BWbA": {
+    "metas": [
+      "meta_1769521012137_czisq"
+    ],
+    "lat": -31.311449,
+    "lng": -71.216124,
+    "country": "Chile",
+    "region": "Coquimbo Region",
+    "road": "Ruta D-71",
+    "nominatimCountry": "Chile"
+  },
+  "5EIj2mqbvy25WEwcc5ijHA": {
+    "metas": [
+      "meta_1769521012137_lca1f"
+    ],
+    "lat": -35.416824,
+    "lng": -71.73258,
+    "country": "Chile",
+    "region": "Provincia de Talca",
+    "road": "Ruta K-60-J",
+    "nominatimCountry": "Chile"
+  },
+  "Kv67kYTouI0gKzpi09E_lQ": {
+    "metas": [
+      "meta_1769521012137_ma9no"
+    ],
+    "lat": -36.6309359,
+    "lng": -72.8939878,
+    "country": "Chile",
+    "region": "Biobio Region",
+    "road": "Camino Tomé - San Carlitos",
+    "nominatimCountry": "Chile"
+  },
+  "qdArfSMqFwYzYG-_kjVdJw": {
+    "metas": [
+      "meta_1769521012137_gy130"
+    ],
+    "lat": -37.4452189,
+    "lng": -73.3711604,
+    "country": "Chile",
+    "region": "Biobio Region",
+    "road": "Ruta P-400",
+    "nominatimCountry": "Chile"
+  },
+  "FwDMCWwItfXqPrJCQOpfWg": {
+    "metas": [
+      "meta_1769521012137_a2iwf"
+    ],
+    "lat": -39.5834763,
+    "lng": -71.4627854,
+    "country": "Chile",
+    "region": "Araucania Region",
+    "road": "Camino Internacional Monseñor Francisco Valdés Subercaseaux",
+    "nominatimCountry": "Chile"
+  },
+  "5KG_uvznX8_bW9sU49pLwQ": {
+    "metas": [
+      "meta_1769521012137_aqdhb"
+    ],
+    "lat": -42.7208849,
+    "lng": -72.5909132,
+    "country": "Chile",
+    "region": "Los Lagos Region",
+    "road": "Carretera Austral",
+    "nominatimCountry": "Chile"
+  },
+  "SGbcqyd1KZ3m23uC6ExRPQ": {
+    "metas": [
+      "meta_1769521012137_x3ham"
+    ],
+    "lat": -45.447968,
+    "lng": -72.390306,
+    "country": "Chile",
+    "region": "Aysen del General Carlos Ibanez del Campo Region",
+    "road": "Ruta 240",
+    "nominatimCountry": "Chile"
+  },
+  "nECD68DfUxNuCDRXfazewQ": {
+    "metas": [
+      "meta_1769521012137_syn4j"
+    ],
+    "lat": -18.6985097,
+    "lng": -70.1603653,
+    "country": "Chile",
+    "region": "Arica y Parinacota Region",
+    "road": "Ruta A-31",
+    "nominatimCountry": "Chile"
+  },
+  "y_JL9Ox9ADEmrDsjs9ZV1A": {
+    "metas": [
+      "meta_1769521012137_hje3g"
+    ],
+    "lat": -22.4369642,
+    "lng": -68.8691762,
+    "country": "Chile",
+    "region": "Antofagasta Region",
+    "road": "Ruta 21 CH",
+    "nominatimCountry": "Chile"
+  },
+  "MSck_5LY3FDlLO6QhhC7tg": {
+    "metas": [
+      "meta_1769521012137_kdcxz"
+    ],
+    "lat": -25.1887109,
+    "lng": -69.8631131,
+    "country": "Chile",
+    "region": "Antofagasta Region",
+    "road": "Ruta 5 Norte",
+    "nominatimCountry": "Chile"
+  },
+  "oNEPhdEIMkJIGvsWb6sCng": {
+    "metas": [
+      "meta_1769521012137_xg3e0"
+    ],
+    "lat": -30.0298867,
+    "lng": -70.6470697,
+    "country": "Chile",
+    "region": "Coquimbo Region",
+    "road": "Camino Internacional Gabriela Mistral",
+    "nominatimCountry": "Chile"
+  },
+  "1yXspxA3zJLgdaHa3OD5qg": {
+    "metas": [
+      "meta_1769521012137_b1xbo"
+    ],
+    "lat": -45.3960386,
+    "lng": -72.478783,
+    "country": "Chile",
+    "region": "Aysen del General Carlos Ibanez del Campo Region",
+    "road": "Ruta 240",
+    "nominatimCountry": "Chile"
+  },
+  "HnAdime3F728gA3x9kwFgw": {
+    "metas": [
+      "meta_1769521012137_8hocf"
+    ],
+    "lat": -52.596345,
+    "lng": -70.266093,
+    "country": "Chile",
+    "region": "Magallanes and Chilean Antarctica Region",
+    "road": "Ruta 255 CH",
+    "nominatimCountry": "Chile"
+  },
+  "Xq8-MbyiGeB81owOhKOkGg": {
+    "metas": [
+      "meta_1769521012137_23jky"
+    ],
+    "lat": -18.2175021,
+    "lng": -69.2290999,
+    "country": "Chile",
+    "region": "Arica y Parinacota Region",
+    "road": "Ruta 11 CH",
+    "nominatimCountry": "Chile"
+  },
+  "AXuVXBlaw2wum8YEe1-k4g": {
+    "metas": [
+      "meta_1769521012137_yrf31"
+    ],
+    "lat": -20.5081245,
+    "lng": -69.6696927,
+    "country": "Chile",
+    "region": "Tarapacа Region",
+    "road": "Ruta 5 Norte",
+    "nominatimCountry": "Chile"
+  },
+  "XI7dwUbV0V6GBq4fI33eAA": {
+    "metas": [
+      "meta_1769521012137_5fj17"
+    ],
+    "lat": -21.485529,
+    "lng": -68.397905,
+    "country": "Chile",
+    "region": "Antofagasta Region",
+    "road": "Ruta 21 CH",
+    "nominatimCountry": "Chile"
+  },
+  "FRwN50bSoucdP5_cOhpSdA": {
+    "metas": [
+      "meta_1769521012137_zreou"
+    ],
+    "lat": -26.953546,
+    "lng": -69.014241,
+    "country": "Chile",
+    "region": "Atacama Region",
+    "road": "Ruta 31 CH",
+    "nominatimCountry": "Chile"
+  },
+  "5hCIW7J7ct6Xpnt_mcTqfA": {
+    "metas": [
+      "meta_1769521012137_pxiku"
+    ],
+    "lat": -28.1477666,
+    "lng": -71.1560144,
+    "country": "Chile",
+    "region": "Atacama Region",
+    "road": "Ruta C-10",
+    "nominatimCountry": "Chile"
+  },
+  "opvC7n2czh_6pSo0MDekCQ": {
+    "metas": [
+      "meta_1769521012137_t3beb"
+    ],
+    "lat": -18.43538,
+    "lng": -70.284987,
+    "country": "Chile",
+    "region": "Arica y Parinacota Region",
+    "road": "Traiguén",
+    "nominatimCountry": "Chile"
+  },
+  "hQsqUJgKaXhkqURFKCYXWA": {
+    "metas": [
+      "meta_1769521012137_ilyz8"
+    ],
+    "lat": -20.21266,
+    "lng": -70.129975,
+    "country": "Chile",
+    "region": "Tarapacа Region",
+    "road": "Avenida Circunvalación",
+    "nominatimCountry": "Chile"
+  },
+  "xqivgNuV4_XwjRHmh5AI-Q": {
+    "metas": [
+      "meta_1769521012137_96lp5"
+    ],
+    "lat": -23.5994712,
+    "lng": -70.3724021,
+    "country": "Chile",
+    "region": "Antofagasta Region",
+    "road": "Juvenal Morla",
+    "nominatimCountry": "Chile"
+  },
+  "0cSltA4sxpaXIxK8wf6Fkg": {
+    "metas": [
+      "meta_1769521012137_droqf"
+    ],
+    "lat": -39.4511046,
+    "lng": -72.7741005,
+    "country": "Chile",
+    "region": "Los Ríos",
+    "road": "Yungay",
+    "nominatimCountry": "Chile"
+  },
+  "2wWUQjQ_VnKxfrwjg5DZ2g": {
+    "metas": [
+      "meta_1769521012137_yhdfv"
+    ],
+    "lat": -48.468178,
+    "lng": -72.559902,
+    "country": "Chile",
+    "region": "Aysen del General Carlos Ibanez del Campo Region",
+    "road": "Río Bravo",
+    "nominatimCountry": "Chile"
+  },
+  "9IVT8ghng9w2HsT1d5T9QA": {
+    "metas": [
+      "meta_1769521012137_l7dav"
+    ],
+    "lat": -22.4531669,
+    "lng": -68.9335962,
+    "country": "Chile",
+    "region": "Antofagasta Region",
+    "road": "Avenida Maipú",
+    "nominatimCountry": "Chile"
+  },
+  "7D3xPRbYRPFbobIVqh2wgA": {
+    "metas": [
+      "meta_1769521012137_4td15"
+    ],
+    "lat": -35.4274223,
+    "lng": -71.6172473,
+    "country": "Chile",
+    "region": "Maule Region",
+    "road": "Calle 34 Oriente",
+    "nominatimCountry": "Chile"
+  },
+  "pYc_QMcQ7hGbyzVEPsVvxA": {
+    "metas": [
+      "meta_1769521012138_kmitl"
+    ],
+    "lat": -36.8128923,
+    "lng": -73.0553297,
+    "country": "Chile",
+    "region": "Biobio Region",
+    "road": "Brasil",
+    "nominatimCountry": "Chile"
+  },
+  "mf6KlgrBL9pzfExtXHr9Ag": {
+    "metas": [
+      "meta_1769521012138_kv93r"
+    ],
+    "lat": -18.4738624,
+    "lng": -70.2961546,
+    "country": "Chile",
+    "region": "Arica y Parinacota Region",
+    "road": "Gonzalo Cerda",
+    "nominatimCountry": "Chile"
+  },
+  "npc4f0yGU9POwGAGTUsu6w": {
+    "metas": [
+      "meta_1769521012138_6f2v2"
+    ],
+    "lat": -26.244836,
+    "lng": -69.6300818,
+    "country": "Chile",
+    "region": "Atacama Region",
+    "road": "Avenida Diego Portales",
+    "nominatimCountry": "Chile"
+  },
+  "MxVb9PPuraEtaSJAi59TGw": {
+    "metas": [
+      "meta_1769521012138_hpdmy"
+    ],
+    "lat": -33.4307462,
+    "lng": -70.6341981,
+    "country": "Chile",
+    "region": "Santiago Metropolitan Region",
+    "road": "Avenida Carlos Reed",
+    "nominatimCountry": "Chile"
+  },
+  "ZKmG2IP0mbfQP2L623_pEQ": {
+    "metas": [
+      "meta_1769521012138_zvi4n"
+    ],
+    "lat": -33.8115702,
+    "lng": -70.0133238,
+    "country": "Chile",
+    "region": "Santiago Metropolitan Region",
+    "road": "Sendero hacia Marmolejo",
+    "nominatimCountry": "Chile"
+  },
+  "uG9xI3nWz-s2j5B9BfUqaA": {
+    "metas": [
+      "meta_1769521012138_f5wgk"
+    ],
+    "lat": -38.7096518,
+    "lng": -71.6236434,
+    "country": "Chile",
+    "region": "Araucania Region",
+    "road": "Ruta R-925-S",
+    "nominatimCountry": "Chile"
+  },
+  "mxWnUTcyCGlNG5F5F2UpRg": {
+    "metas": [
+      "meta_1769521012138_hbx10"
+    ],
+    "lat": -54.9361486,
+    "lng": -67.6149477,
+    "country": "Chile",
+    "region": "Magallanes and Chilean Antarctica Region",
+    "road": "Patagonia",
+    "nominatimCountry": "Chile"
+  },
+  "SDXJOI65pDyfUy1VyRLIGA": {
+    "metas": [
+      "meta_1769521012138_as1vd"
+    ],
+    "lat": -32.3526479,
+    "lng": -70.3275,
+    "country": "Chile",
+    "region": "Valparaiso Region",
+    "road": null,
+    "nominatimCountry": "Chile"
+  },
+  "WvTl7U-mP_la3CjmacFt4Q": {
+    "metas": [
+      "meta_1769521012138_bcb17"
+    ],
+    "lat": -50.9694389,
+    "lng": -73.2232701,
+    "country": "Chile",
+    "region": "Magallanes and Chilean Antarctica Region",
+    "road": null,
+    "nominatimCountry": "Chile"
+  },
+  "iRiSheJlqea1R9w5irrxiQ": {
+    "metas": [
+      "meta_1769521013280_nseto",
+      "meta_1769521013280_3nurq"
+    ],
+    "lat": 3.4005484,
+    "lng": -73.8427393,
+    "country": "Colombia",
+    "region": "Meta",
+    "road": "Vía Granada - Mesetas - Granada",
+    "nominatimCountry": "Colombia"
+  },
+  "zCKyweuV1_xfmM1gv8vO2Q": {
+    "metas": [
+      "meta_1769521013280_96tze"
+    ],
+    "lat": 5.3760794,
+    "lng": -72.3645726,
+    "country": "Colombia",
+    "region": "Casanare",
+    "road": "Via Yopal - Paz de Ariporo",
+    "nominatimCountry": "Colombia"
+  },
+  "R1XqqqkfiFQnXlotMMIeAQ": {
+    "metas": [
+      "meta_1769521013280_jo7c4"
+    ],
+    "lat": 6.316248,
+    "lng": -75.4633918,
+    "country": "Colombia",
+    "region": "Antioquia",
+    "road": "Autopista Medellín - Bogotá",
+    "nominatimCountry": "Colombia"
+  },
+  "cwwn0EyO9sBrG3bOUSGWdA": {
+    "metas": [
+      "meta_1769521013280_tsku4"
+    ],
+    "lat": 4.0840096,
+    "lng": -75.0652072,
+    "country": "Colombia",
+    "region": "Tolima",
+    "road": "San Luis - Guamo",
+    "nominatimCountry": "Colombia"
+  },
+  "g8srepgO4F6yVJGW4BKXhQ": {
+    "metas": [
+      "meta_1769521013280_rps6b"
+    ],
+    "lat": 5.1927569,
+    "lng": -72.3258915,
+    "country": "Colombia",
+    "region": "Casanare",
+    "road": "Tilodiran",
+    "nominatimCountry": "Colombia"
+  },
+  "-DI5-_ijr6DPfS9MDfehHQ": {
+    "metas": [
+      "meta_1769521013280_jz8zz"
+    ],
+    "lat": 4.7024304,
+    "lng": -74.1232276,
+    "country": "Colombia",
+    "region": "Bogota, Capital District",
+    "road": "Carrera 105F",
+    "nominatimCountry": "Colombia"
+  },
+  "Wc1qX7ofk9dJz0ZZnjiAXA": {
+    "metas": [
+      "meta_1769521013280_aanhn"
+    ],
+    "lat": 9.8779432,
+    "lng": -73.5203148,
+    "country": "Colombia",
+    "region": "Cesar",
+    "road": "Cuatro Vientos-Agustín Codazzi",
+    "nominatimCountry": "Colombia"
+  },
+  "FVlvPNOHzxazVAWNF16jmQ": {
+    "metas": [
+      "meta_1769521013280_udbbq"
+    ],
+    "lat": 7.9971887,
+    "lng": -75.2164765,
+    "country": "Colombia",
+    "region": "Antioquia",
+    "road": "Calle 30",
+    "nominatimCountry": "Colombia"
+  },
+  "unt65095wSxaRzimwZePaA": {
+    "metas": [
+      "meta_1769521013280_z35xl"
+    ],
+    "lat": 3.8773172,
+    "lng": -76.9979049,
+    "country": "Colombia",
+    "region": "Valle del Cauca",
+    "road": "Localidad El Pailón",
+    "nominatimCountry": "Colombia"
+  },
+  "pPSsfdHZw7R636VUfqHHvg": {
+    "metas": [
+      "meta_1769521013280_1qjbz"
+    ],
+    "lat": 4.064642,
+    "lng": -76.334965,
+    "country": "Colombia",
+    "region": "Valle del Cauca",
+    "road": "Vía Panorama",
+    "nominatimCountry": "Colombia"
+  },
+  "U5BVmir6fAPlG9gUNUX6cg": {
+    "metas": [
+      "meta_1769521013280_39p2n"
+    ],
+    "lat": 2.350331,
+    "lng": -76.715533,
+    "country": "Colombia",
+    "region": "Cauca",
+    "road": null,
+    "nominatimCountry": "Colombia"
+  },
+  "nR7Ok5AGxzievMXbQKn42A": {
+    "metas": [
+      "meta_1769521013280_o3vbb"
+    ],
+    "lat": 11.887177,
+    "lng": -72.19218,
+    "country": "Colombia",
+    "region": "La Guajira",
+    "road": "Vía Uribia - Puerto Bolívar",
+    "nominatimCountry": "Colombia"
+  },
+  "V4N1d1G1sEOn-PdtxK1JIQ": {
+    "metas": [
+      "meta_1769521013280_gcino"
+    ],
+    "lat": 10.9744078,
+    "lng": -74.4631172,
+    "country": "Colombia",
+    "region": "Magdalena",
+    "road": "Troncal del Caribe",
+    "nominatimCountry": "Colombia"
+  },
+  "ZOBlM328oBpUyGhCfFJluQ": {
+    "metas": [
+      "meta_1769521013280_16f55"
+    ],
+    "lat": 10.988031,
+    "lng": -74.802517,
+    "country": "Colombia",
+    "region": "Atlántico",
+    "road": "Carrera 42",
+    "nominatimCountry": "Colombia"
+  },
+  "WngFlR_jrMJrlzIYzlBEYA": {
+    "metas": [
+      "meta_1769521013280_h0749"
+    ],
+    "lat": -4.1786607,
+    "lng": -69.9448599,
+    "country": "Colombia",
+    "region": "Amazonas",
+    "road": "Vìa Los Lagos",
+    "nominatimCountry": "Colombia"
+  },
+  "yc-zsTuVHNb5fhkOCoOJkA": {
+    "metas": [
+      "meta_1769521013280_1m2jk"
+    ],
+    "lat": 12.550109,
+    "lng": -81.7045827,
+    "country": "Colombia",
+    "region": "Archipelago of San Andrés, Providencia and Santa Catalina",
+    "road": "Vía Circunvalar de San Andrés",
+    "nominatimCountry": "Colombia"
+  },
+  "cGXQyrSCX6LyXofhh-K0Ng": {
+    "metas": [
+      "meta_1769521013280_jy8ih",
+      "meta_1769521013280_aeo08"
+    ],
+    "lat": 13.3698787,
+    "lng": -81.3620051,
+    "country": "Colombia",
+    "region": "Archipelago of San Andrés, Providencia and Santa Catalina",
+    "road": "Vía Circunvalar de Providencia",
+    "nominatimCountry": "Colombia"
+  },
+  "Uv5qLvY_RoYJjUod-1vpbg": {
+    "metas": [
+      "meta_1769521014442_djj1p"
+    ],
+    "lat": 12.1925537,
+    "lng": -68.9975009,
+    "country": "Curaçao",
+    "region": null,
+    "road": "Kaya Grote Berg",
+    "nominatimCountry": "Curacao"
+  },
+  "HujKhZnkipis6q-2zRJzvw": {
+    "metas": [
+      "meta_1769521014443_hxi7a"
+    ],
+    "lat": 12.1678975,
+    "lng": -68.8473231,
+    "country": "Curaçao",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Curacao"
+  },
+  "3_CIeWewLcTuUGwEej1YNQ": {
+    "metas": [
+      "meta_1769521015588_nmyat"
+    ],
+    "lat": 0.1019994,
+    "lng": -79.4099157,
+    "country": "Ecuador",
+    "region": "Esmeraldas",
+    "road": "E20",
+    "nominatimCountry": "Ecuador"
+  },
+  "OpilzqpXLbzFdDhwQtiX2g": {
+    "metas": [
+      "meta_1769521015588_wohtn"
+    ],
+    "lat": -0.221067,
+    "lng": -78.503736,
+    "country": "Ecuador",
+    "region": "Quito Canton",
+    "road": "Valparaíso",
+    "nominatimCountry": "Ecuador"
+  },
+  "E_RrpRP503-vojNBqHhIug": {
+    "metas": [
+      "meta_1769521015588_5zpoc"
+    ],
+    "lat": -1.4132395,
+    "lng": -78.2223691,
+    "country": "Ecuador",
+    "region": "Tungurahua",
+    "road": "Ruta de las Cascadas",
+    "nominatimCountry": "Ecuador"
+  },
+  "SZjIhEjLlecegX2lYRJXxQ": {
+    "metas": [
+      "meta_1769521015588_ji8vf"
+    ],
+    "lat": -0.9709575,
+    "lng": -80.740293,
+    "country": "Ecuador",
+    "region": "Manabí",
+    "road": "Vía San Juan",
+    "nominatimCountry": "Ecuador"
+  },
+  "S1rVJcfLNBltZM1zSL-cQg": {
+    "metas": [
+      "meta_1769521015588_ysh4o"
+    ],
+    "lat": -2.5620972,
+    "lng": -79.548845,
+    "country": "Ecuador",
+    "region": "Guayas",
+    "road": "Vía Cuenca - Molleturo - Puerto Inca",
+    "nominatimCountry": "Ecuador"
+  },
+  "5BgtQd3M3etIa9T762IVzw": {
+    "metas": [
+      "meta_1769521015588_imgrn"
+    ],
+    "lat": -1.3367338,
+    "lng": -77.9076942,
+    "country": "Ecuador",
+    "region": "Pastaza",
+    "road": "Troncal Amazónica",
+    "nominatimCountry": "Ecuador"
+  },
+  "fQ0OiqKOYexCpAWVvN9tXQ": {
+    "metas": [
+      "meta_1769521015588_e86mp"
+    ],
+    "lat": -0.4429701,
+    "lng": -78.6682276,
+    "country": "Ecuador",
+    "region": "Machachi",
+    "road": "Avenida Quito",
+    "nominatimCountry": "Ecuador"
+  },
+  "Woiil1fZguezyfrqklEyzw": {
+    "metas": [
+      "meta_1769521015588_8yz9o"
+    ],
+    "lat": -0.2163771,
+    "lng": -78.4394411,
+    "country": "Ecuador",
+    "region": "Quito Canton",
+    "road": "De los Claveles",
+    "nominatimCountry": "Ecuador"
+  },
+  "GiHq49P3RPj2LjEYG5WP-g": {
+    "metas": [
+      "meta_1769521015588_zboyq"
+    ],
+    "lat": -2.3396395,
+    "lng": -79.6350445,
+    "country": "Ecuador",
+    "region": "Guayas",
+    "road": "Troncal de la Costa",
+    "nominatimCountry": "Ecuador"
+  },
+  "8eBY5pvtQkw3LGf5zsWDcQ": {
+    "metas": [
+      "meta_1769521015588_5f5pu"
+    ],
+    "lat": -2.158302,
+    "lng": -79.929115,
+    "country": "Ecuador",
+    "region": "Guayas",
+    "road": "Vía a Daule",
+    "nominatimCountry": "Ecuador"
+  },
+  "-YVgovOk736N3k8NxShc_Q": {
+    "metas": [
+      "meta_1769521015588_i7k7p"
+    ],
+    "lat": -1.0272779,
+    "lng": -79.4660966,
+    "country": "Ecuador",
+    "region": "Los Ríos",
+    "road": "Calle 9",
+    "nominatimCountry": "Ecuador"
+  },
+  "nvGyNns_BOFxVoawvgZn7g": {
+    "metas": [
+      "meta_1769521015588_n80uh"
+    ],
+    "lat": -0.2765,
+    "lng": -78.535792,
+    "country": "Ecuador",
+    "region": "Quito Canton",
+    "road": "S23",
+    "nominatimCountry": "Ecuador"
+  },
+  "b8BZwlyx2Jn97h5V-ys_Qw": {
+    "metas": [
+      "meta_1769521015588_9pw33"
+    ],
+    "lat": -2.2921257,
+    "lng": -80.75081,
+    "country": "Ecuador",
+    "region": "Santa Elena Province",
+    "road": "Guayaquil",
+    "nominatimCountry": "Ecuador"
+  },
+  "7gNj0DBNsq092c8zyxNlsg": {
+    "metas": [
+      "meta_1769521015588_xsu1l"
+    ],
+    "lat": -2.3393014,
+    "lng": -79.635075,
+    "country": "Ecuador",
+    "region": "Guayas",
+    "road": "Troncal de la Costa",
+    "nominatimCountry": "Ecuador"
+  },
+  "tEUmQuLLcJOXIkOtFWz-sQ": {
+    "metas": [
+      "meta_1769521015588_7dajn"
+    ],
+    "lat": 0.0322669,
+    "lng": -76.8289885,
+    "country": "Ecuador",
+    "region": "Sucumbíos",
+    "road": "E45A",
+    "nominatimCountry": "Ecuador"
+  },
+  "-7SAL2OL4mKJiW3aJtdUXw": {
+    "metas": [
+      "meta_1769521015588_ioprs"
+    ],
+    "lat": -3.9031677,
+    "lng": -79.4199892,
+    "country": "Ecuador",
+    "region": "Loja",
+    "road": "La Bendita",
+    "nominatimCountry": "Ecuador"
+  },
+  "17BFRc_XjY3mX_3Rsv73jQ": {
+    "metas": [
+      "meta_1769521015588_4p3f8"
+    ],
+    "lat": -2.0294382,
+    "lng": -78.7350932,
+    "country": "Ecuador",
+    "region": "Chimborazo",
+    "road": "Panamericana",
+    "nominatimCountry": "Ecuador"
+  },
+  "mDzEH85Olk1BQe1XmHp0sQ": {
+    "metas": [
+      "meta_1769521015588_1mt7b"
+    ],
+    "lat": -3.9355525,
+    "lng": -79.6470189,
+    "country": "Ecuador",
+    "region": "Loja",
+    "road": "E50",
+    "nominatimCountry": "Ecuador"
+  },
+  "u28Ivdepa6T4kOeL7AWpLA": {
+    "metas": [
+      "meta_1769521015588_r5v7q"
+    ],
+    "lat": -1.894946,
+    "lng": -79.553586,
+    "country": "Ecuador",
+    "region": "Guayas",
+    "road": "Avenida 18 de Febrero",
+    "nominatimCountry": "Ecuador"
+  },
+  "pguUSc9LMqbzL5AVmLN8nw": {
+    "metas": [
+      "meta_1769521015588_zm3xj"
+    ],
+    "lat": -2.3317494,
+    "lng": -80.5344307,
+    "country": "Ecuador",
+    "region": "Santa Elena Province",
+    "road": "Vía a la Costa",
+    "nominatimCountry": "Ecuador"
+  },
+  "nBqXl1xYzU0FRa7W-f0vGQ": {
+    "metas": [
+      "meta_1769521015589_zbfe4"
+    ],
+    "lat": -0.060521,
+    "lng": -76.880124,
+    "country": "Ecuador",
+    "region": "Sucumbíos",
+    "road": "Via Lago Agrio El Sacha",
+    "nominatimCountry": "Ecuador"
+  },
+  "S6R4L0HYPxJAjocOVNL_qw": {
+    "metas": [
+      "meta_1769521015589_smnod"
+    ],
+    "lat": -0.4524949,
+    "lng": -91.0996851,
+    "country": "Ecuador",
+    "region": "Galápagos",
+    "road": null,
+    "nominatimCountry": "Ecuador"
+  },
+  "-XthT8HC1MvZB0yDmP63Zg": {
+    "metas": [
+      "meta_1769521016752_5fgqf"
+    ],
+    "lat": -51.7062189,
+    "lng": -61.2935412,
+    "country": "Falkland Islands",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Falkland Islands"
+  },
+  "6PSpzNNxRBfaBNT5ut392g": {
+    "metas": [
+      "meta_1769521017888_sxq6q"
+    ],
+    "lat": -3.9497697,
+    "lng": -73.4035598,
+    "country": "Peru",
+    "region": "Loreto",
+    "road": "Carretera Iquitos - Nauta",
+    "nominatimCountry": "Peru"
+  },
+  "J-lUBVHcaRmYTk-cOXy0qw": {
+    "metas": [
+      "meta_1769521017888_3pwgb"
+    ],
+    "lat": -11.26237,
+    "lng": -75.688162,
+    "country": "Peru",
+    "region": "Junín",
+    "road": "JU-556",
+    "nominatimCountry": "Peru"
+  },
+  "8EFmcKwkf4cuyA_N17iRhg": {
+    "metas": [
+      "meta_1769521017889_o10gh"
+    ],
+    "lat": -13.399548,
+    "lng": -72.052822,
+    "country": "Peru",
+    "region": "Cusco",
+    "road": "Calle Olones",
+    "nominatimCountry": "Peru"
+  },
+  "E0Q5xJYiZpvxtuDfPcTCPQ": {
+    "metas": [
+      "meta_1769521017889_9wplk"
+    ],
+    "lat": -12.5216103,
+    "lng": -74.8972762,
+    "country": "Peru",
+    "region": "Huancavelica",
+    "road": "Carretera Longitudinal de la Sierra Sur",
+    "nominatimCountry": "Peru"
+  },
+  "20VsX1gefo0_nUDl9Accvg": {
+    "metas": [
+      "meta_1769521017889_6bjix"
+    ],
+    "lat": -13.498914,
+    "lng": -72.4834524,
+    "country": "Peru",
+    "region": "Cusco",
+    "road": "Carretera Longitudinal de la Sierra Sur",
+    "nominatimCountry": "Peru"
+  },
+  "fjHwtkm_quy9Ae2N0k8kMw": {
+    "metas": [
+      "meta_1769521017889_0c3gm"
+    ],
+    "lat": -5.1459651,
+    "lng": -78.9289035,
+    "country": "Peru",
+    "region": "Cajamarca",
+    "road": "Mariano Melgar",
+    "nominatimCountry": "Peru"
+  },
+  "2Q8fVxfAA3kWp7CbETY3zw": {
+    "metas": [
+      "meta_1769521017889_l09ha"
+    ],
+    "lat": -5.9505864,
+    "lng": -79.2336977,
+    "country": "Peru",
+    "region": "Cajamarca",
+    "road": "Carretera Presidente Fernando Belaúnde Terry",
+    "nominatimCountry": "Peru"
+  },
+  "h_Bj6tt6LD1XqhLpE--Y7g": {
+    "metas": [
+      "meta_1769521017889_kx76d"
+    ],
+    "lat": -14.0440369,
+    "lng": -71.4477004,
+    "country": "Peru",
+    "region": "Cusco",
+    "road": "Carretera Longitudinal de la Sierra Sur",
+    "nominatimCountry": "Peru"
+  },
+  "-kOF-CgHpDSrPdvVSGZ65Q": {
+    "metas": [
+      "meta_1769521017889_sz4xr"
+    ],
+    "lat": -14.5476025,
+    "lng": -73.3550888,
+    "country": "Peru",
+    "region": "Apurímac",
+    "road": "Carretera Nasca - Abancay",
+    "nominatimCountry": "Peru"
+  },
+  "zP5xgs20w9dYkHmRIF9t7g": {
+    "metas": [
+      "meta_1769521017889_qigog"
+    ],
+    "lat": -15.5243564,
+    "lng": -70.1819744,
+    "country": "Peru",
+    "region": "Puno",
+    "road": "Héroes de La Guerra del Pacífico",
+    "nominatimCountry": "Peru"
+  },
+  "GIjH-24S2VbfOyeHwgdO5A": {
+    "metas": [
+      "meta_1769521017889_zxg8c"
+    ],
+    "lat": -9.5136429,
+    "lng": -78.0167391,
+    "country": "Peru",
+    "region": "Ancash",
+    "road": "Carretera Casma - Huaraz",
+    "nominatimCountry": "Peru"
+  },
+  "gipeL6hYRxEUR33-rqJ2bA": {
+    "metas": [
+      "meta_1769521017889_gycmk"
+    ],
+    "lat": -11.9621751,
+    "lng": -75.7029484,
+    "country": "Peru",
+    "region": "Junín",
+    "road": "JU-761",
+    "nominatimCountry": "Peru"
+  },
+  "x7DEQ5LUixNna76MebTA7g": {
+    "metas": [
+      "meta_1769521017889_ckxe4"
+    ],
+    "lat": -3.7432291,
+    "lng": -73.241149,
+    "country": "Peru",
+    "region": "Loreto",
+    "road": "Jirón Requena",
+    "nominatimCountry": "Peru"
+  },
+  "C5kRetWJDNFPygb9rn_m7g": {
+    "metas": [
+      "meta_1769521017889_7hgc4"
+    ],
+    "lat": -12.041126,
+    "lng": -77.043118,
+    "country": "Peru",
+    "region": "Lima",
+    "road": "Alfonso Ugarte Avenue",
+    "nominatimCountry": "Peru"
+  },
+  "5626LjvSFpHXgXLmdCBO5Q": {
+    "metas": [
+      "meta_1769521017889_tcecj"
+    ],
+    "lat": -14.0566432,
+    "lng": -75.7250714,
+    "country": "Peru",
+    "region": "Ica",
+    "road": "Avenida Peru",
+    "nominatimCountry": "Peru"
+  },
+  "1WYl-FHCkq_DKAaUdZ4ZGg": {
+    "metas": [
+      "meta_1769521017889_85lm2"
+    ],
+    "lat": -11.9455094,
+    "lng": -77.0503097,
+    "country": "Peru",
+    "region": "Lima",
+    "road": "Avenida Túpac Amaru",
+    "nominatimCountry": "Peru"
+  },
+  "jE5xHsWhlurRC0VnoFZC5g": {
+    "metas": [
+      "meta_1769521017889_buaha"
+    ],
+    "lat": -13.6588105,
+    "lng": -73.351712,
+    "country": "Peru",
+    "region": "Apurímac",
+    "road": "Jirón Los Ángeles",
+    "nominatimCountry": "Peru"
+  },
+  "5FmpNIYYyi71KCd0gCamOw": {
+    "metas": [
+      "meta_1769521017889_dncrg"
+    ],
+    "lat": -7.158724,
+    "lng": -78.513633,
+    "country": "Peru",
+    "region": "Cajamarca",
+    "road": "Jirón Amazonas",
+    "nominatimCountry": "Peru"
+  },
+  "Z6Tvxuo1iUxwZVXF0_DJJg": {
+    "metas": [
+      "meta_1769521017889_4gws0"
+    ],
+    "lat": -4.1439276,
+    "lng": -80.8063314,
+    "country": "Peru",
+    "region": "Tumbes",
+    "road": "TU-105",
+    "nominatimCountry": "Peru"
+  },
+  "WvGzyMpNlfdYgxer_Rqs9A": {
+    "metas": [
+      "meta_1769521017889_o9u6n"
+    ],
+    "lat": -4.7813617,
+    "lng": -81.1992822,
+    "country": "Peru",
+    "region": "Piura",
+    "road": "Carretera Costanera II",
+    "nominatimCountry": "Peru"
+  },
+  "etv40ElKUCKCWb3oDqP3dg": {
+    "metas": [
+      "meta_1769521017889_imwfm"
+    ],
+    "lat": -4.204942,
+    "lng": -81.141338,
+    "country": "Peru",
+    "region": "Piura",
+    "road": "Carretera Panamericana Norte",
+    "nominatimCountry": "Peru"
+  },
+  "yfb2HrmvsO2ERdScOs8GBA": {
+    "metas": [
+      "meta_1769521017889_majdc"
+    ],
+    "lat": -5.31355,
+    "lng": -80.706007,
+    "country": "Peru",
+    "region": "Piura",
+    "road": "Carretera Piura - Sechura",
+    "nominatimCountry": "Peru"
+  },
+  "aA6CwiAlo_7z0aMjH6AqXQ": {
+    "metas": [
+      "meta_1769521017889_z2css"
+    ],
+    "lat": -18.2397333,
+    "lng": -70.3714054,
+    "country": "Peru",
+    "region": "Tacna",
+    "road": "Carretera Los Palos - Hospicio",
+    "nominatimCountry": "Peru"
+  },
+  "jXZPTzC-fPApK8UuzXg1vw": {
+    "metas": [
+      "meta_1769521017889_r55x9"
+    ],
+    "lat": -6.8302887,
+    "lng": -79.8159762,
+    "country": "Peru",
+    "region": "Lambayeque",
+    "road": "PE-06A",
+    "nominatimCountry": "Peru"
+  },
+  "tgCbR2UUEAkLIeRIwXRZ7g": {
+    "metas": [
+      "meta_1769521017889_ofq4x"
+    ],
+    "lat": -6.8491393,
+    "lng": -79.8260159,
+    "country": "Peru",
+    "region": "Lambayeque",
+    "road": "Carretera Callanca - Monsefú",
+    "nominatimCountry": "Peru"
+  },
+  "p_eqb_vq_JVbXUwAYIs5xg": {
+    "metas": [
+      "meta_1769521017889_3kxbq"
+    ],
+    "lat": -10.8527804,
+    "lng": -76.2423996,
+    "country": "Peru",
+    "region": "Pasco",
+    "road": "PA-588",
+    "nominatimCountry": "Peru"
+  },
+  "4C27D2EnCYr0ysKT_d-Rsg": {
+    "metas": [
+      "meta_1769521017889_nrg02"
+    ],
+    "lat": -16.1610219,
+    "lng": -69.7215329,
+    "country": "Peru",
+    "region": "Puno",
+    "road": "PU-1233",
+    "nominatimCountry": "Peru"
+  },
+  "31D1ygt0gLixy-RqAdvcpA": {
+    "metas": [
+      "meta_1769521017889_na1yt"
+    ],
+    "lat": -6.019096,
+    "lng": -78.95534,
+    "country": "Peru",
+    "region": "Cajamarca",
+    "road": "Carretera Presidente Fernando Belaúnde Terry",
+    "nominatimCountry": "Peru"
+  },
+  "-eSruNdMCuN91_A-p5lzcw": {
+    "metas": [
+      "meta_1769521017889_23r8s"
+    ],
+    "lat": -6.636968,
+    "lng": -76.595059,
+    "country": "Peru",
+    "region": "San Martín",
+    "road": "SM-102",
+    "nominatimCountry": "Peru"
+  },
+  "OViIXnDLLi1cpvEVyI_bKg": {
+    "metas": [
+      "meta_1769521017889_p6rp3"
+    ],
+    "lat": -17.2177635,
+    "lng": -71.3492112,
+    "country": "Peru",
+    "region": "Moquegua",
+    "road": "Carretera Panamericana Sur",
+    "nominatimCountry": "Peru"
+  },
+  "Jd3SR_JNwz-Bq6rUJHiNeQ": {
+    "metas": [
+      "meta_1769521017889_jbhrj"
+    ],
+    "lat": -16.3294891,
+    "lng": -73.1414291,
+    "country": "Peru",
+    "region": "Arequipa",
+    "road": "AR-535",
+    "nominatimCountry": "Peru"
+  },
+  "fFVBkZPqCKvxbD4zaJTsiA": {
+    "metas": [
+      "meta_1769521017889_da652"
+    ],
+    "lat": -7.9059786,
+    "lng": -78.5647319,
+    "country": "Peru",
+    "region": "La Libertad",
+    "road": "LI-114",
+    "nominatimCountry": "Peru"
+  },
+  "_Hn7ghWPm2xn6HGzDulQ_A": {
+    "metas": [
+      "meta_1769521017889_jrhii"
+    ],
+    "lat": -6.755373,
+    "lng": -79.841708,
+    "country": "Peru",
+    "region": "Lambayeque",
+    "road": "Avenida Simón Bolívar",
+    "nominatimCountry": "Peru"
+  },
+  "58KtpwafIpHTjvWBulZd6A": {
+    "metas": [
+      "meta_1769521017889_liupp"
+    ],
+    "lat": -12.185597,
+    "lng": -76.993887,
+    "country": "Peru",
+    "region": "Lima",
+    "road": "Calle Juan Velasco Alvarado",
+    "nominatimCountry": "Peru"
+  },
+  "7VSNQP_RSsJ2ApXm-YFiQA": {
+    "metas": [
+      "meta_1769521017889_7dktp"
+    ],
+    "lat": -17.5891101,
+    "lng": -71.13406,
+    "country": "Peru",
+    "region": "Moquegua",
+    "road": "Carretera Moquegua - Ilo",
+    "nominatimCountry": "Peru"
+  },
+  "TmtU17B67R8z0eEGTTKwiQ": {
+    "metas": [
+      "meta_1769521017889_m8ugm"
+    ],
+    "lat": -5.7793416,
+    "lng": -79.8466795,
+    "country": "Peru",
+    "region": "Lambayeque",
+    "road": "Carretera Interoceánica Norte",
+    "nominatimCountry": "Peru"
+  },
+  "viXnNIS8x4j0z5OaQYl4Dg": {
+    "metas": [
+      "meta_1769521017889_1p7w7"
+    ],
+    "lat": -9.4059102,
+    "lng": -78.3734629,
+    "country": "Peru",
+    "region": "Ancash",
+    "road": "Panamericana Norte",
+    "nominatimCountry": "Peru"
+  },
+  "-xKZ37_LUnpf3kAMSC8fxA": {
+    "metas": [
+      "meta_1769521017889_c5cvp"
+    ],
+    "lat": -17.354135,
+    "lng": -71.424791,
+    "country": "Peru",
+    "region": "Moquegua",
+    "road": "Carretera Costanera Sur",
+    "nominatimCountry": "Peru"
+  },
+  "uELs_kxHorE2EMnVXga5vQ": {
+    "metas": [
+      "meta_1769521017889_8n58l"
+    ],
+    "lat": -10.0859985,
+    "lng": -75.0241583,
+    "country": "Peru",
+    "region": "Pasco",
+    "road": "PE-5N",
+    "nominatimCountry": "Peru"
+  },
+  "SRcdM981wm5ewUd5icsOIw": {
+    "metas": [
+      "meta_1769521017889_84emj"
+    ],
+    "lat": -11.1302907,
+    "lng": -69.5652304,
+    "country": "Peru",
+    "region": "Madre de Dios",
+    "road": "Transoceánica",
+    "nominatimCountry": "Peru"
+  },
+  "AqVwvfGnO8-anrSmyTKIgw": {
+    "metas": [
+      "meta_1769521017889_t6k1f"
+    ],
+    "lat": -12.62563,
+    "lng": -72.685342,
+    "country": "Peru",
+    "region": "Cusco",
+    "road": "PE-28B",
+    "nominatimCountry": "Peru"
+  },
+  "RQ6_j9DlF2st4LkidV0w1g": {
+    "metas": [
+      "meta_1769521017889_tgm4u"
+    ],
+    "lat": -11.8826716,
+    "lng": -75.3542082,
+    "country": "Peru",
+    "region": "Junín",
+    "road": "Carretera Longitudinal de la Sierra Sur",
+    "nominatimCountry": "Peru"
+  },
+  "5XDS1wdWP75ove4j_J4-vA": {
+    "metas": [
+      "meta_1769521017889_avkea"
+    ],
+    "lat": -15.140404,
+    "lng": -69.818575,
+    "country": "Peru",
+    "region": "Puno",
+    "road": "PE-34H",
+    "nominatimCountry": "Peru"
+  },
+  "gAgFCPLYVMcbpLo7pby3oA": {
+    "metas": [
+      "meta_1769521017889_6w47u"
+    ],
+    "lat": -16.3607666,
+    "lng": -71.6200314,
+    "country": "Peru",
+    "region": "Arequipa",
+    "road": "Autopista La Joya - Arequipa",
+    "nominatimCountry": "Peru"
+  },
+  "-Qjf71jwXVAiUk7VloVnbg": {
+    "metas": [
+      "meta_1769521017889_i9ugp"
+    ],
+    "lat": -17.994373,
+    "lng": -70.2413411,
+    "country": "Peru",
+    "region": "Tacna",
+    "road": "Avenida Jorge Basadre Grohmann",
+    "nominatimCountry": "Peru"
+  },
+  "jwhrl9kArINXtVzOraKEUg": {
+    "metas": [
+      "meta_1769521017889_5cioo"
+    ],
+    "lat": -13.1633917,
+    "lng": -72.5372312,
+    "country": "Peru",
+    "region": "Cusco",
+    "road": "Carretera Hiram Bingham",
+    "nominatimCountry": "Peru"
+  },
+  "e5DM9zb-ZYgyyLoYzZggNQ": {
+    "metas": [
+      "meta_1769521017889_5ggkh"
+    ],
+    "lat": -13.1959239,
+    "lng": -72.4751435,
+    "country": "Peru",
+    "region": "Cusco",
+    "road": null,
+    "nominatimCountry": "Peru"
+  },
+  "544vC6cGb-BTmjUQ7bptpw": {
+    "metas": [
+      "meta_1769521019037_ys4lt"
+    ],
+    "lat": -33.3455056,
+    "lng": -55.1429428,
+    "country": "Uruguay",
+    "region": "Florida",
+    "road": "Ruta 7 General Aparicio Saravia",
+    "nominatimCountry": "Uruguay"
+  },
+  "SG8Wj7LXyPcN-hl9NboLDA": {
+    "metas": [
+      "meta_1769521019037_rlkyw"
+    ],
+    "lat": -33.824378,
+    "lng": -53.5109181,
+    "country": "Uruguay",
+    "region": "Rocha",
+    "road": "Ruta 9 Coronel Leonardo Olivera",
+    "nominatimCountry": "Uruguay"
+  },
+  "s2atKjLFVM2P8jF3Rouxdw": {
+    "metas": [
+      "meta_1769521019037_od9ic"
+    ],
+    "lat": -34.0170751,
+    "lng": -54.3753195,
+    "country": "Uruguay",
+    "region": "Rocha",
+    "road": "Ruta 13 Bartolomé Hidalgo",
+    "nominatimCountry": "Uruguay"
+  },
+  "wgvQqh64QiWF8S9VmmVEAw": {
+    "metas": [
+      "meta_1769521019037_std13"
+    ],
+    "lat": -33.8439508,
+    "lng": -55.847387,
+    "country": "Uruguay",
+    "region": "Florida",
+    "road": "Ruta 6 Joaquín Suárez",
+    "nominatimCountry": "Uruguay"
+  },
+  "-fjs8Al57CyJihXfRwLJAA": {
+    "metas": [
+      "meta_1769521019037_hk7dj"
+    ],
+    "lat": -34.7334845,
+    "lng": -55.005434,
+    "country": "Uruguay",
+    "region": "Maldonado",
+    "road": "Ruta 9 Coronel Leonardo Olivera",
+    "nominatimCountry": "Uruguay"
+  },
+  "7PJZR76jD_GIkrM3CaC7Hw": {
+    "metas": [
+      "meta_1769521019037_gyqgz"
+    ],
+    "lat": -33.8353593,
+    "lng": -58.2771268,
+    "country": "Uruguay",
+    "region": "Colonia",
+    "road": "Ruta 12 Doctor Luis Alberto de Herrera",
+    "nominatimCountry": "Uruguay"
+  },
+  "g87o5lKIvj4w2SyAg7cMUg": {
+    "metas": [
+      "meta_1769521019037_lu46d"
+    ],
+    "lat": -33.6113666,
+    "lng": -55.3294291,
+    "country": "Uruguay",
+    "region": "Lavalleja",
+    "road": "Ruta 7 General Aparicio Saravia",
+    "nominatimCountry": "Uruguay"
+  },
+  "tQBkfW_gT5KWWxZOWnPjYA": {
+    "metas": [
+      "meta_1769521019037_zz1u6"
+    ],
+    "lat": -33.5269698,
+    "lng": -55.0879673,
+    "country": "Uruguay",
+    "region": "Lavalleja",
+    "road": "Ruta 14 Brigadier General Venancio Flores",
+    "nominatimCountry": "Uruguay"
+  },
+  "fpvWjKSHd8vf2Qe6z9JnLA": {
+    "metas": [
+      "meta_1769521019037_tj4ne"
+    ],
+    "lat": -34.4822259,
+    "lng": -56.8675394,
+    "country": "Uruguay",
+    "region": "San José",
+    "road": "Ruta 1 Brigadier General Manuel Oribe",
+    "nominatimCountry": "Uruguay"
+  },
+  "3JHzJ1j6FKuhD7n33gwwKQ": {
+    "metas": [
+      "meta_1769521019037_w01sk"
+    ],
+    "lat": -32.8836846,
+    "lng": -54.8784951,
+    "country": "Uruguay",
+    "region": "Cerro Largo",
+    "road": "Ruta 7 General Aparicio Saravia",
+    "nominatimCountry": "Uruguay"
+  },
+  "qTUcCssIuoLL7qL0cSi5RA": {
+    "metas": [
+      "meta_1769521019037_40y2v"
+    ],
+    "lat": -34.1970826,
+    "lng": -54.7884468,
+    "country": "Uruguay",
+    "region": "Lavalleja",
+    "road": "Ruta 13 Bartolomé Hidalgo",
+    "nominatimCountry": "Uruguay"
+  },
+  "UK_I-fq0syFObk6j3AnqiA": {
+    "metas": [
+      "meta_1769521019037_gkawh"
+    ],
+    "lat": -34.7576749,
+    "lng": -56.3086642,
+    "country": "Uruguay",
+    "region": "Montevideo",
+    "road": "Camino Sere",
+    "nominatimCountry": "Uruguay"
+  },
+  "TYeGDF1B6kZQVrSgPi5r6A": {
+    "metas": [
+      "meta_1769521019037_frswn"
+    ],
+    "lat": -32.6721499,
+    "lng": -55.7679768,
+    "country": "Uruguay",
+    "region": "Durazno",
+    "road": "Ruta 43",
+    "nominatimCountry": "Uruguay"
+  },
+  "2rFpevPj3WLp21hPFidHXA": {
+    "metas": [
+      "meta_1769521019037_qj49s"
+    ],
+    "lat": -34.2995492,
+    "lng": -54.6540993,
+    "country": "Uruguay",
+    "region": "Maldonado",
+    "road": "Ruta 109",
+    "nominatimCountry": "Uruguay"
+  },
+  "PaT28-poPuZVslIvq60S2A": {
+    "metas": [
+      "meta_1769521019037_vfwx7"
+    ],
+    "lat": -31.1711773,
+    "lng": -55.8355872,
+    "country": "Uruguay",
+    "region": "Rivera",
+    "road": "Ruta 30",
+    "nominatimCountry": "Uruguay"
+  },
+  "Brs3ubMOrbKKUgTLS7vB4w": {
+    "metas": [
+      "meta_1769521019037_w4gqd"
+    ],
+    "lat": -32.8043527,
+    "lng": -57.0641185,
+    "country": "Uruguay",
+    "region": "Río Negro",
+    "road": null,
+    "nominatimCountry": "Uruguay"
+  },
+  "YnhLTF5Lns7dZyon9m945A": {
+    "metas": [
+      "meta_1769521019037_tw2mn"
+    ],
+    "lat": -33.9043842,
+    "lng": -53.6978441,
+    "country": "Uruguay",
+    "region": "Rocha",
+    "road": "Ruta 14 Brigadier General Venancio Flores",
+    "nominatimCountry": "Uruguay"
+  },
+  "L3sNIZg-8hbf8wJMmY6jhw": {
+    "metas": [
+      "meta_1769521019037_g4g6y"
+    ],
+    "lat": -34.4438841,
+    "lng": -56.928916,
+    "country": "Uruguay",
+    "region": "San José",
+    "road": "Ruta 1 Brigadier General Manuel Oribe",
+    "nominatimCountry": "Uruguay"
+  },
+  "Km8pNl130xcNMfislTjBwQ": {
+    "metas": [
+      "meta_1769521019037_q0ux1"
+    ],
+    "lat": -34.158662,
+    "lng": -53.6972563,
+    "country": "Uruguay",
+    "region": "Rocha",
+    "road": "Calle 36",
+    "nominatimCountry": "Uruguay"
+  },
+  "YxUk25cqIc7aj-vCdkxjEA": {
+    "metas": [
+      "meta_1769521019037_bb6o7"
+    ],
+    "lat": -34.9071498,
+    "lng": -56.2068383,
+    "country": "Uruguay",
+    "region": "Montevideo",
+    "road": "Rincón",
+    "nominatimCountry": "Uruguay"
+  },
+  "BemciXC57y7iVr0q-Wii3w": {
+    "metas": [
+      "meta_1769521019037_we3cd"
+    ],
+    "lat": -34.945435,
+    "lng": -54.9200359,
+    "country": "Uruguay",
+    "region": "Maldonado",
+    "road": "Rambla Lorenzo Batlle Pacheco",
+    "nominatimCountry": "Uruguay"
+  },
+  "BiGNblRURuxm-q6U7Smo8g": {
+    "metas": [
+      "meta_1769521019037_zspo3"
+    ],
+    "lat": -34.4029066,
+    "lng": -53.7807473,
+    "country": "Uruguay",
+    "region": "Rocha",
+    "road": "Entrada a Cabo Polonio",
+    "nominatimCountry": "Uruguay"
+  },
+  "QyFPldkSebfjsze9_9ijPA": {
+    "metas": [
+      "meta_1769521019037_p4ecp"
+    ],
+    "lat": -31.1679302,
+    "lng": -56.0349534,
+    "country": "Uruguay",
+    "region": "Rivera",
+    "road": "Interdepartamental",
+    "nominatimCountry": "Uruguay"
   }
 }

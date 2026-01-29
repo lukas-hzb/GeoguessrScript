@@ -878,12 +878,12 @@
                     <div id="meta-scope-presets" style="margin-top: 8px; text-align: center;">
                         <span class="gg-tag-pill" data-value="countrywide">Countrywide</span>
                         <span class="gg-tag-pill" data-value="region">Region</span>
-                        <span class="gg-tag-pill" data-value="longitude">Longitude</span>
+                        <span class="gg-tag-pill" data-value="city">City</span>
+                        <span class="gg-tag-pill" data-value="road">Road</span>
                         <span class="gg-tag-pill" data-value="1000km">1000km</span>
                         <span class="gg-tag-pill" data-value="100km">100km</span>
                         <span class="gg-tag-pill" data-value="10km">10km</span>
                         <span class="gg-tag-pill" data-value="1km">1km</span>
-                        <span class="gg-tag-pill" data-value="road">Road</span>
                         <span class="gg-tag-pill" data-value="unique">Unique</span>
                     </div>
                 </div>
@@ -1447,6 +1447,7 @@
             country: currentLocationData.country || "Unknown",
             nominatimCountry: currentLocationData.nominatimCountry || null,
             region: currentLocationData.region || null,
+            city: currentLocationData.city || null,
             road: currentLocationData.road || null,
             lat: currentLocationData.lat,
             lng: currentLocationData.lng,
@@ -1561,6 +1562,7 @@
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
                     region: currentLocationData.region,
+                    city: currentLocationData.city,
                     road: currentLocationData.road
                 };
             } else if (Array.isArray(locsFile.content[panoid])) {
@@ -1571,6 +1573,7 @@
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
                     region: currentLocationData.region,
+                    city: currentLocationData.city,
                     road: currentLocationData.road
                 };
             }
@@ -1820,7 +1823,7 @@
         if (s === 'region') return 0;  
         if (s === 'city') return 0;    
         if (s === 'road') return 0; // Strict Name Match Only (User request: no radius for road/region)
-        if (s === 'unique') return 0.1; // 100m tolerance for exact POI keys
+        if (s === 'unique') return 0; // 0m tolerance
         
         if (s === 'countrywide') return 0; // Strict Country Check Only
         return 0;
@@ -1902,130 +1905,144 @@
         const curCountry = normalizeCountry(currentLocationData.country, curLat, curLng);
         const curNomCountry = normalizeCountry(currentLocationData.nominatimCountry, curLat, curLng);
         const curRegion = currentLocationData.region;
+        const curCity = currentLocationData.city;
         const curRoad = (currentLocationData.road || '').toLowerCase().trim();
+        // Handle array of roads if necessary, but usually we compare strings or perform includes.
+        // For fuzzy match, we'll pass the raw value and let isFuzzyNameMatch or helper handle arrays?
+        // Actually isFuzzyNameMatch expects strings. Let's flatten curRoads for checking.
+        const curRoads = [];
+        if (currentLocationData.road) {
+            if (Array.isArray(currentLocationData.road)) {
+                currentLocationData.road.forEach(r => curRoads.push(r.toLowerCase().trim()));
+            } else {
+                curRoads.push(String(currentLocationData.road).toLowerCase().trim());
+            }
+        }
 
         if (isNaN(curLat) || isNaN(curLng)) return [];
 
-        // Priority 1: Metas linked to PREVIOUS LOCATIONS that match our current location
-        // (Matched by Road, Region, or specific Distance)
-        const priorityMatches = new Set();
+        const matchedMetaIds = new Set();
+        const matches = [];
 
-        // Priority 2: Metas that match via their own generic scope
-        // (e.g. A meta set to "Countrywide" for this country)
-        const scopeMatches = new Set();
-        
-        // 1. Check all pinned locations in locations.json (The "Previous Locations")
+        // Helper: Check if a Location Entry matches Current Location based on Scope
+        const checkMatch = (scope, entryLat, entryLng, entryCountry, entryRegion, entryCity, entryRoads) => {
+             scope = (scope || '').toLowerCase();
+             
+             // 1. Distance Match
+             const distLimit = getDistanceForScope(scope);
+             if (distLimit > 0) {
+                 if (entryLat !== null && entryLng !== null) {
+                     const d = getHaversineDistance(curLat, curLng, entryLat, entryLng);
+                     if (d <= distLimit) return true;
+                 }
+                 // If scope is strict distance (e.g. 10km), we usually DON'T fall back to text matching? 
+                 // User says: "Show if distance is < required OR if scope value matches". 
+                 // The list separates Distance Scopes from Text Scopes. 
+                 // If scope is "10km", we only check distance.
+                 return false; 
+             }
+
+             // 2. Text/Region Scope Match
+             // For these, we generally require Country Context to match (to avoid ambiguity), 
+             // unless it's a very specific Road match? 
+             // User Requirement: "Scope-Wert ... übereinstimmt". 
+             // I will enforce Country Match for Region/City. For Road, maybe? 
+             // Let's enforce Country for all to be safe and reduce noise, as "Region" and "Road" names repeat.
+             
+             const entryNomCountry = entryCountry; // Simplify
+             const countryMatch = (entryCountry === curCountry || entryCountry === curNomCountry);
+
+             if (!countryMatch) return false;
+
+             if (scope === 'countrywide') {
+                 return true; // Country matched above
+             }
+             
+             if (scope === 'region') {
+                 return isFuzzyNameMatch(entryRegion, curRegion);
+             }
+             
+             if (scope === 'city') {
+                 // entryCity might be null in old data, so this only works if data exists
+                 return isFuzzyNameMatch(entryCity, curCity);
+             }
+             
+             if (scope === 'road') {
+                 // Check if ANY entry road matches ANY current road
+                 // entryRoads should be an array of strings
+                 if (!entryRoads || entryRoads.length === 0) return false;
+                 if (curRoads.length === 0) return false;
+                 
+                 return curRoads.some(cr => entryRoads.some(er => isFuzzyNameMatch(cr, er)));
+             }
+
+             return false;
+        };
+
+        // Phase 1: Check Linked Locations (saved in locations.json)
+        // locationMap maps Panoid -> Data
         for (const panoId in locationMap) {
             const entry = locationMap[panoId];
             const metaIds = Array.isArray(entry) ? entry : (entry.metas || []);
-            const entryLat = entry.lat ? parseFloat(entry.lat) : null;
-            const entryLng = entry.lng ? parseFloat(entry.lng) : null;
-            const entryRoads = [];
+            
+            // Normalize Entry Data
+            const eLat = entry.lat ? parseFloat(entry.lat) : null;
+            const eLng = entry.lng ? parseFloat(entry.lng) : null;
+            const eCountry = normalizeCountry(entry.country, eLat, eLng); 
+            // entry.nominatimCountry might exist
+            const finalECountry = normalizeCountry(entry.nominatimCountry || eCountry, eLat, eLng);
+            
+            const eRegion = entry.region;
+            const eCity = entry.city; // New field, might be undefined in old entries
+            
+            const eRoads = [];
             if (entry.road) {
                 if (Array.isArray(entry.road)) {
-                    entry.road.forEach(r => entryRoads.push(r.toLowerCase().trim()));
+                    entry.road.forEach(r => eRoads.push(String(r).toLowerCase().trim()));
                 } else {
-                    entryRoads.push(String(entry.road).toLowerCase().trim());
+                    eRoads.push(String(entry.road).toLowerCase().trim());
                 }
             }
-            const entryRegion = entry.region;
-            const entryCountry = entry.country;
-            const entryNomCountry = entry.nominatimCountry; // Older entries might not have this
 
             metaIds.forEach(id => {
-                const meta = metasData.find(m => m.id === id);
-                if (!meta) return;
+                 if (matchedMetaIds.has(id)) return; // Already matched
+                 
+                 const meta = metasData.find(m => m.id === id);
+                 if (!meta) return;
 
-                // Strict Country Match removed here to allow "Distance" matches to work across borders.
-                // We will re-check country for Road/Region matches below to avoid ambiguity.
-                // const metaCountry = normalizeCountry(meta.country, curLat, curLng);
-                // if (metaCountry !== curCountry && metaCountry !== curNomCountry) return;
-
-                let isMatch = false;
-
-                // Match by Road (High Priority)
-                const curRoads = [];
-                if (currentLocationData.road) {
-                    if (Array.isArray(currentLocationData.road)) {
-                        currentLocationData.road.forEach(r => curRoads.push(r.toLowerCase().trim()));
-                    } else {
-                        curRoads.push(String(currentLocationData.road).toLowerCase().trim());
-                    }
-                }
-                // Fuzzy road match against historical pins
-                if (curRoads.length > 0 && curRoads.some(cr => entryRoads.some(er => isFuzzyNameMatch(cr, er)))) isMatch = true;
-
-                // Match by Region (if in same country)
-                // STRICT CHECK: Region names are ambiguous (e.g. "Victoria"). Must match country.
-                if (!isMatch && isFuzzyNameMatch(curRegion, entryRegion)) {
-                    if (curCountry === entryCountry || (entryNomCountry && curNomCountry === entryNomCountry)) {
-                        isMatch = true;
-                    }
-                }
-
-                // Match by Distance (Proximity)
-                if (!isMatch && entryLat !== null && entryLng !== null) {
-                    const scope = (meta.scope || '').toLowerCase();
-                    const maxDist = getDistanceForScope(scope);
-                    if (maxDist > 0) {
-                         const d = getHaversineDistance(curLat, curLng, entryLat, entryLng);
-                         if (d <= maxDist) isMatch = true;
-                    }
-                }
-
-                if (isMatch) priorityMatches.add(id);
+                 if (checkMatch(meta.scope, eLat, eLng, finalECountry, eRegion, eCity, eRoads)) {
+                     matchedMetaIds.add(id);
+                     matches.push(meta);
+                 }
             });
         }
 
-        // 2. Check general Country/Region scope against current location
+        // Phase 2: Check Static Meta Locations (e.g. Plonkit data or Metas with defined coordinates)
         metasData.forEach(meta => {
-            const scope = (meta.scope || '').toLowerCase();
-            const metaCountry = normalizeCountry(meta.country, curLat, curLng);
-            const countryMatched = (metaCountry === curCountry || metaCountry === curNomCountry);
+             if (matchedMetaIds.has(meta.id)) return;
 
-            if (!countryMatched && scope !== 'road') return; // Road might be enough, but usually we want country too
+             // Meta Static Data
+             const mLat = meta.lat ? parseFloat(meta.lat) : null;
+             const mLng = meta.lng ? parseFloat(meta.lng) : null;
+             const mCountry = normalizeCountry(meta.country, mLat, mLng);
+             const mRegion = meta.region;
+             const mCity = meta.city;
+             const mRoads = [];
+             if (meta.road) {
+                 if (Array.isArray(meta.road)) {
+                     meta.road.forEach(r => mRoads.push(String(r).toLowerCase().trim()));
+                 } else {
+                     mRoads.push(String(meta.road).toLowerCase().trim());
+                 }
+             }
 
-            if (scope === 'countrywide') {
-                if (countryMatched) scopeMatches.add(meta.id);
-            } else if (scope === 'region') {
-                // Fuzzy Match for Region Scope: "Erongo" meta should match "Erongo Region" current location
-                if (countryMatched && isFuzzyNameMatch(meta.region, curRegion)) scopeMatches.add(meta.id);
-            } else if (scope === 'road') {
-                const metaRoad = (meta.road || '').toLowerCase().trim();
-                // Fuzzy match for Road Scope
-                if (countryMatched && metaRoad && curRoad && isFuzzyNameMatch(metaRoad, curRoad)) {
-                    scopeMatches.add(meta.id);
-                }
-            }
+             if (checkMatch(meta.scope, mLat, mLng, mCountry, mRegion, mCity, mRoads)) {
+                 matchedMetaIds.add(meta.id);
+                 matches.push(meta);
+             }
         });
 
-        // Combine: Priority Matches FIRST, then Scope Matches
-        const combined = [];
-        const seen = new Set();
-
-        // Add Priority matches
-        priorityMatches.forEach(id => {
-            if (!seen.has(id)) {
-                const m = metasData.find(x => x.id === id);
-                if (m) {
-                    combined.push(m);
-                    seen.add(id);
-                }
-            }
-        });
-
-        // Add Scope matches
-        scopeMatches.forEach(id => {
-            if (!seen.has(id)) {
-                const m = metasData.find(x => x.id === id);
-                if (m) {
-                    combined.push(m);
-                    seen.add(id);
-                }
-            }
-        });
-
-        return combined;
+        return matches;
     }
 
     function isRanked() {
@@ -2182,6 +2199,7 @@
                             address: desc,
                             country: country,
                             region: null,
+                            city: null,
                             road: null,
                             lat: newLatStr,
                             lng: newLngStr
@@ -2206,11 +2224,15 @@
                             
                             let gCountry = null;
                             let gRegion = null;
+                            let gCity = null;
                             let gRoad = null;
                             
                             addrComp.forEach(comp => {
                                 if (comp.types.includes("country")) gCountry = comp.long_name;
                                 if (comp.types.includes("administrative_area_level_1")) gRegion = comp.long_name;
+                                if (comp.types.includes("locality") || comp.types.includes("administrative_area_level_2")) {
+                                    if (!gCity) gCity = comp.long_name; // Prefer locality
+                                }
                                 if (comp.types.includes("route")) gRoad = comp.long_name;
                             });
                             
@@ -2221,6 +2243,7 @@
                                     currentLocationData.country = normalizeCountry(gCountry, lat, lng);
                                 }
                                 if (gRegion && !currentLocationData.region) currentLocationData.region = gRegion;
+                                if (gCity && !currentLocationData.city) currentLocationData.city = gCity;
                                 if (gRoad && !currentLocationData.road) currentLocationData.road = gRoad;
                                 
                                 updateLocationUI();
@@ -2245,6 +2268,7 @@
                             let nCountry = a.country || country;
                             let realNomCountry = normalizeCountry(nCountry, lat, lng);
                             let region = a.state || a.region || a.province || a.county || a.district || null;
+                            let city = a.city || a.town || a.village || a.hamlet || a.municipality || null;
                             
                             // Road Logic
                             let road = null;
@@ -2259,7 +2283,7 @@
 
                             // Fallback: If still no road, use shortDescription if it looks like a road
                             if (!road && loc.shortDescription && loc.shortDescription !== loc.description && loc.shortDescription !== realNomCountry) {
-                                if (loc.shortDescription !== region) {
+                                if (loc.shortDescription !== region && loc.shortDescription !== city) {
                                     road = loc.shortDescription;
                                 }
                             }
@@ -2275,6 +2299,7 @@
                                 }
                                 
                                 if (region && !currentLocationData.region) currentLocationData.region = region;
+                                if (city && !currentLocationData.city) currentLocationData.city = city;
                                 if (road && !currentLocationData.road) currentLocationData.road = road;
                             }
 
@@ -2330,15 +2355,16 @@
                 <div class="gg-loc-label">Region:</div>
                 <div class="gg-loc-val">${region}</div>
             </div>` : ''}
+            ${currentLocationData.city ? `
+            <div class="gg-loc-row">
+                <div class="gg-loc-label">City:</div>
+                <div class="gg-loc-val">${currentLocationData.city}</div>
+            </div>` : ''}
             ${road ? `
             <div class="gg-loc-row">
                 <div class="gg-loc-label">Road:</div>
                 <div class="gg-loc-val">${Array.isArray(road) ? road.join(', ') : road}</div>
             </div>` : ''}
-            <div class="gg-loc-row">
-                <div class="gg-loc-label">Coords:</div>
-                <div class="gg-loc-val gg-loc-coords">${lat}, ${lng}</div>
-            </div>
         `;
         box.style.display = 'block';
     }
