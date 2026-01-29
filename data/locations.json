@@ -4034,5 +4034,2350 @@
     "region": "Diana Region",
     "road": null,
     "nominatimCountry": "Madagascar"
+  },
+  "_hfZvywnDByUoJ4Wy2fnuw": {
+    "metas": [
+      "meta_1769520875030_jrgpj"
+    ],
+    "lat": -13.5292457,
+    "lng": 48.4465656,
+    "country": "Madagascar",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "hkwmtP-K9i5oIS1RTKXz_A": {
+    "metas": [
+      "meta_1769520875030_kk8r5"
+    ],
+    "lat": -13.5531126,
+    "lng": 48.4604958,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "jT6BlCgquTGRvu9X9z5WTg": {
+    "metas": [
+      "meta_1769520875030_4pbeo"
+    ],
+    "lat": -13.7592992,
+    "lng": 48.4865125,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": "Ambolidimaka",
+    "nominatimCountry": "Madagascar"
+  },
+  "irDLNq2YpPCa4jMwYPREbg": {
+    "metas": [
+      "meta_1769520875030_8elxj"
+    ],
+    "lat": -13.8094178,
+    "lng": 48.4715831,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "j1TUcdRHel_j9ldN-0AO5w": {
+    "metas": [
+      "meta_1769520875030_jz1p9"
+    ],
+    "lat": -18.2122948,
+    "lng": 43.8109221,
+    "country": "Madagascar",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "7Xip7yMPnmnbHNv5Hx1TnQ": {
+    "metas": [
+      "meta_1769520875031_339co"
+    ],
+    "lat": -18.5556014,
+    "lng": 43.8577358,
+    "country": "Madagascar",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "zgNetBjbZvY9SqR3ycSBeQ": {
+    "metas": [
+      "meta_1769520875031_5r0lv"
+    ],
+    "lat": -18.9278021,
+    "lng": 47.5304349,
+    "country": "Madagascar",
+    "region": "Analamanga",
+    "road": "Làlana Dokotera Ralarosy",
+    "nominatimCountry": "Madagascar"
+  },
+  "pOnEsuejoNo0pkalC9T8vQ": {
+    "metas": [
+      "meta_1769520875031_dlyot"
+    ],
+    "lat": -20.1468761,
+    "lng": 44.5113488,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": "N 8",
+    "nominatimCountry": "Madagascar"
+  },
+  "hF3pnIaeiSveHAGFEFWFcw": {
+    "metas": [
+      "meta_1769520875031_10ut3"
+    ],
+    "lat": -20.1476399,
+    "lng": 44.5147986,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": "N 8",
+    "nominatimCountry": "Madagascar"
+  },
+  "AvbhyKR2aOQS-QJ-0aBelg": {
+    "metas": [
+      "meta_1769520875031_322e6"
+    ],
+    "lat": -20.2502028,
+    "lng": 44.4192247,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": "Allée des Baobabs",
+    "nominatimCountry": "Madagascar"
+  },
+  "xV2s-cSKeXOdo1gcYQ2Qmg": {
+    "metas": [
+      "meta_1769520875031_6v5wl"
+    ],
+    "lat": -20.292628,
+    "lng": 44.277048,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": "Rue Principale",
+    "nominatimCountry": "Madagascar"
+  },
+  "dNYsSAtxEdHbdgZFum56BA": {
+    "metas": [
+      "meta_1769520875031_z3snn"
+    ],
+    "lat": -20.2936233,
+    "lng": 44.2690862,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": "Rue de L'independance",
+    "nominatimCountry": "Madagascar"
+  },
+  "odM22JP8lpGsqvTyFX_tTg": {
+    "metas": [
+      "meta_1769520875031_h4xht"
+    ],
+    "lat": -20.7359167,
+    "lng": 44.002985,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": "Belo sur Mer",
+    "nominatimCountry": "Madagascar"
+  },
+  "2o_qnjxTBGK355T-JTIA8g": {
+    "metas": [
+      "meta_1769520875031_k3uk8"
+    ],
+    "lat": -20.7408937,
+    "lng": 43.9996733,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": "Chemin Hutamac",
+    "nominatimCountry": "Madagascar"
+  },
+  "IncoTL4kLQf5mLrE-QasMw": {
+    "metas": [
+      "meta_1769520875031_8k3gd"
+    ],
+    "lat": -20.793451,
+    "lng": 44.1644303,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "WME1ZWB0-52E2wU5ztfQrg": {
+    "metas": [
+      "meta_1769520875031_p2o99"
+    ],
+    "lat": -20.8820877,
+    "lng": 43.9033513,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "gTIy1mM89VJU_TLCZGAT3g": {
+    "metas": [
+      "meta_1769520875031_p2qv4"
+    ],
+    "lat": -20.8855389,
+    "lng": 43.8994427,
+    "country": "Madagascar",
+    "region": "Menabe",
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "m6QQunnZpfMcYL7qH4Ma5g": {
+    "metas": [
+      "meta_1769520875031_jgn8g"
+    ],
+    "lat": -21.8212111,
+    "lng": 43.2937578,
+    "country": "Madagascar",
+    "region": "Morombe",
+    "road": "Nosy Be",
+    "nominatimCountry": "Madagascar"
+  },
+  "E3M-iKbCtx3Rqk7x_9Zq5g": {
+    "metas": [
+      "meta_1769520875031_4mcfo"
+    ],
+    "lat": -21.9552149,
+    "lng": 43.2624952,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Belavenoka",
+    "nominatimCountry": "Madagascar"
+  },
+  "bn2liDbKgp4wP-PGPltl8w": {
+    "metas": [
+      "meta_1769520875031_0f6t9"
+    ],
+    "lat": -22.0729492,
+    "lng": 43.238577,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Andavadoaka",
+    "nominatimCountry": "Madagascar"
+  },
+  "tuX0cGsbTtzRKOb7lHBHYA": {
+    "metas": [
+      "meta_1769520875031_jqpix"
+    ],
+    "lat": -22.0768313,
+    "lng": 43.2434615,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Andavadoaka",
+    "nominatimCountry": "Madagascar"
+  },
+  "cHkkzCvbrTVilJ8vHpkaxA": {
+    "metas": [
+      "meta_1769520875031_kvkut"
+    ],
+    "lat": -22.0687898,
+    "lng": 43.2573662,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "K8z1PCHenQh-ilGPg5ZDBA": {
+    "metas": [
+      "meta_1769520875031_wj0px"
+    ],
+    "lat": -22.1170891,
+    "lng": 43.2455798,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Ampasilava",
+    "nominatimCountry": "Madagascar"
+  },
+  "MFcpJp7j2LNoBenZ-6-v0A": {
+    "metas": [
+      "meta_1769520875031_1296u"
+    ],
+    "lat": -22.1005175,
+    "lng": 43.2520775,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Ampasilava",
+    "nominatimCountry": "Madagascar"
+  },
+  "6Yd9K0-J3exriC-lfWnzuA": {
+    "metas": [
+      "meta_1769520875031_1i6z8"
+    ],
+    "lat": -22.1778192,
+    "lng": 43.2480043,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Anky",
+    "nominatimCountry": "Madagascar"
+  },
+  "Eizj3z_wQMDebzY6vefxDQ": {
+    "metas": [
+      "meta_1769520875031_j55m2"
+    ],
+    "lat": -22.2310978,
+    "lng": 43.2502502,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Kitambana",
+    "nominatimCountry": "Madagascar"
+  },
+  "WvbbUB6PdszcnJ64BqRL0Q": {
+    "metas": [
+      "meta_1769520875031_upajk"
+    ],
+    "lat": -22.2437818,
+    "lng": 43.3031735,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Vatoavo",
+    "nominatimCountry": "Madagascar"
+  },
+  "tO2e5XOO8tk9-GIJodX1JQ": {
+    "metas": [
+      "meta_1769520875031_7ghrx"
+    ],
+    "lat": -22.2223223,
+    "lng": 43.2665096,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Agnolignoly",
+    "nominatimCountry": "Madagascar"
+  },
+  "0NR1H26JY_5a9JRRVRluDw": {
+    "metas": [
+      "meta_1769520875031_qcncl"
+    ],
+    "lat": -22.0973126,
+    "lng": 46.7594034,
+    "country": "Madagascar",
+    "region": "Haute Matsiatra",
+    "road": "Soavahiny",
+    "nominatimCountry": "Madagascar"
+  },
+  "2MHQYnLjVJOHtjPvJe9BOA": {
+    "metas": [
+      "meta_1769520875031_2ro72"
+    ],
+    "lat": -22.0858516,
+    "lng": 46.7763412,
+    "country": "Madagascar",
+    "region": "Haute Matsiatra",
+    "road": "Soavahiny",
+    "nominatimCountry": "Madagascar"
+  },
+  "x_updRnfQRCD6uthNrk9kg": {
+    "metas": [
+      "meta_1769520875031_v41co"
+    ],
+    "lat": -22.0794362,
+    "lng": 46.7743519,
+    "country": "Madagascar",
+    "region": "Haute Matsiatra",
+    "road": "Soavahiny",
+    "nominatimCountry": "Madagascar"
+  },
+  "Twyea0lU1vE5WrQdds9-pg": {
+    "metas": [
+      "meta_1769520875031_cehu3"
+    ],
+    "lat": -23.3537172,
+    "lng": 43.6690274,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Toliara Centre",
+    "nominatimCountry": "Madagascar"
+  },
+  "9BD4-J_06o2LMrYsWYNksg": {
+    "metas": [
+      "meta_1769520875031_3uhs2"
+    ],
+    "lat": -23.5530873,
+    "lng": 43.7618975,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Saint Augustin",
+    "nominatimCountry": "Madagascar"
+  },
+  "92BVUDsImJ7X-iyxIdS7kQ": {
+    "metas": [
+      "meta_1769520875031_cnp4t"
+    ],
+    "lat": -23.5544601,
+    "lng": 43.7735119,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Route vers Andoharano",
+    "nominatimCountry": "Madagascar"
+  },
+  "JYfEHZZhiFgr5htn3pTFeg": {
+    "metas": [
+      "meta_1769520875031_4704h"
+    ],
+    "lat": -13.4453588,
+    "lng": 48.3354945,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": "Nosy Komba viewpoint",
+    "nominatimCountry": "Madagascar"
+  },
+  "txUvVYP5O_aTqUidQ4TO1Q": {
+    "metas": [
+      "meta_1769520875031_hs6tx"
+    ],
+    "lat": -13.5370484,
+    "lng": 48.3694809,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": "Doany",
+    "nominatimCountry": "Madagascar"
+  },
+  "qCiw4x3ktzkUMIShD0J9bw": {
+    "metas": [
+      "meta_1769520875031_ha62f"
+    ],
+    "lat": -13.5786479,
+    "lng": 48.3880467,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": "Ankify",
+    "nominatimCountry": "Madagascar"
+  },
+  "nHOXFlcMtbOUkDOyO7UIUg": {
+    "metas": [
+      "meta_1769520875031_rizv0"
+    ],
+    "lat": -13.7429164,
+    "lng": 48.4526498,
+    "country": "Madagascar",
+    "region": "Diana Region",
+    "road": "Ambolidimaka",
+    "nominatimCountry": "Madagascar"
+  },
+  "o54TquwCWm54kWZPBAE8gQ": {
+    "metas": [
+      "meta_1769520875031_x9nvc"
+    ],
+    "lat": -18.5523714,
+    "lng": 43.8581717,
+    "country": "Madagascar",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Madagascar"
+  },
+  "ARQUH_-0nOBBwSnV7dv-rA": {
+    "metas": [
+      "meta_1769520875031_vjc8a"
+    ],
+    "lat": -21.9708327,
+    "lng": 43.2565528,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Belavenoka",
+    "nominatimCountry": "Madagascar"
+  },
+  "t5-5ELIa6nJbNO9ZmO8Xcw": {
+    "metas": [
+      "meta_1769520875031_j8xkt"
+    ],
+    "lat": -22.218228,
+    "lng": 43.2523987,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Tsimivolo",
+    "nominatimCountry": "Madagascar"
+  },
+  "6moJLglLXBsiabMBePKWfw": {
+    "metas": [
+      "meta_1769520875031_ow07k"
+    ],
+    "lat": -23.573449,
+    "lng": 43.7627173,
+    "country": "Madagascar",
+    "region": "Atsimo-Andrefana",
+    "road": "Lovokampy",
+    "nominatimCountry": "Madagascar"
+  },
+  "MpIvUHQT2bsAAAQrDCILmQ": {
+    "metas": [
+      "meta_1769520876357_ljvnb"
+    ],
+    "lat": 16.7758706,
+    "lng": -3.0055052,
+    "country": "Mali",
+    "region": "Timbuktu",
+    "road": "Plaza de los Mártires",
+    "nominatimCountry": "Mali"
+  },
+  "JQ_0a_PZzjUAAAQrDCILxA": {
+    "metas": [
+      "meta_1769520876357_1fpjz"
+    ],
+    "lat": 16.7759729,
+    "lng": -3.0055326,
+    "country": "Mali",
+    "region": "Timbuktu",
+    "road": "Plaza de los Mártires",
+    "nominatimCountry": "Mali"
+  },
+  "Jjfjtd4RPW0AAAQ5TZIq-A": {
+    "metas": [
+      "meta_1769520876357_46cbv"
+    ],
+    "lat": 16.776001,
+    "lng": -3.0056198,
+    "country": "Mali",
+    "region": "Timbuktu",
+    "road": "Plaza de los Mártires",
+    "nominatimCountry": "Mali"
+  },
+  "gdSRDZ_5FRceIskBGQNXGw": {
+    "metas": [
+      "meta_1769520877568_3okqu"
+    ],
+    "lat": 9.3346056,
+    "lng": 12.4747266,
+    "country": "Nigeria",
+    "region": "Adamawa State",
+    "road": "Kofare",
+    "nominatimCountry": "Nigeria"
+  },
+  "wOKHX1TF_k05pN1_G6zlew": {
+    "metas": [
+      "meta_1769520877568_b5qia"
+    ],
+    "lat": 6.5293053,
+    "lng": 3.3675957,
+    "country": "Nigeria",
+    "region": "Lagos State",
+    "road": "Ikorodu Road",
+    "nominatimCountry": "Nigeria"
+  },
+  "KT52HFUGxW4OvJPewrA_tw": {
+    "metas": [
+      "meta_1769520877568_loxa7"
+    ],
+    "lat": 11.971503,
+    "lng": 8.5725141,
+    "country": "Nigeria",
+    "region": "Kano State",
+    "road": "Maiduguri Road",
+    "nominatimCountry": "Nigeria"
+  },
+  "MtKjsrQHmeueNeTyZmlXrg": {
+    "metas": [
+      "meta_1769520877568_5ybrq"
+    ],
+    "lat": 9.0593388,
+    "lng": 7.4902107,
+    "country": "Nigeria",
+    "region": "Federal Capital Territory",
+    "road": "Constitution Avenue",
+    "nominatimCountry": "Nigeria"
+  },
+  "DVkSSIJHWrhj8fyKO2vO-w": {
+    "metas": [
+      "meta_1769520877568_ys3mo"
+    ],
+    "lat": 10.1860195,
+    "lng": 8.5793897,
+    "country": "Nigeria",
+    "region": "Kaduna State",
+    "road": "Tagwaye",
+    "nominatimCountry": "Nigeria"
+  },
+  "6Igg3VnuhH7HUyuRF4wJKQ": {
+    "metas": [
+      "meta_1769520877568_tnsr1"
+    ],
+    "lat": 11.8753406,
+    "lng": 8.6142497,
+    "country": "Nigeria",
+    "region": "Kano State",
+    "road": "Sabon Gida",
+    "nominatimCountry": "Nigeria"
+  },
+  "mOJda_3KwNDDVHHqAWt9Pg": {
+    "metas": [
+      "meta_1769520877568_4f82z"
+    ],
+    "lat": 7.3541683,
+    "lng": 8.9254032,
+    "country": "Nigeria",
+    "region": "Benue State",
+    "road": "Tarkumbu",
+    "nominatimCountry": "Nigeria"
+  },
+  "zpRl6IcbfMfi9he7aIr63A": {
+    "metas": [
+      "meta_1769520877568_j5o07"
+    ],
+    "lat": 9.2913807,
+    "lng": 6.0355908,
+    "country": "Nigeria",
+    "region": "Niger State",
+    "road": "Federal Road F215 Owo - Tegina",
+    "nominatimCountry": "Nigeria"
+  },
+  "MAYH9aChPgw2t92LlCSjzw": {
+    "metas": [
+      "meta_1769520877568_yya0j"
+    ],
+    "lat": 11.3849242,
+    "lng": 4.5649952,
+    "country": "Nigeria",
+    "region": "Kebbi State",
+    "road": "A1",
+    "nominatimCountry": "Nigeria"
+  },
+  "03pX8P1jLldqpE-CIk0mDg": {
+    "metas": [
+      "meta_1769520877568_2pygx"
+    ],
+    "lat": 10.3500952,
+    "lng": 9.8870433,
+    "country": "Nigeria",
+    "region": "Bauchi State",
+    "road": "A3",
+    "nominatimCountry": "Nigeria"
+  },
+  "pj_jkCL-kFS89qXUNZR8kQ": {
+    "metas": [
+      "meta_1769520877568_20q25"
+    ],
+    "lat": 8.9079163,
+    "lng": 7.2839058,
+    "country": "Nigeria",
+    "region": "Federal Capital Territory",
+    "road": null,
+    "nominatimCountry": "Nigeria"
+  },
+  "Trh0nQY2S9hrUGN-v1ejng": {
+    "metas": [
+      "meta_1769520877568_8cj1u"
+    ],
+    "lat": 6.4185992,
+    "lng": 4.079123,
+    "country": "Nigeria",
+    "region": "Lagos State",
+    "road": "Lekki Free Trade Zone Road",
+    "nominatimCountry": "Nigeria"
+  },
+  "Fr1cuMf0HzvJ5qtOmS8jyg": {
+    "metas": [
+      "meta_1769520877568_m2bg3"
+    ],
+    "lat": 6.7126684,
+    "lng": 5.2056986,
+    "country": "Nigeria",
+    "region": "Edo State",
+    "road": "A121-1",
+    "nominatimCountry": "Nigeria"
+  },
+  "7h_NGCiejVSJDXN0SeRR9g": {
+    "metas": [
+      "meta_1769520877568_bng0o"
+    ],
+    "lat": 11.7013879,
+    "lng": 11.723303,
+    "country": "Nigeria",
+    "region": "Yobe",
+    "road": "Kano-Maiduguri Highway",
+    "nominatimCountry": "Nigeria"
+  },
+  "JI4E_09V3C7YvoywMTOXmg": {
+    "metas": [
+      "meta_1769520877568_yugol"
+    ],
+    "lat": 6.4022027,
+    "lng": 9.3995186,
+    "country": "Nigeria",
+    "region": "Cross River State",
+    "road": "F120",
+    "nominatimCountry": "Nigeria"
+  },
+  "Dv67MAH62kH3oKxhCNhYrQ": {
+    "metas": [
+      "meta_1769520877568_4twg6"
+    ],
+    "lat": 10.3385736,
+    "lng": 11.2081552,
+    "country": "Nigeria",
+    "region": "Gombe State",
+    "road": "TUKULMA ROAD",
+    "nominatimCountry": "Nigeria"
+  },
+  "3uSHWvY3ukCSVOiycVC24A": {
+    "metas": [
+      "meta_1769520878710_c011k"
+    ],
+    "lat": -21.226355,
+    "lng": 55.3055228,
+    "country": "Reunion",
+    "region": "Réunion",
+    "road": "Route des Tamarins",
+    "nominatimCountry": "France"
+  },
+  "S1W6r9Iq38Qd8ZXGSwntew": {
+    "metas": [
+      "meta_1769520878710_v4lft"
+    ],
+    "lat": -21.1364632,
+    "lng": 55.4709233,
+    "country": "Reunion",
+    "region": "Réunion",
+    "road": "Rue Alsace Corré",
+    "nominatimCountry": "France"
+  },
+  "zBypKn_6NsjPiEszFgSMLg": {
+    "metas": [
+      "meta_1769520878710_wrmz2"
+    ],
+    "lat": -21.2002123,
+    "lng": 55.4277196,
+    "country": "Reunion",
+    "region": "Réunion",
+    "road": "Route Forestière des Makes",
+    "nominatimCountry": "France"
+  },
+  "yEgLLLFQwFlg_5oG7GX65A": {
+    "metas": [
+      "meta_1769520878710_bahok"
+    ],
+    "lat": -21.2438578,
+    "lng": 55.7986438,
+    "country": "Reunion",
+    "region": "Réunion",
+    "road": "N 2",
+    "nominatimCountry": "France"
+  },
+  "AujZzZS1reN1X31kVDSngw": {
+    "metas": [
+      "meta_1769520879852_lf6i9"
+    ],
+    "lat": -1.9320627,
+    "lng": 30.0964598,
+    "country": "Rwanda",
+    "region": null,
+    "road": "KG 13 Avenue",
+    "nominatimCountry": "Rwanda"
+  },
+  "-UBQjZJL63nHgNv8OUxaJQ": {
+    "metas": [
+      "meta_1769520879852_z3fs9"
+    ],
+    "lat": -1.9152076,
+    "lng": 30.0684428,
+    "country": "Rwanda",
+    "region": null,
+    "road": "KG 14 Avenue",
+    "nominatimCountry": "Rwanda"
+  },
+  "s0FDruO3w4KZLyFvjJOEJg": {
+    "metas": [
+      "meta_1769520879852_r64sh"
+    ],
+    "lat": -1.9396306,
+    "lng": 30.112098,
+    "country": "Rwanda",
+    "region": null,
+    "road": "KG 16 Avenue",
+    "nominatimCountry": "Rwanda"
+  },
+  "g5vrcWpt90L4N-2YwMcmKQ": {
+    "metas": [
+      "meta_1769520879852_pdbo8"
+    ],
+    "lat": -2.085657,
+    "lng": 30.604468,
+    "country": "Rwanda",
+    "region": "Eastern Province",
+    "road": null,
+    "nominatimCountry": "Rwanda"
+  },
+  "BYix7VWjgmY8T0igLTfPyw": {
+    "metas": [
+      "meta_1769520879852_8lj07"
+    ],
+    "lat": -2.4637902,
+    "lng": 28.9602877,
+    "country": "Rwanda",
+    "region": "Western Province",
+    "road": null,
+    "nominatimCountry": "Rwanda"
+  },
+  "eiyiPvCqU9vhAoXN6Gz0iQ": {
+    "metas": [
+      "meta_1769520879852_gwqul"
+    ],
+    "lat": -2.086772,
+    "lng": 29.663305,
+    "country": "Rwanda",
+    "region": "Southern Province",
+    "road": "NR15",
+    "nominatimCountry": "Rwanda"
+  },
+  "UDDIqb5sTXEm1GSgIss2Qw": {
+    "metas": [
+      "meta_1769520879852_a51eo"
+    ],
+    "lat": -1.9380194,
+    "lng": 30.1317557,
+    "country": "Rwanda",
+    "region": null,
+    "road": "KG 3 Street",
+    "nominatimCountry": "Rwanda"
+  },
+  "YG_hTRPxCGu9Lh1D9xkxPg": {
+    "metas": [
+      "meta_1769520879852_mep0b"
+    ],
+    "lat": -1.947017,
+    "lng": 30.1017625,
+    "country": "Rwanda",
+    "region": null,
+    "road": "KG 13 Avenue",
+    "nominatimCountry": "Rwanda"
+  },
+  "Jb7h4X8JRc3_2VCcrgBDBQ": {
+    "metas": [
+      "meta_1769520879852_tm2tr"
+    ],
+    "lat": -1.9323118,
+    "lng": 30.1312656,
+    "country": "Rwanda",
+    "region": null,
+    "road": "KG 98 Street",
+    "nominatimCountry": "Rwanda"
+  },
+  "F9ShlOTj9Up5HSh1ldl0Zw": {
+    "metas": [
+      "meta_1769520879852_pe7lm"
+    ],
+    "lat": -1.9549622,
+    "lng": 30.1178307,
+    "country": "Rwanda",
+    "region": null,
+    "road": "KG 11 Avenue",
+    "nominatimCountry": "Rwanda"
+  },
+  "q9MgT9rUG-9vgwUfNCkMmw": {
+    "metas": [
+      "meta_1769520879852_nlgon"
+    ],
+    "lat": -1.9462306,
+    "lng": 30.1290114,
+    "country": "Rwanda",
+    "region": null,
+    "road": "KG 40 Street",
+    "nominatimCountry": "Rwanda"
+  },
+  "4jPsjQCk2V47fk4LPsuzlA": {
+    "metas": [
+      "meta_1769520879852_adw13"
+    ],
+    "lat": -2.512886,
+    "lng": 29.622991,
+    "country": "Rwanda",
+    "region": "Southern Province",
+    "road": "NR10",
+    "nominatimCountry": "Rwanda"
+  },
+  "7huCodzWB1uuUAe7NLLGLg": {
+    "metas": [
+      "meta_1769520879852_xwutq"
+    ],
+    "lat": -1.311826,
+    "lng": 30.349996,
+    "country": "Rwanda",
+    "region": "Eastern Province",
+    "road": null,
+    "nominatimCountry": "Rwanda"
+  },
+  "eQ_CN55m0WP8p1as_M_rFw": {
+    "metas": [
+      "meta_1769520879852_ogsey"
+    ],
+    "lat": -1.892527,
+    "lng": 30.684586,
+    "country": "Rwanda",
+    "region": "Eastern Province",
+    "road": "DR64",
+    "nominatimCountry": "Rwanda"
+  },
+  "nbY-E5GceisgrYKaDQOgcg": {
+    "metas": [
+      "meta_1769520879852_psr2e"
+    ],
+    "lat": -2.447846,
+    "lng": 28.917712,
+    "country": "Rwanda",
+    "region": "Western Province",
+    "road": null,
+    "nominatimCountry": "Rwanda"
+  },
+  "8vjAqJbtfEceN-WY_th6vg": {
+    "metas": [
+      "meta_1769520879852_ocryh"
+    ],
+    "lat": -2.532529,
+    "lng": 29.657639,
+    "country": "Rwanda",
+    "region": "Southern Province",
+    "road": "NR10",
+    "nominatimCountry": "Rwanda"
+  },
+  "B2pcWIR3LSLwFnLVCv1tJQ": {
+    "metas": [
+      "meta_1769520879852_lul5t"
+    ],
+    "lat": -1.970892,
+    "lng": 29.393798,
+    "country": "Rwanda",
+    "region": "Western Province",
+    "road": "Rubavu-Karongi",
+    "nominatimCountry": "Rwanda"
+  },
+  "bC_dNAmGoIkaGUARHWB3wg": {
+    "metas": [
+      "meta_1769520879852_w1mrv"
+    ],
+    "lat": -2.088459,
+    "lng": 29.677482,
+    "country": "Rwanda",
+    "region": "Southern Province",
+    "road": "NR15",
+    "nominatimCountry": "Rwanda"
+  },
+  "sycdc0NP764GAnBZLx_joQ": {
+    "metas": [
+      "meta_1769520879852_tji8u"
+    ],
+    "lat": -2.055941,
+    "lng": 29.585448,
+    "country": "Rwanda",
+    "region": "Western Province",
+    "road": "NR15",
+    "nominatimCountry": "Rwanda"
+  },
+  "yGf8wuLr4jvNeX6E5sOvnA": {
+    "metas": [
+      "meta_1769520879852_nkn21"
+    ],
+    "lat": -1.772933,
+    "lng": 29.559969,
+    "country": "Rwanda",
+    "region": "Western Province",
+    "road": "NR16",
+    "nominatimCountry": "Rwanda"
+  },
+  "3pxdFwSOdmuNzY7FfE6ORQ": {
+    "metas": [
+      "meta_1769520879852_vrj75"
+    ],
+    "lat": -1.820153,
+    "lng": 30.191417,
+    "country": "Rwanda",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Rwanda"
+  },
+  "8LZT04CCNLxhdUf1uDBBkA": {
+    "metas": [
+      "meta_1769520879852_hn6ui"
+    ],
+    "lat": -1.9164965,
+    "lng": 30.0950081,
+    "country": "Rwanda",
+    "region": null,
+    "road": "KG 420 Street",
+    "nominatimCountry": "Rwanda"
+  },
+  "Jj1IiHHDaT9c9Jlb0hIKog": {
+    "metas": [
+      "meta_1769520880991_1vj5m"
+    ],
+    "lat": 15.9491681,
+    "lng": -16.4348682,
+    "country": "Senegal",
+    "region": "Saint-Louis Region",
+    "road": "TAH 1",
+    "nominatimCountry": "Senegal"
+  },
+  "mBU7RG5tFoirIOjgG40HAA": {
+    "metas": [
+      "meta_1769520880991_q9i0g"
+    ],
+    "lat": 14.7403188,
+    "lng": -16.220673,
+    "country": "Senegal",
+    "region": "Diourbel Region",
+    "road": "N10",
+    "nominatimCountry": "Senegal"
+  },
+  "ZYnZsc1TXNZUAJU6RfZr9Q": {
+    "metas": [
+      "meta_1769520880991_pmf2r"
+    ],
+    "lat": 15.4729995,
+    "lng": -13.1777565,
+    "country": "Senegal",
+    "region": "Matam Region",
+    "road": "N 2",
+    "nominatimCountry": "Senegal"
+  },
+  "Q85YJYNkgqyCySoTi2_fNQ": {
+    "metas": [
+      "meta_1769520880991_tkxi9"
+    ],
+    "lat": 14.3490683,
+    "lng": -16.4179222,
+    "country": "Senegal",
+    "region": "Fatick Region",
+    "road": "N9",
+    "nominatimCountry": "Senegal"
+  },
+  "IXcnZtiT2v-V9Sd5roAq2A": {
+    "metas": [
+      "meta_1769520880991_01zub"
+    ],
+    "lat": 14.7770161,
+    "lng": -16.939853,
+    "country": "Senegal",
+    "region": "Thiès Region",
+    "road": "Rond point de la bulangerie Rocade",
+    "nominatimCountry": "Senegal"
+  },
+  "p6YhsWUiuuGHua4mGvRzUg": {
+    "metas": [
+      "meta_1769520880991_r0web"
+    ],
+    "lat": 14.6693921,
+    "lng": -16.3387281,
+    "country": "Senegal",
+    "region": "Diourbel Region",
+    "road": "N 3",
+    "nominatimCountry": "Senegal"
+  },
+  "YN98d_xhoLzkMN6z7rvYXg": {
+    "metas": [
+      "meta_1769520880991_ht7s3"
+    ],
+    "lat": 14.785129,
+    "lng": -16.5990688,
+    "country": "Senegal",
+    "region": "Diourbel Region",
+    "road": "Nanlar",
+    "nominatimCountry": "Senegal"
+  },
+  "PcDuFdxiAoeE4Jn4pdRLZQ": {
+    "metas": [
+      "meta_1769520880991_yu4ew"
+    ],
+    "lat": 14.815052,
+    "lng": -12.4472482,
+    "country": "Senegal",
+    "region": "Tambacounda Region",
+    "road": "N 2",
+    "nominatimCountry": "Senegal"
+  },
+  "b44eC3I4SIkhwlD11jCxcg": {
+    "metas": [
+      "meta_1769520880991_3z9qm"
+    ],
+    "lat": 16.49289,
+    "lng": -15.7922299,
+    "country": "Senegal",
+    "region": "Saint-Louis Region",
+    "road": "Gaya",
+    "nominatimCountry": "Senegal"
+  },
+  "75LW9NilcLjjodR81T4VOg": {
+    "metas": [
+      "meta_1769520880991_nzcxb"
+    ],
+    "lat": 14.5493792,
+    "lng": -16.4105292,
+    "country": "Senegal",
+    "region": "Fatick Region",
+    "road": "N9",
+    "nominatimCountry": "Senegal"
+  },
+  "Uj9dF_Ba1tTDnu3g-hx36A": {
+    "metas": [
+      "meta_1769520880991_lbdie"
+    ],
+    "lat": 14.796859,
+    "lng": -16.8128854,
+    "country": "Senegal",
+    "region": "Thiès Region",
+    "road": "Autoroute Thiès-Touba",
+    "nominatimCountry": "Senegal"
+  },
+  "RbJQQ0UlGX6df2bw38JSgA": {
+    "metas": [
+      "meta_1769520880991_yx97h"
+    ],
+    "lat": 14.0307677,
+    "lng": -13.1363615,
+    "country": "Senegal",
+    "region": "Tambacounda Region",
+    "road": "N 1",
+    "nominatimCountry": "Senegal"
+  },
+  "cXi22nY0gkCMGJbHbIPpwA": {
+    "metas": [
+      "meta_1769520880991_2bdnj"
+    ],
+    "lat": 16.2628949,
+    "lng": -16.1888021,
+    "country": "Senegal",
+    "region": "Saint-Louis Region",
+    "road": "Route de Rosso",
+    "nominatimCountry": "Senegal"
+  },
+  "8fjeQNI5sxH_IfF_raOPqA": {
+    "metas": [
+      "meta_1769520880991_ma3fp"
+    ],
+    "lat": 16.4986462,
+    "lng": -14.5170492,
+    "country": "Senegal",
+    "region": "Saint-Louis Region",
+    "road": "N 2",
+    "nominatimCountry": "Senegal"
+  },
+  "XP2KAlgLX-5G4ooD2nkmNg": {
+    "metas": [
+      "meta_1769520880991_743g5"
+    ],
+    "lat": 15.271937,
+    "lng": -13.9838449,
+    "country": "Senegal",
+    "region": "Matam Region",
+    "road": "Route Nationale 3",
+    "nominatimCountry": "Senegal"
+  },
+  "HYUjC4JdfgONIaak6TpCYg": {
+    "metas": [
+      "meta_1769520880991_8eszi"
+    ],
+    "lat": 13.0649865,
+    "lng": -11.6857168,
+    "country": "Senegal",
+    "region": "Kédougou Region",
+    "road": "R.06.1",
+    "nominatimCountry": "Senegal"
+  },
+  "1rTZTJYPPVUtMygU-wxmjA": {
+    "metas": [
+      "meta_1769520880991_2yewm"
+    ],
+    "lat": 12.9951132,
+    "lng": -14.7045539,
+    "country": "Senegal",
+    "region": "Kolda Region",
+    "road": "Road Kolda Velingara",
+    "nominatimCountry": "Senegal"
+  },
+  "uWbQEzvR-occXFEkJlVm5A": {
+    "metas": [
+      "meta_1769520880991_ma9rg"
+    ],
+    "lat": 14.72922,
+    "lng": -16.982268,
+    "country": "Senegal",
+    "region": "Thiès Region",
+    "road": null,
+    "nominatimCountry": "Senegal"
+  },
+  "dc9h7w_GkIXG2eO2KI_1Vg": {
+    "metas": [
+      "meta_1769520880991_mbp7v"
+    ],
+    "lat": 16.4987061,
+    "lng": -14.5039626,
+    "country": "Senegal",
+    "region": "Saint-Louis Region",
+    "road": "N 2",
+    "nominatimCountry": "Senegal"
+  },
+  "Bq8z8MLOQjfj3uy1z45eig": {
+    "metas": [
+      "meta_1769520880991_ld8y6"
+    ],
+    "lat": 14.0207191,
+    "lng": -15.1755277,
+    "country": "Senegal",
+    "region": "Kaffrine Region",
+    "road": "N 1",
+    "nominatimCountry": "Senegal"
+  },
+  "UBWb6i5qZHxOWzPh95lhXg": {
+    "metas": [
+      "meta_1769520880991_s1uyg"
+    ],
+    "lat": 12.4953593,
+    "lng": -15.5756362,
+    "country": "Senegal",
+    "region": "Sédhiou Region",
+    "road": "N 6",
+    "nominatimCountry": "Senegal"
+  },
+  "TsVulVle5z-nS2IFDxMpng": {
+    "metas": [
+      "meta_1769520880991_9fhda"
+    ],
+    "lat": 13.2419383,
+    "lng": -14.9679386,
+    "country": "Senegal",
+    "region": "Kolda Region",
+    "road": "R071",
+    "nominatimCountry": "Senegal"
+  },
+  "zwhRaqjSM_Hmhe_pOwri5g": {
+    "metas": [
+      "meta_1769520880991_481uc"
+    ],
+    "lat": 14.8625239,
+    "lng": -15.8747316,
+    "country": "Senegal",
+    "region": "Diourbel Region",
+    "road": "N 3",
+    "nominatimCountry": "Senegal"
+  },
+  "uGrv1a2_lQk0TnVl9gLLKg": {
+    "metas": [
+      "meta_1769520882130_gin03"
+    ],
+    "lat": -25.7434053,
+    "lng": 28.2324286,
+    "country": "South Africa",
+    "region": "Gauteng",
+    "road": "Stanza Bopape Street",
+    "nominatimCountry": "South Africa"
+  },
+  "SqdETe3HLoG1XFzK9kisrA": {
+    "metas": [
+      "meta_1769520882131_7h08t"
+    ],
+    "lat": -26.9839458,
+    "lng": 26.4667234,
+    "country": "South Africa",
+    "region": "North West",
+    "road": "D860",
+    "nominatimCountry": "South Africa"
+  },
+  "JTvjUeMEPAKL6UPEjI_0oQ": {
+    "metas": [
+      "meta_1769520882131_3ew1g"
+    ],
+    "lat": -27.3573577,
+    "lng": 28.0105057,
+    "country": "South Africa",
+    "region": "Free State",
+    "road": "R57",
+    "nominatimCountry": "South Africa"
+  },
+  "qCbWO9PZqF6bTC1Dote2dA": {
+    "metas": [
+      "meta_1769520882131_in83v"
+    ],
+    "lat": -27.6459683,
+    "lng": 29.9637312,
+    "country": "South Africa",
+    "region": "KwaZulu-Natal",
+    "road": "N11",
+    "nominatimCountry": "South Africa"
+  },
+  "tkPrSi374YiAyVdBuej5PQ": {
+    "metas": [
+      "meta_1769520882131_1chqy"
+    ],
+    "lat": -33.8673497,
+    "lng": 18.6131298,
+    "country": "South Africa",
+    "region": "Western Cape",
+    "road": "Klipkers Road",
+    "nominatimCountry": "South Africa"
+  },
+  "ob3EOPTopQSN-_ThCXN3BA": {
+    "metas": [
+      "meta_1769520882131_lx8bu"
+    ],
+    "lat": -30.392261,
+    "lng": 24.118969,
+    "country": "South Africa",
+    "region": "Northern Cape",
+    "road": "Emthanjeni Ward 6",
+    "nominatimCountry": "South Africa"
+  },
+  "JR8P9s80PiPJvgJkgeAtlA": {
+    "metas": [
+      "meta_1769520882131_30oey"
+    ],
+    "lat": -26.939014,
+    "lng": 27.25364,
+    "country": "South Africa",
+    "region": "Free State",
+    "road": "S80",
+    "nominatimCountry": "South Africa"
+  },
+  "A4SMnKgzSF3xboAEv3fnyA": {
+    "metas": [
+      "meta_1769520882131_sska4"
+    ],
+    "lat": -31.671332,
+    "lng": 29.0265,
+    "country": "South Africa",
+    "region": "Eastern Cape",
+    "road": "Mzamo",
+    "nominatimCountry": "South Africa"
+  },
+  "Miz2BqdW19CZ62maFXEcKA": {
+    "metas": [
+      "meta_1769520882131_70ge9"
+    ],
+    "lat": -29.9743359,
+    "lng": 29.9089783,
+    "country": "South Africa",
+    "region": "KwaZulu-Natal",
+    "road": "R612",
+    "nominatimCountry": "South Africa"
+  },
+  "ZxwM5-tf3aj_8yPwiKUPuQ": {
+    "metas": [
+      "meta_1769520882131_ba87s"
+    ],
+    "lat": -25.6378661,
+    "lng": 27.0436712,
+    "country": "South Africa",
+    "region": "North West",
+    "road": "N4",
+    "nominatimCountry": "South Africa"
+  },
+  "x8pfEaFHq02KTijL1x6LXw": {
+    "metas": [
+      "meta_1769520882131_kcsio"
+    ],
+    "lat": -26.0679359,
+    "lng": 30.286386,
+    "country": "South Africa",
+    "region": "Mpumalanga",
+    "road": "R38",
+    "nominatimCountry": "South Africa"
+  },
+  "21dhzYN4y5VZLJ4ehC0Kag": {
+    "metas": [
+      "meta_1769520882131_r1ie3"
+    ],
+    "lat": -26.0682226,
+    "lng": 30.285819,
+    "country": "South Africa",
+    "region": "Mpumalanga",
+    "road": "R38",
+    "nominatimCountry": "South Africa"
+  },
+  "E0O9hBVWkMABuXsdu9Jf7Q": {
+    "metas": [
+      "meta_1769520882131_gq713"
+    ],
+    "lat": -32.663385,
+    "lng": 25.886563,
+    "country": "South Africa",
+    "region": "Eastern Cape",
+    "road": "N10",
+    "nominatimCountry": "South Africa"
+  },
+  "zc39cNu2u9Wri_rey5ocLw": {
+    "metas": [
+      "meta_1769520882131_h7cjy"
+    ],
+    "lat": -31.887962,
+    "lng": 24.802908,
+    "country": "South Africa",
+    "region": "Eastern Cape",
+    "road": "N9",
+    "nominatimCountry": "South Africa"
+  },
+  "J6CFxuhQMyCryY3gkvZnmw": {
+    "metas": [
+      "meta_1769520882131_w3vfl"
+    ],
+    "lat": -24.2220761,
+    "lng": 27.4967489,
+    "country": "South Africa",
+    "region": "Limpopo",
+    "road": "R510",
+    "nominatimCountry": "South Africa"
+  },
+  "q7yC0BvIdNPcOI0l5Qf3Fg": {
+    "metas": [
+      "meta_1769520882131_30fg7"
+    ],
+    "lat": -29.450803,
+    "lng": 22.067106,
+    "country": "South Africa",
+    "region": "Northern Cape",
+    "road": "Siyathemba Ward 3",
+    "nominatimCountry": "South Africa"
+  },
+  "IwYQuoJxN1uxAXfkbG08LQ": {
+    "metas": [
+      "meta_1769520882131_a1c3q"
+    ],
+    "lat": -26.226287,
+    "lng": 29.199203,
+    "country": "South Africa",
+    "region": "Mpumalanga",
+    "road": "R545",
+    "nominatimCountry": "South Africa"
+  },
+  "z-Kl67SRWKngSrNBRuV0pA": {
+    "metas": [
+      "meta_1769520882131_ti1h7"
+    ],
+    "lat": -24.2702596,
+    "lng": 29.5504879,
+    "country": "South Africa",
+    "region": "Limpopo",
+    "road": "Orrie Baragwanath Pass",
+    "nominatimCountry": "South Africa"
+  },
+  "UXjzZ3jZgCOFm5D521IOXA": {
+    "metas": [
+      "meta_1769520882131_2caq2"
+    ],
+    "lat": -33.5550075,
+    "lng": 18.9700903,
+    "country": "South Africa",
+    "region": "Western Cape",
+    "road": "Drakenstein Ward 18",
+    "nominatimCountry": "South Africa"
+  },
+  "REjD0rIhg8XuXiMyl-yYmA": {
+    "metas": [
+      "meta_1769520882131_onp78"
+    ],
+    "lat": -28.9014972,
+    "lng": 21.0681948,
+    "country": "South Africa",
+    "region": "Northern Cape",
+    "road": "R27",
+    "nominatimCountry": "South Africa"
+  },
+  "fnQiQnnJRSjbJJWZPCncZw": {
+    "metas": [
+      "meta_1769520882131_6eks0"
+    ],
+    "lat": -28.9747705,
+    "lng": 31.6401186,
+    "country": "South Africa",
+    "region": "KwaZulu-Natal",
+    "road": "R102",
+    "nominatimCountry": "South Africa"
+  },
+  "HVr9PQ9_2vfvOlumeAPVYw": {
+    "metas": [
+      "meta_1769520882131_8um6v"
+    ],
+    "lat": -29.8378303,
+    "lng": 30.9537532,
+    "country": "South Africa",
+    "region": "KwaZulu-Natal",
+    "road": "Blythe Place",
+    "nominatimCountry": "South Africa"
+  },
+  "oh8y6XR_u1dv-BcGMtvtbA": {
+    "metas": [
+      "meta_1769520882131_sytvo"
+    ],
+    "lat": -25.899521,
+    "lng": 31.0950532,
+    "country": "South Africa",
+    "region": "Mpumalanga",
+    "road": "R40",
+    "nominatimCountry": "South Africa"
+  },
+  "T5A2_a57RAmeSs24Me7u1g": {
+    "metas": [
+      "meta_1769520882131_h6n5p"
+    ],
+    "lat": -34.1597433,
+    "lng": 19.8570383,
+    "country": "South Africa",
+    "region": "Western Cape",
+    "road": "N2",
+    "nominatimCountry": "South Africa"
+  },
+  "6Fspb6D79WMSNAsdmOlmYg": {
+    "metas": [
+      "meta_1769520882131_vd5gg"
+    ],
+    "lat": -27.0726562,
+    "lng": 32.6003298,
+    "country": "South Africa",
+    "region": "KwaZulu-Natal",
+    "road": "R22",
+    "nominatimCountry": "South Africa"
+  },
+  "HJS6LiusgXX1E0TCNAvZ0A": {
+    "metas": [
+      "meta_1769520882131_s6njr",
+      "meta_1769520882131_g3dzm"
+    ],
+    "lat": -24.3888686,
+    "lng": 31.6581915,
+    "country": "South Africa",
+    "region": "Mpumalanga",
+    "road": "Orpen Satara Road",
+    "nominatimCountry": "South Africa"
+  },
+  "0RgMDP6XoVTvWMvJhoo2ow": {
+    "metas": [
+      "meta_1769520882131_ibh2n"
+    ],
+    "lat": -33.9474069,
+    "lng": 25.6025426,
+    "country": "South Africa",
+    "region": "Eastern Cape",
+    "road": "Diaz Road",
+    "nominatimCountry": "South Africa"
+  },
+  "rou7-gltECQBDsfAwXbKMA": {
+    "metas": [
+      "meta_1769520882131_0gttt"
+    ],
+    "lat": -26.1765284,
+    "lng": 28.0011311,
+    "country": "South Africa",
+    "region": "Gauteng",
+    "road": "4th Avenue",
+    "nominatimCountry": "South Africa"
+  },
+  "FaozfN6RRofP0L318SY16A": {
+    "metas": [
+      "meta_1769520882131_aarfl"
+    ],
+    "lat": -29.8469595,
+    "lng": 30.9919806,
+    "country": "South Africa",
+    "region": "KwaZulu-Natal",
+    "road": "Peter Mokaba Ridge",
+    "nominatimCountry": "South Africa"
+  },
+  "5QF8CCYPY6US-SKAo20iyA": {
+    "metas": [
+      "meta_1769520882131_1atus"
+    ],
+    "lat": -26.2086238,
+    "lng": 28.0460883,
+    "country": "South Africa",
+    "region": "Gauteng",
+    "road": "Albert Street",
+    "nominatimCountry": "South Africa"
+  },
+  "1_diXcFw8zbGX9O8We7CyQ": {
+    "metas": [
+      "meta_1769520882131_59w3b"
+    ],
+    "lat": -33.9562235,
+    "lng": 18.503605,
+    "country": "South Africa",
+    "region": "Western Cape",
+    "road": "Woolmore Street",
+    "nominatimCountry": "South Africa"
+  },
+  "ZzGPC7Do7W8UDrQLCZ8xUA": {
+    "metas": [
+      "meta_1769520882131_b17i6"
+    ],
+    "lat": -33.975521,
+    "lng": 22.4932313,
+    "country": "South Africa",
+    "region": "Western Cape",
+    "road": "Knysna Street",
+    "nominatimCountry": "South Africa"
+  },
+  "JfDcdBmToKmH_dac-cJ8pQ": {
+    "metas": [
+      "meta_1769520883283_ivbn1"
+    ],
+    "lat": 0.333636,
+    "lng": 6.709084,
+    "country": "São Tomé and Príncipe",
+    "region": "Água Grande",
+    "road": "Estrada de Agua Porca",
+    "nominatimCountry": "São Tomé and Príncipe"
+  },
+  "_HdCk8UToRhRT-vunTsCtg": {
+    "metas": [
+      "meta_1769520883283_hjz3c"
+    ],
+    "lat": 0.337415,
+    "lng": 6.728159,
+    "country": "São Tomé and Príncipe",
+    "region": "Água Grande",
+    "road": "Avenida Geovany",
+    "nominatimCountry": "São Tomé and Príncipe"
+  },
+  "abE-f_dZInHoXg_yp9s_sQ": {
+    "metas": [
+      "meta_1769520883283_x7s5x"
+    ],
+    "lat": 1.6575385,
+    "lng": 7.4184275,
+    "country": "São Tomé and Príncipe",
+    "region": "Autonomous Region of Príncipe",
+    "road": "Ponta Forte",
+    "nominatimCountry": "São Tomé and Príncipe"
+  },
+  "zE3uBaYiRqJDTCBx8FNd6A": {
+    "metas": [
+      "meta_1769520883283_922aj"
+    ],
+    "lat": 1.632341,
+    "lng": 7.441709,
+    "country": "São Tomé and Príncipe",
+    "region": "Autonomous Region of Príncipe",
+    "road": "Santo Cristo",
+    "nominatimCountry": "São Tomé and Príncipe"
+  },
+  "GnziwSXUf7KFeejGiopfjA": {
+    "metas": [
+      "meta_1769520883283_0s783"
+    ],
+    "lat": 0.028403,
+    "lng": 6.525071,
+    "country": "São Tomé and Príncipe",
+    "region": "Caué",
+    "road": "Porto Alegre",
+    "nominatimCountry": "São Tomé and Príncipe"
+  },
+  "QtfaYvCT4nRaE51i6JHjCg": {
+    "metas": [
+      "meta_1769520884432_se4pw"
+    ],
+    "lat": -3.0683147,
+    "lng": 37.3267226,
+    "country": "Tanzania",
+    "region": "Kilimanjaro",
+    "road": "Barranco Wall",
+    "nominatimCountry": "Tanzania"
+  },
+  "rsC7a-j_n5oCYhQCXQvqlw": {
+    "metas": [
+      "meta_1769520884432_ath1h"
+    ],
+    "lat": -4.6717493,
+    "lng": 29.631431,
+    "country": "Tanzania",
+    "region": "Kigoma Region",
+    "road": null,
+    "nominatimCountry": "Tanzania"
+  },
+  "129ji_QR5ZVfE_2YH2xAzA": {
+    "metas": [
+      "meta_1769520884432_pc5im"
+    ],
+    "lat": -4.7501457,
+    "lng": 29.6234708,
+    "country": "Tanzania",
+    "region": "Kigoma Region",
+    "road": "Kagongo",
+    "nominatimCountry": "Tanzania"
+  },
+  "CEMa14P8Z1bJMPL_2lodiw": {
+    "metas": [
+      "meta_1769520884432_pn8hz"
+    ],
+    "lat": -4.6880217,
+    "lng": 29.6433757,
+    "country": "Tanzania",
+    "region": "Kigoma Region",
+    "road": null,
+    "nominatimCountry": "Tanzania"
+  },
+  "XIlxOxx9f5P76VBQbbHFKQ": {
+    "metas": [
+      "meta_1769520885577_r9dia",
+      "meta_1769520885577_e2xcg"
+    ],
+    "lat": 34.8309143,
+    "lng": 10.7258192,
+    "country": "Tunisia",
+    "region": "Sfax",
+    "road": "RN1,RL911",
+    "nominatimCountry": "Tunisia"
+  },
+  "EgLp410WEYu-I_1GOnDgLg": {
+    "metas": [
+      "meta_1769520885577_ajdi6"
+    ],
+    "lat": 35.4537887,
+    "lng": 10.9668733,
+    "country": "Tunisia",
+    "region": "Mahdia",
+    "road": "الطريق الجهوية المكنين - قصور الساف",
+    "nominatimCountry": "Tunisia"
+  },
+  "KTlbegrXKqDSHrqiPvu9WQ": {
+    "metas": [
+      "meta_1769520885577_hs2y3"
+    ],
+    "lat": 34.4863569,
+    "lng": 10.3742995,
+    "country": "Tunisia",
+    "region": "Sfax",
+    "road": "الطريق الوطنية تونس - رأس جدير",
+    "nominatimCountry": "Tunisia"
+  },
+  "Bi3wPdFJ1ezMZQNCxVuxMg": {
+    "metas": [
+      "meta_1769520885577_nwnpp"
+    ],
+    "lat": 36.8089113,
+    "lng": 10.1329401,
+    "country": "Tunisia",
+    "region": "Tunis",
+    "road": "الطريق الوطنية تونس - طبرقة",
+    "nominatimCountry": "Tunisia"
+  },
+  "pj-yAJz70EjsCoev4rTgcA": {
+    "metas": [
+      "meta_1769520885577_liptu"
+    ],
+    "lat": 34.4864779,
+    "lng": 10.3745366,
+    "country": "Tunisia",
+    "region": "Sfax",
+    "road": "الطريق الوطنية تونس - رأس جدير",
+    "nominatimCountry": "Tunisia"
+  },
+  "nqs-D0HF_iP_nwN1phZHYA": {
+    "metas": [
+      "meta_1769520885577_byzy2"
+    ],
+    "lat": 37.2778562,
+    "lng": 9.8696711,
+    "country": "Tunisia",
+    "region": "Bizerte",
+    "road": null,
+    "nominatimCountry": "Tunisia"
+  },
+  "e_eKXvaMlx1U3nuLK8C6pQ": {
+    "metas": [
+      "meta_1769520885577_s7a8s"
+    ],
+    "lat": 36.8878562,
+    "lng": 10.3227061,
+    "country": "Tunisia",
+    "region": "Tunis",
+    "road": "Sidi Abdelaziz",
+    "nominatimCountry": "Tunisia"
+  },
+  "4aUrvvVN7VUjzCQ8vacSEQ": {
+    "metas": [
+      "meta_1769520885577_8eqfg"
+    ],
+    "lat": 35.6753472,
+    "lng": 10.1069992,
+    "country": "Tunisia",
+    "region": "Kairouan",
+    "road": "نهج الطيب المهيري",
+    "nominatimCountry": "Tunisia"
+  },
+  "XhMkhRLLzDzdByIN4WztDQ": {
+    "metas": [
+      "meta_1769520885577_ts9pf"
+    ],
+    "lat": 33.8227214,
+    "lng": 10.8679134,
+    "country": "Tunisia",
+    "region": "Médenine",
+    "road": "Erriadh",
+    "nominatimCountry": "Tunisia"
+  },
+  "O0OOOm7IDZ13M9WImWjs4g": {
+    "metas": [
+      "meta_1769520885577_6ae5u"
+    ],
+    "lat": 36.9330696,
+    "lng": 10.0973546,
+    "country": "Tunisia",
+    "region": "Ariana",
+    "road": "الطريق السريعة تونس - بنزرت",
+    "nominatimCountry": "Tunisia"
+  },
+  "9sHb_eM55JDo2JeG_y4zHw": {
+    "metas": [
+      "meta_1769520885577_ewaqb"
+    ],
+    "lat": 36.563549,
+    "lng": 10.5268034,
+    "country": "Tunisia",
+    "region": "Nabeul",
+    "road": "الطريق الوطنية تونس - رأس جدير",
+    "nominatimCountry": "Tunisia"
+  },
+  "zbniaEDK9kExTEVjRid5Vw": {
+    "metas": [
+      "meta_1769520885577_gpoy8"
+    ],
+    "lat": 33.6637354,
+    "lng": 10.2712883,
+    "country": "Tunisia",
+    "region": "Gabès",
+    "road": "الطريق الوطنية تونس - رأس جدير",
+    "nominatimCountry": "Tunisia"
+  },
+  "F-gVQJjTfJ7tcdrQdu7Rjg": {
+    "metas": [
+      "meta_1769520885577_yfpfz"
+    ],
+    "lat": 37.1421769,
+    "lng": 9.8999543,
+    "country": "Tunisia",
+    "region": "Bizerte",
+    "road": "RR151",
+    "nominatimCountry": "Tunisia"
+  },
+  "bqjtik12zKTkQph0APsBfg": {
+    "metas": [
+      "meta_1769520885577_dd4py"
+    ],
+    "lat": 33.8854449,
+    "lng": 10.0830544,
+    "country": "Tunisia",
+    "region": "Gabès",
+    "road": "الطريق الوطنية تونس - رأس جدير",
+    "nominatimCountry": "Tunisia"
+  },
+  "20cik4mw-ilv4PUVbreYQQ": {
+    "metas": [
+      "meta_1769520885577_o6sr8"
+    ],
+    "lat": 33.4070064,
+    "lng": 10.4214887,
+    "country": "Tunisia",
+    "region": "Médenine",
+    "road": "الطريق الوطنية تونس - رأس جدير",
+    "nominatimCountry": "Tunisia"
+  },
+  "WBQ591Pu51rxPSWpFDGWkQ": {
+    "metas": [
+      "meta_1769520885577_iuiog"
+    ],
+    "lat": 35.742679,
+    "lng": 10.442305,
+    "country": "Tunisia",
+    "region": "Sousse",
+    "road": null,
+    "nominatimCountry": "Tunisia"
+  },
+  "O-zKwqpXIB74GkG_LKCz6Q": {
+    "metas": [
+      "meta_1769520885577_3p6w1"
+    ],
+    "lat": 33.6372432,
+    "lng": 10.9374599,
+    "country": "Tunisia",
+    "region": "Médenine",
+    "road": "Route Romaine Djerba - Zarzis",
+    "nominatimCountry": "Tunisia"
+  },
+  "a2PSGow2-kE20HgtbEd2JQ": {
+    "metas": [
+      "meta_1769520886757_g19u7"
+    ],
+    "lat": 0.3152623,
+    "lng": 32.5707302,
+    "country": "Uganda",
+    "region": null,
+    "road": "Martin Road",
+    "nominatimCountry": "Uganda"
+  },
+  "-4VBJRsL2rRxstp5SXmUJg": {
+    "metas": [
+      "meta_1769520886757_vgg2i"
+    ],
+    "lat": 0.3498996,
+    "lng": 32.5710695,
+    "country": "Uganda",
+    "region": null,
+    "road": "Gayaza Road",
+    "nominatimCountry": "Uganda"
+  },
+  "qMAl7D1hZ8dN1vFCwCPzXQ": {
+    "metas": [
+      "meta_1769520886757_d7cl9"
+    ],
+    "lat": 0.1468879,
+    "lng": 32.5297128,
+    "country": "Uganda",
+    "region": null,
+    "road": "Entebbe Road - Kawuku - Nakawuka Road",
+    "nominatimCountry": "Uganda"
+  },
+  "lnF5_An6UANpe-Ji12fkRQ": {
+    "metas": [
+      "meta_1769520886757_xu3h0"
+    ],
+    "lat": 0.3151966,
+    "lng": 32.5799087,
+    "country": "Uganda",
+    "region": null,
+    "road": "The Square 2",
+    "nominatimCountry": "Uganda"
+  },
+  "QOv01bv5irC6bPmY88wGmg": {
+    "metas": [
+      "meta_1769520886757_tqmzt"
+    ],
+    "lat": 0.3125346,
+    "lng": 32.5846333,
+    "country": "Uganda",
+    "region": null,
+    "road": "Kampala Road",
+    "nominatimCountry": "Uganda"
+  },
+  "mg06gH9Aq50PGuMbTnjeew": {
+    "metas": [
+      "meta_1769520886757_5nf0v"
+    ],
+    "lat": -0.142312,
+    "lng": 29.9099473,
+    "country": "Uganda",
+    "region": "Kasese",
+    "road": "C51601",
+    "nominatimCountry": "Uganda"
+  },
+  "-7WJKDDgJ3jSGLcyjgQ8Iw": {
+    "metas": [
+      "meta_1769520886757_aahj0"
+    ],
+    "lat": 3.8103403,
+    "lng": 33.7022159,
+    "country": "Uganda",
+    "region": "Karenga",
+    "road": null,
+    "nominatimCountry": "Uganda"
+  },
+  "Oc9XwgplDXlvkyBSJaWWVg": {
+    "metas": [
+      "meta_1769520886757_ke9za"
+    ],
+    "lat": 3.9240715,
+    "lng": 33.7007798,
+    "country": "Uganda",
+    "region": "Karenga",
+    "road": null,
+    "nominatimCountry": "Uganda"
+  },
+  "IZ-FMmnaAVuiJ-DYZ7YNUQ": {
+    "metas": [
+      "meta_1769520886757_bffhb"
+    ],
+    "lat": 2.2692476,
+    "lng": 31.4238286,
+    "country": "Uganda",
+    "region": "Nwoya",
+    "road": "Victoria Track",
+    "nominatimCountry": "Uganda"
+  },
+  "DmtEkqQ1BBcP9Q52oWchGg": {
+    "metas": [
+      "meta_1769520886757_i1qio"
+    ],
+    "lat": 2.3703472,
+    "lng": 31.5470799,
+    "country": "Uganda",
+    "region": "Nwoya",
+    "road": null,
+    "nominatimCountry": "Uganda"
+  },
+  "hFjA4GnvmpAv9rRqyvttxw": {
+    "metas": [
+      "meta_1769520886757_892kh"
+    ],
+    "lat": 0.4746137,
+    "lng": 30.4322873,
+    "country": "Uganda",
+    "region": "Kamwenge",
+    "road": null,
+    "nominatimCountry": "Uganda"
+  },
+  "SRk2LeNW1plkkubARAm4jw": {
+    "metas": [
+      "meta_1769520886757_ohsww"
+    ],
+    "lat": -0.6040777,
+    "lng": 30.9634427,
+    "country": "Uganda",
+    "region": "Kiruhura",
+    "road": "Impala Track",
+    "nominatimCountry": "Uganda"
+  },
+  "V2R8NQsCZPYjVGqmCdh81A": {
+    "metas": [
+      "meta_1769520886757_82x4n"
+    ],
+    "lat": 0.8534425,
+    "lng": 30.1477759,
+    "country": "Uganda",
+    "region": "Bundibugyo",
+    "road": "Sempaya",
+    "nominatimCountry": "Uganda"
+  },
+  "Wd4mGA1RXVPs6RYm9F5kYQ": {
+    "metas": [
+      "meta_1769520886757_60zpl"
+    ],
+    "lat": -0.0816028,
+    "lng": 29.9616451,
+    "country": "Uganda",
+    "region": "Kasese",
+    "road": "Crater Lake Drive",
+    "nominatimCountry": "Uganda"
+  },
+  "CYe8KvXC21kr3jgAFpL5bg": {
+    "metas": [
+      "meta_1769520886757_maar1"
+    ],
+    "lat": -0.0554624,
+    "lng": 30.0180458,
+    "country": "Uganda",
+    "region": "Kasese",
+    "road": "Katunguru",
+    "nominatimCountry": "Uganda"
+  },
+  "b-qMxSOPmJTrare-4FKh0Q": {
+    "metas": [
+      "meta_1769520886757_i0ayg"
+    ],
+    "lat": -0.1439778,
+    "lng": 29.8856274,
+    "country": "Uganda",
+    "region": "Kasese",
+    "road": "C51601",
+    "nominatimCountry": "Uganda"
+  },
+  "ymw9psLHWw4IE6mCyzt7kA": {
+    "metas": [
+      "meta_1769520889091_eq0ec"
+    ],
+    "lat": -54.2799279,
+    "lng": -36.5100946,
+    "country": "South Georgia & Sandwich Islands",
+    "region": "South Georgia",
+    "road": "Trail Maiviken - Grytviken",
+    "nominatimCountry": "South Georgia and the South Sandwich Islands"
+  },
+  "FSJhcYhXt31cupAvuAP4-Q": {
+    "metas": [
+      "meta_1769520890252_xivsv"
+    ],
+    "lat": 22.497959,
+    "lng": 90.08581,
+    "country": "Bangladesh",
+    "region": "Barishal Division",
+    "road": "Barisal-Pirojpur Highway",
+    "nominatimCountry": "Bangladesh"
+  },
+  "1pCZPeT5RHbSzl-lSifVeQ": {
+    "metas": [
+      "meta_1769520890252_cpf82"
+    ],
+    "lat": 23.65939,
+    "lng": 90.48556,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": "Fatullah",
+    "nominatimCountry": "Bangladesh"
+  },
+  "_hwNug5jUhhDuDTHOeyt0w": {
+    "metas": [
+      "meta_1769520890252_e44wh"
+    ],
+    "lat": 23.8126345,
+    "lng": 90.4212076,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": "Exit Road",
+    "nominatimCountry": "Bangladesh"
+  },
+  "lvrrAl_UXAPWpt_3JpruZg": {
+    "metas": [
+      "meta_1769520890252_iyndd"
+    ],
+    "lat": 22.8733421,
+    "lng": 89.7630156,
+    "country": "Bangladesh",
+    "region": "Khulna Division",
+    "road": "Gopalganj - Khulna Highway",
+    "nominatimCountry": "Bangladesh"
+  },
+  "ZLSnXYc9CPxLJC0NK82pPg": {
+    "metas": [
+      "meta_1769520890252_avu8a"
+    ],
+    "lat": 23.8699551,
+    "lng": 89.9926362,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": "Dhaka - Aricha Highway",
+    "nominatimCountry": "Bangladesh"
+  },
+  "LieX4ee5nT7unE8b2gOPpA": {
+    "metas": [
+      "meta_1769520890252_tbpz0"
+    ],
+    "lat": 24.4145569,
+    "lng": 89.9025862,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": "Tangail-Bhuapur Highway",
+    "nominatimCountry": "Bangladesh"
+  },
+  "BxgVSnt9nYQnWIO4Phm_Vg": {
+    "metas": [
+      "meta_1769520890252_vpv4f"
+    ],
+    "lat": 23.3604892,
+    "lng": 91.1492057,
+    "country": "Bangladesh",
+    "region": "Chattogram Division",
+    "road": "Cumilla - Noakhali - Chandpur Highway",
+    "nominatimCountry": "Bangladesh"
+  },
+  "Wja2KCj2I1IEtmv207JZMg": {
+    "metas": [
+      "meta_1769520890252_9rw8m"
+    ],
+    "lat": 25.8980135,
+    "lng": 88.2612754,
+    "country": "Bangladesh",
+    "region": "Rangpur Division",
+    "road": "Ranisankail-Nekmarad Highway",
+    "nominatimCountry": "Bangladesh"
+  },
+  "Q1ZuxSrMByKmmHTiddcagg": {
+    "metas": [
+      "meta_1769520890252_vfumg"
+    ],
+    "lat": 24.4591617,
+    "lng": 90.0923905,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": "Z3037",
+    "nominatimCountry": "Bangladesh"
+  },
+  "DDOToWMGe8-bptbuY_e9Ag": {
+    "metas": [
+      "meta_1769520890252_41kyi"
+    ],
+    "lat": 22.9852194,
+    "lng": 89.1076571,
+    "country": "Bangladesh",
+    "region": "Khulna Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "pTUQ5rv18BsJkf7U4rNVNA": {
+    "metas": [
+      "meta_1769520890252_8qgo9"
+    ],
+    "lat": 22.9973555,
+    "lng": 89.2714564,
+    "country": "Bangladesh",
+    "region": "Khulna Division",
+    "road": "Khanpur",
+    "nominatimCountry": "Bangladesh"
+  },
+  "w81rCDF8yGhUC6axZFKMZA": {
+    "metas": [
+      "meta_1769520890252_k05fv"
+    ],
+    "lat": 25.9618188,
+    "lng": 89.3611561,
+    "country": "Bangladesh",
+    "region": "Rangpur Division",
+    "road": "Kamalabari",
+    "nominatimCountry": "Bangladesh"
+  },
+  "Mqt1ekdvBx70cByzzZardg": {
+    "metas": [
+      "meta_1769520890252_o4d58"
+    ],
+    "lat": 24.7626714,
+    "lng": 89.1813739,
+    "country": "Bangladesh",
+    "region": "Rajshahi Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "5hiCUW_ito9XpNp9oulRKg": {
+    "metas": [
+      "meta_1769520890252_dkgsj"
+    ],
+    "lat": 24.6626023,
+    "lng": 91.6039027,
+    "country": "Bangladesh",
+    "region": "Sylhet Division",
+    "road": "Digholbak Main Road",
+    "nominatimCountry": "Bangladesh"
+  },
+  "h5nuXbRtp5pDig6HnsmcPA": {
+    "metas": [
+      "meta_1769520890252_x1h9q"
+    ],
+    "lat": 23.6896509,
+    "lng": 90.6067854,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "u2UoXciVN4aV6ClxeeJdaw": {
+    "metas": [
+      "meta_1769520890252_a2w83"
+    ],
+    "lat": 24.556174,
+    "lng": 91.120507,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "osSKroTcXwDAJoLoyRYtWw": {
+    "metas": [
+      "meta_1769520890252_sty6p"
+    ],
+    "lat": 23.3784218,
+    "lng": 92.2635835,
+    "country": "Bangladesh",
+    "region": "Chattogram Division",
+    "road": "Dighinala - Sajek Road",
+    "nominatimCountry": "Bangladesh"
+  },
+  "cnbfF30FckHQV79U1opU_Q": {
+    "metas": [
+      "meta_1769520890252_ytuev"
+    ],
+    "lat": 25.171781,
+    "lng": 91.939347,
+    "country": "Bangladesh",
+    "region": "Sylhet Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "FywBOF2peUg2aXF6OcNvMQ": {
+    "metas": [
+      "meta_1769520890252_tsmii"
+    ],
+    "lat": 25.9521101,
+    "lng": 88.3860788,
+    "country": "Bangladesh",
+    "region": "Rangpur Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "wlfF7J-fjns1qAXcOmOjbQ": {
+    "metas": [
+      "meta_1769520890252_5rd4d"
+    ],
+    "lat": 25.7980404,
+    "lng": 88.997872,
+    "country": "Bangladesh",
+    "region": "Rangpur Division",
+    "road": "Kursha",
+    "nominatimCountry": "Bangladesh"
+  },
+  "zKcg5WLWw24br4AvB9rglA": {
+    "metas": [
+      "meta_1769520890252_3x9kg"
+    ],
+    "lat": 24.0174683,
+    "lng": 89.9728343,
+    "country": "Bangladesh",
+    "region": "Dhaka Division",
+    "road": "Dighalia",
+    "nominatimCountry": "Bangladesh"
+  },
+  "wSuUiaTyuaL_7cRnOQMntA": {
+    "metas": [
+      "meta_1769520890252_lindo"
+    ],
+    "lat": 24.3163581,
+    "lng": 91.7485511,
+    "country": "Bangladesh",
+    "region": "Sylhet Division",
+    "road": "Sankartila Link",
+    "nominatimCountry": "Bangladesh"
+  },
+  "i98rkbDU3JMY6T63TNX3Wg": {
+    "metas": [
+      "meta_1769520890252_hwae6"
+    ],
+    "lat": 26.0626129,
+    "lng": 88.21258,
+    "country": "Bangladesh",
+    "region": "Rangpur Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "v4ip4gSRQwu0xADow0l5qg": {
+    "metas": [
+      "meta_1769520890252_82ubv"
+    ],
+    "lat": 21.8849306,
+    "lng": 90.1443429,
+    "country": "Bangladesh",
+    "region": "Barishal Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "SZXEvZi2_3M7JDKbdZ__kQ": {
+    "metas": [
+      "meta_1769520890252_n6f6w"
+    ],
+    "lat": 22.041908,
+    "lng": 90.609049,
+    "country": "Bangladesh",
+    "region": "Barishal Division",
+    "road": "R890",
+    "nominatimCountry": "Bangladesh"
+  },
+  "2ljHFoGC5f7hZnUdNl5eKQ": {
+    "metas": [
+      "meta_1769520890252_x9cip"
+    ],
+    "lat": 26.2220959,
+    "lng": 88.74725,
+    "country": "Bangladesh",
+    "region": "Rangpur Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "xXyW28gjUPESSEW6I1I7_w": {
+    "metas": [
+      "meta_1769520890252_0g8n0"
+    ],
+    "lat": 23.9884782,
+    "lng": 88.9545924,
+    "country": "Bangladesh",
+    "region": "Khulna Division",
+    "road": null,
+    "nominatimCountry": "Bangladesh"
+  },
+  "NlgyDrUQHIEmmVploOOvfg": {
+    "metas": [
+      "meta_1769520890252_h2fj1"
+    ],
+    "lat": 22.8143223,
+    "lng": 91.0331374,
+    "country": "Bangladesh",
+    "region": "Chattogram Division",
+    "road": "Sonapur",
+    "nominatimCountry": "Bangladesh"
   }
 }

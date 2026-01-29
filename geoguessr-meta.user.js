@@ -753,14 +753,7 @@
             </div>
             <div id="gg-status" class="gg-status-msg" style="cursor:pointer;" title="Click to retry finding location">Waiting for location...</div>
         `;
-        // Debug Panel
-        const debug = document.createElement('div');
-        debug.id = 'gg-meta-debug';
-        debug.innerHTML = `
-            <h4>GPS / Geocoding Debug</h4>
-            <div id="debug-content">No Geodata</div>
-        `;
-        document.body.appendChild(debug);
+        document.body.appendChild(hud);
 
         // Backdrop
         const backdrop = document.createElement('div');
@@ -1781,32 +1774,6 @@
         } else {
             updateHUD(null);
         }
-
-        updateDebugPanel(exactMetas.length, predictedMetas.length);
-    }
-
-    function updateDebugPanel(exactCount, predCount) {
-        const el = document.getElementById('debug-content');
-        if (!el) return;
-
-        const data = currentLocationData;
-        const curCountry = normalizeCountry(data.country, data.lat, data.lng);
-
-        el.innerHTML = `
-            <div class="debug-item"><span class="debug-label">ID:</span><span class="debug-val">${currentPanoid ? currentPanoid.substring(0,8) : 'null'}</span></div>
-            <div class="debug-item"><span class="debug-label">Lat:</span><span class="debug-val">${data.lat}</span></div>
-            <div class="debug-item"><span class="debug-label">Lng:</span><span class="debug-val">${data.lng}</span></div>
-            <div style="margin: 8px 0; border-top: 1px dotted #444;"></div>
-            <div class="debug-item"><span class="debug-label">Raw Country:</span><span class="debug-val">${data.country || 'null'}</span></div>
-            <div class="debug-item"><span class="debug-label">Normalized:</span><span class="debug-val ${curCountry !== data.country ? 'match' : ''}">${curCountry}</span></div>
-            <div class="debug-item"><span class="debug-label">Region:</span><span class="debug-val">${data.region || 'null'}</span></div>
-            <div class="debug-item"><span class="debug-label">Road:</span><span class="debug-val">${Array.isArray(data.road) ? data.road.join(', ') : (data.road || 'null')}</span></div>
-            <div style="margin: 8px 0; border-top: 1px dotted #444;"></div>
-            <div class="debug-item"><span class="debug-label">Exact:</span><span class="debug-val">${exactCount}</span></div>
-            <div class="debug-item"><span class="debug-label">Predicted:</span><span class="debug-val">${predCount}</span></div>
-            <div class="debug-item"><span class="debug-label">Map Size:</span><span class="debug-val">${Object.keys(locationMap).length}</span></div>
-            <div class="debug-item"><span class="debug-label">Total Metas:</span><span class="debug-val">${metasData.length}</span></div>
-        `;
     }
 
     function updateStatus(msg) {
@@ -2006,8 +1973,7 @@
 
     function updateVisibility() {
         const hud = document.getElementById('gg-meta-hud');
-        const debug = document.getElementById('gg-meta-debug');
-        if (!hud || !debug) return;
+        if (!hud) return;
 
         const resultActive = isRoundResult();
 
@@ -2022,14 +1988,21 @@
         // Sync body class for element blocking
         document.body.classList.toggle('gg-hud-active', shouldShow);
 
-        // Debug panel visibility - always follow HUD or show during dev?
-        // Let's keep it tied to the HUD for now.
+        // In Ranked/Duels, ONLY show on result screen (Evaluation)
+        if (isRanked()) {
+             if (shouldShow) {
+                 hud.classList.add('gg-visible');
+             } else {
+                 hud.classList.remove('gg-visible');
+             }
+             return;
+        }
+
+        // In Single Player / Challenge, show if result OR if mapped (optional, but requested to stick to result for now)
         if (shouldShow) {
-            hud.classList.add('gg-visible');
-            debug.classList.add('gg-visible');
+             hud.classList.add('gg-visible');
         } else {
-            hud.classList.remove('gg-visible');
-            debug.classList.remove('gg-visible');
+             hud.classList.remove('gg-visible');
         }
     }
 
