@@ -4,8 +4,8 @@
 // @version      0.2
 // @description  Displays crowdsourced metas and hints for Geoguessr locations.
 // @author       Lukas Hzb
-// @updateURL    https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main/geoguessr-meta.user.js
-// @downloadURL  https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main/geoguessr-meta.user.js
+// @updateURL    https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main_v2/geoguessr-meta.user.js
+// @downloadURL  https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main_v2/geoguessr-meta.user.js
 // @match        https://www.geoguessr.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=geoguessr.com
 // @run-at       document-start
@@ -25,9 +25,9 @@
     const LOCATIONS_FILE = 'data/locations.json';
     const USER_METAS_FILE = 'data/metas.json';
     const SYSTEM_METAS_FILE = 'data/plonkit_data.json';
-    const getRawLocationsUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${LOCATIONS_FILE}?t=${Date.now()}`;
-    const getRawUserMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${USER_METAS_FILE}?t=${Date.now()}`;
-    const getRawSystemMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SYSTEM_METAS_FILE}?t=${Date.now()}`;
+    const getRawLocationsUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main_v2/${LOCATIONS_FILE}?t=${Date.now()}`;
+    const getRawUserMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main_v2/${USER_METAS_FILE}?t=${Date.now()}`;
+    const getRawSystemMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main_v2/${SYSTEM_METAS_FILE}?t=${Date.now()}`;
     const API_LOCATIONS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${LOCATIONS_FILE}`;
     const API_USER_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${USER_METAS_FILE}`;
     
@@ -52,7 +52,9 @@
     let svInstance = null; // Store the active StreetViewPanorama instance
     let currentLocationData = {
         address: null,
-        country: null,
+        country: null, // Dominant (Google preferred, fallback Nominatim)
+        nominatimCountry: null, // Raw from Nominatim
+        googleCountry: null, // Raw from Google
         region: null,
         road: null,
         lat: null,
@@ -111,6 +113,8 @@
             pointer-events: auto;
             transform: translateY(0);
         }
+
+
 
         #gg-meta-hud * {
             font-family: inherit !important;
@@ -1316,6 +1320,7 @@
                 lat: currentLocationData.lat,
                 lng: currentLocationData.lng,
                 country: currentLocationData.country,
+                nominatimCountry: currentLocationData.nominatimCountry,
                 region: currentLocationData.region,
                 road: currentLocationData.road
             };
@@ -1373,6 +1378,7 @@
                     lat: currentLocationData.lat,
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
+                    nominatimCountry: currentLocationData.nominatimCountry,
                     region: currentLocationData.region,
                     road: currentLocationData.road
                 };
@@ -1383,6 +1389,7 @@
                     lat: currentLocationData.lat,
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
+                    nominatimCountry: currentLocationData.nominatimCountry,
                     region: currentLocationData.region,
                     road: currentLocationData.road
                 };
@@ -1438,6 +1445,7 @@
         const newMeta = {
             id: metaId,
             country: currentLocationData.country || "Unknown",
+            nominatimCountry: currentLocationData.nominatimCountry || null,
             region: currentLocationData.region || null,
             road: currentLocationData.road || null,
             lat: currentLocationData.lat,
@@ -1718,6 +1726,8 @@
         container.innerHTML = exactHtml + predictedHtml;
     }
 
+
+
     // Expose Quick Link Function globally so the inline onclick works
     win.quickLinkMeta = function(metaId, title) {
         // Prevent accidental clicks? simple confirm
@@ -1843,6 +1853,7 @@
         const curLat = parseFloat(currentLocationData.lat);
         const curLng = parseFloat(currentLocationData.lng);
         const curCountry = normalizeCountry(currentLocationData.country, curLat, curLng);
+        const curNomCountry = normalizeCountry(currentLocationData.nominatimCountry, curLat, curLng);
         const curRegion = currentLocationData.region;
         const curRoad = (currentLocationData.road || '').toLowerCase().trim();
 
@@ -1872,6 +1883,7 @@
             }
             const entryRegion = entry.region;
             const entryCountry = entry.country;
+            const entryNomCountry = entry.nominatimCountry; // Older entries might not have this
 
             metaIds.forEach(id => {
                 const meta = metasData.find(m => m.id === id);
@@ -1890,8 +1902,12 @@
                 }
                 if (curRoads.length > 0 && curRoads.some(r => entryRoads.includes(r))) isMatch = true;
 
-                // Match by Region (if in same country)
-                if (!isMatch && curRegion && entryRegion && curRegion === entryRegion && curCountry === entryCountry) isMatch = true;
+                // Match by Region (if in same country - either dominant or nominatim)
+                if (!isMatch && curRegion && entryRegion && curRegion === entryRegion) {
+                    if (curCountry === entryCountry || (entryNomCountry && curNomCountry === entryNomCountry)) {
+                        isMatch = true;
+                    }
+                }
 
                 // Match by Distance (Proximity)
                 if (!isMatch && entryLat !== null && entryLng !== null) {
@@ -1911,9 +1927,11 @@
         metasData.forEach(meta => {
             const scope = (meta.scope || '').toLowerCase();
             if (scope === 'countrywide') {
-                if (normalizeCountry(meta.country, curLat, curLng) === curCountry) scopeMatches.add(meta.id);
+                const metaCountry = normalizeCountry(meta.country, curLat, curLng);
+                if (metaCountry === curCountry || metaCountry === curNomCountry) scopeMatches.add(meta.id);
             } else if (scope === 'region') {
-                if (meta.country === curCountry && meta.region === curRegion) scopeMatches.add(meta.id);
+                const metaCountry = normalizeCountry(meta.country, curLat, curLng);
+                if ((metaCountry === curCountry || metaCountry === curNomCountry) && meta.region === curRegion) scopeMatches.add(meta.id);
             } else if (scope === 'road') {
                 const metaRoad = (meta.road || '').toLowerCase().trim();
                 // This 'road' scope is for when the meta ITSELF has a road property 
@@ -2115,10 +2133,45 @@
                     // Immediate trigger with basic info (Lat/Lng is enough for radius checks)
                     if (currentPanoid) checkLocation(currentPanoid);
 
-                    // Reverse Geocoding for better accuracy (Using Nominatim as requested)
+                    // Dual Geocoding Strategy
                     const latVal = parseFloat(lat);
                     const lngVal = parseFloat(lng);
                     
+                    // 1. Google Geocoding (Dominant for country)
+                    const geocoder = new win.google.maps.Geocoder();
+                    geocoder.geocode({ location: { lat: latVal, lng: lngVal } }, (results, status) => {
+                        if (status === "OK" && results[0]) {
+                            const res = results[0];
+                            const addrComp = res.address_components;
+                            
+                            let gCountry = null;
+                            let gRegion = null;
+                            let gRoad = null;
+                            
+                            addrComp.forEach(comp => {
+                                if (comp.types.includes("country")) gCountry = comp.long_name;
+                                if (comp.types.includes("administrative_area_level_1")) gRegion = comp.long_name;
+                                if (comp.types.includes("route")) gRoad = comp.long_name;
+                            });
+                            
+                            if (currentLocationData.lat === newLatStr && currentLocationData.lng === newLngStr) {
+                                currentLocationData.googleCountry = gCountry;
+                                // Primary country selection (Google preferred)
+                                if (gCountry) {
+                                    currentLocationData.country = normalizeCountry(gCountry, lat, lng);
+                                }
+                                if (gRegion && !currentLocationData.region) currentLocationData.region = gRegion;
+                                if (gRoad && !currentLocationData.road) currentLocationData.road = gRoad;
+                                
+                                updateLocationUI();
+                                if (currentPanoid) checkLocation(currentPanoid);
+                            }
+                        } else {
+                            console.warn('[BetterMetas] Google geocode failed:', status);
+                        }
+                    });
+
+                    // 2. Nominatim Geocoding (Useful for prediction/fallback)
                     const nominatimUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latVal}&lon=${lngVal}&accept-language=en`;
                     
                     fetch(nominatimUrl, {
@@ -2129,14 +2182,14 @@
                         if (data && data.address) {
                             const a = data.address;
                             const address = data.display_name;
-                            let realCountry = normalizeCountry(a.country || country, lat, lng);
+                            let nCountry = a.country || country;
+                            let realNomCountry = normalizeCountry(nCountry, lat, lng);
                             let region = a.state || a.region || a.province || a.county || a.district || null;
                             
                             // Road Logic
                             let road = null;
                             const roadName = a.road || a.pedestrian || a.highway || a.street || a.suburb || a.hamlet || a.village || null;
                             if (roadName) {
-                                // Support array if semicolon present
                                 if (roadName.includes(';')) {
                                     road = roadName.split(';').map(s => s.trim());
                                 } else {
@@ -2145,18 +2198,24 @@
                             }
 
                             // Fallback: If still no road, use shortDescription if it looks like a road
-                            if (!road && loc.shortDescription && loc.shortDescription !== loc.description && loc.shortDescription !== realCountry) {
+                            if (!road && loc.shortDescription && loc.shortDescription !== loc.description && loc.shortDescription !== realNomCountry) {
                                 if (loc.shortDescription !== region) {
                                     road = loc.shortDescription;
                                 }
                             }
 
-                            // Update (Only if we are still on the same lat/lng! - race check)
+                            // Update
                             if (currentLocationData.lat === newLatStr && currentLocationData.lng === newLngStr) {
-                                currentLocationData.address = address;
-                                currentLocationData.country = realCountry;
-                                currentLocationData.region = region;
-                                currentLocationData.road = road;
+                                currentLocationData.nominatimCountry = realNomCountry;
+                                currentLocationData.address = address; // Keep address from Nominatim (usually more detailed)
+                                
+                                // If Google hasn't set country yet, or failed, use Nominatim as fallback for dominant country
+                                if (!currentLocationData.country) {
+                                    currentLocationData.country = realNomCountry;
+                                }
+                                
+                                if (region && !currentLocationData.region) currentLocationData.region = region;
+                                if (road && !currentLocationData.road) currentLocationData.road = road;
                             }
 
                             updateLocationUI();
