@@ -1811,9 +1811,18 @@
         const s = (scope || '').toLowerCase();
         if (s === '1km') return 1;
         if (s === '10km') return 10;
+        if (s === '25km') return 25;
+        if (s === '50km') return 50;
         if (s === '100km') return 100;
         if (s === '1000km') return 1000;
-        if (s === 'unique') return 0; // Unique means no radius/proximity prediction
+        
+        // Named scopes should match by NAME, not generic radius
+        if (s === 'region') return 0;  
+        if (s === 'city') return 0;    
+        if (s === 'road') return 0; // Strict Name Match Only (User request: no radius for road/region)
+        if (s === 'unique') return 0.1; // 100m tolerance for exact POI keys
+        
+        if (s === 'countrywide') return 0; // Strict Country Check Only
         return 0;
     }
 
@@ -1847,6 +1856,44 @@
             }
         }
         return target;
+    }
+
+    function isFuzzyNameMatch(a, b) {
+        if (!a || !b) return false;
+        a = String(a).toLowerCase().trim();
+        b = String(b).toLowerCase().trim();
+        
+        // 1. Exact Match
+        if (a === b) return true;
+
+        // 2. Token Matching (Word Boundaries)
+        // Split by non-alphanumeric chars (space, dash, comma, etc.)
+        const tokensA = a.split(/[\s,\.\-]+/);
+        const tokensB = b.split(/[\s,\.\-]+/);
+        
+        // Prevent generic words from triggering a match if it's the ONLY match
+        const generics = ['region', 'province', 'district', 'county', 'state', 'prefecture', 'road', 'street', 'avenue', 'boulevard', 'way', 'dr', 'drive', 'ln', 'lane', 'hwy', 'highway', 'str', 'route'];
+        
+        // If 'a' is a substring of 'b' (or vice versa), we want to make sure it matches a WHOLE TOKEN in 'b'.
+        // e.g. "C19" matches "C19 Road" (C19 is a token)
+        // e.g. "C19" matches "Road C19"
+        // e.g. "C19" DOES NOT match "AC190" (C19 is part of AC190 token, not a whole token)
+        // e.g. "Region" DOES NOT match "Erongo Region" (Generic filter)
+
+        const shortTokens = tokensA.length < tokensB.length ? tokensA : tokensB;
+        const longTokens = tokensA.length < tokensB.length ? tokensB : tokensA;
+
+        // Check if ALL tokens of the short string exist as EXACT tokens in the long string
+        // (Order doesn't matter for now, e.g. "Road C19" == "C19 Road")
+        const allShortTokensMatch = shortTokens.every(st => {
+            if (generics.includes(st)) return true; // Generics are "free" matches (ignored effectively)
+            return longTokens.includes(st);
+        });
+
+        // But we must ensure at least one NON-GENERIC token matched!
+        const hasNonGenericMatch = shortTokens.some(st => !generics.includes(st) && longTokens.includes(st));
+
+        return allShortTokensMatch && hasNonGenericMatch;
     }
 
     function evaluateProximityMetas() {
@@ -1889,6 +1936,11 @@
                 const meta = metasData.find(m => m.id === id);
                 if (!meta) return;
 
+                // Strict Country Match removed here to allow "Distance" matches to work across borders.
+                // We will re-check country for Road/Region matches below to avoid ambiguity.
+                // const metaCountry = normalizeCountry(meta.country, curLat, curLng);
+                // if (metaCountry !== curCountry && metaCountry !== curNomCountry) return;
+
                 let isMatch = false;
 
                 // Match by Road (High Priority)
@@ -1900,10 +1952,12 @@
                         curRoads.push(String(currentLocationData.road).toLowerCase().trim());
                     }
                 }
-                if (curRoads.length > 0 && curRoads.some(r => entryRoads.includes(r))) isMatch = true;
+                // Fuzzy road match against historical pins
+                if (curRoads.length > 0 && curRoads.some(cr => entryRoads.some(er => isFuzzyNameMatch(cr, er)))) isMatch = true;
 
-                // Match by Region (if in same country - either dominant or nominatim)
-                if (!isMatch && curRegion && entryRegion && curRegion === entryRegion) {
+                // Match by Region (if in same country)
+                // STRICT CHECK: Region names are ambiguous (e.g. "Victoria"). Must match country.
+                if (!isMatch && isFuzzyNameMatch(curRegion, entryRegion)) {
                     if (curCountry === entryCountry || (entryNomCountry && curNomCountry === entryNomCountry)) {
                         isMatch = true;
                     }
@@ -1926,16 +1980,22 @@
         // 2. Check general Country/Region scope against current location
         metasData.forEach(meta => {
             const scope = (meta.scope || '').toLowerCase();
+            const metaCountry = normalizeCountry(meta.country, curLat, curLng);
+            const countryMatched = (metaCountry === curCountry || metaCountry === curNomCountry);
+
+            if (!countryMatched && scope !== 'road') return; // Road might be enough, but usually we want country too
+
             if (scope === 'countrywide') {
-                const metaCountry = normalizeCountry(meta.country, curLat, curLng);
-                if (metaCountry === curCountry || metaCountry === curNomCountry) scopeMatches.add(meta.id);
+                if (countryMatched) scopeMatches.add(meta.id);
             } else if (scope === 'region') {
-                const metaCountry = normalizeCountry(meta.country, curLat, curLng);
-                if ((metaCountry === curCountry || metaCountry === curNomCountry) && meta.region === curRegion) scopeMatches.add(meta.id);
+                // Fuzzy Match for Region Scope: "Erongo" meta should match "Erongo Region" current location
+                if (countryMatched && isFuzzyNameMatch(meta.region, curRegion)) scopeMatches.add(meta.id);
             } else if (scope === 'road') {
                 const metaRoad = (meta.road || '').toLowerCase().trim();
-                // This 'road' scope is for when the meta ITSELF has a road property 
-                if (metaRoad && curRoad && metaRoad === curRoad) scopeMatches.add(meta.id);
+                // Fuzzy match for Road Scope
+                if (countryMatched && metaRoad && curRoad && isFuzzyNameMatch(metaRoad, curRoad)) {
+                    scopeMatches.add(meta.id);
+                }
             }
         });
 

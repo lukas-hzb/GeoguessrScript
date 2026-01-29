@@ -7609,7 +7609,7 @@
     "lng": 115.1727296,
     "country": "Indonesia",
     "region": "Bali",
-    "road": "Jalan Pasraman Unud",
+    "road": "Jalan Goa Gong",
     "nominatimCountry": "Indonesia"
   },
   "OO_914gj40mw09OsJXVPfw": {
@@ -7961,7 +7961,7 @@
     "lng": 44.3852024,
     "country": "Iraq",
     "region": "Baghdad Governorate",
-    "road": "شارع المتحف",
+    "road": "Naseer Street",
     "nominatimCountry": "Iraq"
   },
   "boLoSerPsotbr73vnaVhkQ": {
@@ -7972,7 +7972,7 @@
     "lng": 44.3848555,
     "country": "Iraq",
     "region": "Baghdad Governorate",
-    "road": "شارع المتحف",
+    "road": "Naseer Street",
     "nominatimCountry": "Iraq"
   },
   "DC8zn9VqmdmsrlGmdkNT_g": {
@@ -19606,5 +19606,7101 @@
     "region": "Vestland",
     "road": "Godviksvingene",
     "nominatimCountry": "Norway"
+  },
+  "S3foVfd95KVJKP139aYT3w": {
+    "metas": [
+      "meta_1769520963039_3895b"
+    ],
+    "lat": 60.3989197,
+    "lng": 5.3282393,
+    "country": "Norway",
+    "region": "Vestland",
+    "road": "Henrik Wergelands gate",
+    "nominatimCountry": "Norway"
+  },
+  "8hYnbSrPzZkAVvO0tHePTg": {
+    "metas": [
+      "meta_1769520963039_vifs6"
+    ],
+    "lat": 59.8374188,
+    "lng": 6.8352332,
+    "country": "Norway",
+    "region": "Vestland",
+    "road": "Haukelivegen",
+    "nominatimCountry": "Norway"
+  },
+  "Igb1ZTMWKb9idWHiRLjjbw": {
+    "metas": [
+      "meta_1769520963039_xd9sb"
+    ],
+    "lat": 60.8778279,
+    "lng": 10.5023417,
+    "country": "Norway",
+    "region": "Innlandet",
+    "road": "Snertingdalsvegen",
+    "nominatimCountry": "Norway"
+  },
+  "XOmH7HMlbVV8Ll5asnnKrQ": {
+    "metas": [
+      "meta_1769520963039_uv1ng"
+    ],
+    "lat": 61.8783547,
+    "lng": 5.1160063,
+    "country": "Norway",
+    "region": "Vestland",
+    "road": "Hornelsvegen",
+    "nominatimCountry": "Norway"
+  },
+  "vCUTRjlzWXmb9RSv6DcYzw": {
+    "metas": [
+      "meta_1769520963039_0ee3o"
+    ],
+    "lat": 66.3338719,
+    "lng": 13.3648318,
+    "country": "Norway",
+    "region": "Nordland",
+    "road": "Flostrandveien",
+    "nominatimCountry": "Norway"
+  },
+  "g12tZHMFWvcNWd4yQJGlRQ": {
+    "metas": [
+      "meta_1769520963039_evzpm"
+    ],
+    "lat": 60.305469,
+    "lng": 11.164157,
+    "country": "Norway",
+    "region": "Akershus",
+    "road": "Klaseigutua",
+    "nominatimCountry": "Norway"
+  },
+  "KydbqM2WzOJR5Celafsq5w": {
+    "metas": [
+      "meta_1769520963039_xk1yy"
+    ],
+    "lat": 62.3540386,
+    "lng": 6.8040252,
+    "country": "Norway",
+    "region": "Møre og Romsdal",
+    "road": "Nysætervegen",
+    "nominatimCountry": "Norway"
+  },
+  "7B_Bq89gXwjmQYqdAHTP0g": {
+    "metas": [
+      "meta_1769520963039_gjdno"
+    ],
+    "lat": 61.1442618,
+    "lng": 10.683708,
+    "country": "Norway",
+    "region": "Innlandet",
+    "road": "Frisørvegen",
+    "nominatimCountry": "Norway"
+  },
+  "WNDPX2TUZfXNt0NG5aVZtg": {
+    "metas": [
+      "meta_1769520963039_rnxgw"
+    ],
+    "lat": 61.6946414,
+    "lng": 10.1578229,
+    "country": "Norway",
+    "region": "Innlandet",
+    "road": "Rondevegen",
+    "nominatimCountry": "Norway"
+  },
+  "WTMScch7dw6MNM0m_RNzOw": {
+    "metas": [
+      "meta_1769520963039_f4bmc"
+    ],
+    "lat": 59.4659982,
+    "lng": 11.3154143,
+    "country": "Norway",
+    "region": "Østfold",
+    "road": "Heensveien",
+    "nominatimCountry": "Norway"
+  },
+  "qUvpOWxpC0-vFoMYlAQrnQ": {
+    "metas": [
+      "meta_1769520963039_n0qw7"
+    ],
+    "lat": 60.1254802,
+    "lng": 11.5110884,
+    "country": "Norway",
+    "region": "Akershus",
+    "road": "Rakeievegen",
+    "nominatimCountry": "Norway"
+  },
+  "_bcR-sIF29AOiiqiPaJMuA": {
+    "metas": [
+      "meta_1769520963039_h6yo7"
+    ],
+    "lat": 63.5009821,
+    "lng": 10.8633563,
+    "country": "Norway",
+    "region": "Trøndelag",
+    "road": "Riksvegen",
+    "nominatimCountry": "Norway"
+  },
+  "xXHf9dCVobkYw7IwEit56g": {
+    "metas": [
+      "meta_1769520963039_wikju"
+    ],
+    "lat": 58.8217428,
+    "lng": 5.6169829,
+    "country": "Norway",
+    "region": "Rogaland",
+    "road": "Skasvegen",
+    "nominatimCountry": "Norway"
+  },
+  "6qeNxKJN0mAHiUrPGKZArg": {
+    "metas": [
+      "meta_1769520963039_6by4d"
+    ],
+    "lat": 69.6527737,
+    "lng": 29.4505666,
+    "country": "Norway",
+    "region": "Finnmark",
+    "road": "Neidenveien",
+    "nominatimCountry": "Norway"
+  },
+  "yckq0vF9_WpurUviUOLW6Q": {
+    "metas": [
+      "meta_1769520963039_43w6a"
+    ],
+    "lat": 62.0290078,
+    "lng": 8.9597392,
+    "country": "Norway",
+    "region": "Innlandet",
+    "road": "Slådalsvegen",
+    "nominatimCountry": "Norway"
+  },
+  "rJeI1jcDWHw7YUG1mm1QLg": {
+    "metas": [
+      "meta_1769520963039_xbr0n"
+    ],
+    "lat": 69.6805536,
+    "lng": 30.1150646,
+    "country": "Norway",
+    "region": "Finnmark",
+    "road": "Bøkfjordbrua - Báhčaveaivuonšaldi - Paatsivuononsilta",
+    "nominatimCountry": "Norway"
+  },
+  "W9Agp3wEamsiMUHzqP28oA": {
+    "metas": [
+      "meta_1769520964181_1ky3g"
+    ],
+    "lat": 52.2010788,
+    "lng": 20.862873,
+    "country": "Poland",
+    "region": "Masovian Voivodeship",
+    "road": "Bolesława Śmiałego",
+    "nominatimCountry": "Poland"
+  },
+  "IpLKKE2NajoYwXdaXjTp-Q": {
+    "metas": [
+      "meta_1769520964181_d7zpa"
+    ],
+    "lat": 52.291624,
+    "lng": 17.1182595,
+    "country": "Poland",
+    "region": "Greater Poland Voivodeship",
+    "road": "Dworcowa",
+    "nominatimCountry": "Poland"
+  },
+  "HcGUeB43rJmyUD9aQyqYlQ": {
+    "metas": [
+      "meta_1769520964181_5ca6f"
+    ],
+    "lat": 53.5752948,
+    "lng": 20.9893069,
+    "country": "Poland",
+    "region": "Warmian-Masurian Voivodeship",
+    "road": "Gustawa Gizewiusza",
+    "nominatimCountry": "Poland"
+  },
+  "f_g_uLb52YJPeyqXQJe59g": {
+    "metas": [
+      "meta_1769520964181_ps6hi"
+    ],
+    "lat": 51.4998741,
+    "lng": 19.8313273,
+    "country": "Poland",
+    "region": "Łódź Voivodeship",
+    "road": "Andrzeja Frycza Modrzewskiego",
+    "nominatimCountry": "Poland"
+  },
+  "Gxfhue6gILfnxsTqZQiiEg": {
+    "metas": [
+      "meta_1769520964181_t88xs"
+    ],
+    "lat": 50.815183,
+    "lng": 23.652234,
+    "country": "Poland",
+    "region": "Lublin Voivodeship",
+    "road": "Korytyna",
+    "nominatimCountry": "Poland"
+  },
+  "yVoOghy806SVMVIpdAb96w": {
+    "metas": [
+      "meta_1769520964181_btyzy"
+    ],
+    "lat": 52.276703,
+    "lng": 16.669088,
+    "country": "Poland",
+    "region": "Greater Poland Voivodeship",
+    "road": "Zamysłowo",
+    "nominatimCountry": "Poland"
+  },
+  "LAcaPp_6WBpAsAtdPkW9SQ": {
+    "metas": [
+      "meta_1769520964181_e6qlf"
+    ],
+    "lat": 53.003932,
+    "lng": 23.13627,
+    "country": "Poland",
+    "region": "Podlaskie Voivodeship",
+    "road": "Majowa",
+    "nominatimCountry": "Poland"
+  },
+  "clOjfDRS1NFbbJxwYFW_EQ": {
+    "metas": [
+      "meta_1769520964181_h2050"
+    ],
+    "lat": 51.990706,
+    "lng": 15.47938,
+    "country": "Poland",
+    "region": "Lubusz Voivodeship",
+    "road": "Łężyca-Odrzańska",
+    "nominatimCountry": "Poland"
+  },
+  "qIkhQWTaPxnn2Deoj7mJ_Q": {
+    "metas": [
+      "meta_1769520964181_d8x9h"
+    ],
+    "lat": 52.177565,
+    "lng": 22.940977,
+    "country": "Poland",
+    "region": "Masovian Voivodeship",
+    "road": "Stara Kornica",
+    "nominatimCountry": "Poland"
+  },
+  "CAdQs1EhrCap9vaacRlx3g": {
+    "metas": [
+      "meta_1769520964181_7kuua"
+    ],
+    "lat": 53.9346574,
+    "lng": 22.9786997,
+    "country": "Poland",
+    "region": "Podlaskie Voivodeship",
+    "road": "662",
+    "nominatimCountry": "Poland"
+  },
+  "_EcCs2fhT294iLDxqfR_wQ": {
+    "metas": [
+      "meta_1769520964182_zwhte"
+    ],
+    "lat": 53.93448,
+    "lng": 22.978722,
+    "country": "Poland",
+    "region": "Podlaskie Voivodeship",
+    "road": "662",
+    "nominatimCountry": "Poland"
+  },
+  "H4Ess8E62JK-J6TgFvOjfQ": {
+    "metas": [
+      "meta_1769520964182_6r26e"
+    ],
+    "lat": 51.993477,
+    "lng": 15.477688,
+    "country": "Poland",
+    "region": "Lubusz Voivodeship",
+    "road": "Łężyca-Kościelna",
+    "nominatimCountry": "Poland"
+  },
+  "hiZ_7lKLHXEtJpfY7kG_0w": {
+    "metas": [
+      "meta_1769520964182_w6bn8"
+    ],
+    "lat": 49.302333,
+    "lng": 20.0088885,
+    "country": "Poland",
+    "region": "Lesser Poland Voivodeship",
+    "road": "Gawlaki",
+    "nominatimCountry": "Poland"
+  },
+  "PxwZpz2V6d6yzERDZrZ5Cw": {
+    "metas": [
+      "meta_1769520964182_cxhsm"
+    ],
+    "lat": 53.1334986,
+    "lng": 23.1564825,
+    "country": "Poland",
+    "region": "Podlaskie Voivodeship",
+    "road": "Icchoka Malmeda",
+    "nominatimCountry": "Poland"
+  },
+  "BA3A8CqQZH-A8W8YjiG7ZQ": {
+    "metas": [
+      "meta_1769520964182_x8dp4"
+    ],
+    "lat": 53.431712,
+    "lng": 14.5327054,
+    "country": "Poland",
+    "region": "West Pomeranian Voivodeship",
+    "road": "Księdza Piotra Ściegiennego",
+    "nominatimCountry": "Poland"
+  },
+  "yFZOeJe2EouAPI-MguEVRw": {
+    "metas": [
+      "meta_1769520964182_t93x7"
+    ],
+    "lat": 52.3989296,
+    "lng": 16.9213161,
+    "country": "Poland",
+    "region": "Greater Poland Voivodeship",
+    "road": "Mieczysława Niedziałkowskiego",
+    "nominatimCountry": "Poland"
+  },
+  "ByCeA7wGiy9JFAUoOpMiXw": {
+    "metas": [
+      "meta_1769520965321_4bb4n"
+    ],
+    "lat": 38.714395,
+    "lng": -9.152488,
+    "country": "Portugal",
+    "region": "Lisbon",
+    "road": "Rua da Quintinha",
+    "nominatimCountry": "Portugal"
+  },
+  "W6BJZ5gnc9lZ4bEUoCsrYw": {
+    "metas": [
+      "meta_1769520965321_rsk2e"
+    ],
+    "lat": 39.2040978,
+    "lng": -7.7408153,
+    "country": "Portugal",
+    "region": "Portalegre",
+    "road": [
+      "EN 369",
+      "IC 13"
+    ],
+    "nominatimCountry": "Portugal"
+  },
+  "oy6T44AcmUEvDnH2lfY54A": {
+    "metas": [
+      "meta_1769520965321_zcon1"
+    ],
+    "lat": 38.653095,
+    "lng": -9.185072,
+    "country": "Portugal",
+    "region": "Setúbal",
+    "road": "Rua Alto do Índio",
+    "nominatimCountry": "Portugal"
+  },
+  "q3RoTN4Cpgprl2D4ijuRtQ": {
+    "metas": [
+      "meta_1769520965321_x5nqn"
+    ],
+    "lat": 41.247764,
+    "lng": -7.578511,
+    "country": "Portugal",
+    "region": "Vila Real",
+    "road": "Rua Estrada Municipal nº 323",
+    "nominatimCountry": "Portugal"
+  },
+  "LadlBE1pbs82ldAjGv1fGA": {
+    "metas": [
+      "meta_1769520965321_8hzqw"
+    ],
+    "lat": 38.722744,
+    "lng": -7.987337,
+    "country": "Portugal",
+    "region": "Évora",
+    "road": "Carreira de Baixo",
+    "nominatimCountry": "Portugal"
+  },
+  "3ykPjsrTOcCfZmECyIV2Sw": {
+    "metas": [
+      "meta_1769520965321_gjvuy"
+    ],
+    "lat": 39.917576,
+    "lng": -8.628097,
+    "country": "Portugal",
+    "region": "Leiria",
+    "road": "Rua Professor Alberto Oliveira",
+    "nominatimCountry": "Portugal"
+  },
+  "W6YEgihh0CURwG-pFqKZIQ": {
+    "metas": [
+      "meta_1769520965321_x24mb"
+    ],
+    "lat": 38.960573,
+    "lng": -8.586125,
+    "country": "Portugal",
+    "region": "Santarém",
+    "road": "Rua do Padeiro",
+    "nominatimCountry": "Portugal"
+  },
+  "PyhpHEIJvQdx3yWY15O7Sw": {
+    "metas": [
+      "meta_1769520965321_i2ped"
+    ],
+    "lat": 37.800194,
+    "lng": -8.674585,
+    "country": "Portugal",
+    "region": "Setúbal",
+    "road": "Rua Padre João Tomé",
+    "nominatimCountry": "Portugal"
+  },
+  "hcc9JPaC_NQRQ5DElF-vwQ": {
+    "metas": [
+      "meta_1769520965321_kc7co"
+    ],
+    "lat": 39.4251985,
+    "lng": -9.1165904,
+    "country": "Portugal",
+    "region": "Leiria",
+    "road": "Rua Principal",
+    "nominatimCountry": "Portugal"
+  },
+  "fcbqwloOde4Moe2SfmwXwg": {
+    "metas": [
+      "meta_1769520965321_wmnn3"
+    ],
+    "lat": 40.6583452,
+    "lng": -7.9145215,
+    "country": "Portugal",
+    "region": "Viseu",
+    "road": "Avenida Doutor António José de Almeida",
+    "nominatimCountry": "Portugal"
+  },
+  "1CX5a5YQ5pviU9_aTDzYdg": {
+    "metas": [
+      "meta_1769520965321_2bx1s"
+    ],
+    "lat": 37.135388,
+    "lng": -7.642376,
+    "country": "Portugal",
+    "region": "Faro",
+    "road": "Urbanização Quinta da Barra",
+    "nominatimCountry": "Portugal"
+  },
+  "wJg1UST-prbtyWErt1Hl1A": {
+    "metas": [
+      "meta_1769520965321_78l8t"
+    ],
+    "lat": 41.609488,
+    "lng": -8.296084,
+    "country": "Portugal",
+    "region": "Braga",
+    "road": "Rua de Santa Tecla",
+    "nominatimCountry": "Portugal"
+  },
+  "_Kxa157ANrFyHXgX5wErTw": {
+    "metas": [
+      "meta_1769520965321_np4ap"
+    ],
+    "lat": 38.194324,
+    "lng": -7.983913,
+    "country": "Portugal",
+    "region": "Beja",
+    "road": "CM 1007",
+    "nominatimCountry": "Portugal"
+  },
+  "0BRVsMVX5WdzFxxRmt56VA": {
+    "metas": [
+      "meta_1769520965321_vj5r4"
+    ],
+    "lat": 38.027326,
+    "lng": -7.397323,
+    "country": "Portugal",
+    "region": "Beja",
+    "road": "EM 517",
+    "nominatimCountry": "Portugal"
+  },
+  "wNSLkmRwfE7cu19-0784fA": {
+    "metas": [
+      "meta_1769520965321_7z1kk"
+    ],
+    "lat": 40.845457,
+    "lng": -8.564255,
+    "country": "Portugal",
+    "region": "Aveiro",
+    "road": "Rua dos Lavradores",
+    "nominatimCountry": "Portugal"
+  },
+  "Vd3YvG4ARzmhWXkBGDsRuA": {
+    "metas": [
+      "meta_1769520965321_p4von"
+    ],
+    "lat": 41.319494,
+    "lng": -8.008035,
+    "country": "Portugal",
+    "region": "Porto",
+    "road": "CM 1208",
+    "nominatimCountry": "Portugal"
+  },
+  "Sx9KeVsAwIRinCMk2lGLYA": {
+    "metas": [
+      "meta_1769520965321_4w8bx"
+    ],
+    "lat": 41.172215,
+    "lng": -7.478877,
+    "country": "Portugal",
+    "region": "Viseu",
+    "road": "EN 222",
+    "nominatimCountry": "Portugal"
+  },
+  "UP09TvbOY1CzFWvK2PxdFA": {
+    "metas": [
+      "meta_1769520965321_j0aa0"
+    ],
+    "lat": 37.219735,
+    "lng": -8.28819,
+    "country": "Portugal",
+    "region": "Faro",
+    "road": "Bem Parece",
+    "nominatimCountry": "Portugal"
+  },
+  "fBzKmsdj5qcz1BgwLBjXFw": {
+    "metas": [
+      "meta_1769520965321_k71ks"
+    ],
+    "lat": 40.323782,
+    "lng": -7.590381,
+    "country": "Portugal",
+    "region": "Guarda",
+    "road": "ER 338",
+    "nominatimCountry": "Portugal"
+  },
+  "t-FAkwqe54lav1WqEsGMlQ": {
+    "metas": [
+      "meta_1769520965321_4z1p8"
+    ],
+    "lat": 38.341162,
+    "lng": -8.771788,
+    "country": "Portugal",
+    "region": "Setúbal",
+    "road": "ER 261",
+    "nominatimCountry": "Portugal"
+  },
+  "X7ZmEL6RB9hxmcOsBgjOTA": {
+    "metas": [
+      "meta_1769520965321_1dxrw"
+    ],
+    "lat": 37.030857,
+    "lng": -8.968385,
+    "country": "Portugal",
+    "region": "Faro",
+    "road": null,
+    "nominatimCountry": "Portugal"
+  },
+  "-BTCx6BCNM0k0Al-kiGWFg": {
+    "metas": [
+      "meta_1769520965321_djr69"
+    ],
+    "lat": 41.156579,
+    "lng": -8.620763,
+    "country": "Portugal",
+    "region": "Porto",
+    "road": "Rua de Oliveira Monteiro",
+    "nominatimCountry": "Portugal"
+  },
+  "5D0Z_-G9YQyMHF1LR1toGQ": {
+    "metas": [
+      "meta_1769520966459_jrgnb"
+    ],
+    "lat": 47.2158114,
+    "lng": 27.2663443,
+    "country": "Romania",
+    "region": "Iași",
+    "road": "Strada Matei Corvin",
+    "nominatimCountry": "Romania"
+  },
+  "DR1XG1S6qs5U-KrtmiFmZA": {
+    "metas": [
+      "meta_1769520966460_2mjne"
+    ],
+    "lat": 45.3551017,
+    "lng": 23.6507016,
+    "country": "Romania",
+    "region": "Vâlcea",
+    "road": "Transalpina",
+    "nominatimCountry": "Romania"
+  },
+  "H6YJZP4ZIOp5rFuCB_aX9Q": {
+    "metas": [
+      "meta_1769520966460_q4bnh"
+    ],
+    "lat": 45.59196,
+    "lng": 24.6263706,
+    "country": "Romania",
+    "region": "Argeș",
+    "road": "Transfăgărășan",
+    "nominatimCountry": "Romania"
+  },
+  "J82WmTPqB2NWmxIYKswYNQ": {
+    "metas": [
+      "meta_1769520966460_njgqy"
+    ],
+    "lat": 45.8071313,
+    "lng": 24.1704423,
+    "country": "Romania",
+    "region": "Sibiu",
+    "road": "Strada Heinrich Heine",
+    "nominatimCountry": "Romania"
+  },
+  "YqM0_MBtN3yDhCkVPbD_Dw": {
+    "metas": [
+      "meta_1769520966460_h98do"
+    ],
+    "lat": 45.4121737,
+    "lng": 25.5336814,
+    "country": "Romania",
+    "region": "Prahova",
+    "road": "Strada Cuza Vodă",
+    "nominatimCountry": "Romania"
+  },
+  "wYp3ndORv2h9N_Kb0Iw70Q": {
+    "metas": [
+      "meta_1769520966460_d92l8"
+    ],
+    "lat": 44.5919801,
+    "lng": 26.2750333,
+    "country": "Romania",
+    "region": "Ilfov",
+    "road": "Strada Parâng",
+    "nominatimCountry": "Romania"
+  },
+  "OIMbE783tISrhr8eII12Bg": {
+    "metas": [
+      "meta_1769520967604_bur77"
+    ],
+    "lat": 52.1956702,
+    "lng": 109.8450814,
+    "country": "Russia",
+    "region": "Buryatia",
+    "road": "Улан-Удэ — Романовка — Чита",
+    "nominatimCountry": "Russia"
+  },
+  "ixMXGbP7YBNyBRqbEbn4fQ": {
+    "metas": [
+      "meta_1769520967604_dje5o"
+    ],
+    "lat": 53.0086641,
+    "lng": 46.0641101,
+    "country": "Russia",
+    "region": "Penza Oblast",
+    "road": "58К-113",
+    "nominatimCountry": "Russia"
+  },
+  "NXQWy3Q2QfXQ7ne7IMf4oQ": {
+    "metas": [
+      "meta_1769520967604_dh04h"
+    ],
+    "lat": 53.8545875,
+    "lng": 110.1946559,
+    "country": "Russia",
+    "region": "Buryatia",
+    "road": "Колхозная улица",
+    "nominatimCountry": "Russia"
+  },
+  "W5Exi0Es9MruYHen7ZQPLQ": {
+    "metas": [
+      "meta_1769520967604_6gdg6"
+    ],
+    "lat": 56.1332327,
+    "lng": 29.6543334,
+    "country": "Russia",
+    "region": "Pskov Oblast",
+    "road": "Ленинградская улица",
+    "nominatimCountry": "Russia"
+  },
+  "fiBm6MEkxh2esVp02wnJNQ": {
+    "metas": [
+      "meta_1769520967604_d9ldl"
+    ],
+    "lat": 56.1759861,
+    "lng": 61.739642,
+    "country": "Russia",
+    "region": "Chelyabinsk Oblast",
+    "road": null,
+    "nominatimCountry": "Russia"
+  },
+  "72_t53aCIggc_rfiQY2PmA": {
+    "metas": [
+      "meta_1769520967604_dt6d0"
+    ],
+    "lat": 61.0239857,
+    "lng": 42.0577033,
+    "country": "Russia",
+    "region": "Arkhangelsk Oblast",
+    "road": "11К-006",
+    "nominatimCountry": "Russia"
+  },
+  "nCUb3kSlb-p0nruZz7tbpw": {
+    "metas": [
+      "meta_1769520967604_tw6es"
+    ],
+    "lat": 54.5640071,
+    "lng": 50.6614576,
+    "country": "Russia",
+    "region": "Tatarstan",
+    "road": "Чистополь — Аксубаево — Нурлат",
+    "nominatimCountry": "Russia"
+  },
+  "7fCqvhvrx7KANwiB34FOjw": {
+    "metas": [
+      "meta_1769520967604_cor2i"
+    ],
+    "lat": 62.1353084,
+    "lng": 77.509397,
+    "country": "Russia",
+    "region": "Khanty-Mansiysk Autonomous Okrug – Ugra",
+    "road": "Объездная дорога",
+    "nominatimCountry": "Russia"
+  },
+  "FF0juO_wRBAFpjDXZFyMAg": {
+    "metas": [
+      "meta_1769520967604_lt1s9"
+    ],
+    "lat": 52.9838441,
+    "lng": 56.0101919,
+    "country": "Russia",
+    "region": "Bashkiria",
+    "road": null,
+    "nominatimCountry": "Russia"
+  },
+  "i6O1wjO8xDJ0-ATkDCC5Rw": {
+    "metas": [
+      "meta_1769520967604_98jo9"
+    ],
+    "lat": 58.2805639,
+    "lng": 125.3913391,
+    "country": "Russia",
+    "region": "Sakha Republic",
+    "road": "«Лена»",
+    "nominatimCountry": "Russia"
+  },
+  "QVQkO3dSXOVGddDAOlSo0A": {
+    "metas": [
+      "meta_1769520967604_lswcz"
+    ],
+    "lat": 50.4073406,
+    "lng": 86.877417,
+    "country": "Russia",
+    "region": "Altai Republic",
+    "road": "«Чуйский тракт»",
+    "nominatimCountry": "Russia"
+  },
+  "wlzmpr-Hq9XMFomjfMMqOA": {
+    "metas": [
+      "meta_1769520967604_w4sj3"
+    ],
+    "lat": 51.2973739,
+    "lng": 90.530136,
+    "country": "Russia",
+    "region": "Tuva Republic",
+    "road": "93К-01",
+    "nominatimCountry": "Russia"
+  },
+  "FC4qKxZncdHRdzWqF36tfQ": {
+    "metas": [
+      "meta_1769520967604_cowby"
+    ],
+    "lat": 43.8940975,
+    "lng": 46.8310929,
+    "country": "Russia",
+    "region": "Dagestan",
+    "road": "82К-002",
+    "nominatimCountry": "Russia"
+  },
+  "_oq_NIHnmIusHPSUv5bNDg": {
+    "metas": [
+      "meta_1769520967604_0z9zq"
+    ],
+    "lat": 69.3916728,
+    "lng": 32.0794056,
+    "country": "Russia",
+    "region": "Murmansk Oblast",
+    "road": "«Кола»",
+    "nominatimCountry": "Russia"
+  },
+  "5UtVaST-Y4hKj0Z9reqlTA": {
+    "metas": [
+      "meta_1769520967604_plucr"
+    ],
+    "lat": 62.0501759,
+    "lng": 129.0108856,
+    "country": "Russia",
+    "region": "Sakha Republic",
+    "road": "Vilyuisky Highway",
+    "nominatimCountry": "Russia"
+  },
+  "9O4Q51bMzDRGp3EvSwu8_Q": {
+    "metas": [
+      "meta_1769520967604_bu8uk"
+    ],
+    "lat": 67.1123261,
+    "lng": 56.8090684,
+    "country": "Russia",
+    "region": "Nenets Autonomous Okrug",
+    "road": "Нарьян-Мар — Усинск",
+    "nominatimCountry": "Russia"
+  },
+  "ArjdW6879RkVTfus1XFthA": {
+    "metas": [
+      "meta_1769520967604_c3h54"
+    ],
+    "lat": 42.4715175,
+    "lng": 47.9414862,
+    "country": "Russia",
+    "region": "Dagestan",
+    "road": "Инчхе",
+    "nominatimCountry": "Russia"
+  },
+  "Q_RoXWC00XQVVoMFqWg0QQ": {
+    "metas": [
+      "meta_1769520967604_7arn7"
+    ],
+    "lat": 52.9672156,
+    "lng": 143.0872489,
+    "country": "Russia",
+    "region": "Sakhalin Oblast",
+    "road": "А-393",
+    "nominatimCountry": "Russia"
+  },
+  "_yFOIt8U7-EdkY4lT_0_rg": {
+    "metas": [
+      "meta_1769520967604_lymt7"
+    ],
+    "lat": 53.1677535,
+    "lng": 107.2694783,
+    "country": "Russia",
+    "region": "Irkutsk Oblast",
+    "road": "Bayanday — Yelantsy — Khuzhir — Kharantsy",
+    "nominatimCountry": "Russia"
+  },
+  "BQ-Lnc1i2QwYRwDYKbS9LA": {
+    "metas": [
+      "meta_1769520967604_r84ll"
+    ],
+    "lat": 43.5481255,
+    "lng": 39.7933061,
+    "country": "Russia",
+    "region": "Krasnodar Krai",
+    "road": "аллея Челтенхема",
+    "nominatimCountry": "Russia"
+  },
+  "i5YXt7ArDpGuJ3QRctNp1w": {
+    "metas": [
+      "meta_1769520967605_27mgv"
+    ],
+    "lat": 66.9882205,
+    "lng": 32.1941557,
+    "country": "Russia",
+    "region": "Murmansk Oblast",
+    "road": "«Кола»",
+    "nominatimCountry": "Russia"
+  },
+  "4WC3EJBM1uM_N74FNxgFiA": {
+    "metas": [
+      "meta_1769520967605_qxckm"
+    ],
+    "lat": 57.8805142,
+    "lng": 60.0604041,
+    "country": "Russia",
+    "region": "Sverdlovsk Oblast",
+    "road": null,
+    "nominatimCountry": "Russia"
+  },
+  "QVv_T4fKPwSSf8kkR-pm1Q": {
+    "metas": [
+      "meta_1769520968743_h7l7s"
+    ],
+    "lat": 43.935227,
+    "lng": 12.465777,
+    "country": "San Marino",
+    "region": null,
+    "road": "Strada Calcinelli",
+    "nominatimCountry": "San Marino"
+  },
+  "lbO3iSBzxURDgp1aqjVHLQ": {
+    "metas": [
+      "meta_1769520968743_5ados"
+    ],
+    "lat": 43.957563,
+    "lng": 12.492343,
+    "country": "San Marino",
+    "region": null,
+    "road": "Strada di Valgiurata",
+    "nominatimCountry": "San Marino"
+  },
+  "qzu_jzo0Rm32XDjWJub0Pg": {
+    "metas": [
+      "meta_1769520968743_8pdri"
+    ],
+    "lat": 43.9581056,
+    "lng": 12.4761806,
+    "country": "San Marino",
+    "region": null,
+    "road": "Via Cinque Febbraio",
+    "nominatimCountry": "San Marino"
+  },
+  "H0MyxEsh1sfXSVeeud_i3g": {
+    "metas": [
+      "meta_1769520968743_iic8a"
+    ],
+    "lat": 43.925587,
+    "lng": 12.497273,
+    "country": "San Marino",
+    "region": null,
+    "road": "Strada dei Seralli",
+    "nominatimCountry": "San Marino"
+  },
+  "6GjPKVGof9T_A2ECG2t5QA": {
+    "metas": [
+      "meta_1769520968743_d1gfs"
+    ],
+    "lat": 43.948313,
+    "lng": 12.4604071,
+    "country": "San Marino",
+    "region": null,
+    "road": "Via Venticinque Marzo",
+    "nominatimCountry": "San Marino"
+  },
+  "xXDRsIiz67-e9GRJSZpyIQ": {
+    "metas": [
+      "meta_1769520968743_4avyg"
+    ],
+    "lat": 43.945927,
+    "lng": 12.455635,
+    "country": "San Marino",
+    "region": null,
+    "road": "Via Ventotto Luglio",
+    "nominatimCountry": "San Marino"
+  },
+  "ZpNTtlZWDDFF69kQHuPhow": {
+    "metas": [
+      "meta_1769520968743_q7nhr"
+    ],
+    "lat": 43.978176,
+    "lng": 12.480137,
+    "country": "San Marino",
+    "region": null,
+    "road": "Strada Cardio",
+    "nominatimCountry": "San Marino"
+  },
+  "fjOIy_c2Tc2h9hEW_qfe5A": {
+    "metas": [
+      "meta_1769520968743_24dcj"
+    ],
+    "lat": 43.944255,
+    "lng": 12.447782,
+    "country": "San Marino",
+    "region": null,
+    "road": "Via Ventotto Luglio",
+    "nominatimCountry": "San Marino"
+  },
+  "RNerATT2JZIYeTrZ6u7nGQ": {
+    "metas": [
+      "meta_1769520968743_4lvzn"
+    ],
+    "lat": 43.9366043,
+    "lng": 12.4469435,
+    "country": "San Marino",
+    "region": null,
+    "road": "Contrada del Collegio",
+    "nominatimCountry": "San Marino"
+  },
+  "6TC-1t1MHD7SU0FnEnc1dw": {
+    "metas": [
+      "meta_1769520969880_fqgxs"
+    ],
+    "lat": 44.8028808,
+    "lng": 20.8996511,
+    "country": "Serbia",
+    "region": "Vojvodina",
+    "road": "14",
+    "nominatimCountry": "Serbia"
+  },
+  "Rx0g5Gh6rocNyGquWumQtw": {
+    "metas": [
+      "meta_1769520969880_4yjc6"
+    ],
+    "lat": 45.7866617,
+    "lng": 19.6970347,
+    "country": "Serbia",
+    "region": "Vojvodina",
+    "road": "109",
+    "nominatimCountry": "Serbia"
+  },
+  "dUPULXcBR1MNhKhYv8-5LA": {
+    "metas": [
+      "meta_1769520969880_t5j86"
+    ],
+    "lat": 45.9867156,
+    "lng": 20.0135995,
+    "country": "Serbia",
+    "region": "Vojvodina",
+    "road": "102",
+    "nominatimCountry": "Serbia"
+  },
+  "hdRb8f5bBvLSKvRwSG466g": {
+    "metas": [
+      "meta_1769520969880_5dxw3"
+    ],
+    "lat": 44.5915386,
+    "lng": 20.639644,
+    "country": "Serbia",
+    "region": "Central Serbia",
+    "road": "Аутопут за Ниш",
+    "nominatimCountry": "Serbia"
+  },
+  "xCLFhiOeqIEuvVJqgt6jWg": {
+    "metas": [
+      "meta_1769520969880_whckp"
+    ],
+    "lat": 43.1612079,
+    "lng": 21.8656412,
+    "country": "Serbia",
+    "region": "Central Serbia",
+    "road": "Кнез Михајлова",
+    "nominatimCountry": "Serbia"
+  },
+  "4U_DBQTsY2Ou61laimKoPg": {
+    "metas": [
+      "meta_1769520969880_rh9a1"
+    ],
+    "lat": 43.4340775,
+    "lng": 22.4128619,
+    "country": "Serbia",
+    "region": "Central Serbia",
+    "road": "221",
+    "nominatimCountry": "Serbia"
+  },
+  "MwNfr7uNpt-3F1KqTINkMw": {
+    "metas": [
+      "meta_1769520969880_2j73g"
+    ],
+    "lat": 44.9038982,
+    "lng": 20.0109566,
+    "country": "Serbia",
+    "region": "Vojvodina",
+    "road": "A3",
+    "nominatimCountry": "Serbia"
+  },
+  "AMHLbTYpoXWq2a0ZmVZSSQ": {
+    "metas": [
+      "meta_1769520969880_boi7x"
+    ],
+    "lat": 44.8150487,
+    "lng": 20.4539565,
+    "country": "Serbia",
+    "region": "Central Serbia",
+    "road": "Brankova",
+    "nominatimCountry": "Serbia"
+  },
+  "sDRYVJsZaAopb3Li8BKJqQ": {
+    "metas": [
+      "meta_1769520969880_pqx20"
+    ],
+    "lat": 45.0939483,
+    "lng": 21.2601405,
+    "country": "Serbia",
+    "region": "Vojvodina",
+    "road": "10",
+    "nominatimCountry": "Serbia"
+  },
+  "4rycAYTPKiZ1QpPdKsnNTg": {
+    "metas": [
+      "meta_1769520969880_k7s8i"
+    ],
+    "lat": 45.9479217,
+    "lng": 19.7443057,
+    "country": "Serbia",
+    "region": "Vojvodina",
+    "road": "Čantavir",
+    "nominatimCountry": "Serbia"
+  },
+  "cYwuf2mi1DDvpeHBZ3x24g": {
+    "metas": [
+      "meta_1769520969880_gtqbq"
+    ],
+    "lat": 44.7845416,
+    "lng": 20.925146,
+    "country": "Serbia",
+    "region": "Vojvodina",
+    "road": "14",
+    "nominatimCountry": "Serbia"
+  },
+  "fptpwx8HkkvXxjiBYF_YGQ": {
+    "metas": [
+      "meta_1769520969880_2gmev"
+    ],
+    "lat": 43.1795165,
+    "lng": 22.5677673,
+    "country": "Serbia",
+    "region": "Central Serbia",
+    "road": "A4",
+    "nominatimCountry": "Serbia"
+  },
+  "TE5oojji-gLnXEQ3fmfQ-g": {
+    "metas": [
+      "meta_1769520971022_5tr8z"
+    ],
+    "lat": 48.2536507,
+    "lng": 17.4369795,
+    "country": "Slovakia",
+    "region": "Region of Bratislava",
+    "road": "D1",
+    "nominatimCountry": "Slovakia"
+  },
+  "3EjaHvW5m1I2v3C5nhMG1A": {
+    "metas": [
+      "meta_1769520971022_p2471"
+    ],
+    "lat": 48.9198112,
+    "lng": 18.3400797,
+    "country": "Slovakia",
+    "region": "Region of Trenčín",
+    "road": "574",
+    "nominatimCountry": "Slovakia"
+  },
+  "40_0yyXueTllcrVkYSA5uw": {
+    "metas": [
+      "meta_1769520971022_5q74q"
+    ],
+    "lat": 49.2065392,
+    "lng": 18.7211638,
+    "country": "Slovakia",
+    "region": "Region of Žilina",
+    "road": "Oslobodenia",
+    "nominatimCountry": "Slovakia"
+  },
+  "obkqg8v8uo3xw_j0mufZAQ": {
+    "metas": [
+      "meta_1769520971022_jb22l"
+    ],
+    "lat": 48.2737458,
+    "lng": 17.8297657,
+    "country": "Slovakia",
+    "region": "Region of Trnava",
+    "road": "Pod vinohradmi",
+    "nominatimCountry": "Slovakia"
+  },
+  "P3D3eO8Rm9il9DRwe7nmtQ": {
+    "metas": [
+      "meta_1769520971022_sof2u"
+    ],
+    "lat": 48.8997073,
+    "lng": 22.2015943,
+    "country": "Slovakia",
+    "region": "Region of Košice",
+    "road": "Vyšná Rybnica",
+    "nominatimCountry": "Slovakia"
+  },
+  "FiIF62rP5RkGbKhpE25zKg": {
+    "metas": [
+      "meta_1769520971022_hy87v"
+    ],
+    "lat": 49.012303,
+    "lng": 18.266077,
+    "country": "Slovakia",
+    "region": "Region of Trenčín",
+    "road": "Hlavná",
+    "nominatimCountry": "Slovakia"
+  },
+  "oc929o3-NPkI-hL5dgbFPA": {
+    "metas": [
+      "meta_1769520971022_kx9qu"
+    ],
+    "lat": 48.9845989,
+    "lng": 18.5689638,
+    "country": "Slovakia",
+    "region": "Region of Žilina",
+    "road": "2112",
+    "nominatimCountry": "Slovakia"
+  },
+  "AMSZAA9jeEZgQqD1HgEJjQ": {
+    "metas": [
+      "meta_1769520971022_v3k3j"
+    ],
+    "lat": 48.783741,
+    "lng": 17.7351005,
+    "country": "Slovakia",
+    "region": "Region of Trenčín",
+    "road": "1239",
+    "nominatimCountry": "Slovakia"
+  },
+  "MQqahhoONYD88CFob7vqOQ": {
+    "metas": [
+      "meta_1769520971023_ll81p"
+    ],
+    "lat": 48.5073443,
+    "lng": 19.6748145,
+    "country": "Slovakia",
+    "region": "Region of Banská Bystrica",
+    "road": "Hlavná",
+    "nominatimCountry": "Slovakia"
+  },
+  "Vd5ZxxWKDC0wqPc1gQkfBA": {
+    "metas": [
+      "meta_1769520971023_e51uu"
+    ],
+    "lat": 48.651038,
+    "lng": 17.796627,
+    "country": "Slovakia",
+    "region": "Region of Trenčín",
+    "road": "Pobedim",
+    "nominatimCountry": "Slovakia"
+  },
+  "wvAySCoPQ6Ffabtop49hOA": {
+    "metas": [
+      "meta_1769520971023_hdbrq"
+    ],
+    "lat": 48.345303,
+    "lng": 18.447756,
+    "country": "Slovakia",
+    "region": "Region of Nitra",
+    "road": "1628",
+    "nominatimCountry": "Slovakia"
+  },
+  "gP1nLzgki7xUtg-gQX-Jtw": {
+    "metas": [
+      "meta_1769520971023_vscqk"
+    ],
+    "lat": 47.9300344,
+    "lng": 17.981916,
+    "country": "Slovakia",
+    "region": "Region of Nitra",
+    "road": "573",
+    "nominatimCountry": "Slovakia"
+  },
+  "JdqtK-ZwPDufUWwcyC1PGg": {
+    "metas": [
+      "meta_1769520971023_dv0jk"
+    ],
+    "lat": 49.0188467,
+    "lng": 18.937336,
+    "country": "Slovakia",
+    "region": "Region of Žilina",
+    "road": "2141",
+    "nominatimCountry": "Slovakia"
+  },
+  "IouY9GvhXH-uBSNg90Bd9Q": {
+    "metas": [
+      "meta_1769520971023_vezp5"
+    ],
+    "lat": 48.3575789,
+    "lng": 17.9344073,
+    "country": "Slovakia",
+    "region": "Region of Nitra",
+    "road": "513",
+    "nominatimCountry": "Slovakia"
+  },
+  "NnRd9IA8rxp5Vc2nYvUN9A": {
+    "metas": [
+      "meta_1769520971023_9wtqf"
+    ],
+    "lat": 48.1580681,
+    "lng": 17.1258261,
+    "country": "Slovakia",
+    "region": "Region of Bratislava",
+    "road": "Šancová",
+    "nominatimCountry": "Slovakia"
+  },
+  "bD26GncxCrFlCaY-jYpwQg": {
+    "metas": [
+      "meta_1769520971023_31lzs"
+    ],
+    "lat": 48.3562731,
+    "lng": 18.0491438,
+    "country": "Slovakia",
+    "region": "Region of Nitra",
+    "road": "593",
+    "nominatimCountry": "Slovakia"
+  },
+  "6jtF399AevKDpWXDd68CIQ": {
+    "metas": [
+      "meta_1769520971023_3ebey"
+    ],
+    "lat": 48.1721586,
+    "lng": 17.1657505,
+    "country": "Slovakia",
+    "region": "Region of Bratislava",
+    "road": "Koperníkova",
+    "nominatimCountry": "Slovakia"
+  },
+  "fHNz3wzf2IeyKT11yeHJIw": {
+    "metas": [
+      "meta_1769520971023_sere9"
+    ],
+    "lat": 48.3271125,
+    "lng": 18.0919741,
+    "country": "Slovakia",
+    "region": "Region of Nitra",
+    "road": "Jazerná",
+    "nominatimCountry": "Slovakia"
+  },
+  "essidswwCSNHibBd5jj0DQ": {
+    "metas": [
+      "meta_1769520971023_wln4m"
+    ],
+    "lat": 48.1464659,
+    "lng": 17.1379039,
+    "country": "Slovakia",
+    "region": "Region of Bratislava",
+    "road": "Turčianska",
+    "nominatimCountry": "Slovakia"
+  },
+  "dNUjkc5XVOND2uDxppzW1A": {
+    "metas": [
+      "meta_1769520971023_3i0um"
+    ],
+    "lat": 48.1706981,
+    "lng": 17.1749503,
+    "country": "Slovakia",
+    "region": "Region of Bratislava",
+    "road": "Bratislava",
+    "nominatimCountry": "Slovakia"
+  },
+  "7V5Bac7DZqw_gIaMTTy6zw": {
+    "metas": [
+      "meta_1769520971023_n6u7z"
+    ],
+    "lat": 48.6121158,
+    "lng": 17.8343458,
+    "country": "Slovakia",
+    "region": "Region of Trnava",
+    "road": "Žilinská cesta",
+    "nominatimCountry": "Slovakia"
+  },
+  "Tj7j-PU1mCaMDYTmx9lW2Q": {
+    "metas": [
+      "meta_1769520971023_xfy9x"
+    ],
+    "lat": 48.566357,
+    "lng": 18.8204159,
+    "country": "Slovakia",
+    "region": "Region of Banská Bystrica",
+    "road": "R1",
+    "nominatimCountry": "Slovakia"
+  },
+  "IWr2nS5tpnmmzBbhitkt3g": {
+    "metas": [
+      "meta_1769520971023_pbpqd"
+    ],
+    "lat": 49.280121,
+    "lng": 18.827467,
+    "country": "Slovakia",
+    "region": "Region of Žilina",
+    "road": "2054",
+    "nominatimCountry": "Slovakia"
+  },
+  "opB30UCXUVA3DiC9yvdb2Q": {
+    "metas": [
+      "meta_1769520971023_b18l6"
+    ],
+    "lat": 48.4236693,
+    "lng": 17.7977679,
+    "country": "Slovakia",
+    "region": "Region of Trnava",
+    "road": null,
+    "nominatimCountry": "Slovakia"
+  },
+  "8W-KvPQEOx64zAO0Y1GtWA": {
+    "metas": [
+      "meta_1769520971023_zhs83"
+    ],
+    "lat": 49.2086793,
+    "lng": 19.2477207,
+    "country": "Slovakia",
+    "region": "Region of Žilina",
+    "road": "Veličná",
+    "nominatimCountry": "Slovakia"
+  },
+  "gZJQVwOYQIs-7W3Z4XYQKA": {
+    "metas": [
+      "meta_1769520971023_1aoss"
+    ],
+    "lat": 49.2073933,
+    "lng": 19.2445807,
+    "country": "Slovakia",
+    "region": "Region of Žilina",
+    "road": "Veličná",
+    "nominatimCountry": "Slovakia"
+  },
+  "YP9vqZWiBbYpkWL93ME3qA": {
+    "metas": [
+      "meta_1769520971023_5oy9k"
+    ],
+    "lat": 48.786793,
+    "lng": 20.3037461,
+    "country": "Slovakia",
+    "region": "Region of Košice",
+    "road": "3033",
+    "nominatimCountry": "Slovakia"
+  },
+  "D6lspMXwIUgsJJU74xCt6Q": {
+    "metas": [
+      "meta_1769520971023_oxzdf"
+    ],
+    "lat": 48.5221855,
+    "lng": 17.4540175,
+    "country": "Slovakia",
+    "region": "Region of Trnava",
+    "road": "502",
+    "nominatimCountry": "Slovakia"
+  },
+  "MpidrvkRv7OdnGbWg-ELnQ": {
+    "metas": [
+      "meta_1769520971023_m69z9"
+    ],
+    "lat": 49.2207942,
+    "lng": 20.9027706,
+    "country": "Slovakia",
+    "region": "Region of Prešov",
+    "road": "68",
+    "nominatimCountry": "Slovakia"
+  },
+  "Z5QVxIUgMkl9Nt97LuLxyw": {
+    "metas": [
+      "meta_1769520971023_m39cf"
+    ],
+    "lat": 48.5515539,
+    "lng": 18.1190523,
+    "country": "Slovakia",
+    "region": "Region of Nitra",
+    "road": "Hlohovská cesta",
+    "nominatimCountry": "Slovakia"
+  },
+  "Q_utNdLPQAxCA1f1l0Jgnw": {
+    "metas": [
+      "meta_1769520971023_jptjp"
+    ],
+    "lat": 48.4300401,
+    "lng": 17.7728564,
+    "country": "Slovakia",
+    "region": "Region of Trnava",
+    "road": "Osloboditeľov",
+    "nominatimCountry": "Slovakia"
+  },
+  "OQ38FWsp7Qhq3PJHrG9NMw": {
+    "metas": [
+      "meta_1769520971023_4il0o"
+    ],
+    "lat": 48.0696123,
+    "lng": 18.092397,
+    "country": "Slovakia",
+    "region": "Region of Nitra",
+    "road": "75",
+    "nominatimCountry": "Slovakia"
+  },
+  "lmBTKLvRVRkEbn4zZFsJtg": {
+    "metas": [
+      "meta_1769520971023_u1loe"
+    ],
+    "lat": 48.5595523,
+    "lng": 21.0988,
+    "country": "Slovakia",
+    "region": "Region of Košice",
+    "road": "3400",
+    "nominatimCountry": "Slovakia"
+  },
+  "cV82GpTn1PHDjhSnnTB4Iw": {
+    "metas": [
+      "meta_1769520971023_mqmez"
+    ],
+    "lat": 47.7592553,
+    "lng": 18.1305616,
+    "country": "Slovakia",
+    "region": "Region of Nitra",
+    "road": "Jókaiho",
+    "nominatimCountry": "Slovakia"
+  },
+  "M6Na5apSG2zc05kHlA1lyg": {
+    "metas": [
+      "meta_1769520971023_p81km"
+    ],
+    "lat": 49.0898522,
+    "lng": 19.4817374,
+    "country": "Slovakia",
+    "region": "Region of Žilina",
+    "road": "D1",
+    "nominatimCountry": "Slovakia"
+  },
+  "cA6D5oF6CNwDYNN2Cr4XoA": {
+    "metas": [
+      "meta_1769520971023_x4xfy"
+    ],
+    "lat": 48.4010816,
+    "lng": 17.0860294,
+    "country": "Slovakia",
+    "region": "Region of Bratislava",
+    "road": "503",
+    "nominatimCountry": "Slovakia"
+  },
+  "fRBjgW7N83skmZjgVlnYVg": {
+    "metas": [
+      "meta_1769520971023_wfs20"
+    ],
+    "lat": 48.1371108,
+    "lng": 17.1279792,
+    "country": "Slovakia",
+    "region": "Region of Bratislava",
+    "road": "Pribinova",
+    "nominatimCountry": "Slovakia"
+  },
+  "9dXO-u2n5MUNSnNhcJxEJg": {
+    "metas": [
+      "meta_1769520971023_2w2dj"
+    ],
+    "lat": 48.1541858,
+    "lng": 17.1109345,
+    "country": "Slovakia",
+    "region": "Region of Bratislava",
+    "road": "Štefanovičova",
+    "nominatimCountry": "Slovakia"
+  },
+  "tFfNDkzhQVDD3wVT2s2QKA": {
+    "metas": [
+      "meta_1769520971023_2bgem"
+    ],
+    "lat": 49.223125,
+    "lng": 18.7472,
+    "country": "Slovakia",
+    "region": "Region of Žilina",
+    "road": "1. mája",
+    "nominatimCountry": "Slovakia"
+  },
+  "I-rR6wfY_NlmT_VZjvVJsQ": {
+    "metas": [
+      "meta_1769520971023_k2hue"
+    ],
+    "lat": 48.8467136,
+    "lng": 17.2227962,
+    "country": "Slovakia",
+    "region": "Region of Trnava",
+    "road": "Sasinkova",
+    "nominatimCountry": "Slovakia"
+  },
+  "0YYeiSX6M7KW7o_trlLuNQ": {
+    "metas": [
+      "meta_1769520971023_95h6u"
+    ],
+    "lat": 48.9574903,
+    "lng": 18.5169625,
+    "country": "Slovakia",
+    "region": "Region of Žilina",
+    "road": "2113",
+    "nominatimCountry": "Slovakia"
+  },
+  "oKL9BE_1rXvBVMiYe2Pt2g": {
+    "metas": [
+      "meta_1769520972160_k4n4s"
+    ],
+    "lat": 46.2518621,
+    "lng": 15.1661213,
+    "country": "Slovenia",
+    "region": null,
+    "road": "Šlandrov trg",
+    "nominatimCountry": "Slovenia"
+  },
+  "SJsXZa3EK0STN4xrwu-3ng": {
+    "metas": [
+      "meta_1769520972160_2agmb"
+    ],
+    "lat": 46.495353,
+    "lng": 13.754424,
+    "country": "Slovenia",
+    "region": null,
+    "road": "Podkoren",
+    "nominatimCountry": "Slovenia"
+  },
+  "wv2j5IA_boH3qisHlEgL1Q": {
+    "metas": [
+      "meta_1769520972160_5yqs7"
+    ],
+    "lat": 46.147619,
+    "lng": 14.356034,
+    "country": "Slovenia",
+    "region": null,
+    "road": "Draga",
+    "nominatimCountry": "Slovenia"
+  },
+  "J3baT-DirwydAJfMwHD0Pg": {
+    "metas": [
+      "meta_1769520973300_85jlu"
+    ],
+    "lat": 41.9862018,
+    "lng": -5.1213368,
+    "country": "Spain",
+    "region": "Castile and León",
+    "road": "Carretera Madrid a León por Valladolid",
+    "nominatimCountry": "Spain"
+  },
+  "029s3GxjRAGY8D0oE2ZMbg": {
+    "metas": [
+      "meta_1769520973300_m3ixn"
+    ],
+    "lat": 39.3996461,
+    "lng": -3.2046636,
+    "country": "Spain",
+    "region": "Castile-La Mancha",
+    "road": "Carretera de Alcázar de San Juan a Campo de Criptana",
+    "nominatimCountry": "Spain"
+  },
+  "cd8wraUaln8ctbA8o86eFg": {
+    "metas": [
+      "meta_1769520973301_2nzt8"
+    ],
+    "lat": 43.5890979,
+    "lng": -5.9354538,
+    "country": "Spain",
+    "region": "Asturias",
+    "road": "Avenida del Pinar",
+    "nominatimCountry": "Spain"
+  },
+  "C21OEMfNjcVZV3igv1k3sg": {
+    "metas": [
+      "meta_1769520973301_d5p0v"
+    ],
+    "lat": 42.380666,
+    "lng": 2.740864,
+    "country": "Spain",
+    "region": "Catalonia",
+    "road": "GI-503",
+    "nominatimCountry": "Spain"
+  },
+  "VgBhwOy3XjztC5bRyJo_og": {
+    "metas": [
+      "meta_1769520973301_n2zz2"
+    ],
+    "lat": 37.2225544,
+    "lng": -3.0783447,
+    "country": "Spain",
+    "region": "Andalusia",
+    "road": "Autovía de Sevilla a Almería por Granada",
+    "nominatimCountry": "Spain"
+  },
+  "2EQoBvvCLyGDdzXZMQ5VKw": {
+    "metas": [
+      "meta_1769520973301_2q479"
+    ],
+    "lat": 42.365819,
+    "lng": 1.65456,
+    "country": "Spain",
+    "region": "Catalonia",
+    "road": "Eix Pirinenc",
+    "nominatimCountry": "Spain"
+  },
+  "gsx4d-W9lx-sQyLCqtMXow": {
+    "metas": [
+      "meta_1769520973301_mm9y1"
+    ],
+    "lat": 37.593936,
+    "lng": -1.558222,
+    "country": "Spain",
+    "region": "Region of Murcia",
+    "road": "RM-D4",
+    "nominatimCountry": "Spain"
+  },
+  "jczQ7CZGR-DZH7oe-zU5cg": {
+    "metas": [
+      "meta_1769520973301_b34u4"
+    ],
+    "lat": 39.9405599,
+    "lng": -5.9306523,
+    "country": "Spain",
+    "region": "Extremadura",
+    "road": "Autovía del Norte de Extremadura",
+    "nominatimCountry": "Spain"
+  },
+  "0HdtjW_7YI4ZFSuSd7ehUA": {
+    "metas": [
+      "meta_1769520973301_1d9mz"
+    ],
+    "lat": 37.6940076,
+    "lng": -2.6607988,
+    "country": "Spain",
+    "region": "Andalusia",
+    "road": "Carretera de Baza a Huéscar por Benamaurel",
+    "nominatimCountry": "Spain"
+  },
+  "UJ_4_6G1QQ1zO4TwOnq19w": {
+    "metas": [
+      "meta_1769520973302_67im7"
+    ],
+    "lat": 29.0078739,
+    "lng": -13.746674,
+    "country": "Spain",
+    "region": "Canary Islands",
+    "road": "LZ-602",
+    "nominatimCountry": "Spain"
+  },
+  "8Vz-PWDsiUcbcreQkhLrcw": {
+    "metas": [
+      "meta_1769520973302_hndsi"
+    ],
+    "lat": 28.4691523,
+    "lng": -14.0382835,
+    "country": "Spain",
+    "region": "Canary Islands",
+    "road": "Llanos Concepción",
+    "nominatimCountry": "Spain"
+  },
+  "y5U1tuUwt2-DQv4b84m_xA": {
+    "metas": [
+      "meta_1769520973302_dsbju"
+    ],
+    "lat": 42.375775,
+    "lng": -1.721637,
+    "country": "Spain",
+    "region": "Navarre",
+    "road": "Nafarroako autobidea",
+    "nominatimCountry": "Spain"
+  },
+  "ZMIUG2vXX4c2NjVtIQbZuw": {
+    "metas": [
+      "meta_1769520973302_jsqx0"
+    ],
+    "lat": 43.263421,
+    "lng": -2.9291806,
+    "country": "Spain",
+    "region": "Autonomous Community of the Basque Country",
+    "road": "Ibañez de Bilbao kalea",
+    "nominatimCountry": "Spain"
+  },
+  "Um_rzvXsliXcGy93pRqtoQ": {
+    "metas": [
+      "meta_1769520973302_rs7jn"
+    ],
+    "lat": 37.1374522,
+    "lng": -6.4325362,
+    "country": "Spain",
+    "region": "Andalusia",
+    "road": "Raya Real",
+    "nominatimCountry": "Spain"
+  },
+  "3EEpJFnVWCo3rEoxo2xJvg": {
+    "metas": [
+      "meta_1769520974437_ucif5"
+    ],
+    "lat": 78.2235293,
+    "lng": 15.640591,
+    "country": "Svalbard",
+    "region": "Svalbard",
+    "road": "Elveleiet",
+    "nominatimCountry": "Norway"
+  },
+  "PEwzNG-sUm2qvgIWDgtrUg": {
+    "metas": [
+      "meta_1769520974437_60cgq"
+    ],
+    "lat": 78.6556649,
+    "lng": 16.3197633,
+    "country": "Svalbard",
+    "region": "Svalbard",
+    "road": "Pyramiden",
+    "nominatimCountry": "Norway"
+  },
+  "HF9NeQpmACcpSQXoXTk9Nw": {
+    "metas": [
+      "meta_1769520974437_avzzr"
+    ],
+    "lat": 78.0671827,
+    "lng": 14.207946,
+    "country": "Svalbard",
+    "region": "Svalbard",
+    "road": "улица Владимира Русанова",
+    "nominatimCountry": "Norway"
+  },
+  "eGMw84w87RHMkD1fOmNBig": {
+    "metas": [
+      "meta_1769520974437_4qdqn"
+    ],
+    "lat": 78.2142502,
+    "lng": 15.7412222,
+    "country": "Svalbard",
+    "region": "Svalbard",
+    "road": "400",
+    "nominatimCountry": "Norway"
+  },
+  "X2kqRoZV0mbSXge-DL1scg": {
+    "metas": [
+      "meta_1769520974437_i9y3c"
+    ],
+    "lat": 78.2350188,
+    "lng": 15.4535258,
+    "country": "Svalbard",
+    "region": "Svalbard",
+    "road": null,
+    "nominatimCountry": "Norway"
+  },
+  "WtU_ceWLQd12JJHRAain6g": {
+    "metas": [
+      "meta_1769520974437_tyb73"
+    ],
+    "lat": 79.6858634,
+    "lng": 12.2357522,
+    "country": "Svalbard",
+    "region": "Svalbard",
+    "road": null,
+    "nominatimCountry": "Norway"
+  },
+  "55lNNaI-OdTiVxdBHAyt6Q": {
+    "metas": [
+      "meta_1769520974437_p3nn0"
+    ],
+    "lat": 78.6574158,
+    "lng": 16.6168204,
+    "country": "Svalbard",
+    "region": "Svalbard",
+    "road": null,
+    "nominatimCountry": "Norway"
+  },
+  "xSuRl8lj2S2ldx_vzphffQ": {
+    "metas": [
+      "meta_1769520975593_rh40i"
+    ],
+    "lat": 55.8603502,
+    "lng": 14.0645816,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "Kung Borres väg",
+    "nominatimCountry": "Sweden"
+  },
+  "Ip-cCYH5D6jRFvdJ-34EmQ": {
+    "metas": [
+      "meta_1769520975593_so3q1"
+    ],
+    "lat": 55.7924868,
+    "lng": 13.3223675,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "113",
+    "nominatimCountry": "Sweden"
+  },
+  "9J1_DYWaDMYypiHNrcjUzg": {
+    "metas": [
+      "meta_1769520975593_6iy20"
+    ],
+    "lat": 59.8624919,
+    "lng": 17.3613938,
+    "country": "Sweden",
+    "region": "Uppsala County",
+    "road": "72",
+    "nominatimCountry": "Sweden"
+  },
+  "1qT_52M1QOthv1f9cvsoXw": {
+    "metas": [
+      "meta_1769520975593_lsc0t"
+    ],
+    "lat": 61.9908194,
+    "lng": 14.5790413,
+    "country": "Sweden",
+    "region": "Jämtland County",
+    "road": "Inlandsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "Q1fKCggLn-1U-sKO7cGIVw": {
+    "metas": [
+      "meta_1769520975593_4q18u"
+    ],
+    "lat": 56.2702168,
+    "lng": 15.4613156,
+    "country": "Sweden",
+    "region": "Blekinge County",
+    "road": "Liatorpsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "e9mSY-3hUZO0qNy9Fnh3YA": {
+    "metas": [
+      "meta_1769520975593_lfl71"
+    ],
+    "lat": 64.917928,
+    "lng": 17.871447,
+    "country": "Sweden",
+    "region": "Västerbotten County",
+    "road": "AC 988",
+    "nominatimCountry": "Sweden"
+  },
+  "sW5FCnrGg9-qq-K5eiwaEw": {
+    "metas": [
+      "meta_1769520975593_tloj9"
+    ],
+    "lat": 59.612899,
+    "lng": 17.45999,
+    "country": "Sweden",
+    "region": "Uppsala County",
+    "road": "Lästängsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "CzKR_T5ewIu1Fvrf6-zW0A": {
+    "metas": [
+      "meta_1769520975593_e1be5"
+    ],
+    "lat": 59.7505123,
+    "lng": 17.9108315,
+    "country": "Sweden",
+    "region": "Uppsala County",
+    "road": "77",
+    "nominatimCountry": "Sweden"
+  },
+  "pg1fT6h2pXchIZ0XtF9UHA": {
+    "metas": [
+      "meta_1769520975593_2y422"
+    ],
+    "lat": 60.2182208,
+    "lng": 17.4734016,
+    "country": "Sweden",
+    "region": "Uppsala County",
+    "road": "Månkarbovägen",
+    "nominatimCountry": "Sweden"
+  },
+  "goGEqNjHDyhHceH5dpKKLA": {
+    "metas": [
+      "meta_1769520975593_qnl61"
+    ],
+    "lat": 59.7422055,
+    "lng": 18.3933944,
+    "country": "Sweden",
+    "region": "Stockholm County",
+    "road": "Finstavägen",
+    "nominatimCountry": "Sweden"
+  },
+  "f5qTFkOI-RdtggYwdt8tfQ": {
+    "metas": [
+      "meta_1769520975593_vqen8"
+    ],
+    "lat": 63.6029251,
+    "lng": 17.1302967,
+    "country": "Sweden",
+    "region": "Västernorrland County",
+    "road": "Y 911",
+    "nominatimCountry": "Sweden"
+  },
+  "9b8FJHm-5fVFBVVqHab54Q": {
+    "metas": [
+      "meta_1769520975593_1qp1w"
+    ],
+    "lat": 59.8736628,
+    "lng": 17.6333032,
+    "country": "Sweden",
+    "region": "Uppsala County",
+    "road": "Anundsgatan",
+    "nominatimCountry": "Sweden"
+  },
+  "52pZwcPDRa0kPHnH0qwBPA": {
+    "metas": [
+      "meta_1769520975593_z2t85"
+    ],
+    "lat": 59.5672969,
+    "lng": 16.0682225,
+    "country": "Sweden",
+    "region": "Västmanland County",
+    "road": "U 609",
+    "nominatimCountry": "Sweden"
+  },
+  "UEf5DE9b_w6A0NhB-1Wg8A": {
+    "metas": [
+      "meta_1769520975593_87kk5"
+    ],
+    "lat": 59.9959689,
+    "lng": 17.2454173,
+    "country": "Sweden",
+    "region": "Uppsala County",
+    "road": "C 623",
+    "nominatimCountry": "Sweden"
+  },
+  "JTRJnkNZLNtDmxT_xGbNww": {
+    "metas": [
+      "meta_1769520975593_3bg04"
+    ],
+    "lat": 57.340084,
+    "lng": 16.46985,
+    "country": "Sweden",
+    "region": "Kalmar County",
+    "road": "Ängelstorp",
+    "nominatimCountry": "Sweden"
+  },
+  "p1JZqyP7wzXZQgBO7h5wlQ": {
+    "metas": [
+      "meta_1769520975593_4d1ja"
+    ],
+    "lat": 57.6510121,
+    "lng": 14.6993845,
+    "country": "Sweden",
+    "region": null,
+    "road": "Skolgatan",
+    "nominatimCountry": "Sweden"
+  },
+  "BXIngbmQTpBPw2gvWQm-Ww": {
+    "metas": [
+      "meta_1769520975593_k4480"
+    ],
+    "lat": 56.7550503,
+    "lng": 15.8796748,
+    "country": "Sweden",
+    "region": "Kalmar County",
+    "road": "Titanvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "MVEmTX_sdJomOwEXU_lhwg": {
+    "metas": [
+      "meta_1769520975593_8vwdt"
+    ],
+    "lat": 56.9926846,
+    "lng": 16.3489638,
+    "country": "Sweden",
+    "region": "Kalmar County",
+    "road": "H 628",
+    "nominatimCountry": "Sweden"
+  },
+  "EIKNSiNfkWddZDSWXndPaA": {
+    "metas": [
+      "meta_1769520975593_fc4lp"
+    ],
+    "lat": 67.5795977,
+    "lng": 18.1090606,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "Ritsemvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "RjDRcMpAjmZPUF3zA3GI_A": {
+    "metas": [
+      "meta_1769520975593_rl794"
+    ],
+    "lat": 58.5135913,
+    "lng": 11.2823152,
+    "country": "Sweden",
+    "region": "Västra Götaland County",
+    "road": "O 889",
+    "nominatimCountry": "Sweden"
+  },
+  "ZeyxNyi5c9JqfhriJjCmqA": {
+    "metas": [
+      "meta_1769520975593_e3dhx"
+    ],
+    "lat": 59.5858148,
+    "lng": 16.9332992,
+    "country": "Sweden",
+    "region": "Uppsala County",
+    "road": "C 502",
+    "nominatimCountry": "Sweden"
+  },
+  "FqaHYI3Rjy7LW_g8LH6A0Q": {
+    "metas": [
+      "meta_1769520975593_2fszv"
+    ],
+    "lat": 57.1547774,
+    "lng": 12.3852018,
+    "country": "Sweden",
+    "region": "Halland County",
+    "road": "Valinge",
+    "nominatimCountry": "Sweden"
+  },
+  "5FQIM1w3_itL2hcpUCk63A": {
+    "metas": [
+      "meta_1769520975593_x5u4i"
+    ],
+    "lat": 63.488282,
+    "lng": 13.915464,
+    "country": "Sweden",
+    "region": "Jämtland County",
+    "road": "Z 675",
+    "nominatimCountry": "Sweden"
+  },
+  "5vGIdInDbH_9BXdbKQ4BFA": {
+    "metas": [
+      "meta_1769520975593_sy1zs"
+    ],
+    "lat": 59.1370387,
+    "lng": 16.9340267,
+    "country": "Sweden",
+    "region": "Södermanland County",
+    "road": "D 890",
+    "nominatimCountry": "Sweden"
+  },
+  "Li_qKmDtHboU27oAHAKSAA": {
+    "metas": [
+      "meta_1769520975593_jwtx9"
+    ],
+    "lat": 57.8673442,
+    "lng": 19.0146655,
+    "country": "Sweden",
+    "region": "Gotland County",
+    "road": "I 690",
+    "nominatimCountry": "Sweden"
+  },
+  "Ot6LFhebW9TGYsJu93h0sg": {
+    "metas": [
+      "meta_1769520975593_u1pzs"
+    ],
+    "lat": 57.834394,
+    "lng": 18.596788,
+    "country": "Sweden",
+    "region": "Gotland County",
+    "road": "Ireviksvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "wG0v7EhRwXIfcTIkw6StPA": {
+    "metas": [
+      "meta_1769520975593_3ggnp"
+    ],
+    "lat": 63.623298,
+    "lng": 14.977528,
+    "country": "Sweden",
+    "region": "Jämtland County",
+    "road": "Z 757",
+    "nominatimCountry": "Sweden"
+  },
+  "zYuCnnY_WRmjtrExuj81hw": {
+    "metas": [
+      "meta_1769520975593_2avb6"
+    ],
+    "lat": 56.4026861,
+    "lng": 16.5493945,
+    "country": "Sweden",
+    "region": "Kalmar County",
+    "road": "H 925",
+    "nominatimCountry": "Sweden"
+  },
+  "-i4Kl_MFGwu5e_zNn-n7pg": {
+    "metas": [
+      "meta_1769520975593_sjmel"
+    ],
+    "lat": 65.3123598,
+    "lng": 21.4920009,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "Svartuddsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "SvIal9AIkF9oLKsPPjOVWg": {
+    "metas": [
+      "meta_1769520975593_sn1vl"
+    ],
+    "lat": 67.6748848,
+    "lng": 21.6442878,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "Tallstigen",
+    "nominatimCountry": "Sweden"
+  },
+  "Ui3y174nozbxMZEwz2KqYQ": {
+    "metas": [
+      "meta_1769520975593_0aled"
+    ],
+    "lat": 55.4524878,
+    "lng": 13.1582281,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "Slågarpsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "9gGk5PFKHJwJkXTrwBqlcA": {
+    "metas": [
+      "meta_1769520975593_lt31n"
+    ],
+    "lat": 55.7774548,
+    "lng": 14.0971982,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "Lillehemsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "XaAXsJGMKLMCE_veEp_uGA": {
+    "metas": [
+      "meta_1769520975593_qb9o6"
+    ],
+    "lat": 55.5849564,
+    "lng": 13.1199829,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "Klågerupsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "43XQ_kZcvjrqV6m3DixYAA": {
+    "metas": [
+      "meta_1769520975593_vjy3v"
+    ],
+    "lat": 58.1100644,
+    "lng": 11.4677577,
+    "country": "Sweden",
+    "region": "Västra Götaland County",
+    "road": "Landsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "8nh8daLxvExtfQRjCuGBLw": {
+    "metas": [
+      "meta_1769520975593_sfc8o"
+    ],
+    "lat": 60.6166918,
+    "lng": 15.0054912,
+    "country": "Sweden",
+    "region": "Dalarna County",
+    "road": "Djurhedsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "zU8GiND70E8oalJI6KSv5w": {
+    "metas": [
+      "meta_1769520975593_emkpj"
+    ],
+    "lat": 61.4072136,
+    "lng": 16.5402691,
+    "country": "Sweden",
+    "region": "Gävleborg County",
+    "road": "Växbovägen",
+    "nominatimCountry": "Sweden"
+  },
+  "i3vDVMcMtaae9s4KCgHIMg": {
+    "metas": [
+      "meta_1769520975593_4v4dg"
+    ],
+    "lat": 57.5322305,
+    "lng": 18.3330529,
+    "country": "Sweden",
+    "region": "Gotland County",
+    "road": "142",
+    "nominatimCountry": "Sweden"
+  },
+  "AmGLAO2eVQHWj2s5KNJtQg": {
+    "metas": [
+      "meta_1769520975593_h2zr5"
+    ],
+    "lat": 67.823873,
+    "lng": 23.156806,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "99",
+    "nominatimCountry": "Sweden"
+  },
+  "HpV8FMrxZyMAP1MNasnKvw": {
+    "metas": [
+      "meta_1769520975593_tl3mh"
+    ],
+    "lat": 60.9717187,
+    "lng": 13.8684821,
+    "country": "Sweden",
+    "region": "Dalarna County",
+    "road": "Tennängsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "zKwxBlcaEntcU3E4UlTtIA": {
+    "metas": [
+      "meta_1769520975593_yjpka"
+    ],
+    "lat": 64.5119416,
+    "lng": 18.3567669,
+    "country": "Sweden",
+    "region": "Västerbotten County",
+    "road": "365",
+    "nominatimCountry": "Sweden"
+  },
+  "PPBREcU3c2_SRzbxuNcwPg": {
+    "metas": [
+      "meta_1769520975594_mg3sq"
+    ],
+    "lat": 55.4724345,
+    "lng": 13.5536408,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "M 769",
+    "nominatimCountry": "Sweden"
+  },
+  "mlg1MRfAi2Qj5ebFWkjHcw": {
+    "metas": [
+      "meta_1769520975594_wxj4w"
+    ],
+    "lat": 58.0383268,
+    "lng": 11.6526797,
+    "country": "Sweden",
+    "region": "Västra Götaland County",
+    "road": "O 732",
+    "nominatimCountry": "Sweden"
+  },
+  "Zo-8Pxt65yyRWHueCCZ_eQ": {
+    "metas": [
+      "meta_1769520975594_7p4c0"
+    ],
+    "lat": 68.1585573,
+    "lng": 23.0757815,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "99",
+    "nominatimCountry": "Sweden"
+  },
+  "8p874INxNZD9PwA5thsxIg": {
+    "metas": [
+      "meta_1769520975594_flk51"
+    ],
+    "lat": 67.700853,
+    "lng": 17.529751,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "Ritsemvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "tb8B9vwgQh6Zi1Sh4YSsnw": {
+    "metas": [
+      "meta_1769520975594_8oray"
+    ],
+    "lat": 65.08056,
+    "lng": 14.432904,
+    "country": "Sweden",
+    "region": "Västerbotten County",
+    "road": "Jormvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "pSI7EPTTGSuOihsMhVrdQA": {
+    "metas": [
+      "meta_1769520975594_4e8c5"
+    ],
+    "lat": 62.748895,
+    "lng": 12.747963,
+    "country": "Sweden",
+    "region": "Jämtland County",
+    "road": "Flatruetvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "CDw-Yf-7ylX3DA2z7gMC9w": {
+    "metas": [
+      "meta_1769520975594_uhjwv"
+    ],
+    "lat": 67.8603314,
+    "lng": 20.2332097,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "Campingvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "v0s_7dcxazopcvuXaQws2Q": {
+    "metas": [
+      "meta_1769520975594_onuc1"
+    ],
+    "lat": 59.6157353,
+    "lng": 16.5521968,
+    "country": "Sweden",
+    "region": "Västmanland County",
+    "road": "Kopparbergsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "NgcopOup35UDL5NQVlOd-A": {
+    "metas": [
+      "meta_1769520975594_cy3po"
+    ],
+    "lat": 55.670419,
+    "lng": 14.194458,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "Bästekillevägen",
+    "nominatimCountry": "Sweden"
+  },
+  "61nKiekEOWcZrvS-CuWXFA": {
+    "metas": [
+      "meta_1769520975594_l599b"
+    ],
+    "lat": 56.9387207,
+    "lng": 18.1463514,
+    "country": "Sweden",
+    "region": "Gotland County",
+    "road": null,
+    "nominatimCountry": "Sweden"
+  },
+  "7E4aHY3xc9th1QHV5oE35g": {
+    "metas": [
+      "meta_1769520975594_4samd"
+    ],
+    "lat": 60.371234,
+    "lng": 18.155487,
+    "country": "Sweden",
+    "region": "Uppsala County",
+    "road": "Bruksgatan",
+    "nominatimCountry": "Sweden"
+  },
+  "6cgFIAUlOhN4xk0bCMcTVA": {
+    "metas": [
+      "meta_1769520975594_kwwmo"
+    ],
+    "lat": 60.453629,
+    "lng": 16.040488,
+    "country": "Sweden",
+    "region": "Dalarna County",
+    "road": "Holmgatan",
+    "nominatimCountry": "Sweden"
+  },
+  "xGdMzUMIbw_CRbg7qR3GPQ": {
+    "metas": [
+      "meta_1769520975594_vbqgq"
+    ],
+    "lat": 56.7700651,
+    "lng": 16.7377175,
+    "country": "Sweden",
+    "region": "Kalmar County",
+    "road": "H 925",
+    "nominatimCountry": "Sweden"
+  },
+  "TA3fZ-aUwdSZGvsPLYidng": {
+    "metas": [
+      "meta_1769520975594_dfe64"
+    ],
+    "lat": 60.930046,
+    "lng": 14.621977,
+    "country": "Sweden",
+    "region": "Dalarna County",
+    "road": "Nesarvsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "pcVp_JvYxH941D-RDaC-IA": {
+    "metas": [
+      "meta_1769520975594_kgwkk"
+    ],
+    "lat": 58.269732,
+    "lng": 15.483899,
+    "country": "Sweden",
+    "region": "Östergötland County",
+    "road": "E 616",
+    "nominatimCountry": "Sweden"
+  },
+  "YYj-xp24ZCmHvcYkWjdiDw": {
+    "metas": [
+      "meta_1769520975594_1pry3",
+      "meta_1769520975594_9sai2"
+    ],
+    "lat": 57.6981801,
+    "lng": 11.9654521,
+    "country": "Sweden",
+    "region": "Västra Götaland County",
+    "road": "Viktoriagatan",
+    "nominatimCountry": "Sweden"
+  },
+  "dNItc1ZIiKJdAEWk1AMw2g": {
+    "metas": [
+      "meta_1769520975594_hdfyf"
+    ],
+    "lat": 59.6067086,
+    "lng": 16.5335676,
+    "country": "Sweden",
+    "region": "Västmanland County",
+    "road": "Stora gatan",
+    "nominatimCountry": "Sweden"
+  },
+  "ycJDSVv_u8ixk_zQhBiDyQ": {
+    "metas": [
+      "meta_1769520975594_zgsfx"
+    ],
+    "lat": 55.5898421,
+    "lng": 12.9767986,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "Klövervallsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "l0Ww3wjTm_71WtmfrIOcjg": {
+    "metas": [
+      "meta_1769520975594_j3eat"
+    ],
+    "lat": 55.428668,
+    "lng": 13.8231803,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "Tullgatan",
+    "nominatimCountry": "Sweden"
+  },
+  "7-yqm5RhkRY7zMUajB1IwQ": {
+    "metas": [
+      "meta_1769520975594_89wux"
+    ],
+    "lat": 55.4035367,
+    "lng": 12.8481103,
+    "country": "Sweden",
+    "region": "Skåne County",
+    "road": "Mårdvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "xj082Tow3cDMZq78kIAWxg": {
+    "metas": [
+      "meta_1769520975594_8evhm"
+    ],
+    "lat": 58.1710073,
+    "lng": 13.5717102,
+    "country": "Sweden",
+    "region": "Västra Götaland County",
+    "road": "Wetterlinsgatan",
+    "nominatimCountry": "Sweden"
+  },
+  "f_73AaxDk9XiF2lulkqWSA": {
+    "metas": [
+      "meta_1769520975594_8uxhu"
+    ],
+    "lat": 59.521468,
+    "lng": 16.007445,
+    "country": "Sweden",
+    "region": "Västmanland County",
+    "road": "Östanåsgatan",
+    "nominatimCountry": "Sweden"
+  },
+  "AWwGx_Emha8rhO_oEeZg0w": {
+    "metas": [
+      "meta_1769520975594_dff5z"
+    ],
+    "lat": 59.391989,
+    "lng": 13.520511,
+    "country": "Sweden",
+    "region": "Värmland County",
+    "road": "Ransätersgatan",
+    "nominatimCountry": "Sweden"
+  },
+  "xnVqO8tmoKioNn1feMuksg": {
+    "metas": [
+      "meta_1769520975594_w26ji"
+    ],
+    "lat": 59.293553,
+    "lng": 18.286083,
+    "country": "Sweden",
+    "region": "Stockholm County",
+    "road": "Knaggelbacken",
+    "nominatimCountry": "Sweden"
+  },
+  "SFUyiNTdole8prMSvQ2Xzg": {
+    "metas": [
+      "meta_1769520975594_xsvsp"
+    ],
+    "lat": 63.8763786,
+    "lng": 20.4704851,
+    "country": "Sweden",
+    "region": "Västerbotten County",
+    "road": "E 4",
+    "nominatimCountry": "Sweden"
+  },
+  "L3kLBTZ2DtlweQvQ4SOerw": {
+    "metas": [
+      "meta_1769520975594_97vs5"
+    ],
+    "lat": 66.0729412,
+    "lng": 14.873342,
+    "country": "Sweden",
+    "region": "Västerbotten County",
+    "road": "Blå vägen",
+    "nominatimCountry": "Sweden"
+  },
+  "bUHjbRKay9i3Avxwi1t-hQ": {
+    "metas": [
+      "meta_1769520975594_zq509"
+    ],
+    "lat": 66.7584147,
+    "lng": 15.8949596,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "95",
+    "nominatimCountry": "Sweden"
+  },
+  "iUlWPJ9xHLd4HQDve22d8w": {
+    "metas": [
+      "meta_1769520975594_phx7y"
+    ],
+    "lat": 68.4305403,
+    "lng": 18.5001544,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "E 10",
+    "nominatimCountry": "Sweden"
+  },
+  "iUCY4PBOcVncyE1x6UGWgg": {
+    "metas": [
+      "meta_1769520975594_avebp"
+    ],
+    "lat": 66.652132,
+    "lng": 16.17978,
+    "country": "Sweden",
+    "region": "Norrbotten County",
+    "road": "95",
+    "nominatimCountry": "Sweden"
+  },
+  "03WcFISVBBDGGUCJr0iA0w": {
+    "metas": [
+      "meta_1769520975594_95u54"
+    ],
+    "lat": 63.8292455,
+    "lng": 20.2488059,
+    "country": "Sweden",
+    "region": "Västerbotten County",
+    "road": "Skolgatan",
+    "nominatimCountry": "Sweden"
+  },
+  "GWpuW5jggBpj7RyU4dQfqQ": {
+    "metas": [
+      "meta_1769520975594_1yusg"
+    ],
+    "lat": 61.6489255,
+    "lng": 14.7979604,
+    "country": "Sweden",
+    "region": "Gävleborg County",
+    "road": "Inlandsvägen",
+    "nominatimCountry": "Sweden"
+  },
+  "j04TZWl-s_9QtuxJV1yt-A": {
+    "metas": [
+      "meta_1769520975594_evimg"
+    ],
+    "lat": 63.7753302,
+    "lng": 20.8827346,
+    "country": "Sweden",
+    "region": "Västerbotten County",
+    "road": "Holmö byaväg",
+    "nominatimCountry": "Sweden"
+  },
+  "L38SiHkSPvfSwnNyIC-FWw": {
+    "metas": [
+      "meta_1769520976739_ucxbg"
+    ],
+    "lat": 47.0331656,
+    "lng": 7.7057612,
+    "country": "Switzerland",
+    "region": "Bern",
+    "road": "Schaufelbühl",
+    "nominatimCountry": "Switzerland"
+  },
+  "FZCUXqe-KLDmbKXcEj8DAQ": {
+    "metas": [
+      "meta_1769520976739_8cvqx"
+    ],
+    "lat": 47.1206954,
+    "lng": 8.0692266,
+    "country": "Switzerland",
+    "region": "Lucerne",
+    "road": "362",
+    "nominatimCountry": "Switzerland"
+  },
+  "qb-1uwoO4jwFuYpDwvxJHw": {
+    "metas": [
+      "meta_1769520976739_zovaf"
+    ],
+    "lat": 47.4740255,
+    "lng": 8.0507911,
+    "country": "Switzerland",
+    "region": "Aargau",
+    "road": "Hauptstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "EmvYucUMah0tD2Wdu_uceg": {
+    "metas": [
+      "meta_1769520976739_43znw"
+    ],
+    "lat": 47.3350065,
+    "lng": 8.3040221,
+    "country": "Switzerland",
+    "region": "Aargau",
+    "road": "Bremgarterstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "U3eCl7BNYcUSYHIvg1UGVg": {
+    "metas": [
+      "meta_1769520976739_lbd0l"
+    ],
+    "lat": 47.3121463,
+    "lng": 7.664027,
+    "country": "Switzerland",
+    "region": "Solothurn",
+    "road": "Thalstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "4XnqWNUCKp_qOwcpTiSQow": {
+    "metas": [
+      "meta_1769520976739_jmtm7"
+    ],
+    "lat": 47.3848991,
+    "lng": 8.3864539,
+    "country": "Switzerland",
+    "region": "Aargau",
+    "road": "Herrenbergstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "_o2t21cQ1ReaDGsNbxBXJg": {
+    "metas": [
+      "meta_1769520976739_fqe9e"
+    ],
+    "lat": 47.5460935,
+    "lng": 8.547877,
+    "country": "Switzerland",
+    "region": "Zurich",
+    "road": "Weiacherstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "hCh6zuSyYj-_gO_0yJ39CA": {
+    "metas": [
+      "meta_1769520976740_j2yj0"
+    ],
+    "lat": 47.4822109,
+    "lng": 8.4443509,
+    "country": "Switzerland",
+    "region": "Zurich",
+    "road": "Dielsdorferstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "QIaT10sOd0xLZ49ax1pGSw": {
+    "metas": [
+      "meta_1769520976740_ug7cj"
+    ],
+    "lat": 47.2054547,
+    "lng": 7.4713545,
+    "country": "Switzerland",
+    "region": "Solothurn",
+    "road": "Solothurnstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "FWE_5TiS0pDi4INOgEec7Q": {
+    "metas": [
+      "meta_1769520976740_qmaa7"
+    ],
+    "lat": 47.253412,
+    "lng": 7.343389,
+    "country": "Switzerland",
+    "region": "Bern",
+    "road": "Rue des Gorges",
+    "nominatimCountry": "Switzerland"
+  },
+  "_ytUolpO7qXsaFzlKrV-sw": {
+    "metas": [
+      "meta_1769520976740_wanfv"
+    ],
+    "lat": 46.566359,
+    "lng": 6.232897,
+    "country": "Switzerland",
+    "region": "Vaud",
+    "road": "Route du Marchairuz",
+    "nominatimCountry": "Switzerland"
+  },
+  "v6QJjQ5v-zEymCDAjCPv7w": {
+    "metas": [
+      "meta_1769520976740_rrb2f"
+    ],
+    "lat": 46.947085,
+    "lng": 7.620202,
+    "country": "Switzerland",
+    "region": "Bern",
+    "road": "Hauptstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "AC365gzpeAV54dZXnd2iWw": {
+    "metas": [
+      "meta_1769520976740_pgpx6"
+    ],
+    "lat": 47.670554,
+    "lng": 8.632832,
+    "country": "Switzerland",
+    "region": "Zurich",
+    "road": "Dorfstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "wSinQ_aXoXiygrHZnHwtAg": {
+    "metas": [
+      "meta_1769520976740_e25bj"
+    ],
+    "lat": 47.296033,
+    "lng": 9.458883,
+    "country": "Switzerland",
+    "region": "Appenzell Innerrhoden",
+    "road": "Pfannenstielstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "vqIGlklIzBKrwm5Z2dJ68g": {
+    "metas": [
+      "meta_1769520976740_ts7be"
+    ],
+    "lat": 46.610402,
+    "lng": 9.978554,
+    "country": "Switzerland",
+    "region": "Grisons",
+    "road": "Via Maistra",
+    "nominatimCountry": "Switzerland"
+  },
+  "x8fP2DIsH1E2337jwMdkfA": {
+    "metas": [
+      "meta_1769520976740_q3mzu"
+    ],
+    "lat": 47.472077,
+    "lng": 7.742388,
+    "country": "Switzerland",
+    "region": "Basel-Landschaft",
+    "road": "Waldenburgerstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "_ww_Q-VNCP6uaJ3SChyKRA": {
+    "metas": [
+      "meta_1769520976740_fhzo1"
+    ],
+    "lat": 46.011007,
+    "lng": 7.12806,
+    "country": "Switzerland",
+    "region": "Wallis",
+    "road": "Route de Ferret",
+    "nominatimCountry": "Switzerland"
+  },
+  "SqaLg6XpkxHw-hNPunf06g": {
+    "metas": [
+      "meta_1769520976740_8162s"
+    ],
+    "lat": 46.942616,
+    "lng": 9.170252,
+    "country": "Switzerland",
+    "region": "Glarus",
+    "road": "Sernftalstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "DWWmTSYKdoFITP-zGuULIA": {
+    "metas": [
+      "meta_1769520976740_o5ak5"
+    ],
+    "lat": 46.12651,
+    "lng": 7.046764,
+    "country": "Switzerland",
+    "region": "Wallis",
+    "road": "Rue du Léman",
+    "nominatimCountry": "Switzerland"
+  },
+  "wJus2sEl7-vFz2c7l6waZA": {
+    "metas": [
+      "meta_1769520976740_82m57"
+    ],
+    "lat": 46.4284643,
+    "lng": 7.8183143,
+    "country": "Switzerland",
+    "region": "Wallis",
+    "road": "Tellialp",
+    "nominatimCountry": "Switzerland"
+  },
+  "X6oIkw0p37nHUOk1q00kUA": {
+    "metas": [
+      "meta_1769520976740_1pszq"
+    ],
+    "lat": 47.567369,
+    "lng": 7.587608,
+    "country": "Switzerland",
+    "region": "Basel-City",
+    "road": "Oetlingerstrasse",
+    "nominatimCountry": "Switzerland"
+  },
+  "W8vMLYOc6PRMbePRh31V0w": {
+    "metas": [
+      "meta_1769520977736_5mpsc"
+    ],
+    "lat": 49.1916998,
+    "lng": 26.5208459,
+    "country": "Ukraine",
+    "region": "Khmelnytskyi Oblast",
+    "road": "Р-50",
+    "nominatimCountry": "Ukraine"
+  },
+  "KywKhqSWnnjd0S_Xrxwc4A": {
+    "metas": [
+      "meta_1769520977736_rg5oz"
+    ],
+    "lat": 50.7451652,
+    "lng": 34.6433352,
+    "country": "Ukraine",
+    "region": "Sumy Oblast",
+    "road": "Т-19-09",
+    "nominatimCountry": "Ukraine"
+  },
+  "4Jg7EAM-y9smQeytB6tiOQ": {
+    "metas": [
+      "meta_1769520977736_2xcn6"
+    ],
+    "lat": 49.413642,
+    "lng": 32.03359,
+    "country": "Ukraine",
+    "region": "Cherkasy Oblast",
+    "road": "проспект Хіміків",
+    "nominatimCountry": "Ukraine"
+  },
+  "oUEKUMJDG300MGtmDYrZCg": {
+    "metas": [
+      "meta_1769520977736_vh9az"
+    ],
+    "lat": 50.4394712,
+    "lng": 30.5170236,
+    "country": "Ukraine",
+    "region": null,
+    "road": "Velyka Vasylkivska Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "kWrzc4u65YVQIAuomrzECQ": {
+    "metas": [
+      "meta_1769520977736_fnd9o"
+    ],
+    "lat": 50.7207933,
+    "lng": 25.3884959,
+    "country": "Ukraine",
+    "region": "Volyn Oblast",
+    "road": "Pidhayetska Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "bIli4ywunJdNUU7_kP_bXQ": {
+    "metas": [
+      "meta_1769520977736_64hth"
+    ],
+    "lat": 50.7311978,
+    "lng": 25.3943908,
+    "country": "Ukraine",
+    "region": "Volyn Oblast",
+    "road": "Dovzhenka Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "T1KoUD0J1ND_-W8yEv7Cgw": {
+    "metas": [
+      "meta_1769520977736_dk37d"
+    ],
+    "lat": 49.3842954,
+    "lng": 26.9436929,
+    "country": "Ukraine",
+    "region": "Khmelnytskyi Oblast",
+    "road": "вулиця Смотрицького",
+    "nominatimCountry": "Ukraine"
+  },
+  "fVRHTLukJsqtmC1fDJschQ": {
+    "metas": [
+      "meta_1769520977736_vl13l"
+    ],
+    "lat": 48.5044164,
+    "lng": 32.2761647,
+    "country": "Ukraine",
+    "region": "Kirovohrad Oblast",
+    "road": "Kropyvnytskoho Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "qBGyDv2IQn3_8v5AHD_iBg": {
+    "metas": [
+      "meta_1769520977736_om9qq"
+    ],
+    "lat": 49.3664274,
+    "lng": 30.5480829,
+    "country": "Ukraine",
+    "region": "Kyiv Oblast",
+    "road": "Р-64",
+    "nominatimCountry": "Ukraine"
+  },
+  "RQmWsZDu7nAd8L2avN_KRw": {
+    "metas": [
+      "meta_1769520977736_4vl1q"
+    ],
+    "lat": 50.363267,
+    "lng": 34.0093478,
+    "country": "Ukraine",
+    "region": "Poltava Oblast",
+    "road": "Т-17-05",
+    "nominatimCountry": "Ukraine"
+  },
+  "Uo4UyXM6YYIaKlloDkEsmQ": {
+    "metas": [
+      "meta_1769520977736_wooo1"
+    ],
+    "lat": 48.662028,
+    "lng": 33.1133425,
+    "country": "Ukraine",
+    "region": "Kirovohrad Oblast",
+    "road": "Sevastopolska Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "bJQiOP7tLN6In270nChpCg": {
+    "metas": [
+      "meta_1769520977736_tngww"
+    ],
+    "lat": 48.9550145,
+    "lng": 28.0150805,
+    "country": "Ukraine",
+    "region": "Vinnytsia Oblast",
+    "road": "М-21",
+    "nominatimCountry": "Ukraine"
+  },
+  "VEwIJ0UoYDvyDEWkiLUdnQ": {
+    "metas": [
+      "meta_1769520977736_44ggp"
+    ],
+    "lat": 49.0901646,
+    "lng": 33.4206036,
+    "country": "Ukraine",
+    "region": "Poltava Oblast",
+    "road": "Heroiv Mariupolia Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "eVHPetBg_Uw7F3zjo9nVmA": {
+    "metas": [
+      "meta_1769520977736_nibw6"
+    ],
+    "lat": 49.2230252,
+    "lng": 26.4235904,
+    "country": "Ukraine",
+    "region": "Khmelnytskyi Oblast",
+    "road": "Р-50",
+    "nominatimCountry": "Ukraine"
+  },
+  "rP-kMN59b3d_EMNmAG2hRA": {
+    "metas": [
+      "meta_1769520977736_bba53"
+    ],
+    "lat": 47.4841313,
+    "lng": 34.7411109,
+    "country": "Ukraine",
+    "region": "Zaporizhia Oblast",
+    "road": "Ivanivka",
+    "nominatimCountry": "Ukraine"
+  },
+  "omSxgV3UO9vMcsix-4MaOA": {
+    "metas": [
+      "meta_1769520977737_2nbs0"
+    ],
+    "lat": 49.5602723,
+    "lng": 25.6224129,
+    "country": "Ukraine",
+    "region": "Ternopil Oblast",
+    "road": null,
+    "nominatimCountry": "Ukraine"
+  },
+  "ckOaPobEgg03LIi2xE9rJA": {
+    "metas": [
+      "meta_1769520977737_rhyeh"
+    ],
+    "lat": 48.0234044,
+    "lng": 37.8180888,
+    "country": "Ukraine",
+    "region": "Donetsk Oblast",
+    "road": "75-richchya FK «Shakhtar» Avenue",
+    "nominatimCountry": "Ukraine"
+  },
+  "xUuU3yJjvHXuc9_BZhTOsw": {
+    "metas": [
+      "meta_1769520977737_qemkg"
+    ],
+    "lat": 48.0227124,
+    "lng": 37.8183762,
+    "country": "Ukraine",
+    "region": "Donetsk Oblast",
+    "road": "75-richchya FK «Shakhtar» Avenue",
+    "nominatimCountry": "Ukraine"
+  },
+  "iOP27k9mme-ybOEVo3kPiw": {
+    "metas": [
+      "meta_1769520977737_zbd9e"
+    ],
+    "lat": 47.9450399,
+    "lng": 24.1807549,
+    "country": "Ukraine",
+    "region": "Rakhiv Raion",
+    "road": "Trybushanska Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "-1scidoW9cjuoYh4Ylfxuw": {
+    "metas": [
+      "meta_1769520977737_vtdch"
+    ],
+    "lat": 51.3991187,
+    "lng": 30.7386504,
+    "country": "Ukraine",
+    "region": "Chernihiv Oblast",
+    "road": "Р-56",
+    "nominatimCountry": "Ukraine"
+  },
+  "AqcH86xb5FHZSt_LqKaC6Q": {
+    "metas": [
+      "meta_1769520977737_524yw"
+    ],
+    "lat": 47.6436234,
+    "lng": 32.4885151,
+    "country": "Ukraine",
+    "region": "Mykolaiv Oblast",
+    "road": "Н-11",
+    "nominatimCountry": "Ukraine"
+  },
+  "aXxdYmkugGjVl_7Ltxl3tQ": {
+    "metas": [
+      "meta_1769520977737_g8mf6"
+    ],
+    "lat": 47.4081626,
+    "lng": 34.6179774,
+    "country": "Ukraine",
+    "region": "Zaporizhia Oblast",
+    "road": "Р-37",
+    "nominatimCountry": "Ukraine"
+  },
+  "nFUnRbez3yFUVjnKG9azVg": {
+    "metas": [
+      "meta_1769520977737_55p8l"
+    ],
+    "lat": 46.7466337,
+    "lng": 33.3598742,
+    "country": "Ukraine",
+    "region": "Kherson Oblast",
+    "road": "Peremohy Avenue",
+    "nominatimCountry": "Ukraine"
+  },
+  "8wbD7tJGI6y6DcmJtK82xw": {
+    "metas": [
+      "meta_1769520977737_e69ks"
+    ],
+    "lat": 49.6825321,
+    "lng": 25.1113429,
+    "country": "Ukraine",
+    "region": "Ternopil Oblast",
+    "road": "М-09",
+    "nominatimCountry": "Ukraine"
+  },
+  "9w6py83qEXQ9ioYxKecmHQ": {
+    "metas": [
+      "meta_1769520977737_2ayhs"
+    ],
+    "lat": 46.4588017,
+    "lng": 30.7556363,
+    "country": "Ukraine",
+    "region": "Odesa Oblast",
+    "road": "проспект Лесі Українки",
+    "nominatimCountry": "Ukraine"
+  },
+  "MNx3xvGva6hZ5v2ECtNwXg": {
+    "metas": [
+      "meta_1769520977737_eqsmb"
+    ],
+    "lat": 47.9618423,
+    "lng": 33.4036752,
+    "country": "Ukraine",
+    "region": "Dnipropetrovsk Oblast",
+    "road": "Pokrovske",
+    "nominatimCountry": "Ukraine"
+  },
+  "CSpZz78nN_2JxizlTPWQ0A": {
+    "metas": [
+      "meta_1769520977737_h2hg1"
+    ],
+    "lat": 47.9315921,
+    "lng": 33.3920224,
+    "country": "Ukraine",
+    "region": "Dnipropetrovsk Oblast",
+    "road": "80th Desantno-Shturmovoi Bryhady Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "MbOT641V3aoUHIurYEKGkQ": {
+    "metas": [
+      "meta_1769520977737_rs1k1"
+    ],
+    "lat": 47.0399459,
+    "lng": 32.1864645,
+    "country": "Ukraine",
+    "region": "Mykolaiv Oblast",
+    "road": "Н-11",
+    "nominatimCountry": "Ukraine"
+  },
+  "7BhDCBkX6chwHcQAtrp0Og": {
+    "metas": [
+      "meta_1769520977737_p6cyj"
+    ],
+    "lat": 48.9254584,
+    "lng": 24.7057757,
+    "country": "Ukraine",
+    "region": "Ivano-Frankivsk Oblast",
+    "road": "Tychyny Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "6pv0HWLHR7uvGuVAkiBLnA": {
+    "metas": [
+      "meta_1769520977737_rlmq4"
+    ],
+    "lat": 48.5305916,
+    "lng": 22.246506,
+    "country": "Ukraine",
+    "region": "Uzhhorod Raion",
+    "road": "М-06",
+    "nominatimCountry": "Ukraine"
+  },
+  "nlRGmrIlK4mqwddrIldQZA": {
+    "metas": [
+      "meta_1769520977737_2dxht"
+    ],
+    "lat": 48.254225,
+    "lng": 22.4586119,
+    "country": "Ukraine",
+    "region": "Berehove Raion",
+    "road": "Lajos Kossuth Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "0P9RZzuuZBdHDRLdIdgCFw": {
+    "metas": [
+      "meta_1769520977737_wkt4s"
+    ],
+    "lat": 48.3098433,
+    "lng": 22.6395859,
+    "country": "Ukraine",
+    "region": "Berehove Raion",
+    "road": "Holovna Street",
+    "nominatimCountry": "Ukraine"
+  },
+  "HyxCm9FuAiw2z4ORcSYa9w": {
+    "metas": [
+      "meta_1769520977737_tlkrl"
+    ],
+    "lat": 51.40657,
+    "lng": 30.0569959,
+    "country": "Ukraine",
+    "region": "Kyiv Oblast",
+    "road": "Central Square",
+    "nominatimCountry": "Ukraine"
+  },
+  "JbhHWz4rsPBEWQ5ALHwzjw": {
+    "metas": [
+      "meta_1769520977737_d03yx"
+    ],
+    "lat": 51.1862351,
+    "lng": 30.1241087,
+    "country": "Ukraine",
+    "region": "Kyiv Oblast",
+    "road": "Р-05",
+    "nominatimCountry": "Ukraine"
+  },
+  "p3gQRcn1hk2xjXHM5jQIvA": {
+    "metas": [
+      "meta_1769520978847_2qb0i"
+    ],
+    "lat": 53.0185075,
+    "lng": -0.8994317,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "A46",
+    "nominatimCountry": "United Kingdom"
+  },
+  "IwtC2sLCvMjLY8jXhVP8yw": {
+    "metas": [
+      "meta_1769520978847_o5ifu"
+    ],
+    "lat": 52.6367748,
+    "lng": -1.1225701,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "William Street",
+    "nominatimCountry": "United Kingdom"
+  },
+  "QIfmxGutrZCSQpMUdAxmiQ": {
+    "metas": [
+      "meta_1769520978847_ftfii"
+    ],
+    "lat": 53.268316,
+    "lng": -1.1836934,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Mansfield Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "kT-ZVj39eB3nDiRBoBZOJg": {
+    "metas": [
+      "meta_1769520978847_shwz1"
+    ],
+    "lat": 53.5960415,
+    "lng": -2.0610361,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Huddersfield Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "U_MKKPw66_Sg-CrImnG08A": {
+    "metas": [
+      "meta_1769520978847_65b79"
+    ],
+    "lat": 52.9550309,
+    "lng": -2.5838446,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Lodmore Lane",
+    "nominatimCountry": "United Kingdom"
+  },
+  "pLZvtLPzoKoXQkWeLQ-aSA": {
+    "metas": [
+      "meta_1769520978847_6iabj"
+    ],
+    "lat": 53.2800883,
+    "lng": -0.7202591,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Lincoln Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "uVCF3niE9KcLjYxCuqyjug": {
+    "metas": [
+      "meta_1769520978847_lzejc"
+    ],
+    "lat": 53.2130084,
+    "lng": -1.9553336,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Leek Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "1gZj1TC8Cg7o5IhTSth90g": {
+    "metas": [
+      "meta_1769520978847_rf8sm"
+    ],
+    "lat": 51.8840575,
+    "lng": -2.1512792,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "M5",
+    "nominatimCountry": "United Kingdom"
+  },
+  "ecoFWUbl2Cp5bd8r9cXxwg": {
+    "metas": [
+      "meta_1769520978847_lb7bg"
+    ],
+    "lat": 52.6882501,
+    "lng": -2.4419213,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Wilkinson Close",
+    "nominatimCountry": "United Kingdom"
+  },
+  "eqA_Ue0q2oOZ3CCN0Ip2gg": {
+    "metas": [
+      "meta_1769520978847_mf1gh"
+    ],
+    "lat": 54.9025842,
+    "lng": -1.3980373,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Millfield",
+    "nominatimCountry": "United Kingdom"
+  },
+  "jnXtq6sstt66rjB4qI-82A": {
+    "metas": [
+      "meta_1769520978847_ks3s7"
+    ],
+    "lat": 54.915682,
+    "lng": -4.610595,
+    "country": "United Kingdom",
+    "region": "Scotland",
+    "road": "Church Street",
+    "nominatimCountry": "United Kingdom"
+  },
+  "YZoMbWdcoXHhBsxZc5Pf2Q": {
+    "metas": [
+      "meta_1769520978847_cgljs"
+    ],
+    "lat": 53.1238318,
+    "lng": -0.8909995,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Caunton Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "x_rpYbvnG6yECaFqwDEZhA": {
+    "metas": [
+      "meta_1769520978847_piaqi"
+    ],
+    "lat": 52.4310067,
+    "lng": -1.9150378,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Cartland Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "PXDUZLk7WIfVj2zfTxfAOg": {
+    "metas": [
+      "meta_1769520978847_n2xfm"
+    ],
+    "lat": 52.4834479,
+    "lng": -1.9591393,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Shireland Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "4nrTp6Ci2TPzS5xUHS-ZlQ": {
+    "metas": [
+      "meta_1769520978847_6ewmd"
+    ],
+    "lat": 52.9210433,
+    "lng": -1.1501549,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Studland Way",
+    "nominatimCountry": "United Kingdom"
+  },
+  "an6CHZxlTIFYEQVJma7nMw": {
+    "metas": [
+      "meta_1769520978847_b3792"
+    ],
+    "lat": 52.2821506,
+    "lng": -1.5349268,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Tachbrook Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "rJUEVj_1roaC0LdjQYT1xA": {
+    "metas": [
+      "meta_1769520978848_xx3sv"
+    ],
+    "lat": 52.3930692,
+    "lng": -1.5121694,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Daventry Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "c--3znWZBR6G7BdvKy5vUA": {
+    "metas": [
+      "meta_1769520978848_ms9js"
+    ],
+    "lat": 55.4195785,
+    "lng": -4.4203119,
+    "country": "United Kingdom",
+    "region": "Scotland",
+    "road": "B7046",
+    "nominatimCountry": "United Kingdom"
+  },
+  "VBpGAesBWH6DDlccPdQQOA": {
+    "metas": [
+      "meta_1769520978848_khzi3"
+    ],
+    "lat": 53.7698752,
+    "lng": -2.6976773,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "St Anne's Street",
+    "nominatimCountry": "United Kingdom"
+  },
+  "5s2Nx6bJnAPFR7n1dKzdPw": {
+    "metas": [
+      "meta_1769520978848_clkew"
+    ],
+    "lat": 58.1331099,
+    "lng": -4.9775539,
+    "country": "United Kingdom",
+    "region": "Scotland",
+    "road": "A837",
+    "nominatimCountry": "United Kingdom"
+  },
+  "mkskGPNR8QfB7HbiYLIAGg": {
+    "metas": [
+      "meta_1769520978848_bgrhc"
+    ],
+    "lat": 56.758877,
+    "lng": -2.6424164,
+    "country": "United Kingdom",
+    "region": "Scotland",
+    "road": "Brechin Bypass",
+    "nominatimCountry": "United Kingdom"
+  },
+  "8BoMcMjqSoa1TP3a7IhzXA": {
+    "metas": [
+      "meta_1769520978848_yi07u"
+    ],
+    "lat": 57.3089523,
+    "lng": -5.4867878,
+    "country": "United Kingdom",
+    "region": "Scotland",
+    "road": "Allt-nan-Subh",
+    "nominatimCountry": "United Kingdom"
+  },
+  "JgK-75f8ZcaLRhuHawQCdA": {
+    "metas": [
+      "meta_1769520978848_5n4vt"
+    ],
+    "lat": 53.1406847,
+    "lng": -4.2709581,
+    "country": "United Kingdom",
+    "region": "Wales",
+    "road": "Caernarfon",
+    "nominatimCountry": "United Kingdom"
+  },
+  "EDzref5vdLLxIM9ss8VrBg": {
+    "metas": [
+      "meta_1769520978848_yqj7z"
+    ],
+    "lat": 52.4227089,
+    "lng": -4.0401501,
+    "country": "United Kingdom",
+    "region": "Wales",
+    "road": "A487",
+    "nominatimCountry": "United Kingdom"
+  },
+  "VTULyYdC7qotEWGHb9gQlQ": {
+    "metas": [
+      "meta_1769520978848_b6pok"
+    ],
+    "lat": 57.4631616,
+    "lng": -4.2470992,
+    "country": "United Kingdom",
+    "region": "Scotland",
+    "road": "Bught",
+    "nominatimCountry": "United Kingdom"
+  },
+  "70nwIM2Ww6lZP8GSEssrbA": {
+    "metas": [
+      "meta_1769520978848_6nh3e"
+    ],
+    "lat": 55.9489936,
+    "lng": -3.2469365,
+    "country": "United Kingdom",
+    "region": "Scotland",
+    "road": "Campbell Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "4292jJPmjTAsSOhhF1nB2w": {
+    "metas": [
+      "meta_1769520978848_v1ohb"
+    ],
+    "lat": 50.2628771,
+    "lng": -5.0585041,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "George Street",
+    "nominatimCountry": "United Kingdom"
+  },
+  "jEtRWVxZ5bRy2vj0WXAOOA": {
+    "metas": [
+      "meta_1769520978848_jxo7g"
+    ],
+    "lat": 54.9904913,
+    "lng": -7.2983503,
+    "country": "United Kingdom",
+    "region": "Northern Ireland",
+    "road": "Woodburn Park",
+    "nominatimCountry": "United Kingdom"
+  },
+  "791JqqunTKAr4PZaCl3rFQ": {
+    "metas": [
+      "meta_1769520978848_vvxlz"
+    ],
+    "lat": 54.5134268,
+    "lng": -3.2019828,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Honister Pass",
+    "nominatimCountry": "United Kingdom"
+  },
+  "OLxdV3j65AibgvJzoWgWOA": {
+    "metas": [
+      "meta_1769520978848_kec7h"
+    ],
+    "lat": 51.4910589,
+    "lng": -0.1392003,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Churton Street",
+    "nominatimCountry": "United Kingdom"
+  },
+  "b2sxXoHSt8J744ytRqDU1A": {
+    "metas": [
+      "meta_1769520978848_xvmdx"
+    ],
+    "lat": 57.005919,
+    "lng": -3.397714,
+    "country": "United Kingdom",
+    "region": "Scotland",
+    "road": "Hillside Road",
+    "nominatimCountry": "United Kingdom"
+  },
+  "6_GsrVD_uZ99fKLIcO3CRw": {
+    "metas": [
+      "meta_1769520978848_9iljd"
+    ],
+    "lat": 54.474296,
+    "lng": -7.319521,
+    "country": "United Kingdom",
+    "region": "Northern Ireland",
+    "road": null,
+    "nominatimCountry": "United Kingdom"
+  },
+  "s4r4foKb81moQEnoeW6xsA": {
+    "metas": [
+      "meta_1769520978848_p7203"
+    ],
+    "lat": 51.5114437,
+    "lng": -0.1208608,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Exeter Street",
+    "nominatimCountry": "United Kingdom"
+  },
+  "_oq4rGYLXBLWOILslms6TQ": {
+    "metas": [
+      "meta_1769520978848_5dwlk"
+    ],
+    "lat": 52.455463,
+    "lng": -1.8736178,
+    "country": "United Kingdom",
+    "region": "England",
+    "road": "Stoney Lane",
+    "nominatimCountry": "United Kingdom"
+  },
+  "gPDtalcZ1vPHEE0eqQ4Y5Q": {
+    "metas": [
+      "meta_1769520979986_wq6tc"
+    ],
+    "lat": 60.944896,
+    "lng": -149.190887,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Seward Highway",
+    "nominatimCountry": "United States"
+  },
+  "jBSPfN70t17AqEOC-FOcGg": {
+    "metas": [
+      "meta_1769520979986_jg8pe"
+    ],
+    "lat": 65.1077,
+    "lng": -147.7654428,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Elliott Highway",
+    "nominatimCountry": "United States"
+  },
+  "Y4DqDp5CrNPFzMlgNot2BQ": {
+    "metas": [
+      "meta_1769520979986_ekql4"
+    ],
+    "lat": 60.137127,
+    "lng": -149.4220765,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Airport Road",
+    "nominatimCountry": "United States"
+  },
+  "0ajhRx_aDHLZSR47AGBSnQ": {
+    "metas": [
+      "meta_1769520979986_7jslg"
+    ],
+    "lat": 61.186377,
+    "lng": -149.912854,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Minnesota Drive",
+    "nominatimCountry": "United States"
+  },
+  "DZevOwPXv_UhRAji4jVt7A": {
+    "metas": [
+      "meta_1769520979986_j2e7x"
+    ],
+    "lat": 62.541008,
+    "lng": -150.236521,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "George Parks Highway",
+    "nominatimCountry": "United States"
+  },
+  "6BmwDwznNGUy6d0pBnYwuQ": {
+    "metas": [
+      "meta_1769520979986_hjx31"
+    ],
+    "lat": 60.9334533,
+    "lng": -149.3199227,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Seward Highway",
+    "nominatimCountry": "United States"
+  },
+  "53kLpQ8WuYkcOOYbJRSHnA": {
+    "metas": [
+      "meta_1769520979986_j08si"
+    ],
+    "lat": 66.663489,
+    "lng": -150.664291,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Dalton Highway",
+    "nominatimCountry": "United States"
+  },
+  "F6E7BPGLb-BKiQD_Dx4f_g": {
+    "metas": [
+      "meta_1769520979986_qtqn0"
+    ],
+    "lat": 61.217568,
+    "lng": -149.890493,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "West 5th Avenue",
+    "nominatimCountry": "United States"
+  },
+  "JhVa0EbYy7sVN9ch9P-Iig": {
+    "metas": [
+      "meta_1769520979986_2k6b7"
+    ],
+    "lat": 61.57699,
+    "lng": -149.409233,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "East Parks Highway",
+    "nominatimCountry": "United States"
+  },
+  "nqdPKoczHE52RltcFmMiog": {
+    "metas": [
+      "meta_1769520979986_c6v5p"
+    ],
+    "lat": 61.115864,
+    "lng": -149.817001,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "East Klatt Road",
+    "nominatimCountry": "United States"
+  },
+  "lcbu99KzKjyCmR8zdoEZPg": {
+    "metas": [
+      "meta_1769520979986_s28ld"
+    ],
+    "lat": 61.646314,
+    "lng": -149.139077,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "North Farm Loop",
+    "nominatimCountry": "United States"
+  },
+  "vsjsFaqWTY8tXOrPgQvZig": {
+    "metas": [
+      "meta_1769520979986_1uey2"
+    ],
+    "lat": 58.301263,
+    "lng": -134.409928,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "West 3rd Street",
+    "nominatimCountry": "United States"
+  },
+  "NbFVImmhe9Zd20FQ7q1OLA": {
+    "metas": [
+      "meta_1769520979986_byu26"
+    ],
+    "lat": 61.212139,
+    "lng": -149.881143,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Barrow Street",
+    "nominatimCountry": "United States"
+  },
+  "RUW5PVEOlNT-tt-vtIfNSA": {
+    "metas": [
+      "meta_1769520979986_cm7ac"
+    ],
+    "lat": 64.845103,
+    "lng": -147.712862,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Wendell Avenue",
+    "nominatimCountry": "United States"
+  },
+  "vTdKqsVRd89ktXRUgqjhZQ": {
+    "metas": [
+      "meta_1769520979986_bh3uq"
+    ],
+    "lat": 61.2354105,
+    "lng": -149.7016608,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Glenn Highway",
+    "nominatimCountry": "United States"
+  },
+  "256NlfEF38TaQ0Xexnxu7A": {
+    "metas": [
+      "meta_1769520979986_6qxfr"
+    ],
+    "lat": 70.0322328,
+    "lng": -148.6409752,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Dalton Highway",
+    "nominatimCountry": "United States"
+  },
+  "RHp5X5G-MI5UIgUi_HTslw": {
+    "metas": [
+      "meta_1769520979986_28jgu"
+    ],
+    "lat": 65.4437326,
+    "lng": -145.4890693,
+    "country": "Alaska",
+    "region": "Alaska",
+    "road": "Steese Highway",
+    "nominatimCountry": "United States"
+  },
+  "gHEd9dw9mkm5yugwC2U9NQ": {
+    "metas": [
+      "meta_1769520982262_ymen7"
+    ],
+    "lat": 50.147006,
+    "lng": -107.05134,
+    "country": "Canada",
+    "region": "Saskatchewan",
+    "road": null,
+    "nominatimCountry": "Canada"
+  },
+  "p3oP2LkCVDVKh0iezzFnrw": {
+    "metas": [
+      "meta_1769520982262_ew5s4"
+    ],
+    "lat": 43.77146,
+    "lng": -79.264382,
+    "country": "Canada",
+    "region": "Ontario",
+    "road": "Golden Gate Court",
+    "nominatimCountry": "Canada"
+  },
+  "e1gQJA3H13DWO2lWqmbwAg": {
+    "metas": [
+      "meta_1769520982262_v4vlr"
+    ],
+    "lat": 49.7445702,
+    "lng": -84.128801,
+    "country": "Canada",
+    "region": "Ontario",
+    "road": "Highway 11",
+    "nominatimCountry": "Canada"
+  },
+  "boE0PHpvjJw7q1_7fammEQ": {
+    "metas": [
+      "meta_1769520982262_ff7mz"
+    ],
+    "lat": 43.9673193,
+    "lng": -78.1338612,
+    "country": "Canada",
+    "region": "Ontario",
+    "road": "King Street East",
+    "nominatimCountry": "Canada"
+  },
+  "C_UC9QQuNndecR_5UmMgCw": {
+    "metas": [
+      "meta_1769520982262_tbbim"
+    ],
+    "lat": 45.8701586,
+    "lng": -65.2529057,
+    "country": "Canada",
+    "region": "New Brunswick",
+    "road": "Anagance Ridge Road",
+    "nominatimCountry": "Canada"
+  },
+  "z3BjMTFeMPrrG5N05sPzRg": {
+    "metas": [
+      "meta_1769520982262_02k15"
+    ],
+    "lat": 51.3873054,
+    "lng": -113.9902882,
+    "country": "Canada",
+    "region": "Alberta",
+    "road": "Township Road 282",
+    "nominatimCountry": "Canada"
+  },
+  "MxMuFXwpL3GSADh1FntEkw": {
+    "metas": [
+      "meta_1769520982262_8y88k"
+    ],
+    "lat": 49.990105,
+    "lng": -97.3347125,
+    "country": "Canada",
+    "region": "Manitoba",
+    "road": "Northern Woods and Water Route",
+    "nominatimCountry": "Canada"
+  },
+  "w6OzbXFGlwgSDZyfy99WiQ": {
+    "metas": [
+      "meta_1769520982262_0f32s"
+    ],
+    "lat": 51.8290842,
+    "lng": -121.537969,
+    "country": "Canada",
+    "region": "British Columbia",
+    "road": "Cariboo Highway",
+    "nominatimCountry": "Canada"
+  },
+  "vDXhk3OfUZqqSZAUafZsgw": {
+    "metas": [
+      "meta_1769520982262_qqveg"
+    ],
+    "lat": 46.8576731,
+    "lng": -72.8235418,
+    "country": "Canada",
+    "region": "Quebec",
+    "road": "Route 155",
+    "nominatimCountry": "Canada"
+  },
+  "BCYQioUFL0qOm4bXqIa7Ng": {
+    "metas": [
+      "meta_1769520982262_fmq0p"
+    ],
+    "lat": 45.406732,
+    "lng": -71.911874,
+    "country": "Canada",
+    "region": "Quebec",
+    "road": "Rue du Dominion",
+    "nominatimCountry": "Canada"
+  },
+  "NDetuzNNNccfB787ckuoKg": {
+    "metas": [
+      "meta_1769520982262_ye4oc"
+    ],
+    "lat": 45.6703066,
+    "lng": -71.2048856,
+    "country": "Canada",
+    "region": "Quebec",
+    "road": "Route 108",
+    "nominatimCountry": "Canada"
+  },
+  "eVO-bdXhik3y9fJdA5P5WA": {
+    "metas": [
+      "meta_1769520982262_xd459"
+    ],
+    "lat": 46.6344677,
+    "lng": -79.1346971,
+    "country": "Canada",
+    "region": "Ontario",
+    "road": "Highway 63",
+    "nominatimCountry": "Canada"
+  },
+  "F5ooWcXZ8y30vXoeDYNp8A": {
+    "metas": [
+      "meta_1769520982262_h6wnk"
+    ],
+    "lat": 45.9229115,
+    "lng": -65.6739442,
+    "country": "Canada",
+    "region": "New Brunswick",
+    "road": "Route 2",
+    "nominatimCountry": "Canada"
+  },
+  "bGiDE_4slMu8Xvxcsqb6wQ": {
+    "metas": [
+      "meta_1769520982262_o2clx"
+    ],
+    "lat": 60.0592854,
+    "lng": -122.9916255,
+    "country": "Canada",
+    "region": "Northwest Territories",
+    "road": "Liard Highway",
+    "nominatimCountry": "Canada"
+  },
+  "qdk7xkxwyOexmNqYALSGMA": {
+    "metas": [
+      "meta_1769520982262_7aawe"
+    ],
+    "lat": 46.5538938,
+    "lng": -66.1368733,
+    "country": "Canada",
+    "region": "New Brunswick",
+    "road": "Main Street",
+    "nominatimCountry": "Canada"
+  },
+  "plZsrBFYDBo-6AbqZ8wCxg": {
+    "metas": [
+      "meta_1769520982262_chm7k"
+    ],
+    "lat": 46.292598,
+    "lng": -63.630264,
+    "country": "Canada",
+    "region": "Prince Edward Island",
+    "road": "Route 1A",
+    "nominatimCountry": "Canada"
+  },
+  "Tc13OXu0k3Jf1Olo-E05mA": {
+    "metas": [
+      "meta_1769520982262_qxd7b"
+    ],
+    "lat": 43.8207821,
+    "lng": -79.1229302,
+    "country": "Canada",
+    "region": "Ontario",
+    "road": "Sheppard Avenue",
+    "nominatimCountry": "Canada"
+  },
+  "1QqrfYjQXa4ZlCWE35iNxA": {
+    "metas": [
+      "meta_1769520982262_x1dtg"
+    ],
+    "lat": 46.7361632,
+    "lng": -71.6160593,
+    "country": "Canada",
+    "region": "Quebec",
+    "road": "Route Gravel",
+    "nominatimCountry": "Canada"
+  },
+  "3dMVJwSe4Ikz9pG0q_fd5A": {
+    "metas": [
+      "meta_1769520982262_mrk00"
+    ],
+    "lat": 46.285396,
+    "lng": -63.712185,
+    "country": "Canada",
+    "region": "Prince Edward Island",
+    "road": "Muttart Shore Road",
+    "nominatimCountry": "Canada"
+  },
+  "BPP4meZHh0sc4vHJQFWgdA": {
+    "metas": [
+      "meta_1769520982262_j807o"
+    ],
+    "lat": 50.4117451,
+    "lng": -103.1148322,
+    "country": "Canada",
+    "region": "Saskatchewan",
+    "road": "Trans-Canada Highway",
+    "nominatimCountry": "Canada"
+  },
+  "0m2rQWn-Prvcg5Rg_JwWKg": {
+    "metas": [
+      "meta_1769520982262_qi8d0"
+    ],
+    "lat": 48.3783783,
+    "lng": -54.1913984,
+    "country": "Canada",
+    "region": "Newfoundland and Labrador",
+    "road": "Trans Canada Highway",
+    "nominatimCountry": "Canada"
+  },
+  "01uxCUOML_0edloHWFAD1Q": {
+    "metas": [
+      "meta_1769520982262_ihnjg"
+    ],
+    "lat": 49.9458881,
+    "lng": -123.166892,
+    "country": "Canada",
+    "region": "British Columbia",
+    "road": "Sea-to-Sky Highway",
+    "nominatimCountry": "Canada"
+  },
+  "IS_FFIVRuQH9t83-ryo5kw": {
+    "metas": [
+      "meta_1769520982262_xry98"
+    ],
+    "lat": 50.7258245,
+    "lng": -119.7669867,
+    "country": "Canada",
+    "region": "British Columbia",
+    "road": "Trans-Canada Highway",
+    "nominatimCountry": "Canada"
+  },
+  "oVA8kxuIzTukIuVwLNCqMg": {
+    "metas": [
+      "meta_1769520982262_cds3l"
+    ],
+    "lat": 50.0492513,
+    "lng": -98.009525,
+    "country": "Canada",
+    "region": "Manitoba",
+    "road": "Provincial Road 430",
+    "nominatimCountry": "Canada"
+  },
+  "qw7ANlhNlx5Py7VV-kObig": {
+    "metas": [
+      "meta_1769520982262_3z0ew"
+    ],
+    "lat": 51.2604272,
+    "lng": -106.9705483,
+    "country": "Canada",
+    "region": "Saskatchewan",
+    "road": "45",
+    "nominatimCountry": "Canada"
+  },
+  "lRNS1Vj4R_ur2ZJqC_bIMw": {
+    "metas": [
+      "meta_1769520982262_d4m20"
+    ],
+    "lat": 45.5816447,
+    "lng": -74.2482143,
+    "country": "Canada",
+    "region": "Quebec",
+    "road": "Chemin Marineau",
+    "nominatimCountry": "Canada"
+  },
+  "DgruyQKOtEp5VjX9Z7B3wA": {
+    "metas": [
+      "meta_1769520982262_qei2v"
+    ],
+    "lat": 45.8725579,
+    "lng": -66.3481915,
+    "country": "Canada",
+    "region": "New Brunswick",
+    "road": "Currie Avenue",
+    "nominatimCountry": "Canada"
+  },
+  "ndqIzsmNtO-bweDjQfQ0LQ": {
+    "metas": [
+      "meta_1769520982262_7ppuh"
+    ],
+    "lat": 52.5213552,
+    "lng": -113.7712363,
+    "country": "Canada",
+    "region": "Alberta",
+    "road": "Township Road 412",
+    "nominatimCountry": "Canada"
+  },
+  "-2oCSGlPJ95CzWLzUs8BJA": {
+    "metas": [
+      "meta_1769520982262_anh6h"
+    ],
+    "lat": 50.550026,
+    "lng": -100.854088,
+    "country": "Canada",
+    "region": "Manitoba",
+    "road": null,
+    "nominatimCountry": "Canada"
+  },
+  "46gvNfwf2RXD2HRllZNB8g": {
+    "metas": [
+      "meta_1769520982262_u1gtc"
+    ],
+    "lat": 51.088748,
+    "lng": -114.4050881,
+    "country": "Canada",
+    "region": "Alberta",
+    "road": "Trans-Canada Highway",
+    "nominatimCountry": "Canada"
+  },
+  "kHAaUPKVwk4fNKCX0DBDWg": {
+    "metas": [
+      "meta_1769520982263_x81j5"
+    ],
+    "lat": 53.4270294,
+    "lng": -65.0090798,
+    "country": "Canada",
+    "region": "Newfoundland and Labrador",
+    "road": "Trans-Labrador Highway",
+    "nominatimCountry": "Canada"
+  },
+  "OCpKu7QHPMTBB8E2PBd-ow": {
+    "metas": [
+      "meta_1769520982263_p1gq5"
+    ],
+    "lat": 47.9476992,
+    "lng": -53.9512858,
+    "country": "Canada",
+    "region": "Newfoundland and Labrador",
+    "road": "Trans Canada Highway",
+    "nominatimCountry": "Canada"
+  },
+  "0yBt5PoOQHgMZmqEUfhj3A": {
+    "metas": [
+      "meta_1769520982263_33hcp"
+    ],
+    "lat": 45.104963,
+    "lng": -61.784305,
+    "country": "Canada",
+    "region": "Nova Scotia",
+    "road": "Highway 211",
+    "nominatimCountry": "Canada"
+  },
+  "VTs7lIDthdD4WIhPauHIhA": {
+    "metas": [
+      "meta_1769520982263_9fgar"
+    ],
+    "lat": 45.7916963,
+    "lng": -75.0909923,
+    "country": "Canada",
+    "region": "Quebec",
+    "road": "Chemin du Lac-Grosleau",
+    "nominatimCountry": "Canada"
+  },
+  "18qdJyefBXlE-DOjS-iKoQ": {
+    "metas": [
+      "meta_1769520982263_74mf0"
+    ],
+    "lat": 45.269745,
+    "lng": -66.057691,
+    "country": "Canada",
+    "region": "New Brunswick",
+    "road": "Charlotte Street",
+    "nominatimCountry": "Canada"
+  },
+  "1ZjTR5yOSQc_OmQqIO0t7Q": {
+    "metas": [
+      "meta_1769520982263_t2c6g"
+    ],
+    "lat": 45.392019,
+    "lng": -61.501599,
+    "country": "Canada",
+    "region": "Nova Scotia",
+    "road": "Church Street",
+    "nominatimCountry": "Canada"
+  },
+  "UTV4wIpHr1HUCd5fDa7O0Q": {
+    "metas": [
+      "meta_1769520982263_l9pbh"
+    ],
+    "lat": 52.9785984,
+    "lng": -105.7797991,
+    "country": "Canada",
+    "region": "Saskatchewan",
+    "road": "Veterans Memorial Highway",
+    "nominatimCountry": "Canada"
+  },
+  "LY2gagWQiwyY_8dm4qW64A": {
+    "metas": [
+      "meta_1769520982263_z29dy"
+    ],
+    "lat": 48.118756,
+    "lng": -79.108966,
+    "country": "Canada",
+    "region": "Quebec",
+    "road": "Rang des Collines",
+    "nominatimCountry": "Canada"
+  },
+  "REvGDDPr2wcnd9yEJUJuJw": {
+    "metas": [
+      "meta_1769520982263_r2e9b"
+    ],
+    "lat": 48.3179125,
+    "lng": -85.0074435,
+    "country": "Canada",
+    "region": "Ontario",
+    "road": "Highway 17",
+    "nominatimCountry": "Canada"
+  },
+  "M5Aijv1Hc9NmioVnPncT5A": {
+    "metas": [
+      "meta_1769520982263_73ztw"
+    ],
+    "lat": 46.283611,
+    "lng": -63.694585,
+    "country": "Canada",
+    "region": "Prince Edward Island",
+    "road": "North Carleton Road",
+    "nominatimCountry": "Canada"
+  },
+  "YrYOLpt8zaCoEOX4mS-SLA": {
+    "metas": [
+      "meta_1769520982263_9ekzm"
+    ],
+    "lat": 49.1818296,
+    "lng": -57.4213426,
+    "country": "Canada",
+    "region": "Newfoundland and Labrador",
+    "road": "Tuck's Lane",
+    "nominatimCountry": "Canada"
+  },
+  "ZaUWlmGv3kh03Zwr9QVmcw": {
+    "metas": [
+      "meta_1769520982263_gz9wb"
+    ],
+    "lat": 46.7387408,
+    "lng": -64.9757204,
+    "country": "Canada",
+    "region": "New Brunswick",
+    "road": "Rue Principale",
+    "nominatimCountry": "Canada"
+  },
+  "9jMC2V-mxMUBHCt6ioAsxA": {
+    "metas": [
+      "meta_1769520982263_sf189"
+    ],
+    "lat": 64.1493028,
+    "lng": -140.565565,
+    "country": "Canada",
+    "region": "Yukon",
+    "road": "Top of the World Highway",
+    "nominatimCountry": "Canada"
+  },
+  "EPObTzh436yWh27OFgsa2g": {
+    "metas": [
+      "meta_1769520982263_boxc9"
+    ],
+    "lat": 62.2200672,
+    "lng": -140.692601,
+    "country": "Canada",
+    "region": "Yukon",
+    "road": "Alaska Highway",
+    "nominatimCountry": "Canada"
+  },
+  "QsblABdq_XdqXzfsZtoYsQ": {
+    "metas": [
+      "meta_1769520982263_mrlua"
+    ],
+    "lat": 51.7231183,
+    "lng": -116.4987284,
+    "country": "Canada",
+    "region": "Alberta",
+    "road": "Icefields Parkway",
+    "nominatimCountry": "Canada"
+  },
+  "PAwGumiTujrL0iFXjQvyfA": {
+    "metas": [
+      "meta_1769520982263_wlq8t"
+    ],
+    "lat": 52.9065302,
+    "lng": -58.2906235,
+    "country": "Canada",
+    "region": "Newfoundland and Labrador",
+    "road": "Southern Labrador Highway",
+    "nominatimCountry": "Canada"
+  },
+  "KWSmkLoJacdGA0ZKSDE30Q": {
+    "metas": [
+      "meta_1769520982263_vnu0h"
+    ],
+    "lat": 48.5229191,
+    "lng": -66.1109359,
+    "country": "Canada",
+    "region": "Quebec",
+    "road": "Route 299",
+    "nominatimCountry": "Canada"
+  },
+  "WH1aqSBySx4FlkU06K2kmQ": {
+    "metas": [
+      "meta_1769520982263_twg8a"
+    ],
+    "lat": 50.092639,
+    "lng": -57.681812,
+    "country": "Canada",
+    "region": "Newfoundland and Labrador",
+    "road": "The Viking Trail",
+    "nominatimCountry": "Canada"
+  },
+  "fJ7GgV--URIYljkzqltfHA": {
+    "metas": [
+      "meta_1769520982263_zmmsa"
+    ],
+    "lat": 64.9000521,
+    "lng": -125.5774667,
+    "country": "Canada",
+    "region": "Northwest Territories",
+    "road": "Bear Rock Drive",
+    "nominatimCountry": "Canada"
+  },
+  "FMCBgBjq_dM0yjF0X6UBUA": {
+    "metas": [
+      "meta_1769520982263_2sn89"
+    ],
+    "lat": 56.5440462,
+    "lng": -79.2225026,
+    "country": "Canada",
+    "region": "Nunavut",
+    "road": null,
+    "nominatimCountry": "Canada"
+  },
+  "ajas7_86CDixsEk88KCxhw": {
+    "metas": [
+      "meta_1769520982263_ygt1k"
+    ],
+    "lat": 58.453758,
+    "lng": -78.1061352,
+    "country": "Canada",
+    "region": "Quebec",
+    "road": null,
+    "nominatimCountry": "Canada"
+  },
+  "MP5QrG-K5Hurh1buVP0PzA": {
+    "metas": [
+      "meta_1769520982263_zdn6r"
+    ],
+    "lat": 76.4152508,
+    "lng": -82.8835547,
+    "country": "Canada",
+    "region": "Nunavut",
+    "road": null,
+    "nominatimCountry": "Canada"
+  },
+  "_ETdcLWH-hR2285O1piWBw": {
+    "metas": [
+      "meta_1769520982263_qrg58"
+    ],
+    "lat": 69.1174745,
+    "lng": -105.0536687,
+    "country": "Canada",
+    "region": "Nunavut",
+    "road": "Omingmak Street",
+    "nominatimCountry": "Canada"
+  },
+  "-iIF0LBfclouZxWcurzdgg": {
+    "metas": [
+      "meta_1769520983395_jh41g"
+    ],
+    "lat": 9.930286,
+    "lng": -84.08846,
+    "country": "Costa Rica",
+    "region": "San Jose Province",
+    "road": "Calle 20 Jorge Vargas Gené",
+    "nominatimCountry": "Costa Rica"
+  },
+  "QeKINOulUGv2qwUT08PJog": {
+    "metas": [
+      "meta_1769520983395_i22rb"
+    ],
+    "lat": 9.8856856,
+    "lng": -84.5087025,
+    "country": "Costa Rica",
+    "region": "San Jose Province",
+    "road": "Vía 137",
+    "nominatimCountry": "Costa Rica"
+  },
+  "_yKfJsCbyLgkdlVU7-yGEg": {
+    "metas": [
+      "meta_1769520983395_hy3bj"
+    ],
+    "lat": 9.864487,
+    "lng": -83.919388,
+    "country": "Costa Rica",
+    "region": "Cartago Province",
+    "road": "Calle 1 Fray Dionisio de Llorens",
+    "nominatimCountry": "Costa Rica"
+  },
+  "JcPC0PqDhyHZZ2Ky-GL6dA": {
+    "metas": [
+      "meta_1769520983395_stu5q"
+    ],
+    "lat": 10.556403,
+    "lng": -85.693054,
+    "country": "Costa Rica",
+    "region": "Guanacaste",
+    "road": "Avenida Palícano",
+    "nominatimCountry": "Costa Rica"
+  },
+  "XM4cP-QhxnW-Xz2x-emzSQ": {
+    "metas": [
+      "meta_1769520983395_stxrr"
+    ],
+    "lat": 9.609787,
+    "lng": -84.551928,
+    "country": "Costa Rica",
+    "region": "Puntarenas Province",
+    "road": null,
+    "nominatimCountry": "Costa Rica"
+  },
+  "uruU5z1sHG_fxJaJFvnNdg": {
+    "metas": [
+      "meta_1769520983395_d071n"
+    ],
+    "lat": 9.93331,
+    "lng": -84.071763,
+    "country": "Costa Rica",
+    "region": "San Jose Province",
+    "road": "Calle 15 Miguel Hidalgo y Costilla",
+    "nominatimCountry": "Costa Rica"
+  },
+  "NioniSE-pUhFqfSM9fKAJg": {
+    "metas": [
+      "meta_1769520983395_d5bg8"
+    ],
+    "lat": 9.940427,
+    "lng": -84.080258,
+    "country": "Costa Rica",
+    "region": "San Jose Province",
+    "road": "Avenida 11",
+    "nominatimCountry": "Costa Rica"
+  },
+  "6R9a-fW-E8HCnC6G6dzzbA": {
+    "metas": [
+      "meta_1769520983395_kycxs"
+    ],
+    "lat": 9.933233,
+    "lng": -84.071072,
+    "country": "Costa Rica",
+    "region": "San Jose Province",
+    "road": "Calle 17 Clorito Picado",
+    "nominatimCountry": "Costa Rica"
+  },
+  "5QOxbXUApqXLyoZtkZJJgQ": {
+    "metas": [
+      "meta_1769520983395_0svcz"
+    ],
+    "lat": 9.914357,
+    "lng": -84.071506,
+    "country": "Costa Rica",
+    "region": "San Jose Province",
+    "road": "Paseo de la Segunda República",
+    "nominatimCountry": "Costa Rica"
+  },
+  "dXJglA0JwCNIadsfIJDdzQ": {
+    "metas": [
+      "meta_1769520983395_ckjx4"
+    ],
+    "lat": 9.938292,
+    "lng": -84.106061,
+    "country": "Costa Rica",
+    "region": "San Jose Province",
+    "road": "Avenida de Las Américas",
+    "nominatimCountry": "Costa Rica"
+  },
+  "nNVksuN0CwXSxNRb7rZCJA": {
+    "metas": [
+      "meta_1769520983395_ggfk0"
+    ],
+    "lat": 9.936908,
+    "lng": -84.052582,
+    "country": "Costa Rica",
+    "region": "San Jose Province",
+    "road": "Milla Universitaria",
+    "nominatimCountry": "Costa Rica"
+  },
+  "t6dBtxNattZdrItTOrSgDg": {
+    "metas": [
+      "meta_1769520983395_oueuo"
+    ],
+    "lat": 9.998755,
+    "lng": -84.121876,
+    "country": "Costa Rica",
+    "region": "Heredia Province",
+    "road": "Calle 12",
+    "nominatimCountry": "Costa Rica"
+  },
+  "pX9kjRv2YRbP_oQihEFLww": {
+    "metas": [
+      "meta_1769520983395_p6n6z"
+    ],
+    "lat": 9.9993049,
+    "lng": -84.2032622,
+    "country": "Costa Rica",
+    "region": "Alajuela Province",
+    "road": "Bulevar Aeropuerto",
+    "nominatimCountry": "Costa Rica"
+  },
+  "2eCwCzVibMFasCaLvIXMWg": {
+    "metas": [
+      "meta_1769520983395_efw91"
+    ],
+    "lat": 10.062468,
+    "lng": -84.095179,
+    "country": "Costa Rica",
+    "region": "Heredia Province",
+    "road": "Main circular trail",
+    "nominatimCountry": "Costa Rica"
+  },
+  "MCeX9xrpa-EmEULufSGvSg": {
+    "metas": [
+      "meta_1769520983395_d447c"
+    ],
+    "lat": 10.045437,
+    "lng": -84.262843,
+    "country": "Costa Rica",
+    "region": "Alajuela Province",
+    "road": "Calle Chilamate",
+    "nominatimCountry": "Costa Rica"
+  },
+  "KYbe5PqPJ3a3xehg4xnftg": {
+    "metas": [
+      "meta_1769520983396_cjf3b"
+    ],
+    "lat": 10.124219,
+    "lng": -84.190132,
+    "country": "Costa Rica",
+    "region": "Alajuela Province",
+    "road": "Calle Laguna",
+    "nominatimCountry": "Costa Rica"
+  },
+  "ziBu0rEktl6meL3o8B3FKg": {
+    "metas": [
+      "meta_1769520983396_871fm"
+    ],
+    "lat": 9.866314,
+    "lng": -83.919962,
+    "country": "Costa Rica",
+    "region": "Cartago Province",
+    "road": "Calle Central 29 de Octubre",
+    "nominatimCountry": "Costa Rica"
+  },
+  "GrfjbmPtvCoc7sgS5LCGrg": {
+    "metas": [
+      "meta_1769520983396_wlmkx"
+    ],
+    "lat": 9.864606,
+    "lng": -83.920061,
+    "country": "Costa Rica",
+    "region": "Cartago Province",
+    "road": "Avenida Central",
+    "nominatimCountry": "Costa Rica"
+  },
+  "uUcTMn_RNkrWl4e_6KE58g": {
+    "metas": [
+      "meta_1769520983396_bns74"
+    ],
+    "lat": 9.859105,
+    "lng": -83.918352,
+    "country": "Costa Rica",
+    "region": "Cartago Province",
+    "road": "Avenida 12A",
+    "nominatimCountry": "Costa Rica"
+  },
+  "0LvtN7fAUiygUcfadS2NmA": {
+    "metas": [
+      "meta_1769520983396_q8utx"
+    ],
+    "lat": 9.853241,
+    "lng": -83.907779,
+    "country": "Costa Rica",
+    "region": "Cartago Province",
+    "road": "Calle 15",
+    "nominatimCountry": "Costa Rica"
+  },
+  "CbKUc3k2KZgGVpTPx0dMoA": {
+    "metas": [
+      "meta_1769520983396_ia4ul"
+    ],
+    "lat": 9.839757,
+    "lng": -83.888012,
+    "country": "Costa Rica",
+    "region": "Cartago Province",
+    "road": "Calle Lánkester",
+    "nominatimCountry": "Costa Rica"
+  },
+  "OlZ8pRloPVAeZVqnNdgWkw": {
+    "metas": [
+      "meta_1769520983396_7gtgu"
+    ],
+    "lat": 9.704844,
+    "lng": -84.661855,
+    "country": "Costa Rica",
+    "region": "Puntarenas Province",
+    "road": "Marina Punta Leona",
+    "nominatimCountry": "Costa Rica"
+  },
+  "jFbQQ_4cQ0_DAq49xGAoKA": {
+    "metas": [
+      "meta_1769520983396_t73if"
+    ],
+    "lat": 10.63059,
+    "lng": -85.439044,
+    "country": "Costa Rica",
+    "region": "Guanacaste",
+    "road": "Calle 2",
+    "nominatimCountry": "Costa Rica"
+  },
+  "py2ceNeNgAf4MymqPFBTAw": {
+    "metas": [
+      "meta_1769520983396_5zx84"
+    ],
+    "lat": 10.445061,
+    "lng": -85.55096,
+    "country": "Costa Rica",
+    "region": "Guanacaste",
+    "road": "Calle 1",
+    "nominatimCountry": "Costa Rica"
+  },
+  "Zg9thJr8fQIvXaKmuc099Q": {
+    "metas": [
+      "meta_1769520984533_byzns"
+    ],
+    "lat": 18.4931447,
+    "lng": -69.8508984,
+    "country": "Dominican Republic",
+    "region": "Santo Domingo",
+    "road": "Avenida San Vicente de Paúl",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "ctqSNbVijhE6yOLScfC3AQ": {
+    "metas": [
+      "meta_1769520984533_0klzh"
+    ],
+    "lat": 19.4597934,
+    "lng": -70.7072771,
+    "country": "Dominican Republic",
+    "region": "Santiago",
+    "road": "Calle Onofre de Lora",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "vex1SlEGYwu_g6oQfdFNKA": {
+    "metas": [
+      "meta_1769520984533_xhnm2"
+    ],
+    "lat": 18.4241651,
+    "lng": -69.9963377,
+    "country": "Dominican Republic",
+    "region": "Santo Domingo",
+    "road": "Calle A",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "c3Gc8YkkEns0bijeORiZxg": {
+    "metas": [
+      "meta_1769520984533_ydg9p"
+    ],
+    "lat": 19.4343209,
+    "lng": -70.691118,
+    "country": "Dominican Republic",
+    "region": "Santiago",
+    "road": "Calle Paseo de los Periodistas",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "uo4NqfykpsJgufzdQaU92Q": {
+    "metas": [
+      "meta_1769520984533_f1ix2"
+    ],
+    "lat": 19.4707649,
+    "lng": -70.6730574,
+    "country": "Dominican Republic",
+    "region": "Santiago",
+    "road": "Calle Vanessa Ramírez Fañas",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "mIDmpEl1OjljlkVB2f6n2Q": {
+    "metas": [
+      "meta_1769520984533_ejdig"
+    ],
+    "lat": 19.4565187,
+    "lng": -70.6657778,
+    "country": "Dominican Republic",
+    "region": "Santiago",
+    "road": "Carretera Licey al Medio - Santiago de los Caballeros",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "6AhFLO3P4R4LMK5ArS0Kgg": {
+    "metas": [
+      "meta_1769520984533_pv7ku"
+    ],
+    "lat": 18.4708244,
+    "lng": -69.9405635,
+    "country": "Dominican Republic",
+    "region": "Distrito Nacional",
+    "road": "Avenida Winston Churchill",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "n7Zo_Sj_HpYbFOF23vn7qg": {
+    "metas": [
+      "meta_1769520984533_go51i"
+    ],
+    "lat": 18.4427042,
+    "lng": -69.9702566,
+    "country": "Dominican Republic",
+    "region": "Distrito Nacional",
+    "road": "Calle Cibao Este",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "r61Ts_6a1rtY66A0ZS9s4A": {
+    "metas": [
+      "meta_1769520984533_x6x1s"
+    ],
+    "lat": 18.4894411,
+    "lng": -69.9147867,
+    "country": "Dominican Republic",
+    "region": "Distrito Nacional",
+    "road": "Avenida Máximo Gómez",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "Ol7l4P-oLqk1YkEq1pyyUA": {
+    "metas": [
+      "meta_1769520984533_04fey"
+    ],
+    "lat": 18.4851047,
+    "lng": -69.7333847,
+    "country": "Dominican Republic",
+    "region": "Santo Domingo",
+    "road": "Avenida Ecológica",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "TSlJFnZZDnpT4FaDvb0POA": {
+    "metas": [
+      "meta_1769520984533_jh6bu"
+    ],
+    "lat": 18.4680391,
+    "lng": -69.939028,
+    "country": "Dominican Republic",
+    "region": "Distrito Nacional",
+    "road": "Avenida Winston Churchill",
+    "nominatimCountry": "Dominican Republic"
+  },
+  "GQm7p_aZKiVUh0lNbMEBJg": {
+    "metas": [
+      "meta_1769520985733_h81l2"
+    ],
+    "lat": 68.704475,
+    "lng": -52.876842,
+    "country": "Greenland",
+    "region": null,
+    "road": "Killerpaat",
+    "nominatimCountry": "Greenland"
+  },
+  "5Es5O-uLPdM-UgmELO4KrQ": {
+    "metas": [
+      "meta_1769520985733_c2c73"
+    ],
+    "lat": 64.182266,
+    "lng": -51.722373,
+    "country": "Greenland",
+    "region": null,
+    "road": "Eqalugalinnguit",
+    "nominatimCountry": "Greenland"
+  },
+  "-sGrkMSkKSrE0u8GiR0AzQ": {
+    "metas": [
+      "meta_1769520985733_pj2fr"
+    ],
+    "lat": 62.0039014,
+    "lng": -49.6662114,
+    "country": "Greenland",
+    "region": null,
+    "road": "Imeqarfik Aqq.",
+    "nominatimCountry": "Greenland"
+  },
+  "tX-mOIvh2fLDT-BGGkBvhg": {
+    "metas": [
+      "meta_1769520985733_z101h",
+      "meta_1769520985734_lpr5k"
+    ],
+    "lat": 68.713121,
+    "lng": -52.8785625,
+    "country": "Greenland",
+    "region": null,
+    "road": "Talittarfittaaq",
+    "nominatimCountry": "Greenland"
+  },
+  "KEiI8rrvV-J5nBYEmECROg": {
+    "metas": [
+      "meta_1769520985733_16x3m"
+    ],
+    "lat": 64.1816978,
+    "lng": -51.7109836,
+    "country": "Greenland",
+    "region": null,
+    "road": "Nuussuaq",
+    "nominatimCountry": "Greenland"
+  },
+  "Xv4c_dmlEDYr9u_hIASKMA": {
+    "metas": [
+      "meta_1769520985733_9c1so"
+    ],
+    "lat": 69.215414,
+    "lng": -51.0989825,
+    "country": "Greenland",
+    "region": null,
+    "road": "Alanngukasiup Qaava",
+    "nominatimCountry": "Greenland"
+  },
+  "BYKS9CnZ_9h9sv7SpgrQlg": {
+    "metas": [
+      "meta_1769520985733_0v20j"
+    ],
+    "lat": 60.7187767,
+    "lng": -46.0468802,
+    "country": "Greenland",
+    "region": null,
+    "road": "Walsøvej",
+    "nominatimCountry": "Greenland"
+  },
+  "GM7Y-aaCACI_MUVbCCojQA": {
+    "metas": [
+      "meta_1769520985733_a8d35"
+    ],
+    "lat": 68.7101754,
+    "lng": -52.8388091,
+    "country": "Greenland",
+    "region": null,
+    "road": "Aadarujuup Aqquserna",
+    "nominatimCountry": "Greenland"
+  },
+  "Ni2xQAbu7QFhyyt8qEIIIw": {
+    "metas": [
+      "meta_1769520985733_q66hi"
+    ],
+    "lat": 65.6168991,
+    "lng": -37.6468925,
+    "country": "Greenland",
+    "region": null,
+    "road": "Akitterni Aqq.",
+    "nominatimCountry": "Greenland"
+  },
+  "gdxsb3Bl1CbbhYs93nNJsA": {
+    "metas": [
+      "meta_1769520985733_19ouk"
+    ],
+    "lat": 70.6739544,
+    "lng": -52.1279547,
+    "country": "Greenland",
+    "region": null,
+    "road": "Anorisiorfinnguaq Aqqutaa",
+    "nominatimCountry": "Greenland"
+  },
+  "aOGTALR7r4QJUt_DNxQ5zw": {
+    "metas": [
+      "meta_1769520985733_1cbva"
+    ],
+    "lat": 60.9167485,
+    "lng": -46.0524139,
+    "country": "Greenland",
+    "region": null,
+    "road": "Nuugaarmiunut",
+    "nominatimCountry": "Greenland"
+  },
+  "jfrh9VheHhdjYTnQls0GXA": {
+    "metas": [
+      "meta_1769520985733_l0dwk"
+    ],
+    "lat": 65.4154649,
+    "lng": -52.8904367,
+    "country": "Greenland",
+    "region": null,
+    "road": "Ivissuaateralaa",
+    "nominatimCountry": "Greenland"
+  },
+  "1JeUkpdblriRy6odNrpBDg": {
+    "metas": [
+      "meta_1769520985733_833x7"
+    ],
+    "lat": 61.1671317,
+    "lng": -45.4097747,
+    "country": "Greenland",
+    "region": null,
+    "road": "Tunulliarfik Fjord Road",
+    "nominatimCountry": "Greenland"
+  },
+  "XmbIsonItJf-1h_59aAcow": {
+    "metas": [
+      "meta_1769520985733_flfv0"
+    ],
+    "lat": 61.1481078,
+    "lng": -45.604282,
+    "country": "Greenland",
+    "region": null,
+    "road": "Tasiusaq Road",
+    "nominatimCountry": "Greenland"
+  },
+  "_MhPx0zrXD0c_gBe0NfvQQ": {
+    "metas": [
+      "meta_1769520985733_jf841"
+    ],
+    "lat": 69.2480047,
+    "lng": -53.53092,
+    "country": "Greenland",
+    "region": null,
+    "road": "Siorarsuit Aqquserna",
+    "nominatimCountry": "Greenland"
+  },
+  "L-12qgscTwjI0iCA-EZYuQ": {
+    "metas": [
+      "meta_1769520985733_0d4zm"
+    ],
+    "lat": 70.4875997,
+    "lng": -21.9691129,
+    "country": "Greenland",
+    "region": null,
+    "road": "Mittarpiip Aqq.",
+    "nominatimCountry": "Greenland"
+  },
+  "NfMABVNlJNmu99gF630RDA": {
+    "metas": [
+      "meta_1769520985733_zvw0z"
+    ],
+    "lat": 61.9942748,
+    "lng": -49.6688419,
+    "country": "Greenland",
+    "region": null,
+    "road": "Orthorssuup Aqq.",
+    "nominatimCountry": "Greenland"
+  },
+  "i6jr9OlX0FUR82mwjpVyLQ": {
+    "metas": [
+      "meta_1769520985733_gnnsn"
+    ],
+    "lat": 67.0080975,
+    "lng": -50.6962695,
+    "country": "Greenland",
+    "region": null,
+    "road": "Central Street",
+    "nominatimCountry": "Greenland"
+  },
+  "cDS8k4Ew29Vns3blP7CD_Q": {
+    "metas": [
+      "meta_1769520985733_2s8e2"
+    ],
+    "lat": 70.811864,
+    "lng": -51.6313872,
+    "country": "Greenland",
+    "region": null,
+    "road": "Saattut",
+    "nominatimCountry": "Greenland"
+  },
+  "2Wo-jUxHotxErK-rqfgJqQ": {
+    "metas": [
+      "meta_1769520985733_2pj7u"
+    ],
+    "lat": 71.0493758,
+    "lng": -51.8898999,
+    "country": "Greenland",
+    "region": null,
+    "road": "Ukkusissat",
+    "nominatimCountry": "Greenland"
+  },
+  "zeAwqxbPhJTnebDwJDcDHQ": {
+    "metas": [
+      "meta_1769520985733_ja4h2"
+    ],
+    "lat": 65.8654527,
+    "lng": -37.0085006,
+    "country": "Greenland",
+    "region": null,
+    "road": "Kuummiit",
+    "nominatimCountry": "Greenland"
+  },
+  "3nKkDwRISVd3e7KhAiIs9w": {
+    "metas": [
+      "meta_1769520985733_14w5a"
+    ],
+    "lat": 65.8896331,
+    "lng": -37.7786783,
+    "country": "Greenland",
+    "region": null,
+    "road": "Tiniteqilaaq",
+    "nominatimCountry": "Greenland"
+  },
+  "TOlbq0Y2S3qB6ga-0w-SYA": {
+    "metas": [
+      "meta_1769520985733_ogukc"
+    ],
+    "lat": 70.7900384,
+    "lng": -53.6639057,
+    "country": "Greenland",
+    "region": null,
+    "road": "Niaqornat",
+    "nominatimCountry": "Greenland"
+  },
+  "q1hxNxVWkaUEbGCg8muxpw": {
+    "metas": [
+      "meta_1769520985734_yu1ka"
+    ],
+    "lat": 77.4677281,
+    "lng": -69.2310739,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "PkphiuV03-XZ4vo2E_vFhA": {
+    "metas": [
+      "meta_1769520985734_hb6oo"
+    ],
+    "lat": 64.4321243,
+    "lng": -50.2751421,
+    "country": "Greenland",
+    "region": null,
+    "road": "Kapisillit",
+    "nominatimCountry": "Greenland"
+  },
+  "aJWliwb81pfz8hPKcjam-A": {
+    "metas": [
+      "meta_1769520985734_kuwtm"
+    ],
+    "lat": 69.4864479,
+    "lng": -53.9432798,
+    "country": "Greenland",
+    "region": null,
+    "road": "Kangerluk",
+    "nominatimCountry": "Greenland"
+  },
+  "-8-AT3MjN4X8cHSjm-8rFw": {
+    "metas": [
+      "meta_1769520985734_cew5l"
+    ],
+    "lat": 64.1324861,
+    "lng": -51.3760134,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "QpV-QhOEBI5LjDPpcqvllg": {
+    "metas": [
+      "meta_1769520985734_shox3"
+    ],
+    "lat": 61.3978506,
+    "lng": -45.1611752,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "w9CnG5UMDjULdRUM6MTymw": {
+    "metas": [
+      "meta_1769520985734_n8r03"
+    ],
+    "lat": 72.7916998,
+    "lng": -56.1299995,
+    "country": "Greenland",
+    "region": null,
+    "road": "Telebakken Aqq.",
+    "nominatimCountry": "Greenland"
+  },
+  "Xj9Sk_g36oSQARB4cw68zw": {
+    "metas": [
+      "meta_1769520985734_gxrzt"
+    ],
+    "lat": 69.473575,
+    "lng": -54.0090546,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "5PuinED48ExYDvbCWJgWbg": {
+    "metas": [
+      "meta_1769520985734_xb44l"
+    ],
+    "lat": 70.4684059,
+    "lng": -22.1743508,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "wdeSD2q8gIME_nBmA0jLQQ": {
+    "metas": [
+      "meta_1769520985734_g70kt"
+    ],
+    "lat": 65.8320821,
+    "lng": -38.0520657,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "sarbRy0jsFUSLhxKg2-B_g": {
+    "metas": [
+      "meta_1769520985734_hvshh"
+    ],
+    "lat": 65.5929081,
+    "lng": -37.4892552,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "SkfEfjjXz9GOeTm8Lou8nQ": {
+    "metas": [
+      "meta_1769520985734_4nsgp"
+    ],
+    "lat": 65.7061097,
+    "lng": -37.9529788,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "YkvpBnwenEoVGVTdvgBqzA": {
+    "metas": [
+      "meta_1769520985734_5isoh"
+    ],
+    "lat": 65.5920905,
+    "lng": -37.5892895,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "0NjCimiK6cV59-6BVtYzyQ": {
+    "metas": [
+      "meta_1769520985734_blpjl"
+    ],
+    "lat": 74.4458858,
+    "lng": -21.6155703,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "GS9pNrzVlmKMO4F0fFv3yA": {
+    "metas": [
+      "meta_1769520985734_n23wa"
+    ],
+    "lat": 69.2114494,
+    "lng": -51.1552805,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "UYr9hg-Byunk0qbxd6XjVg": {
+    "metas": [
+      "meta_1769520985734_o3yup"
+    ],
+    "lat": 60.7316839,
+    "lng": -45.943532,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "ijLOYfBfXeBcazd2n6wssA": {
+    "metas": [
+      "meta_1769520985734_xyh85"
+    ],
+    "lat": 61.1466237,
+    "lng": -45.4794865,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "egxL6nAP4b9_5MW5OtbSaA": {
+    "metas": [
+      "meta_1769520985734_abt5a"
+    ],
+    "lat": 64.1417206,
+    "lng": -51.4017687,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "HhyYBa1FavziAlOVNRC6ww": {
+    "metas": [
+      "meta_1769520985734_r8xi8"
+    ],
+    "lat": 64.2309939,
+    "lng": -51.4349962,
+    "country": "Greenland",
+    "region": null,
+    "road": null,
+    "nominatimCountry": "Greenland"
+  },
+  "mSi97ivNOrtG5_baoEx9YQ": {
+    "metas": [
+      "meta_1769520986986_8j4oy"
+    ],
+    "lat": 14.6255005,
+    "lng": -90.5568668,
+    "country": "Guatemala",
+    "region": "Guatemala Department",
+    "road": "27 Avenida",
+    "nominatimCountry": "Guatemala"
+  },
+  "cK10-xNxG-E5U60Hms3DJA": {
+    "metas": [
+      "meta_1769520986986_zj5tb"
+    ],
+    "lat": 14.6170948,
+    "lng": -90.5481808,
+    "country": "Guatemala",
+    "region": "Guatemala Department",
+    "road": "14 Avenida",
+    "nominatimCountry": "Guatemala"
+  },
+  "IlVp8xcrJ2mjw4ShegHfHA": {
+    "metas": [
+      "meta_1769520988133_pli38"
+    ],
+    "lat": 21.014332,
+    "lng": -156.573055,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kahekili Highway",
+    "nominatimCountry": "United States"
+  },
+  "JS-luxT2R4d8yWw_LNUP4A": {
+    "metas": [
+      "meta_1769520988133_sp4mx"
+    ],
+    "lat": 21.286134,
+    "lng": -157.73626,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Halemaumau Street",
+    "nominatimCountry": "United States"
+  },
+  "4tYV4_CsQUIX_4yWEWtKUw": {
+    "metas": [
+      "meta_1769520988133_jdohr"
+    ],
+    "lat": 20.027224,
+    "lng": -155.699339,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kohala Mountain Road",
+    "nominatimCountry": "United States"
+  },
+  "9fPcRwxrN3gQPlPfVOfHbg": {
+    "metas": [
+      "meta_1769520988133_oku40"
+    ],
+    "lat": 19.2815093,
+    "lng": -155.8737302,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Mamalahoa Highway",
+    "nominatimCountry": "United States"
+  },
+  "gIma21gRaTUKcWTu0yUp_w": {
+    "metas": [
+      "meta_1769520988133_6yih5"
+    ],
+    "lat": 21.012793,
+    "lng": -156.571113,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kahekili Highway",
+    "nominatimCountry": "United States"
+  },
+  "Jcvymn5svn5P2MIb540y-Q": {
+    "metas": [
+      "meta_1769520988133_4tvrk"
+    ],
+    "lat": 21.133785,
+    "lng": -156.733235,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kamehameha V Highway",
+    "nominatimCountry": "United States"
+  },
+  "qNVfD7FCDHTT6H-D6SCoKQ": {
+    "metas": [
+      "meta_1769520988133_wdosp"
+    ],
+    "lat": 21.926011,
+    "lng": -159.631259,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kaumualii Highway",
+    "nominatimCountry": "United States"
+  },
+  "f7_z_V0AYl1mb8FtfZZ1TQ": {
+    "metas": [
+      "meta_1769520988133_8vb4c"
+    ],
+    "lat": 21.296533,
+    "lng": -157.725068,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kuliouou Road",
+    "nominatimCountry": "United States"
+  },
+  "7zkRfIY5y2L6LCxIXVBsNw": {
+    "metas": [
+      "meta_1769520988133_f4ia3"
+    ],
+    "lat": 21.301259,
+    "lng": -157.856348,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kawaiahao Street",
+    "nominatimCountry": "United States"
+  },
+  "JHnCjOY0aA6JjOcMKyFDyQ": {
+    "metas": [
+      "meta_1769520988133_oema0"
+    ],
+    "lat": 21.066794,
+    "lng": -156.818809,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kamehameha V Highway",
+    "nominatimCountry": "United States"
+  },
+  "nv8Ln-6ydJAeMqPObk5GqA": {
+    "metas": [
+      "meta_1769520988133_x51ft"
+    ],
+    "lat": 20.777235,
+    "lng": -156.90516,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Manele Road",
+    "nominatimCountry": "United States"
+  },
+  "3z4QYiBJnvntrU3S8c48mA": {
+    "metas": [
+      "meta_1769520988133_fyd0h"
+    ],
+    "lat": 20.788192,
+    "lng": -156.977688,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kaumalapau Highway",
+    "nominatimCountry": "United States"
+  },
+  "VeqpfsmMyuIBc04l7Qbyvw": {
+    "metas": [
+      "meta_1769520988133_3frmr"
+    ],
+    "lat": 20.857221,
+    "lng": -156.359487,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Haliimaile Road",
+    "nominatimCountry": "United States"
+  },
+  "koTCQhNy9kzPWE8uvENM_g": {
+    "metas": [
+      "meta_1769520988133_i7jps"
+    ],
+    "lat": 20.686969,
+    "lng": -156.011498,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Hana Highway",
+    "nominatimCountry": "United States"
+  },
+  "x6v3cjRXu-v_Mk2BN61SKA": {
+    "metas": [
+      "meta_1769520988134_6gvbu"
+    ],
+    "lat": 19.692606,
+    "lng": -155.481414,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Daniel K. Inouye Highway",
+    "nominatimCountry": "United States"
+  },
+  "nWu6wR1WXCBJ1xqh7jVzZA": {
+    "metas": [
+      "meta_1769520988134_u6be8"
+    ],
+    "lat": 19.621197,
+    "lng": -155.038448,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Keaau-Pahoa Road",
+    "nominatimCountry": "United States"
+  },
+  "VsG3Am-le84AipSB_R-x-A": {
+    "metas": [
+      "meta_1769520988134_qbf2p"
+    ],
+    "lat": 21.090972,
+    "lng": -157.019013,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Ala Malama Avenue",
+    "nominatimCountry": "United States"
+  },
+  "cfb92vMk4cpcTnVhMR-lMQ": {
+    "metas": [
+      "meta_1769520988134_83xns"
+    ],
+    "lat": 20.725115,
+    "lng": -156.245292,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Crater Road",
+    "nominatimCountry": "United States"
+  },
+  "umFaWOGkm4AqsWAiuDydkQ": {
+    "metas": [
+      "meta_1769520988134_z386s"
+    ],
+    "lat": 21.069751,
+    "lng": -156.806881,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kamehameha V Highway",
+    "nominatimCountry": "United States"
+  },
+  "UchRBYzERlYruvVhLIF_7A": {
+    "metas": [
+      "meta_1769520988134_z7t9j"
+    ],
+    "lat": 20.553273,
+    "lng": -156.583002,
+    "country": "Hawaii",
+    "region": "Hawaii",
+    "road": "Kahoʻolawe Highway 1",
+    "nominatimCountry": "United States"
+  },
+  "3DxoRAM-7OJc80bkWupxlA": {
+    "metas": [
+      "meta_1769520990434_ul94i"
+    ],
+    "lat": 26.6909304,
+    "lng": -105.5701018,
+    "country": "Mexico",
+    "region": "Chihuahua",
+    "road": "Carretera Hidalgo del Parral-La Zarca",
+    "nominatimCountry": "Mexico"
+  },
+  "mGgJVXriENc2y8TZLiYKyw": {
+    "metas": [
+      "meta_1769520990434_zacmk"
+    ],
+    "lat": 21.1280955,
+    "lng": -101.7019857,
+    "country": "Mexico",
+    "region": "Guanajuato",
+    "road": "Calle Luis González",
+    "nominatimCountry": "Mexico"
+  },
+  "kWRnW2lroQWjBBgoxqBydw": {
+    "metas": [
+      "meta_1769520990434_bwb7n"
+    ],
+    "lat": 23.1938825,
+    "lng": -102.859029,
+    "country": "Mexico",
+    "region": "Zacatecas",
+    "road": null,
+    "nominatimCountry": "Mexico"
+  },
+  "_Fs2LO1LEepCqlWqsHaO2Q": {
+    "metas": [
+      "meta_1769520990434_cy0cl"
+    ],
+    "lat": 20.0493174,
+    "lng": -99.0107792,
+    "country": "Mexico",
+    "region": "Hidalgo",
+    "road": "Chapultepec de Pozos",
+    "nominatimCountry": "Mexico"
+  },
+  "4xdYQ4A6doHYwdLgqVL3Qg": {
+    "metas": [
+      "meta_1769520990434_ipaul"
+    ],
+    "lat": 20.8753454,
+    "lng": -103.7311886,
+    "country": "Mexico",
+    "region": "Jalisco",
+    "road": "Carretera Amatitan - El Salvador",
+    "nominatimCountry": "Mexico"
+  },
+  "0EhedSJ_t2vTNRVEUTFw_w": {
+    "metas": [
+      "meta_1769520990434_9dm3l"
+    ],
+    "lat": 20.7071168,
+    "lng": -100.7817116,
+    "country": "Mexico",
+    "region": "Guanajuato",
+    "road": "Calle Azucena",
+    "nominatimCountry": "Mexico"
+  },
+  "589n3ZLFIq6j9yZ64_Pecg": {
+    "metas": [
+      "meta_1769520990434_r43la"
+    ],
+    "lat": 22.1823547,
+    "lng": -99.2254701,
+    "country": "Mexico",
+    "region": "San Luis Potosí",
+    "road": "Carretera Rascón-Estación 500",
+    "nominatimCountry": "Mexico"
+  },
+  "fFlVUMFSHorwh8PjKcf52Q": {
+    "metas": [
+      "meta_1769520990434_lsdi2"
+    ],
+    "lat": 22.2483121,
+    "lng": -105.2673387,
+    "country": "Mexico",
+    "region": "Nayarit",
+    "road": "MEX 15",
+    "nominatimCountry": "Mexico"
+  },
+  "11lQZwsDCvfykm1S4tql2Q": {
+    "metas": [
+      "meta_1769520990434_x61ag"
+    ],
+    "lat": 17.6968982,
+    "lng": -92.2806729,
+    "country": "Mexico",
+    "region": "Tabasco",
+    "road": "Carretera Villahermosa - Francisco Escárcega",
+    "nominatimCountry": "Mexico"
+  },
+  "jQxWhh9epjKO7Ze2KpTplw": {
+    "metas": [
+      "meta_1769520990434_sypif"
+    ],
+    "lat": 30.0582843,
+    "lng": -115.3339231,
+    "country": "Mexico",
+    "region": "Baja California",
+    "road": "Carretera Transpeninsular",
+    "nominatimCountry": "Mexico"
+  },
+  "oj4IE2GX8eVScd93rDZ8BQ": {
+    "metas": [
+      "meta_1769520990434_swv6h"
+    ],
+    "lat": 28.993855,
+    "lng": -111.057111,
+    "country": "Mexico",
+    "region": "Sonora",
+    "road": "Campestre Aviacion",
+    "nominatimCountry": "Mexico"
+  },
+  "B_stle2_Fal_jhAMboX2nw": {
+    "metas": [
+      "meta_1769520990434_xte9j"
+    ],
+    "lat": 19.6446686,
+    "lng": -88.5994485,
+    "country": "Mexico",
+    "region": "Quintana Roo",
+    "road": "Carretera Muna - Felipe Carrillo Puerto",
+    "nominatimCountry": "Mexico"
+  },
+  "39n40IFSrD5dgb4EFxTJBw": {
+    "metas": [
+      "meta_1769520990434_61i1j"
+    ],
+    "lat": 20.6407472,
+    "lng": -101.4633552,
+    "country": "Mexico",
+    "region": "Guanajuato",
+    "road": null,
+    "nominatimCountry": "Mexico"
+  },
+  "rCTt4rkxctIIZxa31rDm9A": {
+    "metas": [
+      "meta_1769520990434_bh6vl"
+    ],
+    "lat": 19.362134,
+    "lng": -88.9422351,
+    "country": "Mexico",
+    "region": "Quintana Roo",
+    "road": "Aguada la Presumida",
+    "nominatimCountry": "Mexico"
+  },
+  "qyoJc61zpprL2QNFq1Nmjw": {
+    "metas": [
+      "meta_1769520990434_280x8"
+    ],
+    "lat": 19.6157698,
+    "lng": -88.8909708,
+    "country": "Mexico",
+    "region": "Quintana Roo",
+    "road": "El Martirio",
+    "nominatimCountry": "Mexico"
+  },
+  "8yBuE3GivS_dPKQVwH9maQ": {
+    "metas": [
+      "meta_1769520990434_4pk0i"
+    ],
+    "lat": 20.7263204,
+    "lng": -89.1636234,
+    "country": "Mexico",
+    "region": "Yucatán",
+    "road": "Calle 17",
+    "nominatimCountry": "Mexico"
+  },
+  "3a0AqhQn0vzVtkieg5Reuw": {
+    "metas": [
+      "meta_1769520990434_sw9r6"
+    ],
+    "lat": 29.2845321,
+    "lng": -105.3296939,
+    "country": "Mexico",
+    "region": "Chihuahua",
+    "road": "Carretera Chihuahua-Ojinaga",
+    "nominatimCountry": "Mexico"
+  },
+  "fYOnsd6Y3YKkD-6DZik0gQ": {
+    "metas": [
+      "meta_1769520990434_ucx10"
+    ],
+    "lat": 22.4074851,
+    "lng": -105.3358597,
+    "country": "Mexico",
+    "region": "Nayarit",
+    "road": "MEX 15",
+    "nominatimCountry": "Mexico"
+  },
+  "FuCO1GIPULrgIaxvQIVyxQ": {
+    "metas": [
+      "meta_1769520990434_n3ine"
+    ],
+    "lat": 27.8662964,
+    "lng": -113.8025707,
+    "country": "Mexico",
+    "region": "Baja California Sur",
+    "road": "Carretera Santa Rosalía-Guerrero Negro",
+    "nominatimCountry": "Mexico"
+  },
+  "sVNVdKR5PJLkvRPj5CzsAA": {
+    "metas": [
+      "meta_1769520990434_ahy6z"
+    ],
+    "lat": 23.9080538,
+    "lng": -104.5262675,
+    "country": "Mexico",
+    "region": "Durango",
+    "road": "Carretera Durango-Mezquital",
+    "nominatimCountry": "Mexico"
+  },
+  "fgrFLxJCgUrvB28Z3w1SQw": {
+    "metas": [
+      "meta_1769520990434_lx00h"
+    ],
+    "lat": 21.8385263,
+    "lng": -100.9159054,
+    "country": "Mexico",
+    "region": "San Luis Potosí",
+    "road": "Entrada Ejido Gogorrón",
+    "nominatimCountry": "Mexico"
+  },
+  "GxYsoGoT29w3TZn2boCHVA": {
+    "metas": [
+      "meta_1769520990434_w4r99"
+    ],
+    "lat": 24.7770873,
+    "lng": -103.634008,
+    "country": "Mexico",
+    "region": "Durango",
+    "road": "Carretera Cuencamé-Rio Grande",
+    "nominatimCountry": "Mexico"
+  },
+  "NzXT96SWntP3juhVhmTIYw": {
+    "metas": [
+      "meta_1769520990435_5d063"
+    ],
+    "lat": 19.0752039,
+    "lng": -98.7925,
+    "country": "Mexico",
+    "region": "State of Mexico",
+    "road": "Autopista Amecameca - Cuautla",
+    "nominatimCountry": "Mexico"
+  },
+  "JDSe7osqwXy9v1CvAp2t_A": {
+    "metas": [
+      "meta_1769520990435_9z461"
+    ],
+    "lat": 22.7531803,
+    "lng": -98.4996858,
+    "country": "Mexico",
+    "region": "Tamaulipas",
+    "road": "TAM 35",
+    "nominatimCountry": "Mexico"
+  },
+  "IrrDAY7r24Dnlp19oqKV4A": {
+    "metas": [
+      "meta_1769520990435_59l26"
+    ],
+    "lat": 31.543849,
+    "lng": -106.5117097,
+    "country": "Mexico",
+    "region": "Chihuahua",
+    "road": null,
+    "nominatimCountry": "Mexico"
+  },
+  "fGHMkVZzVonG-3vejsTGNA": {
+    "metas": [
+      "meta_1769520990435_35zyh"
+    ],
+    "lat": 17.6210362,
+    "lng": -97.3792943,
+    "country": "Mexico",
+    "region": "Oaxaca",
+    "road": "San Miguel Marcos Pérez",
+    "nominatimCountry": "Mexico"
+  },
+  "D7yTNt_m3HafD7awIHrkiw": {
+    "metas": [
+      "meta_1769520990435_lxuh6"
+    ],
+    "lat": 23.7297003,
+    "lng": -101.8587715,
+    "country": "Mexico",
+    "region": "Zacatecas",
+    "road": "Carretera Entronque Morelos - Saltillo",
+    "nominatimCountry": "Mexico"
+  },
+  "f2ezADQgasSllTFsLRJbcw": {
+    "metas": [
+      "meta_1769520990435_q4ihc"
+    ],
+    "lat": 19.4995498,
+    "lng": -97.1577292,
+    "country": "Mexico",
+    "region": "Veracruz",
+    "road": null,
+    "nominatimCountry": "Mexico"
+  },
+  "J8x5R4krI6cWRUIvJj0l9g": {
+    "metas": [
+      "meta_1769520990435_8h20a"
+    ],
+    "lat": 24.4006381,
+    "lng": -106.6118839,
+    "country": "Mexico",
+    "region": "Sinaloa",
+    "road": null,
+    "nominatimCountry": "Mexico"
+  },
+  "p-bU73xBVkMUSHGbbBbELg": {
+    "metas": [
+      "meta_1769520991585_mofzg"
+    ],
+    "lat": 9.4121126,
+    "lng": -82.5565031,
+    "country": "Panama",
+    "region": "Bocas del Toro",
+    "road": "Vía Finca 30",
+    "nominatimCountry": "Panama"
+  },
+  "9pkMZpK0FbZxK7-QUUwwtg": {
+    "metas": [
+      "meta_1769520992729_jis0p"
+    ],
+    "lat": 18.203484,
+    "lng": -66.02018,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "PR-788",
+    "nominatimCountry": "United States"
+  },
+  "izGscqm8oK2UfVA78t0Dlw": {
+    "metas": [
+      "meta_1769520992730_137pz"
+    ],
+    "lat": 18.3991206,
+    "lng": -66.0512849,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Calle Brumbaugh",
+    "nominatimCountry": "United States"
+  },
+  "dsapqidFB6Iz7VTw5P0KhQ": {
+    "metas": [
+      "meta_1769520992730_jftsk"
+    ],
+    "lat": 18.442969,
+    "lng": -66.0642314,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Avenida Juan Ponce de León (PR-25)",
+    "nominatimCountry": "United States"
+  },
+  "XIQhZCHy2MakzZIjKRe71w": {
+    "metas": [
+      "meta_1769520992730_2t8j3"
+    ],
+    "lat": 18.4269036,
+    "lng": -66.1488412,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Calle 1",
+    "nominatimCountry": "United States"
+  },
+  "a9ZulMiEORcES7MlcWpdng": {
+    "metas": [
+      "meta_1769520992730_3wbp1"
+    ],
+    "lat": 18.44809,
+    "lng": -66.076241,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Calle Torres de la Vega",
+    "nominatimCountry": "United States"
+  },
+  "2QuDmee-WFxn_krYp8o2ag": {
+    "metas": [
+      "meta_1769520992730_lfriu"
+    ],
+    "lat": 18.435366,
+    "lng": -66.0860562,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Expreso John F. Kennedy",
+    "nominatimCountry": "United States"
+  },
+  "gOczkUPtctlJqMU1-FfcKg": {
+    "metas": [
+      "meta_1769520992730_cp2dd"
+    ],
+    "lat": 18.442463,
+    "lng": -66.701609,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Autopista José de Diego",
+    "nominatimCountry": "United States"
+  },
+  "kEnPG0V1ovhgVhC56UXC8w": {
+    "metas": [
+      "meta_1769520992730_xbazo"
+    ],
+    "lat": 18.254307,
+    "lng": -67.160583,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Avenida Eugenio María de Hostos",
+    "nominatimCountry": "United States"
+  },
+  "EN3aXJNxB1W7vWHzo5uTRQ": {
+    "metas": [
+      "meta_1769520992730_xl6lm"
+    ],
+    "lat": 18.4165794,
+    "lng": -66.2039447,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Autopista José de Diego",
+    "nominatimCountry": "United States"
+  },
+  "3bcIDBxaAVxBCAGq9oB_fw": {
+    "metas": [
+      "meta_1769520992730_h1ijj"
+    ],
+    "lat": 18.375492,
+    "lng": -66.150355,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Calle Lirio",
+    "nominatimCountry": "United States"
+  },
+  "GuCfnexeK_XUISmXP-2KAQ": {
+    "metas": [
+      "meta_1769520992730_btndf"
+    ],
+    "lat": 18.011008,
+    "lng": -66.613448,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Calle Federico Parra Duperón / Calle Comercio",
+    "nominatimCountry": "United States"
+  },
+  "GMOiAowWpynLtpxLXo_gsQ": {
+    "metas": [
+      "meta_1769520992730_27t2v"
+    ],
+    "lat": 18.464605,
+    "lng": -66.117379,
+    "country": "Puerto Rico",
+    "region": "Puerto Rico",
+    "road": "Calle de la Fortaleza",
+    "nominatimCountry": "United States"
+  },
+  "vNUEDwCgxfIJqBHd7qrenQ": {
+    "metas": [
+      "meta_1769520993545_8hz08"
+    ],
+    "lat": 46.782992,
+    "lng": -56.149781,
+    "country": "Saint Pierre and Miquelon",
+    "region": "Saint Pierre and Miquelon",
+    "road": "Saint-Pierre",
+    "nominatimCountry": "France"
+  },
+  "ALrmZsgoyu2Zpcr3QUZG5Q": {
+    "metas": [
+      "meta_1769520993545_md6dk"
+    ],
+    "lat": 47.098406,
+    "lng": -56.375629,
+    "country": "Saint Pierre and Miquelon",
+    "region": "Saint Pierre and Miquelon",
+    "road": "Rue Anne Claire du Pont de Renon",
+    "nominatimCountry": "France"
+  },
+  "EKeIGAAnRLrjBeIiithYkA": {
+    "metas": [
+      "meta_1769520993545_n7cub"
+    ],
+    "lat": 46.785275,
+    "lng": -56.152115,
+    "country": "Saint Pierre and Miquelon",
+    "region": "Saint Pierre and Miquelon",
+    "road": "Saint-Pierre",
+    "nominatimCountry": "France"
+  },
+  "GzdUHenTHgeJM4o_n5bneQ": {
+    "metas": [
+      "meta_1769520995854_gqeg5"
+    ],
+    "lat": 17.7454501,
+    "lng": -64.7036479,
+    "country": "US Virgin Islands",
+    "region": "United States Virgin Islands",
+    "road": "Company Street",
+    "nominatimCountry": "United States"
+  },
+  "2TAwpPZ0uhtkYHGpPMOjzA": {
+    "metas": [
+      "meta_1769520995854_pnqgd"
+    ],
+    "lat": 17.7070763,
+    "lng": -64.8031693,
+    "country": "US Virgin Islands",
+    "region": "United States Virgin Islands",
+    "road": "Melvin H. Evans Highway",
+    "nominatimCountry": "United States"
+  },
+  "hWCWZvNFdx11cEGnCuhX1w": {
+    "metas": [
+      "meta_1769520995854_c0poc"
+    ],
+    "lat": 17.700752,
+    "lng": -64.836494,
+    "country": "US Virgin Islands",
+    "region": "United States Virgin Islands",
+    "road": "Main Street",
+    "nominatimCountry": "United States"
+  },
+  "8FIyxHqnYj9ZsFIpISaf_g": {
+    "metas": [
+      "meta_1769520995855_1iiyn"
+    ],
+    "lat": 18.3295287,
+    "lng": -64.8833677,
+    "country": "US Virgin Islands",
+    "region": "United States Virgin Islands",
+    "road": "Nicholas \"Nick\" Friday Memorial Drive",
+    "nominatimCountry": "United States"
+  },
+  "mZ_TeQcId4Dk_Tva6hz-jQ": {
+    "metas": [
+      "meta_1769520995855_kjnqe"
+    ],
+    "lat": 17.7528518,
+    "lng": -64.6978094,
+    "country": "US Virgin Islands",
+    "region": "United States Virgin Islands",
+    "road": "Mount Welcome Road",
+    "nominatimCountry": "United States"
+  },
+  "uwWjhmkzUzdQlZ1NONCqrA": {
+    "metas": [
+      "meta_1769520996997_qjuzb"
+    ],
+    "lat": 39.118714,
+    "lng": -99.869619,
+    "country": "United States of America",
+    "region": "Kansas",
+    "road": "US 283",
+    "nominatimCountry": "United States"
+  },
+  "xVAXdEPE7rwrF0yguyzilw": {
+    "metas": [
+      "meta_1769520996997_eta4v"
+    ],
+    "lat": 43.3865798,
+    "lng": -100.0279578,
+    "country": "United States of America",
+    "region": "South Dakota",
+    "road": "307th Avenue",
+    "nominatimCountry": "United States"
+  },
+  "FEgAAtBcQpT0rgk0CUEE6g": {
+    "metas": [
+      "meta_1769520996997_uf9u7"
+    ],
+    "lat": 38.9832469,
+    "lng": -119.1833559,
+    "country": "United States of America",
+    "region": "Nevada",
+    "road": "Nordyke Road",
+    "nominatimCountry": "United States"
+  },
+  "_r2Sg9ejBYVvJNQa6d4yIw": {
+    "metas": [
+      "meta_1769520996997_zssgg"
+    ],
+    "lat": 44.3977084,
+    "lng": -89.5195639,
+    "country": "United States of America",
+    "region": "Wisconsin",
+    "road": [
+      "I 39",
+      "US 51"
+    ],
+    "nominatimCountry": "United States"
+  },
+  "JxN3hZaO8lbuG1DRCSjxKA": {
+    "metas": [
+      "meta_1769520996997_jzt4o"
+    ],
+    "lat": 39.66851,
+    "lng": -97.384333,
+    "country": "United States of America",
+    "region": "Kansas",
+    "road": "County Road Y",
+    "nominatimCountry": "United States"
+  },
+  "3G3sO2DRLJ0WjdgOigy2Hg": {
+    "metas": [
+      "meta_1769520996998_skt2c"
+    ],
+    "lat": 33.5060046,
+    "lng": -80.8619241,
+    "country": "United States of America",
+    "region": "South Carolina",
+    "road": "Boulevard Street",
+    "nominatimCountry": "United States"
+  },
+  "0k3z5G_jVoNKNVAeejpj2w": {
+    "metas": [
+      "meta_1769520996998_r6per"
+    ],
+    "lat": 41.93652,
+    "lng": -74.919867,
+    "country": "United States of America",
+    "region": "New York",
+    "road": "County Road 179A",
+    "nominatimCountry": "United States"
+  },
+  "FYnfORt8RJps0y8AtyQR_w": {
+    "metas": [
+      "meta_1769520996998_ujqif"
+    ],
+    "lat": 40.2774215,
+    "lng": -89.5199296,
+    "country": "United States of America",
+    "region": "Illinois",
+    "road": "2500th Street",
+    "nominatimCountry": "United States"
+  },
+  "pjnc6SNdin6OidTv0TyTZg": {
+    "metas": [
+      "meta_1769520996998_fgpwj"
+    ],
+    "lat": 48.8943304,
+    "lng": -102.3512672,
+    "country": "United States of America",
+    "region": "North Dakota",
+    "road": "United States Highway 52",
+    "nominatimCountry": "United States"
+  },
+  "DRSO9Trat34yJ17w6ntKZg": {
+    "metas": [
+      "meta_1769520996998_1b6cd"
+    ],
+    "lat": 38.931764,
+    "lng": -121.6067483,
+    "country": "United States of America",
+    "region": "California",
+    "road": "CA 99",
+    "nominatimCountry": "United States"
+  },
+  "h9cISAWMNiF1CPvp62P74g": {
+    "metas": [
+      "meta_1769520996998_jur2d"
+    ],
+    "lat": 31.7747959,
+    "lng": -103.0735851,
+    "country": "United States of America",
+    "region": "Texas",
+    "road": "West FM 1232",
+    "nominatimCountry": "United States"
+  },
+  "VvTNISTrbCwKNdrxuoVJ0w": {
+    "metas": [
+      "meta_1769520996998_p9309"
+    ],
+    "lat": 33.6458941,
+    "lng": -88.3988375,
+    "country": "United States of America",
+    "region": "Mississippi",
+    "road": "Spruill Road",
+    "nominatimCountry": "United States"
+  },
+  "5nMeFZY_FC8YeT9DmZkAEA": {
+    "metas": [
+      "meta_1769520996998_srdx1"
+    ],
+    "lat": 29.698303,
+    "lng": -95.574372,
+    "country": "United States of America",
+    "region": "Texas",
+    "road": "Sandstone Street",
+    "nominatimCountry": "United States"
+  },
+  "9MIW0bDYB_cVTAJKqHOxrw": {
+    "metas": [
+      "meta_1769520996998_q0tp7"
+    ],
+    "lat": 31.9537607,
+    "lng": -112.7999153,
+    "country": "United States of America",
+    "region": "Arizona",
+    "road": "Puerto Blanco Drive",
+    "nominatimCountry": "United States"
+  },
+  "kGUYxdMLGKWbs048CP5kdA": {
+    "metas": [
+      "meta_1769520996998_oisos"
+    ],
+    "lat": 46.628391,
+    "lng": -121.2300871,
+    "country": "United States of America",
+    "region": "Washington",
+    "road": "Forest Road 1204",
+    "nominatimCountry": "United States"
+  },
+  "6tsjOxbTqQmYwI88WR33bg": {
+    "metas": [
+      "meta_1769520996998_1byz8"
+    ],
+    "lat": 36.7173479,
+    "lng": -112.0006608,
+    "country": "United States of America",
+    "region": "Arizona",
+    "road": "Buffalo Ranch Road",
+    "nominatimCountry": "United States"
+  },
+  "-iTG_aj3MW62tO_1TT_fYQ": {
+    "metas": [
+      "meta_1769520996998_7ofce"
+    ],
+    "lat": 34.0582789,
+    "lng": -118.4245676,
+    "country": "United States of America",
+    "region": "California",
+    "road": "South Beverly Glen Boulevard",
+    "nominatimCountry": "United States"
+  },
+  "wOOYsHkw8zj-v9jxBju9Yw": {
+    "metas": [
+      "meta_1769520996998_bisev"
+    ],
+    "lat": 32.064908,
+    "lng": -81.0959838,
+    "country": "United States of America",
+    "region": "Georgia",
+    "road": "Drayton Street",
+    "nominatimCountry": "United States"
+  },
+  "5THNOFOu6FYGwpIPm7ze0w": {
+    "metas": [
+      "meta_1769520996998_6i25z"
+    ],
+    "lat": 39.2043015,
+    "lng": -78.855707,
+    "country": "United States of America",
+    "region": "West Virginia",
+    "road": "South Branch River Road",
+    "nominatimCountry": "United States"
+  },
+  "OBuT8q-D1DfbC13WbsSl6g": {
+    "metas": [
+      "meta_1769520996998_u7v1k"
+    ],
+    "lat": 30.9807499,
+    "lng": -87.8482553,
+    "country": "United States of America",
+    "region": "Alabama",
+    "road": "AL 59",
+    "nominatimCountry": "United States"
+  },
+  "r_W14XrnfunYq3sbooWF8Q": {
+    "metas": [
+      "meta_1769520996998_dptu9"
+    ],
+    "lat": 33.4944051,
+    "lng": -84.144783,
+    "country": "United States of America",
+    "region": "Georgia",
+    "road": "Highway 155 North",
+    "nominatimCountry": "United States"
+  },
+  "j_H_UYYjGbdHDJVUs-cmHA": {
+    "metas": [
+      "meta_1769520996998_ojuq9"
+    ],
+    "lat": 36.0841952,
+    "lng": -78.241874,
+    "country": "United States of America",
+    "region": "North Carolina",
+    "road": [
+      "NC 56",
+      "NC 581"
+    ],
+    "nominatimCountry": "United States"
+  },
+  "gZiHQvA1gYPV7tjyjynjig": {
+    "metas": [
+      "meta_1769520996998_iaan2"
+    ],
+    "lat": 36.977783,
+    "lng": -85.546316,
+    "country": "United States of America",
+    "region": "Kentucky",
+    "road": "Breeding Road",
+    "nominatimCountry": "United States"
+  },
+  "WTk9XDYTINJYEjDsvFXBXw": {
+    "metas": [
+      "meta_1769520996998_tzsuz"
+    ],
+    "lat": 35.6350162,
+    "lng": -83.4661924,
+    "country": "United States of America",
+    "region": "Tennessee",
+    "road": "Newfound Gap Road North",
+    "nominatimCountry": "United States"
+  },
+  "JAhBQYNHtfSgNhTdyCyPiw": {
+    "metas": [
+      "meta_1769520996998_9z5j6"
+    ],
+    "lat": 43.1164689,
+    "lng": -89.670106,
+    "country": "United States of America",
+    "region": "Wisconsin",
+    "road": "County Road KP",
+    "nominatimCountry": "United States"
+  },
+  "bbCkeQOUC4BEAwRB6LrrIA": {
+    "metas": [
+      "meta_1769520996998_qsugd"
+    ],
+    "lat": 41.595558,
+    "lng": -91.9453028,
+    "country": "United States of America",
+    "region": "Iowa",
+    "road": "County Highway F52",
+    "nominatimCountry": "United States"
+  },
+  "OjCb1X7vT0FplGckhKn7-Q": {
+    "metas": [
+      "meta_1769520996998_zk0hl"
+    ],
+    "lat": 43.6064777,
+    "lng": -124.1804549,
+    "country": "United States of America",
+    "region": "Oregon",
+    "road": "Oregon Coast Highway",
+    "nominatimCountry": "United States"
+  },
+  "odGVky7JObeWrxAZwm9PTA": {
+    "metas": [
+      "meta_1769520996998_532vv"
+    ],
+    "lat": 36.8586464,
+    "lng": -120.376807,
+    "country": "United States of America",
+    "region": "California",
+    "road": "Avenue 7 1/2",
+    "nominatimCountry": "United States"
+  },
+  "10mOqwhkIr6nAH5do6sw6w": {
+    "metas": [
+      "meta_1769520996998_ctk24"
+    ],
+    "lat": 38.5597309,
+    "lng": -115.0335737,
+    "country": "United States of America",
+    "region": "Nevada",
+    "road": "Sunnyside Road",
+    "nominatimCountry": "United States"
+  },
+  "UPCjMuhmKMIDCzJwwhBANg": {
+    "metas": [
+      "meta_1769520996998_1xxli"
+    ],
+    "lat": 44.637215,
+    "lng": -105.336463,
+    "country": "United States of America",
+    "region": "Wyoming",
+    "road": "WY 59",
+    "nominatimCountry": "United States"
+  },
+  "UPbDqtnt3vxeAZWQnxNMMA": {
+    "metas": [
+      "meta_1769520996998_yhvt4"
+    ],
+    "lat": 47.151445,
+    "lng": -119.754959,
+    "country": "United States of America",
+    "region": "Washington",
+    "road": "WA 283",
+    "nominatimCountry": "United States"
+  },
+  "rynYLxuCFMYsbBaanKbxLQ": {
+    "metas": [
+      "meta_1769520996998_9klo4"
+    ],
+    "lat": 39.5457555,
+    "lng": -89.1366732,
+    "country": "United States of America",
+    "region": "Illinois",
+    "road": "East 1350 North Road",
+    "nominatimCountry": "United States"
+  },
+  "z_TBVzdnp1GcscK5ijYXng": {
+    "metas": [
+      "meta_1769520996998_vvc2f"
+    ],
+    "lat": 44.3035985,
+    "lng": -93.2901961,
+    "country": "United States of America",
+    "region": "Minnesota",
+    "road": "Lyndale Avenue North",
+    "nominatimCountry": "United States"
+  },
+  "jpD-_khPr--pv5urQu8dPA": {
+    "metas": [
+      "meta_1769520996998_dg5p5"
+    ],
+    "lat": 43.0893323,
+    "lng": -89.501544,
+    "country": "United States of America",
+    "region": "Wisconsin",
+    "road": "North Gammon Road",
+    "nominatimCountry": "United States"
+  },
+  "EY4uuhTsLz18X4MfCeSWgw": {
+    "metas": [
+      "meta_1769520996998_umy1l"
+    ],
+    "lat": 44.3419062,
+    "lng": -90.3766835,
+    "country": "United States of America",
+    "region": "Wisconsin",
+    "road": "State Highway 54",
+    "nominatimCountry": "United States"
+  },
+  "4QjqIGeRKc_9TUCN9uQ75Q": {
+    "metas": [
+      "meta_1769520996998_q8n7g"
+    ],
+    "lat": 43.309816,
+    "lng": -88.1768144,
+    "country": "United States of America",
+    "region": "Wisconsin",
+    "road": "Sherman Road",
+    "nominatimCountry": "United States"
+  },
+  "hBrXNg-BylJd-fQPBYevQw": {
+    "metas": [
+      "meta_1769520996998_mttzg"
+    ],
+    "lat": 42.7407821,
+    "lng": -84.6090296,
+    "country": "United States of America",
+    "region": "Michigan",
+    "road": "Renker Road",
+    "nominatimCountry": "United States"
+  },
+  "VwvnxbvUZXq5rwthVrAm7g": {
+    "metas": [
+      "meta_1769520996998_s294b"
+    ],
+    "lat": 40.5202073,
+    "lng": -83.1483817,
+    "country": "United States of America",
+    "region": "Ohio",
+    "road": "Owens Road West",
+    "nominatimCountry": "United States"
+  },
+  "zh9uZGhfc6MQVALjl5p-AA": {
+    "metas": [
+      "meta_1769520996998_tlc8t"
+    ],
+    "lat": 38.7988177,
+    "lng": -81.811039,
+    "country": "United States of America",
+    "region": "West Virginia",
+    "road": "Longview Road",
+    "nominatimCountry": "United States"
+  },
+  "IovvBVh1zPLf2tkwL1b0zg": {
+    "metas": [
+      "meta_1769520996998_e5ko7"
+    ],
+    "lat": 35.2278151,
+    "lng": -80.2234148,
+    "country": "United States of America",
+    "region": "North Carolina",
+    "road": "Little Street",
+    "nominatimCountry": "United States"
+  },
+  "ndfJBa9JwBQpfOEFh_0sVA": {
+    "metas": [
+      "meta_1769520996998_nnher"
+    ],
+    "lat": 34.3759772,
+    "lng": -96.9508731,
+    "country": "United States of America",
+    "region": "Oklahoma",
+    "road": "Johnston Road",
+    "nominatimCountry": "United States"
+  },
+  "aYFtMrrhILpB6IWP90XkDg": {
+    "metas": [
+      "meta_1769520996998_xrpld"
+    ],
+    "lat": 37.9773984,
+    "lng": -78.2264833,
+    "country": "United States of America",
+    "region": "Virginia",
+    "road": "Zion Road",
+    "nominatimCountry": "United States"
+  },
+  "wEOUb-EV42bUkZJZqSguIw": {
+    "metas": [
+      "meta_1769520996998_g032m"
+    ],
+    "lat": 32.4841207,
+    "lng": -80.9837984,
+    "country": "United States of America",
+    "region": "South Carolina",
+    "road": "Town Square",
+    "nominatimCountry": "United States"
+  },
+  "BdwBCmrzwo-l1s2KZdi25A": {
+    "metas": [
+      "meta_1769520996998_b8drl"
+    ],
+    "lat": 42.2830804,
+    "lng": -74.399349,
+    "country": "United States of America",
+    "region": "New York",
+    "road": "State Route 23A",
+    "nominatimCountry": "United States"
+  },
+  "onWrRsaCUyDW9uAkDUnWxA": {
+    "metas": [
+      "meta_1769520996998_yqe4c"
+    ],
+    "lat": 43.6337494,
+    "lng": -72.3175476,
+    "country": "United States of America",
+    "region": "New Hampshire",
+    "road": "South Main Street",
+    "nominatimCountry": "United States"
+  },
+  "JOgMoHTLuQoX3jwtvwaoiA": {
+    "metas": [
+      "meta_1769520996998_7acfk"
+    ],
+    "lat": 44.4420887,
+    "lng": -73.1578235,
+    "country": "United States of America",
+    "region": "Vermont",
+    "road": "Meadowland Drive",
+    "nominatimCountry": "United States"
+  },
+  "bNFQEYWDyt5AxGKIfIqspw": {
+    "metas": [
+      "meta_1769520996998_ojxs6"
+    ],
+    "lat": 42.0089485,
+    "lng": -71.8691099,
+    "country": "United States of America",
+    "region": "Connecticut",
+    "road": "Wilsonville Road",
+    "nominatimCountry": "United States"
+  },
+  "DrLSXH6m_nIlcb4KeBya7Q": {
+    "metas": [
+      "meta_1769520996998_5tmhz"
+    ],
+    "lat": 38.239461,
+    "lng": -78.1472502,
+    "country": "United States of America",
+    "region": "Virginia",
+    "road": "Constitution Highway",
+    "nominatimCountry": "United States"
+  },
+  "zr7udRZuYyMcT-_goNr5dA": {
+    "metas": [
+      "meta_1769520996998_tjq2y"
+    ],
+    "lat": 41.6034578,
+    "lng": -70.9140905,
+    "country": "United States of America",
+    "region": "Massachusetts",
+    "road": "Capitol Street",
+    "nominatimCountry": "United States"
+  },
+  "NydkMQ_mkdhIueKJn-DrSQ": {
+    "metas": [
+      "meta_1769520996998_qqfk2"
+    ],
+    "lat": 41.806641,
+    "lng": -71.430989,
+    "country": "United States of America",
+    "region": "Rhode Island",
+    "road": "Althea Street",
+    "nominatimCountry": "United States"
+  },
+  "VYEvjR5a0vHiIGUQtVwaSQ": {
+    "metas": [
+      "meta_1769520996998_zzr7m"
+    ],
+    "lat": 40.6854115,
+    "lng": -73.9870944,
+    "country": "United States of America",
+    "region": "New York",
+    "road": "Bergen Street",
+    "nominatimCountry": "United States"
+  },
+  "1j5DPfEozFZGFVZZu52OWw": {
+    "metas": [
+      "meta_1769520996998_jac6o"
+    ],
+    "lat": 36.5275669,
+    "lng": -81.1631538,
+    "country": "United States of America",
+    "region": "North Carolina",
+    "road": "US 221",
+    "nominatimCountry": "United States"
+  },
+  "jvUXe5R--JgU8Z2jsygG3g": {
+    "metas": [
+      "meta_1769520996998_9o6k0"
+    ],
+    "lat": 35.6664489,
+    "lng": -105.9774037,
+    "country": "United States of America",
+    "region": "New Mexico",
+    "road": "Kiva Road",
+    "nominatimCountry": "United States"
+  },
+  "AgFtdgShEfhxqLWwBLhoAA": {
+    "metas": [
+      "meta_1769520996998_5gabg"
+    ],
+    "lat": 34.4519508,
+    "lng": -119.7388031,
+    "country": "United States of America",
+    "region": "California",
+    "road": "North Ontare Road",
+    "nominatimCountry": "United States"
+  },
+  "ztNnPjug74YklNo23LPIKw": {
+    "metas": [
+      "meta_1769520996998_86fs3"
+    ],
+    "lat": 43.0666335,
+    "lng": -92.6750207,
+    "country": "United States of America",
+    "region": "Iowa",
+    "road": "Winsconsin Street",
+    "nominatimCountry": "United States"
+  },
+  "T5z3skfMhW9BF7sEsHW5ig": {
+    "metas": [
+      "meta_1769520996998_ytcvx"
+    ],
+    "lat": 32.2221185,
+    "lng": -90.1558041,
+    "country": "United States of America",
+    "region": "Mississippi",
+    "road": "Highway 49 South",
+    "nominatimCountry": "United States"
+  },
+  "Ss0dRsMEmlIqCFODlXtJ2w": {
+    "metas": [
+      "meta_1769520996998_dn176"
+    ],
+    "lat": 39.936269,
+    "lng": -83.1131278,
+    "country": "United States of America",
+    "region": "Ohio",
+    "road": "Westview Center Plaza",
+    "nominatimCountry": "United States"
+  },
+  "wxm50nigOmig1Lnyi38IeA": {
+    "metas": [
+      "meta_1769520996998_8afjg"
+    ],
+    "lat": 34.4433922,
+    "lng": -119.7907022,
+    "country": "United States of America",
+    "region": "California",
+    "road": "Calle Real",
+    "nominatimCountry": "United States"
+  },
+  "T3__uF47L-lPPo236KhcYw": {
+    "metas": [
+      "meta_1769520996998_w243o"
+    ],
+    "lat": 42.8352932,
+    "lng": -106.3122211,
+    "country": "United States of America",
+    "region": "Wyoming",
+    "road": "East 15th Street",
+    "nominatimCountry": "United States"
+  },
+  "uZgI6l_eX7pxvmCTz7WMSQ": {
+    "metas": [
+      "meta_1769520996998_kekmf"
+    ],
+    "lat": 29.6516545,
+    "lng": -97.5933437,
+    "country": "United States of America",
+    "region": "Texas",
+    "road": "Interstate 10 Frontage Road",
+    "nominatimCountry": "United States"
+  },
+  "-Cf43SFbnMWAMcFhRqUGlw": {
+    "metas": [
+      "meta_1769520996999_iw8k6"
+    ],
+    "lat": 39.408043,
+    "lng": -111.9808,
+    "country": "United States of America",
+    "region": "Utah",
+    "road": "Old Botham Road",
+    "nominatimCountry": "United States"
+  },
+  "nnHH1ziqVaeahjIFwXKbuw": {
+    "metas": [
+      "meta_1769520996999_bn6hw"
+    ],
+    "lat": 31.6655821,
+    "lng": -111.0623506,
+    "country": "United States of America",
+    "region": "Arizona",
+    "road": "Nogales-Tucson Highway",
+    "nominatimCountry": "United States"
+  },
+  "kAjCmD6XtXqEw3pORL7wXA": {
+    "metas": [
+      "meta_1769520996999_syyti"
+    ],
+    "lat": 29.922377,
+    "lng": -90.099268,
+    "country": "United States of America",
+    "region": "Louisiana",
+    "road": "Milan Street",
+    "nominatimCountry": "United States"
+  },
+  "ZXE6Akhe9XL6cRGP4IpJMQ": {
+    "metas": [
+      "meta_1769520996999_vmyux"
+    ],
+    "lat": 24.629592,
+    "lng": -82.8726582,
+    "country": "United States of America",
+    "region": "Florida",
+    "road": null,
+    "nominatimCountry": "United States"
+  },
+  "y9hzR2SWfcqXx_7JCbNi1g": {
+    "metas": [
+      "meta_1769520996999_mvbqb"
+    ],
+    "lat": 24.9236208,
+    "lng": -80.630618,
+    "country": "United States of America",
+    "region": "Florida",
+    "road": "Madeira Road",
+    "nominatimCountry": "United States"
+  },
+  "KAx4UVbpaspvLz4m6j0ZkQ": {
+    "metas": [
+      "meta_1769520996999_n0ale"
+    ],
+    "lat": 25.8509772,
+    "lng": -80.9753623,
+    "country": "United States of America",
+    "region": "Florida",
+    "road": "Tamiami Trail",
+    "nominatimCountry": "United States"
+  },
+  "tffUFumdSZ976y7jdUd8Gw": {
+    "metas": [
+      "meta_1769520996999_pomwo"
+    ],
+    "lat": 27.962094,
+    "lng": -81.586041,
+    "country": "United States of America",
+    "region": "Florida",
+    "road": "Masterpiece Road",
+    "nominatimCountry": "United States"
+  },
+  "WolUy-tGG0N_oENYjzipzA": {
+    "metas": [
+      "meta_1769520996999_mioh6"
+    ],
+    "lat": 31.906046,
+    "lng": -104.7825533,
+    "country": "United States of America",
+    "region": "Texas",
+    "road": "US Highway 62",
+    "nominatimCountry": "United States"
+  },
+  "b-iVMtXG5mVADkwhu2-Now": {
+    "metas": [
+      "meta_1769520996999_vfau2"
+    ],
+    "lat": 48.7154945,
+    "lng": -113.7194499,
+    "country": "United States of America",
+    "region": "Montana",
+    "road": "Going-to-the-Sun Road",
+    "nominatimCountry": "United States"
+  },
+  "hMbAVZP1tzqOscEpsAZb2w": {
+    "metas": [
+      "meta_1769520996999_n8p1m"
+    ],
+    "lat": 43.7745962,
+    "lng": -102.0026764,
+    "country": "United States of America",
+    "region": "South Dakota",
+    "road": "SD Highway 240",
+    "nominatimCountry": "United States"
+  },
+  "AVHoX7em8WZk3K6LNT_J2Q": {
+    "metas": [
+      "meta_1769520996999_40cvj"
+    ],
+    "lat": 46.9570287,
+    "lng": -103.5010616,
+    "country": "United States of America",
+    "region": "North Dakota",
+    "road": "Scenic Loop Drive",
+    "nominatimCountry": "United States"
+  },
+  "ym_xCVRcUJsAKzRgVtBH-w": {
+    "metas": [
+      "meta_1769520998150_x0oyw"
+    ],
+    "lat": -14.2806186,
+    "lng": -170.6307461,
+    "country": "American Samoa",
+    "region": "American Samoa",
+    "road": "Route 001",
+    "nominatimCountry": "United States"
+  },
+  "Whf6Lc7RcEbA8kLU0yl74w": {
+    "metas": [
+      "meta_1769520998150_zrtai"
+    ],
+    "lat": -14.1690342,
+    "lng": -169.6316399,
+    "country": "American Samoa",
+    "region": "American Samoa",
+    "road": "Route 020",
+    "nominatimCountry": "United States"
+  },
+  "Er6JsUyPWJUPjcE6bzyhMA": {
+    "metas": [
+      "meta_1769520998150_7za8o"
+    ],
+    "lat": -14.2140287,
+    "lng": -169.4429232,
+    "country": "American Samoa",
+    "region": "American Samoa",
+    "road": "Fiti‘uta",
+    "nominatimCountry": "United States"
+  },
+  "fTEB9fZP-8ovfM5P5lgwkg": {
+    "metas": [
+      "meta_1769520998150_kx121"
+    ],
+    "lat": -14.1687266,
+    "lng": -169.6322748,
+    "country": "American Samoa",
+    "region": "American Samoa",
+    "road": "Route 020",
+    "nominatimCountry": "United States"
+  },
+  "fFCjne2rEv45LgW7rXpFGQ": {
+    "metas": [
+      "meta_1769520998150_5kx7o"
+    ],
+    "lat": -14.1843759,
+    "lng": -169.6687295,
+    "country": "American Samoa",
+    "region": "American Samoa",
+    "road": "Route 020",
+    "nominatimCountry": "United States"
+  },
+  "smbucVlXK5asCf88WQds2g": {
+    "metas": [
+      "meta_1769520999295_vixm0"
+    ],
+    "lat": -29.513083,
+    "lng": 151.857989,
+    "country": "Australia",
+    "region": "New South Wales",
+    "road": "New England Highway",
+    "nominatimCountry": "Australia"
+  },
+  "1DvK1jh2uvfTVSw5tMKs3g": {
+    "metas": [
+      "meta_1769520999295_8k0hg"
+    ],
+    "lat": -34.0323308,
+    "lng": 151.0052732,
+    "country": "Australia",
+    "region": "New South Wales",
+    "road": "New Illawarra Road",
+    "nominatimCountry": "Australia"
+  },
+  "2UOojASfgua7FbuJLgrj4Q": {
+    "metas": [
+      "meta_1769520999295_df1a2",
+      "meta_1769520999295_3fe5r"
+    ],
+    "lat": -30.6311658,
+    "lng": 135.3977035,
+    "country": "Australia",
+    "region": "South Australia",
+    "road": "Stuart Highway",
+    "nominatimCountry": "Australia"
+  },
+  "9qqjccbayq5RfeSWKZevfA": {
+    "metas": [
+      "meta_1769520999295_q0526"
+    ],
+    "lat": -35.8131718,
+    "lng": 145.5695979,
+    "country": "Australia",
+    "region": "New South Wales",
+    "road": "Hennessy Street",
+    "nominatimCountry": "Australia"
+  },
+  "O_9TNwBUhG3bEiMeaMgY_Q": {
+    "metas": [
+      "meta_1769520999295_ns7xj"
+    ],
+    "lat": -23.6923447,
+    "lng": 133.877805,
+    "country": "Australia",
+    "region": "Town of Alice Springs",
+    "road": "Stuart Highway",
+    "nominatimCountry": "Australia"
+  },
+  "gvXbROBSipDv-oTzsz1T1g": {
+    "metas": [
+      "meta_1769520999295_axmyh"
+    ],
+    "lat": -27.5567203,
+    "lng": 152.5466541,
+    "country": "Australia",
+    "region": "Queensland",
+    "road": "Warrego Highway",
+    "nominatimCountry": "Australia"
+  },
+  "c43-G1jdZclE8zEz5tX90Q": {
+    "metas": [
+      "meta_1769520999295_0xr16"
+    ],
+    "lat": -37.5663377,
+    "lng": 149.1473107,
+    "country": "Australia",
+    "region": "Victoria",
+    "road": "Princes Highway",
+    "nominatimCountry": "Australia"
+  },
+  "OlzAOJ4PBH3lyHlLelLACQ": {
+    "metas": [
+      "meta_1769520999295_arkvu"
+    ],
+    "lat": -18.586064,
+    "lng": 133.9255003,
+    "country": "Australia",
+    "region": "Barkly Region",
+    "road": "Stuart Highway",
+    "nominatimCountry": "Australia"
+  },
+  "Uwboeo8gXL3HjTvXk-dY2Q": {
+    "metas": [
+      "meta_1769520999295_fz3bm"
+    ],
+    "lat": -32.463128,
+    "lng": 115.9103719,
+    "country": "Australia",
+    "region": "Western Australia",
+    "road": "Hopeland Road",
+    "nominatimCountry": "Australia"
+  },
+  "9eBaiYXExxA6ne33DFRuyg": {
+    "metas": [
+      "meta_1769520999295_d68ff"
+    ],
+    "lat": -36.8054575,
+    "lng": 146.4283997,
+    "country": "Australia",
+    "region": "Victoria",
+    "road": "Upper King River Road",
+    "nominatimCountry": "Australia"
+  },
+  "Xoo2Wiuf0bm8VTsD4f3rjQ": {
+    "metas": [
+      "meta_1769520999295_vpk4a"
+    ],
+    "lat": -41.383852,
+    "lng": 147.124648,
+    "country": "Australia",
+    "region": "Tasmania",
+    "road": "Notley Street",
+    "nominatimCountry": "Australia"
+  },
+  "XRkyo9fWFWDFkCU5v3fLSQ": {
+    "metas": [
+      "meta_1769520999295_mf4s1"
+    ],
+    "lat": -27.48318,
+    "lng": 153.0097149,
+    "country": "Australia",
+    "region": "Queensland",
+    "road": "Granville Street",
+    "nominatimCountry": "Australia"
+  },
+  "GxHINVMgWshlzkmAOj2iPA": {
+    "metas": [
+      "meta_1769520999295_vxk7z"
+    ],
+    "lat": -35.7126502,
+    "lng": 140.8018361,
+    "country": "Australia",
+    "region": "South Australia",
+    "road": "Ngarkat Highway",
+    "nominatimCountry": "Australia"
+  },
+  "pnrkmwNLt18QDzKl4IVICQ": {
+    "metas": [
+      "meta_1769520999295_tb3p6"
+    ],
+    "lat": -32.9011149,
+    "lng": 116.7083083,
+    "country": "Australia",
+    "region": "Western Australia",
+    "road": "Albany Highway",
+    "nominatimCountry": "Australia"
+  },
+  "QbaNiNBjh2__232WNpfx6w": {
+    "metas": [
+      "meta_1769520999295_8qm7r"
+    ],
+    "lat": -25.8255623,
+    "lng": 151.8561391,
+    "country": "Australia",
+    "region": "Queensland",
+    "road": "Burnett Highway",
+    "nominatimCountry": "Australia"
+  },
+  "c7JBmi3cAx-RHCfoMNKqLA": {
+    "metas": [
+      "meta_1769520999295_tto2a"
+    ],
+    "lat": -31.9360661,
+    "lng": 115.8645214,
+    "country": "Australia",
+    "region": "Western Australia",
+    "road": "Jack Marks Lane",
+    "nominatimCountry": "Australia"
+  },
+  "ilnhfTy0uPlUgkr7ZKgECg": {
+    "metas": [
+      "meta_1769520999295_qjpuq"
+    ],
+    "lat": -42.7382348,
+    "lng": 147.4302852,
+    "country": "Australia",
+    "region": "Tasmania",
+    "road": "Colebrook Road",
+    "nominatimCountry": "Australia"
+  },
+  "piwHZtqbb1F9FWTxjZLFKw": {
+    "metas": [
+      "meta_1769520999295_3j4l0"
+    ],
+    "lat": -36.6152658,
+    "lng": 145.2401321,
+    "country": "Australia",
+    "region": "Victoria",
+    "road": "Bendigo-Murchison Road",
+    "nominatimCountry": "Australia"
+  },
+  "aoFJ2u7gHn7zxL_zgmj10Q": {
+    "metas": [
+      "meta_1769520999295_jpkkh"
+    ],
+    "lat": -33.8568617,
+    "lng": 151.0109954,
+    "country": "Australia",
+    "region": "New South Wales",
+    "road": "Clyde Street",
+    "nominatimCountry": "Australia"
+  },
+  "XyeYko8QaYAkLTpWlprFfQ": {
+    "metas": [
+      "meta_1769520999295_844j9"
+    ],
+    "lat": -31.9491158,
+    "lng": 115.8644931,
+    "country": "Australia",
+    "region": "Western Australia",
+    "road": "Stirling Street",
+    "nominatimCountry": "Australia"
+  },
+  "23D8G-jikkdLtoF40kDfLQ": {
+    "metas": [
+      "meta_1769520999295_vf6ya"
+    ],
+    "lat": -35.1288494,
+    "lng": 139.0888346,
+    "country": "Australia",
+    "region": "South Australia",
+    "road": "Jaensch Road",
+    "nominatimCountry": "Australia"
   }
 }
