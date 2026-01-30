@@ -19,42 +19,63 @@
     'use strict';
 
 
-    const SHOW_LOCATION_HUD = false; // Set to true to show debug location info
+    const SHOW_LOCATION_HUD = false;
     const REPO_OWNER = 'lukas-hzb';
     const REPO_NAME = 'GeoguessrScript';
+    
+    // Data Sources
     const LOCATIONS_FILE = 'data/locations.json';
     const USER_METAS_FILE = 'data/metas.json';
     const SYSTEM_METAS_FILE = 'data/plonkit_data.json';
+    
     const getRawLocationsUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main_v2/${LOCATIONS_FILE}?t=${Date.now()}`;
     const getRawUserMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main_v2/${USER_METAS_FILE}?t=${Date.now()}`;
     const getRawSystemMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main_v2/${SYSTEM_METAS_FILE}?t=${Date.now()}`;
+    
     const API_LOCATIONS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${LOCATIONS_FILE}`;
     const API_USER_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${USER_METAS_FILE}`;
+    const API_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${USER_METAS_FILE}`; // Alias for reset
     
-    // Access true window for hooks
     const win = (typeof unsafeWindow !== 'undefined') ? unsafeWindow : window;
 
-    let locationMap = {};  // panoid -> [metaIds]
-    let metasData = [];    // [{id, title, desc, ...}]
+    /** 
+     * @typedef {Object} Meta
+     * @property {string} id
+     * @property {string} title
+     * @property {string} description
+     * @property {string} [country]
+     * @property {string} [scope]
+     * @property {string[]} [tags]
+     * @property {number} [lat]
+     * @property {number} [lng]
+     */
+
+    /** @type {Object.<string, string[]|{metas:string[]}>} Mapping of Panoid to Meta IDs */
+    let locationMap = {};
+    
+    /** @type {Meta[]} Loaded meta definitions */
+    let metasData = [];
+    
     let currentPanoid = null;
     let selectedMetaIds = new Set();
     
-    // Default: All scopes active
     const ALL_SCOPES = ['countrywide', 'region', 'longitude', '1000km', '100km', '10km', '1km', 'road', 'unique'];
     let activeScopes = new Set(JSON.parse(localStorage.getItem('gg_active_scopes') || JSON.stringify(ALL_SCOPES)));
     
-    // State for Robust Lock & Visibility
+    // Locking & Visibility State
     let lastResultSeenTime = 0;
-    let nextPanoid = null; // Queue for ID updates blocked by lock
-    let userDismissed = false; // Prevent sticky logic from showing HUD after manual hide
+    let nextPanoid = null;
+    let userDismissed = false;
 
-    // Location Data
-    let svInstance = null; // Store the active StreetViewPanorama instance
+    // Active StreetView Instance
+    let svInstance = null;
+    
+    /** Current Location State */
     let currentLocationData = {
         address: null,
-        country: null, // Dominant (Google preferred, fallback Nominatim)
-        nominatimCountry: null, // Raw from Nominatim
-        googleCountry: null, // Raw from Google
+        country: null,          // Normalized (Google preferred)
+        nominatimCountry: null, // Raw Nominatim result
+        googleCountry: null,    // Raw Google result
         region: null,
         road: null,
         lat: null,
@@ -73,13 +94,14 @@
             transform: none;
 
             width: 320px;
-            /* HIER ANPASSEN: Höhe des Fensters */
-            height: 75.6vh; /* Fest auf 70% der Bildschirmhöhe setzen (oder min-height für Mindesthöhe) */
+            
+            /* Window Dimensions */
+            height: 75.6vh;
             max-height: 80vh;
             display: flex;
             flex-direction: column;
 
-            background: rgba(0, 0, 0, 0.8); /* "Etwas dunkler" -> Pure black, slightly more opacity but still transparent */
+            background: rgba(0, 0, 0, 0.8);
             color: #fff;
             padding: 12px 16px;
             border-radius: 16px;
@@ -769,7 +791,7 @@
         previewPopup.id = 'gg-meta-preview-popup';
         document.body.appendChild(previewPopup);
         
-        // Hide preview on any click (User request: close when button outside search is pressed)
+        // Close preview on outside click
         document.addEventListener('click', (e) => {
             if (previewPopup.classList.contains('gg-visible')) {
                 previewPopup.classList.remove('gg-visible');
@@ -1108,11 +1130,15 @@
         });
     }
 
+    /**
+     * Maps country names to 2-letter ISO codes.
+     * Handles normalizations and special Plonkit region cases.
+     */
     function getCountryCode(countryName) {
         if (!countryName) return '??';
         const name = countryName.trim().toLowerCase();
         
-        // Comprehensive mapping for all Plonkit regions
+        // Plonkit Region Mapping
         const mapping = {
             'alaska': 'US', 'albania': 'AL', 'american samoa': 'AS', 'andorra': 'AD', 'antarctica': 'AQ',
             'argentina': 'AR', 'australia': 'AU', 'austria': 'AT', 'azores': 'PT', 'bangladesh': 'BD',
@@ -1149,10 +1175,10 @@
         if (mapping[name]) return mapping[name];
         if (mapping[normalizedName]) return mapping[normalizedName];
         
-        // Handle variations of São Tomé
+        // Normalize São Tomé variants
         if (name.includes('sao tome') || name.includes('sdo tome')) return 'ST';
 
-        // Fallback: Try fallback word extraction
+        // Fallback: Generate Initials (e.g. "Some Place" -> "SP")
         const words = name.split(' ');
         if (words.length > 1) {
             return (words[0][0] + words[1][0]).toUpperCase();
@@ -1164,7 +1190,7 @@
         const container = document.getElementById('gg-existing-metas');
         if (!container) return;
 
-        // Multi-term search: split by ";" and trim
+        // Support multi-term search (split by ';')
         const terms = searchTerm.toLowerCase().split(';').map(s => s.trim()).filter(s => s);
 
         const filtered = metasData.filter(m => {
@@ -1177,14 +1203,13 @@
                 (m.tags || []).join(' ')
             ].join(' ').toLowerCase();
 
-            // Meta must match ALL terms
+            // All terms must be present
             return terms.every(term => searchableContent.includes(term));
         });
 
-        // Deduplicate: Group by signature (Country+Title+Desc+Tags)
+        // Deduplicate by signature (Country+Title+Desc+Tags)
         const groups = new Map();
         filtered.forEach(m => {
-             // Normalize tags sort for consistent signature
              const tagsSig = (m.tags || []).slice().sort().join(',');
              const sig = `${m.country}|${m.title}|${m.description}|${tagsSig}`;
              if (!groups.has(sig)) groups.set(sig, []);
@@ -1312,9 +1337,9 @@
 
         const token = localStorage.getItem('gg_gh_token');
         if (!token) {
-            // Community Mode: Open Issue
+            // Mode: Community (No Token) - Submit via GitHub Issue
             const submission = { 
-                action: "link_metas", // Changed to link_metas
+                action: "link_metas",
                 panoid: panoid, 
                 metaIds: metaIds,
                 lat: currentLocationData.lat,
@@ -1338,7 +1363,8 @@
             return;
         }
 
-        // Admin Mode: Direct API (Sequential for simplicity, could be optimized)
+        // Mode: Admin (Token) - Direct API commit
+        // Note: Sequential operations used for simplicity logic
         updateStatus(`Linking ${metaIds.length} metas...`);
         
         try {
@@ -1473,7 +1499,7 @@
         // Save to GitHub
         const token = localStorage.getItem('gg_gh_token');
         
-        // --- COMMUNITY MODE (No Token) ---
+        // Mode: Community (No Token)
         if (!token) {
             const jsonStr = JSON.stringify(submission, null, 2);
             
@@ -1500,7 +1526,7 @@
             return;
         }
 
-        // --- ADMIN MODE (Token Present) ---
+        // Mode: Admin (Token)
         btn.disabled = true;
         btn.innerHTML = '<span class="gg-spinner"></span>Saving...';
         output.style.display = 'none';
@@ -1861,6 +1887,11 @@
         return target;
     }
 
+    /**
+     * Fuzzy matching for location names.
+     * Ensures substrings align with word boundaries to avoid partial false positives
+     * (e.g. "C19" vs "AC190"). Ignores generic terms like "Road" or "Region".
+     */
     function isFuzzyNameMatch(a, b) {
         if (!a || !b) return false;
         a = String(a).toLowerCase().trim();
@@ -1870,35 +1901,30 @@
         if (a === b) return true;
 
         // 2. Token Matching (Word Boundaries)
-        // Split by non-alphanumeric chars (space, dash, comma, etc.)
         const tokensA = a.split(/[\s,\.\-]+/);
         const tokensB = b.split(/[\s,\.\-]+/);
         
-        // Prevent generic words from triggering a match if it's the ONLY match
         const generics = ['region', 'province', 'district', 'county', 'state', 'prefecture', 'road', 'street', 'avenue', 'boulevard', 'way', 'dr', 'drive', 'ln', 'lane', 'hwy', 'highway', 'str', 'route'];
         
-        // If 'a' is a substring of 'b' (or vice versa), we want to make sure it matches a WHOLE TOKEN in 'b'.
-        // e.g. "C19" matches "C19 Road" (C19 is a token)
-        // e.g. "C19" matches "Road C19"
-        // e.g. "C19" DOES NOT match "AC190" (C19 is part of AC190 token, not a whole token)
-        // e.g. "Region" DOES NOT match "Erongo Region" (Generic filter)
-
         const shortTokens = tokensA.length < tokensB.length ? tokensA : tokensB;
         const longTokens = tokensA.length < tokensB.length ? tokensB : tokensA;
 
         // Check if ALL tokens of the short string exist as EXACT tokens in the long string
-        // (Order doesn't matter for now, e.g. "Road C19" == "C19 Road")
         const allShortTokensMatch = shortTokens.every(st => {
-            if (generics.includes(st)) return true; // Generics are "free" matches (ignored effectively)
+            if (generics.includes(st)) return true; // Generics are ignored
             return longTokens.includes(st);
         });
 
-        // But we must ensure at least one NON-GENERIC token matched!
+        // Ensure at least one NON-GENERIC token matched
         const hasNonGenericMatch = shortTokens.some(st => !generics.includes(st) && longTokens.includes(st));
 
         return allShortTokensMatch && hasNonGenericMatch;
     }
 
+    /**
+     * Finds relevant metas for current location based on active scopes.
+     * Checks both exact distance matches and fuzzy name matches (Region/Road).
+     */
     function evaluateProximityMetas() {
         const curLat = parseFloat(currentLocationData.lat);
         const curLng = parseFloat(currentLocationData.lng);
@@ -1907,9 +1933,7 @@
         const curRegion = currentLocationData.region;
         const curCity = currentLocationData.city;
         const curRoad = (currentLocationData.road || '').toLowerCase().trim();
-        // Handle array of roads if necessary, but usually we compare strings or perform includes.
-        // For fuzzy match, we'll pass the raw value and let isFuzzyNameMatch or helper handle arrays?
-        // Actually isFuzzyNameMatch expects strings. Let's flatten curRoads for checking.
+        
         const curRoads = [];
         if (currentLocationData.road) {
             if (Array.isArray(currentLocationData.road)) {
@@ -1924,7 +1948,7 @@
         const matchedMetaIds = new Set();
         const matches = [];
 
-        // Helper: Check if a Location Entry matches Current Location based on Scope
+        // Helper: Check meta match against location
         const checkMatch = (scope, entryLat, entryLng, entryCountry, entryRegion, entryCity, entryRoads) => {
              scope = (scope || '').toLowerCase();
              
@@ -1935,41 +1959,27 @@
                      const d = getHaversineDistance(curLat, curLng, entryLat, entryLng);
                      if (d <= distLimit) return true;
                  }
-                 // If scope is strict distance (e.g. 10km), we usually DON'T fall back to text matching? 
-                 // User says: "Show if distance is < required OR if scope value matches". 
-                 // The list separates Distance Scopes from Text Scopes. 
-                 // If scope is "10km", we only check distance.
                  return false; 
              }
 
-             // 2. Text/Region Scope Match
-             // For these, we generally require Country Context to match (to avoid ambiguity), 
-             // unless it's a very specific Road match? 
-             // User Requirement: "Scope-Wert ... übereinstimmt". 
-             // I will enforce Country Match for Region/City. For Road, maybe? 
-             // Let's enforce Country for all to be safe and reduce noise, as "Region" and "Road" names repeat.
+             // 2. Name Match (Region/City/Road)
+             // Requires Country match to avoid ambiguity (except Countrywide)
              
-             const entryNomCountry = entryCountry; // Simplify
              const countryMatch = (entryCountry === curCountry || entryCountry === curNomCountry);
-
              if (!countryMatch) return false;
 
-             if (scope === 'countrywide') {
-                 return true; // Country matched above
-             }
+             if (scope === 'countrywide') return true;
              
              if (scope === 'region') {
                  return isFuzzyNameMatch(entryRegion, curRegion);
              }
              
              if (scope === 'city') {
-                 // entryCity might be null in old data, so this only works if data exists
                  return isFuzzyNameMatch(entryCity, curCity);
              }
              
              if (scope === 'road') {
                  // Check if ANY entry road matches ANY current road
-                 // entryRoads should be an array of strings
                  if (!entryRoads || entryRoads.length === 0) return false;
                  if (curRoads.length === 0) return false;
                  
@@ -2104,7 +2114,9 @@
     function checkLocation(panoid) {
         if (!panoid || typeof panoid !== 'string' || panoid.length <= 5) return;
         
-        // LOCK MECHANISM:
+        // Lock Mechanism:
+        // If on result screen, queue updates instead of applying immediately
+        // to prevent UI jitter when reviewing previous rounds.
         const onResultScreen = isRoundResult();
         if (currentPanoid && currentPanoid !== panoid && onResultScreen) {
             nextPanoid = panoid; // Queue it
@@ -2254,7 +2266,7 @@
                         }
                     });
 
-                    // 2. Nominatim Geocoding (Useful for prediction/fallback)
+                            // 2. Nominatim Geocoding (Detail/Fallback)
                     const nominatimUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latVal}&lon=${lngVal}&accept-language=en`;
                     
                     fetch(nominatimUrl, {
@@ -2288,12 +2300,12 @@
                                 }
                             }
 
-                            // Update
+                            // Update Location Data (if still relevant)
                             if (currentLocationData.lat === newLatStr && currentLocationData.lng === newLngStr) {
                                 currentLocationData.nominatimCountry = realNomCountry;
-                                currentLocationData.address = address; // Keep address from Nominatim (usually more detailed)
+                                currentLocationData.address = address; // Prefer Nominatim address
                                 
-                                // If Google hasn't set country yet, or failed, use Nominatim as fallback for dominant country
+                                // Fallback for Country if Google failed
                                 if (!currentLocationData.country) {
                                     currentLocationData.country = realNomCountry;
                                 }
@@ -2493,34 +2505,32 @@
 
     // --- Google Maps Hooks ---
     function installHooks() {
-        // Check if Google Maps is loaded
+        // Check for Maps API
         if (!win.google || !win.google.maps || !win.google.maps.StreetViewPanorama) {
             return false;
         }
 
         console.log('[BetterMetas] Google Maps API found. Installing hooks...');
         
-        // 1. Constructor Hook (catch new instances)
+        // 1. Hook StreetViewPanorama Constructor
         const OriginalStreetViewPanorama = win.google.maps.StreetViewPanorama;
         
         win.google.maps.StreetViewPanorama = function(node, opts) {
             const instance = new OriginalStreetViewPanorama(node, opts);
             
-            // Immediate check on creation
+            // Initial check
             if (opts && opts.pano) {
                 checkLocation(opts.pano);
             }
 
-            // Capture Instance
             svInstance = instance;
 
-            // Add Event Listener
+            // Events
             win.google.maps.event.addListener(instance, 'pano_changed', () => {
                 const panoId = instance.getPano();
                 checkLocation(panoId);
             });
             
-            // Listen for status_changed or similar to capture data load
             win.google.maps.event.addListener(instance, 'status_changed', () => {
                  extractLocationData();
             });
@@ -2528,7 +2538,7 @@
             return instance;
         };
 
-        // Copy prototype and static properties
+        // Copy statics
         win.google.maps.StreetViewPanorama.prototype = OriginalStreetViewPanorama.prototype;
         for (let prop in OriginalStreetViewPanorama) {
             if (OriginalStreetViewPanorama.hasOwnProperty(prop)) {
@@ -2536,12 +2546,11 @@
             }
         }
 
-        // 2. Prototype Hook for setPano (catch updates on existing instances)
+        // 2. Hook setPano (for SPA updates)
         const originalSetPano = win.google.maps.StreetViewPanorama.prototype.setPano;
         win.google.maps.StreetViewPanorama.prototype.setPano = function(pano) {
             if (!svInstance) {
                 svInstance = this;
-                console.log('[BetterMetas] Captured svInstance via setPano hook.');
             }
             checkLocation(pano);
             return originalSetPano.apply(this, arguments);
