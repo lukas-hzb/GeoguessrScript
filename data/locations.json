@@ -31358,5 +31358,15 @@
     "region": "Rivera",
     "road": "Interdepartamental",
     "nominatimCountry": "Uruguay"
+  },
+  "cJeKcbJAeZhWrRD3Y2SZLQ": {
+    "metas": [
+      "meta_1769520915621_9af8h"
+    ],
+    "lat": "24.89183",
+    "lng": "51.25921",
+    "country": "Qatar",
+    "region": "Al Wakrah",
+    "road": null
   }
 }
