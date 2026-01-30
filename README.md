@@ -22,7 +22,13 @@ Since this is a specific Userscript, you need a Userscript manager for your brow
 
 ## Screenshots
 
-*(Placeholder for screenshots)*
+| Main HUD Preview | Predicted Metas |
+| :---: | :---: |
+| ![Main HUD](images/hud_preview.png) | ![Predicted Metas](images/hud_preview_2.png) |
+
+| Add Meta Dialog | Settings Menu |
+| :---: | :---: |
+| ![Add Meta](images/add_meta_dialog.png) | ![Settings](images/settings_menu.png) |
 
 ## Credits & Acknowledgements
 
