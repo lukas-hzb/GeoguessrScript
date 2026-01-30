@@ -1,43 +1,43 @@
-# BetterMetas - Geoguessr Script
+# BetterMetas - Geoguessr Companion
 
-A Geoguessr UserScript that displays crowdsourced metas and hints directly in the game HUD. This project helps players learn and document "metas" (recognizable features) for various locations.
+BetterMetas is a powerful Userscript for Geoguessr that helps you recognize and learn metas and hints directly in the game. It combines a huge database (based on Plonk It) with smart location predictions to eliminate the need of classyfying every single location.
 
 ## Features
 
-- **In-Game HUD**: Displays active hints, tags, and images for the current location.
-- **Meta Editor**: Allows users to add new metas with tags, descriptions, and images.
-- **Plonkit Scraper**: A Node.js scraper to fetch guide data from [Plonk It](https://www.plonkit.net) and convert it into a compatible JSON format.
-- **GitHub Powered**: Uses GitHub as a database for versioned and crowdsourced data.
+- **Live HUD**: Automatically displays relevant hints, tags, and images for your current location.
+- **Smart Predictions**: The script analyzes your location (country, region, city, road) and suggests metas that might apply here – not just exact matches, but also based on geography and "scopes" (e.g., 10km radius, regional, countrywide).
+- **Plonk It Integration**: Includes thousands of entries from the detailed Plonk It guides.
+- **Location Info**: Shows you precise address data, coordinates, and region names (powered by Google & Nominatim).
+- **Crowdsourcing**: Add your own metas or link existing metas to new locations to improve the database.
+- **Filters**: Customize which types of hints you want to see (e.g., only "Unique" or also "Countrywide").
 
 ## Installation
 
-1. Install a userscript manager like **Tampermonkey**.
-2. Install the script from the `geoguessr-meta.user.js` file or via the raw GitHub link.
+Since this is a specific Userscript, you need a Userscript manager for your browser.
 
-## Usage
+1. Install the **Tampermonkey** browser extension (available for Chrome, Firefox, Edge, Safari).
+2. **[Click here to install the script](https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main_v2/geoguessr-meta.user.js)**.
+3. Tampermonkey will ask if you want to add the script. Confirm by clicking "Install".
+4. Open Geoguessr and start a game – the HUD should appear automatically.
 
-### In-Game
-- The HUD appears automatically when playing.
-- Click "Add" to contribute new metas.
-- Use the settings to configure options or sync data.
+## Screenshots
 
-### Scraper
-The `scraper.js` script fetches country guides from Plonk It.
+*(Placeholder for screenshots)*
 
-```bash
-# Install dependencies
-npm install
+## Credits & Acknowledgements
 
-# Run the scraper
-npm start
-# or
-node scraper.js
-```
+A big thank you to the open-source community and data sources that make this project possible:
 
-The scraper saves data to `data/plonkit_data.json`.
+- **[Plonk It](https://www.plonkit.net)**: For the incredibly detailed Geoguessr guides that serve as the basis for much of the data.
+- **[Nominatim / OpenStreetMap](https://nominatim.org/)**: For providing high-precision geodata and reverse geocoding.
+- **Google Maps Platform**: For additional location data.
 
-## Project Structure
+## License
 
-- `geoguessr-meta.user.js`: The main UserScript source code.
-- `scraper.js`: Node.js script for scraping Plonkit guides.
-- `data/`: Directory containing data files (`plonkit_data.json`, `locations.json`, etc.).
+This project is licensed under the **CC BY-NC 4.0 (Attribution-NonCommercial 4.0 International)**.
+
+You are free to **use, change, and distribute** this software as long as you:
+1.  **Give Credit**: You must explicitly name the author.
+2.  **Non-Commercial**: You may **NOT** use this project for commercial purposes or financial gain without explicit permission.
+
+For full legal details, see the [LICENSE](LICENSE) file.

@@ -4,8 +4,8 @@
 // @version      0.2
 // @description  Displays crowdsourced metas and hints for Geoguessr locations.
 // @author       Lukas Hzb
-// @updateURL    https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main/geoguessr-meta.user.js
-// @downloadURL  https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main/geoguessr-meta.user.js
+// @updateURL    https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main_v2/geoguessr-meta.user.js
+// @downloadURL  https://raw.githubusercontent.com/lukas-hzb/GeoguessrScript/main_v2/geoguessr-meta.user.js
 // @match        https://www.geoguessr.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=geoguessr.com
 // @run-at       document-start
@@ -19,40 +19,63 @@
     'use strict';
 
 
-    const SHOW_LOCATION_HUD = false; // Set to true to show debug location info
+    const SHOW_LOCATION_HUD = false;
     const REPO_OWNER = 'lukas-hzb';
     const REPO_NAME = 'GeoguessrScript';
+    
+    // Data Sources
     const LOCATIONS_FILE = 'data/locations.json';
     const USER_METAS_FILE = 'data/metas.json';
     const SYSTEM_METAS_FILE = 'data/plonkit_data.json';
-    const getRawLocationsUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${LOCATIONS_FILE}?t=${Date.now()}`;
-    const getRawUserMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${USER_METAS_FILE}?t=${Date.now()}`;
-    const getRawSystemMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SYSTEM_METAS_FILE}?t=${Date.now()}`;
+    
+    const getRawLocationsUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main_v2/${LOCATIONS_FILE}?t=${Date.now()}`;
+    const getRawUserMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main_v2/${USER_METAS_FILE}?t=${Date.now()}`;
+    const getRawSystemMetasUrl = () => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main_v2/${SYSTEM_METAS_FILE}?t=${Date.now()}`;
+    
     const API_LOCATIONS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${LOCATIONS_FILE}`;
     const API_USER_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${USER_METAS_FILE}`;
+    const API_METAS_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${USER_METAS_FILE}`; // Alias for reset
     
-    // Access true window for hooks
     const win = (typeof unsafeWindow !== 'undefined') ? unsafeWindow : window;
 
-    let locationMap = {};  // panoid -> [metaIds]
-    let metasData = [];    // [{id, title, desc, ...}]
+    /** 
+     * @typedef {Object} Meta
+     * @property {string} id
+     * @property {string} title
+     * @property {string} description
+     * @property {string} [country]
+     * @property {string} [scope]
+     * @property {string[]} [tags]
+     * @property {number} [lat]
+     * @property {number} [lng]
+     */
+
+    /** @type {Object.<string, string[]|{metas:string[]}>} Mapping of Panoid to Meta IDs */
+    let locationMap = {};
+    
+    /** @type {Meta[]} Loaded meta definitions */
+    let metasData = [];
+    
     let currentPanoid = null;
     let selectedMetaIds = new Set();
     
-    // Default: All scopes active
     const ALL_SCOPES = ['countrywide', 'region', 'longitude', '1000km', '100km', '10km', '1km', 'road', 'unique'];
     let activeScopes = new Set(JSON.parse(localStorage.getItem('gg_active_scopes') || JSON.stringify(ALL_SCOPES)));
     
-    // State for Robust Lock & Visibility
+    // Locking & Visibility State
     let lastResultSeenTime = 0;
-    let nextPanoid = null; // Queue for ID updates blocked by lock
-    let userDismissed = false; // Prevent sticky logic from showing HUD after manual hide
+    let nextPanoid = null;
+    let userDismissed = false;
 
-    // Location Data
-    let svInstance = null; // Store the active StreetViewPanorama instance
+    // Active StreetView Instance
+    let svInstance = null;
+    
+    /** Current Location State */
     let currentLocationData = {
         address: null,
-        country: null,
+        country: null,          // Normalized (Google preferred)
+        nominatimCountry: null, // Raw Nominatim result
+        googleCountry: null,    // Raw Google result
         region: null,
         road: null,
         lat: null,
@@ -71,13 +94,14 @@
             transform: none;
 
             width: 320px;
-            /* HIER ANPASSEN: Höhe des Fensters */
-            height: 75.6vh; /* Fest auf 70% der Bildschirmhöhe setzen (oder min-height für Mindesthöhe) */
+            
+            /* Window Dimensions */
+            height: 75.6vh;
             max-height: 80vh;
             display: flex;
             flex-direction: column;
 
-            background: rgba(0, 0, 0, 0.8); /* "Etwas dunkler" -> Pure black, slightly more opacity but still transparent */
+            background: rgba(0, 0, 0, 0.8);
             color: #fff;
             padding: 12px 16px;
             border-radius: 16px;
@@ -111,6 +135,8 @@
             pointer-events: auto;
             transform: translateY(0);
         }
+
+
 
         #gg-meta-hud * {
             font-family: inherit !important;
@@ -765,7 +791,7 @@
         previewPopup.id = 'gg-meta-preview-popup';
         document.body.appendChild(previewPopup);
         
-        // Hide preview on any click (User request: close when button outside search is pressed)
+        // Close preview on outside click
         document.addEventListener('click', (e) => {
             if (previewPopup.classList.contains('gg-visible')) {
                 previewPopup.classList.remove('gg-visible');
@@ -874,12 +900,12 @@
                     <div id="meta-scope-presets" style="margin-top: 8px; text-align: center;">
                         <span class="gg-tag-pill" data-value="countrywide">Countrywide</span>
                         <span class="gg-tag-pill" data-value="region">Region</span>
-                        <span class="gg-tag-pill" data-value="longitude">Longitude</span>
+                        <span class="gg-tag-pill" data-value="city">City</span>
+                        <span class="gg-tag-pill" data-value="road">Road</span>
                         <span class="gg-tag-pill" data-value="1000km">1000km</span>
                         <span class="gg-tag-pill" data-value="100km">100km</span>
                         <span class="gg-tag-pill" data-value="10km">10km</span>
                         <span class="gg-tag-pill" data-value="1km">1km</span>
-                        <span class="gg-tag-pill" data-value="road">Road</span>
                         <span class="gg-tag-pill" data-value="unique">Unique</span>
                     </div>
                 </div>
@@ -1104,11 +1130,15 @@
         });
     }
 
+    /**
+     * Maps country names to 2-letter ISO codes.
+     * Handles normalizations and special Plonkit region cases.
+     */
     function getCountryCode(countryName) {
         if (!countryName) return '??';
         const name = countryName.trim().toLowerCase();
         
-        // Comprehensive mapping for all Plonkit regions
+        // Plonkit Region Mapping
         const mapping = {
             'alaska': 'US', 'albania': 'AL', 'american samoa': 'AS', 'andorra': 'AD', 'antarctica': 'AQ',
             'argentina': 'AR', 'australia': 'AU', 'austria': 'AT', 'azores': 'PT', 'bangladesh': 'BD',
@@ -1145,10 +1175,10 @@
         if (mapping[name]) return mapping[name];
         if (mapping[normalizedName]) return mapping[normalizedName];
         
-        // Handle variations of São Tomé
+        // Normalize São Tomé variants
         if (name.includes('sao tome') || name.includes('sdo tome')) return 'ST';
 
-        // Fallback: Try fallback word extraction
+        // Fallback: Generate Initials (e.g. "Some Place" -> "SP")
         const words = name.split(' ');
         if (words.length > 1) {
             return (words[0][0] + words[1][0]).toUpperCase();
@@ -1160,7 +1190,7 @@
         const container = document.getElementById('gg-existing-metas');
         if (!container) return;
 
-        // Multi-term search: split by ";" and trim
+        // Support multi-term search (split by ';')
         const terms = searchTerm.toLowerCase().split(';').map(s => s.trim()).filter(s => s);
 
         const filtered = metasData.filter(m => {
@@ -1173,14 +1203,13 @@
                 (m.tags || []).join(' ')
             ].join(' ').toLowerCase();
 
-            // Meta must match ALL terms
+            // All terms must be present
             return terms.every(term => searchableContent.includes(term));
         });
 
-        // Deduplicate: Group by signature (Country+Title+Desc+Tags)
+        // Deduplicate by signature (Country+Title+Desc+Tags)
         const groups = new Map();
         filtered.forEach(m => {
-             // Normalize tags sort for consistent signature
              const tagsSig = (m.tags || []).slice().sort().join(',');
              const sig = `${m.country}|${m.title}|${m.description}|${tagsSig}`;
              if (!groups.has(sig)) groups.set(sig, []);
@@ -1308,14 +1337,15 @@
 
         const token = localStorage.getItem('gg_gh_token');
         if (!token) {
-            // Community Mode: Open Issue
+            // Mode: Community (No Token) - Submit via GitHub Issue
             const submission = { 
-                action: "link_metas", // Changed to link_metas
+                action: "link_metas",
                 panoid: panoid, 
                 metaIds: metaIds,
                 lat: currentLocationData.lat,
                 lng: currentLocationData.lng,
                 country: currentLocationData.country,
+                nominatimCountry: currentLocationData.nominatimCountry,
                 region: currentLocationData.region,
                 road: currentLocationData.road
             };
@@ -1333,7 +1363,8 @@
             return;
         }
 
-        // Admin Mode: Direct API (Sequential for simplicity, could be optimized)
+        // Mode: Admin (Token) - Direct API commit
+        // Note: Sequential operations used for simplicity logic
         updateStatus(`Linking ${metaIds.length} metas...`);
         
         try {
@@ -1373,6 +1404,7 @@
                     lat: currentLocationData.lat,
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
+                    nominatimCountry: currentLocationData.nominatimCountry,
                     region: currentLocationData.region,
                     road: currentLocationData.road
                 };
@@ -1383,6 +1415,7 @@
                     lat: currentLocationData.lat,
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
+                    nominatimCountry: currentLocationData.nominatimCountry,
                     region: currentLocationData.region,
                     road: currentLocationData.road
                 };
@@ -1438,7 +1471,9 @@
         const newMeta = {
             id: metaId,
             country: currentLocationData.country || "Unknown",
+            nominatimCountry: currentLocationData.nominatimCountry || null,
             region: currentLocationData.region || null,
+            city: currentLocationData.city || null,
             road: currentLocationData.road || null,
             lat: currentLocationData.lat,
             lng: currentLocationData.lng,
@@ -1464,7 +1499,7 @@
         // Save to GitHub
         const token = localStorage.getItem('gg_gh_token');
         
-        // --- COMMUNITY MODE (No Token) ---
+        // Mode: Community (No Token)
         if (!token) {
             const jsonStr = JSON.stringify(submission, null, 2);
             
@@ -1491,7 +1526,7 @@
             return;
         }
 
-        // --- ADMIN MODE (Token Present) ---
+        // Mode: Admin (Token)
         btn.disabled = true;
         btn.innerHTML = '<span class="gg-spinner"></span>Saving...';
         output.style.display = 'none';
@@ -1553,6 +1588,7 @@
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
                     region: currentLocationData.region,
+                    city: currentLocationData.city,
                     road: currentLocationData.road
                 };
             } else if (Array.isArray(locsFile.content[panoid])) {
@@ -1563,6 +1599,7 @@
                     lng: currentLocationData.lng,
                     country: currentLocationData.country,
                     region: currentLocationData.region,
+                    city: currentLocationData.city,
                     road: currentLocationData.road
                 };
             }
@@ -1718,6 +1755,8 @@
         container.innerHTML = exactHtml + predictedHtml;
     }
 
+
+
     // Expose Quick Link Function globally so the inline onclick works
     win.quickLinkMeta = function(metaId, title) {
         // Prevent accidental clicks? simple confirm
@@ -1801,106 +1840,219 @@
         const s = (scope || '').toLowerCase();
         if (s === '1km') return 1;
         if (s === '10km') return 10;
+        if (s === '25km') return 25;
+        if (s === '50km') return 50;
         if (s === '100km') return 100;
         if (s === '1000km') return 1000;
-        if (s === 'unique') return 0; // Unique means no radius/proximity prediction
+        
+        // Named scopes should match by NAME, not generic radius
+        if (s === 'region') return 0;  
+        if (s === 'city') return 0;    
+        if (s === 'road') return 0; // Strict Name Match Only (User request: no radius for road/region)
+        if (s === 'unique') return 0; // 0m tolerance
+        
+        if (s === 'countrywide') return 0; // Strict Country Check Only
         return 0;
     }
 
+    const COUNTRY_ALIAS_MAP = {
+        "France": (lat, lng) => {
+            // Reunion Check
+            if (lat < -19 && lat > -22 && lng > 54 && lng < 57) return "Reunion";
+            return "France";
+        },
+        "China": (lat, lng) => {
+            // Hong Kong / Macau Check
+            if (lat > 22 && lat < 23 && lng > 113.8 && lng < 114.5) return "Hong Kong";
+            if (lat > 22 && lat < 22.3 && lng > 113.5 && lng < 113.6) return "Macau";
+            return "China";
+        },
+        "United States": "USA",
+        "United Kingdom": "UK",
+        "Virgin Islands, U.S.": "US Virgin Islands",
+        "United Arab Emirates": "UAE"
+    };
+
+    function normalizeCountry(name, lat, lng) {
+        if (!name) return "Unknown";
+        let target = name;
+        if (COUNTRY_ALIAS_MAP[name]) {
+            const mapping = COUNTRY_ALIAS_MAP[name];
+            if (typeof mapping === 'function') {
+                target = mapping(parseFloat(lat), parseFloat(lng));
+            } else {
+                target = mapping;
+            }
+        }
+        return target;
+    }
+
+    /**
+     * Fuzzy matching for location names.
+     * Ensures substrings align with word boundaries to avoid partial false positives
+     * (e.g. "C19" vs "AC190"). Ignores generic terms like "Road" or "Region".
+     */
+    function isFuzzyNameMatch(a, b) {
+        if (!a || !b) return false;
+        a = String(a).toLowerCase().trim();
+        b = String(b).toLowerCase().trim();
+        
+        // 1. Exact Match
+        if (a === b) return true;
+
+        // 2. Token Matching (Word Boundaries)
+        const tokensA = a.split(/[\s,\.\-]+/);
+        const tokensB = b.split(/[\s,\.\-]+/);
+        
+        const generics = ['region', 'province', 'district', 'county', 'state', 'prefecture', 'road', 'street', 'avenue', 'boulevard', 'way', 'dr', 'drive', 'ln', 'lane', 'hwy', 'highway', 'str', 'route'];
+        
+        const shortTokens = tokensA.length < tokensB.length ? tokensA : tokensB;
+        const longTokens = tokensA.length < tokensB.length ? tokensB : tokensA;
+
+        // Check if ALL tokens of the short string exist as EXACT tokens in the long string
+        const allShortTokensMatch = shortTokens.every(st => {
+            if (generics.includes(st)) return true; // Generics are ignored
+            return longTokens.includes(st);
+        });
+
+        // Ensure at least one NON-GENERIC token matched
+        const hasNonGenericMatch = shortTokens.some(st => !generics.includes(st) && longTokens.includes(st));
+
+        return allShortTokensMatch && hasNonGenericMatch;
+    }
+
+    /**
+     * Finds relevant metas for current location based on active scopes.
+     * Checks both exact distance matches and fuzzy name matches (Region/Road).
+     */
     function evaluateProximityMetas() {
         const curLat = parseFloat(currentLocationData.lat);
         const curLng = parseFloat(currentLocationData.lng);
-        const curCountry = currentLocationData.country;
+        const curCountry = normalizeCountry(currentLocationData.country, curLat, curLng);
+        const curNomCountry = normalizeCountry(currentLocationData.nominatimCountry, curLat, curLng);
         const curRegion = currentLocationData.region;
+        const curCity = currentLocationData.city;
         const curRoad = (currentLocationData.road || '').toLowerCase().trim();
+        
+        const curRoads = [];
+        if (currentLocationData.road) {
+            if (Array.isArray(currentLocationData.road)) {
+                currentLocationData.road.forEach(r => curRoads.push(r.toLowerCase().trim()));
+            } else {
+                curRoads.push(String(currentLocationData.road).toLowerCase().trim());
+            }
+        }
 
         if (isNaN(curLat) || isNaN(curLng)) return [];
 
-        // Priority 1: Metas linked to PREVIOUS LOCATIONS that match our current location
-        // (Matched by Road, Region, or specific Distance)
-        const priorityMatches = new Set();
+        const matchedMetaIds = new Set();
+        const matches = [];
 
-        // Priority 2: Metas that match via their own generic scope
-        // (e.g. A meta set to "Countrywide" for this country)
-        const scopeMatches = new Set();
-        
-        // 1. Check all pinned locations in locations.json (The "Previous Locations")
+        // Helper: Check meta match against location
+        const checkMatch = (scope, entryLat, entryLng, entryCountry, entryRegion, entryCity, entryRoads) => {
+             scope = (scope || '').toLowerCase();
+             
+             // 1. Distance Match
+             const distLimit = getDistanceForScope(scope);
+             if (distLimit > 0) {
+                 if (entryLat !== null && entryLng !== null) {
+                     const d = getHaversineDistance(curLat, curLng, entryLat, entryLng);
+                     if (d <= distLimit) return true;
+                 }
+                 return false; 
+             }
+
+             // 2. Name Match (Region/City/Road)
+             // Requires Country match to avoid ambiguity (except Countrywide)
+             
+             const countryMatch = (entryCountry === curCountry || entryCountry === curNomCountry);
+             if (!countryMatch) return false;
+
+             if (scope === 'countrywide') return true;
+             
+             if (scope === 'region') {
+                 return isFuzzyNameMatch(entryRegion, curRegion);
+             }
+             
+             if (scope === 'city') {
+                 return isFuzzyNameMatch(entryCity, curCity);
+             }
+             
+             if (scope === 'road') {
+                 // Check if ANY entry road matches ANY current road
+                 if (!entryRoads || entryRoads.length === 0) return false;
+                 if (curRoads.length === 0) return false;
+                 
+                 return curRoads.some(cr => entryRoads.some(er => isFuzzyNameMatch(cr, er)));
+             }
+
+             return false;
+        };
+
+        // Phase 1: Check Linked Locations (saved in locations.json)
+        // locationMap maps Panoid -> Data
         for (const panoId in locationMap) {
             const entry = locationMap[panoId];
             const metaIds = Array.isArray(entry) ? entry : (entry.metas || []);
-            const entryLat = entry.lat ? parseFloat(entry.lat) : null;
-            const entryLng = entry.lng ? parseFloat(entry.lng) : null;
-            const entryRoad = (entry.road || '').toLowerCase().trim();
-            const entryRegion = entry.region;
-            const entryCountry = entry.country;
+            
+            // Normalize Entry Data
+            const eLat = entry.lat ? parseFloat(entry.lat) : null;
+            const eLng = entry.lng ? parseFloat(entry.lng) : null;
+            const eCountry = normalizeCountry(entry.country, eLat, eLng); 
+            // entry.nominatimCountry might exist
+            const finalECountry = normalizeCountry(entry.nominatimCountry || eCountry, eLat, eLng);
+            
+            const eRegion = entry.region;
+            const eCity = entry.city; // New field, might be undefined in old entries
+            
+            const eRoads = [];
+            if (entry.road) {
+                if (Array.isArray(entry.road)) {
+                    entry.road.forEach(r => eRoads.push(String(r).toLowerCase().trim()));
+                } else {
+                    eRoads.push(String(entry.road).toLowerCase().trim());
+                }
+            }
 
             metaIds.forEach(id => {
-                const meta = metasData.find(m => m.id === id);
-                if (!meta) return;
+                 if (matchedMetaIds.has(id)) return; // Already matched
+                 
+                 const meta = metasData.find(m => m.id === id);
+                 if (!meta) return;
 
-                let isMatch = false;
-
-                // Match by Road (High Priority)
-                if (curRoad && entryRoad && curRoad === entryRoad) isMatch = true;
-
-                // Match by Region (if in same country)
-                if (!isMatch && curRegion && entryRegion && curRegion === entryRegion && curCountry === entryCountry) isMatch = true;
-
-                // Match by Distance (Proximity)
-                if (!isMatch && entryLat !== null && entryLng !== null) {
-                    const scope = (meta.scope || '').toLowerCase();
-                    const maxDist = getDistanceForScope(scope);
-                    if (maxDist > 0) {
-                         const d = getHaversineDistance(curLat, curLng, entryLat, entryLng);
-                         if (d <= maxDist) isMatch = true;
-                    }
-                }
-
-                if (isMatch) priorityMatches.add(id);
+                 if (checkMatch(meta.scope, eLat, eLng, finalECountry, eRegion, eCity, eRoads)) {
+                     matchedMetaIds.add(id);
+                     matches.push(meta);
+                 }
             });
         }
 
-        // 2. Check general Country/Region scope against current location
+        // Phase 2: Check Static Meta Locations (e.g. Plonkit data or Metas with defined coordinates)
         metasData.forEach(meta => {
-            const scope = (meta.scope || '').toLowerCase();
-            if (scope === 'countrywide') {
-                if (meta.country === curCountry) scopeMatches.add(meta.id);
-            } else if (scope === 'region') {
-                if (meta.country === curCountry && meta.region === curRegion) scopeMatches.add(meta.id);
-            } else if (scope === 'road') {
-                const metaRoad = (meta.road || '').toLowerCase().trim();
-                // This 'road' scope is for when the meta ITSELF has a road property 
-                if (metaRoad && curRoad && metaRoad === curRoad) scopeMatches.add(meta.id);
-            }
+             if (matchedMetaIds.has(meta.id)) return;
+
+             // Meta Static Data
+             const mLat = meta.lat ? parseFloat(meta.lat) : null;
+             const mLng = meta.lng ? parseFloat(meta.lng) : null;
+             const mCountry = normalizeCountry(meta.country, mLat, mLng);
+             const mRegion = meta.region;
+             const mCity = meta.city;
+             const mRoads = [];
+             if (meta.road) {
+                 if (Array.isArray(meta.road)) {
+                     meta.road.forEach(r => mRoads.push(String(r).toLowerCase().trim()));
+                 } else {
+                     mRoads.push(String(meta.road).toLowerCase().trim());
+                 }
+             }
+
+             if (checkMatch(meta.scope, mLat, mLng, mCountry, mRegion, mCity, mRoads)) {
+                 matchedMetaIds.add(meta.id);
+                 matches.push(meta);
+             }
         });
 
-        // Combine: Priority Matches FIRST, then Scope Matches
-        const combined = [];
-        const seen = new Set();
-
-        // Add Priority matches
-        priorityMatches.forEach(id => {
-            if (!seen.has(id)) {
-                const m = metasData.find(x => x.id === id);
-                if (m) {
-                    combined.push(m);
-                    seen.add(id);
-                }
-            }
-        });
-
-        // Add Scope matches
-        scopeMatches.forEach(id => {
-            if (!seen.has(id)) {
-                const m = metasData.find(x => x.id === id);
-                if (m) {
-                    combined.push(m);
-                    seen.add(id);
-                }
-            }
-        });
-
-        return combined;
+        return matches;
     }
 
     function isRanked() {
@@ -1962,7 +2114,9 @@
     function checkLocation(panoid) {
         if (!panoid || typeof panoid !== 'string' || panoid.length <= 5) return;
         
-        // LOCK MECHANISM:
+        // Lock Mechanism:
+        // If on result screen, queue updates instead of applying immediately
+        // to prevent UI jitter when reviewing previous rounds.
         const onResultScreen = isRoundResult();
         if (currentPanoid && currentPanoid !== panoid && onResultScreen) {
             nextPanoid = panoid; // Queue it
@@ -2057,6 +2211,7 @@
                             address: desc,
                             country: country,
                             region: null,
+                            city: null,
                             road: null,
                             lat: newLatStr,
                             lng: newLngStr
@@ -2068,75 +2223,105 @@
                     // Immediate trigger with basic info (Lat/Lng is enough for radius checks)
                     if (currentPanoid) checkLocation(currentPanoid);
 
-                    // Reverse Geocoding for better accuracy
-                    if (win.google && win.google.maps && win.google.maps.Geocoder) {
-                        const geocoder = new win.google.maps.Geocoder();
-                        const latVal = parseFloat(lat);
-                        const lngVal = parseFloat(lng);
-                        
-                        // console.log('[BetterMetas] Requesting Reverse Geocode...');
-                        geocoder.geocode({ location: { lat: latVal, lng: lngVal } }, (results, status) => {
-                            if (status === 'OK' && results && results.length > 0) {
-                                const res = results[0];
-                                const address = res.formatted_address;
-                                let realCountry = country;
+                    // Dual Geocoding Strategy
+                    const latVal = parseFloat(lat);
+                    const lngVal = parseFloat(lng);
+                    
+                    // 1. Google Geocoding (Dominant for country)
+                    const geocoder = new win.google.maps.Geocoder();
+                    geocoder.geocode({ location: { lat: latVal, lng: lngVal } }, (results, status) => {
+                        if (status === "OK" && results[0]) {
+                            const res = results[0];
+                            const addrComp = res.address_components;
+                            
+                            let gCountry = null;
+                            let gRegion = null;
+                            let gCity = null;
+                            let gRoad = null;
+                            
+                            addrComp.forEach(comp => {
+                                if (comp.types.includes("country")) gCountry = comp.long_name;
+                                if (comp.types.includes("administrative_area_level_1")) gRegion = comp.long_name;
+                                if (comp.types.includes("locality") || comp.types.includes("administrative_area_level_2")) {
+                                    if (!gCity) gCity = comp.long_name; // Prefer locality
+                                }
+                                if (comp.types.includes("route")) gRoad = comp.long_name;
+                            });
+                            
+                            if (currentLocationData.lat === newLatStr && currentLocationData.lng === newLngStr) {
+                                currentLocationData.googleCountry = gCountry;
+                                // Primary country selection (Google preferred)
+                                if (gCountry) {
+                                    currentLocationData.country = normalizeCountry(gCountry, lat, lng);
+                                }
+                                if (gRegion && !currentLocationData.region) currentLocationData.region = gRegion;
+                                if (gCity && !currentLocationData.city) currentLocationData.city = gCity;
+                                if (gRoad && !currentLocationData.road) currentLocationData.road = gRoad;
                                 
-                                // Find country in address components
-                                const countryComponent = res.address_components.find(c => c.types.includes('country'));
-                                if (countryComponent) {
-                                    realCountry = countryComponent.long_name;
-                                }
-
-                                // Find administrative_area_level_1 (Region/State)
-                                let region = null;
-                                const regionComponent = res.address_components.find(c => c.types.includes('administrative_area_level_1'));
-                                if (regionComponent) {
-                                    region = regionComponent.long_name;
-                                }
-
-                                // console.log(`[BetterMetas] Geocode Success: ${address} | ${realCountry} | ${region}`);
-                                
-                                
-                                // Find route (Road Name)
-                                let road = null;
-                                const routeComponent = res.address_components.find(c => c.types.includes('route'));
-                                if (routeComponent) {
-                                    road = routeComponent.long_name;
-                                } else {
-                                    // Fallback: Check intersection
-                                    const intersection = res.address_components.find(c => c.types.includes('intersection'));
-                                    if (intersection) road = intersection.long_name;
-                                }
-
-                                // Fallback: If still no road, use shortDescription if it looks like a road (not just a country name)
-                                if (!road && loc.shortDescription && loc.shortDescription !== loc.description && loc.shortDescription !== realCountry) {
-                                    // Heuristic: Avoid using it if it's identical to the Region/City
-                                    if (loc.shortDescription !== region) {
-                                        road = loc.shortDescription;
-                                    }
-                                }
-
-                                // Update (Only if we are still on the same lat/lng! - another race check)
-                                if (currentLocationData.lat === newLatStr && currentLocationData.lng === newLngStr) {
-                                    currentLocationData.address = address;
-                                    currentLocationData.country = realCountry;
-                                    currentLocationData.region = region;
-                                    currentLocationData.road = road;
-                                }
-
                                 updateLocationUI();
-                                // Refresh metas now that we have better country/region info
                                 if (currentPanoid) checkLocation(currentPanoid);
-                            } else {
-                                console.log('[BetterMetas] Geocode failed: ' + status);
-                                // Even if failed, we might have updated something? 
-                                // Actually we didn't update currentLocationData in failure, but we could retry or just leave it.
-                                // But ensuring we checked with basic data (above) is enough.
                             }
-                        });
-                    } else {
-                         console.log('[BetterMetas] Geocoder API not available.');
-                    }
+                        } else {
+                            console.warn('[BetterMetas] Google geocode failed:', status);
+                        }
+                    });
+
+                            // 2. Nominatim Geocoding (Detail/Fallback)
+                    const nominatimUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latVal}&lon=${lngVal}&accept-language=en`;
+                    
+                    fetch(nominatimUrl, {
+                        headers: { 'User-Agent': 'GeoguessrBetterMetas/1.0' }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data && data.address) {
+                            const a = data.address;
+                            const address = data.display_name;
+                            let nCountry = a.country || country;
+                            let realNomCountry = normalizeCountry(nCountry, lat, lng);
+                            let region = a.state || a.region || a.province || a.county || a.district || null;
+                            let city = a.city || a.town || a.village || a.hamlet || a.municipality || null;
+                            
+                            // Road Logic
+                            let road = null;
+                            const roadName = a.road || a.pedestrian || a.highway || a.street || a.suburb || a.hamlet || a.village || null;
+                            if (roadName) {
+                                if (roadName.includes(';')) {
+                                    road = roadName.split(';').map(s => s.trim());
+                                } else {
+                                    road = roadName;
+                                }
+                            }
+
+                            // Fallback: If still no road, use shortDescription if it looks like a road
+                            if (!road && loc.shortDescription && loc.shortDescription !== loc.description && loc.shortDescription !== realNomCountry) {
+                                if (loc.shortDescription !== region && loc.shortDescription !== city) {
+                                    road = loc.shortDescription;
+                                }
+                            }
+
+                            // Update Location Data (if still relevant)
+                            if (currentLocationData.lat === newLatStr && currentLocationData.lng === newLngStr) {
+                                currentLocationData.nominatimCountry = realNomCountry;
+                                currentLocationData.address = address; // Prefer Nominatim address
+                                
+                                // Fallback for Country if Google failed
+                                if (!currentLocationData.country) {
+                                    currentLocationData.country = realNomCountry;
+                                }
+                                
+                                if (region && !currentLocationData.region) currentLocationData.region = region;
+                                if (city && !currentLocationData.city) currentLocationData.city = city;
+                                if (road && !currentLocationData.road) currentLocationData.road = road;
+                            }
+
+                            updateLocationUI();
+                            if (currentPanoid) checkLocation(currentPanoid);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('[BetterMetas] Nominatim geocode failed:', error);
+                    });
                 } else {
                     console.log(`[BetterMetas] svInstance.getLocation() returned null/empty (Attempt ${attempt+1}/${maxAttempts}).`);
                     if (attempt < maxAttempts) {
@@ -2182,15 +2367,16 @@
                 <div class="gg-loc-label">Region:</div>
                 <div class="gg-loc-val">${region}</div>
             </div>` : ''}
+            ${currentLocationData.city ? `
+            <div class="gg-loc-row">
+                <div class="gg-loc-label">City:</div>
+                <div class="gg-loc-val">${currentLocationData.city}</div>
+            </div>` : ''}
             ${road ? `
             <div class="gg-loc-row">
                 <div class="gg-loc-label">Road:</div>
-                <div class="gg-loc-val">${road}</div>
+                <div class="gg-loc-val">${Array.isArray(road) ? road.join(', ') : road}</div>
             </div>` : ''}
-            <div class="gg-loc-row">
-                <div class="gg-loc-label">Coords:</div>
-                <div class="gg-loc-val gg-loc-coords">${lat}, ${lng}</div>
-            </div>
         `;
         box.style.display = 'block';
     }
@@ -2319,34 +2505,32 @@
 
     // --- Google Maps Hooks ---
     function installHooks() {
-        // Check if Google Maps is loaded
+        // Check for Maps API
         if (!win.google || !win.google.maps || !win.google.maps.StreetViewPanorama) {
             return false;
         }
 
         console.log('[BetterMetas] Google Maps API found. Installing hooks...');
         
-        // 1. Constructor Hook (catch new instances)
+        // 1. Hook StreetViewPanorama Constructor
         const OriginalStreetViewPanorama = win.google.maps.StreetViewPanorama;
         
         win.google.maps.StreetViewPanorama = function(node, opts) {
             const instance = new OriginalStreetViewPanorama(node, opts);
             
-            // Immediate check on creation
+            // Initial check
             if (opts && opts.pano) {
                 checkLocation(opts.pano);
             }
 
-            // Capture Instance
             svInstance = instance;
 
-            // Add Event Listener
+            // Events
             win.google.maps.event.addListener(instance, 'pano_changed', () => {
                 const panoId = instance.getPano();
                 checkLocation(panoId);
             });
             
-            // Listen for status_changed or similar to capture data load
             win.google.maps.event.addListener(instance, 'status_changed', () => {
                  extractLocationData();
             });
@@ -2354,7 +2538,7 @@
             return instance;
         };
 
-        // Copy prototype and static properties
+        // Copy statics
         win.google.maps.StreetViewPanorama.prototype = OriginalStreetViewPanorama.prototype;
         for (let prop in OriginalStreetViewPanorama) {
             if (OriginalStreetViewPanorama.hasOwnProperty(prop)) {
@@ -2362,12 +2546,11 @@
             }
         }
 
-        // 2. Prototype Hook for setPano (catch updates on existing instances)
+        // 2. Hook setPano (for SPA updates)
         const originalSetPano = win.google.maps.StreetViewPanorama.prototype.setPano;
         win.google.maps.StreetViewPanorama.prototype.setPano = function(pano) {
             if (!svInstance) {
                 svInstance = this;
-                console.log('[BetterMetas] Captured svInstance via setPano hook.');
             }
             checkLocation(pano);
             return originalSetPano.apply(this, arguments);
