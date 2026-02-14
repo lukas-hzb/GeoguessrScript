@@ -24,11 +24,11 @@ Since this is a specific Userscript, you need a Userscript manager for your brow
 
 | Main HUD Preview | Predicted Metas |
 | :---: | :---: |
-| ![Main HUD](images/hud_preview.png) | ![Predicted Metas](images/hud_preview_2.png) |
+| <img src="images/hud_preview.png" alt="Main HUD" width="400" /> | <img src="images/hud_preview_2.png" alt="Predicted Metas" width="400" /> |
 
 | Add Meta Dialog | Settings Menu |
 | :---: | :---: |
-| ![Add Meta](images/add_meta_dialog.png) | ![Settings](images/settings_menu.png) |
+| <img src="images/add_meta_dialog.png" alt="Add Meta" width="400" /> | <img src="images/settings_menu.png" alt="Settings" width="400" /> |
 
 ## Credits & Acknowledgements
 
