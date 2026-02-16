@@ -1,95 +1,88 @@
-Creative Commons Attribution-NonCommercial 4.0 International Public License
+PROPRIETARY SOURCE-AVAILABLE LICENSE AGREEMENT
 
-By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+EFFECTIVE DATE: 16 FEBRUARY 2026
 
-Section 1 – Definitions.
+LICENSOR:
+Lukas Harzbecker (natural person), Germany
 
-a. Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
-b. Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
-c. Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
-d. Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
-e. Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
-f. Licensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.
-g. Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
-h. Licensor means the individual(s) or entity(ies) granting rights under this Public License.
-i. NonCommercial means not primarily intended for or directed towards commercial advantage or monetary compensation. For purposes of this Public License, the exchange of the Licensed Material for other material subject to Copyright and Similar Rights by digital file-sharing or similar means is NonCommercial provided there is no payment of monetary compensation in connection with the exchange.
-j. Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.
-k. Sui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
-l. You means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.
+SOFTWARE:
+"[NAME]" — all past, present and future versions, source code, binaries, documentation, and related materials
 
-Section 2 – Scope.
+1. DEFINITIONS
+1.1 "Agreement" means this Proprietary Source-Available License Agreement as amended in writing.
+1.2 "Licensor" means the person named above.
+1.3 "Licensee" means any natural person or legal person who accepts this Agreement.
+1.4 "Software" has the meaning stated above.
+1.5 "Excluded Person" refers specifically to the individual named above.
+1.6 "Authorized Distribution Channels" means (a) The official GitHub repository controlled by Licensor; (b) Licensor’s designated download endpoints (including [NAME].hzb.app); and (c) Any other source expressly authorized by Licensor.
 
-a. License grant.
-1. Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
-A. reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only; and
-B. produce, reproduce, and Share Adapted Material for NonCommercial purposes only.
-2. Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
-3. Term. The term of this Public License is specified in Section 6(a).
-4. Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.
-5. Downstream recipients.
-A. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
-B. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
-6. No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
+2. ACCEPTANCE / FORMATION OF CONTRACT
+2.1 This Agreement is an offer by Licensor. A binding license is formed when Licensee accepts by (i) downloading, cloning, copying, installing, or using the Software, in whole or in part, from an Authorized Distribution Channel or any other source; or (ii) clicking an express "I accept" or equivalent control.
+2.2 Licensee acknowledges that the Software may be viewable on public platforms for informational purposes only; any copying, downloading, or use of the Software (in whole or in part) constitutes full acceptance of this Agreement.
 
-b. Other rights.
-1. Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
-2. Patent and trademark rights are not licensed under this Public License.
-3. To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties, including when the Licensed Material is used for other than NonCommercial purposes.
+3. GRANT OF LICENSE — SCOPE AND LIMITS
+3.1 Subject to strict compliance with all terms of this Agreement, Licensor grants Licensee a revocable, non-exclusive, non-transferable, non-sublicensable, limited license to:
+   (a) access, download and use the Software solely for private, personal, educational or informational purposes; and
+   (b) inspect and modify source code solely for private study, experimentation, improvement, or bug fixing ("Private Modifications").
+3.2 No other rights are granted. All rights not expressly granted are reserved by Licensor.
 
-Section 3 – License Conditions.
+4. RESTRICTIONS
+4.1 No Distribution: Licensee shall not distribute, publish, disclose, sublicense, assign, lease, rent, loan, sell, or otherwise make the Software or any Private Modifications available to any third party. Public posting, public fork, public mirror or any publicly accessible copy requires Licensor’s prior explicit written consent executed by an authorized representative of Licensor.
+4.2 No Circumvention/Reverse Engineering: Licensee shall not reverse engineer, decompile, disassemble or otherwise attempt to derive proprietary mechanisms from compiled components, except to the extent that mandatory statutory law in the Licensee’s jurisdiction expressly permits such acts. Where law mandates exceptions (e.g., for interoperability or error correction), Licensee’s actions must be strictly limited to the scope and purpose defined by that law.
+4.3 No Commercial Use: Any commercial use — including but not limited to resale, provision of paid services, monetization, or internal business use — is strictly prohibited absent a separate, written commercial license executed by Licensor.
+4.4 Private Forks: Any fork or copy made by Licensee for private use must remain inaccessible to the public or third parties. Licensee shall ensure appropriate repository privacy settings, access controls, and account management to prevent public disclosure.
 
-Your exercise of the Licensed Rights is expressly made subject to the following conditions.
+5. CONTRIBUTIONS AND FEEDBACK (CONTRIBUTOR AGREEMENT)
+5.1 By submitting any contribution (including patches, pull requests, feedback, documentation or other materials) to Licensor, the contributor grants Licensor an exclusive, perpetual, irrevocable, worldwide, royalty-free, transferable and sublicensable license to use, reproduce, modify, merge, publish, distribute, relicense and otherwise exploit such contributions, without obligation of attribution or compensation.
+5.2 Contributor represents and warrants that Contributor has the full right, power and authority to grant the license in clause 5.1 and that the contribution does not infringe the rights of any third party.
+5.3 Contributor also warrants that Contributor is not the Excluded Person and that no contribution is submitted on behalf of, for the benefit of, or at the direction of the Excluded Person. Any false representation is a material breach and entitles Licensor to immediate remedies.
 
-a. Attribution.
-1. If You Share the Licensed Material (including in modified form), You must:
-A. retain the following if it is supplied by the Licensor with the Licensed Material:
-i. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
-ii. a copyright notice;
-iii. a notice that refers to this Public License;
-iv. a notice that refers to the disclaimer of warranties;
-v. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
-B. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
-C. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
-2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
-3. If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
-4. If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.
+6. SPECIFIC PERSONAL EXCLUSION — ENFORCEMENT
+6.1 Absolute Exclusion: Notwithstanding any other provision, no license, permission, authorization or right of any kind under this Agreement is granted to the Excluded Person. Licensor declines to enter into any contract with the Excluded Person.
+6.2 Representation and Certification: By accepting this Agreement, Licensee warrants and certifies under penalty of material breach that (a) Licensee is not the Excluded Person and (b) Licensee does not act for, on behalf of, or at the direction or control of the Excluded Person. Licensee shall notify Licensor immediately upon any change in circumstances that would make the foregoing untrue.
+6.3 Identity Verification: Where legally permissible and proportionate, Licensor may require reasonable identity verification for access via Authorized Distribution Channels (for example, confirmation of an active GitHub account username, authenticated email address tied to the account, or similar non-sensitive verification). Any processing of personal data in connection with verification will be limited to what is necessary, lawful, and proportionate and shall be subject to Licensor’s privacy notice.
+6.4 Platform Measures: Licensor may employ practical platform measures to effect the exclusion, including (without limitation) hosting the authoritative source in a private GitHub Organization controlled by Licensor, using platform blocking/moderation tools, reporting violations to platform operators, and restricting invitation or collaboration rights. Use of any platform tool is supplemental to, and does not replace, contractual and statutory rights.
+6.5 Automatic Termination; Remedies: If Licensor reasonably determines that the Excluded Person has accessed or used the Software (including via impersonation, proxy, intermediary, or by using another person’s account), any license that would otherwise apply is automatically and immediately void with respect to that person. Licensor is entitled to all remedies available at law or in equity, including immediate injunctive relief, takedown notices (DMCA or equivalent), monetary damages, and reimbursement of enforcement costs and attorneys' fees to the extent permitted by law.
+6.6 Duty to Destroy and Certificate: Upon termination or discovery of unauthorized use by the Excluded Person, the party through which access occurred must immediately destroy all copies and certify in writing to Licensor within seven (7) days that no copies remain under their control.
 
-b. NonCommercial.
-You may not use the Licensed Material for commercial purposes.
+7. PLATFORM COMPATIBILITY & PUBLIC HOSTING
+7.1 Platform Acknowledgement: Licensee acknowledges that public code-hosting platforms (including GitHub) provide technical features (public forks, clones, mirrored copies) that may allow copying or viewing of public repositories irrespective of license text. Platform features do not, by themselves, create a license or permission to use the Software contrary to this Agreement.
+7.2 Controlled Distribution: Licensor will, at Licensor’s election, maintain primary authoritative releases via Authorized Distribution Channels. To assert full rights under this Agreement, downstream users must accept this Agreement at the point of access.
+7.3 Notices and DMCA: Licensee agrees that Licensor may use platform notice-and-takedown procedures (DMCA or equivalent) and platform reporting mechanisms to enforce Licensor’s rights, and Licensee shall cooperate reasonably with such enforcement efforts.
 
-Section 4 – Sui Generis Database Rights.
+8. OWNERSHIP
+8.1 All title, ownership, and intellectual property rights in and to the Software, including copyrights, trade secrets, moral rights to the extent permitted by law, trademarks and any other proprietary rights, remain exclusively with Licensor. No transfer of ownership is effected by this Agreement.
 
-Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
-a. for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database for NonCommercial purposes only;
-b. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and
-c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
-For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
+9. WARRANTY DISCLAIMER & LIMITATION OF LIABILITY
+9.1 No Warranty: THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE". TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LICENSOR DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ANY WARRANTIES ARISING FROM COURSE OF DEALING.
+9.2 Limitation of Liability: To the extent permitted by applicable law:
+   (a) Licensor is liable without limitation for damages caused by willful misconduct or gross negligence, and for injury to life, body or health;
+   (b) For slight negligence, Licensor is liable only for breach of essential contractual obligations and liability is limited to foreseeable, typical damages at the time of contract formation; and
+   (c) Any other liability is excluded.
+9.3 Mandatory Rights Preserved: Nothing in this Agreement limits or excludes liability that cannot be limited or excluded under mandatory law, including consumer protection laws and applicable product liability statutes.
 
-Section 5 – Disclaimer of Warranties and Limitation of Liability.
+10. DATA PROTECTION
+10.1 To the extent Licensor processes personal data for identity verification or enforcement, Licensor will process only the minimum data reasonably necessary, will do so lawfully and proportionately, and will provide a privacy notice and information about data subject rights in accordance with applicable data protection law.
 
-a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.
-b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.
+11. TERM, TERMINATION AND SURVIVAL
+11.1 This Agreement is effective upon acceptance and remains in force until terminated.
+11.2 Licensor may terminate the license granted hereunder for any material breach, including a breach of clause 6 (Excluded Person) or clause 4 (Restrictions). Upon termination, Licensee shall immediately cease use and destroy all copies of the Software and certify destruction as set out in clause 6.6.
+11.3 Sections that by their nature survive termination (including Ownership, Warranty Disclaimer & Limitation of Liability, Data Protection, Contributions, and Remedies) shall survive.
 
-c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent most closely approximates an absolute waiver of all civil liability.
+12. SEVERABILITY, INTEGRATION, AMENDMENT
+12.1 If any provision is held invalid, illegal or unenforceable, the remainder of this Agreement remains in full force. The parties shall replace any invalid provision with a valid provision that most closely carries out the original intent.
+12.2 This Agreement constitutes the entire agreement between the parties with respect to its subject matter and supersedes all prior or contemporaneous communications.
+12.3 Licensor may amend this Agreement prospectively by posting a revised version on an Authorized Distribution Channel and providing reasonable notice; continued use after notice constitutes acceptance only to the extent legally effective.
 
-Section 6 – Term and Termination.
+13. GOVERNING LAW & JURISDICTION
+13.1 Governing Law: This Agreement shall be governed by and construed in accordance with the laws of the Federal Republic of Germany, excluding its conflict-of-laws rules and excluding the CISG to the extent it might otherwise apply.
+13.2 Jurisdiction: If Licensee is a merchant, a legal person under public law, or has no general venue in Germany, the exclusive place of jurisdiction for disputes shall be Licensor’s place of residence in Germany. Licensor reserves the right to bring proceedings at Licensee’s place of jurisdiction. Mandatory consumer protection jurisdiction rules remain unaffected.
 
-a. This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.
-b. Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:
-1. automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or
-2. upon express reinstatement by the Licensor.
-c. For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.
-d. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
-e. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
+14. APPLICATION TO PAST, PRESENT AND FUTURE VERSIONS
+14.1 To the maximum extent permitted by law, this Agreement applies to all past, present and future versions of the Software insofar as Licensee’s continued access or use occurs after acceptance of this Agreement. Where mandatory law requires renewed consent for material changes, Licensor will seek such consent and continued use after notice shall constitute acceptance only where legally effective.
 
-Section 7 – Other Terms and Conditions.
+15. REMEDIES; INJUNCTIVE RELIEF
+15.1 Licensee acknowledges that breach of clause 6 (Excluded Person) or clause 4 (Restrictions) may cause Licensor irreparable harm for which monetary damages would be an inadequate remedy. Licensor is therefore entitled to seek immediate injunctive relief (including ex parte relief where permitted) in addition to other remedies.
 
-a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.
-b. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
-
-Section 8 – Interpretation.
-
-a. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.
-b. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
-c. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
-d. Nothing in this Public License constitutes or may be interpreted as a limitation upon or waiver of any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
+COPYRIGHT
+Copyright (c) 2026 Lukas Harzbecker. All rights reserved.

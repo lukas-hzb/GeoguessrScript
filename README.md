@@ -1,4 +1,4 @@
-# BetterMetas - Geoguessr Companion
+# BetterMetas
 
 BetterMetas is a powerful Userscript for Geoguessr that helps you recognize and learn metas and hints directly in the game. It combines a huge database (based on Plonk It) with smart location predictions to eliminate the need of classyfying every single location.
 
@@ -11,7 +11,19 @@ BetterMetas is a powerful Userscript for Geoguessr that helps you recognize and 
 - **Crowdsourcing**: Add your own metas or link existing metas to new locations to improve the database.
 - **Filters**: Customize which types of hints you want to see (e.g., only "Unique" or also "Countrywide").
 
+### Screenshots
+
+|                                  Main HUD Preview                                  |                                   Predicted Metas                                   |
+| :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
+| <img src="images/hud_preview.png" alt="Main HUD" width="400" /> | <img src="images/hud_preview_2.png" alt="Predicted Metas" width="400" /> |
+
+|                                  Add Meta Dialog                                  |                                   Settings Menu                                   |
+| :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
+| <img src="images/add_meta_dialog.png" alt="Add Meta" width="400" /> | <img src="images/settings_menu.png" alt="Settings" width="400" /> |
+
 ## Installation
+
+### Browser Setup
 
 Since this is a specific Userscript, you need a Userscript manager for your browser.
 
@@ -20,30 +32,30 @@ Since this is a specific Userscript, you need a Userscript manager for your brow
 3. Tampermonkey will ask if you want to add the script. Confirm by clicking "Install".
 4. Open Geoguessr and start a game – the HUD should appear automatically.
 
-## Screenshots
+## Tech Stack
 
-| Main HUD Preview | Predicted Metas |
-| :---: | :---: |
-| <img src="images/hud_preview.png" alt="Main HUD" width="400" /> | <img src="images/hud_preview_2.png" alt="Predicted Metas" width="400" /> |
+| Layer              | Technology  | Version |
+| :----------------- | :---------- | :------ |
+| **Frontend**  | Userscript (JS)       | -   |
+| **Data Scraper** | Node.js      | 1.0.0    |
+| **APIs** | Google Maps, Nominatim  | -       |
+| **Knowledge Base**      | Plonk It  | -   |
 
-| Add Meta Dialog | Settings Menu |
-| :---: | :---: |
-| <img src="images/add_meta_dialog.png" alt="Add Meta" width="400" /> | <img src="images/settings_menu.png" alt="Settings" width="400" /> |
+## Credits
 
-## Credits & Acknowledgements
-
-A big thank you to the open-source community and data sources that make this project possible:
+BetterMetas is built using the following projects and resources:
 
 - **[Plonk It](https://www.plonkit.net)**: For the incredibly detailed Geoguessr guides that serve as the basis for much of the data.
 - **[Nominatim / OpenStreetMap](https://nominatim.org/)**: For providing high-precision geodata and reverse geocoding.
-- **Google Maps Platform**: For additional location data.
+- **[Google Maps Platform](https://mapsplatform.google.com/)**: For additional location data.
 
 ## License
 
-This project is licensed under the **CC BY-NC 4.0 (Attribution-NonCommercial 4.0 International)**.
+This project is proprietary software protected by international copyright law.
 
-You are free to **use, change, and distribute** this software as long as you:
-1.  **Give Credit**: You must explicitly name the author.
-2.  **Non-Commercial**: You may **NOT** use this project for commercial purposes or financial gain without explicit permission.
+Persona Non Grata:
+Daniel Harzbecker is expressly and unconditionally excluded from any license or permission to use this software. Any access, use, or reproduction by this individual does not constitute a license and shall be deemed a willful infringement of intellectual property rights.
 
-For full legal details, see the [LICENSE](LICENSE) file.
+For full legal terms, see [LICENSE](LICENSE).
+
+Copyright (c) 2026 Lukas Harzbecker. All Rights Reserved.
