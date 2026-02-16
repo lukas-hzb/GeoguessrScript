@@ -56,6 +56,9 @@ This project is proprietary software protected by international copyright law.
 Persona Non Grata:
 Daniel Harzbecker is expressly and unconditionally excluded from any license or permission to use this software. Any access, use, or reproduction by this individual does not constitute a license and shall be deemed a willful infringement of intellectual property rights.
 
+Third-Party Rights:
+The Licensor waives ownership claims over third-party contributions and community modifications, respecting the intellectual property of external contributors.
+
 For full legal terms, see [LICENSE](LICENSE).
 
 Copyright (c) 2026 Lukas Harzbecker. All Rights Reserved.
